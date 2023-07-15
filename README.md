@@ -10,24 +10,26 @@ For Science!
 
 ## Contents
 
-- [[Philosophy]]
-	- [[Philosophy of language]]
-- [[Mathematics]]
-	- [[Foundations of mathematics]]
-	- [[Pure mathematics]]
-	- [[Applied mathematics‎]]
-	- [[Computational mathematics]]
-	- [[Discrete mathematics]]
-- [[Computer science]]
-- [[Artificial Intelligence]]
-	- [[Major goals]]
-	- [[Approaches]]
-	- [[Applications]]
-
+- [Philosophy](1.%20Philosophy/Philosophy.md)
+	- [Philosophy of language](1.%20Philosophy/Philosophy%20of%20language/Philosophy%20of%20language.md)
+- [Mathematics](2.%20Mathematics/Mathematics.md)
+	- [Foundations of mathematics](2.%20Mathematics/0.%20Foundations%20of%20mathematics/Foundations%20of%20mathematics.md)
+	- [Pure mathematics](2.%20Mathematics/1.%20Pure%20mathematics/Pure%20mathematics.md)
+	- [Applied mathematics‎](2.%20Mathematics/2.%20Applied%20mathematics‎/Applied%20mathematics‎.md)
+	- [Computational mathematics](2.%20Mathematics/3.%20Computational%20mathematics/Computational%20mathematics.md)
+	- [Discrete mathematics](2.%20Mathematics/4.%20Discrete%20mathematics/Discrete%20mathematics.md)
+- [Computer science](3.%20Computer%20science/Computer%20science.md)
+- [Artificial Intelligence](4.%20Artificial%20intelligence/Artificial%20Intelligence.md)
+	- [Major goals](4.%20Artificial%20intelligence/1.%20Major%20goals/Major%20goals.md)
+	- [Approaches](4.%20Artificial%20intelligence/2.%20Approaches/Approaches.md)
+	- [Applications](4.%20Artificial%20intelligence/3.%20Applications/Applications.md)
+- [Information science](5.%20Information%20science/Information%20science.md)
+	- [Information retrieval](5.%20Information%20science/Information%20retrieval/Information%20retrieval.md)
+	- [Information filtering](5.%20Information%20science/Information%20filtering/Information%20filtering.md)
 
 ### AI vs. ML vs. DL by ChatGPT
 
-[[Artificial Intelligence]] (AI), [[4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Machine Learning]] (ML), and Deep Learning (DL) are interconnected concepts in the field of computer science, with each term representing a progressively narrower subdomain.
+[Artificial Intelligence](4.%20Artificial%20intelligence/Artificial%20Intelligence.md) (AI), [Machine learning](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Machine%20learning.md) (ML), and Deep Learning (DL) are interconnected concepts in the field of computer science, with each term representing a progressively narrower subdomain.
 
 1. Artificial Intelligence (AI): AI is the broadest concept among the three, referring to the development of computer systems that can perform tasks typically requiring human intelligence. This includes problem-solving, pattern recognition, learning, planning, understanding natural language, and perception. AI can be further divided into two subcategories: narrow AI (which focuses on specific tasks) and general AI (which aims to achieve human-like intelligence across a wide range of tasks).
 2. Machine Learning (ML): ML is a subset of AI that focuses on developing algorithms and techniques that allow computers to learn from data and improve their performance over time without being explicitly programmed. ML models analyze large datasets to recognize patterns, make predictions, or generate recommendations based on the input data. There are various ML techniques, such as supervised learning, unsupervised learning, and reinforcement learning.
