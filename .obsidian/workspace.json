@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PhD/华为实习/时间表.md",
+                "file": "PhD/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhD/华为实习/时间表.md",
+                "file": "PhD/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhD/华为实习/时间表.md",
+                "file": "PhD/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhD/华为实习/时间表.md"
+                "file": "PhD/Untitled.md"
               }
             }
           }
@@ -185,8 +185,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c633a6bf13e3c2d2",
+  "active": "b0799dd5cb461b64",
   "lastOpenFiles": [
+    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/STAR.md",
+    "PhD/Untitled.md",
     "New Bitmap Image.bmp",
     "LICENSE",
     "awesome-AI/LICENSE",
@@ -198,7 +200,6 @@
     "Miscellaneous/Baselines vs Benchmarks.md",
     "4. Artificial intelligence/3. Applications/Recommender system/MTL4Rec.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/Special Multi-Task Learning.md",
-    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/STAR.md",
     "Untitled.md",
     "Miscellaneous/Templates/Paper.md",
     "4. Artificial intelligence/3. Applications/Recommender system/RL4Rec.md",
@@ -225,7 +226,6 @@
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/Pasted image 20230713164217.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/Pasted image 20230713163957.png",
-    "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/Pasted image 20230713163955.png",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/Prefix-tuning v2.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/LoRA.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Domain adaptation/+Papers/RAINCOAT.md",
