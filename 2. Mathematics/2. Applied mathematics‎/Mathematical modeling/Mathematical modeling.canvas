@@ -1,0 +1,29 @@
+{
+	"nodes":[
+		{"id":"3c20f07428524569","x":-1018,"y":-189,"width":250,"height":60,"type":"text","text":"Statistical model"},
+		{"id":"9b4ba42fb8672bba","x":-1018,"y":-542,"width":250,"height":60,"type":"text","text":"Regression model"},
+		{"id":"99ace0f434ed1d4d","x":-1336,"y":-542,"width":250,"height":60,"color":"5","type":"text","text":"Deterministic System"},
+		{"id":"9b78bc6f037b38de","x":-1336,"y":-189,"width":250,"height":60,"color":"5","type":"text","text":"Stochastic System"},
+		{"id":"615f1cbb37541ebe","x":-1705,"y":-373,"width":250,"height":60,"type":"text","text":"Statistical model"},
+		{"id":"492f2a0402afbfa8","x":-700,"y":-190,"width":250,"height":61,"type":"text","text":"Probabilistic model"},
+		{"id":"d2e6375cf955c76f","x":-700,"y":-607,"width":400,"height":191,"type":"file","file":"4. Artificial intelligence/2. Approaches/Artificial neural network/Discriminative model/Discriminative model.md"},
+		{"id":"a6df100db879c34c","x":-362,"y":-274,"width":400,"height":230,"type":"file","file":"4. Artificial intelligence/2. Approaches/Artificial neural network/Generative model/Generative model.md"},
+		{"id":"e4068b84345de4df","x":-1705,"y":-249,"width":250,"height":60,"type":"text","text":"Dynamical system"},
+		{"id":"478abaa7009cb43d","x":-1705,"y":-129,"width":250,"height":60,"type":"text","text":"Differential equation"},
+		{"id":"85838699537958e9","x":-1705,"y":-12,"width":250,"height":60,"type":"text","text":"Game theory"},
+		{"id":"c0b614110d8953de","x":-2147,"y":-189,"width":250,"height":60,"type":"text","text":"Mathematical model"}
+	],
+	"edges":[
+		{"id":"94d2bc97ebfdc58f","fromNode":"a6df100db879c34c","fromSide":"left","toNode":"492f2a0402afbfa8","toSide":"right"},
+		{"id":"846c31904e295a7e","fromNode":"492f2a0402afbfa8","fromSide":"left","toNode":"3c20f07428524569","toSide":"right"},
+		{"id":"705ee97dccc82022","fromNode":"d2e6375cf955c76f","fromSide":"left","toNode":"9b4ba42fb8672bba","toSide":"right"},
+		{"id":"2513953435633643","fromNode":"9b4ba42fb8672bba","fromSide":"left","toNode":"99ace0f434ed1d4d","toSide":"right"},
+		{"id":"e18fa486ba973455","fromNode":"3c20f07428524569","fromSide":"left","toNode":"9b78bc6f037b38de","toSide":"right"},
+		{"id":"14f2738f018438e7","fromNode":"99ace0f434ed1d4d","fromSide":"left","toNode":"615f1cbb37541ebe","toSide":"right"},
+		{"id":"3eeca1574aad53fd","fromNode":"9b78bc6f037b38de","fromSide":"left","toNode":"615f1cbb37541ebe","toSide":"right"},
+		{"id":"005dea305dbecebd","fromNode":"615f1cbb37541ebe","fromSide":"left","toNode":"c0b614110d8953de","toSide":"right"},
+		{"id":"565f4aa7525310f5","fromNode":"e4068b84345de4df","fromSide":"left","toNode":"c0b614110d8953de","toSide":"right"},
+		{"id":"305ef7038d78c111","fromNode":"478abaa7009cb43d","fromSide":"left","toNode":"c0b614110d8953de","toSide":"right"},
+		{"id":"7575fcbf39ab776b","fromNode":"85838699537958e9","fromSide":"left","toNode":"c0b614110d8953de","toSide":"right"}
+	]
+}

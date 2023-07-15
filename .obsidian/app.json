@@ -1,0 +1,23 @@
+{
+  "foldHeading": true,
+  "showInlineTitle": false,
+  "foldIndent": true,
+  "showIndentGuide": true,
+  "rightToLeft": false,
+  "readableLineLength": false,
+  "showLineNumber": true,
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning",
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "promptDelete": true,
+  "spellcheck": false,
+  "useMarkdownLinks": true,
+  "newLinkFormat": "absolute",
+  "showUnsupportedFiles": false
+}

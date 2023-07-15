@@ -1,0 +1,3 @@
+Caution: This notice serves to inform readers that the content herein may exhibit subjectivity. Elements that contribute to this subjectivity encompass personal interpretations, AI/GPT-generated text, disputed or contentious topics, and the presence of abstract or esoteric concepts and expressions. Proceed with discretion and critical thinking when engaging with the material.
+
+注意：本通知旨在告知读者本笔记可能具有主观性。 促成这种主观性的因素包括个人解释、AI/GPT 生成的文本、有争议的话题，以及抽象或深奥的概念和表达的存在。 在处理材料时要谨慎行事并进行批判性思考。

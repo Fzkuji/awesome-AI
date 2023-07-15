@@ -1,0 +1,11 @@
+## Link
+Link: https://www.nature.com/articles/s41586-022-05172-4
+
+## Abstract
+Improving the efficiency of algorithms for fundamental computations can have a widespread impact, as it can affect the overall speed of a large amount of computations. Matrix multiplication is one such primitive task, occurring in many systems—from neural networks to scientific computing routines. The automatic discovery of algorithms using machine learning offers the prospect of reaching beyond human intuition and outperforming the current best human-designed algorithms. However, automating the algorithm discovery procedure is intricate, as the space of possible algorithms is enormous. Here we report a deep reinforcement learning approach based on AlphaZero[1](https://www.nature.com/articles/s41586-022-05172-4#ref-CR1 "Silver, D. et al. A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play. Science 362, 1140–1144 (2018).") for discovering efficient and provably correct algorithms for the multiplication of arbitrary matrices. Our agent, AlphaTensor, is trained to play a single-player game where the objective is finding tensor decompositions within a finite factor space. AlphaTensor discovered algorithms that outperform the state-of-the-art complexity for many matrix sizes. Particularly relevant is the case of 4 × 4 matrices in a finite field, where AlphaTensor’s algorithm improves on Strassen’s two-level algorithm for the first time, to our knowledge, since its discovery 50 years ago[2](https://www.nature.com/articles/s41586-022-05172-4#ref-CR2 "Strassen, V. Gaussian elimination is not optimal. Numer. Math. 13, 354–356 (1969)."). We further showcase the flexibility of AlphaTensor through different use-cases: algorithms with state-of-the-art complexity for structured matrix multiplication and improved practical efficiency by optimizing matrix multiplication for runtime on specific hardware. Our results highlight AlphaTensor’s ability to accelerate the process of algorithmic discovery on a range of problems, and to optimize for different criteria.
+
+## 概述
+使用强化学习算法去寻找高阶矩阵乘法更快的计算方式。
+值得记住的是，人们通常学习的矩阵乘法对计算机来说上并不是最快的。
+解释与分析：
+https://baijiahao.baidu.com/s?id=1745920556302323820

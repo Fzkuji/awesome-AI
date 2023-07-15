@@ -1,0 +1,31 @@
+{
+	"nodes":[
+		{"id":"43f7bdecb5a2810c","x":220,"y":0,"width":250,"height":60,"type":"text","text":"多巴胺↑"},
+		{"id":"38fc55bd0ffb470c","x":600,"y":-60,"width":740,"height":300,"type":"text","text":"## 大脑\n黑质的致密部（A8）和其周遭（A9）——运动控制\n腹侧被盖区（A10）——奖励、动机\n下丘脑后叶（A11）\n弓形核（A12）和脑室旁核（A14）——抑制催乳激素贺尔蒙、催乳激素抑制素\n不定区（A13）——性腺激素释放激素的控制\n视网膜——对颜色敏感、并增加对比"},
+		{"type":"text","text":"多巴胺↓","id":"b26659a650e9a5b0","x":220,"y":300,"width":250,"height":60},
+		{"id":"37cd1a5272f471fc","x":1520,"y":0,"width":320,"height":60,"type":"text","text":"渴望（类似于反向传播的功能）"},
+		{"id":"36ac208b23cdccb8","x":1520,"y":300,"width":250,"height":140,"type":"text","text":"注意力无法集中\n无法控制肌肉\n颤抖"},
+		{"id":"c62d8401f0ace7fd","x":-320,"y":-160,"width":430,"height":50,"type":"text","text":"阻断不同的神经递质，如γ-氨基丁酸(GABA)"},
+		{"id":"790e6628effdad46","x":600,"y":-440,"width":520,"height":130,"type":"text","text":"## 周围神经系统(PNS)\n周围神经的 μ 受体——抑制疼痛信号的传递"},
+		{"id":"80d45178c630bb4a","x":-640,"y":-280,"width":250,"height":50,"type":"text","text":"内啡肽↑"},
+		{"id":"4cb8ff99790456d2","x":-920,"y":-310,"width":160,"height":110,"type":"text","text":"## 大脑\n垂体"},
+		{"id":"50479ca5bb3f1fd2","x":1520,"y":-405,"width":250,"height":50,"type":"text","text":"神经递质[P 物质](https://en.wikipedia.org/wiki/Substance_P)↓"},
+		{"id":"4c3402a358b98a43","x":-140,"y":-30,"width":250,"height":60,"type":"text","text":"吸毒"},
+		{"id":"9938e7dd0bd9ebea","x":-140,"y":120,"width":250,"height":60,"type":"text","text":"积极做事"},
+		{"id":"7af1ebdf3723cb2e","x":-445,"y":640,"width":250,"height":60,"type":"text","text":"action"},
+		{"id":"6f80832be96fc0f3","x":-30,"y":640,"width":250,"height":60,"type":"text","text":"intelligent system"}
+	],
+	"edges":[
+		{"id":"20decf9e44457162","fromNode":"4c3402a358b98a43","fromSide":"right","toNode":"43f7bdecb5a2810c","toSide":"left"},
+		{"id":"56d7ff739447b086","fromNode":"9938e7dd0bd9ebea","fromSide":"right","toNode":"43f7bdecb5a2810c","toSide":"left"},
+		{"id":"9b9fb37141c4ed5b","fromNode":"43f7bdecb5a2810c","fromSide":"right","toNode":"38fc55bd0ffb470c","toSide":"left"},
+		{"id":"a2d695a469da79ff","fromNode":"38fc55bd0ffb470c","fromSide":"right","toNode":"37cd1a5272f471fc","toSide":"left"},
+		{"id":"9b344ca07ee52bbd","fromNode":"b26659a650e9a5b0","fromSide":"right","toNode":"38fc55bd0ffb470c","toSide":"left"},
+		{"id":"8566eb5d59782b37","fromNode":"38fc55bd0ffb470c","fromSide":"right","toNode":"36ac208b23cdccb8","toSide":"left"},
+		{"id":"af1291b753d3e1fa","fromNode":"80d45178c630bb4a","fromSide":"right","toNode":"c62d8401f0ace7fd","toSide":"left"},
+		{"id":"97adc444ebce7421","fromNode":"c62d8401f0ace7fd","fromSide":"right","toNode":"43f7bdecb5a2810c","toSide":"left"},
+		{"id":"6481f4687ab1f867","fromNode":"4cb8ff99790456d2","fromSide":"right","toNode":"80d45178c630bb4a","toSide":"left"},
+		{"id":"2aa6582cbce06bbf","fromNode":"80d45178c630bb4a","fromSide":"right","toNode":"790e6628effdad46","toSide":"left"},
+		{"id":"bfec76e92a45bd84","fromNode":"790e6628effdad46","fromSide":"right","toNode":"50479ca5bb3f1fd2","toSide":"left"}
+	]
+}

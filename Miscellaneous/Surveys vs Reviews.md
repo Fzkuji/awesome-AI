@@ -1,0 +1,3 @@
+A **survey article** aims to summarize the evolution of a theory, concept, or technique from inception to the current state of the art. It focuses on collecting and presenting technical information, often to describe the history of discoveries about a given topic. A survey article, therefore, is typically shorter than a review article.
+
+A **literature** **review** (sometimes called a narrative review) also involves the collection of all the relevant literature on a topic. However, unlike a survey article, it additionally discusses the metadata from the surveyed literature to technically compare different studies, draws conclusions on their weaknesses and strengths, and proposes future directions.
