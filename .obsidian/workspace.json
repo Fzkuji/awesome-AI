@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Artificial intelligence/Artificial Intelligence.md",
+                "file": "2. Mathematics/Mathematics.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Artificial intelligence/Artificial Intelligence.md",
+                "file": "2. Mathematics/Mathematics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Artificial intelligence/Artificial Intelligence.md",
+                "file": "2. Mathematics/Mathematics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Artificial intelligence/Artificial Intelligence.md"
+                "file": "2. Mathematics/Mathematics.md"
               }
             }
           }
@@ -150,14 +150,17 @@
   },
   "active": "7aa3f44406960581",
   "lastOpenFiles": [
+    "5. Information science/Information filtering/Recommender system.md",
+    "3. Computer science/Computer science.md",
+    "5. Information science/Information science.md",
     "README.md",
+    "4. Artificial intelligence/Artificial Intelligence.md",
     "1. Philosophy/Philosophy of language/Philosophy of language.md",
     "Note warning.md",
     "Untitled.md",
     "PhD/Rec.md",
     "4. Artificial intelligence/3. Applications/Applications.md",
     "PhD/Rec CAJ.md",
-    "5. Information science/Information filtering/Recommender system.md",
     "4. Artificial intelligence/3. Applications/Computer graphics/Computer graphics.md",
     "5. Information science/Information retrieval/Information retrieval.md",
     "4. Artificial intelligence/3. Applications/Medical Diagnosis/Medical Diagnosis.md",
@@ -167,7 +170,6 @@
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Machine learning.md",
     "MSc/MSc Dissertation Project/Papers/Introduction.md",
     "4. Artificial intelligence/2. Approaches/Artificial neural network/+Papers/Discovering faster matrix multiplication algorithms with reinforcement learning.md",
-    "5. Information science/Information science.md",
     "4. Artificial intelligence/3. Applications/Recommender system/MTL4Rec.md",
     "PhD/华为实习/时间表.md",
     "PhD/Untitled.md",
@@ -178,8 +180,6 @@
     "PhD/华为实习/实习会议.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/MMoE.md",
     "Miscellaneous/Baselines vs Benchmarks.md",
-    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/Special Multi-Task Learning.md",
-    "Miscellaneous/Templates/Paper.md",
     "PhD/论文审稿",
     "PhD/华为实习",
     "2023-03-22_log.txt",

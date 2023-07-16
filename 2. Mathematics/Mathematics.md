@@ -1,4 +1,5 @@
 ## Contents
+
 0. [Foundations of mathematics](0.%20Foundations%20of%20mathematics/Foundations%20of%20mathematics.md)
 	- [Mathematical proof](0.%20Foundations%20of%20mathematics/Mathematical%20proof/Mathematical%20proof.md)
 1. [Pure mathematics](1.%20Pure%20mathematics/Pure%20mathematics.md)

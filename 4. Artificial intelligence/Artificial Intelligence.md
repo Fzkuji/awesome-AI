@@ -4,7 +4,7 @@
 
 ## Structure
 
-- [Artificial Intelligence](.md)
+- [Artificial Intelligence](Artificial%20Intelligence.md)
 	- [Major goals](1.%20Major%20goals/Major%20goals.md)
 		- [Action](1.%20Major%20goals/Action/Action.md)
 		- [Affection](1.%20Major%20goals/Affection/Affection.md)
