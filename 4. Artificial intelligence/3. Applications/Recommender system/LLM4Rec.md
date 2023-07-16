@@ -203,8 +203,8 @@ or recommendation
 
 | Name  | Paper                                                                 | Publication    | Repository | Link                                                 |
 | ----- | --------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- |
-|       | [#CTRL Connect Tabular and Language Model for CTR Prediction](#CTRL%20Connect%20Tabular%20and%20Language%20Model%20for%20CTR%20Prediction)       | arXiv preprint |            | [arXiv:2306.02841](https://arxiv.org/abs/2306.02841) |
-| Atlas | [#Atlas Few-shot Learning with Retrieval Augmented Language Models](#Atlas%20Few-shot%20Learning%20with%20Retrieval%20Augmented%20Language%20Models) | arXiv preprint |            | [arXiv:2208.03299](https://arxiv.org/abs/2208.03299) |
+|       | [CTRL Connect Tabular and Language Model for CTR Prediction](#CTRL%20Connect%20Tabular%20and%20Language%20Model%20for%20CTR%20Prediction)       | arXiv preprint |            | [arXiv:2306.02841](https://arxiv.org/abs/2306.02841) |
+| Atlas | [Atlas Few-shot Learning with Retrieval Augmented Language Models](#Atlas%20Few-shot%20Learning%20with%20Retrieval%20Augmented%20Language%20Models) | arXiv preprint |            | [arXiv:2208.03299](https://arxiv.org/abs/2208.03299) |
 
 
 
@@ -215,9 +215,9 @@ or recommendation
 
 | Name         | Paper                                                                               | Publication    | Repository                                     | Link                                                 |
 | ------------ | ----------------------------------------------------------------------------------- | -------------- | ---------------------------------------------- | ---------------------------------------------------- |
-| [DSI](+Papers/DSI.md)      | [#Transformer Memory as a Differentiable Search Index](#Transformer%20Memory%20as%20a%20Differentiable%20Search%20Index)                                                   | NeurIPS 2022 |                                                                           | [arXiv:2202.06991](https://arxiv.org/abs/2202.06991) |
-| [Chat-REC](+Papers/Chat-REC.md) | [#Chat-REC Towards Interactive and Explainable LLMs-Augmented Recommender System](#Chat-REC%20Towards%20Interactive%20and%20Explainable%20LLMs-Augmented%20Recommender%20System) | arXiv preprint |                                                | [arXiv:2303.14524](https://arxiv.org/abs/2303.14524) |
-| LLMRank      | [#Large Language Models are Zero-Shot Rankers for Recommender Systems](#Large%20Language%20Models%20are%20Zero-Shot%20Rankers%20for%20Recommender%20Systems)            | arXiv preprint | [LLMRank](https://github.com/RUCAIBox/LLMRank) | [arXiv:2305.08845](https://arxiv.org/abs/2305.08845) |
+| [DSI](+Papers/DSI.md)      | [Transformer Memory as a Differentiable Search Index](#Transformer%20Memory%20as%20a%20Differentiable%20Search%20Index)                                                   | NeurIPS 2022 |                                                                           | [arXiv:2202.06991](https://arxiv.org/abs/2202.06991) |
+| [Chat-REC](+Papers/Chat-REC.md) | [Chat-REC Towards Interactive and Explainable LLMs-Augmented Recommender System](#Chat-REC%20Towards%20Interactive%20and%20Explainable%20LLMs-Augmented%20Recommender%20System) | arXiv preprint |                                                | [arXiv:2303.14524](https://arxiv.org/abs/2303.14524) |
+| LLMRank      | [Large Language Models are Zero-Shot Rankers for Recommender Systems](#Large%20Language%20Models%20are%20Zero-Shot%20Rankers%20for%20Recommender%20Systems)            | arXiv preprint | [LLMRank](https://github.com/RUCAIBox/LLMRank) | [arXiv:2305.08845](https://arxiv.org/abs/2305.08845) |
 
 
 
@@ -225,8 +225,8 @@ or recommendation
 
 | Name | Paper                                                   | Publication    | Repository | Link                                                 |
 | ---- | ------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- |
-|      | [#Is ChatGPT a Good Recommender? A Preliminary Study](#Is%20ChatGPT%20a%20Good%20Recommender?%20A%20Preliminary%20Study) | arXiv preprint |            | [arXiv:2304.10149](https://arxiv.org/abs/2304.10149) |
-|      | [#Do LLMs Understand User Preferences? Evaluating LLMs On User Rating Prediction](#Do%20LLMs%20Understand%20User%20Preferences?%20Evaluating%20LLMs%20On%20User%20Rating%20Prediction) | arXiv preprint |            | [arXiv:2305.06474](https://arxiv.org/abs/2305.06474) |
+|      | [Is ChatGPT a Good Recommender? A Preliminary Study](#Is%20ChatGPT%20a%20Good%20Recommender?%20A%20Preliminary%20Study) | arXiv preprint |            | [arXiv:2304.10149](https://arxiv.org/abs/2304.10149) |
+|      | [Do LLMs Understand User Preferences? Evaluating LLMs On User Rating Prediction](#Do%20LLMs%20Understand%20User%20Preferences?%20Evaluating%20LLMs%20On%20User%20Rating%20Prediction) | arXiv preprint |            | [arXiv:2305.06474](https://arxiv.org/abs/2305.06474) |
 
 
 #### CTR prediction
@@ -235,8 +235,8 @@ Click-through rate (CTR) prediction
 
 | Name | Paper                                                           | Publication    | Repository | Link                                                 |
 | ---- | --------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- |
-|      | [#CTRL Connect Tabular and Language Model for CTR Prediction](#CTRL%20Connect%20Tabular%20and%20Language%20Model%20for%20CTR%20Prediction) | arXiv preprint |            | [arXiv:2306.02841](https://arxiv.org/abs/2306.02841) | 
-| KAR  | [#Towards Open-World Recommendation with Knowledge Augmentation from Large Language Models](#Towards%20Open-World%20Recommendation%20with%20Knowledge%20Augmentation%20from%20Large%20Language%20Models) | arXiv preprint |            | [arXiv:2306.10933](https://arxiv.org/abs/2306.10933) |
+|      | [CTRL Connect Tabular and Language Model for CTR Prediction](#CTRL%20Connect%20Tabular%20and%20Language%20Model%20for%20CTR%20Prediction) | arXiv preprint |            | [arXiv:2306.02841](https://arxiv.org/abs/2306.02841) | 
+| KAR  | [Towards Open-World Recommendation with Knowledge Augmentation from Large Language Models](#Towards%20Open-World%20Recommendation%20with%20Knowledge%20Augmentation%20from%20Large%20Language%20Models) | arXiv preprint |            | [arXiv:2306.10933](https://arxiv.org/abs/2306.10933) |
 
 
 
@@ -244,9 +244,9 @@ Click-through rate (CTR) prediction
 
 | Name      | Paper                                                           | Publication    | Repository                                                          | Link                                                 |
 | --------- | --------------------------------------------------------------- | -------------- | ------------------------------------------------------------------- | ---------------------------------------------------- |
-| [DSI](+Papers/DSI.md)   | [#Transformer Memory as a Differentiable Search Index](#Transformer%20Memory%20as%20a%20Differentiable%20Search%20Index)        | NeurIPS 2022   | [DSI-transformers](https://github.com/ArvinZhuang/DSI-transformers) | [arXiv:2202.06991](https://arxiv.org/abs/2202.06991) |
-| [TIGER](+Papers/TIGER.md) | [#Recommender Systems with Generative Retrieval](#Recommender%20Systems%20with%20Generative%20Retrieval)              | arXiv preprint |                                                                     | [arXiv:2305.05065](https://arxiv.org/abs/2305.05065) |
-|           | [#How to Index Item IDs for Recommendation Foundation Models](#How%20to%20Index%20Item%20IDs%20for%20Recommendation%20Foundation%20Models) | arXiv preprint |                                                                     | [arXiv:2305.06569](https://arxiv.org/abs/2305.06569) |
+| [DSI](+Papers/DSI.md)   | [Transformer Memory as a Differentiable Search Index](#Transformer%20Memory%20as%20a%20Differentiable%20Search%20Index)        | NeurIPS 2022   | [DSI-transformers](https://github.com/ArvinZhuang/DSI-transformers) | [arXiv:2202.06991](https://arxiv.org/abs/2202.06991) |
+| [TIGER](+Papers/TIGER.md) | [Recommender Systems with Generative Retrieval](#Recommender%20Systems%20with%20Generative%20Retrieval)              | arXiv preprint |                                                                     | [arXiv:2305.05065](https://arxiv.org/abs/2305.05065) |
+|           | [How to Index Item IDs for Recommendation Foundation Models](#How%20to%20Index%20Item%20IDs%20for%20Recommendation%20Foundation%20Models) | arXiv preprint |                                                                     | [arXiv:2305.06569](https://arxiv.org/abs/2305.06569) |
 
 
 
@@ -256,14 +256,14 @@ Click-through rate (CTR) prediction
 
 | Name | Paper                                                   | Publication    | Repository | Link                                                 |
 | ---- | ------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- |
-|      | [#Is ChatGPT a Good Recommender? A Preliminary Study](#Is%20ChatGPT%20a%20Good%20Recommender?%20A%20Preliminary%20Study) | arXiv preprint |            | [arXiv:2304.10149](https://arxiv.org/abs/2304.10149) |
+|      | [Is ChatGPT a Good Recommender? A Preliminary Study](#Is%20ChatGPT%20a%20Good%20Recommender?%20A%20Preliminary%20Study) | arXiv preprint |            | [arXiv:2304.10149](https://arxiv.org/abs/2304.10149) |
 
 
 #### Review summarization
 
 | Name | Paper                                                   | Publication    | Repository | Link                                                 |
 | ---- | ------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- |
-|      | [#Is ChatGPT a Good Recommender? A Preliminary Study](#Is%20ChatGPT%20a%20Good%20Recommender?%20A%20Preliminary%20Study) | arXiv preprint |            | [arXiv:2304.10149](https://arxiv.org/abs/2304.10149) |
+|      | [Is ChatGPT a Good Recommender? A Preliminary Study](#Is%20ChatGPT%20a%20Good%20Recommender?%20A%20Preliminary%20Study) | arXiv preprint |            | [arXiv:2304.10149](https://arxiv.org/abs/2304.10149) |
 
 ## Training of LLM4Rec
 
@@ -277,9 +277,9 @@ Click-through rate (CTR) prediction
 
 | Name        | Paper                                                                                                      | Publication    | Repository                                      | Link                                                 |
 | ----------- | ---------------------------------------------------------------------------------------------------------- | -------------- | ----------------------------------------------- | ---------------------------------------------------- |
-| [TALLRec](+Papers/TALLRec.md) | [#TALLRec An Effective and Efficient Tuning Framework to Align Large Language Model with Recommendation](#TALLRec%20An%20Effective%20and%20Efficient%20Tuning%20Framework%20to%20Align%20Large%20Language%20Model%20with%20Recommendation) | arXiv preprint | [TALLRec](https://github.com/SAI990323/TALLRec) | [arXiv:2305.00447](https://arxiv.org/abs/2305.00447) |
-|      | [#Web Content Filtering through knowledge distillation of Large Language Models](#Web%20Content%20Filtering%20through%20knowledge%20distillation%20of%20Large%20Language%20Models) | arXiv preprint |            | [arXiv:2305.05027](https://arxiv.org/abs/2305.05027) |
-|             | [#Recommendation as Instruction Following A Large Language Model Empowered Recommendation Approach](#Recommendation%20as%20Instruction%20Following%20A%20Large%20Language%20Model%20Empowered%20Recommendation%20Approach)      | arXiv preprint |                                                                           | [arXiv:2305.07001](https://arxiv.org/abs/2305.07001) | 
+| [TALLRec](+Papers/TALLRec.md) | [TALLRec An Effective and Efficient Tuning Framework to Align Large Language Model with Recommendation](#TALLRec%20An%20Effective%20and%20Efficient%20Tuning%20Framework%20to%20Align%20Large%20Language%20Model%20with%20Recommendation) | arXiv preprint | [TALLRec](https://github.com/SAI990323/TALLRec) | [arXiv:2305.00447](https://arxiv.org/abs/2305.00447) |
+|      | [Web Content Filtering through knowledge distillation of Large Language Models](#Web%20Content%20Filtering%20through%20knowledge%20distillation%20of%20Large%20Language%20Models) | arXiv preprint |            | [arXiv:2305.05027](https://arxiv.org/abs/2305.05027) |
+|             | [Recommendation as Instruction Following A Large Language Model Empowered Recommendation Approach](#Recommendation%20as%20Instruction%20Following%20A%20Large%20Language%20Model%20Empowered%20Recommendation%20Approach)      | arXiv preprint |                                                                           | [arXiv:2305.07001](https://arxiv.org/abs/2305.07001) | 
 
 
 
@@ -287,14 +287,14 @@ Click-through rate (CTR) prediction
 
 | Name | Paper                                                                              | Publication    | Repository | Link                                                 |
 | ---- | ---------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- |
-|      | [#Web Content Filtering through knowledge distillation of Large Language Models](#Web%20Content%20Filtering%20through%20knowledge%20distillation%20of%20Large%20Language%20Models) | arXiv preprint |            | [arXiv:2305.05027](https://arxiv.org/abs/2305.05027) |
+|      | [Web Content Filtering through knowledge distillation of Large Language Models](#Web%20Content%20Filtering%20through%20knowledge%20distillation%20of%20Large%20Language%20Models) | arXiv preprint |            | [arXiv:2305.05027](https://arxiv.org/abs/2305.05027) |
 
 
 ## Benchmarks
 
 | Name   | Paper                                                         | Publication    | Repository                                      | Link                                                 |
 | ------ | ------------------------------------------------------------- | -------------- | ----------------------------------------------- | ---------------------------------------------------- |
-| OpenP5 | [#OpenP5 Benchmarking Foundation Models for Recommendation](#OpenP5%20Benchmarking%20Foundation%20Models%20for%20Recommendation) | arXiv preprint | [OpenP5](https://github.com/agiresearch/OpenP5) | [arXiv:2306.11134](https://arxiv.org/abs/2306.11134) | 
+| OpenP5 | [OpenP5 Benchmarking Foundation Models for Recommendation](#OpenP5%20Benchmarking%20Foundation%20Models%20for%20Recommendation) | arXiv preprint | [OpenP5](https://github.com/agiresearch/OpenP5) | [arXiv:2306.11134](https://arxiv.org/abs/2306.11134) | 
 
 
 
@@ -306,8 +306,8 @@ Click-through rate (CTR) prediction
 
 | Name   | Paper                                                                                                    | Publication    | Repository                                           | Link                                                 |
 | ------ | -------------------------------------------------------------------------------------------------------- | -------------- | ---------------------------------------------------- | ---------------------------------------------------- |
-| iEvaLM | [#Rethinking the Evaluation for Conversational Recommendation in the Era of Large Language Models](#Rethinking%20the%20Evaluation%20for%20Conversational%20Recommendation%20in%20the%20Era%20of%20Large%20Language%20Models)     | arXiv preprint | [iEvaLM-CRS](https://github.com/RUCAIBox/iEvaLM-CRS) | [arXiv:2305.13112](https://arxiv.org/abs/2305.13112) |
-|        | [#A Preliminary Study of ChatGPT on News Recommendation Personalization, Provider Fairness, Fake News](#A%20Preliminary%20Study%20of%20ChatGPT%20on%20News%20Recommendation%20Personalization,%20Provider%20Fairness,%20Fake%20News) | arXiv preprint |                                                      | [arXiv:2306.10702](https://arxiv.org/abs/2306.10702) | 
+| iEvaLM | [Rethinking the Evaluation for Conversational Recommendation in the Era of Large Language Models](#Rethinking%20the%20Evaluation%20for%20Conversational%20Recommendation%20in%20the%20Era%20of%20Large%20Language%20Models)     | arXiv preprint | [iEvaLM-CRS](https://github.com/RUCAIBox/iEvaLM-CRS) | [arXiv:2305.13112](https://arxiv.org/abs/2305.13112) |
+|        | [A Preliminary Study of ChatGPT on News Recommendation Personalization, Provider Fairness, Fake News](#A%20Preliminary%20Study%20of%20ChatGPT%20on%20News%20Recommendation%20Personalization,%20Provider%20Fairness,%20Fake%20News) | arXiv preprint |                                                      | [arXiv:2306.10702](https://arxiv.org/abs/2306.10702) | 
 
 
 
@@ -315,8 +315,8 @@ Click-through rate (CTR) prediction
 
 | Name    | Paper                                                                                               | Publication    | Repository                                        | Link                                                 |
 | ------- | --------------------------------------------------------------------------------------------------- | -------------- | ------------------------------------------------- | ---------------------------------------------------- |
-| FaiRLLM | [#Is ChatGPT Fair for Recommendation? Evaluating Fairness in Large Language Model Recommendation](#Is%20ChatGPT%20Fair%20for%20Recommendation?%20Evaluating%20Fairness%20in%20Large%20Language%20Model%20Recommendation) | arXiv preprint | [FaiRLLM](https://github.com/jizhi-zhang/FaiRLLM) | [arXiv:2305.07609](https://arxiv.org/abs/2305.07609) | 
-|        | [#A Preliminary Study of ChatGPT on News Recommendation Personalization, Provider Fairness, Fake News](#A%20Preliminary%20Study%20of%20ChatGPT%20on%20News%20Recommendation%20Personalization,%20Provider%20Fairness,%20Fake%20News) | arXiv preprint |                                                      | [arXiv:2306.10702](https://arxiv.org/abs/2306.10702) | 
+| FaiRLLM | [Is ChatGPT Fair for Recommendation? Evaluating Fairness in Large Language Model Recommendation](#Is%20ChatGPT%20Fair%20for%20Recommendation?%20Evaluating%20Fairness%20in%20Large%20Language%20Model%20Recommendation) | arXiv preprint | [FaiRLLM](https://github.com/jizhi-zhang/FaiRLLM) | [arXiv:2305.07609](https://arxiv.org/abs/2305.07609) | 
+|        | [A Preliminary Study of ChatGPT on News Recommendation Personalization, Provider Fairness, Fake News](#A%20Preliminary%20Study%20of%20ChatGPT%20on%20News%20Recommendation%20Personalization,%20Provider%20Fairness,%20Fake%20News) | arXiv preprint |                                                      | [arXiv:2306.10702](https://arxiv.org/abs/2306.10702) | 
 
 
 
@@ -324,7 +324,7 @@ Click-through rate (CTR) prediction
 
 | Name    | Paper                                                                                               | Publication    | Repository                                        | Link                                                 |
 | ------- | --------------------------------------------------------------------------------------------------- | -------------- | ------------------------------------------------- | ---------------------------------------------------- |
-|        | [#A Preliminary Study of ChatGPT on News Recommendation Personalization, Provider Fairness, Fake News](#A%20Preliminary%20Study%20of%20ChatGPT%20on%20News%20Recommendation%20Personalization,%20Provider%20Fairness,%20Fake%20News) | arXiv preprint |                                                      | [arXiv:2306.10702](https://arxiv.org/abs/2306.10702) | 
+|        | [A Preliminary Study of ChatGPT on News Recommendation Personalization, Provider Fairness, Fake News](#A%20Preliminary%20Study%20of%20ChatGPT%20on%20News%20Recommendation%20Personalization,%20Provider%20Fairness,%20Fake%20News) | arXiv preprint |                                                      | [arXiv:2306.10702](https://arxiv.org/abs/2306.10702) | 
 
 
 
@@ -340,13 +340,13 @@ Click-through rate (CTR) prediction
 
 | Name    | Paper                                                                                          | Publication    | Repository                                      | Link                                                 |
 | ------- | ---------------------------------------------------------------------------------------------- | -------------- | ----------------------------------------------- | ---------------------------------------------------- |
-| GeneRec | [#Generative Recommendation Towards Next-generation Recommender Paradigm](#Generative%20Recommendation%20Towards%20Next-generation%20Recommender%20Paradigm)                    | arXiv preprint | [GeneRec](https://github.com/Linxyhaha/GeneRec) | [arXiv:2304.03516](https://arxiv.org/abs/2304.03516) |
+| GeneRec | [Generative Recommendation Towards Next-generation Recommender Paradigm](#Generative%20Recommendation%20Towards%20Next-generation%20Recommender%20Paradigm)                    | arXiv preprint | [GeneRec](https://github.com/Linxyhaha/GeneRec) | [arXiv:2304.03516](https://arxiv.org/abs/2304.03516) |
 
 ### Multimodal LLM4Rec
 
 | Name | Paper                                                           | Publication    | Repository | Link                                                 |
 | ---- | --------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- |
-|      | [#CTRL Connect Tabular and Language Model for CTR Prediction](#CTRL%20Connect%20Tabular%20and%20Language%20Model%20for%20CTR%20Prediction) | arXiv preprint |            | [arXiv:2306.02841](https://arxiv.org/abs/2306.02841) | 
+|      | [CTRL Connect Tabular and Language Model for CTR Prediction](#CTRL%20Connect%20Tabular%20and%20Language%20Model%20for%20CTR%20Prediction) | arXiv preprint |            | [arXiv:2306.02841](https://arxiv.org/abs/2306.02841) | 
 
 
 ### RLHF
@@ -372,7 +372,7 @@ Click-through rate (CTR) prediction
 
 | Name   | Paper                                                                               | Publication    | Repository | Link                                                 | Classification                                     |
 | ------ | ----------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | -------------------------------------------------- |
-| InPars | [#InPars Data Augmentation for Information Retrieval using Large Language Models](#InPars%20Data%20Augmentation%20for%20Information%20Retrieval%20using%20Large%20Language%20Models) | arXiv preprint |            | [arXiv:2202.06991](https://arxiv.org/abs/2202.06991) | [#Information retrieval](#Information%20retrieval), [#Data augmentation](#Data%20augmentation) | 
+| InPars | [InPars Data Augmentation for Information Retrieval using Large Language Models](#InPars%20Data%20Augmentation%20for%20Information%20Retrieval%20using%20Large%20Language%20Models) | arXiv preprint |            | [arXiv:2202.06991](https://arxiv.org/abs/2202.06991) | [#Information retrieval](#Information%20retrieval), [#Data augmentation](#Data%20augmentation) | 
 
 
 
@@ -382,7 +382,7 @@ Click-through rate (CTR) prediction
 
 | Name    | Paper                                                    | Publication  | Repository                                          | Link                                                 | Classification                                 |
 | ------- | -------------------------------------------------------- | ------------ | --------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------- |
-| [DSI](+Papers/DSI.md) | [#Transformer Memory as a Differentiable Search Index](#Transformer%20Memory%20as%20a%20Differentiable%20Search%20Index) | NeurIPS 2022 | [inpars](https://github.com/zetaalphavector/inpars) | [arXiv:2202.05144](https://arxiv.org/abs/2202.05144) | [#Information retrieval](#Information%20retrieval), [#ID generation](#ID%20generation) |
+| [DSI](+Papers/DSI.md) | [Transformer Memory as a Differentiable Search Index](#Transformer%20Memory%20as%20a%20Differentiable%20Search%20Index) | NeurIPS 2022 | [inpars](https://github.com/zetaalphavector/inpars) | [arXiv:2202.05144](https://arxiv.org/abs/2202.05144) | [#Information retrieval](#Information%20retrieval), [#ID generation](#ID%20generation) |
 
 
 本质是让LLMs去做[Information retrieval](../../../5.%20Information%20science/Information%20retrieval/Information%20retrieval.md)，之前的模型，无论是传统模型还是机器学习模型，都是对问题和文档进行一对一比较，最后挑选相关性较高的结果。
@@ -397,7 +397,7 @@ Click-through rate (CTR) prediction
 
 | Name | Paper                                                               | Publication | Repository                                                                                         | Link                                                 | Classification |
 | ---- | ------------------------------------------------------------------- | ----------- | -------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | -------------- |
-|      | [#Improving Passage Retrieval with Zero-Shot Question Generation](#Improving%20Passage%20Retrieval%20with%20Zero-Shot%20Question%20Generation) | EMNLP 2022  | [unsupervised-passage-reranking](https://github.com/DevSinghSachan/unsupervised-passage-reranking) | [arXiv:2204.07496](https://arxiv.org/abs/2204.07496) | [#Information retrieval](#Information%20retrieval), [#Ranking](#Ranking)   |
+|      | [Improving Passage Retrieval with Zero-Shot Question Generation](#Improving%20Passage%20Retrieval%20with%20Zero-Shot%20Question%20Generation) | EMNLP 2022  | [unsupervised-passage-reranking](https://github.com/DevSinghSachan/unsupervised-passage-reranking) | [arXiv:2204.07496](https://arxiv.org/abs/2204.07496) | [#Information retrieval](#Information%20retrieval), [#Ranking](#Ranking)   |
 
 
 本文提出了一个无监督的retriever-reranker pipeline。Retriever基于无监督的模型，如BM25、Contriever等，reranker作者尝试了3B参数量的T5系列模型以及2.7B参数量的GPT-neo。Reranker的训练，仍然是通过让大模型生成和段落对应的query，无监督地获取到大量的标注数据对。作者也发现由于使用了LLM，整个pipeline存在高延迟的问题。
@@ -409,7 +409,7 @@ Click-through rate (CTR) prediction
 
 | Name  | Paper                                                                 | Publication    | Repository | Link                                                 | Classification |
 | ----- | --------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | -------------- |
-| Atlas | [#Atlas Few-shot Learning with Retrieval Augmented Language Models](#Atlas%20Few-shot%20Learning%20with%20Retrieval%20Augmented%20Language%20Models) | arXiv preprint |            | [arXiv:2208.03299](https://arxiv.org/abs/2208.03299) |  [#Information retrieval](#Information%20retrieval)              |
+| Atlas | [Atlas Few-shot Learning with Retrieval Augmented Language Models](#Atlas%20Few-shot%20Learning%20with%20Retrieval%20Augmented%20Language%20Models) | arXiv preprint |            | [arXiv:2208.03299](https://arxiv.org/abs/2208.03299) |  [#Information retrieval](#Information%20retrieval)              |
 
 
 设计了4种损失函数，用于训练LLM来做推荐任务。模型架构包括Retriever和Ranker，其中Ranker就是LLM。
