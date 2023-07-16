@@ -1,16 +1,16 @@
 
 - **Propositional calculus** is a branch of logic. It is also called **propositional logic**, statement logic, sentential calculus, sentential logic, or sometimes **zeroth-order logic**.
-- It deals with [propositions](1.%20Philosophy/Philosophy%20of%20language/Concepts/Proposition.md) (which can be true or false) and relations between propositions, including the construction of arguments based on them. [^1.]
+- It deals with [propositions](1_Philosophy/Philosophy%20of%20language/Concepts/Proposition.md) (which can be true or false) and relations between propositions, including the construction of arguments based on them. [^1.]
 	**命题演算**是考虑**命题**之间关系的理论。一个命题可以理解为一个句子，因此命题演算是句子和句子之间的推导。
 - It is a mathematical system for reasoning about propositions and how they relate to one another. [^2.]
-- Every statement in propositional logic consists of [propositional variables](1.%20Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/Propositional%20calculus/Propositional%20variable.md) combined via [propositional connectives](1.%20Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/Propositional%20calculus/Logical%20connective/Logical%20connective.md). [^2.]
+- Every statement in propositional logic consists of [propositional variables](1_Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/Propositional%20calculus/Propositional%20variable.md) combined via [propositional connectives](1_Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/Propositional%20calculus/Logical%20connective/Logical%20connective.md). [^2.]
 	<u>斯坦福课上说一个statement是命题和逻辑连接词的组合。我更愿意说：一个复合proposition是多个原子proposition和逻辑连接词的组合。</u>
 
-因为命题演算的单位是一整个句子，因此也被叫做零阶逻辑。而谓词逻辑，因为考虑的是一个句子内部的逻辑，因此被称作[First-order logic](1.%20Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/First-order%20logic/First-order%20logic.md)。 ^5cd9f2
+因为命题演算的单位是一整个句子，因此也被叫做零阶逻辑。而谓词逻辑，因为考虑的是一个句子内部的逻辑，因此被称作[First-order logic](1_Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/First-order%20logic/First-order%20logic.md)。 ^5cd9f2
 
 That said, propositional logic isn't expressive enough to capture all statements. For that, we need something more powerful.
 
-大体结构为：[Sentence](1.%20Philosophy/Philosophy%20of%20language/Concepts/Sentence.md) -> [Statement](1.%20Philosophy/Philosophy%20of%20language/Concepts/Statement.md) -> [Proposition](1.%20Philosophy/Philosophy%20of%20language/Concepts/Proposition.md) -> Predicate
+大体结构为：[Sentence](1_Philosophy/Philosophy%20of%20language/Concepts/Sentence.md) -> [Statement](1_Philosophy/Philosophy%20of%20language/Concepts/Statement.md) -> [Proposition](1_Philosophy/Philosophy%20of%20language/Concepts/Proposition.md) -> Predicate
 
 # Operator precedence
 
@@ -70,7 +70,7 @@ That is we want to change form from $\neg (p \wedge q)$ to $\neg p \vee \neg q$.
 ^443af0
 1. [Implication](Resources/0.%20Philosophy/Implication.pdf)
 $$p \to q \equiv \neg p \vee q$$
-2. [Contraposition](1.%20Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/Propositional%20calculus/Logical%20consequence%E2%80%8E/Inference%E2%80%8E/Immediate%20inference%E2%80%8E/Contraposition.md)
+2. [Contraposition](1_Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/Propositional%20calculus/Logical%20consequence‎/Inference‎/Immediate%20inference‎/Contraposition.md)
 $$p \to q \equiv \neg q \vee \neg p$$
 
 [^1.]: Wikipedia contributors. ["Propositional calculus."]([https://en.wikipedia.org/w/index.php?title=Propositional_calculus&oldid=1129332935](https://en.wikipedia.org/w/index.php?title=Propositional_calculus&oldid=1129332935)) _Wikipedia, The Free Encyclopedia_. Wikipedia, The Free Encyclopedia, 24 Dec. 2022. Web. 22 Feb. 2023.

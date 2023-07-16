@@ -24,10 +24,10 @@ Every even integer greater than 2 can be written as the sum of two primes.
 
 ## Example
 
-在[Sentence](1.%20Philosophy/Philosophy%20of%20language/Concepts/Sentence.md)词条中，有三个例子，而在本词条中，只有最后一个符合statement的定义。
+在[Sentence](1_Philosophy/Philosophy%20of%20language/Concepts/Sentence.md)词条中，有三个例子，而在本词条中，只有最后一个符合statement的定义。
 
 Examples:
 - 二加二等于四
 - Two plus two equals four.
 
-值得注意的是，这两个例子表达的是一个意思，但是使用了不同的语言（或者说不同的表达）。[Proposition](1.%20Philosophy/Philosophy%20of%20language/Concepts/Proposition.md)词条进一步讨论了这个问题。
+值得注意的是，这两个例子表达的是一个意思，但是使用了不同的语言（或者说不同的表达）。[Proposition](1_Philosophy/Philosophy%20of%20language/Concepts/Proposition.md)词条进一步讨论了这个问题。

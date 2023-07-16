@@ -5,7 +5,7 @@ Function的通用定义见：[Function](Resources/2.%20Mathematics/1.%20Pure%20m
 ## Function in first-order logic
 ^162e9c
 
-[First-order logic](1.%20Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/First-order%20logic/First-order%20logic.md) allows functions that return objects associated with other objects.
+[First-order logic](1_Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/First-order%20logic/First-order%20logic.md) allows functions that return objects associated with other objects.
 - Functions can take in any number of arguments, but always return a single value.
 - Functions evaluate to objects, not propositions.
 

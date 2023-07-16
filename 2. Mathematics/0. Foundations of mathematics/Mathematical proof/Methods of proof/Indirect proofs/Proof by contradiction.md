@@ -4,6 +4,6 @@
 
 ## Proof by contradiction in propositional logic
 
-在[Propositional logic](1.%20Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/Propositional%20calculus/Propositional%20logic.md)中，反证法表示如下：
+在[Propositional logic](1_Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/Propositional%20calculus/Propositional%20logic.md)中，反证法表示如下：
 $\left ( \neg p \to \bot  \right ) \to p$
 

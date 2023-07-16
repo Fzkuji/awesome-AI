@@ -31,10 +31,10 @@ Writing a comprehensive book about all the knowledge in philosophy is a monument
 	- Epistemology (knowledge, belief, skepticism, etc.)
 	- Ethics (normative ethics, metaethics, applied ethics, etc.)
 	- Aesthetics (art, beauty, taste, etc.)
-	- [Logic](1.%20Philosophy/Logic/Logic.md) ([formal logic](1.%20Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Formal%20Logic.md), [informal logic](1.%20Philosophy/Logic/Systems%20of%20logic/Informal%20Logic/Informal%20Logic.md), fallacies, etc.)
+	- [Logic](1_Philosophy/Logic/Logic.md) ([formal logic](1_Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Formal%20Logic.md), [informal logic](1_Philosophy/Logic/Systems%20of%20logic/Informal%20Logic/Informal%20Logic.md), fallacies, etc.)
 8. Philosophy of Specific Disciplines
 	- Philosophy of Science (scientific method, realism/anti-realism, etc.)
-	- [Philosophy of language](1.%20Philosophy/Philosophy%20of%20language/Philosophy%20of%20language.md) (meaning, reference, speech acts, etc.)
+	- [Philosophy of language](1_Philosophy/Philosophy%20of%20language/Philosophy%20of%20language.md) (meaning, reference, speech acts, etc.)
 	- Philosophy of Mind (consciousness, mental states, etc.)
 	- Philosophy of Religion (arguments for/against God's existence, etc.)
 	- Political Philosophy (social contract, rights, justice, etc.)
