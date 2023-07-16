@@ -54,7 +54,7 @@ Conclusion:
 
 ## Appendices
 
-### Appendix A
+### Appendix code explaination
 
 #### `convert_rating()`
 
