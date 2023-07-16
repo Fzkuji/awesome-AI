@@ -1,5 +1,7 @@
 For Science!
 
+Browse the [website](https://publish.obsidian.md/artificial-intelligence) for the best experience until 11/03/2024.
+
 ## Introduction
 
 ✨ This project is my personal study notes, which records and organizes all the machine learning knowledge I have learned with long-term updates.

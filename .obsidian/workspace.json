@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Mathematics/Mathematics.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Mathematics/Mathematics.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. Mathematics/Mathematics.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Mathematics/Mathematics.md"
+                "file": "README.md"
               }
             }
           }
@@ -150,6 +150,8 @@
   },
   "active": "7aa3f44406960581",
   "lastOpenFiles": [
+    "Untitled.md",
+    "2. Mathematics/Mathematics.md",
     "5. Information science/Information filtering/Recommender system.md",
     "3. Computer science/Computer science.md",
     "5. Information science/Information science.md",
@@ -157,7 +159,6 @@
     "4. Artificial intelligence/Artificial Intelligence.md",
     "1. Philosophy/Philosophy of language/Philosophy of language.md",
     "Note warning.md",
-    "Untitled.md",
     "PhD/Rec.md",
     "4. Artificial intelligence/3. Applications/Applications.md",
     "PhD/Rec CAJ.md",
@@ -179,7 +180,6 @@
     "awesome-AI",
     "PhD/华为实习/实习会议.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/MMoE.md",
-    "Miscellaneous/Baselines vs Benchmarks.md",
     "PhD/论文审稿",
     "PhD/华为实习",
     "2023-03-22_log.txt",
