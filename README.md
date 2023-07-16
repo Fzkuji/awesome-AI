@@ -29,7 +29,14 @@ Browse the [website](https://publish.obsidian.md/artificial-intelligence) for th
 	- [Information retrieval](5.%20Information%20science/Information%20retrieval/Information%20retrieval.md)
 	- [Information filtering](5.%20Information%20science/Information%20filtering/Information%20filtering.md)
 
-### AI vs. ML vs. DL by ChatGPT
+## Recommended notes
+
+- [General multi-task learning](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/General%20multi-task%20learning.md)
+- [Large Language Models](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Large%20language%20model.md)
+- [Large Language Models for Recommender Systems](4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/LLM4Rec.md)
+
+
+## AI vs. ML vs. DL by ChatGPT
 
 [Artificial Intelligence](4.%20Artificial%20intelligence/Artificial%20Intelligence.md) (AI), [Machine learning](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Machine%20learning.md) (ML), and Deep Learning (DL) are interconnected concepts in the field of computer science, with each term representing a progressively narrower subdomain.
 

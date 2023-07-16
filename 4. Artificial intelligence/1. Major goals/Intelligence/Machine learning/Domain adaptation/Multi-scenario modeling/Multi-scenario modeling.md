@@ -13,7 +13,7 @@ Multi-scenario modeling 多场景建模
 
 因此，如何同时建模场景共性和差异性，显得非常重要。
 
-### Multi-scenario modeling vs [MTL](../../General%20Multi-Task%20Learning/General%20Multi-Task%20Learning.md)
+### Multi-scenario modeling vs [MTL](../../General%20Multi-Task%20Learning/General%20multi-task%20learning.md)
 
 **但是观感上多场景建模的问题和多任务学习的问题没有什么不同**
 

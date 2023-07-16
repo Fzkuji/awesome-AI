@@ -8,7 +8,7 @@ Link: https://dl.acm.org/doi/abs/10.1145/3383313.3412236
 
 Code: https://github.com/shenweichen/DeepCTR-Torch
 
-Keywords: [Special Multi-Task Learning](../Special%20Multi-Task%20Learning.md), [Recommender system](../../../../../../../5.%20Information%20science/Information%20filtering/Recommender%20system.md), Seesaw Phenomenon
+Keywords: [Special multi-task learning](../Special%20multi-task%20learning.md), [Recommender system](../../../../../../../5.%20Information%20science/Information%20filtering/Recommender%20system.md), Seesaw Phenomenon
 
 Additional information: 
 
