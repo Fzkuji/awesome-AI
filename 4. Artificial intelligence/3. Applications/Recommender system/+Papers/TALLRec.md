@@ -43,11 +43,11 @@ Title: TALLRec: An Effective and Efficient Tuning Framework to Align Large Langu
 
 ### TALLRec Tuning Stages
 
-![[Fig. 2.png]]
+![Fig. 2](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Fig.%202.png)
 
 #### Instruction tuning
 
-![[Pasted image 20230515204642.png|400]]
+![400](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Pasted%20image%2020230515204642.png)
 
 Employ the self-instruct data made available by Alpaca to train the model.
 
@@ -61,7 +61,7 @@ $$
 
 Recommendation tuning, or rec-tuning就是构建一个专门的输入格式，如图2右上角所示。
 
-![[Pasted image 20230515204718.png|500]]
+![500](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Pasted%20image%2020230515204718.png)
 
 - Rec Input
 	- User Preference:  $item_1$, $item_4$, $item_n$
@@ -90,16 +90,16 @@ Conduct experiments using LLMs-LLaMA
 ### Performance comparison
 
 和传统方法比较：
-![[Table 2.png]]
+![Table 2](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Table%202.png)
 
 和同类LLMs比较：
-![[Fig. 3.png]]
+![Fig. 3](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Fig.%203.png)
 
 其他的模型波动好大，传统模型效果有瓶颈。反正结论是这个方法好。
 
 ### Ablation study
 
-![[Fig. 4.png]]
+![Fig. 4](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Fig.%204.png)
 
 IT是instruction tuning，RT是recommendation tuning
 
@@ -111,7 +111,7 @@ IT是instruction tuning，RT是recommendation tuning
 
 ### Cross-domain generalization analyses
 
-![[Fig. 5.png]]
+![Fig. 5](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Fig.%205.png)
 
 - 训练了一个数据集，在两个任务上都有提升
 - 训练两个数据集时，性能最优，这表明TALLRec可以无缝地合并来自不同域的数据以增强其性能

@@ -140,7 +140,7 @@ Finally, we use this RM as a reward function and fine-tune our GPT-3 policy to m
 
 ### 使用的方法
 
-也就是上文提到的[[InstructGPT#^1f17b5|训练过程]]，三个步骤，本质上都是之前已有的方法。
+也就是上文提到的[](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Models/GPT/InstructGPT.md#^1f17b5%7C%E8%AE%AD%E7%BB%83%E8%BF%87%E7%A8%8B)，三个步骤，本质上都是之前已有的方法。
 
 ### Dataset
 

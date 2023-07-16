@@ -7,7 +7,7 @@
 
 本文就是使用图像去预测图像的内容，同时使用文字去表达。
 以下是例子：
-![[Visual N-Gram.png]]
+![Visual N-Gram](Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Perception/Computer%20vision/Object%20Detection/+Papers/Visual%20N-Gram.png)
 给定一张图片，模型给出最符合图像描述的$n$个单词。
 
 同时，本文也分析了zero-shot迁移学习的效果。将训练好的模型应用到新的图像分类数据集（Imagenet等）上，

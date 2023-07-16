@@ -36,7 +36,7 @@ where $\theta$ is the pre-trained parameters, $\mathcal{D}^{\operatorname{tr}}$ 
 - Search over hyperparameters via cross-val
 - Architecture choices maLer (e.g. ResNets)
 
-![[Universal Language Model Fine-Tuning for Text Classification.png]]
+![Universal Language Model Fine-Tuning for Text Classification](Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Transfer%20Learning/Universal%20Language%20Model%20Fine-Tuning%20for%20Text%20Classification.png)
 **Universal Language Model Fine-Tuning for Text Classification**. Howard, Ruder. ‘18
 
 *Fine-tuning doesn’t work well with small target task datasets!*

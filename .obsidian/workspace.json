@@ -13,19 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e6a4286dc5490cc0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md"
               }
             }
           }
@@ -162,13 +150,14 @@
   },
   "active": "fc76a35a30ac46ca",
   "lastOpenFiles": [
+    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/STAR.md",
+    "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
     "Untitled.md",
     "README.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Machine learning.md",
     "MSc/MSc Dissertation Project/Papers/Introduction.md",
     "4. Artificial intelligence/2. Approaches/Artificial neural network/+Papers/Discovering faster matrix multiplication algorithms with reinforcement learning.md",
     "5. Information science/Information science.md",
-    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/STAR.md",
     "4. Artificial intelligence/3. Applications/Recommender system/MTL4Rec.md",
     "PhD/华为实习/时间表.md",
     "PhD/Untitled.md",
@@ -193,7 +182,6 @@
     "PhD/本子/2023 CCF-腾讯犀牛鸟基金项目.md",
     "Untitled 1.md",
     "PhD/华为实习",
-    "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
     "2023-03-22_log.txt",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/Pasted image 20230713171217.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/Pasted image 20230713171214.png",

@@ -1,42 +1,42 @@
 ## Contents
-0. [[Foundations of mathematics]]
-	- [[Mathematical proof]]
-1. [[Pure mathematics]]
-	- [[Algebra]]
-	- [[Analysis]]
+0. [Foundations of mathematics](2.%20Mathematics/0.%20Foundations%20of%20mathematics/Foundations%20of%20mathematics.md)
+	- [Mathematical proof](2.%20Mathematics/0.%20Foundations%20of%20mathematics/Mathematical%20proof/Mathematical%20proof.md)
+1. [Pure mathematics](2.%20Mathematics/1.%20Pure%20mathematics/Pure%20mathematics.md)
+	- [Algebra](2.%20Mathematics/1.%20Pure%20mathematics/Algebra/Algebra.md)
+	- [Analysis](2.%20Mathematics/1.%20Pure%20mathematics/Analysis/Analysis.md)
 	- Geometry
 	- Topology
-	- [[Mathematical logic]]
-		- [[Set theory]]
+	- [Mathematical logic](2.%20Mathematics/1.%20Pure%20mathematics/Mathematical%20logic/Mathematical%20logic.md)
+		- [Set theory](2.%20Mathematics/1.%20Pure%20mathematics/Mathematical%20logic/Set%20theory/Set%20theory.md)
 	- Number Theory
 	- Combinatorics
-2. [[Applied mathematics‎]]
-	- [[Mathematical modeling.canvas|Mathematical modeling]]
+2. [Applied mathematics‎](2.%20Mathematics/2.%20Applied%20mathematics%E2%80%8E/Applied%20mathematics%E2%80%8E.md)
+	- [Mathematical modeling](2.%20Mathematics/2.%20Applied%20mathematics%E2%80%8E/Mathematical%20modeling/Mathematical%20modeling.canvas)
 	- Differential Equations
 	- Optimization
-	- [[Probability theory]]
+	- [Probability theory](2.%20Mathematics/2.%20Applied%20mathematics%E2%80%8E/Probability%20theory/Probability%20theory.md)
 	- Statistics
 	- Mathematical Physics
 	- Biomathematics
 	- Financial Mathematics
-3. [[Computational mathematics]]
-	- [[Numerical analysis]]
+3. [Computational mathematics](2.%20Mathematics/3.%20Computational%20mathematics/Computational%20mathematics.md)
+	- [Numerical analysis](2.%20Mathematics/3.%20Computational%20mathematics/Numerical%20analysis/Numerical%20analysis.md)
 	- Computational Geometry
-	- [[Mathematical optimization]]
+	- [Mathematical optimization](2.%20Mathematics/3.%20Computational%20mathematics/Mathematical%20optimization/Mathematical%20optimization.md)
 	- Scientific Computing
 	- Cryptography
 	- Computational Algebra
 	- Computer Algebra Systems
 4. Discrete Mathematics
-	- Combinatorics (including [[Graph theory.pdf|Graph Theory]] and [[Order theory]])
+	- Combinatorics (including [Graph Theory](Resources/2.%20Mathematics/4.%20Discrete%20mathematics/Graph%20theory/Graph%20theory.pdf) and [Order theory](2.%20Mathematics/4.%20Discrete%20mathematics/Order%20theory/Order%20theory.md))
 	- Number Theory
-	- [[Mathematical logic]]
-		- [[Set theory]]
+	- [Mathematical logic](2.%20Mathematics/1.%20Pure%20mathematics/Mathematical%20logic/Mathematical%20logic.md)
+		- [Set theory](2.%20Mathematics/1.%20Pure%20mathematics/Mathematical%20logic/Set%20theory/Set%20theory.md)
 	- Algorithms and Complexity Theory
 
 ## Areas of mathematics
 
-![[Mathematistan.jpg]]
+![Mathematistan](Resources/2.%20Mathematics/Mathematistan.jpg)
 
 The field of mathematics can be subdivided into several categories based on their focus, methods, and applications. Here's a possible way to divide the field:
 

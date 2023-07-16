@@ -1,9 +1,9 @@
 
 ## Other directions
 
-[[LLM4Rec]]
+[LLM4Rec](4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/LLM4Rec.md)
 
-[[RL4Rec]]
+[RL4Rec](4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/RL4Rec.md)
 
 
 
@@ -32,9 +32,9 @@
 
 | Name | Paper                                                                                      | Publication | Repository                                                    | Link                                                                       | Classification               |
 | ---- | ------------------------------------------------------------------------------------------ | ----------- | ------------------------------------------------------------- | -------------------------------------------------------------------------- | ---------------------------- |
-| [[MMoE]] | [[#Modeling Task Relationships in Multi-task Learning with Multi-gate Mixture-of-Experts]] | KDD 2018    | [DeepCTR-Torch](https://github.com/shenweichen/DeepCTR-Torch) | [doi.org/10.1145/3219819.3220007](https://doi.org/10.1145/3219819.3220007) | [[#Multi-scenario modeling]], Multi-task learning |
+| [MMoE](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/+Papers/MMoE.md) | [#Modeling Task Relationships in Multi-task Learning with Multi-gate Mixture-of-Experts](#Modeling%20Task%20Relationships%20in%20Multi-task%20Learning%20with%20Multi-gate%20Mixture-of-Experts) | KDD 2018    | [DeepCTR-Torch](https://github.com/shenweichen/DeepCTR-Torch) | [doi.org/10.1145/3219819.3220007](https://doi.org/10.1145/3219819.3220007) | [#Multi-scenario modeling](#Multi-scenario%20modeling), Multi-task learning |
 
-![[Pasted image 20230713091222.png]]
+![Pasted image 20230713091222](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230713091222.png)
 
 
 ### Progressive Layered Extraction (PLE): A Novel Multi-Task Learning (MTL) Model for Personalized Recommendations

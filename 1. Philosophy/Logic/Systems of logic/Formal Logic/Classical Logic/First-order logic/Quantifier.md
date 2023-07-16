@@ -2,7 +2,7 @@
 
 In [logic](https://en.wikipedia.org/wiki/Mathematical_logic "Mathematical logic"), a **quantifier** is an operator that specifies how many individuals in the [domain of discourse](https://en.wikipedia.org/wiki/Domain_of_discourse "Domain of discourse") satisfy an [open formula](https://en.wikipedia.org/wiki/Open_formula "Open formula").
 
-For instance, the [[Universal and Existential Statements.pdf|universal and existential quantifier]].
+For instance, the [universal and existential quantifier](Resources/0.%20Philosophy/Universal%20and%20Existential%20Statements.pdf).
 比如：全称量词$\forall$和存在量词$\exists$
 
 ## Existential quantifer

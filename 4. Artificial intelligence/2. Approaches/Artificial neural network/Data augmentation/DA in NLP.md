@@ -1,5 +1,5 @@
 NLP方向的data augmentation：
-- [[4. Artificial intelligence/2. Approaches/Artificial neural network/Data augmentation/Text data augmentation]]
+- [Text data augmentation](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Data%20augmentation/Text%20data%20augmentation.md)
 - Testing generalization with data augmentation
 - Image versus text augmentation
 

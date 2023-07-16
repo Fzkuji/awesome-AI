@@ -8,7 +8,7 @@ Link: https://dl.acm.org/doi/abs/10.1145/3383313.3412236
 
 Code: https://github.com/shenweichen/DeepCTR-Torch
 
-Keywords: [[Special Multi-Task Learning]], [[Recommender system]], Seesaw Phenomenon
+Keywords: [Special Multi-Task Learning](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Special%20Multi-Task%20Learning.md), [Recommender system](5.%20Information%20science/Information%20filtering/Recommender%20system.md), Seesaw Phenomenon
 
 Additional information: 
 
@@ -33,7 +33,7 @@ Conclusion:
 
 ### Contributions
 
-为了解决跷跷板现象，PLE 在[[MMoE]]的基础上新增了每个任务独有的expert 专家，用来强化自己任务的特性，gate网络用来学习每个子任务的独有expert和共享expert联合的权重，这是单层CGC模型。
+为了解决跷跷板现象，PLE 在[MMoE](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/+Papers/MMoE.md)的基础上新增了每个任务独有的expert 专家，用来强化自己任务的特性，gate网络用来学习每个子任务的独有expert和共享expert联合的权重，这是单层CGC模型。
 
 论文的Motivation: 为了解决上述问题，本研究提出了一种名为渐进式分层提取（PLE）的新型MTL模型。与现有的MTL模型相比，PLE通过更好地利用先验知识来设计共享网络，以捕捉复杂的任务相关性。与MMOE中的粗略共享参数不同，PLE明确地将共享和任务特定的专家分开，以减轻共享和任务特定知识之间的有害参数干扰。此外，PLE引入了多级专家和门控网络，并应用渐进分离路由机制，逐渐从较低层次的专家中提取更深层次的知识，并逐渐分离较高层次的任务特定参数。通过在真实世界的工业推荐数据集和主要的公共基准数据集上进行广泛实验，评估了PLE的性能。腾讯的大规模视频推荐系统上的在线A/B测试结果也证明了PLE在实际应用中相对于现有的MTL模型的显著改进，观看次数增加了2.23％，观看时间增加了1.84％，这产生了显著的商业收益。PLE现已成功部署到推荐系统中，并有潜力应用于许多其他推荐应用中。
 
@@ -43,13 +43,13 @@ Conclusion:
 
 ### CGC
 
-![[Pasted image 20230713163957.png]]
+![Pasted image 20230713163957](Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Pasted%20image%2020230713163957.png)
 
 ### PLE
 
 PLE的多层的CGC，与CGC不同的是考虑了不同expert的交互性，在底层的Extraction网络中有一个share gate，他的输入不再是CGC的独有expert和share expert，而是全部expert。详细模型示意图见下图。
 
-![[Pasted image 20230713164217.png]]
+![Pasted image 20230713164217](Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Pasted%20image%2020230713164217.png)
 
 ### Joint Loss Optimization for MTL
 
@@ -59,7 +59,7 @@ L\left(\theta_1, \ldots, \theta_K, \theta_s\right)=\sum_{k=1}^K \omega_k L_k\lef
 $$
 而在腾讯视频场景下，不同任务的样本空间是不一样的，比如计算视频的完成度，必须有视频点击行为才可以。不同任务的样本空间如下图所示：
 
-![[Pasted image 20230713170611.png|500]]
+![500](Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Pasted%20image%2020230713170611.png)
 
 In this paper, we optimize the joint loss function to address two critical ones encountered in real-world recommender systems. The first problem is the heterogeneous sample space due to sequential user actions. For instance, users can only share or comment on an item after clicking it, which leads to different sample space of different tasks/shown in Fig. 6. To train these tasks jointly, we consider the union of sample space of all tasks as the whole training set, and ignore samples out of its own sample space when calculating the loss of each individual task:
 $$
@@ -78,25 +78,25 @@ where $t$ denotes the training epoch, $\omega_{k, 0}$ and $\gamma_k$ are hyper-p
 ## Evaluation
 
 最后简单看一下实验结果。首先是离线的训练结果，表中的收益均是相较于单任务学习模型的：
-![[Pasted image 20230713170900.png|500]]
+![500](Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Pasted%20image%2020230713170900.png)
 
-![[Pasted image 20230713170914.png|500]]
+![500](Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Pasted%20image%2020230713170914.png)
 
 接下来是线上A／B实验的结果：
 
-![[Pasted image 20230713170930.png|500]]
+![500](Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Pasted%20image%2020230713170930.png)
 
 可以看到，无论是离线训练还是线上A／B，PLE均取得了最佳的效果。
 
 接下来，论文比较了在任务之间相关系数不同的情况下，Hard Parameter Sharing、MMOE和PLE的结果：
 
-![[Pasted image 20230713171208.png|500]]
+![500](Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Pasted%20image%2020230713171208.png)
 
 可以看到，无论任务之间的相关程度如何，PLE均取得了最优的效果。
 
 最后，论文对比了MMOE和PLE不同Expert的输出均值，来比较不同模型的Expert利用率（expert utilization）。为方便比较，将MMOE的Expert设置为3个，而PLE&CGC中，每个任务独有的Expert为1个，共享的为1个。这样不同模型都是有三个Expert。结果如下：
 
-![[Pasted image 20230713171217.png|500]]
+![500](Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Pasted%20image%2020230713171217.png)
 
 可以看到，无论是MMOE还是ML-MMOE，不同任务在三个Expert上的权重都是接近的，这其实更接近于一种Hard Parameter Sharing的方式，**但对于CGC&PLE来说，不同任务在共享Expert上的权重是有较大差异的，其针对不同的任务，能够有效利用共享Expert和独有Expert的信息，这也解释了为什么其能够达到比MMOE更好的训练结果。**
 

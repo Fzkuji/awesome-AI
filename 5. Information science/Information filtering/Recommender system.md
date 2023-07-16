@@ -105,7 +105,7 @@ These techniques help to alleviate the cold start problem and improve the qualit
 
 ### Cross-domain recommendations
 
-[[TALLRec]]（也自称LLM4Rec）研究了跨域推荐的问题，并没有什么特别的发现。只是说LLM有跨域推荐的能力（这不废话）。
+[TALLRec](4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/TALLRec.md)（也自称LLM4Rec）研究了跨域推荐的问题，并没有什么特别的发现。只是说LLM有跨域推荐的能力（这不废话）。
 
 
 ## Datasets
@@ -160,7 +160,7 @@ Here are some of the disadvantages of random recommendation policies:
 
 
 
-## [[LLM4Rec]]
+## [LLM4Rec](4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/LLM4Rec.md)
 
 基于LLMs的推荐系统
 

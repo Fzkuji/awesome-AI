@@ -132,7 +132,7 @@ class SwiGLU(nn.Module):
 # print(output.shape)
 ```
 
-Used in PaLM & [[LLaMA]].
+Used in PaLM & [LLaMA](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Models/LLaMA.md).
 
 
 

@@ -24,7 +24,7 @@ ICLR 2023
 
 #### Retrieval-augmented language models
 
-![[Retrieval-augmented language models.png]]
+![Retrieval-augmented language models](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Retrieval-augmented%20language%20models.png)
 
 Pros：
 - Document corpus is updatable. New information can be easily plugged in.
@@ -42,7 +42,7 @@ Cons：
 
 #### Information seeking via big language models
 
-![[Information seeking via big language models.png]]
+![Information seeking via big language models](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Information%20seeking%20via%20big%20language%20models.png)
 
 Pros：
 - Better knowledge storage (>100B), strong deductive reasoning capabilities.
@@ -58,11 +58,11 @@ Cons：
 
 #### Comparison
 
-![[RAG vs GPT.png]]
+![RAG vs GPT](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/RAG%20vs%20GPT.png)
 
 通常还是专门设计的模型更强。由此引出一个问题，GPT-3是否知道很多问题的答案？
 
-![[does GPT knows the answer.png]]
+![does GPT knows the answer](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/does%20GPT%20knows%20the%20answer.png)
 
 事实证明GPT是训练过很多问题的答案的，但是对提问者的提问方式有要求。经验上，提问者需要提供更多的背景信息，而不是简短的一句话。这样模型更有可能找到真实的结果。
 
@@ -118,7 +118,7 @@ Step 1：获取文档
 Step 2：编码每个文档，做聚类处理
 使用一个大语言模型encode文档对，比如使用GPT模型$\mathbf{e}_{i}=\operatorname{GPT-3}\left(\left[q_{i}, d_{i}\right]\right)$，每个文档编码成12288维的vector。然后使用K-means聚类所有的vectors为$K$类，相当于每个文档对都有一个类别，$K$的数量作者做了实验。
 
-![[Recall@K on test sets.png]]
+![Recall@K on test sets](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Recall@K%20on%20test%20sets.png)
 
 Step 3：采样并生成$K$个文档
 在聚类的结果基础上，对于每个类别$c$都采样$n$个问题-文档对，表示为$\left\{q_{c 1}, d_{c 1} ; q_{c 2}, d_{c 2} ; \ldots ; q_{c n}, d_{c n}\right\}$，实验证明$n$增加对性能影响不大，这里设置为5。
@@ -129,7 +129,7 @@ placeholder} {input question placeholder}". 又因为我们有$K$个类，因此
 
 ## Evaluation
 
-![[Performance.png]]
+![Performance](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Performance.png)
 
 - 将GPT输出的结果再输入GPT，得到的结果就会更好
 - 用GPT作为文档生成器比传统生成器更好

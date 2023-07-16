@@ -4,7 +4,7 @@ An **immediate inference** is an [inference](https://en.wikipedia.org/wiki/In
 直接推理就是直接从一个命题得到推论。
 
 
-## Operations on [[Proposition|propositions]]
+## Operations on [propositions](1.%20Philosophy/Philosophy%20of%20language/Concepts/Proposition.md)
 
 ### Inversion
 否命题
@@ -16,7 +16,7 @@ The inverse of an implication $P \to Q$ is the implication $\neg P \to \neg
 
 The converse of an implication $P \to Q$ is the implication $Q \to P$.
 
-### [[Contraposition]]
+### [Contraposition](1.%20Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/Propositional%20calculus/Logical%20consequence%E2%80%8E/Inference%E2%80%8E/Immediate%20inference%E2%80%8E/Contraposition.md)
 逆否命题
 
 The contrapositive of an implication $P \to Q$ is the implication $\neg Q \to \neg P$.

@@ -6,7 +6,7 @@
 
 | Name    | Paper                                                                                             | Publication    | Repository | Link                                                 | Classification                            |
 | ------- | ------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ----------------------------------------- |
-| PrefRec | [[#PrefRec Recommender Systems with Human Preferences for Reinforcing Long-term User Engagement]] | arXiv preprint |            | [arXiv:2212.02779](https://arxiv.org/abs/2212.02779) |  |
+| PrefRec | [#PrefRec Recommender Systems with Human Preferences for Reinforcing Long-term User Engagement](#PrefRec%20Recommender%20Systems%20with%20Human%20Preferences%20for%20Reinforcing%20Long-term%20User%20Engagement) | arXiv preprint |            | [arXiv:2212.02779](https://arxiv.org/abs/2212.02779) |  |
 
 > 作者提出了一个新的推荐系统范例，名为PrefRec，它允许强化学习推荐系统从用户历史行为的偏好中学习，而不是从明确定义的奖励中学习。这样，他们可以充分利用强化学习在优化长期目标方面的优势，同时避免复杂的奖励工程。
 > 

@@ -1,7 +1,7 @@
 Generative model这个概念来自于统计学，是一种[Statistical models](https://en.wikipedia.org/wiki/Category:Statistical_models "Category:Statistical models")，具体而言是一种[Probabilistic models](https://en.wikipedia.org/wiki/Category:Probabilistic_models "Category:Probabilistic models")‎。之后这个概念也在机器学习领域中使用，当然，表达的含义是一样的。
 
 General concepts can be seen in:
-![[Mathematical modeling.canvas]]
+![Mathematical modeling](2.%20Mathematics/2.%20Applied%20mathematics%E2%80%8E/Mathematical%20modeling/Mathematical%20modeling.canvas)
 
 ## Classification
 In [statistical classification](https://en.wikipedia.org/wiki/Statistical_classification "Statistical classification"), two main approaches are called the **generative** approach and the **discriminative** approach. These compute [classifiers](https://en.wikipedia.org/wiki/Classification_rule "Classification rule") by different approaches, differing in the degree of [statistical modelling](https://en.wikipedia.org/wiki/Statistical_model "Statistical model"). Terminology is inconsistent, but three major types can be distinguished, following [Jebara (2004)](https://en.wikipedia.org/wiki/Generative_model#CITEREFJebara2004):

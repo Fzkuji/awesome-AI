@@ -1,1 +1,1 @@
-![[Set equality.pdf]]
+![Set equality](Resources/2.%20Mathematics/1.%20Pure%20mathematics/Mathematical%20logic/Set%20theory/Concepts/Set%20equality.pdf)

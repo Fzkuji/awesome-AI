@@ -1,1 +1,1 @@
-![[Set theory.pdf]]
+![Set theory](Resources/2.%20Mathematics/1.%20Pure%20mathematics/Mathematical%20logic/Set%20theory/Set%20theory.pdf)

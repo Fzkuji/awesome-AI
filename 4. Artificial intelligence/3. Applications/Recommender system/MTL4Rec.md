@@ -1,7 +1,7 @@
 
 
 
-主要还是用[[Special Multi-Task Learning|多任务学习模型]]
+主要还是用[多任务学习模型](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Special%20Multi-Task%20Learning.md)
 
 我们常见的多任务模型升级路线是Share-Bottom -> MMoE ->CGC/PLE
 

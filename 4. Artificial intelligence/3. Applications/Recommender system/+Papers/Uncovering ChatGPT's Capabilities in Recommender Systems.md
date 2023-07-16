@@ -25,32 +25,32 @@ ChatGPT的首次亮相最近吸引了自然语言处理（NLP）社区和其他�
 
 ### Problems
 
-首先这是一个[[Learning to rank]]问题
+首先这是一个[Learning to rank](5.%20Information%20science/Information%20retrieval/Learning%20to%20rank.md)问题
 
-本文作者也这么推荐，将这三种排名方式设计为[[Prompting|prompt]]去询问ChatGPT。
+本文作者也这么推荐，将这三种排名方式设计为[prompt](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Prompting.md)去询问ChatGPT。
 
 ### Contributions
 
 - ChatGPT比其他LLMs强
 - ChatGPT在list-wise和pair-wise排名中表现良好，而在point-wise排名上表现较差
 - ChatGPT可以缓解:
-	- [[Recommender system#^8ee569|冷启动问题]]，因为它在有限的训练数据下比传统的推荐模型（如MF和NCF）更出色
-	- [[Recommender system#^fa35f7|可解释性问题]]，并表现出真正理解项目相似性的能力
+	- [](5.%20Information%20science/Information%20filtering/Recommender%20system.md#^8ee569%7C%E5%86%B7%E5%90%AF%E5%8A%A8%E9%97%AE%E9%A2%98)，因为它在有限的训练数据下比传统的推荐模型（如MF和NCF）更出色
+	- [](5.%20Information%20science/Information%20filtering/Recommender%20system.md#^fa35f7%7C%E5%8F%AF%E8%A7%A3%E9%87%8A%E6%80%A7%E9%97%AE%E9%A2%98)，并表现出真正理解项目相似性的能力
 - 考虑到单位成本的性能提升，作者建议在实践中使用ChatGPT进行list-wise ranking
 
 ## Probing ChatGPT for recommendation capabilities
 
 ### Three Ranking Capabilities in RSs
 
-目前[[Learning to rank]]（LTR）方法包含三种范式：point-wise, pair-wise and list-wise ranking
+目前[Learning to rank](5.%20Information%20science/Information%20retrieval/Learning%20to%20rank.md)（LTR）方法包含三种范式：point-wise, pair-wise and list-wise ranking
 
 （作者这里给出了三者的数学定义，具体看论文）
 
 ### Reformulate and Adapt Recommendation with Prompts
 
-使用[[Prompting|prompt]]设计[[Learning to rank|LTR]]的三种范式：
+使用[prompt](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Prompting.md)设计[LTR](5.%20Information%20science/Information%20retrieval/Learning%20to%20rank.md)的三种范式：
 
-![[Pasted image 20230516162335.png]]
+![Pasted image 20230516162335](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Pasted%20image%2020230516162335.png)
 
 ## Evaluation
 
@@ -69,8 +69,8 @@ News: MIND-small
 We set the number of shots as 1 for pair-wise and list-wise, and 2 for point-wise.
 
 两个常用损失函数：
-- [[Loss function#^62ea0d|Normalized Discounted Cumulative Gain (NDCG)]] with 𝑘 = 1, 3
-- [[Loss function#^0fb470|Mean Reciprocal Rank (MRR)]] with 𝑘 = 3
+- [](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Loss%20function.md#^62ea0d%7CNormalized%20Discounted%20Cumulative%20Gain%20(NDCG)) with 𝑘 = 1, 3
+- [](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Loss%20function.md#^0fb470%7CMean%20Reciprocal%20Rank%20(MRR)) with 𝑘 = 3
 
 论文声明了一个新的损失函数Compliance Rate：
 $$
@@ -83,7 +83,7 @@ $$
 结论：
 
 （废话部分）
-- ChatGPT比[[Recommender system#^c6dd12|随机推荐]]要好
+- ChatGPT比[](5.%20Information%20science/Information%20filtering/Recommender%20system.md#^c6dd12%7C%E9%9A%8F%E6%9C%BA%E6%8E%A8%E8%8D%90)要好
 - ChatGPT比其他大模型好
 
 （有用的）
@@ -95,9 +95,9 @@ $$
 
 未完待续。。。
 
-![[Pasted image 20230517163542.png]]
+![Pasted image 20230517163542](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Pasted%20image%2020230517163542.png)
 
-![[Pasted image 20230517163604.png]]
+![Pasted image 20230517163604](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Pasted%20image%2020230517163604.png)
 
 
 

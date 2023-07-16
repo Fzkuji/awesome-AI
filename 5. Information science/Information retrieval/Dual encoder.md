@@ -1,4 +1,4 @@
-A Dual Encoder is a type of model used in [[Information retrieval]]. The main idea behind Dual Encoders is to create a system that can understand the meaning of user queries and the content of documents or items so that it can find the most relevant results quickly and efficiently.
+A Dual Encoder is a type of model used in [Information retrieval](5.%20Information%20science/Information%20retrieval/Information%20retrieval.md). The main idea behind Dual Encoders is to create a system that can understand the meaning of user queries and the content of documents or items so that it can find the most relevant results quickly and efficiently.
 
 A Dual Encoder consists of two parts:
 

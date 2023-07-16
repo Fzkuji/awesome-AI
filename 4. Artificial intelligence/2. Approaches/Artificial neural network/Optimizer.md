@@ -94,6 +94,6 @@ In the pseudocode, `alpha`, `beta1`, `beta2`, `epsilon`, and `lambda` are hyperp
 The main difference between the original Adam and AdamW is how they handle weight decay regularization. In the original Adam optimizer, weight decay is applied directly to the gradients before they are used to update the model weights (see the line `grad += lambda * model_parameters`). This can lead to an undesired interaction between the weight decay and the adaptive learning rates.
 
 > We use AdamW (Loshchilov and Hutter, 2019) for Chinchilla rather than Adam (Kingma and Ba, 2014) as this improves the language modelling loss and the downstream task performance after finetuning.
-> -- [[Chinchilla#^f76ade|Chinchilla]]
+> -- [](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Models/Chinchilla.md#^f76ade%7CChinchilla)
 
 

@@ -1,6 +1,6 @@
 逻辑连接词
 
-- 在[[Propositional logic|propositional calculus]]中也叫propositional connective.
+- 在[propositional calculus](1.%20Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/Propositional%20calculus/Propositional%20logic.md)中也叫propositional connective.
 
 ## Binary connective
 （四个）需要有两个原子命题的连接词

@@ -18,12 +18,12 @@ In general, knowledge-intensive tasks tend to be more complex and difficult to a
 
 
 知识密集型任务有：
-- [[Information retrieval]]
+- [Information retrieval](5.%20Information%20science/Information%20retrieval/Information%20retrieval.md)
 - Open-domain question answering (QA)
 - Fact checking
 - Dialogue generation
 - Slot filling
 - Entity linking
 
-![[Pasted image 20230629163356.png]]
+![Pasted image 20230629163356](Resources/4.%20Artificial%20intelligence/3.%20Applications/Knowledge-intensive%20tasks/Pasted%20image%2020230629163356.png)
 

@@ -20,4 +20,4 @@
 - 即使错了还是很自信，这个问题在使用RLHF微调之前会出现，因为此时预训练的模型已经见过了无数内容，因此GPT会很自然地对自己的回答充满自信。而在RLHF微调之后，这样的自信就会被收敛，大概就是融入人类社会了吧。因此也衍生出了一个研究问题，那就是使用RLHF到底是不是一个正确的选择。 ^5507ad
 
 
-![[GPT-4 Architecture, Infrastructure, Training Dataset, Costs, Vision, MoE.pdf]]
+![GPT-4 Architecture, Infrastructure, Training Dataset, Costs, Vision, MoE](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/+Papers/GPT-4%20Architecture,%20Infrastructure,%20Training%20Dataset,%20Costs,%20Vision,%20MoE.pdf)

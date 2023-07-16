@@ -9,7 +9,7 @@
 - Background:
 	- 该论文介绍了一种名为RAINCOAT的新型模型，用于应对复杂时间序列的无监督领域适应问题，探讨了数据集漂移和标签分布不一致等因素对于传输性的影响。
 - Past methods and problems:
-	- 传统的无监督领域适应方法不能很好地处理时间序列领域的[[Feature shift|特征漂移]]和[[Label shift|标签漂移]]问题，存在局限性。
+	- 传统的无监督领域适应方法不能很好地处理时间序列领域的[特征漂移](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Domain%20adaptation/Feature%20shift.md)和[标签漂移](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Domain%20adaptation/Label%20shift.md)问题，存在局限性。
 - Methodology
 	- RAINCOAT方法使用时间和频率编码器来学习时间序列表示，提出了Sinkhorn分布作为源和目标特征对齐方法，同时提出了对齐-纠正程序用于处理全领域适应问题。
 - Task and performance
