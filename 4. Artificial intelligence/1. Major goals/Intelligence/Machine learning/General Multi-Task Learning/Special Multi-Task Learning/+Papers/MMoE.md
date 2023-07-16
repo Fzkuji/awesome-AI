@@ -57,7 +57,7 @@ Conclusion:
 
 为了解决这个问题，MMoE采用了类似集成学习的思想，用若干个专家模型(expert model)加权影响子任务，门控机制（Gate）就是训练不同专家的影响因子，最终通过softmax输出不同专家的权重。如果对于所有子任务只有一套Gate就是MoE模型，但是更好的处理方式是每个子任务都有一个属于自己的Gate，升级为MMoE模型，详细的模型示意图见下图：
 
-![Pasted image 20230713091222](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230713091222.png)
+![Pasted image 20230713091222](../../../../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230713091222.png)
 
 ### Shared-bottom multi-task model
 
@@ -127,7 +127,7 @@ $$
 后续文章：
 
 PLE: 
-[Progressive Layered Extraction (PLE): A Novel Multi-Task Learning (MTL) Model for Personalized Recommendations](https://dl.acm.org/doi/10.1145/3383313.3412236)
+[Progressive Layered Extraction (PLE): A Novel Multi-Task Learning (MTL) Model for Personalized Recommendations](PLE):%20A%20Novel%20Multi-Task%20Learning%20(MTL)%20Model%20for%20Personalized%20Recommendations)
 
 
 
@@ -142,7 +142,7 @@ PLE:
 
 我一般采用的是在一个足够大的数据集上，打印每个gate网络 softmax后的分布，这里直接体现的就是每个专家系统对于当前子任务的权重。如下图所示，每个gate的分布：
 
-![Pasted image 20230713114905](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230713114905.png)
+![Pasted image 20230713114905](../../../../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230713114905.png)
 
 #### Q2: 如何确定超参，如expert数和专家模型的实现方案？
 
@@ -168,4 +168,4 @@ c. 热启sparse部分和部分dense模型。比如只增加目标，不修改exp
 
 ## Future work
 
-[Mixture-of-Experts (MoE) 经典论文一览](https://zhuanlan.zhihu.com/p/542465517)
+[Mixture-of-Experts (MoE) 经典论文一览](MoE)%20%E7%BB%8F%E5%85%B8%E8%AE%BA%E6%96%87%E4%B8%80%E8%A7%88)

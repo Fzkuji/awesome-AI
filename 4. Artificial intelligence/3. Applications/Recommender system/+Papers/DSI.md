@@ -1,7 +1,7 @@
 Title: Transformer Memory as a Differentiable Search Index
 
 https://arxiv.org/abs/2202.06991
-*[Submitted on 14 Feb 2022 ([v1](https://arxiv.org/abs/2202.06991v1)), last revised 21 Oct 2022 (this version, v3)]*
+*[Submitted on 14 Feb 2022 ([v1](%5Bv1)), last revised 21 Oct 2022 (this version, v3)]*
 
 **论文代码**：
 [ArvinZhuang/DSI-transformers](https://github.com/ArvinZhuang/DSI-transformers)
@@ -28,7 +28,7 @@ https://www.youtube.com/watch?v=C7mUYocWdG0
 本文尝试证明知识密集型任务Information retrieval也可以通过a single Transformer来实现。本文提出了Differentiable Search Index (DSI) 模型。
 
 a DSI model answers queries directly using only its parameters, dramatically simplifying the whole retrieval process.
-DSI是一个端到端模型，并且证明比[Dual encoder](5.%20Information%20science/Information%20retrieval/Dual%20encoder.md)要好，在zero-shot设置中也优于[Okapi BM25](5.%20Information%20science/Information%20retrieval/Okapi%20BM25.md)。
+DSI是一个端到端模型，并且证明比[Dual encoder](../../../../5.%20Information%20science/Information%20retrieval/Dual%20encoder.md)要好，在zero-shot设置中也优于[Okapi BM25](../../../../5.%20Information%20science/Information%20retrieval/Okapi%20BM25.md)。
 
 ## Introduction
 
@@ -127,7 +127,7 @@ In this work, we treat this as **a fully unsupervised pre-processing step**. How
 
 To construct identifiers with this property, we employ **a simple hierarchical clustering process** over document embeddings to induce a decimal tree (or more generally, a trie).
 
-![600](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Hierarchical%20clustering%20%20process.png)
+![600](../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Hierarchical%20clustering%20%20process.png)
 
 如图，核心操作就是将所有文档分为0-9十个类别。在细分类别中，
 - 如果文档数量仍然大于$c$，那么就递归上述操作
@@ -138,7 +138,7 @@ To construct identifiers with this property, we employ **a simple hierarchical c
 ### Training and Optimization
 
 - optimized for seq2seq cross entropy loss
-- [Teacher forcing](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Teacher%20forcing.md)
+- [Teacher forcing](../../../1.%20Major%20goals/Intelligence/Natural%20language%20processing/Teacher%20forcing.md)
 
 
 1. Pre-train a model to perform indexing and fine-tuning the model to perform indexing retrieval
@@ -151,7 +151,7 @@ To construct identifiers with this property, we employ **a simple hierarchical c
 
 ### Dataset
 
-[Natural Questions (NQ)](https://ai.google.com/research/NaturalQuestions) NQ consists of 307K query-document training pairs and 8K validation pairs, where the queries are natural language questions and the documents are Wikipedia articles. Given a question, the retrieval task is to identify the Wikipedia article that answers it.
+[Natural Questions (NQ)](NQ)) NQ consists of 307K query-document training pairs and 8K validation pairs, where the queries are natural language questions and the documents are Wikipedia articles. Given a question, the retrieval task is to identify the Wikipedia article that answers it.
 
 We construct three sets from NQ to form our testbed, namely **NQ10K**, **NQ100K**, and **NQ320K** denoting different numbers of total query-document pairs in the combined train and validation splits.
 
@@ -222,13 +222,13 @@ DSI模型大小：Base (0.2B), Large (0.8B), XL (3B) and XXL (11B)
 | DSI | XXL | 11B | Semantic String Docid | 48.5 | 72.1 | 26.9 | 59.5 | 40.4 | 70.3 |
 
 
-![DSI performance](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/DSI%20performance.png)
+![DSI performance](../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/DSI%20performance.png)
 
 ## Future work
 
 1. 非结构化的document Identifiers的改进：非结构化的id在不同模型上并不统一，且难以理解，作者认为可能是新初始化softmax层导致的，但是他们决定留到以后研究。非结构化原子标识符的不稳定性和高方差，不同数据集的性能不一致。不过非结构化原子标识符在zero-shot上表现很好。
-2. [](4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/DSI.md#^576d1d%7Cautomatically%20learn%20semantic%20identifiers%20in%20a%20fully%20end-to-end%20manner)
-3. [](4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/DSI.md#^7ef472%7C%E9%9D%9E%E5%85%B8%E5%9E%8B%E5%A4%9A%E4%BB%BB%E5%8A%A1%E5%AD%A6%E4%B9%A0)
+2. [](.md#^576d1d%7Cautomatically%20learn%20semantic%20identifiers%20in%20a%20fully%20end-to-end%20manner)
+3. [](.md#^7ef472%7C%E9%9D%9E%E5%85%B8%E5%9E%8B%E5%A4%9A%E4%BB%BB%E5%8A%A1%E5%AD%A6%E4%B9%A0)
 
 
 multiple indexing, document representation and docid representation methods

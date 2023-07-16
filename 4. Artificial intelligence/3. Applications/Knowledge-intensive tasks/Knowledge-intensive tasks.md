@@ -6,7 +6,7 @@ A knowledge-intensive task is a task that requires a high level of knowledge, ex
 In general, knowledge-intensive tasks tend to be more complex and difficult to automate than routine or manual tasks, as they require the ability to understand and interpret complex information, apply judgment and reasoning, and adapt to changing circumstances. These tasks are often performed by highly skilled professionals and are critical to the success of many organizations and industries.
 一般来说，知识密集型任务往往比例行或手动任务更复杂，更难实现自动化，因为它们需要理解和解释复杂信息、运用判断和推理以及适应不断变化的环境的能力。 这些任务通常由技能高超的专业人员执行，对许多组织和行业的成功至关重要。
 
-> [KILT (Knowledge Intensive Language Tasks)](https://ai.facebook.com/tools/kilt) is a new unified benchmark to help AI researchers build models that are better able to leverage real-world knowledge to accomplish a broad range of tasks.
+> [KILT (Knowledge Intensive Language Tasks)](Knowledge%20Intensive%20Language%20Tasks)) is a new unified benchmark to help AI researchers build models that are better able to leverage real-world knowledge to accomplish a broad range of tasks.
 > 
 > It unifies [11 widely used public datasets](https://evalai.cloudcv.org/web/challenges/challenge-page/689/phases?fbclid=IwAR0f7OsY-14YCUjbvnQ0jDWfpIr2O7Y5UCRg6opiDxAmNYO2eszk6SLwOjg) representing five different types of tasks: fact-checking, open-domain question answering, slot filling, entity linking, and dialog generation. KILT is the first benchmark that aggregates datasets representing such a wide variety of knowledge-intensive tasks.
 > 
@@ -18,12 +18,12 @@ In general, knowledge-intensive tasks tend to be more complex and difficult to a
 
 
 知识密集型任务有：
-- [Information retrieval](5.%20Information%20science/Information%20retrieval/Information%20retrieval.md)
+- [Information retrieval](../../../5.%20Information%20science/Information%20retrieval/Information%20retrieval.md)
 - Open-domain question answering (QA)
 - Fact checking
 - Dialogue generation
 - Slot filling
 - Entity linking
 
-![Pasted image 20230629163356](Resources/4.%20Artificial%20intelligence/3.%20Applications/Knowledge-intensive%20tasks/Pasted%20image%2020230629163356.png)
+![Pasted image 20230629163356](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Knowledge-intensive%20tasks/Pasted%20image%2020230629163356.png)
 

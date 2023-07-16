@@ -33,7 +33,7 @@ e.g.
 
 ### Folding activation functions
 
-Folding activation functions are extensively used in the [pooling layers](https://en.wikipedia.org/wiki/Convolutional_neural_network#Pooling_layers "Convolutional neural network") in [convolutional neural networks](https://en.wikipedia.org/wiki/Convolutional_neural_network "Convolutional neural network"), and in output layers of multiclass classification networks. These activations perform aggregation over the inputs, such as taking the [mean](https://en.wikipedia.org/wiki/Mean "Mean"), [minimum](https://en.wikipedia.org/wiki/Minimum "Minimum") or [maximum](https://en.wikipedia.org/wiki/Maximum "Maximum"). In multiclass classification the [softmax](https://en.wikipedia.org/wiki/Softmax_function "Softmax function") activation is often used.
+Folding activation functions are extensively used in the [](https://en.wikipedia.org/wiki/Convolutional_neural_network#Pooling_layers%20%22Convolutional%20neural%20network%22) in [convolutional neural networks](https://en.wikipedia.org/wiki/Convolutional_neural_network "Convolutional neural network"), and in output layers of multiclass classification networks. These activations perform aggregation over the inputs, such as taking the [mean](https://en.wikipedia.org/wiki/Mean "Mean"), [minimum](https://en.wikipedia.org/wiki/Minimum "Minimum") or [maximum](https://en.wikipedia.org/wiki/Maximum "Maximum"). In multiclass classification the [softmax](https://en.wikipedia.org/wiki/Softmax_function "Softmax function") activation is often used.
 
 ???
 
@@ -132,7 +132,7 @@ class SwiGLU(nn.Module):
 # print(output.shape)
 ```
 
-Used in PaLM & [LLaMA](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Models/LLaMA.md).
+Used in PaLM & [LLaMA](../../1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Models/LLaMA.md).
 
 
 

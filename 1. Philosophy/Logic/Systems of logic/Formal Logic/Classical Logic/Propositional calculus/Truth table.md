@@ -12,7 +12,7 @@ Advantages:
 - Give a formal defnition of what a connective "means."
 - Give us a way to fgure out what a complex propositional formula says.
 
-## Truth table for [implication](Resources/0.%20Philosophy/Implication.pdf)
+## Truth table for [implication](../../../../../../Resources/0.%20Philosophy/Implication.pdf)
 蕴含连接词的真值表
 
 | $p$ | $q$ | $p \to q$ |
@@ -26,7 +26,7 @@ Advantages:
 
 你会想问为什么时这样，Stanford CS103会告诉你，这就是人通过直觉去定义的。
 
-## Truth table for [biconditional](1.%20Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/Propositional%20calculus/Logical%20connective/Biconditional.md)
+## Truth table for [biconditional](Logical%20connective/Biconditional.md)
 当且仅当的真值表
 
 | $p$ | $q$ | $p \leftrightarrow q$ |

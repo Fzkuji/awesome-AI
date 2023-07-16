@@ -55,7 +55,7 @@ Augmented language models——增强语言模型（ALMs）是一种新的研究
 
 ## NLP for recommendation
 
-[Recommender system](5.%20Information%20science/Information%20filtering/Recommender%20system.md)与[NLP](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Natural%20language%20processing.md)技术长期保持紧密关系，特别是在pre-trained language models (PLM)出现后，这些模型提高了推荐系统的性能和可解释性。
+[Recommender system](../../../../5.%20Information%20science/Information%20filtering/Recommender%20system.md)与[NLP](../../../1.%20Major%20goals/Intelligence/Natural%20language%20processing/Natural%20language%20processing.md)技术长期保持紧密关系，特别是在pre-trained language models (PLM)出现后，这些模型提高了推荐系统的性能和可解释性。
 
 PLMs是在大型语料库上以自监督方式学习通用表示的语言模型，所学到的表示对于一系列下游NLP任务具有益处。
 
@@ -65,7 +65,7 @@ PLMs是在大型语料库上以自监督方式学习通用表示的语言模型�
 
 ## Cold-start recommendation
 
-[](5.%20Information%20science/Information%20filtering/Recommender%20system.md#^f00b70%7CCold%20start%20(recommender%20systems))是指在推荐系统中用户或物品没有与系统先前的互动记录时遇到的问题。这意味着系统没有可用的数据来进行个性化推荐。为了解决这个问题，有人提出了一些解决方案，比如学会建模内容特征，或者从其他领域转移表示。前一种方法侧重于根据内容（如文本、图像或元数据）了解物品或用户的特征。后一种方法则是利用来自其他领域的信息（如社交网络或产品描述）来推断用户偏好。另外，还有一些方法专注于快速适应新领域，而不仅仅是为冷启动场景提供推荐。在启动场景上，推荐模型的良好泛化能力对于确保更好的用户体验和提高用户参与度非常重要。在我们的工作中，我们利用大型语言模型的推理和背景知识来提高冷启动场景推荐系统的性能。
+[](../../../../5.%20Information%20science/Information%20filtering/Recommender%20system.md#^f00b70%7CCold%20start%20(recommender%20systems))是指在推荐系统中用户或物品没有与系统先前的互动记录时遇到的问题。这意味着系统没有可用的数据来进行个性化推荐。为了解决这个问题，有人提出了一些解决方案，比如学会建模内容特征，或者从其他领域转移表示。前一种方法侧重于根据内容（如文本、图像或元数据）了解物品或用户的特征。后一种方法则是利用来自其他领域的信息（如社交网络或产品描述）来推断用户偏好。另外，还有一些方法专注于快速适应新领域，而不仅仅是为冷启动场景提供推荐。在启动场景上，推荐模型的良好泛化能力对于确保更好的用户体验和提高用户参与度非常重要。在我们的工作中，我们利用大型语言模型的推理和背景知识来提高冷启动场景推荐系统的性能。
 
 # Method
 
@@ -96,14 +96,14 @@ For example, in the first round of Q\&A, the user requests action movies. The sy
 
 In the second round of Q\&A, the user asks why the movie "Fargo" was recommended. The system determines that no recommendation task is needed and instead executes the explanation for the recommendation module, using the movie title, history interaction, and user profile as inputs. The answer $A_2$ is then generated, which provides a brief explanation of the recommendation, including information about the user's general interests and the specific characteristics of the movie that may be appealing to the user.
 
-![Fig 1](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Fig%201.png)
+![Fig 1](../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Fig%201.png)
 Fig. 1: Overview of Chat-Rec. The left side shows a dialogue between a user and ChatGPT. The middle side shows the flowchart to how Chat-Rec links traditional recommender systems with conversational AI such as ChatGPT. The right side describes the specific judgment in the process.
 
 ## Recommendation based on candidate set compression
 
 传统的推荐系统通常生成一小部分排序的候选产品，每个产品都有一个分数，反映了系统的推荐信心或结果质量。然而，考虑到产品集的庞大规模，大多数现有推荐系统的性能远远达不到令人满意的程度，仍有很大的改进空间。
 
-![Fig 2](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Fig%202.png) ^9c41ea
+![Fig 2](../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Fig%202.png) ^9c41ea
 
 本文提出了一种使用LLMs来通过缩小候选集来提高推荐系统性能的方法。推荐系统生成大量候选物品，这可能会让用户感到不知所措。LLMs在缩小系统内产品候选集方面发挥了几个不同的关键作用。
 
@@ -117,7 +117,7 @@ Fig. 1: Overview of Chat-Rec. The left side shows a dialogue between a user and 
 
 例如，如果一个用户询问2021年上映的新电影推荐，推荐系统可以使用关于电影的文本数据生成一个嵌入，然后计算与系统中其他电影的相似度来进行推荐。这种能力使得推荐系统能够为新项目提供相关和准确的推荐，从而提高整体用户体验。
 
-![Fig 3](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Fig%203.png)
+![Fig 3](../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Fig%203.png)
 Fig. 3: Case Study of New Item Recommendation. The top shows that ChatGPT is unable to recommend new items beyond the timeframe of its training data. The middle part demonstrates the process of how to utilize external information about new items to enable ChatGPT to handle recommendations for new items. The bottom shows that ChatGPT can effectively handle recommendations for new items after incorporating external information.
 
 
@@ -125,7 +125,7 @@ Fig. 3: Case Study of New Item Recommendation. The top shows that ChatGPT is una
 
 ## Cross-domain recommendations
 
-![Fig 4](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Fig%204.png)
+![Fig 4](../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Fig%204.png)
 
 上面介绍的增强型LLM推荐系统可以用来解决一些传统推荐系统难以解决的挑战性任务，比如跨领域推荐和冷启动推荐。在这部分，我们将讨论如何使用增强型LLM推荐系统进行跨领域推荐。
 
@@ -188,7 +188,7 @@ $$
 
 ## Ablation study
 
-![Fig 5](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Fig%205.png)
+![Fig 5](../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Fig%205.png)
 Fig. 5: Performance on different prompt and temperature.
 
 
@@ -205,10 +205,10 @@ Fig. 5: Performance on different prompt and temperature.
 
 ## Prompts
 
-![800](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Fig%206.png)
+![800](../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Fig%206.png)
 Fig. 6: Prompt for top-k recommendation task.
 
-![800](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Fig%207.png)
+![800](../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Fig%207.png)
 Fig. 7: Prompt for moving rating task.
 
 ## Example Answers

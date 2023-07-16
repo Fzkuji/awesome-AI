@@ -18,7 +18,7 @@ $$
 
 The probability of going from state _i_ to state _j_ in _n_ time steps is
 $$p_{i j}^{(n)}=\operatorname{Pr}\left(X_{n}=j \mid X_{0}=i\right)$$
-The _n_-step transition probabilities satisfy the [Chapman–Kolmogorov equation](2.%20Mathematics/2.%20Applied%20mathematics%E2%80%8E/Probability%20theory/Stochastic%20process/Markov%20chain/Chapman%E2%80%93Kolmogorov%20equation.md), that for any _k_ such that 0 < _k_ < _n_,
+The _n_-step transition probabilities satisfy the [Chapman–Kolmogorov equation](Chapman%E2%80%93Kolmogorov%20equation.md), that for any _k_ such that 0 < _k_ < _n_,
 $$p_{i j}^{(n)}=\sum_{r \in S} p_{i r}^{(k)} p_{r j}^{(n-k)}$$
 
 

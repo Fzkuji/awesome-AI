@@ -13,10 +13,10 @@ Multi-scenario modeling 多场景建模
 
 因此，如何同时建模场景共性和差异性，显得非常重要。
 
-### Multi-scenario modeling vs [MTL](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/General%20Multi-Task%20Learning.md)
+### Multi-scenario modeling vs [MTL](../../General%20Multi-Task%20Learning/General%20Multi-Task%20Learning.md)
 
 **但是观感上多场景建模的问题和多任务学习的问题没有什么不同**
 
-来自Domain adaptation的[Multi-scenario modeling](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Domain%20adaptation/Multi-scenario%20modeling/Multi-scenario%20modeling.md)与广义多任务学习虽然看上去类似，但有一些重要的区别。在多任务学习、元学习和迁移学习中，模型通常是在任务级别进行学习和适应的，而在多场景建模中，模型是在场景级别进行学习和适应的。这意味着多场景建模需要处理的问题可能更加复杂，因为场景之间的差异可能比任务之间的差异更大。
+来自Domain adaptation的[Multi-scenario modeling](.md)与广义多任务学习虽然看上去类似，但有一些重要的区别。在多任务学习、元学习和迁移学习中，模型通常是在任务级别进行学习和适应的，而在多场景建模中，模型是在场景级别进行学习和适应的。这意味着多场景建模需要处理的问题可能更加复杂，因为场景之间的差异可能比任务之间的差异更大。
 
 因此，虽然多场景建模与多任务学习、元学习和迁移学习有一些共性，但由于它们处理的问题和挑战有所不同，所以它们通常被视为不同的研究领域。

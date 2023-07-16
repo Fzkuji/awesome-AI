@@ -15,7 +15,7 @@ For Science!
 - [Mathematics](2.%20Mathematics/Mathematics.md)
 	- [Foundations of mathematics](2.%20Mathematics/0.%20Foundations%20of%20mathematics/Foundations%20of%20mathematics.md)
 	- [Pure mathematics](2.%20Mathematics/1.%20Pure%20mathematics/Pure%20mathematics.md)
-	- [Applied mathematics‎](2.%20Mathematics/2.%20Applied%20mathematics‎/Applied%20mathematics‎.md)
+	- [Applied mathematics‎](2.%20Mathematics/2.%20Applied%20mathematics%E2%80%8E/Applied%20mathematics%E2%80%8E.md)
 	- [Computational mathematics](2.%20Mathematics/3.%20Computational%20mathematics/Computational%20mathematics.md)
 	- [Discrete mathematics](2.%20Mathematics/4.%20Discrete%20mathematics/Discrete%20mathematics.md)
 - [Computer science](3.%20Computer%20science/Computer%20science.md)

@@ -1,1 +1,1 @@
-![Properties of equivalence relations](Resources/2.%20Mathematics/4.%20Discrete%20mathematics/Order%20theory/Key%20concepts/Properties%20of%20equivalence%20relations.pdf)
+![Properties of equivalence relations](../../../../Resources/2.%20Mathematics/4.%20Discrete%20mathematics/Order%20theory/Key%20concepts/Properties%20of%20equivalence%20relations.pdf)

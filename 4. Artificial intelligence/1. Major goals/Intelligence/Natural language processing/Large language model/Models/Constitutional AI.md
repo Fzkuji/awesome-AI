@@ -26,7 +26,7 @@ The process involves both a supervised learning and a reinforcement learning pha
 
 在本文中，我们开发了一种我们称为Constitutional AI (CAI)的方法，并用它来训练一个非回避和相对无害的 AI 助手，没有任何人类反馈的影响。如Figure 1所示：
 
-![Pasted image 20230511221912](Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Pasted%20image%2020230511221912.png)
+![Pasted image 20230511221912](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Pasted%20image%2020230511221912.png)
 
 我们开发这项技术的动机是：
 1. 研究使用AI帮助监督其他人工智能的可能性，从而扩大监督规模

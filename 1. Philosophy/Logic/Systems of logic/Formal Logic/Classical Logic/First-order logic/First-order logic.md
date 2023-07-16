@@ -1,12 +1,12 @@
-**First-order logic**—also known as **[predicate](1.%20Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/First-order%20logic/Predicate.md) logic**, **quantificational logic**, and **first-order predicate calculus**—is a collection of [formal systems](https://en.wikipedia.org/wiki/Formal_system "Formal system") used in [mathematics](https://en.wikipedia.org/wiki/Mathematics "Mathematics"), [philosophy](https://en.wikipedia.org/wiki/Philosophy "Philosophy"), [linguistics](https://en.wikipedia.org/wiki/Linguistics "Linguistics"), and [computer science](https://en.wikipedia.org/wiki/Computer_science "Computer science"). First-order logic uses [quantified variables](https://en.wikipedia.org/wiki/Quantification_(logic) "Quantification (logic)") over non-logical objects, and allows the use of sentences that contain variables, so that rather than propositions such as "Socrates is a man", one can have expressions in the form "there exists x such that x is Socrates and x is a man", where "there exists" is a quantifier, while _x_ is a variable. This distinguishes it from [propositional logic](https://en.wikipedia.org/wiki/Propositional_logic "Propositional logic"), which does not use quantifiers or [relations](https://en.wikipedia.org/wiki/Finitary_relation "Finitary relation"); in this sense, propositional logic is the foundation of first-order logic.
+**First-order logic**—also known as **[predicate](Predicate.md) logic**, **quantificational logic**, and **first-order predicate calculus**—is a collection of [formal systems](https://en.wikipedia.org/wiki/Formal_system "Formal system") used in [mathematics](https://en.wikipedia.org/wiki/Mathematics "Mathematics"), [philosophy](https://en.wikipedia.org/wiki/Philosophy "Philosophy"), [linguistics](https://en.wikipedia.org/wiki/Linguistics "Linguistics"), and [computer science](https://en.wikipedia.org/wiki/Computer_science "Computer science"). First-order logic uses [quantified variables](https://en.wikipedia.org/wiki/Quantification_(logic) "Quantification (logic)") over non-logical objects, and allows the use of sentences that contain variables, so that rather than propositions such as "Socrates is a man", one can have expressions in the form "there exists x such that x is Socrates and x is a man", where "there exists" is a quantifier, while _x_ is a variable. This distinguishes it from [propositional logic](https://en.wikipedia.org/wiki/Propositional_logic "Propositional logic"), which does not use quantifiers or [relations](https://en.wikipedia.org/wiki/Finitary_relation "Finitary relation"); in this sense, propositional logic is the foundation of first-order logic.
 
-如[](1.%20Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/Propositional%20calculus/Propositional%20logic.md#^5cd9f2|Propositional%20calculus)中所述，谓词逻辑就算是一阶逻辑了。
+如[](../Propositional%20calculus/Propositional%20logic.md#^5cd9f2%7CPropositional%20calculus)中所述，谓词逻辑就算是一阶逻辑了。
 
 - **First-order logic** is a logical system for reasoning about properties of objects.
 - Augments the logical connectives from propositional logic with
-	- [predicates](1.%20Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/First-order%20logic/Predicate.md) that describe properties of objects,
-	- [](2.%20Mathematics/1.%20Pure%20mathematics/Mathematical%20logic/Set%20theory/Concepts/Function.md#^162e9c%7Cfunctions) that map objects to one another, and
-	- [quantifers](1.%20Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/First-order%20logic/Quantifier.md) that allow us to reason about multiple objects.
+	- [predicates](Predicate.md) that describe properties of objects,
+	- [](../../../../../../2.%20Mathematics/1.%20Pure%20mathematics/Mathematical%20logic/Set%20theory/Concepts/Function.md#^162e9c%7Cfunctions) that map objects to one another, and
+	- [quantifers](Quantifier.md) that allow us to reason about multiple objects.
 
 Example:
 ```
@@ -71,11 +71,11 @@ First-order logic is an excellent tool for manipulating defnitions and theorems 
 
 ### The art of translation
 
-[The art of translation](Resources/0.%20Philosophy/The%20art%20of%20translation.pdf)介绍了翻译一阶逻辑的案例。包括普通句子的翻译和集合的翻译。
+[The art of translation](../../../../../../Resources/0.%20Philosophy/The%20art%20of%20translation.pdf)介绍了翻译一阶逻辑的案例。包括普通句子的翻译和集合的翻译。
 
 ### Negation in first-order logic
 
-![600](Resources/0.%20Philosophy/Negation%20in%20first-order%20logic.png)
+![600](../../../../../../Resources/0.%20Philosophy/Negation%20in%20first-order%20logic.png)
 
 Use the equivalences
 $$
@@ -90,7 +90,7 @@ Mechanically (技巧):
 - Push the negation across the quantifer.
 - Change the quantifer from ∀ to ∃ or vice-versa.
 
-以及要灵活运用[](1.%20Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/Propositional%20calculus/Propositional%20logic.md#^443af0|propositional%20logic)中的一些equivalences
+以及要灵活运用[](../Propositional%20calculus/Propositional%20logic.md#^443af0%7Cpropositional%20logic)中的一些equivalences
 
 ### Restricted quantifers
 

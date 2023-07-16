@@ -2,9 +2,9 @@
 
 ### Introduction
 
-Diffusion models are a class of latent variable generative models inspired by non-equilibrium thermodynamics. They have been widely used for image-processing tasks such as denoising and inpainting. Most currently used diffusion models were from the working [denoising diffusion probabilistic models (DDPM)](https://arxiv.org/abs/2006.11239) in 2020 and generally required 1000-step iterations, which consume much time for training and prediction. Therefore, many subsequent diffusion models focus on accelerating sampling techniques to reduce the time consumed by generation.
+Diffusion models are a class of latent variable generative models inspired by non-equilibrium thermodynamics. They have been widely used for image-processing tasks such as denoising and inpainting. Most currently used diffusion models were from the working [denoising diffusion probabilistic models (DDPM)](DDPM)) in 2020 and generally required 1000-step iterations, which consume much time for training and prediction. Therefore, many subsequent diffusion models focus on accelerating sampling techniques to reduce the time consumed by generation.
 
-Shortly, a new member of the diffusion model family, the [denoising diffusion implicit model (DDIM)](https://arxiv.org/abs/2010.02502), achieved state-of-the-art performance on snapshot denoising tasks and reduced the number of iterations to 100 steps by generalizing the diffusion process. However, one limitation of DDIM and other diffusion models is their inability to incorporate additional information about the image, such as the presence of certain object classes or features. 
+Shortly, a new member of the diffusion model family, the [denoising diffusion implicit model (DDIM)](DDIM)), achieved state-of-the-art performance on snapshot denoising tasks and reduced the number of iterations to 100 steps by generalizing the diffusion process. However, one limitation of DDIM and other diffusion models is their inability to incorporate additional information about the image, such as the presence of certain object classes or features. 
 
 There have been works trying to introduce the diffusion model into supervised learning, mainly in image segmentation, such as [MedSegDiff](https://arxiv.org/abs/2211.00611) and [SegDiff](https://arxiv.org/abs/2112.00390). However, it can only solve simple tasks, and the diffusion models have a slight advantage over complex scenes over existing segmentation algorithms, especially in terms of real-time performance. In this proposal, we propose to extend DDIM by adding a conditional image to the model, allowing it to use this additional information for improved performance on image segmentation tasks in complex scenes.
 
@@ -14,7 +14,7 @@ There have been works trying to introduce the diffusion model into supervised le
 
 In the original paper of DDPM, Bayesian theorem is used to explain the diffusion process. 
 $$\boldsymbol{x} = \boldsymbol{x}_0 \rightleftharpoons \boldsymbol{x}_1 \rightleftharpoons \boldsymbol{x}_2 \rightleftharpoons \cdots \rightleftharpoons \boldsymbol{x}_{T-1} \rightleftharpoons \boldsymbol{x}_T = \boldsymbol{z}$$
-where $\boldsymbol{x}$ is the original image and $\boldsymbol{z}$ is pure noise. $\boldsymbol{x}_{t\in  (0,T)}$ is the result of one step of adding noise and denoising, whose formulas are as follows respectively [(refer to Su's blog post)](https://kexue.fm/archives/9181): 
+where $\boldsymbol{x}$ is the original image and $\boldsymbol{z}$ is pure noise. $\boldsymbol{x}_{t\in  (0,T)}$ is the result of one step of adding noise and denoising, whose formulas are as follows respectively [(refer to Su's blog post)](refer%20to%20Su's%20blog%20post)): 
 $$
 \begin{aligned}
 q(\mathbf{x}_t \vert \mathbf{x}_0)
@@ -104,7 +104,7 @@ $$
 #### Parameters Setups
 
 According to the definition of the diffusion model, besides the training parameters, the only changing parameters of the model are the artificially set $\alpha$ and $\beta$. They have many setups, mainly linear, sigmoid and cosine schedulers. $\alpha$ and $\beta$ affect the number of steps of the diffusion model and the variance of the added noise.
-![600](Resources/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Generative%20model/alpha&sigma.png)
+![600](../../../../../Resources/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Generative%20model/alpha&sigma.png)
 When the current step is determined, the longer the model prediction step size is, the more significant the proportion of the prediction result will be, and the noise variance will also increase.
 
 #### High-order

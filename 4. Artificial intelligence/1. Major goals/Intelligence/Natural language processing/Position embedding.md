@@ -25,13 +25,13 @@ a_{m, n} & =\frac{\exp \left(\frac{\boldsymbol{q}_m^{\top} \boldsymbol{k}_n}{\sq
 $$
 ^Equation2
 
-The existing approaches of transformer-based position encoding mainly focus on choosing a suitable function to form the first [](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Position%20embedding.md#^Equation1%7CEquation%20(1)).
+The existing approaches of transformer-based position encoding mainly focus on choosing a suitable function to form the first [](.md#^Equation1%7CEquation%20(1)).
 
 ### Absolute position embedding
 
 **Absolute Position Encodings** are a type of position embeddings for [[Transformer](https://paperswithcode.com/method/transformer)-based models] where positional encodings are added to the input embeddings at the bottoms of the encoder and decoder stacks. The positional encodings have the same dimension $d_{model}$ as the embeddings, so that the two can be summed. 
 
-A typical choice of the [](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Position%20embedding.md#^Equation1%7CEquation%20(1)) is:
+A typical choice of the [](.md#^Equation1%7CEquation%20(1)) is:
 $$
 f_{t: t \in\{q, k, v\}}\left(\boldsymbol{x}_i, i\right):=\boldsymbol{W}_{t: t \in\{q, k, v\}}\left(\boldsymbol{x}_i+\boldsymbol{p}_i\right),
 $$
@@ -50,7 +50,7 @@ where $pos$ is the position and $i$ is the dimension. That is, each dimension of
 
 ### Relative position embedding
 
-The authors of Shaw et al. applied different settings of [](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Position%20embedding.md#^Equation1%7CEquation%20(1)) as following:
+The authors of Shaw et al. applied different settings of [](.md#^Equation1%7CEquation%20(1)) as following:
 $$
 \begin{array}{r}
 f_q\left(\boldsymbol{x}_m\right):=\boldsymbol{W}_q \boldsymbol{x}_m \\
@@ -60,7 +60,7 @@ f_v\left(\boldsymbol{x}_n, n\right):=\boldsymbol{W}_v\left(\boldsymbol{x}_n+\til
 $$
 ^Equation5
 
-where $\tilde{\boldsymbol{p}}_r^k, \tilde{\boldsymbol{p}}_r^v \in \mathbb{R}^d$ are trainable relative position embeddings. Note that $r=\operatorname{clip}\left(m-n, r_{\min }, r_{\max }\right)$ represents the relative distance between position $m$ and $n$. They clipped the relative distance with the hypothesis that precise relative position information is not useful beyond a certain distance. Keeping the form of [](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Position%20embedding.md#^Equation3%7CEquation%20(3)), the authors Dai et al. have proposed to decompose $\boldsymbol{q}_m^{\top} \boldsymbol{k}_n$ of [](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Position%20embedding.md#^Equation2%7CEquation%20(2)) as
+where $\tilde{\boldsymbol{p}}_r^k, \tilde{\boldsymbol{p}}_r^v \in \mathbb{R}^d$ are trainable relative position embeddings. Note that $r=\operatorname{clip}\left(m-n, r_{\min }, r_{\max }\right)$ represents the relative distance between position $m$ and $n$. They clipped the relative distance with the hypothesis that precise relative position information is not useful beyond a certain distance. Keeping the form of [](.md#^Equation3%7CEquation%20(3)), the authors Dai et al. have proposed to decompose $\boldsymbol{q}_m^{\top} \boldsymbol{k}_n$ of [](.md#^Equation2%7CEquation%20(2)) as
 $$
 \boldsymbol{q}_m^{\boldsymbol{\top}} \boldsymbol{k}_n=\boldsymbol{x}_m^{\boldsymbol{\top}} \boldsymbol{W}_q^{\boldsymbol{\top}} \boldsymbol{W}_k \boldsymbol{x}_n+\boldsymbol{x}_m^{\boldsymbol{\top}} \boldsymbol{W}_q^{\boldsymbol{\top}} \boldsymbol{W}_k \boldsymbol{p}_n+\boldsymbol{p}_m^{\boldsymbol{\top}} \boldsymbol{W}_q^{\boldsymbol{\top}} \boldsymbol{W}_k \boldsymbol{x}_n+\boldsymbol{p}_m^{\boldsymbol{\top}} \boldsymbol{W}_q^{\boldsymbol{\top}} \boldsymbol{W}_k \boldsymbol{p}_n
 $$
@@ -72,25 +72,25 @@ $$
 $$
 ^Equation7
 
-It is noteworthy that the position information in the value term is removed by setting $f_v\left(\boldsymbol{x}_j\right):=\boldsymbol{W}_v \boldsymbol{x}_j$. Later work followed these settings by only encoding the relative position information into the attention weights. However, Raffel et al. reformed [](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Position%20embedding.md#^Equation6%7CEquation%20(6)) as:
+It is noteworthy that the position information in the value term is removed by setting $f_v\left(\boldsymbol{x}_j\right):=\boldsymbol{W}_v \boldsymbol{x}_j$. Later work followed these settings by only encoding the relative position information into the attention weights. However, Raffel et al. reformed [](.md#^Equation6%7CEquation%20(6)) as:
 $$
 \boldsymbol{q}_m^{\boldsymbol{\top}} \boldsymbol{k}_n=\boldsymbol{x}_m^{\top} \boldsymbol{W}_q^{\boldsymbol{\top}} \boldsymbol{W}_k \boldsymbol{x}_n+b_{i, j}
 $$
 ^Equation8
 
-where $b_{i, j}$ is a trainable bias. The authors of Ke et al. investigated the middle two terms of [](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Position%20embedding.md#^Equation6%7CEquation%20(6)) and found little correlations between absolute positions and words. The authors of Raffel et al. proposed to model a pair of words or positions using different projection matrices.
+where $b_{i, j}$ is a trainable bias. The authors of Ke et al. investigated the middle two terms of [](.md#^Equation6%7CEquation%20(6)) and found little correlations between absolute positions and words. The authors of Raffel et al. proposed to model a pair of words or positions using different projection matrices.
 $$
 \boldsymbol{q}_m^{\boldsymbol{\top}} \boldsymbol{k}_n=\boldsymbol{x}_m^{\boldsymbol{\top}} \boldsymbol{W}_q^{\boldsymbol{\top}} \boldsymbol{W}_k \boldsymbol{x}_n+\boldsymbol{p}_m^{\boldsymbol{\top}} \mathbf{U}_q^{\top} \mathbf{U}_k \boldsymbol{p}_n+b_{i, j}
 $$
 ^Equation9
 
-The authors of He et al. argued that the relative positions of two tokens could only be fully modeled using the middle two terms of [](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Position%20embedding.md#^Equation6%7CEquation%20(6)). As a consequence, the absolute position embeddings $\boldsymbol{p}_m$ and $\boldsymbol{p}_n$ were simply replaced with the relative position embeddings $\tilde{\boldsymbol{p}}_{m-n}$ :
+The authors of He et al. argued that the relative positions of two tokens could only be fully modeled using the middle two terms of [](.md#^Equation6%7CEquation%20(6)). As a consequence, the absolute position embeddings $\boldsymbol{p}_m$ and $\boldsymbol{p}_n$ were simply replaced with the relative position embeddings $\tilde{\boldsymbol{p}}_{m-n}$ :
 $$
 \boldsymbol{q}_m^{\top} \boldsymbol{k}_n=\boldsymbol{x}_m^{\top} \boldsymbol{W}_q^{\boldsymbol{\top}} \boldsymbol{W}_k \boldsymbol{x}_n+\boldsymbol{x}_m^{\top} \boldsymbol{W}_q^{\top} \boldsymbol{W}_k \tilde{\boldsymbol{p}}_{m-n}+\tilde{\boldsymbol{p}}_{m-n}^{\top} \boldsymbol{W}_q^{\boldsymbol{\top}} \boldsymbol{W}_k \boldsymbol{x}_n
 $$
 ^Equation10
 
-A comparison of the four variants of the relative position embeddings Radford and Narasimhan has shown that the variant similar to [](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Position%20embedding.md#^Equation10%7CEquation%20(10)) is the most efficient among the other three. Generally speaking, all these approaches attempt to modify [](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Position%20embedding.md#^Equation6%7CEquation%20(6)) based on the decomposition of [](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Position%20embedding.md#^Equation3%7CEquation%20(3)) under the self-attention settings in [](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Position%20embedding.md#^Equation2%7CEquation%20(2)), which was originally proposed in Vaswani et al.. They commonly introduced to directly add the position information to the context representations. Unlikely, our approach aims to derive the relative position encoding from [](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Position%20embedding.md#^Equation1%7CEquation%20(1)) under some constraints. Next, we show that the derived approach is more interpretable by incorporating relative position information with the rotation of context representations.
+A comparison of the four variants of the relative position embeddings Radford and Narasimhan has shown that the variant similar to [](.md#^Equation10%7CEquation%20(10)) is the most efficient among the other three. Generally speaking, all these approaches attempt to modify [](.md#^Equation6%7CEquation%20(6)) based on the decomposition of [](.md#^Equation3%7CEquation%20(3)) under the self-attention settings in [](.md#^Equation2%7CEquation%20(2)), which was originally proposed in Vaswani et al.. They commonly introduced to directly add the position information to the context representations. Unlikely, our approach aims to derive the relative position encoding from [](.md#^Equation1%7CEquation%20(1)) under some constraints. Next, we show that the derived approach is more interpretable by incorporating relative position information with the rotation of context representations.
 
 ### Rotary positional embedding
 
@@ -122,8 +122,8 @@ $$
 \end{array}\right)
 $$
 is the rotary matrix with pre-defined parameters $\Theta=\left\{\theta_i=10000^{-2(i-1) / d}, i \in[1,2, \ldots, d / 2]\right\}$. A graphic illustration of RoPE is shown as follows:
-![500](Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Position%20embedding/RoPE.png)
-Applying our RoPE to self-attention in [](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Position%20embedding.md#^Equation2%7CEquation%20(2)), we obtain:
+![500](../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Position%20embedding/RoPE.png)
+Applying our RoPE to self-attention in [](.md#^Equation2%7CEquation%20(2)), we obtain:
 $$
 \boldsymbol{q}_m^{\top} \boldsymbol{k}_n=\left(\boldsymbol{R}_{\Theta, m}^d \boldsymbol{W}_q \boldsymbol{x}_m\right)^{\top}\left(\boldsymbol{R}_{\Theta, n}^d \boldsymbol{W}_k \boldsymbol{x}_n\right)=\boldsymbol{x}^{\top} \boldsymbol{W}_q R_{\Theta, n-m}^d \boldsymbol{W}_k \boldsymbol{x}_n
 $$

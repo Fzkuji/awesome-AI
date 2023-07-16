@@ -5,7 +5,7 @@ For retrieval, there are:
 - inverted indexes
 - nearest neighbor search
 - contrastive learning based dual encoders (DEs) are the present state-of-the-art (Written in 2023).
-([GenRead](4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/GenRead.md))
+([GenRead](../../4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/GenRead.md))
 
 Dual encoders have been used for question answering (QA) and information retrieval (IR) tasks with good results. Previous research focuses on two major types of dual encoders:
 - Siamese Dual Encoder (SDE), with parameters shared across two encoders;
@@ -14,12 +14,12 @@ Dual encoders have been used for question answering (QA) and information retriev
 
 记录的工作：
 - 传统方法
-	- [Okapi BM25](5.%20Information%20science/Information%20retrieval/Okapi%20BM25.md)
+	- [Okapi BM25](Okapi%20BM25.md)
 - 机器学习方法：
 	- Dual Encoder
 		- Siamese Dual Encoder
 		- Asymmetric Dual Encoder
-	- [DSI](4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/DSI.md)
+	- [DSI](../../4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/DSI.md)
 
 
 

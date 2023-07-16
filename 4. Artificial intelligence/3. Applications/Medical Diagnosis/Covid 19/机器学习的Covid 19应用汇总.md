@@ -67,9 +67,9 @@ by collecting data from the clinical reports, doctor's notes, and various wearab
 
 Studies have shown that recovery from infection with SARS-CoV-2, the virus that causes COVID-19, can vary from person to person. Most patients seem to recover from COVID-19 quickly and completely. However, others report experiencing COVID-19 symptoms that last for weeks or months or developing new symptoms weeks after infection. These long-term effects are called post-acute sequelae of SARS-CoV-2 (PASC) or, more commonly, [Long COVID](https://covid19.nih.gov/covid-19-topics/long-covid).
 
-To better understand which patients develop Long COVID, the NIH Rapid Acceleration of Diagnostics (RADx) initiative has launched the [NIH Long COVID Computational Challenge (L3C)](https://www.challenge.gov/?challenge=l3c&tab=overview). Part of the RADx-Radical program, the challenge aims to support research that uses artificial intelligence and machine learning tools to identify COVID-19 patients with a high risk of developing Long COVID.
+To better understand which patients develop Long COVID, the NIH Rapid Acceleration of Diagnostics (RADx) initiative has launched the [NIH Long COVID Computational Challenge (L3C)](L3C)). Part of the RADx-Radical program, the challenge aims to support research that uses artificial intelligence and machine learning tools to identify COVID-19 patients with a high risk of developing Long COVID.
 
-##### Long COVID with [myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS)](https://www.cdc.gov/me-cfs/)
+##### Long COVID with [myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS)](ME/CFS))
 
 We studied brain tissue from patients who had died from COVID-19 at home. COVID-19 came on so fast, they died suddenly. They didn’t go to the hospital. They didn’t spend time in ICU. When we looked at the lungs and other organs, we saw only a little damage — not enough to cause secondary damage to the brain. We knew that damage we saw in the brain was directly related to the infection.
 
@@ -127,7 +127,7 @@ AI 聊天机器人[已由](https://www.gavi.org/vaccineswork/are-chatbots-better
 
 ## References
 
- - [综述Significant Applications of Machine Learning for COVID-19 Pandemic](obsidian://open?vault=Machine%20Learning&file=Covid%2019%2FResources%2FSignificant%20Applications%20of%20Machine%20Learning%20for%20COVID-19%20Pandemic.pdf)
+ - [综述Significant Applications of Machine Learning for COVID-19 Pandemic](obsidian://open?vault=Machine%20Learning&file=Covid%2019%252FResources%252FSignificant%20Applications%20of%20Machine%20Learning%20for%20COVID-19%20Pandemic.pdf)
  - 
 
 

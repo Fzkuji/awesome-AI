@@ -4,17 +4,17 @@ ps：笔者一直在努力修正更新中！～
 
 ## 阅读目录
 
-> -   [0. 干货总结](https://www.cnblogs.com/wujingqiao/articles/8961890.html#0)
-> -   [1. 冒泡排序](https://www.cnblogs.com/wujingqiao/articles/8961890.html#1)
-> -   [2. 快速排序](https://www.cnblogs.com/wujingqiao/articles/8961890.html#2)
-> -   [3. 直接选择排序](https://www.cnblogs.com/wujingqiao/articles/8961890.html#3)
-> -   [4. 堆排序](https://www.cnblogs.com/wujingqiao/articles/8961890.html#4)
-> -   [5. 直接插入排序](https://www.cnblogs.com/wujingqiao/articles/8961890.html#5)
-> -   [6. 希尔排序](https://www.cnblogs.com/wujingqiao/articles/8961890.html#6)
-> -   [7. 归并排序](https://www.cnblogs.com/wujingqiao/articles/8961890.html#7)
-> -   [8. 计数排序](https://www.cnblogs.com/wujingqiao/articles/8961890.html#8)
-> -   [9. 桶排序](https://www.cnblogs.com/wujingqiao/articles/8961890.html#9)
-> -   [10. 基数排序](https://www.cnblogs.com/wujingqiao/articles/8961890.html#10)
+> -   [](https://www.cnblogs.com/wujingqiao/articles/8961890.html#0)
+> -   [](https://www.cnblogs.com/wujingqiao/articles/8961890.html#1)
+> -   [](https://www.cnblogs.com/wujingqiao/articles/8961890.html#2)
+> -   [](https://www.cnblogs.com/wujingqiao/articles/8961890.html#3)
+> -   [](https://www.cnblogs.com/wujingqiao/articles/8961890.html#4)
+> -   [](https://www.cnblogs.com/wujingqiao/articles/8961890.html#5)
+> -   [](https://www.cnblogs.com/wujingqiao/articles/8961890.html#6)
+> -   [](https://www.cnblogs.com/wujingqiao/articles/8961890.html#7)
+> -   [](https://www.cnblogs.com/wujingqiao/articles/8961890.html#8)
+> -   [](https://www.cnblogs.com/wujingqiao/articles/8961890.html#9)
+> -   [](https://www.cnblogs.com/wujingqiao/articles/8961890.html#10)
 
 ## 0. 干货总结
 

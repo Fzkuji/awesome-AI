@@ -17,7 +17,7 @@ And these are not statements:
 - $\displaystyle 3+x = 12$
 The reason the sentence “$3 + x = 12$” is not a statement is that it contains a variable.
 
-You can build more complicated (molecular) statements out of simpler (atomic or molecular) ones using **[logical connectives](1.%20Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/Propositional%20calculus/Logical%20connective/Logical%20connective.md)**. 
+You can build more complicated (molecular) statements out of simpler (atomic or molecular) ones using **[logical connectives](../../Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/Propositional%20calculus/Logical%20connective/Logical%20connective.md)**. 
 可以用**逻辑连接词**将原子命题组合。
 
-注：Atomic和molecular这两个形容词可以用于[sentence](1.%20Philosophy/Philosophy%20of%20language/Concepts/Sentence.md)、[statement](1.%20Philosophy/Philosophy%20of%20language/Concepts/Statement.md)、[proposition](1.%20Philosophy/Philosophy%20of%20language/Concepts/Proposition.md)三个概念上，都是可以的。
+注：Atomic和molecular这两个形容词可以用于[sentence](Sentence.md)、[statement](Statement.md)、[proposition](Proposition.md)三个概念上，都是可以的。

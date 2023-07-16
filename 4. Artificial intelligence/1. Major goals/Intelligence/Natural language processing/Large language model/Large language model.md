@@ -1,12 +1,12 @@
 ## Key concepts
 
-- [Prompting](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Prompting.md)
-	- [Chain of thought](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Chain%20of%20thought.md)
-	- [Self-consistency](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Self-consistency.md)
+- [Prompting](Prompting.md)
+	- [Chain of thought](Chain%20of%20thought.md)
+	- [Self-consistency](Self-consistency.md)
 
 ## Paradigms
 
-![LMRS paradigm](Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/LMRS%20paradigm.png)
+![LMRS paradigm](../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/LMRS%20paradigm.png)
 Language Modelling Paradigm Adaptations for Recommender Systems (LMRS)
 
 上图是语言模型在推荐系统上的范式，不过在整个语言模型领域感觉也是通用的。
@@ -17,7 +17,7 @@ Language Modelling Paradigm Adaptations for Recommender Systems (LMRS)
 ### Fine-tuning
 
 
-### [Prompting](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Prompting.md)
+### [Prompting](Prompting.md)
 
 Prompt-tuning中也分为Tuning-free prompting、Fixed-PTM prompt tuning和Fixed-prompt PTM tuning三种类别。
 
@@ -39,7 +39,7 @@ Fixed-prompt PTM tuning是一种在预定义的prompt上进行微调或参数调
 
 ## Objectives
 
-![常用评估分数](Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/%E5%B8%B8%E7%94%A8%E8%AF%84%E4%BC%B0%E5%88%86%E6%95%B0.png)
+![常用评估分数](../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/%E5%B8%B8%E7%94%A8%E8%AF%84%E4%BC%B0%E5%88%86%E6%95%B0.png)
 
 ### LLM objectives
 
@@ -52,20 +52,20 @@ Fixed-prompt PTM tuning是一种在预定义的prompt上进行微调或参数调
 ## Models
 
 - OpenAI
-	- [GPT-123](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Models/GPT/GPT-123.md)
-	- [InstructGPT](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Models/GPT/InstructGPT.md)
-	- [ChatGPT](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Models/GPT/ChatGPT.md)
-	- [GPT-4](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Models/GPT/GPT-4.md)
+	- [GPT-123](Models/GPT/GPT-123.md)
+	- [InstructGPT](Models/GPT/InstructGPT.md)
+	- [ChatGPT](Models/GPT/ChatGPT.md)
+	- [GPT-4](Models/GPT/GPT-4.md)
 - Google
-	- [BERT](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Models/BERT.md)
+	- [BERT](Models/BERT.md)
 - Meta
-	- [LLaMA](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Models/LLaMA.md)
+	- [LLaMA](Models/LLaMA.md)
 - DeepMind
-	- [Chinchilla](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Models/Chinchilla.md)
+	- [Chinchilla](Models/Chinchilla.md)
 - Anthropic
-	- [Claude](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Models/Claude.md)
+	- [Claude](Models/Claude.md)
 
-[LLaMA-Adapter](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Models/LLaMA-Adapter.md) - Shanghai Artificial Intelligence Laboratory,  CUHK MMLab, University of California, Los Angeles
+[LLaMA-Adapter](Models/LLaMA-Adapter.md) - Shanghai Artificial Intelligence Laboratory,  CUHK MMLab, University of California, Los Angeles
 
 [ChatGPT的朋友们：大语言模型经典论文一次读到吐](https://mp.weixin.qq.com/s/ATd6D00aPOV8hIqvBoWAFA)
 
@@ -144,8 +144,8 @@ FlagAI
 > 
 > 具体来说，作者使用预训练好的T5作为基座模型，使用文本到文本的方法进行微调，是语言模型能够更好的使用工具。首先，训练语言模型根据问题输出需要使用的工具和工具相关的参数。然后，根据模型的输出相同相应的外部工具并返回相关结果。最后，训练模型根据问题和外部工具返回的结果，输出最终的答案。
 
-![400](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230615110232.png)
-![400](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230615110219.png)
+![400](../../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230615110232.png)
+![400](../../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230615110219.png)
 
 > 为了能够解决样例不足的问题，作者提出了self-play技术。首先，使用一个较小的数据集合D训练得到一个TALM，然后针对数据集中的每一个样例，尝试使用不同的工具来解决这个问题。如果TALM能够正确的解决这个问题，那么就把这条数据及其相关的工具加入到数据集合D中，不断对训练集进行扩充，以得到一个大规模的数据集。
 > 
@@ -165,7 +165,7 @@ FlagAI
 
 前人的研究表明，LLM具有很强的推理能力和规划执行能力。在这篇工作中，作者探究了使用LLM去生成推理过程和任务特定的行动。总的来说，推理过程有助于模型归纳、跟踪和更新行动计划以及处理异常，任务特定的行动能够是模型与外部环境或工具进行对接并收集额外信息。
 
-![2210.03629_Page_02](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/2210.03629_Page_02.png)
+![2210.03629_Page_02](../../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/2210.03629_Page_02.png)
 
 > 具体来说，对于一个通用的框架，在某一步的推理过程中，模型接收到一个来自外部环境的结果，并根据历史推理过程中外部环境的结果和行动过程来确定下一步需要采取的行动。
 > 
@@ -205,7 +205,7 @@ FlagAI
 
 *尝试了一下论文中的任务GSM-HARD，感觉现在ChatGPT+Wolfram的组合已经把问题彻底解决了，而且算出来的基本都是对的。*
 
-![Pasted image 20230615111454](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230615111454.png)
+![Pasted image 20230615111454](../../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230615111454.png)
 
 #### Toolformer: Language Models Can Teach Themselves to Use Tools
 
@@ -229,7 +229,7 @@ FlagAI
 
 总的来说就是构建数据集，再微调
 
-![Pasted image 20230615221040](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230615221040.png)
+![Pasted image 20230615221040](../../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230615221040.png)
 
 #### ART: Automatic multi-step reasoning and tool-use for large language models
 
@@ -249,7 +249,7 @@ FlagAI
 - 在生成过程中，大模型可以生成相关的代码（比如，[search]、[generate code]这样的标签），一旦检测到调用外部工具的要求，ART会停止大模型的生成过程，并调用外部工具返回结果。如此不断循环，如图中(B)所示。
 - 在人类反馈过程中，人类可以添加新的解离后的样例到任务库当中，或者修改工具库中工具的使用。
 
-![Pasted image 20230616111249](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230616111249.png)
+![Pasted image 20230616111249](../../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230616111249.png)
 
 #### A Survey of Large Language Models
 
@@ -304,11 +304,11 @@ FlagAI
 > 
 > 具体来说，大语言模型被作为一个黑箱，根据任务相关的输入得到一个原始输出。然后，和外部工具进行交互，包括知识图谱，代码解释器、搜索引擎等。通过和外部工具的交互，能够获得一系列的结果，大模型根据这些结果生成相关的反馈。最后，根据任务相关的输入、原始输出、与工具交互的结果等多方面的内容，大模型对原始输出进行修改，等到新的输出。改过程可以迭代进行，多次修正输出的内容。在实验方面，作者使用AmbigNQ、TriviaQA和HotpotQA三个问答数据集进行评测，CRITIC能够超越普通CoT和ReAct等方法，取得了良好的表现。
 
-![600](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230617151528.png)
+![600](../../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230617151528.png)
 
 简单来说，还是设计prompt。让LLM有样学样，在输出结果后继续验证答案的合理性和准确性。验证时可以调用外部接口。
 
-![2305.11738_Page_04](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/2305.11738_Page_04.png)
+![2305.11738_Page_04](../../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/2305.11738_Page_04.png)
 
 本文也对比了[ReAct](#%5BReAct%20Synergizing%20Reasoning%20and%20Acting%20in%20Language%20Models)的方法，证明了CRITIC比ReAct好不少。
 
@@ -339,7 +339,7 @@ FlagAI
 > 
 > 具体来说，训练过程的两个阶段分别为：Behavior Cloning和Reinforcement Learning with Execution Feedback (RLEF)。在Behavior Cloning阶段，模型根据任务输入，输出相关的工具的使用方案。在RLEF阶段，使用强化学习的框架，根据工具的结果设计奖励函数，对模型进行强化学习，继续增强模型使用工具的能力。在实验方面，作者使用Alpaca-7B作为基座模型，比较了Toolformer等基线方法，在数学相关任务上进行评测，证明了TRICE的有效性。
 
-![Pasted image 20230617173042](Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230617173042.png)
+![Pasted image 20230617173042](../../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230617173042.png)
 
 #### A Survey on Multimodal Large Language Models
 
@@ -365,7 +365,7 @@ FlagAI
 
 这篇论文的主要创新和设计包括：
 
-1. **KOSMOS-2模型**：这是一种新的多模态大型语言模型，可以理解对象描述（例如，边界框）并将文本与视觉世界联系起来。这是通过将引用表达式表示为Markdown中的链接，即"[text span](bounding boxes)"，其中对象描述是位置令牌的序列来实现的。
+1. **KOSMOS-2模型**：这是一种新的多模态大型语言模型，可以理解对象描述（例如，边界框）并将文本与视觉世界联系起来。这是通过将引用表达式表示为Markdown中的链接，即"[text span](bounding%20boxes)"，其中对象描述是位置令牌的序列来实现的。
 2. **GRIT数据集**：作者构建了一个大规模的有地理标记的图像-文本对数据集（称为GRIT）来训练模型。这个数据集包含了大量的有地理标记的图像和文本对，可以用来训练模型理解和生成与图像相关的文本。
 3. **指令调整**：模型训练完成后，进行指令调整以使KOSMOS-2更好地与人类指令对齐。这是通过结合视觉-语言指令数据集（即LLaVA-Instruct）和语言-only指令数据集（即Unnatural Instructions和FLANv2）以及训练数据，对模型进行调整实现的。
 4. **新的交互方法**：与以前的多模态大型语言模型不同，KOSMOS-2可以提供视觉答案（即，边界框）并将文本输出与图像关联起来。这为用户提供了一种新的交互方法。
@@ -384,9 +384,9 @@ FlagAI
 
 ## Potential research topics
 
-[](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Models/GPT/GPT-123.md#^85edfa%7C%E7%A0%94%E7%A9%B6%E6%96%B9%E5%90%91%EF%BC%9A%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AF%B9%E8%BF%87%E6%8B%9F%E5%90%88%E6%9C%89%E6%9B%B4%E5%BC%BA%E7%9A%84%E6%8A%B5%E6%8A%97%E5%8A%9B)
+[](Models/GPT/GPT-123.md#^85edfa%7C%E7%A0%94%E7%A9%B6%E6%96%B9%E5%90%91%EF%BC%9A%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AF%B9%E8%BF%87%E6%8B%9F%E5%90%88%E6%9C%89%E6%9B%B4%E5%BC%BA%E7%9A%84%E6%8A%B5%E6%8A%97%E5%8A%9B)
 
-[](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Models/GPT/GPT-4.md#^5507ad%7C%E7%A0%94%E7%A9%B6%E6%96%B9%E5%90%91%EF%BC%9A%E6%98%AF%E5%90%A6%E5%80%BC%E5%BE%97%E4%BD%BF%E7%94%A8RLHF%E5%BE%AE%E8%B0%83%E5%A4%A7%E6%A8%A1%E5%9E%8B)
+[](Models/GPT/GPT-4.md#^5507ad%7C%E7%A0%94%E7%A9%B6%E6%96%B9%E5%90%91%EF%BC%9A%E6%98%AF%E5%90%A6%E5%80%BC%E5%BE%97%E4%BD%BF%E7%94%A8RLHF%E5%BE%AE%E8%B0%83%E5%A4%A7%E6%A8%A1%E5%9E%8B)
 
 ## Appendices
 

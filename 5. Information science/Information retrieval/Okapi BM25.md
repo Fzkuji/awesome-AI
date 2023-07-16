@@ -12,7 +12,7 @@ BM25 is a [bag-of-words](https://en.wikipedia.org/wiki/Bag_of_words_model "Bag 
 
 Given a query $Q$, containing keywords $q_{1},...,q_{n}$, the BM25 score of a document $D$ is:
 $${\text{score}}(D,Q)=\sum _{i=1}^{n}{\text{IDF}}(q_{i})\cdot {\frac {f(q_{i},D)\cdot (k_{1}+1)}{f(q_{i},D)+k_{1}\cdot \left(1-b+b\cdot {\frac {|D|}{\text{avgdl}}}\right)}}$$
-where $f(q_{i},D)$ is the number of times that $q_{i}$ occurs in the document $D$, $|D|$ is the length of the document $D$ in words, and avgdl is the average document length in the text collection from which documents are drawn. $k_{1}$ and b are free parameters, usually chosen, in absence of an advanced optimization, as $k_{1}\in [1.2,2.0]$ and $b=0.75$. ${\text{IDF}}(q_{i})$ is the IDF ([inverse document frequency](https://en.wikipedia.org/wiki/Inverse_document_frequency "Inverse document frequency")) weight of the query term $q_{i}$. It is usually computed as:
+where $f(q_{i},D)$ is the number of times that $q_{i}$ occurs in the document $D$, $|D|$ is the length of the document $D$ in words, and avgdl is the average document length in the text collection from which documents are drawn. $k_{1}$ and b are free parameters, usually chosen, in absence of an advanced optimization, as $k_{1}\in [1.2,2.0](q_%7Bi%7D)$%C2%A0is%20the%20IDF%20(%5Binverse%20document%20frequency)) weight of the query term $q_{i}$. It is usually computed as:
 $${\text{IDF}}(q_{i})=\ln \left({\frac {N-n(q_{i})+0.5}{n(q_{i})+0.5}}+1\right)$$
 where $N$ is the total number of documents in the collection, and $n(q_{i})$ is the number of documents containing $q_{i}$.
 

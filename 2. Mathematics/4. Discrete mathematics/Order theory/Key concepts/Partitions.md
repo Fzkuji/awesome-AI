@@ -1,1 +1,1 @@
-![Partitions](Resources/2.%20Mathematics/4.%20Discrete%20mathematics/Order%20theory/Key%20concepts/Partitions.pdf)
+![Partitions](../../../../Resources/2.%20Mathematics/4.%20Discrete%20mathematics/Order%20theory/Key%20concepts/Partitions.pdf)
