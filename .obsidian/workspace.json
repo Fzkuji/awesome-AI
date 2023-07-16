@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PhD/华为实习/时间表.md",
+                "file": "4. Artificial intelligence/2. Approaches/Approaches.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7ed5fae5201eb05c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Machine Learning",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhD/华为实习/时间表.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhD/华为实习/时间表.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhD/华为实习/时间表.md"
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md"
               }
             }
           }
@@ -148,8 +161,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "3791e8dafa37f476",
+  "active": "c633a6bf13e3c2d2",
   "lastOpenFiles": [
+    "4. Artificial intelligence/2. Approaches/Approaches.md",
+    "PhD/华为实习/时间表.md",
     "Untitled.md",
     "README.md",
     "Miscellaneous/付费项目.md",
@@ -174,8 +189,6 @@
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Machine learning.md",
     "MSc/MSc Dissertation Project/Papers/Introduction.md",
-    "4. Artificial intelligence/2. Approaches/Artificial neural network/+Papers/Discovering faster matrix multiplication algorithms with reinforcement learning.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/MTL4Rec.md",
     "New Bitmap Image.bmp",
     "LICENSE",
     "awesome-AI/LICENSE",
