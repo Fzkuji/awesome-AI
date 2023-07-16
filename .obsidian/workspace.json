@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "4. Artificial intelligence/Artificial Intelligence.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "4. Artificial intelligence/Artificial Intelligence.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "4. Artificial intelligence/Artificial Intelligence.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "4. Artificial intelligence/Artificial Intelligence.md"
               }
             }
           }
@@ -148,10 +148,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c633a6bf13e3c2d2",
+  "active": "7aa3f44406960581",
   "lastOpenFiles": [
-    "1_Philosophy/Philosophy of language/Philosophy of language.md",
     "README.md",
+    "1. Philosophy/Philosophy of language/Philosophy of language.md",
     "Note warning.md",
     "Untitled.md",
     "PhD/Rec.md",

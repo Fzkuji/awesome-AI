@@ -1,5 +1,5 @@
 
-A binary relation over a set A is a [predicate](1_Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/First-order%20logic/Predicate.md) R that can be applied to pairs of elements drawn from A.
+A binary relation over a set A is a [predicate](1.%20Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/First-order%20logic/Predicate.md) R that can be applied to pairs of elements drawn from A.
 
 - If R is a binary relation over A and it holds for the pair (a, b), we write aRb.
 	- $3=3$

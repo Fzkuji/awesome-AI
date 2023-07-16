@@ -6,7 +6,7 @@ A proof is an argument that demonstrates why a conclusion is true, subject to ce
 
 ## What is a Mathematical proof?
 
-A mathematical proof is an argument that demonstrates why a mathematical [statement](1_Philosophy/Philosophy%20of%20language/Concepts/Statement.md) is true, following the rules of mathematics.
+A mathematical proof is an argument that demonstrates why a mathematical [statement](1.%20Philosophy/Philosophy%20of%20language/Concepts/Statement.md) is true, following the rules of mathematics.
 
 # Methods of proof
 

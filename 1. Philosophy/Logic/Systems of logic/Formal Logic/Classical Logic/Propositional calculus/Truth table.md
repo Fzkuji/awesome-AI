@@ -26,7 +26,7 @@ Advantages:
 
 你会想问为什么时这样，Stanford CS103会告诉你，这就是人通过直觉去定义的。
 
-## Truth table for [biconditional](1_Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/Propositional%20calculus/Logical%20connective/Biconditional.md)
+## Truth table for [biconditional](1.%20Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/Propositional%20calculus/Logical%20connective/Biconditional.md)
 当且仅当的真值表
 
 | $p$ | $q$ | $p \leftrightarrow q$ |

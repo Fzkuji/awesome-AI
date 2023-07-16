@@ -10,8 +10,8 @@ For Science!
 
 ## Contents
 
-- [Philosophy](1_Philosophy/Philosophy.md)
-	- [Philosophy of language](1_Philosophy/Philosophy%20of%20language/Philosophy%20of%20language.md)
+- [Philosophy](1.%20Philosophy/Philosophy.md)
+	- [Philosophy of language](1.%20Philosophy/Philosophy%20of%20language/Philosophy%20of%20language.md)
 - [Mathematics](2.%20Mathematics/Mathematics.md)
 	- [Foundations of mathematics](2.%20Mathematics/0.%20Foundations%20of%20mathematics/Foundations%20of%20mathematics.md)
 	- [Pure mathematics](2.%20Mathematics/1.%20Pure%20mathematics/Pure%20mathematics.md)
