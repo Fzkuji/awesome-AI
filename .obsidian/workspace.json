@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fc76a35a30ac46ca",
+            "id": "7aa3f44406960581",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/STAR.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/STAR.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/STAR.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md"
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/STAR.md"
               }
             }
           }
@@ -148,9 +148,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "fc76a35a30ac46ca",
+  "active": "7aa3f44406960581",
   "lastOpenFiles": [
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/STAR.md",
+    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
     "Untitled.md",
     "README.md",
@@ -165,7 +166,6 @@
     "LICENSE",
     "awesome-AI/LICENSE",
     "awesome-AI",
-    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md",
     "PhD/华为实习/实习会议.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/MMoE.md",
     "Miscellaneous/Baselines vs Benchmarks.md",
