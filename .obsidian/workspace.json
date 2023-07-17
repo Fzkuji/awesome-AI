@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PhD/华为实习/时间表.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhD/华为实习/时间表.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhD/华为实习/时间表.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhD/华为实习/时间表.md"
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md"
               }
             }
           }
@@ -158,6 +158,8 @@
   },
   "active": "57f74e2fac2dfd2b",
   "lastOpenFiles": [
+    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md",
+    "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
     "PhD/华为实习/时间表.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/MKR.md",
     "README.md",
@@ -182,8 +184,6 @@
     "4. Artificial intelligence/3. Applications/Computer graphics/Computer graphics.md",
     "5. Information science/Information retrieval/Information retrieval.md",
     "4. Artificial intelligence/3. Applications/Medical Diagnosis/Medical Diagnosis.md",
-    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/STAR.md",
-    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md",
     "New Bitmap Image.bmp",
     "LICENSE",
     "awesome-AI/LICENSE",
