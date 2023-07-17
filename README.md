@@ -1,5 +1,5 @@
 For Science!
-123123
+
 Browse the [website](https://publish.obsidian.md/artificial-intelligence) for the best experience until 11/03/2024.
 
 ## Introduction

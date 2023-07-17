@@ -8,27 +8,23 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3791e8dafa37f476",
+            "id": "57f74e2fac2dfd2b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "PhD/华为实习/时间表.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "57f74e2fac2dfd2b",
+            "id": "48304e1a28af818f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/MKR.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -97,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "PhD/华为实习/时间表.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "PhD/华为实习/时间表.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "PhD/华为实习/时间表.md"
               }
             }
           }
@@ -160,17 +156,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "3791e8dafa37f476",
+  "active": "57f74e2fac2dfd2b",
   "lastOpenFiles": [
-    "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
-    "Untitled.md",
     "PhD/华为实习/时间表.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/MKR.md",
+    "README.md",
+    "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
+    "Untitled.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/MMoE.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/General multi-task learning.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/Special multi-task learning.md",
     "4. Artificial intelligence/2. Approaches/Approaches.md",
-    "README.md",
     "Miscellaneous/付费项目.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
     "2. Mathematics/Mathematics.md",
