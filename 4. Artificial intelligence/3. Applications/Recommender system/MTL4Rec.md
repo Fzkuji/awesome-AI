@@ -7,4 +7,4 @@
 
 MMoE为了解决相关性较差的多任务联合训练，PLE引入专有expert降低跷跷板效应
 
-[Mixture-of-Experts (MoE) 经典论文一览](MoE)%20%E7%BB%8F%E5%85%B8%E8%AE%BA%E6%96%87%E4%B8%80%E8%A7%88)
+[Mixture-of-Experts (MoE) 经典论文一览](https://zhuanlan.zhihu.com/p/542465517)
