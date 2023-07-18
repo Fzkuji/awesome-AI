@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PhD/华为实习/Meetings.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhD/华为实习/Meetings.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhD/华为实习/Meetings.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhD/华为实习/Meetings.md"
+                "file": "Untitled.md"
               }
             }
           }
@@ -185,8 +185,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c633a6bf13e3c2d2",
+  "active": "7f1ebd5458e64b79",
   "lastOpenFiles": [
+    "PhD/华为实习/Meetings.md",
     "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/MMoE.md",
     "MoE.md",
@@ -213,7 +214,6 @@
     "4. Artificial intelligence/Artificial Intelligence.md",
     "1. Philosophy/Philosophy of language/Philosophy of language.md",
     "Note warning.md",
-    "PhD/Rec.md",
     "New Bitmap Image.bmp",
     "LICENSE",
     "awesome-AI/LICENSE",
