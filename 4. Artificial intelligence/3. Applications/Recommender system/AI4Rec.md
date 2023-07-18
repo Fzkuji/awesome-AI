@@ -106,7 +106,7 @@ IJCAI2018 Advertising Algorithm Competition (IAAC) is a dataset collected from a
 	1. 是一个兄弟的博客，分享了他的网盘链接，里面有1.4G的数据集
 	2. 暂不清楚内容是什么，但是[链接](https://blog.csdn.net/qushoushi0594/article/details/94205452)仍然有效
 
-除此之外，网上再找不到数据
+除此之外，网上再找不到数据，似乎只有当时入围复赛的团队才能得到数据。。。
 
 APG {user_gender_id, user_age_level, user_star_level}
 
@@ -151,3 +151,7 @@ APG {user_gender_id, user_age_level, user_star_level}
 | Name | Paper                                                                                                                                                                                                            | Publication | Repository | Link                                                 | Classification                                                                                 |
 | ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | STAR | [One Model to Serve All: Star Topology Adaptive Recommender for Multi-Domain CTR Prediction](#One%20Model%20to%20Serve%20All%20Star%20Topology%20Adaptive%20Recommender%20for%20Multi-Domain%20CTR%20Prediction) | CIKM 2021   |            | [arXiv:2101.11427](https://arxiv.org/abs/2101.11427) | [#Information retrieval](#Information%20retrieval), [#Data augmentation](#Data%20augmentation) |
+
+
+
+[1^]: 
