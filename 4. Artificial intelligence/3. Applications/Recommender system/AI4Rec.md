@@ -1,5 +1,5 @@
 
-## Other directions
+## Sub-directions
 
 [LLM4Rec](LLM4Rec.md)
 
