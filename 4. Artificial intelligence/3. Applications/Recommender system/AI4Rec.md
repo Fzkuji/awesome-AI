@@ -102,8 +102,13 @@ IJCAI2018 Advertising Algorithm Competition (IAAC) is a dataset collected from a
 可惜只有当时参与比赛的人可以下载数据集，目前[官网](https://tianchi.aliyun.com/competition/entrance/231647/introduction)已经不提供下载了，现有获取数据集样本的方式：
 1. 官网存档
 	1. 虽然比赛结束了，但是官方进行了存档，但只提供初赛的[少量数据集](https://tianchi.aliyun.com/dataset/147588)
+2. CSDN资源
+	1. 是一个兄弟的博客，分享了他的网盘链接，里面有1.4G的数据集
+	2. 暂不清楚内容是什么，但是[链接](https://blog.csdn.net/qushoushi0594/article/details/94205452)仍然有效
 
-除此之外，网上再无数据
+除此之外，网上再找不到数据
+
+
 
 # Papers
 
