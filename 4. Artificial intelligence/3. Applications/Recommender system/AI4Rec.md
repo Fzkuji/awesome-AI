@@ -94,7 +94,7 @@ https://cseweb.ucsd.edu/~jmcauley/datasets/amazon_v2/
 > Justifying recommendations using distantly-labeled reviews and fined-grained aspects  
 > Jianmo Ni, Jiacheng Li, Julian McAuley  
 > Empirical Methods in Natural Language Processing (EMNLP), 2019
-  
+
 ### IJCAI-2018 Alimama International Advertising Algorithm Competition (IAAC)
 
 IJCAI2018 Advertising Algorithm Competition (IAAC) is a dataset collected from a sponsored search in E-commerce. Each record refers to whether a user purchases the displayed item after clicking this item. There is a total of 478,138 records, 197,694 users, and 10,075 items.
@@ -108,7 +108,7 @@ IJCAI2018 Advertising Algorithm Competition (IAAC) is a dataset collected from a
 
 除此之外，网上再找不到数据
 
-
+APG {user_gender_id, user_age_level, user_star_level}
 
 
 在推荐系统领域，Multi-Domain和Multi-Scenario的区别主要体现在处理的问题和应用的方法上。

@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
+                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -185,20 +185,21 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "bb2d4f572d9a0216",
+  "active": "7f1ebd5458e64b79",
   "lastOpenFiles": [
-    "PhD/华为实习/时间表.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/MTL4Rec.md",
+    "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
+    "4. Artificial intelligence/3. Applications/Recommender system/MTL4Rec.md",
+    "4. Artificial intelligence/3. Applications/Recommender system/RL4Rec.md",
+    "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
+    "Untitled.md",
+    "README.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.canvas",
     "4. Artificial intelligence/3. Applications/Recommender system/Click-through rate prediction.md",
-    "Untitled.md",
     "MoE.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/MKR.md",
-    "README.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/MMoE.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/General multi-task learning.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/Special multi-task learning.md",
