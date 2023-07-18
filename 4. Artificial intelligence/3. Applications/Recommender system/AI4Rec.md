@@ -95,7 +95,7 @@ https://cseweb.ucsd.edu/~jmcauley/datasets/amazon_v2/
 > Jianmo Ni, Jiacheng Li, Julian McAuley  
 > Empirical Methods in Natural Language Processing (EMNLP), 2019
   
-### IJCAI-2018 Advertising Algorithm Competition (IAAC)
+### IJCAI-2018 Alimama International Advertising Algorithm Competition (IAAC)
 
 IJCAI2018 Advertising Algorithm Competition (IAAC) is a dataset collected from a sponsored search in E-commerce. Each record refers to whether a user purchases the displayed item after clicking this item. There is a total of 478,138 records, 197,694 users, and 10,075 items.
 
