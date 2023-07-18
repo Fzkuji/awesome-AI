@@ -95,7 +95,7 @@ https://cseweb.ucsd.edu/~jmcauley/datasets/amazon_v2/
 > Jianmo Ni, Jiacheng Li, Julian McAuley  
 > Empirical Methods in Natural Language Processing (EMNLP), 2019
   
-### IAAC
+### IJCAI-2018 Advertising Algorithm Competition (IAAC)
 
 IJCAI2018 Advertising Algorithm Competition (IAAC) is a dataset collected from a sponsored search in E-commerce. Each record refers to whether a user purchases the displayed item after clicking this item. There is a total of 478,138 records, 197,694 users, and 10,075 items.
 
@@ -107,6 +107,19 @@ IJCAI2018 Advertising Algorithm Competition (IAAC) is a dataset collected from a
 	2. 暂不清楚内容是什么，但是[链接](https://blog.csdn.net/qushoushi0594/article/details/94205452)仍然有效
 
 除此之外，网上再找不到数据
+
+
+
+
+在推荐系统领域，Multi-Domain和Multi-Scenario的区别主要体现在处理的问题和应用的方法上。
+
+1. Multi-Domain：多领域推荐系统主要关注如何在不同的领域（例如，电影、书籍、音乐等）中进行推荐。这种类型的推荐系统需要处理的主要问题是如何在不同的领域中找到合适的推荐方法，以及如何利用用户在一个领域的行为信息来推荐另一个领域的项目。例如，一个用户可能在电影领域的行为和他在音乐领域的行为之间存在一定的关联，多领域推荐系统就是要找到这种关联并利用它来进行推荐。
+    
+2. Multi-Scenario：多场景推荐系统则主要关注如何在不同的场景（例如，工作、休闲、学习等）中进行推荐。这种类型的推荐系统需要处理的主要问题是如何根据用户的当前场景来调整推荐策略，以及如何利用用户在一个场景的行为信息来推荐另一个场景的项目。例如，一个用户可能在工作场景下更喜欢看新闻，而在休闲场景下更喜欢看电影，多场景推荐系统就是要找到这种差异并利用它来进行推荐。
+    
+
+总的来说，多领域推荐系统和多场景推荐系统都是为了更好地理解用户的需求并提供更个性化的推荐，但它们关注的焦点和处理的问题是不同的。
+
 
 
 
