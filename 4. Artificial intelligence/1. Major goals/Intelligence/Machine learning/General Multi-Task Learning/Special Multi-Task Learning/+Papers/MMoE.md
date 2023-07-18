@@ -168,4 +168,4 @@ c. 热启sparse部分和部分dense模型。比如只增加目标，不修改exp
 
 ## Future work
 
-[Mixture-of-Experts (MoE) 经典论文一览](MoE)%20%E7%BB%8F%E5%85%B8%E8%AE%BA%E6%96%87%E4%B8%80%E8%A7%88)
+[Mixture-of-Experts (MoE) 经典论文一览](https://zhuanlan.zhihu.com/p/542465517)
