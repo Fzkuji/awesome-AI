@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PhD/华为实习/时间表.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,14 +49,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/MTL4Rec.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -185,15 +185,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "0816ddda6d08d150",
+  "active": "bb2d4f572d9a0216",
   "lastOpenFiles": [
+    "PhD/华为实习/时间表.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.canvas",
+    "4. Artificial intelligence/3. Applications/Recommender system/MTL4Rec.md",
     "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
+    "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.canvas",
     "4. Artificial intelligence/3. Applications/Recommender system/Click-through rate prediction.md",
     "Untitled.md",
-    "PhD/华为实习/时间表.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/MTL4Rec.md",
     "MoE.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md",
