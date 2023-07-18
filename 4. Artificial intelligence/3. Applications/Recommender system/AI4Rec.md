@@ -99,7 +99,11 @@ https://cseweb.ucsd.edu/~jmcauley/datasets/amazon_v2/
 
 IJCAI2018 Advertising Algorithm Competition (IAAC) is a dataset collected from a sponsored search in E-commerce. Each record refers to whether a user purchases the displayed item after clicking this item. There is a total of 478,138 records, 197,694 users, and 10,075 items.
 
+可惜只有当时参与比赛的人可以下载数据集，目前[官网](https://tianchi.aliyun.com/competition/entrance/231647/introduction)已经不提供下载了，现有获取数据集样本的方式：
+1. 官网存档
+	1. 虽然比赛结束了，但是官方进行了存档，但只提供初赛的[少量数据集](https://tianchi.aliyun.com/dataset/147588)
 
+除此之外，网上再无数据
 
 # Papers
 
@@ -122,3 +126,10 @@ IJCAI2018 Advertising Algorithm Competition (IAAC) is a dataset collected from a
 ### Progressive Layered Extraction (PLE): A Novel Multi-Task Learning (MTL) Model for Personalized Recommendations
 
 
+
+
+### One Model to Serve All: Star Topology Adaptive Recommender for Multi-Domain CTR Prediction
+
+| Name | Paper                                                                                                                                                                                                            | Publication | Repository | Link                                                 | Classification                                                                                 |
+| ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| STAR | [One Model to Serve All: Star Topology Adaptive Recommender for Multi-Domain CTR Prediction](#One%20Model%20to%20Serve%20All%20Star%20Topology%20Adaptive%20Recommender%20for%20Multi-Domain%20CTR%20Prediction) | CIKM 2021   |            | [arXiv:2101.11427](https://arxiv.org/abs/2101.11427) | [#Information retrieval](#Information%20retrieval), [#Data augmentation](#Data%20augmentation) |
