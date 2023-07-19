@@ -116,13 +116,13 @@ IJCAI2018 Advertising Algorithm Competition (IAAC) is a dataset collected from a
 
 ### AliExpress Searching System Dataset
 
-This is a dataset gathered from real-world traffic logs of the search system in AliExpress. As one of the largest global e-commerce platform in the world, AliExpress provides item searching service for more than 200 countries. 
+This is a dataset gathered from real-world traffic logs of the search system in AliExpress. As one of the largest global e-commerce platform in the world, AliExpress provides item searching service for more than 200 countries. An user firstly clicks a product from the search result page, and then decides to purchase the product or not.
 
-![](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230719114328.png)
+The dataset is provided to facilitate any research on the problem of *Learning to Rank* (LTR). Previous LTR datasets are collected from one scenario. While this dataset is collected from 5 countries: Russia, Spain, French, Netherlands, and America, which can be seen as 5 scenarios. To our best knowledge, this is the first large scale real-world dataset for the problem of *Multi-Scenario Learning to Rank*.
 
-Figure 1 shows a search session in our e-commerce platform. An user firstly clicks a product from the search result page, and then decides to purchase the product or not.
+这是一个从阿里巴巴国际站搜索系统的实际流量日志中收集的数据集。作为全球最大的电子商务平台之一，阿里巴巴国际站为超过200个国家提供商品搜索服务。用户首先从搜索结果页面点击一个产品，然后决定是否购买该产品。
 
-
+这个数据集是为了促进任何关于学习排序（LTR）问题的研究而提供的。以前的LTR数据集是从一个场景中收集的。而这个数据集是从5个国家收集的：俄罗斯，西班牙，法国，荷兰和美国，可以被视为5个场景。据我们所知，这是第一个大规模的实际世界数据集，用于解决多场景学习排序的问题。
 
 
 ### Others
