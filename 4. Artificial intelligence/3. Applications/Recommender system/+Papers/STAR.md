@@ -89,15 +89,15 @@ ROC曲线和AUC值
 
 ### Results
 
-首先整体结果比其他模型都要好
+首先整体结果比其他模型都要好：
+
+![500](../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230719172039.png)
 
 消融实验中：
 
-- [Partitioned normalization](#Partitioned%20normalization)作用很大
-- [Auxiliary network](#Auxiliary%20network)有用，但不大
-- 
-
-
+- [Partitioned normalization](#Partitioned%20normalization)作用很大，但是[Star topology FCN](#Star%20topology%20FCN)作用挺小的，感觉不考虑多场景也行一样
+	- ![400](../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230719172123.png)
+- [Auxiliary network](#Auxiliary%20network)有用，但也是锦上添花
 
 ## Conclusion
 
