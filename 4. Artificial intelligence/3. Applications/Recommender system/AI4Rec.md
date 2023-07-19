@@ -125,7 +125,7 @@ Multi-scenario modeling，也叫Multi-domain modeling理论上multi-scenario和m
 
 #### Click-through rate prediction
 
-
+虽然CTR prediction不太属于推荐系统，但鉴于笔记刚刚起步，还是归为一类记录了，以后论文多了再合并
 
 
 ## List
