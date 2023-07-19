@@ -123,7 +123,7 @@ GPT-3定义上应该是一种自监督预训练NLP大模型。但是Finn认为�
 **对比**：
 - Fine-tuning: $\phi \leftarrow \theta-\alpha \nabla_\theta \mathcal{L}\left(\theta, \mathcal{D}^{\operatorname{tr}}\right)$
 - Meta-learning: $\min _\theta \sum_{\text {task } i} \mathcal{L}\left(\theta-\alpha \nabla_\theta \mathcal{L}\left(\theta, \mathcal{D}_i^{\text {tr }}\right), \mathcal{D}_i^{\mathrm{ts}}\right)$
-- 可以看到，fine-tuning就是希望参数更新对某一个（新的）数据集损失最低，但是meta-learning希望参数跟新
+- 可以看到，fine-tuning就是希望参数更新对某一个（新的）数据集损失最低，但是meta-learning希望参数更新
 
 
 
