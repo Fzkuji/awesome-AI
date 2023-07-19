@@ -118,7 +118,7 @@ IJCAI2018 Advertising Algorithm Competition (IAAC) is a dataset collected from a
 
 A world wine dataset with 5-stars user ratings and web collaborative platform for wider free use.
 
-
+X-Wines is a consistent wine dataset containing 100,646 instances and 21 million real evaluations carried out by users. Data were collected on the open Web in 2022 and pre-processed for wider free use. They refer to the scale 1–5 ratings carried out over a period of 10 years (2012–2021) for wines produced in 62 different countries.
 
 
 # Papers
