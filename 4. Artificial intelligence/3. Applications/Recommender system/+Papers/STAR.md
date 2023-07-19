@@ -48,7 +48,7 @@ Conclusion:
 > $$\mathrm{z}^{\prime}=\left(\gamma * \gamma_p\right) \frac{\mathrm{z}-E_p}{\sqrt{\operatorname{Var}_p+\epsilon}}+\left(\beta+\beta_p\right)$$
 
 
-### Star Topology FCN
+### Star topology FCN
 
 ![](../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230719164639.png)
 
@@ -62,6 +62,10 @@ where $\otimes$ denotes the element-wise multiplication. Let $i n_p \in \mathbb{
 $$
 \text { out }_p=\phi\left(\left(W_p^{\star}\right)^{\top} \operatorname{in}_p+b_p^{\star}\right),
 $$
+### Auxiliary network
+
+
+
 
 ## Evaluation
 
