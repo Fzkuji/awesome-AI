@@ -123,7 +123,6 @@ Baseline模型有点多，基本都是多任务学习模型
 可以看到，无论是MMOE还是ML-MMOE，不同任务在三个Expert上的权重都是接近的，这其实更接近于一种Hard Parameter Sharing的方式，**但对于CGC&PLE来说，不同任务在共享Expert上的权重是有较大差异的，其针对不同的任务，能够有效利用共享Expert和独有Expert的信息，这也解释了为什么其能够达到比MMOE更好的训练结果。**
 
 
-
 ## Conclusion
 
 - a. 详细的实验设置:
