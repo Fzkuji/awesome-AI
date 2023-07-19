@@ -119,13 +119,13 @@ IJCAI2018 Advertising Algorithm Competition (IAAC) is a dataset collected from a
 
 
 
-#### Multi-scenario modeling
+#### Multi-scenario learning
 
-Multi-scenario modeling，也叫Multi-domain modeling理论上multi-scenario和multi-domain应该存在区别，但是在各项工作中经常将其混淆，并且没有明显的区分，因此本笔记将这两者视为同一个概念。
+Multi-scenario learning，也叫Multi-domain learning理论上multi-scenario和multi-domain应该存在区别，但是在各项工作中经常将其混淆，并且没有明显的区分，因此本笔记将这两者视为同一个概念。
 
 #### Click-through rate prediction
 
-虽然CTR prediction不太属于推荐系统，但鉴于笔记刚刚起步，还是归为一类记录了，以后论文多了再合并
+虽然CTR prediction不太**属于**推荐系统？但鉴于笔记刚刚起步，还是归为一类记录了，以后论文多了再考虑
 
 
 ## List
@@ -161,9 +161,12 @@ Multi-scenario modeling，也叫Multi-domain modeling理论上multi-scenario和m
 
 
 
+### Multi-Scenario Ranking with Adaptive Feature Learning
 
-
-
+| Name | Paper                                                                                                                                                                        | Publication  | Repository | Link                                                 | Classification                                                      |
+| ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------- | ---------------------------------------------------- | ------------------------------------------------------------------- |
+| APG  | [APG: Adaptive Parameter Generation Network for Click-Through Rate Prediction](#APG%20Adaptive%20Parameter%20Generation%20Network%20for%20Click-Through%20Rate%20Prediction) | NeurIPS 2022 |            | [arXiv:2203.16218](https://arxiv.org/abs/2203.16218) | [Click-through rate prediction](#Click-through%20rate%20prediction) | 
 
 
 [^1]: Yan, Bencheng, et al. "Apg: Adaptive parameter generation network for click-through rate prediction." _Advances in Neural Information Processing Systems_ 35 (2022): 24740-24752.
+[^2]: 
