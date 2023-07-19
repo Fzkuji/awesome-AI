@@ -110,9 +110,9 @@ IJCAI2018 Advertising Algorithm Competition (IAAC) is a dataset collected from a
 
 论文APG[^1]中按照用户划分了300个domains：{user_gender_id, user_age_level, user_star_level}
 
+### Ali-CCP: Alibaba Click and Conversion Prediction
 
-
-
+[官网](https://tianchi.aliyun.com/dataset/408)提供数据集介绍与下载
 
 
 # Papers
@@ -134,23 +134,23 @@ Multi-scenario learning，也叫Multi-domain learning理论上multi-scenario和m
 
 | Name | Paper                                                                                      | Publication | Repository                                                    | Link                                                                       | Classification               |
 | ---- | ------------------------------------------------------------------------------------------ | ----------- | ------------------------------------------------------------- | -------------------------------------------------------------------------- | ---------------------------- |
-| [MMoE](../../1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/+Papers/MMoE.md) | [Modeling Task Relationships in Multi-task Learning with Multi-gate Mixture-of-Experts](#Modeling%20Task%20Relationships%20in%20Multi-task%20Learning%20with%20Multi-gate%20Mixture-of-Experts) | KDD 2018    | [DeepCTR-Torch](https://github.com/shenweichen/DeepCTR-Torch) | [doi.org/10.1145/3219819.3220007](https://doi.org/10.1145/3219819.3220007) | [Multi-scenario modeling](#Multi-scenario%20modeling), Multi-task learning |
+| [MMoE](../../1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/+Papers/MMoE.md) | [Modeling Task Relationships in Multi-task Learning with Multi-gate Mixture-of-Experts](#Modeling%20Task%20Relationships%20in%20Multi-task%20Learning%20with%20Multi-gate%20Mixture-of-Experts) | KDD 2018    | [DeepCTR-Torch](https://github.com/shenweichen/DeepCTR-Torch) | [doi.org/10.1145/3219819.3220007](https://doi.org/10.1145/3219819.3220007) | [Multi-scenario learning](#Multi-scenario%20learning), Multi-task learning |
 
 ![Pasted image 20230713091222](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230713091222.png)
 
 
 ### Progressive Layered Extraction (PLE): A Novel Multi-Task Learning (MTL) Model for Personalized Recommendations
 
-| Name | Paper                                                                                                                                                                                                                                                    | Publication | Repository | Link                                                 | Classification                                                                                                             |
-| ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- | ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| PLE  | [Progressive Layered Extraction (PLE): A Novel Multi-Task Learning (MTL) Model for Personalized Recommendations](#Progressive%20Layered%20Extraction%20(PLE)%20A%20Novel%20Multi-Task%20Learning%20(MTL)%20Model%20for%20Personalized%20Recommendations) | CIKM 2021   |            | [arXiv:2101.11427](https://arxiv.org/abs/2101.11427) | [Click-through rate prediction](#Click-through%20rate%20prediction), [Multi-scenario modeling](#Multi-scenario%20modeling) |
+| Name | Paper                                                                                                                                                                                                                                                    | Publication | Repository | Link                                                                       | Classification                                                                                                             |
+| ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| [PLE](../../1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/+Papers/PLE.md)  | [Progressive Layered Extraction (PLE): A Novel Multi-Task Learning (MTL) Model for Personalized Recommendations](#Progressive%20Layered%20Extraction%20(PLE)%20A%20Novel%20Multi-Task%20Learning%20(MTL)%20Model%20for%20Personalized%20Recommendations) | CIKM 2021   |            | [doi.org/10.1145/3383313.3412236](https://doi.org/10.1145/3383313.3412236) | [Multi-scenario learning](#Multi-scenario%20learning), Multi-task learning |
 
 
 ### One Model to Serve All: Star Topology Adaptive Recommender for Multi-Domain CTR Prediction
 
 | Name | Paper                                                                                                                                                                                                            | Publication | Repository | Link                                                 | Classification                                                                                 |
 | ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| STAR | [One Model to Serve All: Star Topology Adaptive Recommender for Multi-Domain CTR Prediction](#One%20Model%20to%20Serve%20All%20Star%20Topology%20Adaptive%20Recommender%20for%20Multi-Domain%20CTR%20Prediction) | CIKM 2021   |            | [arXiv:2101.11427](https://arxiv.org/abs/2101.11427) | [Click-through rate prediction](#Click-through%20rate%20prediction), [Multi-scenario modeling](#Multi-scenario%20modeling) |
+| [STAR](+Papers/STAR.md) | [One Model to Serve All: Star Topology Adaptive Recommender for Multi-Domain CTR Prediction](#One%20Model%20to%20Serve%20All%20Star%20Topology%20Adaptive%20Recommender%20for%20Multi-Domain%20CTR%20Prediction) | CIKM 2021   |            | [arXiv:2101.11427](https://arxiv.org/abs/2101.11427) | [Click-through rate prediction](#Click-through%20rate%20prediction), [Multi-scenario learning](#Multi-scenario%20learning) |
 
 
 ### APG: Adaptive Parameter Generation Network for Click-Through Rate Prediction
