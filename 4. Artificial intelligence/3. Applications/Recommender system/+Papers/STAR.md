@@ -8,6 +8,9 @@ Additional information:
 
 Conclusion: 
 
+| Name | Paper                                                                                                                                                                                                            | Publication | Repository | Link                                                 | Classification                                                                                 |
+| ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| [STAR](+Papers/STAR.md) | [One Model to Serve All: Star Topology Adaptive Recommender for Multi-Domain CTR Prediction](../AI4Rec.md#One%20Model%20to%20Serve%20All%20Star%20Topology%20Adaptive%20Recommender%20for%20Multi-Domain%20CTR%20Prediction) | CIKM 2021   |            | [arXiv:2101.11427](https://arxiv.org/abs/2101.11427) | [Click-through rate prediction](#Click-through%20rate%20prediction), [Multi-scenario learning](#Multi-scenario%20learning) |
 
 ## Abstract
 
@@ -29,8 +32,14 @@ Conclusion:
 
 ## Methods
 
-作者解决问题的方法/算法是什么？是否基于前人的方法？基于了哪些？
+整体模型结构如下图(b)所示：
+![](../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230719160434.png)
 
+首先所有特征输入embedding网络，然后pooling合并输入partitioned normalization层，最后输入star topology FCN网络进行预测。
+
+他们主要的创新在于
+
+### 
   
 
 ## Evaluation

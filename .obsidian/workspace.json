@@ -67,8 +67,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -134,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md"
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md"
               }
             }
           }
@@ -197,10 +196,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "bb2d4f572d9a0216",
+  "active": "57f74e2fac2dfd2b",
   "lastOpenFiles": [
-    "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
+    "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230719160434.png",
     "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
+    "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
     "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "4. Artificial intelligence/3. Applications/Recommender system/MTL4Rec.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
