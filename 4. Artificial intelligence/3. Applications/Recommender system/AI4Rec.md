@@ -134,12 +134,6 @@ The dataset is provided to facilitate any research on the problem of *Learning 
 
 简而言之就是一个多场景（多国家）CTR、CVR数据集，[官网](https://tianchi.aliyun.com/dataset/74690)提供数据集介绍与下载
 
-### iPinYou Global RTB Bidding Algorithm Competition Dataset
-
-
-
-
-
 ### Others
 
 #### [Multi-Domain Recommender Systems](https://paperswithcode.com/task/multi-domain-recommender-systems/codeless)

@@ -13,32 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/MMoE.md",
+                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "0816ddda6d08d150",
+            "id": "754c090707a491a6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/MTL4Rec.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "819527e6d5ee95fe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
-                "mode": "source",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -109,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/MMoE.md",
+                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/MMoE.md",
+                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/MMoE.md"
+                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md"
               }
             }
           },
@@ -183,11 +171,12 @@
   "active": "bb2d4f572d9a0216",
   "lastOpenFiles": [
     "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
+    "PhD/华为实习/LLM for multi-domain CTR prediction.md",
+    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/MMoE.md",
+    "4. Artificial intelligence/3. Applications/Recommender system/MTL4Rec.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
     "Untitled.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
-    "PhD/华为实习/LLM for multi-domain CTR prediction.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/MTL4Rec.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230719172123.png",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230719172039.png",
@@ -196,7 +185,6 @@
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230719114328.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/Pasted image 20230718204604.png",
     "PhD/华为实习/Meetings.md",
-    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/MMoE.md",
     "MoE.md",
     "4. Artificial intelligence/3. Applications/Recommender system/RL4Rec.md",
     "README.md",
