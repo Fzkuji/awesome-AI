@@ -116,13 +116,24 @@ IJCAI2018 Advertising Algorithm Competition (IAAC) is a dataset collected from a
 
 ### AliExpress Searching System Dataset
 
+This is a dataset gathered from real-world traffic logs of the search system in AliExpress. As one of the largest global e-commerce platform in the world, AliExpress provides item searching service for more than 200 countries. 
+
+![](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230719114328.png)
+
+Figure 1 shows a search session in our e-commerce platform. An user firstly clicks a product from the search result page, and then decides to purchase the product or not.
+
+
 
 
 ### Others
 
-### [Multi-Domain Recommender Systems](https://paperswithcode.com/task/multi-domain-recommender-systems/codeless)
+#### [Multi-Domain Recommender Systems](https://paperswithcode.com/task/multi-domain-recommender-systems/codeless)
 
+里面包含了三个工作的公开数据集：
 
+- [RL-ISN-dataset](https://paperswithcode.com/dataset/rl-isn-dataset)
+- [LEA-GCN-dataset](https://paperswithcode.com/dataset/lea-gcn-dataset)
+- [X-Wines](https://paperswithcode.com/dataset/x-wines)
 
 
 # Papers
