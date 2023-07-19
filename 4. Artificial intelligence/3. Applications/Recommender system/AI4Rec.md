@@ -129,10 +129,13 @@ The dataset is provided to facilitate any research on the problem of *Learning 
 - 西班牙 2.60GB
 - 法国 2.25GB
 - 荷兰 1.49GB
-- 美国  2.25GB
+- 美国 2.25GB
 可以被视为5个场景。据我们所知，这是第一个大规模的实际世界数据集，用于解决多场景学习排序的问题。
 
 简而言之就是一个多场景（多国家）CTR、CVR数据集，[官网](https://tianchi.aliyun.com/dataset/74690)提供数据集介绍与下载
+
+### iPinYou Global RTB Bidding Algorithm Competition Dataset
+
 
 
 

@@ -67,8 +67,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -134,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md"
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md"
               }
             }
           }
@@ -197,14 +196,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c633a6bf13e3c2d2",
+  "active": "57f74e2fac2dfd2b",
   "lastOpenFiles": [
+    "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
+    "4. Artificial intelligence/3. Applications/Recommender system/MTL4Rec.md",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230719114328.png",
     "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/MTL4Rec.md",
     "Untitled.md",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/Pasted image 20230718204604.png",
     "PhD/华为实习/Meetings.md",
@@ -241,7 +240,6 @@
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/Pasted image 20230713170914.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/Pasted image 20230713170900.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/Pasted image 20230713170611.png",
-    "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/Pasted image 20230713164217.png",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Domain adaptation/Multi-scenario modeling/+Papers",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Domain adaptation/Multi-scenario modeling",
