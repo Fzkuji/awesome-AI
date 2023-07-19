@@ -71,23 +71,20 @@ MovieLens数据集是由[GroupLens](https://grouplens.org/datasets/movielens/)�
 
 Official Website: https://nijianmo.github.io/amazon/
 
+This dataset contains product reviews and metadata from Amazon:
+
+1. **More Reviews**: The dataset now contains a total of 233.1 million reviews, a significant increase from the 142.8 million reviews in the 2014 version.
+2. **Newer Reviews**: The dataset includes reviews from a wider time range, specifically from May 1996 to October 2018.
+3. **Enhanced Metadata**: The dataset now includes transaction metadata for each review shown on the review page. This includes:
+	- Product information such as color, size, and package type.
+	- Product images taken after the user received the product.
+	- More detailed metadata from the product landing page, including bullet-point descriptions under the product title, a technical details table (attribute-value pairs), and a similar products table.
+4. **More Categories**: The dataset has been expanded to include 5 new product categories.
+
 官网提供了数据集的整体介绍，但他们不建议随便下载完整数据集，并且给学生提供了精简版。完整数据集下载地址在（实际需要填一个表获取地址）：
 https://cseweb.ucsd.edu/~jmcauley/datasets/amazon_v2/
 
 为了使其适用于CTR（点击率）预测任务，需要将其转化为一个二分类的数据。原始的用户对物品的评分是一个从0到5的连续值。我们将评分为4和5的样本标记为正样本，其余的标记为负样本。CTR任务是基于用户的历史行为来预测用户是否会给定的电影评分超过3（标记为正）。
-
-特征包括
-- reviewerID - ID of the reviewer, e.g. [A2SUAM1J3GNN3B](http://www.amazon.com/gp/cdp/member-reviews/A2SUAM1J3GNN3B)
-- asin - ID of the product, e.g. [0000013714](http://www.amazon.com/dp/0000013714)
-- reviewerName - name of the reviewer
-- vote - helpful votes of the review
-- style - a disctionary of the product metadata, e.g., "Format" is "Hardcover"
-- reviewText - text of the review
-- overall - rating of the product
-- summary - summary of the review
-- unixReviewTime - time of the review (unix time)
-- reviewTime - time of the review (raw)
-- image - images that users post after they have received the product
 
 > We are not in any position to offer any license on the data. Please cite the following paper if you use the data in any way:  
 > 
@@ -109,7 +106,7 @@ IJCAI2018 Advertising Algorithm Competition (IAAC) is a dataset collected from a
 
 除此之外，网上再找不到数据，似乎只有当时入围复赛的团队才能得到数据。。。
 
-论文[AdaSparse](#AdaSparse%20Learning%20Adaptively%20Sparse%20Structures%20for%20Multi-Domain%20Click-Through%20Rate%20Prediction)中依据用户特征{user_gender_id, user_age_level, user_star_level}划分了300个domains
+数据集本质上适用于CVR prediction，但是仍然也有CTR工作用了这个数据集（？？？），包括多场景学习。比如，[AdaSparse](#AdaSparse%20Learning%20Adaptively%20Sparse%20Structures%20for%20Multi-Domain%20Click-Through%20Rate%20Prediction)中依据用户特征{user_gender_id, user_age_level, user_star_level}划分了300个domains做了multi-scenario CTR prediction。
 
 ### Ali-CCP: Alibaba Click and Conversion Prediction
 
