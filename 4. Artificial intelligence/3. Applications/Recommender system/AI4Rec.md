@@ -114,6 +114,11 @@ IJCAI2018 Advertising Algorithm Competition (IAAC) is a dataset collected from a
 
 简而言之就是一个多场景CTR、CVR数据集，[官网](https://tianchi.aliyun.com/dataset/408)提供数据集介绍与下载
 
+### X-Wines
+
+A world wine dataset with 5-stars user ratings and web collaborative platform for wider free use.
+
+
 
 
 # Papers
