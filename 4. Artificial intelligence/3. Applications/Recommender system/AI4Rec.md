@@ -141,7 +141,9 @@ Multi-scenario learning，也叫Multi-domain learning理论上multi-scenario和m
 
 ### Progressive Layered Extraction (PLE): A Novel Multi-Task Learning (MTL) Model for Personalized Recommendations
 
-
+| Name | Paper                                                                                                                                                                                                                                                    | Publication | Repository | Link                                                 | Classification                                                                                                             |
+| ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- | ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| PLE  | [Progressive Layered Extraction (PLE): A Novel Multi-Task Learning (MTL) Model for Personalized Recommendations](#Progressive%20Layered%20Extraction%20(PLE)%20A%20Novel%20Multi-Task%20Learning%20(MTL)%20Model%20for%20Personalized%20Recommendations) | CIKM 2021   |            | [arXiv:2101.11427](https://arxiv.org/abs/2101.11427) | [Click-through rate prediction](#Click-through%20rate%20prediction), [Multi-scenario modeling](#Multi-scenario%20modeling) |
 
 
 ### One Model to Serve All: Star Topology Adaptive Recommender for Multi-Domain CTR Prediction
@@ -158,8 +160,6 @@ Multi-scenario learning，也叫Multi-domain learning理论上multi-scenario和m
 | APG  | [APG: Adaptive Parameter Generation Network for Click-Through Rate Prediction](#APG%20Adaptive%20Parameter%20Generation%20Network%20for%20Click-Through%20Rate%20Prediction) | NeurIPS 2022 |            | [arXiv:2203.16218](https://arxiv.org/abs/2203.16218) | [Click-through rate prediction](#Click-through%20rate%20prediction) | 
 
 [APG: Adaptive Parameter Generation Network for Click-Through Rate Prediction论文解读](https://zhuanlan.zhihu.com/p/496687361)
-
-
 
 ### Multi-Scenario Ranking with Adaptive Feature Learning
 
