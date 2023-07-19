@@ -108,7 +108,7 @@ IJCAI2018 Advertising Algorithm Competition (IAAC) is a dataset collected from a
 
 除此之外，网上再找不到数据，似乎只有当时入围复赛的团队才能得到数据。。。
 
-APG {user_gender_id, user_age_level, user_star_level}
+论文APG[^1]中按照用户划分domain {user_gender_id, user_age_level, user_star_level}
 
 
 在推荐系统领域，Multi-Domain和Multi-Scenario的区别主要体现在处理的问题和应用的方法上。
@@ -128,6 +128,10 @@ APG {user_gender_id, user_age_level, user_star_level}
 
 
 #### Multi-scenario modeling
+
+Multi-scenario modeling，也叫Multi-domain modeling理论上multi-scenario和multi-domain应该存在区别，但是在各项工作中经常将其混淆，并且没有明显的区分，因此本笔记将这两者视为同一个概念。
+
+
 
 
 ## List
@@ -154,4 +158,4 @@ APG {user_gender_id, user_age_level, user_star_level}
 
 
 
-[1^]: 
+[^1]: Yan, Bencheng, et al. "Apg: Adaptive parameter generation network for click-through rate prediction." _Advances in Neural Information Processing Systems_ 35 (2022): 24740-24752.
