@@ -150,6 +150,11 @@ The dataset is provided to facilitate any research on the problem of *Learning 
 - [LEA-GCN-dataset](https://paperswithcode.com/dataset/lea-gcn-dataset)
 - [X-Wines](https://paperswithcode.com/dataset/x-wines)
 
+#### Click-Through Rate Prediction - Avazu
+
+直接搜的谷歌ctr prediction dataset
+
+https://paperswithcode.com/dataset/click-through-rate-prediction-avazu
 
 # Papers
 
