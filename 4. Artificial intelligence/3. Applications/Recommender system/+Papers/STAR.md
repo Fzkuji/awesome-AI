@@ -35,11 +35,16 @@ Conclusion:
 整体模型结构如下图(b)所示：
 ![](../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230719160434.png)
 
-首先所有特征输入embedding网络，然后pooling合并输入partitioned normalization层，最后输入star topology FCN网络进行预测。
+首先domain特征通过domain indicator获得，之后所有特征输入embedding网络，然后pooling合并输入partitioned normalization层，最后输入star topology FCN网络进行预测。
 
-他们主要的创新在于
+### Partitioned normalization
 
-### 
+将传统的 batch normalization 修改为 partitioned normalization，区别在于修正分布的可学习参数 𝛾 (gamma) 和 𝛽 (beta) 是domain specific的。
+
+
+### Star Topology FCN
+
+
   
 
 ## Evaluation
