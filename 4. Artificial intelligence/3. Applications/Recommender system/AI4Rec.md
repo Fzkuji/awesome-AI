@@ -109,13 +109,14 @@ IJCAI2018 Advertising Algorithm Competition (IAAC) is a dataset collected from a
 
 除此之外，网上再找不到数据，似乎只有当时入围复赛的团队才能得到数据。。。
 
-论文APG[^1]中按照用户划分了300个domains：{user_gender_id, user_age_level, user_star_level}
+论文[AdaSparse](#AdaSparse%20Learning%20Adaptively%20Sparse%20Structures%20for%20Multi-Domain%20Click-Through%20Rate%20Prediction)中依据用户特征{user_gender_id, user_age_level, user_star_level}划分了300个domains
 
 ### Ali-CCP: Alibaba Click and Conversion Prediction
 
 本数据集采集自手机淘宝移动客户端的推荐系统日志，其中包含点击和与之关联的转化数据，二者的关系图1描述。淘宝平台作为全球最大的在线零售电子商务平台，为提升其用户体验，通过推荐系统提供商品推荐服务，用户可以在浏览（impression）推荐结果中点击（click）感兴趣的商品，或者进一步对商品进行购买（conversion）。因此用户的行为可以抽象为一个序列模式：浏览 -> 点击 -> 购买。
 
-[官网](https://tianchi.aliyun.com/dataset/408)提供数据集介绍与下载
+[官网](https://tianchi.aliyun.com/dataset/408)提供数据集介绍与下载，简而言之就是CTR
+
 
 
 # Papers
@@ -164,6 +165,16 @@ Multi-scenario learning，也叫Multi-domain learning理论上multi-scenario和m
 
 [APG: Adaptive Parameter Generation Network for Click-Through Rate Prediction论文解读](https://zhuanlan.zhihu.com/p/496687361)
 
+### AdaSparse: Learning Adaptively Sparse Structures for Multi-Domain Click-Through Rate Prediction
+
+| Name      | Paper                                                                                                                                                                                                                | Publication | Repository | Link                                                                       | Classification                                                                                                             |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| AdaSparse | [AdaSparse: Learning Adaptively Sparse Structures for Multi-Domain Click-Through Rate Prediction](#AdaSparse%20Learning%20Adaptively%20Sparse%20Structures%20for%20Multi-Domain%20Click-Through%20Rate%20Prediction) | CIKM 2022   |            | [doi.org/10.1145/3511808.3557541](https://doi.org/10.1145/3511808.3557541) | [Multi-scenario learning](#Multi-scenario%20learning), [Click-through rate prediction](#Click-through%20rate%20prediction) |
+
+
+
+
+
 ### Multi-Scenario Ranking with Adaptive Feature Learning
 
 | Name  | Paper                                                                                                                     | Publication    | Repository | Link                                                 | Classification                                        |
@@ -181,13 +192,3 @@ Multi-scenario learning，也叫Multi-domain learning理论上multi-scenario和m
 
 
 
-
-
-
-
-
-
-
-
-[^1]: Yan, Bencheng, et al. "Apg: Adaptive parameter generation network for click-through rate prediction." _Advances in Neural Information Processing Systems_ 35 (2022): 24740-24752.
-[^2]: 
