@@ -35,7 +35,7 @@ Conclusion:
 整体模型结构如下图(b)所示：
 ![](../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230719160434.png)
 
-首先domain特征通过domain indicator获得，之后所有特征输入embedding网络，然后pooling合并输入partitioned normalization层，最后输入star topology FCN网络进行预测。
+首先domain特征通过domain indicator获得，之后所有特征输入embedding网络，然后pooling合并输入[partitioned normalization](#Partitioned%20normalization)层，最后输入[star topology FCN](#Star%20topology%20FCN)网络。整个结构还会附带一个辅助网络[auxiliary network](#Auxiliary%20network)，防止中间信息丢失。
 
 ### Partitioned normalization
 
@@ -64,7 +64,9 @@ $$
 $$
 ### Auxiliary network
 
+这一部分明明也是模型的一部分，但是没有被放进图片中，很怪。
 
+**辅助网络本身是一个简单的全连接层，辅助网络将Figure 4中pooling & concatenation部分的值作为输入，输出结果和FCN输出结果直接相加，作为模型输出的最终结果。**
 
 
 ## Evaluation
