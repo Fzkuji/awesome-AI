@@ -112,12 +112,20 @@ GPT-3定义上应该是一种自监督预训练NLP大模型。但是Finn认为�
 另外值得一提的就是Prompt（[GPT-3当时叫priming](https://github.com/shreyashankar/gpt3-sandbox/blob/master/docs/priming.md)），也就是在使用/测试模型的时候，给定的输入很重要，输的不合适效果就不好，这也因此催生了很多关于Prompt的研究。
 
 ### 3.3. Optimization-based Adaptation
+
 #### 3.3.1. Concepts
 
 **Key idea**: Acquire $\phi_i$ through optimization.
 基本意思就是不用模型预测模型了，那样太难。现在直接用类似于fine-turing的方法训练一个最终模型，这个模型用于下游任务的时候最终结果更好，而且比fine-tuning还要好。
 
 **个人理解**：Optimization-Based Adaptation关注的主要就是依赖于meta learning训练出来的模型最后性能更好，速度上肯定是比从头训练快，但是不是重点。这类模型都是直接通过训练得到一个自认为的最优结果，因此缺陷就是必须所有任务都要有类似的结构，才能被后面的任务使用。
+
+**对比**：
+- Fine-tuning: $\phi \leftarrow \theta-\alpha \nabla_\theta \mathcal{L}\left(\theta, \mathcal{D}^{\operatorname{tr}}\right)$
+- Meta-learning: $\min _\theta \sum_{\text {task } i} \mathcal{L}\left(\theta-\alpha \nabla_\theta \mathcal{L}\left(\theta, \mathcal{D}_i^{\text {tr }}\right), \mathcal{D}_i^{\mathrm{ts}}\right)$
+- 可以看到，fine-tuning就是希望参数更新对某一个（新的）数据集损失最低，但是meta-learning希望参数跟新
+
+
 
 **训练流程概览**： ^866c0a
 - - -
