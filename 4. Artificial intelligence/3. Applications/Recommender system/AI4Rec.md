@@ -163,9 +163,27 @@ Multi-scenario learning，也叫Multi-domain learning理论上multi-scenario和m
 
 ### Multi-Scenario Ranking with Adaptive Feature Learning
 
-| Name | Paper                                                                                                                                                                        | Publication  | Repository | Link                                                 | Classification                                                      |
-| ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------- | ---------------------------------------------------- | ------------------------------------------------------------------- |
-| APG  | [APG: Adaptive Parameter Generation Network for Click-Through Rate Prediction](#APG%20Adaptive%20Parameter%20Generation%20Network%20for%20Click-Through%20Rate%20Prediction) | NeurIPS 2022 |            | [arXiv:2203.16218](https://arxiv.org/abs/2203.16218) | [Click-through rate prediction](#Click-through%20rate%20prediction) | 
+| Name  | Paper                                                                                                                     | Publication    | Repository | Link                                                 | Classification                                        |
+| ----- | ------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ----------------------------------------------------- |
+| Maria | [Multi-Scenario Ranking with Adaptive Feature Learning](#Multi-Scenario%20Ranking%20with%20Adaptive%20Feature%20Learning) | arXiv preprint |            | [arXiv:2306.16732](https://arxiv.org/abs/2306.16732) | [Multi-scenario learning](#Multi-scenario%20learning) | 
+
+[SIGIR'23 | 基于特征自适应的多场景预估建模](https://zhuanlan.zhihu.com/p/641895931)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 [^1]: Yan, Bencheng, et al. "Apg: Adaptive parameter generation network for click-through rate prediction." _Advances in Neural Information Processing Systems_ 35 (2022): 24740-24752.
