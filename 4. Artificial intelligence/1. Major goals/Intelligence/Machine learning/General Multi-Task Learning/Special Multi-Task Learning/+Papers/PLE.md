@@ -87,6 +87,16 @@ where $t$ denotes the training epoch, $\omega_{k, 0}$ and $\gamma_k$ are hyper-p
 
 ### Baselines
 
+In the experiment, we compare CGC and PLE with single-task model, asymmetric sharing, customized sharing, and the SOTA MTL models including cross-stitch network, sluice network, and MMOE. As multi-level experts are shared in PLE, we extend MMOE to ML-MMOE (multi-layer MMOE) shown in Fig. 1h) by adding multi-level experts for fair comparison. In ML-MMOE, higher-level experts combine representations from lower-level experts through gating networks and all gating networks share the same selector.
+
+Baseline模型有点多，基本都是多任务学习模型
+
+### Metrics
+
+
+
+
+
 最后简单看一下实验结果。首先是离线的训练结果，表中的收益均是相较于单任务学习模型的：
 ![500](../../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Pasted%20image%2020230713170900.png)
 
