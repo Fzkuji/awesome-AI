@@ -4,6 +4,7 @@ The meta-learning problem: Given data on previous tasks, learn a new task more q
 元学习问题就是给定**先前**任务的数据，更快和/或更熟练地学习新任务。
 
 **元学习感觉更像是噱头，目前来看要么暴力预测模型参数，要么依靠微调加快模型训练速度。**
+
 ## 2. Problem formulation
 
 Two ways to view meta-learning algorithms:
@@ -34,10 +35,10 @@ Given data from $\mathscr{T}_{1}, \ldots, \mathscr{T}_{n}$, quickly solve new ta
  - **k-shot learning**: learning with **k** examples per class (or k examples total for regression)
  - **N-way classification**: choosing between N classes
 
-
 |                                 Multi-Task Learning                                 |                                                            Transfer Learning                                                             | Meta-Learning                                                                                                  |
 |:-----------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------:| -------------------------------------------------------------------------------------------------------------- |
 |      Solve multiple tasks $\mathscr{T}_{1}, \cdots, \mathscr{T}_{T}$ at once.       | Solve target task $\mathscr{T}_{b}$ after solving source task $\mathscr{T}_{a}$ by transferring knowledge learned from $\mathscr{T}_{a}$ | Given data from $\mathscr{T}_{1}, \ldots, \mathscr{T}_{n}$, quickly solve new task $\mathscr{T}_{\text{test}}$ |
+
 In transfer learning and meta-learning: generally impractical to access prior tasks
 In all settings: tasks must share structure.
 
@@ -60,6 +61,7 @@ In all settings: tasks must share structure.
 2. Sample disjoint datasets $\mathcal{D}_{i}^{\mathrm{tr}}, \mathcal{D}_{i}^{\mathrm{test}}$ from $\mathcal{D}_{i}$
 3. Compute $\phi_{i} \leftarrow f_{\theta}\left(\mathcal{D}_{i}^{\operatorname{tr}}\right)$ 
 4. Update $\theta$ using $\nabla_{\theta} \mathcal{L}\left(\phi_{i}, \mathcal{D}_{i}^{\text {test }}\right)$
+
 本质上就是用模型去预测另一个模型的参数
 
 **Challenge**: Outputing all neural net parameters does not seem scalable?
