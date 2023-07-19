@@ -100,6 +100,7 @@ https://cseweb.ucsd.edu/~jmcauley/datasets/amazon_v2/
 IJCAI2018 Advertising Algorithm Competition (IAAC) is a dataset collected from a sponsored search in E-commerce. Each record refers to whether a user purchases the displayed item after clicking this item. There is a total of 478,138 records, 197,694 users, and 10,075 items.
 
 可惜只有当时参与比赛的人可以下载数据集，目前[官网](https://tianchi.aliyun.com/competition/entrance/231647/introduction)已经不提供下载了，现有获取数据集样本的方式：
+
 1. 官网存档
 	1. 虽然比赛结束了，但是官方进行了存档，但只提供初赛的[少量数据集](https://tianchi.aliyun.com/dataset/147588)
 2. CSDN资源
@@ -111,6 +112,8 @@ IJCAI2018 Advertising Algorithm Competition (IAAC) is a dataset collected from a
 论文APG[^1]中按照用户划分了300个domains：{user_gender_id, user_age_level, user_star_level}
 
 ### Ali-CCP: Alibaba Click and Conversion Prediction
+
+本数据集采集自手机淘宝移动客户端的推荐系统日志，其中包含点击和与之关联的转化数据，二者的关系图1描述。淘宝平台作为全球最大的在线零售电子商务平台，为提升其用户体验，通过推荐系统提供商品推荐服务，用户可以在浏览（impression）推荐结果中点击（click）感兴趣的商品，或者进一步对商品进行购买（conversion）。因此用户的行为可以抽象为一个序列模式：浏览 -> 点击 -> 购买。
 
 [官网](https://tianchi.aliyun.com/dataset/408)提供数据集介绍与下载
 
