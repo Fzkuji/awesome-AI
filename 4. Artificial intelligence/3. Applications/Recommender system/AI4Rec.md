@@ -108,17 +108,9 @@ IJCAI2018 Advertising Algorithm Competition (IAAC) is a dataset collected from a
 
 除此之外，网上再找不到数据，似乎只有当时入围复赛的团队才能得到数据。。。
 
-论文APG[^1]中按照用户划分domain {user_gender_id, user_age_level, user_star_level}
+论文APG[^1]中按照用户划分了300个domains：{user_gender_id, user_age_level, user_star_level}
 
 
-在推荐系统领域，Multi-Domain和Multi-Scenario的区别主要体现在处理的问题和应用的方法上。
-
-1. Multi-Domain：多领域推荐系统主要关注如何在不同的领域（例如，电影、书籍、音乐等）中进行推荐。这种类型的推荐系统需要处理的主要问题是如何在不同的领域中找到合适的推荐方法，以及如何利用用户在一个领域的行为信息来推荐另一个领域的项目。例如，一个用户可能在电影领域的行为和他在音乐领域的行为之间存在一定的关联，多领域推荐系统就是要找到这种关联并利用它来进行推荐。
-    
-2. Multi-Scenario：多场景推荐系统则主要关注如何在不同的场景（例如，工作、休闲、学习等）中进行推荐。这种类型的推荐系统需要处理的主要问题是如何根据用户的当前场景来调整推荐策略，以及如何利用用户在一个场景的行为信息来推荐另一个场景的项目。例如，一个用户可能在工作场景下更喜欢看新闻，而在休闲场景下更喜欢看电影，多场景推荐系统就是要找到这种差异并利用它来进行推荐。
-    
-
-总的来说，多领域推荐系统和多场景推荐系统都是为了更好地理解用户的需求并提供更个性化的推荐，但它们关注的焦点和处理的问题是不同的。
 
 
 
@@ -130,6 +122,8 @@ IJCAI2018 Advertising Algorithm Competition (IAAC) is a dataset collected from a
 #### Multi-scenario modeling
 
 Multi-scenario modeling，也叫Multi-domain modeling理论上multi-scenario和multi-domain应该存在区别，但是在各项工作中经常将其混淆，并且没有明显的区分，因此本笔记将这两者视为同一个概念。
+
+#### Click-through rate prediction
 
 
 
@@ -154,7 +148,21 @@ Multi-scenario modeling，也叫Multi-domain modeling理论上multi-scenario和m
 
 | Name | Paper                                                                                                                                                                                                            | Publication | Repository | Link                                                 | Classification                                                                                 |
 | ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| STAR | [One Model to Serve All: Star Topology Adaptive Recommender for Multi-Domain CTR Prediction](#One%20Model%20to%20Serve%20All%20Star%20Topology%20Adaptive%20Recommender%20for%20Multi-Domain%20CTR%20Prediction) | CIKM 2021   |            | [arXiv:2101.11427](https://arxiv.org/abs/2101.11427) | [#Information retrieval](#Information%20retrieval), [#Data augmentation](#Data%20augmentation) |
+| STAR | [One Model to Serve All: Star Topology Adaptive Recommender for Multi-Domain CTR Prediction](#One%20Model%20to%20Serve%20All%20Star%20Topology%20Adaptive%20Recommender%20for%20Multi-Domain%20CTR%20Prediction) | CIKM 2021   |            | [arXiv:2101.11427](https://arxiv.org/abs/2101.11427) | [Click-through rate prediction](#Click-through%20rate%20prediction), [Multi-scenario modeling](#Multi-scenario%20modeling) |
+
+
+### APG: Adaptive Parameter Generation Network for Click-Through Rate Prediction
+
+| Name | Paper                                                                                                                                                                        | Publication  | Repository | Link                                                 | Classification                                                      |
+| ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------- | ---------------------------------------------------- | ------------------------------------------------------------------- |
+| APG  | [APG: Adaptive Parameter Generation Network for Click-Through Rate Prediction](#APG%20Adaptive%20Parameter%20Generation%20Network%20for%20Click-Through%20Rate%20Prediction) | NeurIPS 2022 |            | [arXiv:2203.16218](https://arxiv.org/abs/2203.16218) | [Click-through rate prediction](#Click-through%20rate%20prediction) | 
+
+[APG: Adaptive Parameter Generation Network for Click-Through Rate Prediction论文解读](https://zhuanlan.zhihu.com/p/496687361)
+
+
+
+
+
 
 
 
