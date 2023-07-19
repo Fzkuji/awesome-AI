@@ -81,6 +81,11 @@ where $t$ denotes the training epoch, $\omega_{k, 0}$ and $\gamma_k$ are hyper-p
 
 - 疼讯闭源数据集
 - Synthetic Data
+	- 使用MMoE中提到的数据合成方法所生成的数据集
+- Census-income Dataset 收入预测数据集
+- Ali-CCP Dataset
+
+### Baselines
 
 最后简单看一下实验结果。首先是离线的训练结果，表中的收益均是相较于单任务学习模型的：
 ![500](../../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Pasted%20image%2020230713170900.png)
