@@ -3,7 +3,7 @@
   "theme": "moonstone",
   "translucency": false,
   "baseFontSize": 16,
-  "cssTheme": "",
+  "cssTheme": "Obsidian Nord",
   "nativeMenus": false,
   "showViewHeader": true
 }
