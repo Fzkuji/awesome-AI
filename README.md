@@ -1,6 +1,6 @@
 **For Science!**
 
-**English** | [中文](README_zh.md)
+English | [中文](README_zh.md)
 
 Browse the [website](https://publish.obsidian.md/artificial-intelligence) for the best experience until 11/03/2024.
 

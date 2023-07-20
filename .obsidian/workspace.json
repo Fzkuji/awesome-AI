@@ -11,12 +11,8 @@
             "id": "16cea1154bb26fa1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md"
-              }
+              "state": {}
             }
           },
           {
@@ -158,9 +150,14 @@
   },
   "active": "16cea1154bb26fa1",
   "lastOpenFiles": [
+    "5. Information science/Information filtering/Recommender system.md",
+    "4. Artificial intelligence/3. Applications/Applications.md",
+    "README_zh.md",
+    "README.md",
+    "Untitled.md",
+    "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "PhD/华为实习/Meetings.md",
     "PhD/华为实习/PPT.md",
-    "Untitled.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/Uncovering ChatGPT's Capabilities in Recommender Systems.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/TIGER.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/InstructRec.md",
@@ -173,13 +170,10 @@
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/M2M.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
     "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
-    "README.md",
-    "README_zh.md",
     "1. Philosophy/Philosophy.md",
     "4. Artificial intelligence/1. Major goals/Major goals.md",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720170003.png",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720165843.png",
-    "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "3. Computer science/Algorithm/Sorting algorithm.md",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720150227.png",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Meta Learning/Meta Learning.md",
@@ -192,8 +186,6 @@
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230719164639.png",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230719160434.png",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230719114328.png",
-    "MoE.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/RL4Rec.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.canvas",
     "LICENSE",
     "awesome-AI/LICENSE",

@@ -1,6 +1,6 @@
 **为了科学！**
 
-**英文** | [中文](README_zh.md)
+[英文](README.md) | 中文
 
 浏览[网站](https://publish.obsidian.md/artificial-intelligence)以获得最佳体验，有效期至2024年11月3日。
 
