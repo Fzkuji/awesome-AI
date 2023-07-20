@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
-                "mode": "source",
+                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -43,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -109,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md"
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md"
               }
             }
           },
@@ -180,10 +181,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "bb2d4f572d9a0216",
+  "active": "754c090707a491a6",
   "lastOpenFiles": [
-    "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720141941.png",
     "PhD/华为实习/LLM for multi-domain CTR prediction.md",
+    "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
+    "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720141941.png",
     "Resources/PhD/Pasted image 20230720103836.png",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md",
     "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
@@ -191,7 +193,6 @@
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Meta Learning/Meta Learning.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/M2M.md",
     "4. Artificial intelligence/3. Applications/Recommender system/MTL4Rec.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
     "Untitled.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230719172123.png",
@@ -224,7 +225,6 @@
     "PhD/华为实习",
     "2023-03-22_log.txt",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/Pasted image 20230713171217.png",
-    "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/Pasted image 20230713171214.png",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Domain adaptation/Multi-scenario modeling/+Papers",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Domain adaptation/Multi-scenario modeling",

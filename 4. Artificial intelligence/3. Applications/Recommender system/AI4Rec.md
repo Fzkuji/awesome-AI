@@ -187,6 +187,14 @@ Multi-scenario learning，也叫Multi-domain learning理论上multi-scenario和m
 | ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | [STAR](+Papers/STAR.md) | [One Model to Serve All: Star Topology Adaptive Recommender for Multi-Domain CTR Prediction](#One%20Model%20to%20Serve%20All%20Star%20Topology%20Adaptive%20Recommender%20for%20Multi-Domain%20CTR%20Prediction) | CIKM 2021   |            | [arXiv:2101.11427](https://arxiv.org/abs/2101.11427) | [Click-through rate prediction](#Click-through%20rate%20prediction), [Multi-scenario learning](#Multi-scenario%20learning) |
 
+### Leaving No One Behind: A Multi-Scenario Multi-Task Meta Learning Approach for Advertiser Modeling
+
+| Name                  | Paper                                                                                                                                                                                                                          | Publication  | Repository | Link                                                 | Classification                                                      |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | ---------- | ---------------------------------------------------- | ------------------------------------------------------------------- |
+| [M2M](+Papers/M2M.md) | [Leaving No One Behind: A Multi-Scenario Multi-Task Meta Learning Approach for Advertiser Modeling](#Leaving%20No%20One%20Behind%20A%20Multi-Scenario%20Multi-Task%20Meta%20Learning%20Approach%20for%20Advertiser%20Modeling) | NeurIPS 2022 |            | [arXiv:2203.16218](https://arxiv.org/abs/2203.16218) | [Click-through rate prediction](#Click-through%20rate%20prediction) |
+
+
+
 
 ### APG: Adaptive Parameter Generation Network for Click-Through Rate Prediction
 
