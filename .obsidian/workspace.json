@@ -8,42 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "754c090707a491a6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PhD/华为实习/Meetings.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "76577f601cbbed75",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8929ff82696b77e0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README_zh.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "16cea1154bb26fa1",
             "type": "leaf",
             "state": {
@@ -55,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README_zh.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README_zh.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README_zh.md"
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md"
               }
             }
           },
@@ -193,15 +156,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "8929ff82696b77e0",
+  "active": "16cea1154bb26fa1",
   "lastOpenFiles": [
+    "PhD/华为实习/Meetings.md",
     "README.md",
     "README_zh.md",
+    "1. Philosophy/Philosophy.md",
+    "4. Artificial intelligence/1. Major goals/Major goals.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/M2M.md",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720170003.png",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720165843.png",
     "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
-    "PhD/华为实习/Meetings.md",
     "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "PhD/华为实习/PPT.md",
     "3. Computer science/Algorithm/Sorting algorithm.md",
@@ -230,7 +195,6 @@
     "4. Artificial intelligence/2. Approaches/Approaches.md",
     "Miscellaneous/付费项目.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
-    "2. Mathematics/Mathematics.md",
     "LICENSE",
     "awesome-AI/LICENSE",
     "awesome-AI",
