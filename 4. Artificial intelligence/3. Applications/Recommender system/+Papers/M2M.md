@@ -1,6 +1,6 @@
 Title: Leaving No One Behind: A Multi-Scenario Multi-Task Meta Learning Approach for Advertiser Modeling
 
-Link: 
+Link: https://arxiv.org/abs/2201.06814
 
 Code: 
 
@@ -8,6 +8,9 @@ Additional information:
 
 Conclusion: 
 
+| Name                  | Paper                                                                                                                                                                                                                          | Publication | Repository | Link                                                 | Classification                                                                                                                                  |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- | ---------- | ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| [M2M](+Papers/M2M.md) | [Leaving No One Behind: A Multi-Scenario Multi-Task Meta Learning Approach for Advertiser Modeling](#Leaving%20No%20One%20Behind%20A%20Multi-Scenario%20Multi-Task%20Meta%20Learning%20Approach%20for%20Advertiser%20Modeling) | WSDM2022    |            | [arXiv:2201.06814](https://arxiv.org/abs/2201.06814) | [Multi-scenario learning](#Multi-scenario%20learning), [Click-through rate prediction](#Click-through%20rate%20prediction), Multi-task learning, Meta learning |
 
 ## Abstract
 
