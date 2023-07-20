@@ -1,12 +1,18 @@
-For Science!
+**For Science!**
+
+**English** | [中文](README_zh.md)
 
 Browse the [website](https://publish.obsidian.md/artificial-intelligence) for the best experience until 11/03/2024.
 
-## Introduction
+# Awesome AI: artificial intelligence study notes
 
-✨ This project is my personal study notes, which records and organizes all the machine learning knowledge I have learned with long-term updates.
+✨ Welcome to my Artificial Intelligence Study Notes project! This project is my personal study notes, which records and organizes all the machine learning knowledge I have learned with long-term updates.
+
+## Project Goals
 
 👀 My goal is a machine with the same level of intelligence as a human. For this, I need knowledge in all aspects.
+
+## Project Content
 
 💕 This project welcomes any relevant contributions, including but not limited to personal notes, external sites, videos, and reminders of new technologies. This project will always be public. A lot of content is not written by me, but it is public content on the Internet, and references will be added if necessary. Any spread and likes are appreciated!
 
