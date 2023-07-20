@@ -64,7 +64,7 @@ $$
 $$
 ### Auxiliary network
 
-这一部分明明也是模型的一部分，但是没有被放进图片中，很怪。
+![](../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230720141941.png)
 
 **辅助网络本身是一个简单的全连接层，辅助网络将Figure 4中pooling & concatenation部分的值作为输入，输出结果和FCN输出结果直接相加，作为模型输出的最终结果。**
 
