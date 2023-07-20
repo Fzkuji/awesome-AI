@@ -126,7 +126,6 @@ GPT-3定义上应该是一种自监督预训练NLP大模型。但是Finn认为�
 - 可以看到，fine-tuning就是希望参数更新对某一个（新的）数据集损失最低，但是meta-learning希望参数更新
 
 
-
 **训练流程概览**： ^866c0a
 - - -
 init parameters $\phi_0$
@@ -153,6 +152,7 @@ tasks = $\mathcal{T}$
 其中，值得注意的是，得到Real Meta Best点之后，仍然需要对模型训练多次，才能得到任务的最优点。图中，两个任务都训练了2次，而MAML只训练了一次。训练一次在反向传播的时候会需要求解2阶导数（Hessian）。**似乎训练次数越多，阶数越高，但是这一点我不确定。可以确定的是，之前的$K$次训练并不会影响到阶数，因为前面的$K$次训练的参数都可以通过化简约掉。目测反向传播最终的阶数为N+1次。**
 
 **Finn的观点似乎是不论$N$等于多少，也就是不管我们什么时候假设模型计算好了，只要我们得到最终的损失能反向传播就行。此时 $N$的增加也就是$K$再增加，而$N$永远等于1。但是这似乎又违背了meta learning的初衷，我们本来就是想保证一个预训练结果对所有任务都好用，那么就没必要让$K$太大，难怪MAML文章中$K$和$N$都是1？**
+
 #### 3.3.2. Architectures
 ##### MAML
 MAML, or Model-Agnostic Meta-Learning, is **a model and task-agnostic algorithm for meta-learning that trains a model's parameters such that a small number of gradient updates will lead to fast learning on a new task**.
