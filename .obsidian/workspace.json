@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bb2d4f572d9a0216",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PhD/华为实习/PPT.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "754c090707a491a6",
             "type": "leaf",
             "state": {
@@ -54,17 +42,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "6c0800704fca2236",
-            "type": "leaf",
-            "state": {
-              "type": "reveal-preview-view",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -130,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
+                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
+                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md"
+                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md"
               }
             }
           },
@@ -198,18 +177,17 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-advanced-slides:Show Slide Preview": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c633a6bf13e3c2d2",
+  "active": "754c090707a491a6",
   "lastOpenFiles": [
+    "PhD/华为实习/PPT.md",
+    "PhD/华为实习/LLM for multi-domain CTR prediction.md",
+    "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
     "3. Computer science/Algorithm/Sorting algorithm.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/M2M.md",
-    "PhD/华为实习/LLM for multi-domain CTR prediction.md",
-    "PhD/华为实习/PPT.md",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720150227.png",
-    "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Meta Learning/Meta Learning.md",
     "PhD/华为实习/Meetings.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
