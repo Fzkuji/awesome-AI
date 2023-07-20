@@ -32,9 +32,11 @@ Conclusion:
 
 ## Methods
 
-作者解决问题的方法/算法是什么？是否基于前人的方法？基于了哪些？
+![](../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230720165843.png)
 
-  
+![](../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230720170003.png)
+
+
 
 ## Evaluation
 

@@ -43,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 347.5
+    "width": 347.5,
+    "collapsed": true
   },
   "right": {
     "id": "417cdb7d208faa4a",
@@ -109,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhD/华为实习/Meetings.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/M2M.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhD/华为实习/Meetings.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/M2M.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhD/华为实习/Meetings.md"
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/M2M.md"
               }
             }
           },
@@ -166,7 +168,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 371.5
+    "width": 371.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,16 +183,18 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "754c090707a491a6",
+  "active": "76577f601cbbed75",
   "lastOpenFiles": [
-    "PhD/华为实习/LLM for multi-domain CTR prediction.md",
+    "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720170003.png",
+    "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720165843.png",
     "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/M2M.md",
+    "PhD/华为实习/Meetings.md",
+    "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "PhD/华为实习/PPT.md",
     "3. Computer science/Algorithm/Sorting algorithm.md",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720150227.png",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Meta Learning/Meta Learning.md",
-    "PhD/华为实习/Meetings.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720141941.png",
     "Resources/PhD/Pasted image 20230720103836.png",
@@ -217,8 +222,6 @@
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
     "2. Mathematics/Mathematics.md",
     "5. Information science/Information filtering/Recommender system.md",
-    "3. Computer science/Computer science.md",
-    "New Bitmap Image.bmp",
     "LICENSE",
     "awesome-AI/LICENSE",
     "awesome-AI",

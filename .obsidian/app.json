@@ -4,7 +4,7 @@
   "foldIndent": true,
   "showIndentGuide": true,
   "rightToLeft": false,
-  "readableLineLength": true,
+  "readableLineLength": false,
   "showLineNumber": true,
   "alwaysUpdateLinks": true,
   "attachmentFolderPath": "Resources/4. Artificial intelligence/3. Applications/Recommender system",
