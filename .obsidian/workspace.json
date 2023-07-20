@@ -20,7 +20,7 @@
             }
           },
           {
-            "id": "3e121b766d94cc0e",
+            "id": "5d520979ba3b5cd7",
             "type": "leaf",
             "state": {
               "type": "reveal-preview-view",
@@ -101,7 +101,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 347.5
+    "width": 347.5,
+    "collapsed": true
   },
   "right": {
     "id": "417cdb7d208faa4a",
@@ -174,8 +175,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 371.5,
-    "collapsed": true
+    "width": 371.5
   },
   "left-ribbon": {
     "hiddenItems": {
