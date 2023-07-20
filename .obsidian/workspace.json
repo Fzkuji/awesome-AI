@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Meta Learning/Meta Learning.md",
-                "mode": "preview",
+                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Meta Learning/Meta Learning.md",
+                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Meta Learning/Meta Learning.md",
+                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Meta Learning/Meta Learning.md"
+                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md"
               }
             }
           },
@@ -170,8 +170,9 @@
   },
   "active": "bb2d4f572d9a0216",
   "lastOpenFiles": [
-    "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
+    "PhD/华为实习/LLM for multi-domain CTR prediction.md",
+    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Meta Learning/Meta Learning.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/MMoE.md",
     "4. Artificial intelligence/3. Applications/Recommender system/MTL4Rec.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
