@@ -44,14 +44,6 @@
             }
           },
           {
-            "id": "0170cc9f6040fd59",
-            "type": "leaf",
-            "state": {
-              "type": "reveal-preview-view",
-              "state": {}
-            }
-          },
-          {
             "id": "16cea1154bb26fa1",
             "type": "leaf",
             "state": {
@@ -61,6 +53,14 @@
                 "mode": "source",
                 "source": false
               }
+            }
+          },
+          {
+            "id": "6c0800704fca2236",
+            "type": "leaf",
+            "state": {
+              "type": "reveal-preview-view",
+              "state": {}
             }
           }
         ],
@@ -202,7 +202,7 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "16cea1154bb26fa1",
+  "active": "c633a6bf13e3c2d2",
   "lastOpenFiles": [
     "3. Computer science/Algorithm/Sorting algorithm.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/M2M.md",
