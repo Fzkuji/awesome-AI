@@ -107,16 +107,6 @@ These techniques help to alleviate the cold start problem and improve the qualit
 
 [TALLRec](../../4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/TALLRec.md)（也自称LLM4Rec）研究了跨域推荐的问题，并没有什么特别的发现。只是说LLM有跨域推荐的能力（这不废话）。
 
-
-## Datasets
-
-
-
-
-
-
-
-
 ## Techniques
 
 
@@ -155,10 +145,6 @@ Here are some of the disadvantages of random recommendation policies:
 -   They can be less accurate than more personalized recommendation systems.
 -   They can lead to users seeing the same items repeatedly.
 -   They can be less effective at engaging users.
-
-#### 
-
-
 
 ## [LLM4Rec](../../4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/LLM4Rec.md)
 
