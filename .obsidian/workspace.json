@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md",
-                "mode": "preview",
+                "file": "PhD/华为实习/Meetings.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md",
+                "file": "PhD/华为实习/Meetings.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md",
+                "file": "PhD/华为实习/Meetings.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md"
+                "file": "PhD/华为实习/Meetings.md"
               }
             }
           },
@@ -182,11 +182,11 @@
   },
   "active": "754c090707a491a6",
   "lastOpenFiles": [
-    "PhD/华为实习/PPT.md",
     "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
-    "3. Computer science/Algorithm/Sorting algorithm.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/M2M.md",
+    "PhD/华为实习/PPT.md",
+    "3. Computer science/Algorithm/Sorting algorithm.md",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720150227.png",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Meta Learning/Meta Learning.md",
     "PhD/华为实习/Meetings.md",
