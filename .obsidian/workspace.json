@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/M2M.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 347.5,
-    "collapsed": true
+    "width": 347.5
   },
   "right": {
     "id": "417cdb7d208faa4a",
@@ -111,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/M2M.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/M2M.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/M2M.md"
+                "file": "README.md"
               }
             }
           },
@@ -168,8 +167,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 371.5,
-    "collapsed": true
+    "width": 371.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,10 +183,10 @@
   },
   "active": "76577f601cbbed75",
   "lastOpenFiles": [
+    "4. Artificial intelligence/3. Applications/Recommender system/+Papers/M2M.md",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720170003.png",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720165843.png",
     "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/+Papers/M2M.md",
     "PhD/华为实习/Meetings.md",
     "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "PhD/华为实习/PPT.md",
@@ -208,7 +206,6 @@
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230719164639.png",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230719160434.png",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230719114328.png",
-    "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/Pasted image 20230718204604.png",
     "MoE.md",
     "4. Artificial intelligence/3. Applications/Recommender system/RL4Rec.md",
     "README.md",
