@@ -631,9 +631,9 @@ LLM预测用户评分
 
 ### Recommendation as Instruction Following: A Large Language Model Empowered Recommendation Approach
 
-| Name | Paper                                                                                                 | Publication    | Repository | Link                                                 | Classification |
-| ---- | ----------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | -------------- |
-|  [InstructRec](+Papers/InstructRec.md)    | [Recommendation as Instruction Following A Large Language Model Empowered Recommendation Approach](#Recommendation%20as%20Instruction%20Following%20A%20Large%20Language%20Model%20Empowered%20Recommendation%20Approach) | arXiv preprint |            | [arXiv:2305.07001](https://arxiv.org/abs/2305.07001) |  [#LLM as RS](#LLM%20as%20RS), [#Sequential recommendation](#Sequential%20recommendation), [#Information retrieval](#Information%20retrieval)              |
+| Name                                  | Paper                                                                                                                                                                                                                     | Publication    | Repository | Link                                                 | Classification                                                                                                                               |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| [InstructRec](+Papers/InstructRec.md) | [Recommendation as Instruction Following A Large Language Model Empowered Recommendation Approach](#Recommendation%20as%20Instruction%20Following%20A%20Large%20Language%20Model%20Empowered%20Recommendation%20Approach) | arXiv preprint |            | [arXiv:2305.07001](https://arxiv.org/abs/2305.07001) | [LLM as RS](#LLM%20as%20RS), [Sequential recommendation](#Sequential%20recommendation), [Information retrieval](#Information%20retrieval) |
 
 ![Pasted image 20230701142758](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230701142758.png)
 
@@ -647,9 +647,9 @@ Instruction design，设计了多种prompt来微调模型
 
 ### Is ChatGPT Fair for Recommendation? Evaluating Fairness in Large Language Model Recommendation
 
-| Name    | Paper                                                                                               | Publication    | Repository                                        | Link                                                 | Classification |
-| ------- | --------------------------------------------------------------------------------------------------- | -------------- | ------------------------------------------------- | ---------------------------------------------------- | -------------- |
-| FaiRLLM | [Is ChatGPT Fair for Recommendation? Evaluating Fairness in Large Language Model Recommendation](#Is%20ChatGPT%20Fair%20for%20Recommendation?%20Evaluating%20Fairness%20in%20Large%20Language%20Model%20Recommendation) | arXiv preprint | [FaiRLLM](https://github.com/jizhi-zhang/FaiRLLM) | [arXiv:2305.07609](https://arxiv.org/abs/2305.07609) | [#Fairness](#Fairness)  | 
+| Name    | Paper                                                                                                                                                                                                                   | Publication    | Repository                                        | Link                                                 | Classification         |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------------------------------------- | ---------------------------------------------------- | ---------------------- |
+| FaiRLLM | [Is ChatGPT Fair for Recommendation? Evaluating Fairness in Large Language Model Recommendation](#Is%20ChatGPT%20Fair%20for%20Recommendation?%20Evaluating%20Fairness%20in%20Large%20Language%20Model%20Recommendation) | arXiv preprint | [FaiRLLM](https://github.com/jizhi-zhang/FaiRLLM) | [arXiv:2305.07609](https://arxiv.org/abs/2305.07609) | [Fairness](#Fairness) |
 
 ![Pasted image 20230614211026](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230614211026.png)
 
@@ -660,9 +660,9 @@ Instruction design，设计了多种prompt来微调模型
 
 ### Large Language Models are Zero-Shot Rankers for Recommender Systems
 
-| Name    | Paper                                                                    | Publication    | Repository                                     | Link                                                 | Classification |
-| ------- | ------------------------------------------------------------------------ | -------------- | ---------------------------------------------- | ---------------------------------------------------- | -------------- |
-| LLMRank | [Large Language Models are Zero-Shot Rankers for Recommender Systems](#Large%20Language%20Models%20are%20Zero-Shot%20Rankers%20for%20Recommender%20Systems) | arXiv preprint | [LLMRank](https://github.com/RUCAIBox/LLMRank) | [arXiv:2305.08845](https://arxiv.org/abs/2305.08845) |   [#LLM as RS](#LLM%20as%20RS), [#Sequential recommendation](#Sequential%20recommendation), [#Ranking](#Ranking)            |
+| Name    | Paper                                                                                                                                                       | Publication    | Repository                                     | Link                                                 | Classification                                                                                                 |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------------------------------------- | ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| LLMRank | [Large Language Models are Zero-Shot Rankers for Recommender Systems](#Large%20Language%20Models%20are%20Zero-Shot%20Rankers%20for%20Recommender%20Systems) | arXiv preprint | [LLMRank](https://github.com/RUCAIBox/LLMRank) | [arXiv:2305.08845](https://arxiv.org/abs/2305.08845) | [LLM as RS](#LLM%20as%20RS), [Sequential recommendation](#Sequential%20recommendation), [Ranking](#Ranking) |
 
 ![Pasted image 20230614100006](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230614100006.png)
 
