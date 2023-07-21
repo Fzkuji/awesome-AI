@@ -370,9 +370,9 @@ Click-through rate (CTR) prediction
 
 ### InPars: Data Augmentation for Information Retrieval using Large Language Models
 
-| Name   | Paper                                                                               | Publication    | Repository | Link                                                 | Classification                                     |
-| ------ | ----------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | -------------------------------------------------- |
-| InPars | [InPars Data Augmentation for Information Retrieval using Large Language Models](#InPars%20Data%20Augmentation%20for%20Information%20Retrieval%20using%20Large%20Language%20Models) | arXiv preprint |            | [arXiv:2202.06991](https://arxiv.org/abs/2202.06991) | [#Information retrieval](#Information%20retrieval), [#Data augmentation](#Data%20augmentation) | 
+| Name   | Paper                                                                                                                                                                               | Publication    | Repository | Link                                                 | Classification                                                                                 |
+| ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| InPars | [InPars Data Augmentation for Information Retrieval using Large Language Models](#InPars%20Data%20Augmentation%20for%20Information%20Retrieval%20using%20Large%20Language%20Models) | arXiv preprint |            | [arXiv:2202.06991](https://arxiv.org/abs/2202.06991) | [Information retrieval](#Information%20retrieval), [Data augmentation](#Data%20augmentation) |
 
 
 
@@ -380,9 +380,9 @@ Click-through rate (CTR) prediction
 
 ### Transformer Memory as a Differentiable Search Index
 
-| Name    | Paper                                                    | Publication  | Repository                                          | Link                                                 | Classification                                 |
-| ------- | -------------------------------------------------------- | ------------ | --------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------- |
-| [DSI](+Papers/DSI.md) | [Transformer Memory as a Differentiable Search Index](#Transformer%20Memory%20as%20a%20Differentiable%20Search%20Index) | NeurIPS 2022 | [inpars](https://github.com/zetaalphavector/inpars) | [arXiv:2202.05144](https://arxiv.org/abs/2202.05144) | [#Information retrieval](#Information%20retrieval), [#ID generation](#ID%20generation) |
+| Name                  | Paper                                                                                                                   | Publication  | Repository                                          | Link                                                 | Classification                                                                         |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------- | ------------ | --------------------------------------------------- | ---------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| [DSI](+Papers/DSI.md) | [Transformer Memory as a Differentiable Search Index](#Transformer%20Memory%20as%20a%20Differentiable%20Search%20Index) | NeurIPS 2022 | [inpars](https://github.com/zetaalphavector/inpars) | [arXiv:2202.05144](https://arxiv.org/abs/2202.05144) | [Information retrieval](#Information%20retrieval), [ID generation](#ID%20generation) |
 
 
 本质是让LLMs去做[Information retrieval](../../../5.%20Information%20science/Information%20retrieval/Information%20retrieval.md)，之前的模型，无论是传统模型还是机器学习模型，都是对问题和文档进行一对一比较，最后挑选相关性较高的结果。
@@ -395,9 +395,9 @@ Click-through rate (CTR) prediction
 ### Improving Passage Retrieval with Zero-Shot Question Generation
 
 
-| Name | Paper                                                               | Publication | Repository                                                                                         | Link                                                 | Classification |
-| ---- | ------------------------------------------------------------------- | ----------- | -------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | -------------- |
-|      | [Improving Passage Retrieval with Zero-Shot Question Generation](#Improving%20Passage%20Retrieval%20with%20Zero-Shot%20Question%20Generation) | EMNLP 2022  | [unsupervised-passage-reranking](https://github.com/DevSinghSachan/unsupervised-passage-reranking) | [arXiv:2204.07496](https://arxiv.org/abs/2204.07496) | [#Information retrieval](#Information%20retrieval), [#Ranking](#Ranking)   |
+| Name | Paper                                                                                                                                         | Publication | Repository                                                                                         | Link                                                 | Classification                                                           |
+| ---- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | -------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------ |
+|      | [Improving Passage Retrieval with Zero-Shot Question Generation](#Improving%20Passage%20Retrieval%20with%20Zero-Shot%20Question%20Generation) | EMNLP 2022  | [unsupervised-passage-reranking](https://github.com/DevSinghSachan/unsupervised-passage-reranking) | [arXiv:2204.07496](https://arxiv.org/abs/2204.07496) | [Information retrieval](#Information%20retrieval), [Ranking](#Ranking) |
 
 
 本文提出了一个无监督的retriever-reranker pipeline。Retriever基于无监督的模型，如BM25、Contriever等，reranker作者尝试了3B参数量的T5系列模型以及2.7B参数量的GPT-neo。Reranker的训练，仍然是通过让大模型生成和段落对应的query，无监督地获取到大量的标注数据对。作者也发现由于使用了LLM，整个pipeline存在高延迟的问题。
@@ -407,9 +407,9 @@ Click-through rate (CTR) prediction
 
 ### Atlas: Few-shot Learning with Retrieval Augmented Language Models
 
-| Name  | Paper                                                                 | Publication    | Repository | Link                                                 | Classification |
-| ----- | --------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | -------------- |
-| Atlas | [Atlas Few-shot Learning with Retrieval Augmented Language Models](#Atlas%20Few-shot%20Learning%20with%20Retrieval%20Augmented%20Language%20Models) | arXiv preprint |            | [arXiv:2208.03299](https://arxiv.org/abs/2208.03299) |  [#Information retrieval](#Information%20retrieval)              |
+| Name  | Paper                                                                                                                                               | Publication    | Repository | Link                                                 | Classification                                     |
+| ----- | --------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | -------------------------------------------------- |
+| Atlas | [Atlas Few-shot Learning with Retrieval Augmented Language Models](#Atlas%20Few-shot%20Learning%20with%20Retrieval%20Augmented%20Language%20Models) | arXiv preprint |            | [arXiv:2208.03299](https://arxiv.org/abs/2208.03299) | [Information retrieval](#Information%20retrieval) |
 
 
 设计了4种损失函数，用于训练LLM来做推荐任务。模型架构包括Retriever和Ranker，其中Ranker就是LLM。
@@ -434,9 +434,9 @@ Re-rank部分是由Retriever完成的，而不是LLM。
 
 ### Generate rather than Retrieve: Large Language Models are Strong Context Generators
 
-| Name        | Paper                                                                                  | Publication | Repository                                  | Link                                                 | Classification             |
-| ----------- | -------------------------------------------------------------------------------------- | ----------- | ------------------------------------------- | ---------------------------------------------------- | -------------------------- |
-| [GenRead](+Papers/GenRead.md) | [Generate rather than Retrieve Large Language Models are Strong Context Generators](#Generate%20rather%20than%20Retrieve%20Large%20Language%20Models%20are%20Strong%20Context%20Generators) | ICLR 2023   | [GenRead](https://github.com/wyu97/GenRead) | [arXiv:2209.10063](https://arxiv.org/abs/2209.10063) | [#Content generation](#Content%20generation) | 
+| Name                          | Paper                                                                                                                                                                                       | Publication | Repository                                  | Link                                                 | Classification                               |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ------------------------------------------- | ---------------------------------------------------- | -------------------------------------------- |
+| [GenRead](+Papers/GenRead.md) | [Generate rather than Retrieve Large Language Models are Strong Context Generators](#Generate%20rather%20than%20Retrieve%20Large%20Language%20Models%20are%20Strong%20Context%20Generators) | ICLR 2023   | [GenRead](https://github.com/wyu97/GenRead) | [arXiv:2209.10063](https://arxiv.org/abs/2209.10063) | [Content generation](#Content%20generation) |
 
 > 本文提出把传统问答系统中的retrieve-then-read pipeline中的检索模型替换为LLM，创建generate-then-read pipeline。具体地，给定一个query，使用LLM配合指令来生成背景文档，再把生成的文档送入阅读理解模型中生成最终的答案。为了增加生成多样的文档，作者提出基于聚类的提示方法，用GPT-3得到query-文档对的表示，生成时从每个类中采样保证多样性。
 > 
@@ -452,9 +452,9 @@ Re-rank部分是由Retriever完成的，而不是LLM。
 
 ### Promptagator: Few-shot Dense Retrieval From 8 Examples
 
-| Name         | Paper                                                      | Publication    | Repository | Link                                                 | Classification          |
-| ------------ | ---------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ----------------------- |
-| Promptagator | [Promptagator Few-shot Dense Retrieval From 8 Examples](#Promptagator%20Few-shot%20Dense%20Retrieval%20From%208%20Examples) | arXiv preprint |            | [arXiv:2209.11755](https://arxiv.org/abs/2209.11755) | [#Content generation](#Content%20generation) |
+| Name         | Paper                                                                                                                       | Publication    | Repository | Link                                                 | Classification                               |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | -------------------------------------------- |
+| Promptagator | [Promptagator Few-shot Dense Retrieval From 8 Examples](#Promptagator%20Few-shot%20Dense%20Retrieval%20From%208%20Examples) | arXiv preprint |            | [arXiv:2209.11755](https://arxiv.org/abs/2209.11755) | [Content generation](#Content%20generation) |
 
 不同的检索任务通常具有非常不同的检索意图，如检索实体、寻找证据等。本文作者提出Promptagator，few-shot设置下的稠密检索，针对不同任务，使用任务特定的简短描述以及一些带标注的样例（2-8个），以清楚地表明检索意图，不需要其他来源的标注数据。
 
@@ -463,9 +463,9 @@ Re-rank部分是由Retriever完成的，而不是LLM。
 
 ### Chat-REC: Towards Interactive and Explainable LLMs-Augmented Recommender System
 
-| Name         | Paper                                                                               | Publication    | Repository | Link                                                 | Classification                            |
-| ------------ | ----------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ----------------------------------------- |
-| [Chat-REC](+Papers/Chat-REC.md) | [Chat-REC Towards Interactive and Explainable LLMs-Augmented Recommender System](#Chat-REC%20Towards%20Interactive%20and%20Explainable%20LLMs-Augmented%20Recommender%20System) | arXiv preprint |            | [arXiv:2303.14524](https://arxiv.org/abs/2303.14524) | [#Ranking](#Ranking), [#Explanation generation](#Explanation%20generation) | 
+| Name                            | Paper                                                                                                                                                                           | Publication    | Repository | Link                                                 | Classification                                                             |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | -------------------------------------------------------------------------- |
+| [Chat-REC](+Papers/Chat-REC.md) | [Chat-REC Towards Interactive and Explainable LLMs-Augmented Recommender System](#Chat-REC%20Towards%20Interactive%20and%20Explainable%20LLMs-Augmented%20Recommender%20System) | arXiv preprint |            | [arXiv:2303.14524](https://arxiv.org/abs/2303.14524) | [Ranking](#Ranking), [Explanation generation](#Explanation%20generation) |
 
 将传统推荐系统和LLM模型合并使用，主要以工程为主。本质还是候选物的re-rank。
 
@@ -475,9 +475,9 @@ Re-rank部分是由Retriever完成的，而不是LLM。
 
 ### Zero-Shot Next-Item Recommendation using Large Pretrained Language Models
 
-| Name | Paper                                                                          | Publication    | Repository                                                                | Link                                                 | Classification |
-| ---- | ------------------------------------------------------------------------------ | -------------- | ------------------------------------------------------------------------- | ---------------------------------------------------- | -------------- |
-| NIR  | [Zero-Shot Next-Item Recommendation using Large Pretrained Language Models](#Zero-Shot%20Next-Item%20Recommendation%20using%20Large%20Pretrained%20Language%20Models) | arXiv preprint | [LLM-Next-Item-Rec](https://github.com/AGI-Edgerunners/LLM-Next-Item-Rec) | [arXiv:2304.03153](https://arxiv.org/abs/2304.03153) |  [#LLM as RS](#LLM%20as%20RS), [#Sequential recommendation](#Sequential%20recommendation), [#Ranking](#Ranking),               |
+| Name | Paper                                                                                                                                                                 | Publication    | Repository                                                                | Link                                                 | Classification                                                                                                  |
+| ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------------------------------------------------------------- | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| NIR  | [Zero-Shot Next-Item Recommendation using Large Pretrained Language Models](#Zero-Shot%20Next-Item%20Recommendation%20using%20Large%20Pretrained%20Language%20Models) | arXiv preprint | [LLM-Next-Item-Rec](https://github.com/AGI-Edgerunners/LLM-Next-Item-Rec) | [arXiv:2304.03153](https://arxiv.org/abs/2304.03153) | [LLM as RS](#LLM%20as%20RS), [Sequential recommendation](#Sequential%20recommendation), [Ranking](#Ranking), |
 
 最简单的似乎不需要训练模型的方法，使用三段式提问让LLMs输出结果
 
@@ -489,9 +489,9 @@ Re-rank部分是由Retriever完成的，而不是LLM。
 
 ### Generative Recommendation: Towards Next-generation Recommender Paradigm
 
-| Name    | Paper                                                                       | Publication    | Repository                                      | Link                                                 | Classification                              |
-| ------- | --------------------------------------------------------------------------- | -------------- | ----------------------------------------------- | ---------------------------------------------------- | ------------------------------------------- |
-| GeneRec | [Generative Recommendation Towards Next-generation Recommender Paradigm](#Generative%20Recommendation%20Towards%20Next-generation%20Recommender%20Paradigm) | arXiv preprint | [GeneRec](https://github.com/Linxyhaha/GeneRec) | [arXiv:2304.03516](https://arxiv.org/abs/2304.03516) | [#Content generation](#Content%20generation), [#Tool learning](#Tool%20learning) | 
+| Name    | Paper                                                                                                                                                       | Publication    | Repository                                      | Link                                                 | Classification                                                                   |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ----------------------------------------------- | ---------------------------------------------------- | -------------------------------------------------------------------------------- |
+| GeneRec | [Generative Recommendation Towards Next-generation Recommender Paradigm](#Generative%20Recommendation%20Towards%20Next-generation%20Recommender%20Paradigm) | arXiv preprint | [GeneRec](https://github.com/Linxyhaha/GeneRec) | [arXiv:2304.03516](https://arxiv.org/abs/2304.03516) | [Content generation](#Content%20generation), [Tool learning](#Tool%20learning) |
 
 直接跳出了推荐系统原有的范式，即互联网公司有什么就推荐什么，而是将内容创作也交给了推荐系统来做。
 
@@ -519,9 +519,9 @@ GeneRec模型的独特之处在于，它不仅仅是根据用户的历史行为�
 
 ### GPT4Rec: A Generative Framework for Personalized Recommendation and User Interests Interpretation
 
-| Name    | Paper                                                                                                 | Publication    | Repository | Link                                                 | Classification        |
-| ------- | ----------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | --------------------- |
-| GPT4Rec | [GPT4Rec A Generative Framework for Personalized Recommendation and User Interests Interpretation](#GPT4Rec%20A%20Generative%20Framework%20for%20Personalized%20Recommendation%20and%20User%20Interests%20Interpretation) | arXiv preprint |            | [arXiv:2304.03879](https://arxiv.org/abs/2304.03879) | [#Query generation](#Query%20generation) | 
+| Name    | Paper                                                                                                                                                                                                                     | Publication    | Repository | Link                                                 | Classification                           |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ---------------------------------------- |
+| GPT4Rec | [GPT4Rec A Generative Framework for Personalized Recommendation and User Interests Interpretation](#GPT4Rec%20A%20Generative%20Framework%20for%20Personalized%20Recommendation%20and%20User%20Interests%20Interpretation) | arXiv preprint |            | [arXiv:2304.03879](https://arxiv.org/abs/2304.03879) | [Query generation](#Query%20generation) |
 
 ![Pasted image 20230623175129](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230623175129.png)
 
@@ -534,9 +534,9 @@ GeneRec模型的独特之处在于，它不仅仅是根据用户的历史行为�
 ### Is ChatGPT a Good Recommender? A Preliminary Study
 
 
-| Name | Paper                                                   | Publication    | Repository | Link                                                 | Classification                                                                                                                             |
-| ---- | ------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-|      | [Is ChatGPT a Good Recommender? A Preliminary Study](#Is%20ChatGPT%20a%20Good%20Recommender?%20A%20Preliminary%20Study) | arXiv preprint |            | [arXiv:2304.10149](https://arxiv.org/abs/2304.10149) | [#LLM as RS](#LLM%20as%20RS), [#Direct recommendation](#Direct%20recommendation), [#Sequential recommendation](#Sequential%20recommendation), [#Rating prediction](#Rating%20prediction), [#Explanation generation](#Explanation%20generation), [#Review summarization](#Review%20summarization) | 
+| Name | Paper                                                                                                                   | Publication    | Repository | Link                                                 | Classification                                                                                                                                                                                                                                                                                   |
+| ---- | ----------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|      | [Is ChatGPT a Good Recommender? A Preliminary Study](#Is%20ChatGPT%20a%20Good%20Recommender?%20A%20Preliminary%20Study) | arXiv preprint |            | [arXiv:2304.10149](https://arxiv.org/abs/2304.10149) | [LLM as RS](#LLM%20as%20RS), [Direct recommendation](#Direct%20recommendation), [Sequential recommendation](#Sequential%20recommendation), [Rating prediction](#Rating%20prediction), [Explanation generation](#Explanation%20generation), [Review summarization](#Review%20summarization) |
 
 最近一段时间，也有不少关于推荐系统的预训练语言模型出现，譬如 P5 以及 M6-Rec。
 
@@ -553,9 +553,9 @@ GeneRec模型的独特之处在于，它不仅仅是根据用户的历史行为�
 
 ### TALLRec: An Effective and Efficient Tuning Framework to Align Large Language Model with Recommendation
 
-| Name        | Paper                                                                                                      | Publication    | Repository                                      | Link                                                 | Classification                                              |
-| ----------- | ---------------------------------------------------------------------------------------------------------- | -------------- | ----------------------------------------------- | ---------------------------------------------------- | ----------------------------------------------------------- |
-| [TALLRec](+Papers/TALLRec.md) | [TALLRec An Effective and Efficient Tuning Framework to Align Large Language Model with Recommendation](#TALLRec%20An%20Effective%20and%20Efficient%20Tuning%20Framework%20to%20Align%20Large%20Language%20Model%20with%20Recommendation) | arXiv preprint | [TALLRec](https://github.com/SAI990323/TALLRec) | [arXiv:2305.00447](https://arxiv.org/abs/2305.00447) | [#LLM as RS](#LLM%20as%20RS), [#Sequential recommendation](#Sequential%20recommendation), [#Tuning](#Tuning) | 
+| Name                          | Paper                                                                                                                                                                                                                                     | Publication    | Repository                                      | Link                                                 | Classification                                                                                               |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ----------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| [TALLRec](+Papers/TALLRec.md) | [TALLRec An Effective and Efficient Tuning Framework to Align Large Language Model with Recommendation](#TALLRec%20An%20Effective%20and%20Efficient%20Tuning%20Framework%20to%20Align%20Large%20Language%20Model%20with%20Recommendation) | arXiv preprint | [TALLRec](https://github.com/SAI990323/TALLRec) | [arXiv:2305.00447](https://arxiv.org/abs/2305.00447) | [LLM as RS](#LLM%20as%20RS), [Sequential recommendation](#Sequential%20recommendation), [Tuning](#Tuning) |
 
 简单来说就是通过两次tuning来优化LLMs模型，使其适应推荐任务，两次优化分别是**instruction tuning**和**rec-tuning**。instruction tuning就是通常所说的instruction tuning，rec-tuning是专门为推荐任务设计的对话方式，有特定的格式。事实证明instruction tuning让模型更会聊天，rec-tuning让模型更会推荐。
 
@@ -565,9 +565,9 @@ GeneRec模型的独特之处在于，它不仅仅是根据用户的历史行为�
 
 ### Web Content Filtering through knowledge distillation of Large Language Models
 
-| Name | Paper                                                                              | Publication    | Repository | Link                                                 | Classification                      |
-| ---- | ---------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ----------------------------------- |
-|      | [Web Content Filtering through knowledge distillation of Large Language Models](#Web%20Content%20Filtering%20through%20knowledge%20distillation%20of%20Large%20Language%20Models) | arXiv preprint |            | [arXiv:2305.05027](https://arxiv.org/abs/2305.05027) | [#Tuning](#Tuning), [#Model compression](#Model%20compression) | 
+| Name | Paper                                                                                                                                                                             | Publication    | Repository | Link                                                 | Classification                                                 |
+| ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | -------------------------------------------------------------- |
+|      | [Web Content Filtering through knowledge distillation of Large Language Models](#Web%20Content%20Filtering%20through%20knowledge%20distillation%20of%20Large%20Language%20Models) | arXiv preprint |            | [arXiv:2305.05027](https://arxiv.org/abs/2305.05027) | [Tuning](#Tuning), [Model compression](#Model%20compression) |
 
 URL分类任务，感觉不是推荐任务
 
@@ -578,9 +578,9 @@ URL分类任务，感觉不是推荐任务
 
 ### Recommender Systems with Generative Retrieval
 
-| Name      | Paper                                              | Publication    | Repository | Link                                                 | Classification                                                     |
-| --------- | -------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ------------------------------------------------------------------ |
-| [TIGER](+Papers/TIGER.md) | [Recommender Systems with Generative Retrieval](#Recommender%20Systems%20with%20Generative%20Retrieval) | arXiv preprint |            | [arXiv:2305.05065](https://arxiv.org/abs/2305.05065) | [#LLM as RS](#LLM%20as%20RS), [#Sequential recommendation](#Sequential%20recommendation), [#ID generation](#ID%20generation) | 
+| Name                      | Paper                                                                                                   | Publication    | Repository | Link                                                 | Classification                                                                                                               |
+| ------------------------- | ------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| [TIGER](+Papers/TIGER.md) | [Recommender Systems with Generative Retrieval](#Recommender%20Systems%20with%20Generative%20Retrieval) | arXiv preprint |            | [arXiv:2305.05065](https://arxiv.org/abs/2305.05065) | [LLM as RS](#LLM%20as%20RS), [Sequential recommendation](#Sequential%20recommendation), [ID generation](#ID%20generation) |
 
 Semantic ID Generation + Seq2seq Recommendations
 
@@ -589,9 +589,9 @@ Semantic ID Generation + Seq2seq Recommendations
 
 ### Do LLMs Understand User Preferences? Evaluating LLMs On User Rating Prediction
 
-| Name | Paper                                                                               | Publication    | Repository | Link                                                 | Classification         |
-| ---- | ----------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ---------------------- |
-|      | [Do LLMs Understand User Preferences? Evaluating LLMs On User Rating Prediction](#Do%20LLMs%20Understand%20User%20Preferences?%20Evaluating%20LLMs%20On%20User%20Rating%20Prediction) | arXiv preprint |            | [arXiv:2305.06474](https://arxiv.org/abs/2305.06474) | [#Rating prediction](#Rating%20prediction) | 
+| Name | Paper                                                                                                                                                                                 | Publication    | Repository | Link                                                 | Classification                             |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ------------------------------------------ |
+|      | [Do LLMs Understand User Preferences? Evaluating LLMs On User Rating Prediction](#Do%20LLMs%20Understand%20User%20Preferences?%20Evaluating%20LLMs%20On%20User%20Rating%20Prediction) | arXiv preprint |            | [arXiv:2305.06474](https://arxiv.org/abs/2305.06474) | [Rating prediction](#Rating%20prediction) |
 
 LLM预测用户评分
 
@@ -603,9 +603,9 @@ LLM预测用户评分
 
 ### A First Look at LLM-Powered Generative News Recommendation
 
-| Name  | Paper                                                           | Publication    | Repository | Link                                                 | Classification          |
-| ----- | --------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ----------------------- |
-| GENRE | [A First Look at LLM-Powered Generative News Recommendation](#A%20First%20Look%20at%20LLM-Powered%20Generative%20News%20Recommendation) | arXiv preprint |            | [arXiv:2305.06566](https://arxiv.org/abs/2305.06566) | [#Content generation](#Content%20generation) | 
+| Name  | Paper                                                                                                                                   | Publication    | Repository | Link                                                 | Classification                               |
+| ----- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | -------------------------------------------- |
+| GENRE | [A First Look at LLM-Powered Generative News Recommendation](#A%20First%20Look%20at%20LLM-Powered%20Generative%20News%20Recommendation) | arXiv preprint |            | [arXiv:2305.06566](https://arxiv.org/abs/2305.06566) | [Content generation](#Content%20generation) |
 
 > 设计了一种LLM for Rec框架，用LLM作为信息提取模型，间接用于推荐任务
 > 
@@ -618,9 +618,9 @@ LLM预测用户评分
 
 ### How to Index Item IDs for Recommendation Foundation Models
 
-| Name | Paper                                                           | Publication    | Repository | Link                                                 | Classification                                                     |
-| ---- | --------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ------------------------------------------------------------------ |
-|      | [How to Index Item IDs for Recommendation Foundation Models](#How%20to%20Index%20Item%20IDs%20for%20Recommendation%20Foundation%20Models) | arXiv preprint |            | [arXiv:2305.06569](https://arxiv.org/abs/2305.06569) | [#LLM as RS](#LLM%20as%20RS), [#Sequential recommendation](#Sequential%20recommendation), [#ID generation](#ID%20generation) | 
+| Name | Paper                                                                                                                                     | Publication    | Repository | Link                                                 | Classification                                                                                                               |
+| ---- | ----------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+|      | [How to Index Item IDs for Recommendation Foundation Models](#How%20to%20Index%20Item%20IDs%20for%20Recommendation%20Foundation%20Models) | arXiv preprint |            | [arXiv:2305.06569](https://arxiv.org/abs/2305.06569) | [LLM as RS](#LLM%20as%20RS), [Sequential recommendation](#Sequential%20recommendation), [ID generation](#ID%20generation) |
 
 设计索引的ID，实验分析了3种传统索引方式和4种常用索引方式，同时还有几种方法的混合。
 
