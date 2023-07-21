@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "7216afe3f74dbf6a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md"
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md"
               }
             }
           },
@@ -156,8 +169,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "16cea1154bb26fa1",
+  "active": "7216afe3f74dbf6a",
   "lastOpenFiles": [
+    "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "PhD/华为实习/Meetings.md",
     "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
     "4. Artificial intelligence/3. Applications/Applications.md",
@@ -165,7 +179,6 @@
     "README_zh.md",
     "README.md",
     "Untitled.md",
-    "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "PhD/华为实习/PPT.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/Uncovering ChatGPT's Capabilities in Recommender Systems.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/TIGER.md",
