@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "amazon",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -78,7 +78,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -98,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md"
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md"
               }
             }
           },
@@ -171,11 +172,11 @@
   },
   "active": "7216afe3f74dbf6a",
   "lastOpenFiles": [
+    "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
     "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "PhD/华为实习/Meetings.md",
     "PhD/华为实习/PPT.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.canvas",
     "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
     "4. Artificial intelligence/3. Applications/Applications.md",
