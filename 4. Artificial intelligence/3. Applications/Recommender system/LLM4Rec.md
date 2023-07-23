@@ -856,3 +856,4 @@ OpenP5考虑了P5的三个维度：
 # Reference
 
 1. [一文速览大语言模型在推荐系统中的应用](https://mp.weixin.qq.com/s/RdRLKjzbTWCATmtRMfxW0Q)
+2. [谈谈LLM在推荐域的渗透，探索推荐新范式](https://mp.weixin.qq.com/s/TzpHDLr8JC4IhGXR_r10dA)

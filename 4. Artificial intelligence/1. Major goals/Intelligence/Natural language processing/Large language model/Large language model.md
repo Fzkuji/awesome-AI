@@ -99,6 +99,8 @@ FlagAI
 
 ### Prompting
 
+### In-context learning
+
 
 
 ### Multimodal LLM
@@ -143,7 +145,7 @@ FlagAI
 | ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | -------------------------------------------------------- | ---------------------------------------------------- | ------------------- |
 |      | [Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing](#Pre-train,%20Prompt,%20and%20Predict%20A%20Systematic%20Survey%20of%20Prompting%20Methods%20in%20Natural%20Language%20Processing) | arXiv preprint | [Pretrain, Prompt, Predict](http://pretrain.nlpedia.ai/) | [arXiv:2107.13586](https://arxiv.org/abs/2107.13586) | [Surveys](#Surveys), [Prompting](#Prompting) |
 
-
+https://mp.weixin.qq.com/s/TzpHDLr8JC4IhGXR_r10dA
 
 
 
