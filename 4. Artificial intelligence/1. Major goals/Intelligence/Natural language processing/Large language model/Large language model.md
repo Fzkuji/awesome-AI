@@ -49,14 +49,21 @@ Fixed-prompt PTM tuning是一种在预定义的prompt上进行微调或参数调
 - Next Sentence Prediction (NSP)
 - Replaced Token Detection(RTD)
 
+## Related resources
 
+### Repositories
 
-## Frameworks
+#### Frameworks
 
-FlagAI
+**FlagAI**
 - https://github.com/FlagAI-Open/FlagAI
 - **FlagAI飞智**是一个快速、易于使用和可扩展的大模型工具包。 我们的目标是支持在多模态的各种下游任务上训练、微调和部署大规模模型。
 
+#### Paper lists
+
+- [Chain-of-Thoughts Papers](https://github.com/Timothyxxx/Chain-of-ThoughtsPapers)
+- [LLM Tool Use Papers](https://github.com/xlang-ai/llm-tool-use)
+- [EnvInteractive and Decision Making(personnal usage)](https://github.com/Timothyxxx/EnvInteractiveLMPapers)
 
 ## Works
 
@@ -91,7 +98,7 @@ FlagAI
 	- [BERT](Models/BERT.md)
 - Meta
 	- [LLaMA](Models/LLaMA.md)
-	- 
+	- [LLaMa 2](Models/LLaMa%202.md)
 - DeepMind
 	- [Chinchilla](Models/Chinchilla.md)
 - Anthropic
