@@ -72,7 +72,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "amazon",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -180,7 +180,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "16cea1154bb26fa1",
+  "active": "c633a6bf13e3c2d2",
   "lastOpenFiles": [
     "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
