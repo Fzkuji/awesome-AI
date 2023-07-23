@@ -95,6 +95,7 @@ FlagAI
 | Name | Paper                                                | Publication    | Repository                                                       | Link                                                 | Classification |
 | ---- | ---------------------------------------------------- | -------------- | ---------------------------------------------------------------- | ---------------------------------------------------- | -------------- |
 |      | [Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing](#Pre-train,%20Prompt,%20and%20Predict%20A%20Systematic%20Survey%20of%20Prompting%20Methods%20in%20Natural%20Language%20Processing) | arXiv preprint | [Pretrain, Prompt, Predict](http://pretrain.nlpedia.ai/) | [arXiv:2107.13586](https://arxiv.org/abs/2107.13586) | [Surveys](#Surveys), [Prompting](#Prompting) |
+|      | [A Survey on In-context Learning](#A%20Survey%20on%20In-context%20Learning) | arXiv preprint |            | [arXiv:2301.00234](https://arxiv.org/abs/2301.00234) | [Surveys](#Surveys), [In-context learning](#In-context%20learning) |
 |      | [A Survey on Evaluation of Large Language Models](#A%20Survey%20on%20Evaluation%20of%20Large%20Language%20Models) | arXiv preprint | [LLM-eval-survey](https://github.com/MLGroupJLU/LLM-eval-survey) | [arXiv:2307.03109](https://arxiv.org/abs/2307.03109) | [Surveys](#Surveys)   | 
 
 

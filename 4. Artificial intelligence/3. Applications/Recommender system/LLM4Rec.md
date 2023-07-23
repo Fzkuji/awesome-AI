@@ -405,6 +405,13 @@ Click-through rate (CTR) prediction
 本文提出了一个无监督的retriever-reranker pipeline。Retriever基于无监督的模型，如BM25、Contriever等，reranker作者尝试了3B参数量的T5系列模型以及2.7B参数量的GPT-neo。Reranker的训练，仍然是通过让大模型生成和段落对应的query，无监督地获取到大量的标注数据对。作者也发现由于使用了LLM，整个pipeline存在高延迟的问题。
 
 
+### M6-Rec: Generative Pretrained Language Models are Open-Ended Recommender Systems
+
+| Name   | Paper                                                                                                                                                                                 | Publication    | Repository | Link                                                 | Classification                                                                                   |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| M6-Rec | [M6-Rec: Generative Pretrained Language Models are Open-Ended Recommender Systems](#M6-Rec:%20Generative%20Pretrained%20Language%20Models%20are%20Open-Ended%20Recommender%20Systems) | arXiv preprint |            | [arXiv:2205.08084](https://arxiv.org/abs/2205.08084) | [Information Retrieval](#Information%20Retrieval), [Recommender Systems](#Recommender%20Systems) |
+
+
 
 
 ### Atlas: Few-shot Learning with Retrieval Augmented Language Models
