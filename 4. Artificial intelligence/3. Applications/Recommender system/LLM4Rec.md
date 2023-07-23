@@ -1,83 +1,3 @@
-- [Related Repositories](#related-repositories)
-- [Tasks](#tasks)
-	- [Overview](#overview)
-	- [Classification by Liu](#classification-by-liu)
-		- [Accuracy-based tasks](#accuracy-based-tasks)
-		- [Explainability-oriented tasks](#explainability-oriented-tasks)
-- [Paradigms](#paradigms)
-	- [Classification by Wu](#classification-by-wu)
-- [Papers](#papers)
-	- [Surveys](#surveys)
-	- [Paradigms of LLM4Rec](#paradigms-of-llm4rec)
-		- [Content creator oriented](#content-creator-oriented)
-			- [Content generation](#content-generation)
-		- [User oriented](#user-oriented)
-			- [Query generation](#query-generation)
-		- [Platform oriented](#platform-oriented)
-			- [Information filtering](#information-filtering)
-				- [Divided by main body](#divided-by-main-body)
-					- [LLM as RS](#llm-as-rs)
-					- [LLM-augmented RS](#llm-augmented-rs)
-				- [Divided by timing](#divided-by-timing)
-					- [Direct recommendation](#direct-recommendation)
-					- [Sequential recommendation](#sequential-recommendation)
-			- [Information retrieval](#information-retrieval)
-			- [Ranking](#ranking)
-			- [Rating prediction](#rating-prediction)
-			- [CTR prediction](#ctr-prediction)
-			- [ID generation](#id-generation)
-			- [Explanation generation](#explanation-generation)
-			- [Review summarization](#review-summarization)
-	- [Training of LLM4Rec](#training-of-llm4rec)
-		- [Data augmentation](#data-augmentation)
-		- [Tuning](#tuning)
-		- [Model compression](#model-compression)
-	- [Benchmarks](#benchmarks)
-	- [Evaluation of LLM4Rec](#evaluation-of-llm4rec)
-		- [Performance](#performance)
-		- [Fairness](#fairness)
-		- [Authenticity](#authenticity)
-		- [Privacy](#privacy)
-	- [Techniques *](#techniques-)
-		- [Tool learning](#tool-learning)
-		- [Multimodal LLM4Rec](#multimodal-llm4rec)
-		- [RLHF](#rlhf)
-	- [Others](#others)
-		- [Knowledge-intensive language tasks](#knowledge-intensive-language-tasks)
-	- [List](#list)
-		- [InPars: Data Augmentation for Information Retrieval using Large Language Models](#inpars-data-augmentation-for-information-retrieval-using-large-language-models)
-		- [Transformer Memory as a Differentiable Search Index](#transformer-memory-as-a-differentiable-search-index)
-		- [Improving Passage Retrieval with Zero-Shot Question Generation](#improving-passage-retrieval-with-zero-shot-question-generation)
-		- [Atlas: Few-shot Learning with Retrieval Augmented Language Models](#atlas-few-shot-learning-with-retrieval-augmented-language-models)
-		- [Generate rather than Retrieve: Large Language Models are Strong Context Generators](#generate-rather-than-retrieve-large-language-models-are-strong-context-generators)
-		- [Promptagator: Few-shot Dense Retrieval From 8 Examples](#promptagator-few-shot-dense-retrieval-from-8-examples)
-		- [Chat-REC: Towards Interactive and Explainable LLMs-Augmented Recommender System](#chat-rec-towards-interactive-and-explainable-llms-augmented-recommender-system)
-		- [Zero-Shot Next-Item Recommendation using Large Pretrained Language Models](#zero-shot-next-item-recommendation-using-large-pretrained-language-models)
-		- [Generative Recommendation: Towards Next-generation Recommender Paradigm](#generative-recommendation-towards-next-generation-recommender-paradigm)
-		- [GPT4Rec: A Generative Framework for Personalized Recommendation and User Interests Interpretation](#gpt4rec-a-generative-framework-for-personalized-recommendation-and-user-interests-interpretation)
-		- [Is ChatGPT a Good Recommender? A Preliminary Study](#is-chatgpt-a-good-recommender-a-preliminary-study)
-		- [TALLRec: An Effective and Efficient Tuning Framework to Align Large Language Model with Recommendation](#tallrec-an-effective-and-efficient-tuning-framework-to-align-large-language-model-with-recommendation)
-		- [Web Content Filtering through knowledge distillation of Large Language Models](#web-content-filtering-through-knowledge-distillation-of-large-language-models)
-		- [Recommender Systems with Generative Retrieval](#recommender-systems-with-generative-retrieval)
-		- [Do LLMs Understand User Preferences? Evaluating LLMs On User Rating Prediction](#do-llms-understand-user-preferences-evaluating-llms-on-user-rating-prediction)
-		- [A First Look at LLM-Powered Generative News Recommendation](#a-first-look-at-llm-powered-generative-news-recommendation)
-		- [How to Index Item IDs for Recommendation Foundation Models](#how-to-index-item-ids-for-recommendation-foundation-models)
-		- [Recommendation as Instruction Following: A Large Language Model Empowered Recommendation Approach](#recommendation-as-instruction-following-a-large-language-model-empowered-recommendation-approach)
-		- [Is ChatGPT Fair for Recommendation? Evaluating Fairness in Large Language Model Recommendation](#is-chatgpt-fair-for-recommendation-evaluating-fairness-in-large-language-model-recommendation)
-		- [Large Language Models are Zero-Shot Rankers for Recommender Systems](#large-language-models-are-zero-shot-rankers-for-recommender-systems)
-		- [Exploring the Upper Limits of Text-Based Collaborative Filtering Using Large Language Models: Discoveries and Insights](#exploring-the-upper-limits-of-text-based-collaborative-filtering-using-large-language-models-discoveries-and-insights)
-		- [Rethinking the Evaluation for Conversational Recommendation in the Era of Large Language Models](#rethinking-the-evaluation-for-conversational-recommendation-in-the-era-of-large-language-models)
-		- [Text Is All You Need: Learning Language Representations for Sequential Recommendation](#text-is-all-you-need-learning-language-representations-for-sequential-recommendation)
-		- [A Survey on Large Language Models for Recommendation](#a-survey-on-large-language-models-for-recommendation)
-		- [CTRL: Connect Tabular and Language Model for CTR Prediction](#ctrl-connect-tabular-and-language-model-for-ctr-prediction)
-		- [Efficiently Measuring the Cognitive Ability of LLMs: An Adaptive Testing Perspective](#efficiently-measuring-the-cognitive-ability-of-llms-an-adaptive-testing-perspective)
-		- [A Preliminary Study of ChatGPT on News Recommendation: Personalization, Provider Fairness, Fake News](#a-preliminary-study-of-chatgpt-on-news-recommendation-personalization-provider-fairness-fake-news)
-		- [Towards Open-World Recommendation with Knowledge Augmentation from Large Language Models](#towards-open-world-recommendation-with-knowledge-augmentation-from-large-language-models)
-		- [Generative Sequential Recommendation with GPTRec](#generative-sequential-recommendation-with-gptrec)
-		- [OpenP5: Benchmarking Foundation Models for Recommendation](#openp5-benchmarking-foundation-models-for-recommendation)
-- [Research direction](#research-direction)
-- [Reference](#reference)
-
 
 
 # Related Repositories
@@ -758,18 +678,11 @@ Instruction design，设计了多种prompt来微调模型
 
 ### Exploring the Upper Limits of Text-Based Collaborative Filtering Using Large Language Models: Discoveries and Insights
 
-| Name | Paper                                                                                                                                                                                                                                                                        | Publication    | Repository | Link                                                 | Classification                                        |
-| ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ----------------------------------------------------- |
-|      | [Exploring the Upper Limits of Text-Based Collaborative Filtering Using Large Language Models: Discoveries and Insights](#Exploring%20the%20Upper%20Limits%20of%20Text-Based%20Collaborative%20Filtering%20Using%20Large%20Language%20Models%20Discoveries%20and%20Insights) | arXiv preprint |            | [arXiv:2305.11700](https://arxiv.org/abs/2305.11700) | [Information retrieval](#Information%20retrieval) |
-
+| Name | Paper                                                                                                                                                                                                                                                                        | Publication    | Repository | Link                                                 | Classification                                    |
+| ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ------------------------------------------------- |
+|      | [Exploring the Upper Limits of Text-Based Collaborative Filtering Using Large Language Models: Discoveries and Insights](#Exploring%20the%20Upper%20Limits%20of%20Text-Based%20Collaborative%20Filtering%20Using%20Large%20Language%20Models%20Discoveries%20and%20Insights) | arXiv preprint |            | [arXiv:2305.11700](https://arxiv.org/abs/2305.11700) | [Information retrieval](#Information%20retrieval), [Performance](#Performance) |
 
 [推荐系统范式之争，LLM vs. ID？](https://mp.weixin.qq.com/s/gXdWjE6T15QUcugMTjPLpw)
-
-
-
-
-
-
 
 
 
