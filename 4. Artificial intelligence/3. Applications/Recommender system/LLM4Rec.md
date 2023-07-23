@@ -676,12 +676,12 @@ Instruction design，设计了多种prompt来微调模型
 
 ### Exploring the Upper Limits of Text-Based Collaborative Filtering Using Large Language Models: Discoveries and Insights
 
-| Name  | Paper                                                                                                                     | Publication    | Repository | Link                                                 | Classification                                        |
-| ----- | ------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ----------------------------------------------------- |
-| Maria | [Multi-Scenario Ranking with Adaptive Feature Learning](#Multi-Scenario%20Ranking%20with%20Adaptive%20Feature%20Learning) | arXiv preprint |            | [arXiv:2306.16732](https://arxiv.org/abs/2306.16732) | [Multi-scenario learning](#Multi-scenario%20learning) | 
+| Name | Paper                                                                                                                                                                                                                                                                        | Publication    | Repository | Link                                                 | Classification                                        |
+| ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ----------------------------------------------------- |
+|      | [Exploring the Upper Limits of Text-Based Collaborative Filtering Using Large Language Models: Discoveries and Insights](#Exploring%20the%20Upper%20Limits%20of%20Text-Based%20Collaborative%20Filtering%20Using%20Large%20Language%20Models%20Discoveries%20and%20Insights) | arXiv preprint |            | [arXiv:2305.11700](https://arxiv.org/abs/2305.11700) | [Information retrieval](#Information%20retrieval) |
 
 
-
+[推荐系统范式之争，LLM vs. ID？](https://mp.weixin.qq.com/s/gXdWjE6T15QUcugMTjPLpw)
 
 
 
