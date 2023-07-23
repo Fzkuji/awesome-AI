@@ -97,6 +97,8 @@ FlagAI
 
 [LLaMA-Adapter](Models/LLaMA-Adapter.md) - Shanghai Artificial Intelligence Laboratory,  CUHK MMLab, University of California, Los Angeles
 
+
+
 [ChatGPT的朋友们：大语言模型经典论文一次读到吐](https://mp.weixin.qq.com/s/ATd6D00aPOV8hIqvBoWAFA)
 
 [Awesome-Multimodal-Large-Language-Models](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models)
@@ -117,6 +119,10 @@ FlagAI
 |      | [A Survey on In-context Learning](#A%20Survey%20on%20In-context%20Learning) | arXiv preprint |            | [arXiv:2301.00234](https://arxiv.org/abs/2301.00234) | [Surveys](#Surveys), [In-context learning](#In-context%20learning) |
 
 ### Multimodal LLM
+
+| Name | Paper                                                                                                                                                                                                   | Publication    | Repository                                            | Link                                                 | Classification                                                                                                                                                                                                |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ----------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|      | [Macaw-LLM: Multi-Modal Language Modeling with Image, Audio, Video, and Text Integration](#Macaw-LLM:%20Multi-Modal%20Language%20Modeling%20with%20Image,%20Audio,%20Video,%20and%20Text%20Integration) | arXiv preprint | [Macaw-LLM](https://github.com/lyuchenyang/Macaw-LLM) | [arXiv:2306.09093](https://arxiv.org/abs/2306.09093) | [Models](#Models), [Multimodal LLM](#Multimodal%20LLM) |
 
 | Name     | Paper                                                                          | Publication    | Repository                                                          | Link                                                 |
 | -------- | ------------------------------------------------------------------------------ | -------------- | ------------------------------------------------------------------- | ---------------------------------------------------- |
@@ -377,6 +383,17 @@ https://mp.weixin.qq.com/s/TzpHDLr8JC4IhGXR_r10dA
 > 具体来说，训练过程的两个阶段分别为：Behavior Cloning和Reinforcement Learning with Execution Feedback (RLEF)。在Behavior Cloning阶段，模型根据任务输入，输出相关的工具的使用方案。在RLEF阶段，使用强化学习的框架，根据工具的结果设计奖励函数，对模型进行强化学习，继续增强模型使用工具的能力。在实验方面，作者使用Alpaca-7B作为基座模型，比较了Toolformer等基线方法，在数学相关任务上进行评测，证明了TRICE的有效性。
 
 ![Pasted image 20230617173042](../../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230617173042.png)
+
+#### Macaw-LLM: Multi-Modal Language Modeling with Image, Audio, Video, and Text Integration
+
+
+| Name | Paper                                                                                                                                                                                                   | Publication    | Repository                                            | Link                                                 | Classification                                                                                                                                                                                                |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ----------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|      | [Macaw-LLM: Multi-Modal Language Modeling with Image, Audio, Video, and Text Integration](#Macaw-LLM:%20Multi-Modal%20Language%20Modeling%20with%20Image,%20Audio,%20Video,%20and%20Text%20Integration) | arXiv preprint | [Macaw-LLM](https://github.com/lyuchenyang/Macaw-LLM) | [arXiv:2306.09093](https://arxiv.org/abs/2306.09093) | [Models](#Models), [Multimodal LLM](#Multimodal%20LLM) |
+
+[腾讯AI Lab发布多模态指令调优语言模型，支持图像、视频等四种不同模态](https://mp.weixin.qq.com/s/KMxJfqU1pGWbYq5XjbPAHQ)
+
+
 
 #### A Survey on Multimodal Large Language Models
 
