@@ -6,6 +6,8 @@ Code:
 
 Additional information: 
 
+[ChatGPT最强竞品Claude2来了：代码、GRE成绩超越GPT-4，免费可用](https://mp.weixin.qq.com/s/ner0v0RxstZ7GU-xrbiAqw)
+
 Conclusion: 
 
 
