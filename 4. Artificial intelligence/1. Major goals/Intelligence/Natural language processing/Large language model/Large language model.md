@@ -76,6 +76,7 @@ FlagAI
 | ---- | ---------------------------------------------------- | -------------- | ---------------------------------------------------------------- | ---------------------------------------------------- | -------------- |
 |      | [Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing](#Pre-train,%20Prompt,%20and%20Predict%20A%20Systematic%20Survey%20of%20Prompting%20Methods%20in%20Natural%20Language%20Processing) | arXiv preprint | [Pretrain, Prompt, Predict](http://pretrain.nlpedia.ai/) | [arXiv:2107.13586](https://arxiv.org/abs/2107.13586) | [Surveys](#Surveys), [Prompting](#Prompting) |
 |      | [A Survey on In-context Learning](#A%20Survey%20on%20In-context%20Learning) | arXiv preprint |            | [arXiv:2301.00234](https://arxiv.org/abs/2301.00234) | [Surveys](#Surveys), [In-context learning](#In-context%20learning) |
+|      | [Domain Specialization as the Key to Make Large Language Models Disruptive: A Comprehensive Survey](#Domain%20Specialization%20as%20the%20Key%20to%20Make%20Large%20Language%20Models%20Disruptive%20A%20Comprehensive%20Survey) | arXiv preprint |            | [arXiv:2305.18703](https://arxiv.org/abs/2305.18703) | [Surveys](#Surveys) |
 |      | [A Survey on Evaluation of Large Language Models](#A%20Survey%20on%20Evaluation%20of%20Large%20Language%20Models) | arXiv preprint | [LLM-eval-survey](https://github.com/MLGroupJLU/LLM-eval-survey) | [arXiv:2307.03109](https://arxiv.org/abs/2307.03109) | [Surveys](#Surveys)   | 
 
 
@@ -90,6 +91,7 @@ FlagAI
 	- [BERT](Models/BERT.md)
 - Meta
 	- [LLaMA](Models/LLaMA.md)
+	- 
 - DeepMind
 	- [Chinchilla](Models/Chinchilla.md)
 - Anthropic
@@ -378,19 +380,17 @@ https://mp.weixin.qq.com/s/TzpHDLr8JC4IhGXR_r10dA
 ![Pasted image 20230617173042](../../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230617173042.png)
 
 
+#### Domain Specialization as the Key to Make Large Language Models Disruptive: A Comprehensive Survey
 
+| Name | Paper                                                                                                                                                                                                                            | Publication    | Repository | Link                                                 | Classification                                                                                                   |
+| ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+|      | [Domain Specialization as the Key to Make Large Language Models Disruptive: A Comprehensive Survey](#Domain%20Specialization%20as%20the%20Key%20to%20Make%20Large%20Language%20Models%20Disruptive%20A%20Comprehensive%20Survey) | arXiv preprint |            | [arXiv:2305.18703](https://arxiv.org/abs/2305.18703) | [Surveys](#Surveys) |
 
+[大语言模型综述全新出炉：51页论文带你盘点LLM领域专业化技术](https://mp.weixin.qq.com/s/0DrowrTIgXsBhj3sYu6Aog)
 
+![500](../../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230723195947.png)
 
-
-
-
-| Name | Paper | Publication | Repository | Link | Classification |
-| ---- | ---- | ---- | ---- | ---- | ---- |
-| Chen Ling, Xujiang Zhao, Jiaying Lu, Chengyuan Deng, Can Zheng, Junxiang Wang, Tanmoy Chowdhury, Yun Li, Hejie Cui, Xuchao Zhang, Tianjiao Zhao, Amit Panalkar, Wei Cheng, Haoyu Wang, Yanchi Liu, Zhengzhang Chen, Haifeng Chen, Chris White, Quanquan Gu, Jian Pei, Carl Yang, Liang Zhao | [Domain Specialization as the Key to Make Large Language Models Disruptive: A Comprehensive Survey](#Domain%20Specialization%20as%20the%20Key%20to%20Make%20Large%20Language%20Models%20Disruptive:%20A%20Comprehensive%20Survey) | arXiv preprint | N/A | [arXiv:2305.18703](https://arxiv.org/abs/2305.18703) | [Computation and Language](#Computation%20and%20Language), [Artificial Intelligence](#Artificial%20Intelligence) |
-
-
-
+主要还是[In-context learning](#In-context%20learning)、[Prompting](#Prompting)和Fine-tuning的三板斧
 
 
 #### Macaw-LLM: Multi-Modal Language Modeling with Image, Audio, Video, and Text Integration
