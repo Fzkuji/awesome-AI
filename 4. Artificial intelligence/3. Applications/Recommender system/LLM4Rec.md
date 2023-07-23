@@ -1,6 +1,9 @@
 
 
-# Ta- [Related Repositories](#related-repositories)
+
+# Table of contents
+
+- [Related Repositories](#related-repositories)
 - [Tasks](#tasks)
 	- [Overview](#overview)
 	- [Classification by Liu](#classification-by-liu)
@@ -80,9 +83,6 @@
 		- [OpenP5: Benchmarking Foundation Models for Recommendation](#openp5-benchmarking-foundation-models-for-recommendation)
 - [Research direction](#research-direction)
 - [Reference](#reference)
-ble of contents
-
-
 
 
 # Related Repositories
@@ -496,8 +496,12 @@ Click-through rate (CTR) prediction
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | M6-Rec | [M6-Rec: Generative Pretrained Language Models are Open-Ended Recommender Systems](#M6-Rec:%20Generative%20Pretrained%20Language%20Models%20are%20Open-Ended%20Recommender%20Systems) | arXiv preprint |            | [arXiv:2205.08084](https://arxiv.org/abs/2205.08084) | [Information filtering](#Information%20filtering), [LLM as RS](#LLM%20as%20RS), [Information Retrieval](#Information%20Retrieval) |
 
+整个推荐的思路是基于达摩院的M6的模型上进行的探索，并将推荐系统中的任务转换成了语言模型可以处理的语言理解或语言生成任务，主要贡献有这么几条：
 
+1. 作者提出了一种统一的推荐框架思路，这个框架是基于M6之上的，不仅可以做开放域的推荐，还可以针对下游任务进行简单的微调就可以用
+2. 为了减小推荐系统的推理延迟，本文在late interaction的基础上提出了multi-segment late interaction. 简单来说就是把transform的前几层的结果先缓存起来。
 
+![](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230723163833.png)
 
 ### Atlas: Few-shot Learning with Retrieval Augmented Language Models
 
