@@ -192,11 +192,9 @@ Ideally, given user $u_i$, the platform will get his background $b_i$ and browsi
 
 #### Content generation
 
-| Name    | Paper                                                                                          | Publication    | Repository                                      | Link                                                 |
-| ------- | ---------------------------------------------------------------------------------------------- | -------------- | ----------------------------------------------- | ---------------------------------------------------- |
-| GenRead | [#Generate rather than Retrieve Large Language Models are Strong Context Generators](#Generate%20rather%20than%20Retrieve%20Large%20Language%20Models%20are%20Strong%20Context%20Generators) | ICLR 2023      | [GenRead](https://github.com/wyu97/GenRead)     | [arXiv:2209.10063](https://arxiv.org/abs/2209.10063) |
-| GeneRec | [#Generative Recommendation Towards Next-generation Recommender Paradigm](#Generative%20Recommendation%20Towards%20Next-generation%20Recommender%20Paradigm)                    | arXiv preprint | [GeneRec](https://github.com/Linxyhaha/GeneRec) | [arXiv:2304.03516](https://arxiv.org/abs/2304.03516) |
-| GENRE   | [#A First Look at LLM-Powered Generative News Recommendation](#A%20First%20Look%20at%20LLM-Powered%20Generative%20News%20Recommendation)                                | arXiv preprint |                                                 | [arXiv:2305.06566](https://arxiv.org/abs/2305.06566) | 
+| Name  | Paper                                                                                                                                   | Publication    | Repository | Link                                                 | Classification                               |
+| ----- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | -------------------------------------------- |
+| GENRE | [A First Look at LLM-Powered Generative News Recommendation](#A%20First%20Look%20at%20LLM-Powered%20Generative%20News%20Recommendation) | arXiv preprint |            | [arXiv:2305.06566](https://arxiv.org/abs/2305.06566) | [Content generation](#Content%20generation) |
 
 
 ### User oriented
