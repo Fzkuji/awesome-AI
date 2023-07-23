@@ -378,7 +378,6 @@ https://mp.weixin.qq.com/s/TzpHDLr8JC4IhGXR_r10dA
 
 #### Macaw-LLM: Multi-Modal Language Modeling with Image, Audio, Video, and Text Integration
 
-
 | Name | Paper                                                                                                                                                                                                   | Publication    | Repository                                            | Link                                                 | Classification                                         |
 | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ----------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------ |
 |      | [Macaw-LLM: Multi-Modal Language Modeling with Image, Audio, Video, and Text Integration](#Macaw-LLM%20Multi-Modal%20Language%20Modeling%20with%20Image,%20Audio,%20Video,%20and%20Text%20Integration) | arXiv preprint | [Macaw-LLM](https://github.com/lyuchenyang/Macaw-LLM) | [arXiv:2306.09093](https://arxiv.org/abs/2306.09093) | [Models](#Models), [Multimodal LLM](#Multimodal%20LLM) |
@@ -389,13 +388,13 @@ https://mp.weixin.qq.com/s/TzpHDLr8JC4IhGXR_r10dA
 
 Macaw-LLM 包含以下三个主要模块：
 
-- **模态模块**：现有的语言模型主要专注于处理文本信息。为了融合视觉和音频等额外的模态数据，我们在 Macaw-LLM 中集成了额外的模态编码器。这样的增强使得 Macaw-LLM 能够有效处理多个模态。
-- **对齐模块**：由于每个模态编码器是独立训练的，不同模态的学习表示可能不直接兼容。为了解决这个问题，我们提出了对齐模块，将不同模态的表示统一起来，实现多模态信息的有效整合。
-- **认知模块**：在 Macaw-LLM 中，我们利用预训练的语言模型作为我们的认知模块，它构成了 Macaw-LLM 的基础。值得注意的是，认知模块也充当了我们方法中的文本模态编码器。
+- **模态模块**：现有的语言模型主要专注于处理文本信息。为了融合视觉和音频等额外的模态数据，我们在 Macaw-LLM 中集成了额外的模态编码器。这样的增强使得 Macaw-LLM 能够有效处理多个模态
+- **对齐模块**：由于每个模态编码器是独立训练的，不同模态的学习表示可能不直接兼容。为了解决这个问题，我们提出了对齐模块，将不同模态的表示统一起来，实现多模态信息的有效整合
+- **认知模块**：在 Macaw-LLM 中，我们利用预训练的语言模型作为我们的认知模块，它构成了 Macaw-LLM 的基础。值得注意的是，认知模块也充当了我们方法中的文本模态编码器
 
-与以往方法不同，我们的方法将表示对齐和指令调优合并为一步，减少了多步微调过程中潜在的错误传播。此外，我们使用GPT-3.5-Turbo构建了一个大规模的多模态Macaw-LLM指令数据集。
+与以往方法不同，我们的方法将表示对齐和指令调优合并为一步，减少了多步微调过程中潜在的错误传播。此外，我们使用GPT-3.5-Turbo构建了一个大规模的多模态Macaw-LLM指令数据集
 
-不可否认，我们的工作目前存在一些缺陷，例如仅支持单轮对话、缺乏对 Macaw-LLM 的全面评估，以及可能存在的幻觉（hallucination）问题。我们将在未来的工作中努力解决这些问题。
+不可否认，我们的工作目前存在一些缺陷，例如仅支持单轮对话、缺乏对 Macaw-LLM 的全面评估，以及可能存在的幻觉（hallucination）问题。我们将在未来的工作中努力解决这些问题
 
 #### A Survey on Multimodal Large Language Models
 
