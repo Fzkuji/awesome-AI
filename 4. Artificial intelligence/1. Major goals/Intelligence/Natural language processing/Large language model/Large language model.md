@@ -132,6 +132,16 @@ FlagAI
 ### List
 
 
+#### Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing
+
+| Name  | Paper                                                                                                                     | Publication    | Repository | Link                                                 | Classification                                        |
+| ----- | ------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ----------------------------------------------------- |
+| Maria | [Multi-Scenario Ranking with Adaptive Feature Learning](#Multi-Scenario%20Ranking%20with%20Adaptive%20Feature%20Learning) | arXiv preprint |            | [arXiv:2306.16732](https://arxiv.org/abs/2306.16732) | [Multi-scenario learning](#Multi-scenario%20learning) | 
+
+
+
+
+
 #### TALM: Tool Augmented Language Models
 
 > [!info]
