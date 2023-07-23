@@ -97,8 +97,6 @@ FlagAI
 
 [LLaMA-Adapter](Models/LLaMA-Adapter.md) - Shanghai Artificial Intelligence Laboratory,  CUHK MMLab, University of California, Los Angeles
 
-
-
 [ChatGPT的朋友们：大语言模型经典论文一次读到吐](https://mp.weixin.qq.com/s/ATd6D00aPOV8hIqvBoWAFA)
 
 [Awesome-Multimodal-Large-Language-Models](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models)
@@ -217,15 +215,12 @@ https://mp.weixin.qq.com/s/TzpHDLr8JC4IhGXR_r10dA
 
 #### TabLLM: Few-shot Classification of Tabular Data with Large Language Models
 
-> [!info]
-> 
-> [arXiv:2210.10723](https://arxiv.org/abs/2210.10723) [cs.CL]
-> 
-> [#Multimodal LLM](#Multimodal%20LLM)
-> 
-> Repository: https://github.com/clinicalml/TabLLM
+| Name | Paper                                                                                                                                                                       | Publication    | Repository                                     | Link                                                 | Classification                                                                                                   |
+| ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+|      | [TabLLM: Few-shot Classification of Tabular Data with Large Language Models](#TabLLM:%20Few-shot%20Classification%20of%20Tabular%20Data%20with%20Large%20Language%20Models) | arXiv preprint | [TabLLM](https://github.com/clinicalml/TabLLM) | [arXiv:2210.10723](https://arxiv.org/abs/2210.10723) | [Models](#Models), [Multimodal LLM](#Multimodal%20LLM) |
 
 [大模型尝试：TabLLM与结构化建模](https://mp.weixin.qq.com/s/2QJKi4kqQoqC__Y-w_AuKA)
+
 
 #### A Survey on In-context Learning
 
