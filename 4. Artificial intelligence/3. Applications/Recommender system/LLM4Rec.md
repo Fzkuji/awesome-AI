@@ -674,6 +674,23 @@ Instruction design，设计了多种prompt来微调模型
 - LLM在排序时有position bias和popularity bias，但可以被适当的提示或bootstrapping等策略所缓解。
 
 
+### Exploring the Upper Limits of Text-Based Collaborative Filtering Using Large Language Models: Discoveries and Insights
+
+| Name  | Paper                                                                                                                     | Publication    | Repository | Link                                                 | Classification                                        |
+| ----- | ------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ----------------------------------------------------- |
+| Maria | [Multi-Scenario Ranking with Adaptive Feature Learning](#Multi-Scenario%20Ranking%20with%20Adaptive%20Feature%20Learning) | arXiv preprint |            | [arXiv:2306.16732](https://arxiv.org/abs/2306.16732) | [Multi-scenario learning](#Multi-scenario%20learning) | 
+
+
+
+
+
+
+
+
+
+
+
+
 ### Rethinking the Evaluation for Conversational Recommendation in the Era of Large Language Models
 
 | Name   | Paper                                                                                                | Publication    | Repository                                           | Link                                                 | Classification   |
@@ -727,7 +744,6 @@ Instruction design，设计了多种prompt来微调模型
 |      | [Efficiently Measuring the Cognitive Ability of LLMs An Adaptive Testing Perspective](#Efficiently%20Measuring%20the%20Cognitive%20Ability%20of%20LLMs%20An%20Adaptive%20Testing%20Perspective) | arXiv preprint |            | [arXiv:2306.10512](https://arxiv.org/abs/2306.10512) | [#Performance](#Performance) |
 
 [“千模千测”——针对大语言模型认知能力的高效测试方法](https://mp.weixin.qq.com/s/9aWgvFGaSesu4JzEHE4Ncw)
-
 
 
 
