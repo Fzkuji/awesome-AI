@@ -49,7 +49,37 @@ Fixed-prompt PTM tuning是一种在预定义的prompt上进行微调或参数调
 - Next Sentence Prediction (NSP)
 - Replaced Token Detection(RTD)
 
-## Models
+
+
+## Frameworks
+
+FlagAI
+- https://github.com/FlagAI-Open/FlagAI
+- **FlagAI飞智**是一个快速、易于使用和可扩展的大模型工具包。 我们的目标是支持在多模态的各种下游任务上训练、微调和部署大规模模型。
+
+
+## Works
+
+
+### Surveys
+
+| Name | Paper                                                                        | Publication    | Repository                                                                                                      | Link                                                 |
+| ---- | ---------------------------------------------------------------------------- | -------------- | --------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+|      | [ChatGPT调研报告](ChatGPT%E8%B0%83%E7%A0%94%E6%8A%A5%E5%91%8A.pdf%5C)                                     |                |                                                                                                                 |                                                      |
+|      | [#A Survey of Large Language Models](#A%20Survey%20of%20Large%20Language%20Models)                                       | arXiv preprint | [LLMSurvey](https://github.com/RUCAIBox/LLMSurvey)                                                              | [arXiv:2303.18223](https://arxiv.org/abs/2303.18223) |
+|      | [#Harnessing the Power of LLMs in Practice A Survey on ChatGPT and Beyond](#Harnessing%20the%20Power%20of%20LLMs%20in%20Practice%20A%20Survey%20on%20ChatGPT%20and%20Beyond) | arXiv preprint | [LLMsPracticalGuide](https://github.com/Mooler0410/LLMsPracticalGuide)                                          | [arXiv:2304.13712](https://arxiv.org/abs/2304.13712) |
+|      | [#A Survey on Multimodal Large Language Models](#A%20Survey%20on%20Multimodal%20Large%20Language%20Models)                            | arXiv preprint | [Awesome-Multimodal-Large-Language-Models](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models) | [arXiv:2306.13549](https://arxiv.org/abs/2306.13549) |
+|      |                                                                              |                |                                                                                                                 |                                                      |
+
+
+| Name | Paper                                                | Publication    | Repository                                                       | Link                                                 | Classification |
+| ---- | ---------------------------------------------------- | -------------- | ---------------------------------------------------------------- | ---------------------------------------------------- | -------------- |
+|      | [Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing](#Pre-train,%20Prompt,%20and%20Predict%20A%20Systematic%20Survey%20of%20Prompting%20Methods%20in%20Natural%20Language%20Processing) | arXiv preprint | [Pretrain, Prompt, Predict](http://pretrain.nlpedia.ai/) | [arXiv:2107.13586](https://arxiv.org/abs/2107.13586) | [Surveys](#Surveys), [Prompting](#Prompting) |
+|      | [A Survey on In-context Learning](#A%20Survey%20on%20In-context%20Learning) | arXiv preprint |            | [arXiv:2301.00234](https://arxiv.org/abs/2301.00234) | [Surveys](#Surveys), [In-context learning](#In-context%20learning) |
+|      | [A Survey on Evaluation of Large Language Models](#A%20Survey%20on%20Evaluation%20of%20Large%20Language%20Models) | arXiv preprint | [LLM-eval-survey](https://github.com/MLGroupJLU/LLM-eval-survey) | [arXiv:2307.03109](https://arxiv.org/abs/2307.03109) | [Surveys](#Surveys)   | 
+
+
+### Models
 
 - OpenAI
 	- [GPT-123](Models/GPT/GPT-123.md)
@@ -71,32 +101,6 @@ Fixed-prompt PTM tuning是一种在预定义的prompt上进行微调或参数调
 
 [Awesome-Multimodal-Large-Language-Models](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models)
 
-## Frameworks
-
-FlagAI
-- https://github.com/FlagAI-Open/FlagAI
-- **FlagAI飞智**是一个快速、易于使用和可扩展的大模型工具包。 我们的目标是支持在多模态的各种下游任务上训练、微调和部署大规模模型。
-
-
-## Papers
-
-
-### Surveys
-
-| Name | Paper                                                                        | Publication    | Repository                                                                                                      | Link                                                 |
-| ---- | ---------------------------------------------------------------------------- | -------------- | --------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
-|      | [ChatGPT调研报告](ChatGPT%E8%B0%83%E7%A0%94%E6%8A%A5%E5%91%8A.pdf%5C)                                     |                |                                                                                                                 |                                                      |
-|      | [#A Survey of Large Language Models](#A%20Survey%20of%20Large%20Language%20Models)                                       | arXiv preprint | [LLMSurvey](https://github.com/RUCAIBox/LLMSurvey)                                                              | [arXiv:2303.18223](https://arxiv.org/abs/2303.18223) |
-|      | [#Harnessing the Power of LLMs in Practice A Survey on ChatGPT and Beyond](#Harnessing%20the%20Power%20of%20LLMs%20in%20Practice%20A%20Survey%20on%20ChatGPT%20and%20Beyond) | arXiv preprint | [LLMsPracticalGuide](https://github.com/Mooler0410/LLMsPracticalGuide)                                          | [arXiv:2304.13712](https://arxiv.org/abs/2304.13712) |
-|      | [#A Survey on Multimodal Large Language Models](#A%20Survey%20on%20Multimodal%20Large%20Language%20Models)                            | arXiv preprint | [Awesome-Multimodal-Large-Language-Models](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models) | [arXiv:2306.13549](https://arxiv.org/abs/2306.13549) |
-|      |                                                                              |                |                                                                                                                 |                                                      |
-
-
-| Name | Paper                                                | Publication    | Repository                                                       | Link                                                 | Classification |
-| ---- | ---------------------------------------------------- | -------------- | ---------------------------------------------------------------- | ---------------------------------------------------- | -------------- |
-|      | [Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing](#Pre-train,%20Prompt,%20and%20Predict%20A%20Systematic%20Survey%20of%20Prompting%20Methods%20in%20Natural%20Language%20Processing) | arXiv preprint | [Pretrain, Prompt, Predict](http://pretrain.nlpedia.ai/) | [arXiv:2107.13586](https://arxiv.org/abs/2107.13586) | [Surveys](#Surveys), [Prompting](#Prompting) |
-|      | [A Survey on In-context Learning](#A%20Survey%20on%20In-context%20Learning) | arXiv preprint |            | [arXiv:2301.00234](https://arxiv.org/abs/2301.00234) | [Surveys](#Surveys), [In-context learning](#In-context%20learning) |
-|      | [A Survey on Evaluation of Large Language Models](#A%20Survey%20on%20Evaluation%20of%20Large%20Language%20Models) | arXiv preprint | [LLM-eval-survey](https://github.com/MLGroupJLU/LLM-eval-survey) | [arXiv:2307.03109](https://arxiv.org/abs/2307.03109) | [Surveys](#Surveys)   | 
 
 
 ### Prompting
@@ -145,8 +149,8 @@ FlagAI
 
 [【LLM 加速技巧】Muti Query Attention 和 Attention with Linear Bias（附源码）](https://zhuanlan.zhihu.com/p/634236135)
 
-### List
 
+### Paper List
 
 #### Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing
 

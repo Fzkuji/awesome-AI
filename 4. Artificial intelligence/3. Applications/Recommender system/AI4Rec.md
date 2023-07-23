@@ -150,8 +150,7 @@ The dataset is provided to facilitate any research on the problem of *Learning 
 
 https://paperswithcode.com/dataset/click-through-rate-prediction-avazu
 
-# Papers
-
+# Works
 
 
 #### Multi-scenario learning
@@ -163,7 +162,7 @@ Multi-scenario learning，也叫Multi-domain learning理论上multi-scenario和m
 虽然CTR prediction不太**属于**推荐系统？但鉴于笔记刚刚起步，还是归为一类记录了，以后论文多了再考虑
 
 
-## List
+## Paper List
 
 ### Modeling Task Relationships in Multi-task Learning with Multi-gate Mixture-of-Experts
 

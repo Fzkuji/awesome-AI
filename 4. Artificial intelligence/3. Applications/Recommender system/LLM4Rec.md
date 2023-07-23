@@ -85,7 +85,9 @@
 - [Reference](#reference)
 
 
-# Related Repositories
+# Related resources
+
+## Repositories
 
 |                                                        Repo Name                                                         |                 Maintainer                  |
 |:------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------:|
@@ -95,6 +97,13 @@
 |                       [Awesome-LLM4RS-Papers](https://github.com/nancheng58/Awesome-LLM4RS-Papers)                       | [nancheng58](https://github.com/nancheng58) |
 |                               [Awesome-recsys](https://github.com/creyesp/Awesome-recsys)                                |    [creyesp](https://github.com/creyesp)    |
 |                   [Awesome-Generative-RecSys](https://github.com/jihoo-kim/Awesome-Generative-RecSys)                    |  [jihoo-kim](https://github.com/jihoo-kim)  |
+
+
+## Articles
+
+1. [一文速览大语言模型在推荐系统中的应用](https://mp.weixin.qq.com/s/RdRLKjzbTWCATmtRMfxW0Q)
+2. [谈谈LLM在推荐域的渗透，探索推荐新范式](https://mp.weixin.qq.com/s/TzpHDLr8JC4IhGXR_r10dA)
+	- 介绍了几个工作，评价了现在LLM4Rec的效果
 
 
 # Tasks
@@ -163,7 +172,7 @@ Ideally, given user $u_i$, the platform will get his background $b_i$ and browsi
 	- 直接让LLM给出推荐结果
 
 
-# Papers
+# Works
 
 
 ## Surveys
@@ -450,7 +459,7 @@ Click-through rate (CTR) prediction
 
 
 
-## List
+## Paper List
 
 
 ### InPars: Data Augmentation for Information Retrieval using Large Language Models
@@ -945,9 +954,3 @@ OpenP5考虑了P5的三个维度：
 - Scalability of pre-training mechanism in recommendation.
 - Privacy issue and ethical state.
 
-
-
-# Reference
-
-1. [一文速览大语言模型在推荐系统中的应用](https://mp.weixin.qq.com/s/RdRLKjzbTWCATmtRMfxW0Q)
-2. [谈谈LLM在推荐域的渗透，探索推荐新范式](https://mp.weixin.qq.com/s/TzpHDLr8JC4IhGXR_r10dA)
