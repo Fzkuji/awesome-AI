@@ -463,6 +463,7 @@ Macaw-LLM 包含以下三个主要模块：
 
 ## Potential research topics
 
+[LLM Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/)
 
 
 ## Appendices
