@@ -377,6 +377,22 @@ https://mp.weixin.qq.com/s/TzpHDLr8JC4IhGXR_r10dA
 
 ![Pasted image 20230617173042](../../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230617173042.png)
 
+
+
+
+
+
+
+
+
+| Name | Paper | Publication | Repository | Link | Classification |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+| Chen Ling, Xujiang Zhao, Jiaying Lu, Chengyuan Deng, Can Zheng, Junxiang Wang, Tanmoy Chowdhury, Yun Li, Hejie Cui, Xuchao Zhang, Tianjiao Zhao, Amit Panalkar, Wei Cheng, Haoyu Wang, Yanchi Liu, Zhengzhang Chen, Haifeng Chen, Chris White, Quanquan Gu, Jian Pei, Carl Yang, Liang Zhao | [Domain Specialization as the Key to Make Large Language Models Disruptive: A Comprehensive Survey](#Domain%20Specialization%20as%20the%20Key%20to%20Make%20Large%20Language%20Models%20Disruptive:%20A%20Comprehensive%20Survey) | arXiv preprint | N/A | [arXiv:2305.18703](https://arxiv.org/abs/2305.18703) | [Computation and Language](#Computation%20and%20Language), [Artificial Intelligence](#Artificial%20Intelligence) |
+
+
+
+
+
 #### Macaw-LLM: Multi-Modal Language Modeling with Image, Audio, Video, and Text Integration
 
 | Name | Paper                                                                                                                                                                                                   | Publication    | Repository                                            | Link                                                 | Classification                                         |
@@ -440,9 +456,7 @@ Macaw-LLM 包含以下三个主要模块：
 
 ## Potential research topics
 
-[](Models/GPT/GPT-123.md#^85edfa%7C%E7%A0%94%E7%A9%B6%E6%96%B9%E5%90%91%EF%BC%9A%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AF%B9%E8%BF%87%E6%8B%9F%E5%90%88%E6%9C%89%E6%9B%B4%E5%BC%BA%E7%9A%84%E6%8A%B5%E6%8A%97%E5%8A%9B)
 
-[](Models/GPT/GPT-4.md#^5507ad%7C%E7%A0%94%E7%A9%B6%E6%96%B9%E5%90%91%EF%BC%9A%E6%98%AF%E5%90%A6%E5%80%BC%E5%BE%97%E4%BD%BF%E7%94%A8RLHF%E5%BE%AE%E8%B0%83%E5%A4%A7%E6%A8%A1%E5%9E%8B)
 
 ## Appendices
 

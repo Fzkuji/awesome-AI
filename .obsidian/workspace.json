@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Claude 2.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Claude 2.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Claude 2.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Claude 2.md"
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md"
               }
             }
           },
@@ -182,6 +182,7 @@
   },
   "active": "16cea1154bb26fa1",
   "lastOpenFiles": [
+    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/GPT/GPT-123.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Claude 2.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Claude.md",
@@ -209,7 +210,6 @@
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/MKR.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/M2M.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
-    "1. Philosophy/Philosophy.md",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720170003.png",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720165843.png",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720150227.png",
