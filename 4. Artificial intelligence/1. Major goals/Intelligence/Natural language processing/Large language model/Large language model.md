@@ -96,6 +96,11 @@ FlagAI
 | ---- | ---------------------------------------------------- | -------------- | ---------------------------------------------------------------- | ---------------------------------------------------- | -------------- |
 |      | [#A Survey on Evaluation of Large Language Models](#A%20Survey%20on%20Evaluation%20of%20Large%20Language%20Models) | arXiv preprint | [LLM-eval-survey](https://github.com/MLGroupJLU/LLM-eval-survey) | [arXiv:2307.03109](https://arxiv.org/abs/2307.03109) | [#Surveys](#Surveys)   | 
 
+
+### Prompting
+
+
+
 ### Multimodal LLM
 
 | Name     | Paper                                                                          | Publication    | Repository                                                          | Link                                                 |
@@ -134,9 +139,9 @@ FlagAI
 
 #### Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing
 
-| Name  | Paper                                                                                                                     | Publication    | Repository | Link                                                 | Classification                                        |
-| ----- | ------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ----------------------------------------------------- |
-| Maria | [Multi-Scenario Ranking with Adaptive Feature Learning](#Multi-Scenario%20Ranking%20with%20Adaptive%20Feature%20Learning) | arXiv preprint |            | [arXiv:2306.16732](https://arxiv.org/abs/2306.16732) | [Multi-scenario learning](#Multi-scenario%20learning) | 
+| Name | Paper                                                                                                                                                                                                                                        | Publication    | Repository                                               | Link                                                 | Classification      |
+| ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | -------------------------------------------------------- | ---------------------------------------------------- | ------------------- |
+|      | [Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing](#Pre-train,%20Prompt,%20and%20Predict%20A%20Systematic%20Survey%20of%20Prompting%20Methods%20in%20Natural%20Language%20Processing) | arXiv preprint | [Pretrain, Prompt, Predict](http://pretrain.nlpedia.ai/) | [arXiv:2107.13586](https://arxiv.org/abs/2107.13586) | [Surveys](#Surveys), [Prompting](#Prompting) |
 
 
 
