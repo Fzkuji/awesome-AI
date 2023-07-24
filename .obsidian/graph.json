@@ -5,7 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "path:\"1. Philosophy\"",
@@ -43,16 +43,16 @@
       }
     }
   ],
-  "collapse-display": true,
+  "collapse-display": false,
   "showArrow": false,
   "textFadeMultiplier": -0.3,
   "nodeSizeMultiplier": 1.00173611111111,
   "lineSizeMultiplier": 1.00173611111111,
-  "collapse-forces": true,
+  "collapse-forces": false,
   "centerStrength": 0.347222222222222,
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.21860383599018374,
+  "scale": 0.2186038359901837,
   "close": false
 }
