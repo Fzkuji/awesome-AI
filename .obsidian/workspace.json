@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Mathematics/3. Computational mathematics/Mathematical optimization/2. 预备基础知识.md",
+                "file": "2. Mathematics/3. Computational mathematics/Computational mathematics.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Mathematics/3. Computational mathematics/Mathematical optimization/2. 预备基础知识.md",
+                "file": "2. Mathematics/3. Computational mathematics/Computational mathematics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. Mathematics/3. Computational mathematics/Mathematical optimization/2. 预备基础知识.md",
+                "file": "2. Mathematics/3. Computational mathematics/Computational mathematics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Mathematics/3. Computational mathematics/Mathematical optimization/2. 预备基础知识.md"
+                "file": "2. Mathematics/3. Computational mathematics/Computational mathematics.md"
               }
             }
           },
@@ -182,9 +182,10 @@
   },
   "active": "16cea1154bb26fa1",
   "lastOpenFiles": [
-    "2. Mathematics/3. Computational mathematics/Mathematical optimization/1. 最优化简介.md",
-    "2. Mathematics/3. Computational mathematics/Mathematical optimization/Mathematical optimization.md",
     "2. Mathematics/3. Computational mathematics/Numerical analysis/Numerical analysis.md",
+    "2. Mathematics/3. Computational mathematics/Mathematical optimization/Mathematical optimization.md",
+    "2. Mathematics/3. Computational mathematics/Mathematical optimization/2. 预备基础知识.md",
+    "2. Mathematics/3. Computational mathematics/Mathematical optimization/1. 最优化简介.md",
     "2. Mathematics/Mathematics.md",
     "2. Mathematics/2. Applied mathematics‎/Applied mathematics‎.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
@@ -210,7 +211,6 @@
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/Uncovering ChatGPT's Capabilities in Recommender Systems.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/TIGER.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/InstructRec.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/+Papers/GenRead.md",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720170003.png",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720165843.png",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720150227.png",
