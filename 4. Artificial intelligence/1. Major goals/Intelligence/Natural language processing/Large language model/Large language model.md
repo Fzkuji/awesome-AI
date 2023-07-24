@@ -464,6 +464,9 @@ Macaw-LLM 包含以下三个主要模块：
 ## Potential research topics
 
 [LLM Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/)
+- 这是那个写了不少RL帖子的那个老哥（Lil'Log）写的
+- 写了如何使用LLM作为智能体的相关内容
+- 提到了人类的记忆模式、LLM的记忆模式设计、记忆的使用方法
 
 
 ## Appendices
