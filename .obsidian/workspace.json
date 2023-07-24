@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Machine learning.md",
+                "file": "4. Artificial intelligence/2. Approaches/Approaches.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Machine learning.md",
+                "file": "4. Artificial intelligence/2. Approaches/Approaches.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Machine learning.md",
+                "file": "4. Artificial intelligence/2. Approaches/Approaches.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Machine learning.md"
+                "file": "4. Artificial intelligence/2. Approaches/Approaches.md"
               }
             }
           },
@@ -182,6 +182,9 @@
   },
   "active": "16cea1154bb26fa1",
   "lastOpenFiles": [
+    "4. Artificial intelligence/1. Major goals/Intelligence/Intelligence.md",
+    "4. Artificial intelligence/2. Approaches/Artificial neural network/Artificial neural network.md",
+    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Machine learning.md",
     "2. Mathematics/3. Computational mathematics/Mathematical optimization/Gradient descent.md",
     "2. Mathematics/3. Computational mathematics/Mathematical optimization/Mathematical optimization.md",
     "2. Mathematics/3. Computational mathematics/Computational mathematics.md",
@@ -208,9 +211,6 @@
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.canvas",
     "4. Artificial intelligence/3. Applications/Applications.md",
     "5. Information science/Information filtering/Recommender system.md",
-    "README.md",
-    "Untitled.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/+Papers/Uncovering ChatGPT's Capabilities in Recommender Systems.md",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720170003.png",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720165843.png",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720150227.png",
