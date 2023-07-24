@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
+                "file": "2. Mathematics/3. Computational mathematics/Mathematical optimization/2. 预备基础知识.md",
                 "mode": "source",
                 "source": false
               }
@@ -72,7 +72,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Numerical analysis",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
+                "file": "2. Mathematics/3. Computational mathematics/Mathematical optimization/2. 预备基础知识.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
+                "file": "2. Mathematics/3. Computational mathematics/Mathematical optimization/2. 预备基础知识.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md"
+                "file": "2. Mathematics/3. Computational mathematics/Mathematical optimization/2. 预备基础知识.md"
               }
             }
           },
@@ -182,8 +182,13 @@
   },
   "active": "16cea1154bb26fa1",
   "lastOpenFiles": [
-    "README_zh.md",
+    "2. Mathematics/3. Computational mathematics/Mathematical optimization/1. 最优化简介.md",
+    "2. Mathematics/3. Computational mathematics/Mathematical optimization/Mathematical optimization.md",
+    "2. Mathematics/3. Computational mathematics/Numerical analysis/Numerical analysis.md",
+    "2. Mathematics/Mathematics.md",
+    "2. Mathematics/2. Applied mathematics‎/Applied mathematics‎.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
+    "README_zh.md",
     "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/LLaMa 2.md",
@@ -206,11 +211,6 @@
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/TIGER.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/InstructRec.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/GenRead.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/+Papers/DSI.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/+Papers/Chat-REC.md",
-    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md",
-    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/MMoE.md",
-    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/MKR.md",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720170003.png",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720165843.png",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720150227.png",
