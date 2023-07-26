@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md"
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md"
               }
             }
           },
@@ -154,8 +154,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 371.5,
-    "collapsed": true
+    "width": 371.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,9 +170,9 @@
   },
   "active": "023655236d021399",
   "lastOpenFiles": [
+    "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/ab3cf0fdd7ff7aea13ebe24aca41d79.jpg",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Chain of thought.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/LLaMa 2.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Claude 2.md",
@@ -207,7 +206,6 @@
     "Resources/PhD/Pasted image 20230720103836.png",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230719172123.png",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230719172039.png",
-    "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230719164639.png",
     "LICENSE",
     "awesome-AI/LICENSE",
     "awesome-AI",
