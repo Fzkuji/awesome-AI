@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Chain of thought.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "https://github.com/Timothyxxx/Chain-of-ThoughtsPapers",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Chain of thought.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Chain of thought.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Chain of thought.md"
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md"
               }
             }
           },
@@ -159,6 +158,7 @@
   },
   "active": "023655236d021399",
   "lastOpenFiles": [
+    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Chain of thought.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/LLaMa 2.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Claude 2.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
@@ -185,7 +185,6 @@
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230723195947.png",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/GPT/GPT-123.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Claude.md",
-    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/GPT/GPT-4.md",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230723163833.png",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.canvas",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720170003.png",
