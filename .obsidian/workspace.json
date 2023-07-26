@@ -18,6 +18,18 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "93326cb6cb26aa13",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -69,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 347.5,
-    "collapsed": true
+    "width": 347.5
   },
   "right": {
     "id": "417cdb7d208faa4a",
@@ -160,11 +171,12 @@
   },
   "active": "023655236d021399",
   "lastOpenFiles": [
+    "Resources/4. Artificial intelligence/3. Applications/Recommender system/ab3cf0fdd7ff7aea13ebe24aca41d79.jpg",
+    "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
+    "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Chain of thought.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/LLaMa 2.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Claude 2.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/LoRA.md",
     "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
@@ -186,7 +198,6 @@
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/LLaMA.md",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230723195947.png",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/GPT/GPT-123.md",
-    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Claude.md",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230723163833.png",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.canvas",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720170003.png",
