@@ -6,6 +6,9 @@ Code: https://github.com/facebookresearch/llama
 
 Additional information: 
 
+- [更强的Llama 2开源，可直接商用：一夜之间，大模型格局变了](https://mp.weixin.qq.com/s/klFWFXCbjGaWZ7HO1KFZag)
+- [Llama2技术细节&开源影响](https://mp.weixin.qq.com/s/rHJkJw9TFGaAR8bWDM5wmg)
+
 Conclusion: 
 
 

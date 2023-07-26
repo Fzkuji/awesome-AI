@@ -4,40 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "d6bfa8c59438c0c0",
+        "id": "d842d72072214835",
         "type": "tabs",
         "children": [
           {
-            "id": "16cea1154bb26fa1",
+            "id": "023655236d021399",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/LoRA.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7216afe3f74dbf6a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a46473777aa72881",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/LLaMa 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -72,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "lora",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -89,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/LoRA.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/LLaMa 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/LoRA.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/LLaMa 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/LoRA.md"
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/LLaMa 2.md"
               }
             }
           },
@@ -181,9 +156,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "16cea1154bb26fa1",
+  "active": "023655236d021399",
   "lastOpenFiles": [
+    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Claude 2.md",
+    "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
     "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
+    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/LoRA.md",
     "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/LLaMa 2.md",
@@ -202,15 +180,12 @@
     "2. Mathematics/Mathematics.md",
     "2. Mathematics/2. Applied mathematics‎/Applied mathematics‎.md",
     "README_zh.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/LLaMA.md",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230723195947.png",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/GPT/GPT-123.md",
-    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Claude 2.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Claude.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/GPT/GPT-4.md",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230723163833.png",
-    "PhD/华为实习/Meetings.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.canvas",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720170003.png",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720165843.png",
