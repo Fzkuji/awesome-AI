@@ -12,6 +12,7 @@
    - MovieLens电影推荐数据集
    - 亚马逊评论数据集
    - 阿里巴巴国际广告算法竞赛数据集
+   - 等等
 
 4. **论文列表**：详细列出了一系列与推荐系统相关的研究论文，主题包括多场景学习、点击率预测等。
 
@@ -151,6 +152,27 @@ The dataset is provided to facilitate any research on the problem of *Learning 
 可以被视为5个场景。据我们所知，这是第一个大规模的实际世界数据集，用于解决多场景学习排序的问题。
 
 简而言之就是一个多场景（多国家）CTR、CVR数据集，[官网](https://tianchi.aliyun.com/dataset/74690)提供数据集介绍与下载
+
+### Amazon-M2
+
+This paper presents Amazon-M2, a large-scale multilingual and multi-locale shopping session dataset collected from Amazon. The dataset aims to inspire the development of new recommendation strategies and improve the customer experience.
+
+1. Amazon-M2 数据集：它包含了来自6个地区（英国，日本，德国，西班牙，法国，意大利）和6种语言（英语，日语，意大利语，西班牙语，法语和德语）的产品的数百万个用户购物会话。每个会话都有一系列产品及其属性，如标题，价格等。
+
+2. 新任务：论文提出了使用该数据集评估推荐和文本生成算法的3个新任务：
+
+	- 下一个产品推荐：预测用户会话中的下一个产品。
+	- 带有领域转换的下一个产品推荐：在大地区的数据上进行预训练，然后在小地区上进行微调，以克服数据稀缺的问题。
+	- 下一个产品标题生成：预测在训练期间未见过的下一个产品的标题。
+
+3. 基线结果：在提出的任务上对几种基线和启发式方法进行了基准测试。结果显示：
+	- 简单的启发式方法，如基于流行度的推荐，优于深度学习模型，这表明由于产品集的大规模带来的挑战。
+	- 预训练和微调技术可以帮助从大地区转移到小地区的知识。
+	- 直接使用文本特征和语言模型并不能提高性能，这突出了未来研究的机会。
+
+4. 挑战和机会：数据集突出了未来工作的几个挑战和机会，如利用产品属性，领域适应技术，和语言模型来构建更好的推荐系统。
+
+总的来说，Amazon-M2数据集和提出的任务旨在通过提供大规模多视角设置来推动推荐研究的前沿。所识别的挑战也突出了未来方法论发展的潜在方向。
 
 ### Others
 
