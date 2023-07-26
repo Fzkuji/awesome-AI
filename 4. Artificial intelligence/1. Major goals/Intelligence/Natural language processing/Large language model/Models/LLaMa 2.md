@@ -59,10 +59,15 @@ GQA则是为了解决这个问题而提出的。在GQA中，输入序列被分�
 
 通过这种方式，GQA能够有效地处理长序列数据，同时保持了注意力机制的优点，例如能够捕捉序列中的长距离依赖关系。
 
+### Fine-tuning
 
+#### Supervised fine-tuning
 
+**「Data Quality Is All You Need。」** MetaAI进行实验时发现，少量高质量数据集训练模型的效果，要好于大量低质量数据集的训练效果。因此以后SFT时候，不要一味地追求量，质更重要。
 
+#### Reward model
 
+奖励模型的初始化来自于pretrained chat model检查点，将下一个Token预测分类器替换成标量奖励值回归器。
 
 ## Evaluation
 
