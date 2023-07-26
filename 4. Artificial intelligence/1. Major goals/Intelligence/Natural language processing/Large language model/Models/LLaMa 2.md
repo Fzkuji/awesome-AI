@@ -68,6 +68,7 @@ GQA则是为了解决这个问题而提出的。在GQA中，输入序列被分�
 #### Reward model
 
 奖励模型的初始化来自于pretrained chat model检查点，将下一个Token预测分类器替换成标量奖励值回归器。
+$$L_{\text {ranking }}=-\log \left(\sigma\left(r_\theta\left(x, y_c\right)-r_\theta\left(x, y_r\right)-m(r)\right)\right)$$
 
 ## Evaluation
 
