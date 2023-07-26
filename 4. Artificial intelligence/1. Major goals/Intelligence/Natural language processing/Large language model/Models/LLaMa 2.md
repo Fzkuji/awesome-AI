@@ -70,6 +70,15 @@ GQA则是为了解决这个问题而提出的。在GQA中，输入序列被分�
 奖励模型的初始化来自于pretrained chat model检查点，将下一个Token预测分类器替换成标量奖励值回归器。
 $$L_{\text {ranking }}=-\log \left(\sigma\left(r_\theta\left(x, y_c\right)-r_\theta\left(x, y_r\right)-m(r)\right)\right)$$
 
+#### Iterative fine-tuning
+
+随着收到更多批次的人类偏好数据，能够训练更好的奖励模型并收集更多提示。因此，训练了五个连续版本的RLHF模型（RLHF-v1到RLHF-v5）。
+
+### Multi round dialogue consistency
+
+最初的RLHF模型在几轮对话后忘记最初的指令，下图(左)所示。为了解决这些限制，提出Ghost Attention方法（Gatt，其实是一个训练trick）来增强模型对指令的遵从。
+
+
 ## Evaluation
 
 作者如何评估自己的方法？实验的setup是什么样的？感兴趣实验数据和结果有哪些？有没有问题或者可以借鉴的地方？
