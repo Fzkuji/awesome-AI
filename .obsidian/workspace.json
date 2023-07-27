@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f1e61009fd19bf90",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -99,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
+                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
+                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md"
+                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md"
               }
             }
           },
@@ -170,13 +182,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "93326cb6cb26aa13",
+  "active": "f1e61009fd19bf90",
   "lastOpenFiles": [
+    "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
+    "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
     "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/M2M.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/ab3cf0fdd7ff7aea13ebe24aca41d79.jpg",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Chain of thought.md",
