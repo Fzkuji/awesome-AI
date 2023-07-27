@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/M2M.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/M2M.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/M2M.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/M2M.md"
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md"
               }
             }
           },
@@ -171,6 +171,7 @@
   "active": "023655236d021399",
   "lastOpenFiles": [
     "PhD/华为实习/LLM for multi-domain CTR prediction.md",
+    "4. Artificial intelligence/3. Applications/Recommender system/+Papers/M2M.md",
     "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
