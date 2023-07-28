@@ -77,7 +77,7 @@ Alibaba闭源数据集
 
 ### Baselines
 
-- Base （似乎是取消了domain indicator输入、用全连接层替换掉[star topology FCN](#Star%20topology%20FCN)、训练时不考虑多场景的模型）
+- Base （似乎是取消了domain indicator输入、用全连接层替换掉[star topology FCN](#Star%20topology%20FCN)、训练时不考虑多场景的模型） 
 - Shared Bottom
 - MulANN
 - MMoE
