@@ -468,7 +468,8 @@ Macaw-LLM 包含以下三个主要模块：
 - 写了如何使用LLM作为智能体的相关内容
 - 提到了人类的记忆模式、LLM的记忆模式设计、记忆的使用方法
 
-[伦敦大学、MetaAI、StabilityAI联合发布70页综述，盘点大模型的16大挑战]()
+[伦敦大学、MetaAI、StabilityAI联合发布70页综述，盘点大模型的16大挑战](https://mp.weixin.qq.com/s/JsCoUcuCg4ylKkPMvNouEw)
+- 论文: [Challenges and Applications of Large Language Models](https://arxiv.org/abs/2307.10169)
 
 ## Appendices
 
