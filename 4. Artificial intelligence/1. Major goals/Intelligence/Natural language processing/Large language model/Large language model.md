@@ -104,6 +104,9 @@ Fixed-prompt PTM tuning是一种在预定义的prompt上进行微调或参数调
 - Anthropic
 	- [Claude](Models/Claude.md)
 	- [Claude 2](Models/Claude%202.md)
+- Stability AI
+	- FreeWilly
+	- FreeWilly 2
 
 [LLaMA-Adapter](Models/LLaMA-Adapter.md) - Shanghai Artificial Intelligence Laboratory,  CUHK MMLab, University of California, Los Angeles
 
