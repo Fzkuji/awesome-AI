@@ -4,7 +4,7 @@ I originally wanted to have a macroscopic concept of the entire field of mathema
 
 ## Contents
 
-This is current arragement of this note.
+This is current arrangement of this note.
 
 0. [Foundations of mathematics](0.%20Foundations%20of%20mathematics/Foundations%20of%20mathematics.md)
 	- [Mathematical proof](0.%20Foundations%20of%20mathematics/Mathematical%20proof/Mathematical%20proof.md)
