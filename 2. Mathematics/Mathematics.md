@@ -1,4 +1,10 @@
+本想对整个数学领域有一个宏观的概念，奈何分支众多，只好暂时按照美国数学会的详细分类进行学习，有朝一日再做整理。
+
+I originally wanted to have a macroscopic concept of the entire field of mathematics, but there are too many branches, so I have to study according to the detailed classification of the American Mathematical Society for the time being. Maybe one day I will organize it again.
+
 ## Contents
+
+This is current arragement of this note.
 
 0. [Foundations of mathematics](0.%20Foundations%20of%20mathematics/Foundations%20of%20mathematics.md)
 	- [Mathematical proof](0.%20Foundations%20of%20mathematics/Mathematical%20proof/Mathematical%20proof.md)
@@ -41,6 +47,4 @@
 
 ## MSC2020-Mathematics Subject Classification System
 
-
-
-
+![](MSC2020-Mathematics%20Subject%20Classification%20System.pdf)
