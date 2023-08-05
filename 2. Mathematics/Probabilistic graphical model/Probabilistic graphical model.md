@@ -21,7 +21,9 @@ Probability theory is a framework that allows us to deal with uncertainty in wa
 
 ![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230805164754.png)
 
-C
+Finally, the word graphical.  The word **graphical** is here from the perspective of computer science, because probabilistic graphical models are a synthesis between ideas from probability theory in statistics and ideas from computer science. 
+
+The idea here is to use the connections computer science, specifically that of graphs to allow us to represent systems that are very complicated that involved large numbers of variables.
 
 ![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230805165002.png)
 
