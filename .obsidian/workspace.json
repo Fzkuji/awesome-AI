@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Mathematics/Mathematics.md",
+                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic graphical models.md",
                 "mode": "source",
                 "source": false
               }
@@ -131,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Mathematics/Mathematics.md",
+                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic graphical models.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. Mathematics/Mathematics.md",
+                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic graphical models.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Mathematics/Mathematics.md"
+                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic graphical models.md"
               }
             }
           },
@@ -202,8 +202,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c633a6bf13e3c2d2",
+  "active": "023655236d021399",
   "lastOpenFiles": [
+    "2. Mathematics/Mathematics.md",
+    "2. Mathematics/Probabilistic graphical model/Probabilistic graphical models.md",
+    "2. Mathematics/Probabilistic graphical model",
     "2. Mathematics/MSC2020-Mathematics Subject Classification System.pdf",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
     "PhD/华为实习/LLM for multi-domain CTR prediction.md",
@@ -228,7 +231,6 @@
     "2. Mathematics/3. Computational mathematics/Numerical analysis/Numerical analysis.md",
     "2. Mathematics/3. Computational mathematics/Mathematical optimization/2. 预备基础知识.md",
     "2. Mathematics/3. Computational mathematics/Mathematical optimization/1. 最优化简介.md",
-    "2. Mathematics/Mathematics.md",
     "2. Mathematics/2. Applied mathematics‎/Applied mathematics‎.md",
     "README_zh.md",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230723195947.png",
@@ -249,8 +251,6 @@
     "2023-03-22_log.txt",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Domain adaptation/Multi-scenario modeling/+Papers",
-    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Domain adaptation/Multi-scenario modeling",
-    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/GPT-4 Architecture, Infrastructure, Training Dataset, Costs, Vision, MoE.pdf",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Classification.canvas",
     "5. Information science/Information filtering/Recommender system.canvas",
     "4. Artificial intelligence/1. Major goals/Affection/Emotion.canvas",
