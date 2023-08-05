@@ -7,8 +7,7 @@
 	- [In-context learning](In-context%20learning.md)
 	- [Chain of thought](Chain%20of%20thought.md)
 
-
-
+- [RLHF](RLHF.md)
 
 ## Paradigms
 
