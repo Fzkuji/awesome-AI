@@ -13,4 +13,15 @@ I think a model is like a class in programming.
 Besides, an algorithm can be constructed from a model by **domain experts** or **learning from data**.
 
 
-Probabilistic
+The word **probabilistic** is in there because these models are designed to help us deal with large amounts of uncertainty. So uncertainty comes in many forms and for many different reasons.
+
+
+
+
+
+
+
+
+
+
+
