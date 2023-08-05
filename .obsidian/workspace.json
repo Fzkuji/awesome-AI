@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/RLHF.md",
                 "mode": "source",
                 "source": false
               }
@@ -30,21 +30,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "f1e61009fd19bf90",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -73,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "star",
+                "query": "RLHF",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -110,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/RLHF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/RLHF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md"
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/RLHF.md"
               }
             }
           },
@@ -181,20 +168,22 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f1e61009fd19bf90",
+  "active": "023655236d021399",
   "lastOpenFiles": [
+    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
+    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/RLHF.md",
+    "4. Artificial intelligence/3. Applications/Recommender system/RL4Rec.md",
     "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
+    "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
+    "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230805113547.png",
     "Resources/2. Mathematics/Probabilistic graphical model",
     "2. Mathematics/Mathematics.md",
     "2. Mathematics/Probabilistic graphical model",
     "2. Mathematics/MSC2020-Mathematics Subject Classification System.pdf",
-    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
     "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/LLaMa 2.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
     "5. Information science/Information filtering/Recommender system.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/M2M.md",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/ab3cf0fdd7ff7aea13ebe24aca41d79.jpg",
@@ -212,7 +201,6 @@
     "2. Mathematics/3. Computational mathematics/Numerical analysis/Numerical analysis.md",
     "2. Mathematics/3. Computational mathematics/Mathematical optimization/2. 预备基础知识.md",
     "2. Mathematics/3. Computational mathematics/Mathematical optimization/1. 最优化简介.md",
-    "2. Mathematics/2. Applied mathematics‎/Applied mathematics‎.md",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230723195947.png",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230723163833.png",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.canvas",
