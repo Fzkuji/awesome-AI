@@ -1,8 +1,14 @@
 ## Key concepts
 
 - [Prompting](Prompting.md)
-	- [Chain of thought](Chain%20of%20thought.md)
 	- [Self-consistency](Self-consistency.md)
+
+- [Emergent ability](Emergent%20ability.md)
+	- [In-context learning](In-context%20learning.md)
+	- [Chain of thought](Chain%20of%20thought.md)
+
+
+
 
 ## Paradigms
 

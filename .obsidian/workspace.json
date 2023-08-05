@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/RLHF.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/RLHF.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/RLHF.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/RLHF.md"
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md"
               }
             }
           },
@@ -170,8 +170,10 @@
   },
   "active": "023655236d021399",
   "lastOpenFiles": [
-    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
+    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Emergent ability.md",
+    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/Emergent Abilities of Large Language Models.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/RLHF.md",
+    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
     "4. Artificial intelligence/3. Applications/Recommender system/RL4Rec.md",
     "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
     "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
@@ -199,8 +201,6 @@
     "2. Mathematics/3. Computational mathematics/Mathematical optimization/Mathematical optimization.md",
     "2. Mathematics/3. Computational mathematics/Computational mathematics.md",
     "2. Mathematics/3. Computational mathematics/Numerical analysis/Numerical analysis.md",
-    "2. Mathematics/3. Computational mathematics/Mathematical optimization/2. 预备基础知识.md",
-    "2. Mathematics/3. Computational mathematics/Mathematical optimization/1. 最优化简介.md",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230723195947.png",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230723163833.png",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.canvas",

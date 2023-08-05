@@ -1,3 +1,7 @@
+目前的涌现能力包括：
+- [Chain of thought](Chain%20of%20thought.md)
+- [In-context learning](In-context%20learning.md)
+
 个人持怀疑态度的“涌现能力”
 
 首次提出的文章：[Emergent Abilities of Large Language Models](+Papers/Emergent%20Abilities%20of%20Large%20Language%20Models.md)
