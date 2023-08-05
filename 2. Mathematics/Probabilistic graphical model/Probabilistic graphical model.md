@@ -3,7 +3,7 @@ Probabilistic graphical model
 Let's first understand what each of these words mean in the context of this framework: 
 
 The model (模型) is a **declarative** representation of our understanding of the world. 
-![](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230805113547.png)
+![600](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230805113547.png)
 Declarative means it stands on its own. 
 
 I think a model is like a class in programming. 
@@ -15,11 +15,15 @@ Besides, an algorithm can be constructed from a model by **domain experts** or *
 
 The word **probabilistic** is in there because these models are designed to help us deal with large amounts of uncertainty. So uncertainty comes in many forms and for many different reasons.
 
+![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230805164127.png)
 
+Probability theory is a framework that allows us to deal with uncertainty in ways that are principled and that bring to bear important and valuable tools.
 
+![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230805164754.png)
 
+C
 
-
+![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230805165002.png)
 
 
 
