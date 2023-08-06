@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md"
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md"
               }
             }
           },
@@ -171,6 +171,8 @@
   },
   "active": "93326cb6cb26aa13",
   "lastOpenFiles": [
+    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/MMoE.md",
+    "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230805165002.png",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230805164754.png",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230805164127.png",
@@ -180,7 +182,6 @@
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/Emergent Abilities of Large Language Models.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/RLHF.md",
     "4. Artificial intelligence/3. Applications/Recommender system/RL4Rec.md",
-    "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230805113547.png",
     "Resources/2. Mathematics/Probabilistic graphical model",
@@ -210,7 +211,6 @@
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720170003.png",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720165843.png",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720150227.png",
-    "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230720141941.png",
     "LICENSE",
     "awesome-AI/LICENSE",
     "awesome-AI",
