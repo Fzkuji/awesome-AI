@@ -1,4 +1,4 @@
-Probabilistic graphical model
+Probabilistic graphical model 概率图模型
 
 Let's first understand what each of these words mean in the context of this framework: 
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Emergent ability.md",
+                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -78,8 +77,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -99,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md",
+                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md",
+                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md"
+                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md"
               }
             }
           },
@@ -170,24 +168,24 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "93326cb6cb26aa13",
+  "active": "023655236d021399",
   "lastOpenFiles": [
+    "2. Mathematics/Mathematics.md",
+    "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
+    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
+    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/RLHF.md",
+    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Emergent ability.md",
+    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/MMoE.md",
-    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md",
-    "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230805165002.png",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230805164754.png",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230805164127.png",
     "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
-    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Emergent ability.md",
-    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/Emergent Abilities of Large Language Models.md",
-    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/RLHF.md",
     "4. Artificial intelligence/3. Applications/Recommender system/RL4Rec.md",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230805113547.png",
     "Resources/2. Mathematics/Probabilistic graphical model",
-    "2. Mathematics/Mathematics.md",
     "2. Mathematics/Probabilistic graphical model",
     "2. Mathematics/MSC2020-Mathematics Subject Classification System.pdf",
     "PhD/华为实习/LLM for multi-domain CTR prediction.md",
