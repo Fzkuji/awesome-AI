@@ -34,3 +34,17 @@ two main classes of probabilistic graphical models
 - Markov networks (or called undirected networks)
 
 ![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230807113921.png)
+For sparse parameterization, Koller said:
+> Because of the way in which the graph structure encodes the parameterization of the probability distribution, we can represent these high-dimensional probability distribution efficiently using a very small number of parameters. Which allows us though feasible elicitation by hand from an expert as well as automatically learning from data. And in both cases a reduction in the number of parameters is very valuable. 
+
+
+Finally, what will be covered below/The overview:
+![500](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230807114231.png)
+
+
+
+
+
+
+
+
