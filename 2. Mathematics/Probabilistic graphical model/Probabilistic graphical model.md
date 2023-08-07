@@ -27,7 +27,10 @@ The idea here is to use the connections computer science, specifically that of 
 
 ![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230805165002.png)
 
+So what are graphical models?
+![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230807113303.png)
+two main classes of probabilistic graphical models
+- Bayesian networks (or called directed networks)
+- Markov networks (or called undirected networks)
 
-
-
-
+![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230807113921.png)
