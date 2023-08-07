@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "RLHF",
+                "query": "STAR",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -78,7 +78,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -98,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md"
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/+Papers/STAR.md"
               }
             }
           },
@@ -172,6 +173,7 @@
   "active": "93326cb6cb26aa13",
   "lastOpenFiles": [
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/MMoE.md",
+    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/PLE.md",
     "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230805165002.png",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230805164754.png",
@@ -204,7 +206,6 @@
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Machine learning.md",
     "2. Mathematics/3. Computational mathematics/Mathematical optimization/Gradient descent.md",
     "2. Mathematics/3. Computational mathematics/Mathematical optimization/Mathematical optimization.md",
-    "2. Mathematics/3. Computational mathematics/Computational mathematics.md",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230723195947.png",
     "Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230723163833.png",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.canvas",
