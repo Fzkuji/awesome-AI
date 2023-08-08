@@ -84,14 +84,15 @@ A **factor** is like **function**, while the **scope** contains the **variables*
 
 ![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230808194031.png)
 
-##### Case one
-
 In this case, joint distribution is an factor.
 
 I suppose $P$ is the factor and $I$, $D$, $G$ are the scopes.
 ![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230808195027.png)
 
+In this case, unnormalized measure is an factor.
 
+$I$ and $D$ are the scopes. Since $G$ here is constant, it is not a scope.
+![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230808200725.png)
 
 
 
