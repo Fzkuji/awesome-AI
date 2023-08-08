@@ -2,7 +2,7 @@ Probabilistic graphical model 概率图模型
 
 ## Introduction and Overview
 
-
+### Overview and Motivation
 
 Let's first understand what each of these words mean in the context of this framework: 
 
@@ -45,10 +45,26 @@ For sparse parameterization, Koller said:
 Finally, what will be covered below/The overview:
 ![500](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230807114231.png)
 
-## Distributions
+### Distributions
 
+Here are some concepts about distribution.
 
+#### Joint distribution
 
+![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230808191542.png)
 
+#### Conditioning
 
+One important thing that we can do is condition the probability distribution on a particular observation.
+![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230808191722.png)
+
+##### Reduction
+
+This is an operation that's called reduction. I've taken the probability distribution, I've reduced away stuff that is not consistent with what I've observed.
+
+![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230808192328.png)
+
+##### Renormalization
+
+After reduction, the new distribution is 
 
