@@ -80,7 +80,7 @@ If we want to marginalize $I$, we need to sum up all probabilities for every sam
 ![600](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230808193103.png)
 ### Factors
 
-A **factor** is like **function**, while the **scope** contains the **variables** this function can take.
+A **factor** is like **function**, while the **scope** contains the **variables** this function can take. In this course, factors are the following distribution tables themselves.
 
 ![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230808194031.png)
 
