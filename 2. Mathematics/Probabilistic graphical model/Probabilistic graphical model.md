@@ -1,5 +1,9 @@
 Probabilistic graphical model 概率图模型
 
+## Introduction and Overview
+
+
+
 Let's first understand what each of these words mean in the context of this framework: 
 
 The model (模型) is a **declarative** representation of our understanding of the world. 
@@ -41,7 +45,7 @@ For sparse parameterization, Koller said:
 Finally, what will be covered below/The overview:
 ![500](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230807114231.png)
 
-
+## Distributions
 
 
 
