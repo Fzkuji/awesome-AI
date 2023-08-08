@@ -60,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "PLE",
+                "query": "factor",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -170,6 +170,7 @@
   },
   "active": "023655236d021399",
   "lastOpenFiles": [
+    "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230808194031.png",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230808193103.png",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230808192759.png",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230808192328.png",
@@ -188,7 +189,6 @@
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/MMoE.md",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230805165002.png",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230805164754.png",
-    "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230805164127.png",
     "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/Emergent Abilities of Large Language Models.md",
     "4. Artificial intelligence/3. Applications/Recommender system/RL4Rec.md",

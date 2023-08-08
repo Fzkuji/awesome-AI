@@ -78,6 +78,6 @@ So we need renormalization:
 If we want to marginalize $I$, we need to sum up all probabilities for every same value from $D$.
 
 ![600](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230808193103.png)
+### Factors
 
-
-
+![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230808194031.png)
