@@ -66,5 +66,18 @@ This is an operation that's called reduction. I've taken the probability distri
 
 ##### Renormalization
 
-After reduction, the new distribution is 
+After reduction, the new distribution is no longer normalized any more.
+
+*Unnormalized measure*, an indication, the word measure indicates that it's a form of distribution but the fact that it's un-normalized means that it doesn't sum to one, it doesn't normalize to one.
+
+So we need renormalization: 
+
+![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230808192759.png)
+#### Marginalization
+
+If we want to marginalize $I$, we need to sum up all probabilities for every same value from $D$.
+
+![600](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230808193103.png)
+
+
 
