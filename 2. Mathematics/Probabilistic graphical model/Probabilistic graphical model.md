@@ -90,3 +90,19 @@ In this case, joint distribution is an factor.
 
 I suppose $P$ is the factor and $I$, $D$, $G$ are the scopes.
 ![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230808195027.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
