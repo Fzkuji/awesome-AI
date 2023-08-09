@@ -101,10 +101,10 @@ $I$ and $D$ are the scopes. Since $G$ here is constant, it is not a scope.
 **Conditional probability distribution** (CPD) is also a factor with some constraints
 ![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230809105658.png)
 
+Not all factors are about probability. Here is a general factor:
 
-
-
-
+![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230809111349.png)
+where $A$ and $B$ are the scopes.
 
 
 
