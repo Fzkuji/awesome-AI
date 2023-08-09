@@ -106,8 +106,18 @@ Not all factors are about probability. Here is a general factor:
 ![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230809111349.png)
 where $A$ and $B$ are the scopes.
 
+#### Operations
 
+##### Factor product
 
+Combine two factors with shared scopes.
+
+![500](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230809113055.png)
+
+##### Factor marginalization
+
+Marginalize a factor on one scope.
+![500](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230809113204.png)
 
 
 
