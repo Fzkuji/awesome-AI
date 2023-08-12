@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Mathematics/Probabilistic graphical model/Untitled.md",
+                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic Graphical Models 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 347.5
+    "width": 347.5,
+    "collapsed": true
   },
   "right": {
     "id": "417cdb7d208faa4a",
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Mathematics/Probabilistic graphical model/Untitled.md",
+                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic Graphical Models 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. Mathematics/Probabilistic graphical model/Untitled.md",
+                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic Graphical Models 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Mathematics/Probabilistic graphical model/Untitled.md"
+                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic Graphical Models 1.md"
               }
             }
           },
@@ -171,7 +172,7 @@
   "active": "023655236d021399",
   "lastOpenFiles": [
     "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
-    "2. Mathematics/Probabilistic graphical model/Untitled.md",
+    "2. Mathematics/Probabilistic graphical model/Probabilistic Graphical Models 1.md",
     "2. Mathematics/Probabilistic graphical model/Factor.md",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230812155154.png",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230812144713.png",
