@@ -127,7 +127,7 @@ Choose one value of a scope to reduce the factor. Below we choose $c_1$ and leav
 
 ### Why factors?
 
-- Factors are fundamental building blocks for defining distributions in high-dimensional spaces [1](#Semantics%20&%20factorization)
+- Factors are fundamental building blocks for defining distributions in high-dimensional spaces [Semantics & factorization](#Semantics%20&%20factorization)
 - Factors have a set of basic operations for manipulating these probability distributions
 ![500](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230812155154.png)
 
@@ -139,9 +139,9 @@ Choose one value of a scope to reduce the factor. Below we choose $c_1$ and leav
 #### Semantics & factorization
 
 Factorization is to break a whole model into multiple simple factors: 
-![600](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230812200801.png)
+![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230812200801.png)
 
-
+![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230812204141.png)
 
 
 
