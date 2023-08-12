@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic Graphical Models 1.md",
+                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 347.5,
-    "collapsed": true
+    "width": 347.5
   },
   "right": {
     "id": "417cdb7d208faa4a",
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic Graphical Models 1.md",
+                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic Graphical Models 1.md",
+                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic Graphical Models 1.md"
+                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md"
               }
             }
           },
@@ -171,8 +170,9 @@
   },
   "active": "023655236d021399",
   "lastOpenFiles": [
-    "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
+    "2. Mathematics/Probabilistic graphical model/Probabilistic Graphical Models 2.md",
     "2. Mathematics/Probabilistic graphical model/Probabilistic Graphical Models 1.md",
+    "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
     "2. Mathematics/Probabilistic graphical model/Factor.md",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230812155154.png",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230812144713.png",
@@ -209,7 +209,6 @@
     "4. Artificial intelligence/2. Approaches/Artificial neural network/Backpropagation.md",
     "4. Artificial intelligence/2. Approaches/Approaches.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Intelligence.md",
-    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Machine learning.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.canvas",
     "LICENSE",
     "awesome-AI/LICENSE",
