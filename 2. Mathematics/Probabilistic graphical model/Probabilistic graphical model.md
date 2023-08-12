@@ -119,5 +119,14 @@ Combine two factors with shared scopes.
 Marginalize a factor on one scope.
 ![500](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230809113204.png)
 
+##### Factor reduction
+
+Choose one value of a scope to reduce the factor. Below we choose $c_1$ and leave two scopes, $A$ and $B$.
+
+![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230812144713.png)
+
+
+
+
 
 
