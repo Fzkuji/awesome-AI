@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
+                "file": "2. Mathematics/Probabilistic graphical model/Factor.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
+                "file": "2. Mathematics/Probabilistic graphical model/Factor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
+                "file": "2. Mathematics/Probabilistic graphical model/Factor.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md"
+                "file": "2. Mathematics/Probabilistic graphical model/Factor.md"
               }
             }
           },
@@ -170,6 +170,9 @@
   },
   "active": "023655236d021399",
   "lastOpenFiles": [
+    "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
+    "2. Mathematics/Probabilistic graphical model/Factor.md",
+    "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230812155154.png",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230812144713.png",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230809113204.png",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230809113055.png",
@@ -179,10 +182,7 @@
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230808195027.png",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230808194031.png",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230808193103.png",
-    "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230808192759.png",
-    "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230808192328.png",
     "2. Mathematics/Mathematics.md",
-    "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/RLHF.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Emergent ability.md",

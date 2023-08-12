@@ -126,7 +126,7 @@ Choose one value of a scope to reduce the factor. Below we choose $c_1$ and leav
 ![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230812144713.png)
 
 
-
+![](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230812155154.png)
 
 
 
