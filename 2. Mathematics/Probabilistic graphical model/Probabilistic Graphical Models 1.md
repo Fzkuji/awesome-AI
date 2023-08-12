@@ -131,9 +131,9 @@ Choose one value of a scope to reduce the factor. Below we choose $c_1$ and leav
 
 ## Bayesian network (Directed model)
 
+### Bayesian network fundamentals
 
-
-
+#### Semantics & factorization
 
 
 
