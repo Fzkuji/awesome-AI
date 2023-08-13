@@ -43,4 +43,12 @@ Browse the [website](https://publish.obsidian.md/artificial-intelligence) for th
 
 
 
-## 
+## Related Readings and Tutorials
+
+- [UvA DL Notebooks](https://uvadlc-notebooks.readthedocs.io/en/latest/index.html)
+	- UvA Deep Learning Tutorials
+	- A combination of theory and practice, taken from the MSc in Artificial Intelligence for the University of Amsterdam
+
+
+
+
