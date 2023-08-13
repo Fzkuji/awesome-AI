@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic Graphical Models 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic Graphical Models 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic Graphical Models 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "2. Mathematics/Probabilistic graphical model/Probabilistic Graphical Models 1.md"
               }
             }
           },
@@ -158,8 +158,8 @@
   },
   "active": "93326cb6cb26aa13",
   "lastOpenFiles": [
-    "README_zh.md",
     "README.md",
+    "README_zh.md",
     "2. Mathematics/Probabilistic graphical model/Probabilistic Graphical Models 1.md",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230812205525.png",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230812204141.png",

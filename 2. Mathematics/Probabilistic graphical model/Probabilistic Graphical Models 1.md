@@ -147,7 +147,8 @@ Factorization is to break a whole model into multiple simple factors:
 
 ![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230812205525.png)
 
-
+When Bayesian network is legal  distribution:
+- $P$
 
 
 
