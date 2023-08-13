@@ -151,7 +151,8 @@ When Bayesian network is legal  distribution:
 - $P\ge 0$
 - $\sum P = 1$
 
-
+e.g.
+![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230813172040.png)
 
 
 
