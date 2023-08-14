@@ -143,7 +143,7 @@ Factorization is to break a whole model into multiple simple factors:
 
 ![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230812204141.png)
 
-> We're going to say that a distribution P factorizes over G, means we can represent it over the graph G if we can encode it using the chain rule for Bayesian networks. So the distribution factorizes over big, over a graph G if I can represent it in this way as a product of these conditional probabilities.
+> We're going to say that a distribution $P$ factorizes over graph $G$, means we can represent it over the graph G if we can encode it using the chain rule for Bayesian networks. So the distribution factorizes over big, over a graph G if I can represent it in this way as a product of these conditional probabilities.
 
 ![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230813173934.png)
 *Don't understand actually.*
