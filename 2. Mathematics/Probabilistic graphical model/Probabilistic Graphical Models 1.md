@@ -150,7 +150,7 @@ Noted that $P$ is a distribution while $G$ is a graph. I think we can say $G$ ca
 ![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230813173934.png)
 
 
-### Definition
+#### Definition
 
 ![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230812205525.png)
 
@@ -161,7 +161,7 @@ When Bayesian network is legal  distribution:
 e.g.
 ![400](../../Resources/2.%20Mathematics/Probabilistic%20graphical%20model/Pasted%20image%2020230813172040.png)
 
-
+### Reasoning patterns
 
 
 
