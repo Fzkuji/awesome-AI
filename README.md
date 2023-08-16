@@ -53,6 +53,6 @@ Browse the [website](https://publish.obsidian.md/artificial-intelligence) for th
 
 ## Epilogue
 
-> There is a limit to our life, but to knowledge there is no limit. With what is limited to pursue after what is unlimited is indeed exhausting! Those who are already chasing after knowledge are truly weary! There should not be the practice of what is good with any thought of the fame (which it will bring), nor of what is evil with any approximation to the punishment (which it will incur): an accordance with the Central Element (of our nature) is the regular way to preserve the body, to maintain the life, to nourish our parents, and to complete our term of years.
+> There is a limit to our life, but to knowledge there is no limit. With what is limited to pursue after what is unlimited is indeed exhausting! Those who are already chasing after knowledge are truly weary! To perform deeds considered good without craving fame, and to act in ways deemed evil without fearing punishment. Navigating the path that lies between honor and disgrace, adhering to this virtuous way of life, one can care for the body, sustain life, nurture parents, and fulfill the natural span of one's years.
 > 
 > -- Nourishing the Lord of Life
