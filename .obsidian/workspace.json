@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "PhD/华为实习/Experiments.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "PhD/华为实习/Experiments.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "PhD/华为实习/Experiments.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "PhD/华为实习/Experiments.md"
               }
             }
           },
@@ -170,13 +170,14 @@
   },
   "active": "93326cb6cb26aa13",
   "lastOpenFiles": [
+    "PhD/华为实习/LLM for multi-domain CTR prediction.md",
+    "PhD/华为实习/Experiments.md",
+    "Untitled.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/Uncovering ChatGPT's Capabilities in Recommender Systems.md",
     "2. Mathematics/Probabilistic graphical model/Probabilistic Graphical Models 1.md",
     "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/TALLRec.md",
     "5. Information science/Information filtering/Recommender system.md",
-    "PhD/华为实习/LLM for multi-domain CTR prediction.md",
-    "Untitled.md",
     "Note warning.md",
     "README.md",
     "README_zh.md",
@@ -208,7 +209,6 @@
     "Resources/2. Mathematics/Probabilistic graphical model",
     "2. Mathematics/Probabilistic graphical model",
     "2. Mathematics/MSC2020-Mathematics Subject Classification System.pdf",
-    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/LLaMa 2.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.canvas",
     "LICENSE",
     "awesome-AI/LICENSE",
