@@ -51,3 +51,7 @@ Browse the [website](https://publish.obsidian.md/artificial-intelligence) for th
 - [Deep Learning](https://atcold.github.io/pytorch-Deep-Learning/)
 	- DS-GA 1008 · Spring 2020 · NYU Center for Data Science
 
+## Epilogue
+
+> There is a limit to our life, but to knowledge there is no limit. With what is limited to pursue after what is unlimited is a perilous thing; and when, knowing this, we still seek the increase of our knowledge, the peril cannot be averted. There should not be the practice of what is good with any thought of the fame (which it will bring), nor of what is evil with any approximation to the punishment (which it will incur): an accordance with the Central Element (of our nature) is the regular way to preserve the body, to maintain the life, to nourish our parents, and to complete our term of years.
+> -- Nourishing the Lord of Life
