@@ -26,6 +26,7 @@ Browse the [website](https://publish.obsidian.md/artificial-intelligence) for th
 	- [Applied mathematics‎](2.%20Mathematics/2.%20Applied%20mathematics%E2%80%8E/Applied%20mathematics%E2%80%8E.md)
 	- [Computational mathematics](2.%20Mathematics/3.%20Computational%20mathematics/Computational%20mathematics.md)
 	- [Discrete mathematics](2.%20Mathematics/4.%20Discrete%20mathematics/Discrete%20mathematics.md)
+	- [Probabilistic graphical model](2.%20Mathematics/Probabilistic%20graphical%20model/Probabilistic%20graphical%20model.md)
 - [Computer science](3.%20Computer%20science/Computer%20science.md)
 - [Artificial Intelligence](4.%20Artificial%20intelligence/Artificial%20Intelligence.md)
 	- [Major goals](4.%20Artificial%20intelligence/1.%20Major%20goals/Major%20goals.md)
@@ -38,10 +39,9 @@ Browse the [website](https://publish.obsidian.md/artificial-intelligence) for th
 ## Recommended notes
 
 - [General multi-task learning](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/General%20multi-task%20learning.md)
-- [Large Language Models](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Large%20language%20model.md)
-- [Large Language Models for Recommender Systems](4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/LLM4Rec.md)
-
-
+- [Large Language Models (New!)](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Large%20language%20model.md)
+- [Large Language Models for Recommender Systems (New!)](4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/LLM4Rec.md)
+- [Probabilistic graphical model (Updating)](2.%20Mathematics/Probabilistic%20graphical%20model/Probabilistic%20graphical%20model.md)
 
 ## Related Readings and Tutorials
 
