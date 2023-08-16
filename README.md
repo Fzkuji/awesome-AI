@@ -49,5 +49,5 @@ Browse the [website](https://publish.obsidian.md/artificial-intelligence) for th
 	- UvA Deep Learning Tutorials
 	- A combination of theory and practice, taken from the MSc in Artificial Intelligence for the University of Amsterdam
 - [Deep Learning](https://atcold.github.io/pytorch-Deep-Learning/)
-	- DS-GA 1008 · SPRING 2020 · NYU CENTER FOR DATA SCIENCE
+	- DS-GA 1008 · Spring 2020 · NYU Center for Data Science
 
