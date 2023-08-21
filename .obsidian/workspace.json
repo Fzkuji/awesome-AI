@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "PhD/华为实习/Paper.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "PhD/华为实习/Paper.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "PhD/华为实习/Paper.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "PhD/华为实习/Paper.md"
               }
             }
           },
@@ -158,8 +158,9 @@
   },
   "active": "93326cb6cb26aa13",
   "lastOpenFiles": [
-    "README_zh.md",
     "README.md",
+    "PhD/华为实习/Paper.md",
+    "README_zh.md",
     "2. Mathematics/Probabilistic graphical model/Probabilistic Graphical Models 1.md",
     "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
     "PhD/华为实习/Experiments.md",
@@ -193,7 +194,6 @@
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/+Papers/MMoE.md",
     "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/Emergent Abilities of Large Language Models.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/RL4Rec.md",
     "Resources/2. Mathematics/Probabilistic graphical model",
     "2. Mathematics/Probabilistic graphical model",
     "2. Mathematics/MSC2020-Mathematics Subject Classification System.pdf",
