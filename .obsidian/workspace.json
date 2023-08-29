@@ -31,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhD/华为实习/Paper.md",
+                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhD/华为实习/Paper.md",
+                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhD/华为实习/Paper.md"
+                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md"
               }
             }
           },
@@ -168,10 +169,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "21a8c1a6063b6777",
+  "active": "bf1b8db706cc6a22",
   "lastOpenFiles": [
-    "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "PhD/华为实习/Paper.md",
+    "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "PhD/华为实习/Meetings.md",
     "PhD/华为实习/Experiments.md",
     "PhD/论文审稿/AAAI 2024/737.md",
