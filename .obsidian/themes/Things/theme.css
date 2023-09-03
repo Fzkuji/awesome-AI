@@ -1,6 +1,6 @@
 /*───────────────────────────────────────────────────────
 THINGS
-Version 2.1.11
+Version 2.1.14
 Created by @colineckert
 
 Readme:
@@ -49,6 +49,10 @@ body {
   --tag-font-color-l: #1d694b;
   --tag-background-color-d: #1d694b;
   --tag-font-color-d: #ffffff;
+
+  --highlight-background-color--normal: hsl(50deg 100% 50% / 15%) !important;
+  --highlight-background-color-underline: hsl(50deg 100% 50% / 100%) !important;
+  --highlight-background-color--active: hsl(50deg 100% 50% / 20%) !important;
 
   /* Font families */
   --font-text-theme: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -330,6 +334,29 @@ body:not(.default-font-color) mark em {
   color: var(--text-normal);
 }
 
+/* Highlight styling */
+span.cm-highlight,
+.markdown-preview-view mark,
+span.search-result-file-matched-text {
+  padding: 0.05em 0;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+/* Fancy highlight */
+body.fancy-highlight span.cm-highlight,
+body.fancy-highlight .markdown-preview-view mark,
+body.fancy-highlight span.search-result-file-matched-text {
+  background-image: linear-gradient(
+    0deg,
+    var(--highlight-background-color-underline) 0%,
+    var(--highlight-background-color-underline) 2px,
+    var(--highlight-background-color--active) 2px,
+    var(--highlight-background-color--active) 100%
+  ) !important;
+  background-color: var(--highlight-text-color--active) !important;
+}
+
 /* Markdown formatting */
 .cm-formatting-strong,
 .cm-formatting-em,
@@ -370,26 +397,9 @@ body.active-line .cm-active.HyperMD-quote::before {
   opacity: 0.85;
 }
 
-/* Highlight styling */
-span.cm-highlight,
-.markdown-preview-view mark,
-span.search-result-file-matched-text {
-  padding: 0.1em 0;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-}
-
-/* Inline title align */
-body:not(.is-mobile)
-  .markdown-source-view.mod-cm6.is-readable-line-width
-  .inline-title {
-  width: calc(var(--line-width-adaptive) - var(--folding-offset));
-  max-width: calc(var(--max-width) - var(--folding-offset));
-  margin-right: auto;
-  margin-left: max(
-    calc(50% + var(--folding-offset) - var(--line-width-adaptive) / 2),
-    calc(50% + var(--folding-offset) - var(--max-width) / 2)
-  ) !important;
+/* Code blocks horizontal scroll */
+.markdown-reading-view .markdown-preview-view pre:not(.frontmatter) code {
+  white-space: pre;
 }
 
 /* ------------------- */
@@ -1069,6 +1079,12 @@ settings:
         title: Highlight active line
         description: Change background color of current working line
         id: active-line
+        type: class-toggle
+        default: false
+    -
+        title: Fancy highlighting
+        description: Enable fancy highlight styles with highlight underlines
+        id: fancy-highlight
         type: class-toggle
         default: false
     -

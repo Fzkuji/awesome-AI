@@ -19,5 +19,6 @@
   "spellcheck": false,
   "useMarkdownLinks": true,
   "newLinkFormat": "relative",
-  "showUnsupportedFiles": false
+  "showUnsupportedFiles": false,
+  "strictLineBreaks": false
 }
