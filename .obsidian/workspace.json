@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "93862520e3e31153",
+        "id": "2f2518ff7cf5e800",
         "type": "tabs",
         "children": [
           {
-            "id": "bc7aac8ba63046db",
+            "id": "e42dd531b5be694b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PhD/论文审稿/AAAI 2024/Paper 13182.md",
+                "file": "PhD/华为实习/Paper outline.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhD/论文审稿/AAAI 2024/Paper 13182.md",
+                "file": "PhD/华为实习/Paper outline.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhD/论文审稿/AAAI 2024/Paper 13182.md",
+                "file": "PhD/华为实习/Paper outline.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhD/论文审稿/AAAI 2024/Paper 13182.md"
+                "file": "PhD/华为实习/Paper outline.md"
               }
             }
           },
@@ -156,10 +156,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "bc7aac8ba63046db",
+  "active": "e42dd531b5be694b",
   "lastOpenFiles": [
-    "PhD/论文审稿/AAAI 2024/Paper 737.md",
     "PhD/论文审稿/AAAI 2024/Paper 13182.md",
+    "PhD/论文审稿/AAAI 2024/Paper 737.md",
     "PhD/华为实习/Paper.md",
     "PhD/华为实习/Paper outline.md",
     "PhD/论文审稿/RecSys 2023",
