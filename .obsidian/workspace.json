@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#CTR",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -157,8 +156,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "689651478ba8ff3e",
+  "active": "c633a6bf13e3c2d2",
   "lastOpenFiles": [
+    "PhD/Courses/SDSC8004",
+    "PhD/Courses",
     "PhD/华为实习/Paper.md",
     "PhD/华为实习/Paper outline.md",
     "README.md",
@@ -166,12 +167,12 @@
     "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
     "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "PhD/华为实习/Meetings.md",
-    "PhD/论文审稿/AAAI 2024/Paper 13182.md",
-    "PhD/论文审稿/AAAI 2024/Paper 737.md",
-    "PhD/论文审稿/RecSys 2023",
+    "PhD/Paper review/AAAI 2024/Paper 13182.md",
+    "PhD/Paper review/AAAI 2024/Paper 737.md",
+    "PhD/Paper review/RecSys 2023",
     "PhD/华为实习/Experiments.md",
-    "PhD/论文审稿/AAAI 2024",
-    "PhD/论文审稿/RecSys 2023/recsys2023_paper_583.md",
+    "PhD/Paper review/AAAI 2024",
+    "PhD/Paper review/RecSys 2023/recsys2023_paper_583.md",
     "README_zh.md",
     "2. Mathematics/Probabilistic graphical model/Probabilistic Graphical Models 1.md",
     "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
@@ -196,7 +197,6 @@
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230809113055.png",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230809111349.png",
     "2. Mathematics/Mathematics.md",
-    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Large language model.md",
     "Resources/2. Mathematics/Probabilistic graphical model",
     "2. Mathematics/Probabilistic graphical model",
     "2. Mathematics/MSC2020-Mathematics Subject Classification System.pdf",
@@ -204,8 +204,7 @@
     "LICENSE",
     "awesome-AI/LICENSE",
     "awesome-AI",
-    "PhD/论文审稿",
-    "PhD/华为实习",
+    "PhD/Paper review",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Classification.canvas",
     "5. Information science/Information filtering/Recommender system.canvas",
     "4. Artificial intelligence/1. Major goals/Affection/Emotion.canvas",
