@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PhD/华为实习/Paper outline.md",
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability theory.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhD/华为实习/Paper outline.md",
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability theory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhD/华为实习/Paper outline.md",
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability theory.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhD/华为实习/Paper outline.md"
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability theory.md"
               }
             }
           },
@@ -156,12 +156,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c633a6bf13e3c2d2",
+  "active": "e42dd531b5be694b",
   "lastOpenFiles": [
+    "2. Mathematics/MSC2020-Mathematics Subject Classification System.pdf",
+    "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability theory.md",
+    "PhD/华为实习/Paper outline.md",
     "PhD/Courses/SDSC8004",
     "PhD/Courses",
     "PhD/华为实习/Paper.md",
-    "PhD/华为实习/Paper outline.md",
     "README.md",
     "Note warning.md",
     "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
@@ -196,15 +198,12 @@
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230809113204.png",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230809113055.png",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230809111349.png",
-    "2. Mathematics/Mathematics.md",
     "Resources/2. Mathematics/Probabilistic graphical model",
     "2. Mathematics/Probabilistic graphical model",
-    "2. Mathematics/MSC2020-Mathematics Subject Classification System.pdf",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.canvas",
     "LICENSE",
     "awesome-AI/LICENSE",
     "awesome-AI",
-    "PhD/Paper review",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Classification.canvas",
     "5. Information science/Information filtering/Recommender system.canvas",
     "4. Artificial intelligence/1. Major goals/Affection/Emotion.canvas",
