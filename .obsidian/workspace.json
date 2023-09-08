@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PhD/华为实习/Paper.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/CTR prediction.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhD/华为实习/Paper.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/CTR prediction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhD/华为实习/Paper.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/CTR prediction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhD/华为实习/Paper.md"
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/CTR prediction.md"
               }
             }
           },
@@ -183,8 +183,9 @@
   },
   "active": "aa15defe7fccd8a8",
   "lastOpenFiles": [
-    "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "PhD/华为实习/Paper.md",
+    "4. Artificial intelligence/3. Applications/Recommender system/CTR prediction.md",
+    "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "PhD/华为实习/Paper outline.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability theory.md",
     "2. Mathematics/MSC2020-Mathematics Subject Classification System.pdf",
