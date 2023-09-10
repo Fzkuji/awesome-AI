@@ -38,7 +38,7 @@
               "type": "markdown",
               "state": {
                 "file": "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -118,7 +118,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5
+    "width": 276.5,
+    "collapsed": true
   },
   "right": {
     "id": "417cdb7d208faa4a",
@@ -191,7 +192,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 340.5
+    "width": 340.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
