@@ -67,8 +67,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -135,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
+                "file": "PhD/华为实习/Paper outline.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
+                "file": "PhD/华为实习/Paper outline.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md"
+                "file": "PhD/华为实习/Paper outline.md"
               }
             }
           },
@@ -207,7 +206,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4ef8d3b5c7931b6b",
+  "active": "e42dd531b5be694b",
   "lastOpenFiles": [
     "PhD/华为实习/Paper.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
