@@ -829,7 +829,7 @@ Instruction design，设计了多种prompt来微调模型
 
 | Name | Paper                                                                                                                                     | Publication    | Repository | Link                                                 | Classification                                                                     |
 | ---- | ----------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| CTRL | [CTRL Connect Tabular and Language Model for CTR Prediction](#CTRL%20Connect%20Tabular%20and%20Language%20Model%20for%20CTR%20Prediction) | arXiv preprint |            | [arXiv:2306.02841](https://arxiv.org/abs/2306.02841) | [#CTR prediction](#CTR%20prediction), [#Multimodal LLM4Rec](#Multimodal%20LLM4Rec) | 
+| CTRL | [CTRL Connect Tabular and Language Model for CTR Prediction](#CTRL%20Connect%20Tabular%20and%20Language%20Model%20for%20CTR%20Prediction) | arXiv preprint |            | [arXiv:2306.02841](https://arxiv.org/abs/2306.02841) | [CTR prediction](#CTR%20prediction), [Multimodal LLM4Rec](#Multimodal%20LLM4Rec) | 
 
 本文使用语言模型进行跨模式校准，将表格和文本进行校准，通过对比学习得到协作模型，之后再进行单独的调整。
 
@@ -837,9 +837,9 @@ Instruction design，设计了多种prompt来微调模型
 
 ### Efficiently Measuring the Cognitive Ability of LLMs: An Adaptive Testing Perspective
 
-| Name | Paper                                                                                    | Publication    | Repository | Link                                                 | Classification   |
-| ---- | ---------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ---------------- |
-|      | [Efficiently Measuring the Cognitive Ability of LLMs An Adaptive Testing Perspective](#Efficiently%20Measuring%20the%20Cognitive%20Ability%20of%20LLMs%20An%20Adaptive%20Testing%20Perspective) | arXiv preprint |            | [arXiv:2306.10512](https://arxiv.org/abs/2306.10512) | [#Performance](#Performance) |
+| Name | Paper                                                                                                                                                                                           | Publication    | Repository | Link                                                 | Classification               |
+| ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ---------------------------- |
+|      | [Efficiently Measuring the Cognitive Ability of LLMs An Adaptive Testing Perspective](#Efficiently%20Measuring%20the%20Cognitive%20Ability%20of%20LLMs%20An%20Adaptive%20Testing%20Perspective) | arXiv preprint |            | [arXiv:2306.10512](https://arxiv.org/abs/2306.10512) | [Performance](#Performance) |
 
 [“千模千测”——针对大语言模型认知能力的高效测试方法](https://mp.weixin.qq.com/s/9aWgvFGaSesu4JzEHE4Ncw)
 
@@ -847,9 +847,9 @@ Instruction design，设计了多种prompt来微调模型
 
 ### A Preliminary Study of ChatGPT on News Recommendation: Personalization, Provider Fairness, Fake News
 
-| Name | Paper                                                                                                    | Publication    | Repository | Link                                                 | Classification |
-| ---- | -------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | -------------- |
-|      | [A Preliminary Study of ChatGPT on News Recommendation Personalization, Provider Fairness, Fake News](#A%20Preliminary%20Study%20of%20ChatGPT%20on%20News%20Recommendation%20Personalization,%20Provider%20Fairness,%20Fake%20News) | arXiv preprint |            | [arXiv:2306.10702](https://arxiv.org/abs/2306.10702) | [#Performance](#Performance), [#Fairness](#Fairness), [#Authenticity](#Authenticity)               |
+| Name | Paper                                                                                                                                                                                                                               | Publication    | Repository | Link                                                 | Classification                                                                       |
+| ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------ |
+|      | [A Preliminary Study of ChatGPT on News Recommendation Personalization, Provider Fairness, Fake News](#A%20Preliminary%20Study%20of%20ChatGPT%20on%20News%20Recommendation%20Personalization,%20Provider%20Fairness,%20Fake%20News) | arXiv preprint |            | [arXiv:2306.10702](https://arxiv.org/abs/2306.10702) | [Performance](#Performance), [Fairness](#Fairness), [Authenticity](#Authenticity) |
 
 这篇论文的标题是"Exploring the Use of ChatGPT for News Recommendation: An Initial Study"，主要研究了使用ChatGPT进行新闻推荐的可能性。作者们从三个角度对ChatGPT的性能进行了评估：个性化新闻推荐、新闻提供商的公平性，以及假新闻检测。
 
@@ -866,9 +866,9 @@ Instruction design，设计了多种prompt来微调模型
 
 ### Towards Open-World Recommendation with Knowledge Augmentation from Large Language Models
 
-| Name | Paper                                                                                         | Publication    | Repository | Link                                                 | Classification |
-| ---- | --------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | -------------- |
-| KAR  | [Towards Open-World Recommendation with Knowledge Augmentation from Large Language Models](#Towards%20Open-World%20Recommendation%20with%20Knowledge%20Augmentation%20from%20Large%20Language%20Models) | arXiv preprint |            | [arXiv:2306.10933](https://arxiv.org/abs/2306.10933) |  [#LLM-augmented RS](#LLM-augmented%20RS), [#Sequential recommendation](#Sequential%20recommendation)              |
+| Name | Paper                                                                                                                                                                                                   | Publication    | Repository | Link                                                 | Classification                                                                                       |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| KAR  | [Towards Open-World Recommendation with Knowledge Augmentation from Large Language Models](#Towards%20Open-World%20Recommendation%20with%20Knowledge%20Augmentation%20from%20Large%20Language%20Models) | arXiv preprint |            | [arXiv:2306.10933](https://arxiv.org/abs/2306.10933) | [LLM-augmented RS](#LLM-augmented%20RS), [Sequential recommendation](#Sequential%20recommendation) |
 
 这篇论文提出了一个名为KAR（Open-World Knowledge Augmented Recommendation Framework with Large Language Models）的开放世界知识增强推荐框架。KAR的目标是通过大型语言模型（LLMs）获取两种类型的外部知识——用户偏好的推理知识和项目的事实知识，以增强推荐系统的性能。
 
@@ -888,9 +888,9 @@ KAR的主要贡献和特点包括：
 
 ### Generative Sequential Recommendation with GPTRec
 
-| Name   | Paper                                                 | Publication    | Repository | Link                                                 | Classification                                 |
-| ------ | ----------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ---------------------------------------------- |
-| GPTRec | [Generative Sequential Recommendation with GPTRec](#Generative%20Sequential%20Recommendation%20with%20GPTRec) | arXiv preprint |            | [arXiv:2306.11114](https://arxiv.org/abs/2306.11114) | [#LLM as RS](#LLM%20as%20RS), [#Sequential recommendation](#Sequential%20recommendation) | 
+| Name   | Paper                                                                                                         | Publication    | Repository | Link                                                 | Classification                                                                           |
+| ------ | ------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| GPTRec | [Generative Sequential Recommendation with GPTRec](#Generative%20Sequential%20Recommendation%20with%20GPTRec) | arXiv preprint |            | [arXiv:2306.11114](https://arxiv.org/abs/2306.11114) | [LLM as RS](#LLM%20as%20RS), [Sequential recommendation](#Sequential%20recommendation) |
 
 这篇论文介绍了GPTRec，一个基于GPT-2架构的生成序列推荐模型，旨在解决传统的Top-K推荐策略在处理复杂推荐目标时的限制。GPTRec采用了一种新的Next-K推荐策略，它逐项生成推荐，考虑到已经推荐的项目，从而能够产生复杂的相互依赖的推荐列表。
 
@@ -916,9 +916,9 @@ KAR的主要贡献和特点包括：
 
 ### OpenP5: Benchmarking Foundation Models for Recommendation
 
-| Name   | Paper                                                         | Publication    | Repository                                      | Link                                                 | Classification  |
-| ------ | ------------------------------------------------------------- | -------------- | ----------------------------------------------- | ---------------------------------------------------- | --------------- |
-| OpenP5 | [OpenP5 Benchmarking Foundation Models for Recommendation](#OpenP5%20Benchmarking%20Foundation%20Models%20for%20Recommendation) | arXiv preprint | [OpenP5](https://github.com/agiresearch/OpenP5) | [arXiv:2306.11134](https://arxiv.org/abs/2306.11134) | [#Benchmarks](#Benchmarks) | 
+| Name   | Paper                                                                                                                           | Publication    | Repository                                      | Link                                                 | Classification             |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------- | -------------- | ----------------------------------------------- | ---------------------------------------------------- | -------------------------- |
+| OpenP5 | [OpenP5 Benchmarking Foundation Models for Recommendation](#OpenP5%20Benchmarking%20Foundation%20Models%20for%20Recommendation) | arXiv preprint | [OpenP5](https://github.com/agiresearch/OpenP5) | [arXiv:2306.11134](https://arxiv.org/abs/2306.11134) | [Benchmarks](#Benchmarks) |
 
 这篇论文介绍了OpenP5，一个开源库，用于在Pre-train, Personalized Prompt and Predict Paradigm (P5)下对基础推荐模型进行基准测试。
 
