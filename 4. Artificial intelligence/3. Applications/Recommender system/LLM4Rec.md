@@ -803,9 +803,9 @@ Instruction design，设计了多种prompt来微调模型
 
 ### Text Is All You Need: Learning Language Representations for Sequential Recommendation
 
-| Name      | Paper                                                                                                                                                                                             | Publication | Repository | Link                                                 | Classification                                                 |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- | ---------------------------------------------------- | -------------------------------------------------------------- |
-| Recformer | [Text Is All You Need Learning Language Representations for Sequential Recommendation](#Text%20Is%20All%20You%20Need%20Learning%20Language%20Representations%20for%20Sequential%20Recommendation) | KDD 2023    |            | [arXiv:2305.13731](https://arxiv.org/abs/2305.13731) | [CTR prediction](#CTR%20prediction), [LLM4Rec](#Multimodal%20LLM4Rec) |
+| Name      | Paper                                                                                                                                                                                             | Publication | Repository | Link                                                 | Classification                                                        |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- | ---------------------------------------------------- | --------------------------------------------------------------------- |
+| Recformer | [Text Is All You Need Learning Language Representations for Sequential Recommendation](#Text%20Is%20All%20You%20Need%20Learning%20Language%20Representations%20for%20Sequential%20Recommendation) | KDD 2023    |            | [arXiv:2305.13731](https://arxiv.org/abs/2305.13731) | [CTR prediction](#CTR%20prediction), [Multimodal LLM4Rec](#Multimodal%20LLM4Rec) |
 
 [KDD'23「Amazon」Text Is All You Need：通过学习语言表征来用于序列推荐](https://mp.weixin.qq.com/s/z0nLk34Qa9A8hO2LuTuWbw)
 
@@ -819,17 +819,17 @@ Instruction design，设计了多种prompt来微调模型
 
 ### A Survey on Large Language Models for Recommendation
 
-| Name | Paper                                                     | Publication    | Repository | Link                                                 | Classification |
-| ---- | --------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | -------------- |
-|      | [A Survey on Large Language Models for Recommendation](#A%20Survey%20on%20Large%20Language%20Models%20for%20Recommendation) | arXiv preprint |            | [arXiv:2305.19860](https://arxiv.org/abs/2305.19860) | [#Surveys](#Surveys)   | 
+| Name | Paper                                                                                                                       | Publication    | Repository | Link                                                 | Classification       |
+| ---- | --------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | -------------------- |
+|      | [A Survey on Large Language Models for Recommendation](#A%20Survey%20on%20Large%20Language%20Models%20for%20Recommendation) | arXiv preprint |            | [arXiv:2305.19860](https://arxiv.org/abs/2305.19860) | [Surveys](#Surveys) |
 
 [大模型如何重塑推荐？中科大等最新《面向推荐的大型语言模型》综述，全面阐述LLM4Rec进展](https://mp.weixin.qq.com/s/WCUjCahiak4STbb0QjJInQ)
 
 ### CTRL: Connect Tabular and Language Model for CTR Prediction
 
-| Name | Paper                                                           | Publication | Repository | Link                                                 | Classification                               |
-| ---- | --------------------------------------------------------------- | ----------- | ---------- | ---------------------------------------------------- | -------------------------------------------- |
-| CTRL | [CTRL Connect Tabular and Language Model for CTR Prediction](#CTRL%20Connect%20Tabular%20and%20Language%20Model%20for%20CTR%20Prediction) | arXiv preprint |            | [arXiv:2306.02841](https://arxiv.org/abs/2306.02841) | [#CTR prediction](#CTR%20prediction), [#Multimodal LLM4Rec](#Multimodal%20LLM4Rec) |
+| Name | Paper                                                                                                                                     | Publication    | Repository | Link                                                 | Classification                                                                     |
+| ---- | ----------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| CTRL | [CTRL Connect Tabular and Language Model for CTR Prediction](#CTRL%20Connect%20Tabular%20and%20Language%20Model%20for%20CTR%20Prediction) | arXiv preprint |            | [arXiv:2306.02841](https://arxiv.org/abs/2306.02841) | [#CTR prediction](#CTR%20prediction), [#Multimodal LLM4Rec](#Multimodal%20LLM4Rec) | 
 
 本文使用语言模型进行跨模式校准，将表格和文本进行校准，通过对比学习得到协作模型，之后再进行单独的调整。
 
