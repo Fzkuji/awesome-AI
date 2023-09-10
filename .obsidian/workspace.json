@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5
+    "width": 276.5,
+    "collapsed": true
   },
   "right": {
     "id": "417cdb7d208faa4a",
@@ -134,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhD/华为实习/LLM for multi-domain CTR prediction.md"
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md"
               }
             }
           },
@@ -207,11 +208,11 @@
   },
   "active": "4ef8d3b5c7931b6b",
   "lastOpenFiles": [
+    "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "PhD/华为实习/Paper.md",
     "4. Artificial intelligence/3. Applications/Recommender system/CTR prediction.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Meta Learning/Meta Learning.md",
     "PhD/华为实习/Paper outline.md",
-    "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability theory.md",
     "2. Mathematics/MSC2020-Mathematics Subject Classification System.pdf",
     "PhD/Courses/SDSC8004",

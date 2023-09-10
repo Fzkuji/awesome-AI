@@ -791,9 +791,9 @@ Instruction design，设计了多种prompt来微调模型
 
 ### Rethinking the Evaluation for Conversational Recommendation in the Era of Large Language Models
 
-| Name   | Paper                                                                                                | Publication    | Repository                                           | Link                                                 | Classification   |
-| ------ | ---------------------------------------------------------------------------------------------------- | -------------- | ---------------------------------------------------- | ---------------------------------------------------- | ---------------- |
-| iEvaLM | [Rethinking the Evaluation for Conversational Recommendation in the Era of Large Language Models](#Rethinking%20the%20Evaluation%20for%20Conversational%20Recommendation%20in%20the%20Era%20of%20Large%20Language%20Models) | arXiv preprint | [iEvaLM-CRS](https://github.com/RUCAIBox/iEvaLM-CRS) | [arXiv:2305.13112](https://arxiv.org/abs/2305.13112) | [#Performance](#Performance) | 
+| Name   | Paper                                                                                                                                                                                                                       | Publication    | Repository                                           | Link                                                 | Classification          |
+| ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------------------------------------------- | ---------------------------------------------------- | ----------------------- |
+| iEvaLM | [Rethinking the Evaluation for Conversational Recommendation in the Era of Large Language Models](#Rethinking%20the%20Evaluation%20for%20Conversational%20Recommendation%20in%20the%20Era%20of%20Large%20Language%20Models) | arXiv preprint | [iEvaLM-CRS](https://github.com/RUCAIBox/iEvaLM-CRS) | [arXiv:2305.13112](https://arxiv.org/abs/2305.13112) | [Performance](#Performance) |
 
 ![600](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230614151527.png)
 
@@ -803,9 +803,9 @@ Instruction design，设计了多种prompt来微调模型
 
 ### Text Is All You Need: Learning Language Representations for Sequential Recommendation
 
-| Name      | Paper                                                                                     | Publication | Repository | Link                                                 | Classification                               |
-| --------- | ----------------------------------------------------------------------------------------- | ----------- | ---------- | ---------------------------------------------------- | -------------------------------------------- |
-| Recformer | [Text Is All You Need Learning Language Representations for Sequential Recommendation](#Text%20Is%20All%20You%20Need%20Learning%20Language%20Representations%20for%20Sequential%20Recommendation) | KDD 2023    |            | [arXiv:2305.13731](https://arxiv.org/abs/2305.13731) | [#CTR prediction](#CTR%20prediction), [#Multimodal LLM4Rec](#Multimodal%20LLM4Rec) |
+| Name      | Paper                                                                                                                                                                                             | Publication | Repository | Link                                                 | Classification                                                 |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- | ---------------------------------------------------- | -------------------------------------------------------------- |
+| Recformer | [Text Is All You Need Learning Language Representations for Sequential Recommendation](#Text%20Is%20All%20You%20Need%20Learning%20Language%20Representations%20for%20Sequential%20Recommendation) | KDD 2023    |            | [arXiv:2305.13731](https://arxiv.org/abs/2305.13731) | [CTR prediction](#CTR%20prediction), [LLM4Rec](#Multimodal%20LLM4Rec) |
 
 [KDD'23「Amazon」Text Is All You Need：通过学习语言表征来用于序列推荐](https://mp.weixin.qq.com/s/z0nLk34Qa9A8hO2LuTuWbw)
 
