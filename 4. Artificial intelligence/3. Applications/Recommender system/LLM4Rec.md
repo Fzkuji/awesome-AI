@@ -245,7 +245,7 @@ or recommendation
 
 | Name | Paper                                                                                         | Publication    | Repository | Link                                                 |
 | ---- | --------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- |
-| [DSI](+Papers/DSI.md)      | [#Transformer Memory as a Differentiable Search Index](#Transformer%20Memory%20as%20a%20Differentiable%20Search%20Index)                                                   | NeurIPS 2022 |                                                                           | [arXiv:2202.06991](https://arxiv.org/abs/2202.06991) |
+| M6-Rec | [M6-Rec: Generative Pretrained Language Models are Open-Ended Recommender Systems](#M6-Rec:%20Generative%20Pretrained%20Language%20Models%20are%20Open-Ended%20Recommender%20Systems) | arXiv preprint |            | [arXiv:2205.08084](https://arxiv.org/abs/2205.08084) | [Information filtering](#Information%20filtering), [LLM as RS](#LLM%20as%20RS), [Information Retrieval](#Information%20Retrieval) |
 
 
 
