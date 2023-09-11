@@ -192,8 +192,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 340.5,
-    "collapsed": true
+    "width": 340.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -209,10 +208,10 @@
   },
   "active": "aa15defe7fccd8a8",
   "lastOpenFiles": [
+    "PhD/华为实习/Paper outline.md",
+    "PhD/华为实习/Paper.md",
     "4. Artificial intelligence/3. Applications/Recommender system/CTR prediction.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
-    "PhD/华为实习/Paper.md",
-    "PhD/华为实习/Paper outline.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Meta Learning/Meta Learning.md",
     "README.md",
     "PhD/华为实习/LLM for multi-domain CTR prediction.md",
