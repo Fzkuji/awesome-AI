@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "3061e54509c82689",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PhD/华为实习/Paper.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "4ef8d3b5c7931b6b",
             "type": "leaf",
             "state": {
@@ -55,7 +67,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -121,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhD/华为实习/Paper outline.md",
+                "file": "PhD/华为实习/Paper.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhD/华为实习/Paper outline.md",
+                "file": "PhD/华为实习/Paper.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhD/华为实习/Paper outline.md"
+                "file": "PhD/华为实习/Paper.md"
               }
             }
           },
@@ -202,13 +215,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e42dd531b5be694b",
+  "active": "3061e54509c82689",
   "lastOpenFiles": [
+    "PhD/华为实习/Paper outline.md",
+    "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
+    "4. Artificial intelligence/3. Applications/Recommender system/CTR prediction.md",
     "Miscellaneous/付费项目.md",
     "PhD/华为实习/Paper.md",
-    "PhD/华为实习/Paper outline.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/CTR prediction.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Meta Learning/Meta Learning.md",
     "README.md",
     "PhD/华为实习/LLM for multi-domain CTR prediction.md",
