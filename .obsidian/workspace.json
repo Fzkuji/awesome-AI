@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PhD/华为实习/Paper.md",
+                "file": "PhD/华为实习/Paper outline.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5
+    "width": 276.5,
+    "collapsed": true
   },
   "right": {
     "id": "417cdb7d208faa4a",
@@ -134,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhD/华为实习/Paper.md",
+                "file": "PhD/华为实习/Paper outline.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhD/华为实习/Paper.md",
+                "file": "PhD/华为实习/Paper outline.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhD/华为实习/Paper.md"
+                "file": "PhD/华为实习/Paper outline.md"
               }
             }
           },
@@ -201,7 +202,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 340.5
+    "width": 340.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -217,8 +219,8 @@
   },
   "active": "3061e54509c82689",
   "lastOpenFiles": [
-    "PhD/华为实习/Paper outline.md",
     "PhD/华为实习/Paper.md",
+    "PhD/华为实习/Paper outline.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
     "4. Artificial intelligence/3. Applications/Recommender system/CTR prediction.md",
     "Miscellaneous/付费项目.md",
