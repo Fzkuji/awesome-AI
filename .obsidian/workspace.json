@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e42dd531b5be694b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PhD/华为实习/Paper outline.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "3061e54509c82689",
             "type": "leaf",
             "state": {
@@ -66,9 +54,20 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b8c56a6471d20f6b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -202,8 +201,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 340.5,
-    "collapsed": true
+    "width": 340.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -219,13 +217,14 @@
   },
   "active": "3061e54509c82689",
   "lastOpenFiles": [
-    "PhD/华为实习/Paper.md",
+    "Untitled.md",
+    "README.md",
     "PhD/华为实习/Paper outline.md",
+    "PhD/华为实习/Paper.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
     "4. Artificial intelligence/3. Applications/Recommender system/CTR prediction.md",
     "Miscellaneous/付费项目.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Meta Learning/Meta Learning.md",
-    "README.md",
     "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability theory.md",
     "2. Mathematics/MSC2020-Mathematics Subject Classification System.pdf",
@@ -243,7 +242,6 @@
     "README_zh.md",
     "2. Mathematics/Probabilistic graphical model/Probabilistic Graphical Models 1.md",
     "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
-    "Untitled.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/Uncovering ChatGPT's Capabilities in Recommender Systems.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/TALLRec.md",
     "5. Information science/Information filtering/Recommender system.md",
