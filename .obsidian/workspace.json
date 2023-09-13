@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PhD/华为实习/Paper outline.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,8 +117,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5,
-    "collapsed": true
+    "width": 276.5
   },
   "right": {
     "id": "417cdb7d208faa4a",
@@ -134,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhD/华为实习/Paper outline.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhD/华为实习/Paper outline.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhD/华为实习/Paper outline.md"
+                "file": "Untitled.md"
               }
             }
           },
@@ -217,8 +216,9 @@
   },
   "active": "3061e54509c82689",
   "lastOpenFiles": [
-    "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
+    "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230913212106.png",
     "PhD/华为实习/Paper outline.md",
+    "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
     "Untitled.md",
     "README.md",
     "PhD/华为实习/Paper.md",
@@ -252,7 +252,6 @@
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230812205525.png",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230812204141.png",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230812200801.png",
-    "2. Mathematics/Probabilistic graphical model/Probabilistic Graphical Models 3.md",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230812155154.png",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230812144713.png",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230809113204.png",
