@@ -67,7 +67,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -133,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md"
               }
             }
           },
@@ -214,12 +215,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "3061e54509c82689",
+  "active": "4ef8d3b5c7931b6b",
   "lastOpenFiles": [
+    "Untitled.md",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230913212106.png",
     "PhD/华为实习/Paper outline.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
-    "Untitled.md",
     "README.md",
     "PhD/华为实习/Paper.md",
     "4. Artificial intelligence/3. Applications/Recommender system/CTR prediction.md",
@@ -256,7 +257,6 @@
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230812144713.png",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230809113204.png",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230809113055.png",
-    "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230809111349.png",
     "Resources/2. Mathematics/Probabilistic graphical model",
     "2. Mathematics/Probabilistic graphical model",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.canvas",
