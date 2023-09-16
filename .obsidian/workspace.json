@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "PhD/华为实习/Paper.md",
                 "mode": "source",
                 "source": false
               }
@@ -67,8 +67,7 @@
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -134,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhD/华为实习/Paper outline.md",
+                "file": "PhD/华为实习/Paper.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhD/华为实习/Paper outline.md",
+                "file": "PhD/华为实习/Paper.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhD/华为实习/Paper outline.md"
+                "file": "PhD/华为实习/Paper.md"
               }
             }
           },
@@ -215,17 +214,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b8c56a6471d20f6b",
+  "active": "3061e54509c82689",
   "lastOpenFiles": [
+    "Untitled.md",
+    "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
+    "PhD/华为实习/Paper outline.md",
     "Miscellaneous/Templates/Format your notes Plus/Underline.md",
     "Miscellaneous/Templates/Format your notes Plus/Format your notes Plus.md",
     "Miscellaneous/Templates/Format your notes Plus/Embed a web page.md",
     "Miscellaneous/Templates/Format your notes Plus/Colorful words.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Meta Learning/Meta Learning.md",
     "4. Artificial intelligence/3. Applications/Recommender system/CTR prediction.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
-    "Untitled.md",
-    "PhD/华为实习/Paper outline.md",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230913212106.png",
     "README.md",
     "PhD/华为实习/Paper.md",
