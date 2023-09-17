@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PhD/华为实习/Paper outline.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/RLAIF Scaling Reinforcement Learning from Human Feedback with AI Feedback.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5
+    "width": 332.5
   },
   "right": {
     "id": "417cdb7d208faa4a",
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhD/华为实习/Paper outline.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/RLAIF Scaling Reinforcement Learning from Human Feedback with AI Feedback.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhD/华为实习/Paper outline.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/RLAIF Scaling Reinforcement Learning from Human Feedback with AI Feedback.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhD/华为实习/Paper outline.md"
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/RLAIF Scaling Reinforcement Learning from Human Feedback with AI Feedback.md"
               }
             }
           },
@@ -215,12 +215,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b8c56a6471d20f6b",
+  "active": "c633a6bf13e3c2d2",
   "lastOpenFiles": [
+    "PhD/华为实习/Paper outline.md",
+    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/RLAIF Scaling Reinforcement Learning from Human Feedback with AI Feedback.md",
     "PhD/华为实习/Paper.md",
     "Untitled.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
-    "PhD/华为实习/Paper outline.md",
     "Miscellaneous/Templates/Format your notes Plus/Underline.md",
     "Miscellaneous/Templates/Format your notes Plus/Format your notes Plus.md",
     "Miscellaneous/Templates/Format your notes Plus/Embed a web page.md",
@@ -248,7 +249,6 @@
     "2. Mathematics/Probabilistic graphical model/Probabilistic Graphical Models 1.md",
     "2. Mathematics/Probabilistic graphical model/Probabilistic graphical model.md",
     "4. Artificial intelligence/3. Applications/Recommender system/+Papers/Uncovering ChatGPT's Capabilities in Recommender Systems.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/+Papers/TALLRec.md",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230813173934.png",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230813172040.png",
     "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230812205525.png",
