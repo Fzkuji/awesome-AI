@@ -1,6 +1,6 @@
 Title: RLAIF: Scaling Reinforcement Learning from Human Feedback with AI Feedback
 
-Link: 
+Link: https://arxiv.org/abs/2309.00267
 
 Code: 
 
