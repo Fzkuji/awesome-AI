@@ -35,6 +35,15 @@ Conclusion:
 - 我们证明了RLAIF在摘要任务上与RLHF的性能相当
 - 我们比较了生成AI标签的各种技术，并为RLAIF实践者确定了最佳设置。
 
+## Preliminaries
+
+### Supervised fine-tuning
+
+
+
+### Reward modeling
+
+
 ## Methods
 
 作者解决问题的方法/算法是什么？是否基于前人的方法？基于了哪些？
