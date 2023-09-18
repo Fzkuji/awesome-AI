@@ -39,7 +39,7 @@ Conclusion:
 
 ### Supervised fine-tuning
 
-
+A pre-trained LLM is fine-tuned on a high quality labeled dataset for a downstream task using token-level supervision to produce a supervised fine-tuned (SFT) model $\pi^{S F T}$.
 
 ### Reward modeling
 
