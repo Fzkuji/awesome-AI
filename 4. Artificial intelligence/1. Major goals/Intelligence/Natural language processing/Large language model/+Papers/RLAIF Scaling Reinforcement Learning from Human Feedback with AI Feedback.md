@@ -43,6 +43,11 @@ A pre-trained LLM is fine-tuned on a high quality labeled dataset for a downstre
 
 ### Reward modeling
 
+Given an input $x$, we sample a pair of responses from one or more models $\left(y_1, y_2\right) \sim \pi$, where oftentimes the SFT model is used. The input and responses are sent to human annotators to rate which response is better according to some criteria. These annotations form a dataset of triplets $\mathcal{D}=\left\{\left(x, y_w, y_l\right)\right\}$, where $y_w$ and $y_l$ are the preferred and non-preferred responses, respectively. A reward model $r_\phi$ is trained by minimizing the following loss:
+$$
+\mathcal{L}_r(\phi)=\underset{\left(x, y_w, y_l\right) \sim \mathcal{D}}{-\mathbb{E}}\left[\log \sigma\left(r_\phi\left(x, y_w\right)-r_\phi\left(x, y_l\right)\right)\right]
+$$
+where $\sigma$ is the sigmoid function.
 
 ## Methods
 
