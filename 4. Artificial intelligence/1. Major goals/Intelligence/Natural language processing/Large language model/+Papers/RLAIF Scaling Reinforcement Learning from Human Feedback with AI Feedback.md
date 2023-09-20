@@ -74,7 +74,19 @@ $$
 \max _\theta \mathbb{E}\left[r_\phi(y \mid x)-\beta \mathbb{D}_{K L}\left(\pi_\theta^{R L}(y \mid x) \| \pi^{S F T}(y \mid x)\right)\right]
 $$
 
+这段话描述了一个增强学习策略的初始化和优化过程：
 
+1. **策略初始化**：策略 $\pi_\theta^{RL}$ 是从SFT模型的权重中初始化的。这意味着，强化学习的策略起始于SFT模型的行为。
+2. **策略优化**：接着，策略 $\pi_\theta^{RL}$ 使用强化学习进行优化，目标是最大化由奖励模型（RM）给出的奖励。这里的RM作为人类偏好的代理。
+3. **Kullback-Leibler (KL) 散度损失**：可以选择性地向优化目标中添加一个KL散度损失 $\mathbb{D}_{KL}$。这个损失的目的是惩罚策略 $\pi_\theta^{RL}$ 从原始的SFT策略 $\pi^{SFT}$ 偏离的程度。其中，$\beta$ 是一个超参数，用于控制KL散度损失的权重。这种方法与自然策略梯度技术（Kakade, 2001）相似。
+4. **防止“奖励黑客”现象**：KL损失有助于防止策略 $\pi_\theta^{RL}$ 漂移到一个区域，其中它生成的语言虽然被RM高度奖励，但其实是低质量或不自然的语言。这种现象被称为“奖励黑客”（reward hacking），如Everitt和Hutter（2016）以及Amodei等人（2016）所描述。
+5. **完整的优化目标**：整个优化的目标由以下公式描述：
+$$
+\max _\theta \mathbb{E}\left[r_\phi(y \mid x)-\beta \mathbb{D}_{KL}\left(\pi_\theta^{RL}(y \mid x) \| \pi^{SFT}(y \mid x)\right)\right]
+$$
+这个公式表示，我们希望最大化策略 $\pi_\theta^{RL}$ 在给定输入 $x$ 下生成响应 $y$ 的期望奖励，同时考虑到策略与原始SFT策略之间的KL散度。
+
+总的来说，这段描述了如何使用强化学习来优化一个策略，使其最大化奖励模型的奖励，同时考虑到策略与原始SFT模型之间的相似性。
 
 
 
