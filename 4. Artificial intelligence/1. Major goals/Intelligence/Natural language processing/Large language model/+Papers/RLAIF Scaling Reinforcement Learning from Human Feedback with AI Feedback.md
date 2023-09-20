@@ -69,6 +69,17 @@ $$
 
 ### Reinforcement learning
 
+A policy $\pi_\theta^{R L}$ is initialized from the SFT model weights and then optimized with reinforcement learning to maximize the reward given by the RM, which serves as a proxy for human preferences. Optionally, a Kullback-Leibler (KL) divergence loss $\mathbb{D}_{K L}$ is added to the objective to penalize $\pi_\theta^{R L}$ for deviating from the original SFT policy $\pi^{S F T}$, controlled by the hyperparameter $\beta$ - a technique similar to natural policy gradients (Kakade, 2001). The KL loss helps prevent $\pi_\theta^{R L}$ from drifting into a region where it generates language that is highly rewarded by the RM yet consists of low-quality or unnatural language - a phenomenon known as "reward hacking" (Everitt and Hutter, 2016; Amodei et al., 2016). The full optimization objective is described by the equation below:
+$$
+\max _\theta \mathbb{E}\left[r_\phi(y \mid x)-\beta \mathbb{D}_{K L}\left(\pi_\theta^{R L}(y \mid x) \| \pi^{S F T}(y \mid x)\right)\right]
+$$
+
+
+
+
+
+
+
 ## Methods
 
 作者解决问题的方法/算法是什么？是否基于前人的方法？基于了哪些？
