@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/RLAIF Scaling Reinforcement Learning from Human Feedback with AI Feedback.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/RLAIF Scaling Reinforcement Learning from Human Feedback with AI Feedback.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/RLAIF Scaling Reinforcement Learning from Human Feedback with AI Feedback.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/RLAIF Scaling Reinforcement Learning from Human Feedback with AI Feedback.md"
+                "file": "Untitled.md"
               }
             }
           },
@@ -217,8 +217,8 @@
   },
   "active": "b8c56a6471d20f6b",
   "lastOpenFiles": [
-    "PhD/华为实习/Paper outline.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/RLAIF Scaling Reinforcement Learning from Human Feedback with AI Feedback.md",
+    "PhD/华为实习/Paper outline.md",
     "PhD/华为实习/Paper.md",
     "Untitled.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
