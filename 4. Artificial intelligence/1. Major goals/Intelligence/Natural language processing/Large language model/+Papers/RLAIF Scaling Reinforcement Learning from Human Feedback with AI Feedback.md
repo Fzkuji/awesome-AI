@@ -93,12 +93,12 @@ $$
 
 整体来看，这个公式的目的是找到一个策略 $\pi_\theta^{RL}$，该策略不仅能获得高的奖励，而且与原始的SFT策略保持相似。这是通过最大化期望奖励并减去与原始策略的KL散度来实现的。
 
-
 ## Methods
 
-作者解决问题的方法/算法是什么？是否基于前人的方法？基于了哪些？
+### Preference labeling with LLMs
 
-  
+![](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Pasted%20image%2020230922204915.png)
+
 
 ## Evaluation
 
