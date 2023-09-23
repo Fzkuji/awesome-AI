@@ -128,6 +128,22 @@ RLHF有两种策略：
 作者使用了A2C而不是PPO作为强化学习算法
 
 
+### Evaluation
+
+#### AI Labeler Alignment
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
