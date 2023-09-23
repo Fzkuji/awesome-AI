@@ -202,11 +202,15 @@ CoT就够了，few-shot反而影响性能
 
 ### Self-consistency
 
+![400](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Pasted%20image%2020230923231654.png)
 
+实验发现生成多个结果取平均反而降低性能，但是我不理解为什么作者在这使用了T=1而不小一点的数字，导致这个结论支撑力不够。
 
+### Size of LLM labeler
 
+模型越大越好，并且因为这是一劳永逸的，所以作者认为没必要省
 
-
+![500](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Pasted%20image%2020230923232033.png)
 
 
 
