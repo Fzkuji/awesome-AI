@@ -132,7 +132,9 @@ RLHF有两种策略：
 
 #### AI Labeler Alignment
 
-
+$$
+\text { Align }=\frac{\sum_{i=1}^D \mathbb{1}\left[\arg \max _x p r_{a i_i}=\arg \max _x p r_{h_i}\right]}{|D|}
+$$
 
 
 
