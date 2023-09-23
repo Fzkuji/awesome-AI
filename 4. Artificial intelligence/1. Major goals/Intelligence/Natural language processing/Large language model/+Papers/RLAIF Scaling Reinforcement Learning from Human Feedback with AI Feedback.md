@@ -109,6 +109,10 @@ Preamble部分文中提到了几种方式
 
 #### Chain-of-thought reasoning
 
+两段式生成的CoT
+
+![](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Pasted%20image%2020230923173627.png)
+
 
 
 ## Evaluation
