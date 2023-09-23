@@ -95,6 +95,8 @@ $$
 
 ## Methods
 
+整个工作的方法大致为：LLM标注样本，基于标注的样本训练RM，最后用RM训练LLM
+
 ### Preference labeling with LLMs
 
 设计prompt让LLM判断
