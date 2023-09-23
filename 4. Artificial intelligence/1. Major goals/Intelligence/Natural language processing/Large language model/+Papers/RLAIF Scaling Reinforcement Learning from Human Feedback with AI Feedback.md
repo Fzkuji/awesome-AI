@@ -130,30 +130,31 @@ RLHF有两种策略：
 
 ### Evaluation
 
-#### AI Labeler Alignment
+一共有三个指标
 
+#### AI Labeler alignment
+
+用于判断RM的偏好和人类偏好的相似度
 $$
 \text { Align }=\frac{\sum_{i=1}^D \mathbb{1}\left[\arg \max _x p r_{a i_i}=\arg \max _x p r_{h_i}\right]}{|D|}
 $$
 
+#### Pairwise accuracy
+
+用标注好的数据判断不同RM的效果
+
+#### Win rate
+
+让人类去判断由不同RM训练出来的模型的好坏
+
+
+## Experimental details
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-## Evaluation
-
-作者如何评估自己的方法？实验的setup是什么样的？感兴趣实验数据和结果有哪些？有没有问题或者可以借鉴的地方？
 
 
 
