@@ -113,13 +113,29 @@ Preamble部分文中提到了几种方式
 
 ![](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Pasted%20image%2020230923173627.png)
 
+也有OpenAI + COT 0-shot或者OpenAI + COT 1-shot这两种。
+
+#### Self-consistency
+
+模型解决自我一致性的办法就是基于CoT生成多个path，最后讲
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Evaluation
 
 作者如何评估自己的方法？实验的setup是什么样的？感兴趣实验数据和结果有哪些？有没有问题或者可以借鉴的地方？
 
-  
+
 
 ## Conclusion
 
