@@ -97,7 +97,13 @@ $$
 
 ### Preference labeling with LLMs
 
+设计prompt让LLM判断
+
 ![](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Pasted%20image%2020230922204915.png)
+
+Preamble部分文中提到了几种方式
+
+### Addressing position bias
 
 
 ## Evaluation
