@@ -117,9 +117,9 @@ Preamble部分文中提到了几种方式
 
 #### Self-consistency
 
-模型解决自我一致性的办法就是基于CoT生成多个path，最后讲
+模型解决自我一致性的办法就是基于CoT生成多个path，最后多个结果再取平均
 
-
+### RLHF
 
 
 
