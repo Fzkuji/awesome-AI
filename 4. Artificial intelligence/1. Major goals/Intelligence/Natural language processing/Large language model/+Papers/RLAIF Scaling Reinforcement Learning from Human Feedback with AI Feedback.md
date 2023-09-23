@@ -196,10 +196,11 @@ $$
 
 测试不同模型和prompt的AI Labeler alignment
 
+![500](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Pasted%20image%2020230923230315.png)
 
+CoT就够了，few-shot反而影响性能
 
-
-
+### Self-consistency
 
 
 
