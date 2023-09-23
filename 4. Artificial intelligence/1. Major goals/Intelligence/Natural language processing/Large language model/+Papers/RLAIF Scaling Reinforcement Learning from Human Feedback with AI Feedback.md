@@ -105,6 +105,7 @@ Preamble部分文中提到了几种方式
 
 ### Addressing position bias
 
+模型越小，位置偏见越大
 
 ## Evaluation
 
