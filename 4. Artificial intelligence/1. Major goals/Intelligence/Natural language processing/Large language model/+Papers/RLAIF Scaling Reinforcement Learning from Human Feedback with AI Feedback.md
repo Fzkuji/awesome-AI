@@ -190,7 +190,25 @@ $$
 
 ![400](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Pasted%20image%2020230923221400.png)
 
-- 用RL策略训练后的模型确实比单纯的微调要受人类欢迎
+- 用RL策略训练后的模型确实比SFT要受人类欢迎
+
+### Prompting Techniques
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
