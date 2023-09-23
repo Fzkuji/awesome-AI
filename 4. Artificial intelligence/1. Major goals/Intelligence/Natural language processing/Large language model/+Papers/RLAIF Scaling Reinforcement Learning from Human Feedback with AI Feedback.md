@@ -103,9 +103,13 @@ $$
 
 Preamble部分文中提到了几种方式
 
-### Addressing position bias
+#### Addressing position bias
 
 模型越小，位置偏见越大。作者就是简单的正反手预测两次，然后取平均。
+
+
+
+
 
 ## Evaluation
 
