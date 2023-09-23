@@ -213,9 +213,18 @@ CoT就够了，few-shot反而影响性能
 ![500](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Pasted%20image%2020230923232033.png)
 
 
+### Number of preference examples
 
+用AI反馈训练的RM和人类反馈的对比如下：
 
+![500](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Pasted%20image%2020230923232123.png)
 
+虽然两种方法差不多，但是似乎人类反馈最后仍然有上升空间，但是AI反馈的没有再提升的趋势了。
+
+## Qualitative analysis
+
+RLHF: 表达的连贯性更强
+RLAIF: 生成内容的幻觉更少
 
 ## Conclusion
 
