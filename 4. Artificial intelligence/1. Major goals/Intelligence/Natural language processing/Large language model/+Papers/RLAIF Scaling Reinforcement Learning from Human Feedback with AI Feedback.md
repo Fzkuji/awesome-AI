@@ -180,6 +180,20 @@ $$
 
 > 在OpenAI的过滤后的TL;DR（Too Long; Didn't Read）数据集，使用PaLM 2 Extra-Small 训练SFT模型。然后，我们从SFT模型初始化我们的奖励模型，并在OpenAI的TL;DR人类偏好数据集上训练它们。对于第5.1节和表1中的结果，我们使用PaLM 2 Large生成AI标记的偏好，使用OpenAI + COT 0-shot提示而不使用自我一致性，然后在完整的偏好数据集上训练奖励模型。对于强化学习，我们按照附录B中的描述使用Advantage Actor Critic (A2C)训练策略。策略和价值模型都是从SFT模型初始化的。我们使用过滤后的Reddit TL;DR数据集作为初始状态来展开我们的策略。
 
+### Human evaluation
+
+我们收集了1200个来自人类的评分来评估RLHF和RLAIF策略。对于每一个评分任务，评估者会被展示一个帖子和4个由不同策略生成的摘要（每种策略RLAIF、RLHF、SFT和人类参考各一个）并被要求按照质量对它们进行排序，不允许有并列。帖子是从TL;DR监督微调数据集的保留集中抽取的，该数据集在任何其他评估中都没有被使用。一旦收集了这些排名，就可以计算关于任意两种策略的胜率。
+
+## Results
+
+### RLAIF vs. RLHF
+
+![400](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Pasted%20image%2020230923221400.png)
+
+- 用RL策略训练后的模型确实比单纯的微调要受人类欢迎
+
+
+
 ## Conclusion
 
 作者给出了哪些结论？哪些是strong conclusions, 哪些又是weak的conclusions（即作者并没有通过实验提供evidence，只在discussion中提到；或实验的数据并没有给出充分的evidence）?
