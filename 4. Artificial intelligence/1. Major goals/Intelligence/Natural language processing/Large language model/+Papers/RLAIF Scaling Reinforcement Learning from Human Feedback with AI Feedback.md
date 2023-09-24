@@ -228,35 +228,14 @@ RLAIF: 生成内容的幻觉更少
 
 ## Conclusion
 
-作者给出了哪些结论？哪些是strong conclusions, 哪些又是weak的conclusions（即作者并没有通过实验提供evidence，只在discussion中提到；或实验的数据并没有给出充分的evidence）?
-
-  
-
-## References
-
-(optional) 列出相关性高的文献，以便之后可以继续track下去。
-
-
-
-
-## Appendices
-
-### Appendix A
-
-
-
-### Appendix B
-
-
+在这项工作中，我们展示了RLAIF可以在不依赖人类注释者的情况下，与RLHF产生相当的改进。我们的实验显示RLAIF大大改进了SFT基线，改进的幅度与RLHF相当。在直接对比中，RLAIF和RLHF被人类以相似的比率偏好。我们还研究了各种AI标注技术，并进行了规模研究，以了解生成对齐偏好的最佳设置。
 
 ## Future work
 
-值得研究的点
+这项工作只探索了摘要任务，关于其是否能推广到其他任务仍是一个悬而未决的问题。
 
+估计LLM推断与人类标注在货币成本方面是否有优势。
 
+RLHF与RLAIF结合是否可以超越单一方法
 
-
-
-
-
-
+使用与策略模型大小相同的LLM标注器是否可以进一步改进策略（即模型是否可以"自我改进"）
