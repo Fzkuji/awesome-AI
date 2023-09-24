@@ -20,7 +20,7 @@ The process involves both a supervised learning and a reinforcement learning pha
 - In the supervised phase we sample from an initial model, then generate self-critiques and revisions, and then finetune the original model on revised responses. 
 - In the RL phase, we sample from the finetuned model, use a model to evaluate which of the two samples is better, and then train a preference model from this dataset of AI preferences.
 
-随着AI技术的进步，我们希望利用高级AI来监控其他AI系统。我们探索了一种新方法，称为“宪法AI”，旨在通过自我完善来培训一个无害的AI助手，而不依赖于标记有害内容的人工标签。这种方法只需要一套规则或原则进行人类监督。该方法结合了监督学习和强化学习两个阶段。在监督学习阶段，我们从初步模型中抽取数据，进行自我评估和调整，然后对模型进行微调。在强化学习阶段，我们从微调后的模型中抽取数据，并使用另一个模型来判断哪个数据更优，从而培训出一个基于AI偏好的模型。接着，我们使用这个偏好模型作为奖励信号进行训练。这样，我们成功培训出了一个能够对有害查询进行解释的无害AI助手。此外，这些方法还利用了链式思维推理，提高了AI决策的透明度和效率，同时减少了对人工标签的依赖。
+随着AI技术的进步，我们希望利用高级AI来监控其他AI系统。我们探索了一种新方法，称为“宪法AI”，旨在通过自我完善来培训一个无害的AI助手，而不依赖于标记有害内容的人工标签。这种方法只需要一套规则或原则进行人类监督。该方法结合了监督学习和强化学习两个阶段。在**监督学习**阶段，我们从初步模型中抽取数据，进行自我评估和调整，然后对模型进行微调。在**强化学习**阶段，我们从微调后的模型中抽取数据，并使用另一个模型来判断哪个数据更优，从而培训出一个基于AI偏好的模型。接着，我们使用这个偏好模型作为奖励信号进行训练。这样，我们成功培训出了一个能够对有害查询进行解释的无害AI助手。此外，这些方法还利用了*链式思维推理*，提高了AI决策的透明度和效率，同时减少了对人工标签的依赖。
 
 ## Introduction
 
