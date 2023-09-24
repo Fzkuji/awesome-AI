@@ -115,12 +115,13 @@ helpful, honest, and harmless
 
 ![](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Pasted%20image%2020230924214851.png)
 
+首先，模型参数量在大于52B的时候，性能能和人类相媲美。
+其次，CoT对性能有明显提升。
+最后，4.1有介绍实验细节，附录B有更多的实验结果。
 
+## Constitutional AI: Critiques, Revisions, and Supervised Learning
 
-
-
-
-
+### Method
 
 
 
