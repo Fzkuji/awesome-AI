@@ -111,4 +111,20 @@ Our training process has two stages (see Figure 1), where
 
 helpful, honest, and harmless
 
+![](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Pasted%20image%2020230924214544.png)
+
+![](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Pasted%20image%2020230924214851.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
