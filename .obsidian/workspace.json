@@ -4,71 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "2f2518ff7cf5e800",
+        "id": "a8128b210d8a36fd",
         "type": "tabs",
         "children": [
           {
-            "id": "3061e54509c82689",
+            "id": "37a78130a1d6c3c6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PhD/华为实习/Paper.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4ef8d3b5c7931b6b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "58f0f7405fd1793e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4. Artificial intelligence/3. Applications/Recommender system/CTR prediction.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "19a54161e37106a1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Meta Learning/Meta Learning.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b8c56a6471d20f6b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PhD/华为实习/Experiments.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Constitutional AI.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -134,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhD/华为实习/Experiments.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Constitutional AI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhD/华为实习/Experiments.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Constitutional AI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhD/华为实习/Experiments.md"
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Constitutional AI.md"
               }
             }
           },
@@ -215,12 +166,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b8c56a6471d20f6b",
+  "active": "37a78130a1d6c3c6",
   "lastOpenFiles": [
-    "PhD/华为实习/LLM for multi-domain CTR prediction.md",
-    "PhD/华为实习/Meetings.md",
-    "PhD/华为实习/Paper.md",
     "PhD/华为实习/Paper outline.md",
+    "PhD/华为实习/Paper.md",
+    "PhD/华为实习/Meetings.md",
+    "PhD/华为实习/LLM for multi-domain CTR prediction.md",
+    "PhD/华为实习/Experiments.md",
+    "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
+    "4. Artificial intelligence/3. Applications/Recommender system/CTR prediction.md",
+    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Meta Learning/Meta Learning.md",
     "Untitled.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Constitutional AI.md",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230924225934.png",
@@ -234,13 +189,10 @@
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230923221400.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230923173627.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230922204915.png",
-    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Meta Learning/Meta Learning.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
     "Miscellaneous/Templates/Format your notes Plus/Underline.md",
     "Miscellaneous/Templates/Format your notes Plus/Format your notes Plus.md",
     "Miscellaneous/Templates/Format your notes Plus/Embed a web page.md",
     "Miscellaneous/Templates/Format your notes Plus/Colorful words.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/CTR prediction.md",
     "README.md",
     "Miscellaneous/付费项目.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability theory.md",
@@ -252,7 +204,6 @@
     "PhD/Paper review/AAAI 2024/Paper 13182.md",
     "PhD/Paper review/AAAI 2024/Paper 737.md",
     "PhD/Paper review/RecSys 2023",
-    "PhD/华为实习/Experiments.md",
     "PhD/Paper review/AAAI 2024",
     "PhD/Paper review/RecSys 2023/recsys2023_paper_583.md",
     "README_zh.md",
