@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Constitutional AI.md",
+                "file": "PhD/华为实习/Experiments.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Constitutional AI.md",
+                "file": "PhD/华为实习/Experiments.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Constitutional AI.md",
+                "file": "PhD/华为实习/Experiments.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Constitutional AI.md"
+                "file": "PhD/华为实习/Experiments.md"
               }
             }
           },
@@ -217,6 +217,12 @@
   },
   "active": "b8c56a6471d20f6b",
   "lastOpenFiles": [
+    "PhD/华为实习/LLM for multi-domain CTR prediction.md",
+    "PhD/华为实习/Meetings.md",
+    "PhD/华为实习/Paper.md",
+    "PhD/华为实习/Paper outline.md",
+    "Untitled.md",
+    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Constitutional AI.md",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230924225934.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230924214851.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230924214544.png",
@@ -228,27 +234,21 @@
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230923221400.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230923173627.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230922204915.png",
-    "Untitled.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Meta Learning/Meta Learning.md",
-    "PhD/华为实习/Paper.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
-    "PhD/华为实习/Paper outline.md",
     "Miscellaneous/Templates/Format your notes Plus/Underline.md",
     "Miscellaneous/Templates/Format your notes Plus/Format your notes Plus.md",
     "Miscellaneous/Templates/Format your notes Plus/Embed a web page.md",
     "Miscellaneous/Templates/Format your notes Plus/Colorful words.md",
     "4. Artificial intelligence/3. Applications/Recommender system/CTR prediction.md",
-    "Resources/2. Mathematics/Probabilistic graphical model/Pasted image 20230913212106.png",
     "README.md",
     "Miscellaneous/付费项目.md",
-    "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability theory.md",
     "2. Mathematics/MSC2020-Mathematics Subject Classification System.pdf",
     "PhD/Courses/SDSC8004",
     "PhD/Courses",
     "Note warning.md",
     "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
-    "PhD/华为实习/Meetings.md",
     "PhD/Paper review/AAAI 2024/Paper 13182.md",
     "PhD/Paper review/AAAI 2024/Paper 737.md",
     "PhD/Paper review/RecSys 2023",
