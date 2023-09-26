@@ -139,9 +139,13 @@ helpful, honest, and harmless
 
 ### Datasets and training
 
+对于红队测试提示（即部分对话），我们按照[Ganguli et al., 2022]中的讨论和分享，收集了42,496个人工编写的提示，并通过对预训练模型进行少量提示生成了进一步的140,335个提示，总计182,831个。我们从一个有帮助的RLHF模型中为每个红队提示抽样4个批评-修订对，每个提示有4次修订。对于有帮助的提示，我们总共收集了135,296个人工编写的提示，并没有使用任何模型生成的示例。我们直接从一个有帮助的RLHF为每个提示抽样2个回应。我们总是在温度T = 1下进行抽样。每次对话包括多个提示，每个人轮流一个。
 
+然后，我们通过在无害修订和有帮助的样本上微调预训练模型来训练SL-CAI模型。我们训练了一个时代，使用的学习率是预训练学习率的0.5倍，批次大小为1024个序列。
 
+### Main results
 
+![](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Pasted%20image%2020230926101140.png)
 
 
 
