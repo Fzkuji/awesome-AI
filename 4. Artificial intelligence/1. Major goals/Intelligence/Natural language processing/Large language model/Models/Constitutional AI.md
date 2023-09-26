@@ -77,14 +77,25 @@ Our training process has two stages (see Figure 1), where
 - the first supervised phase gets the model "ondistribution"
 - the second RL stage refines and significantly improves performance
 
-(Supervised Stage) Critique → Revision → Supervised Learning
+整个训练过程可以分为2个阶段：
 
-在该过程的第一阶段，我们首先使用helpful-only AI assistant回答有害的提问。 最初这些提问的回答也是有害的。 然后我们要求模型根据宪法中的原则对其响应进行评论，然后根据评论修改原始响应。 我们按顺序反复修改响应，在每个步骤中我们从宪法中随机抽取原则。 完成此过程后，我们将通过对最终修改后的响应进行监督学习来微调预训练语言模型。 此阶段的主要目的是轻松灵活地改变模型响应的分布，以减少第二个 RL 阶段的探索需求和总训练时间。
+**Phase1: 监督版的CAI模型** **Critique → Revision → Supervised Learning**
 
+- 针对有害的prompts, 有帮助的AI模型生成有害的初始回复
+- 要求AI模型 基于宪法集合里面采样的宪法准则，判断是否回复有害；如果有害，则修改回复内容，该过程重复多次，直到获得最终的修订版本 **Critique** _→_ **Revision**
+- 根据修订的回复内容，对预训练语言模型进行微调  **Supervised Learning**
 
-(RL Stage) AI Comparison Evaluations → Preference Model → Reinforcement Learning
+这个阶段的目标主要是修改语言模型的输出分布，从而可以降低第二阶段强化学习的探索空间和训练时长
 
-这个阶段模仿RLHF，不同之处在于，作者用“AI 反馈”代替人类对harmlessness的偏好，其中 AI 根据一组宪法原则评估反应。 就像 RLHF 将人类偏好提炼成单一偏好模型 (PM) 一样。在这个阶段，我们将 LM 对一组原则的解释蒸馏回一个hybrid human/AI PM (as we use human labels for helpfulness, but only AI labels for harmlessness)。 我们从第一阶段通过监督学习 (SL) 训练的 AI 助手开始，并使用它对有害提示数据集中的每个提示生成一对响应。 然后，我们将每个提示和配对形成一个多项选择问题，我们根据宪法原则询问哪个回答是最好的。 这会生成一个 AI 生成的无害偏好数据集，我们将其与人类反馈有用数据集混合。 然后，我们按照 [Bai et al., 2022] 中的过程，在这个比较数据上训练一个偏好模型，生成一个可以为任何给定样本分配分数的 PM。 最后，我们通过 RL 针对此 PM 从第一阶段微调 SL 模型，从而产生由 RLAIF 训练的策略。
+**注意：**生成回复的AI模型指其他经过RL微调过的模型Helpful RLHF，instructGPT研究中提到过，当要求AI模型生成有害内容时，其生成的有害程度远比其他模型，相当于一个监督训练的插件，实时产生监督样本
+
+**Phase2: RL版的CAI模型** **AI Comparison Evaluations** _→_ **Preference Model** _→_ **Reinforcement Learning**
+
+- 使用第一阶段SL-CAI模型，对每个有害提示生成一组回复，并和prompt组成多项选择题，要求基于宪法准则给出哪个回复是最佳选项，最终产生无害的AI偏好数据 **AI Comparison Evaluations**
+- 混合AI反馈获得的无害偏好数据 + 人类标注的有帮助的偏好数据，训练一个偏好模型 **Preference Model** 
+- 基于PM模型和SL-CAI模型训练RL-CAI模型 **Reinforcement Learning**
+
+这个阶段和RLHF的训练方式唯一区别就是，无害的偏好数据是AI模型基于宪法准则产生的，其他部分和instructGPT的第二阶段 + 第三阶段相同；
 
 ### Contributions
 
@@ -128,6 +139,7 @@ helpful, honest, and harmless
 ![](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Pasted%20image%2020230924225934.png)
 
 我们总共编写了16个与无害性相关的不同原则，其中许多相当相似并以一般意义上解决有害性，而其他则旨在针对特定领域。它们在每个红队提示的每个修订步骤中都被随机抽样。
+我们总共编写了16个与无害性相关的不同原则，其中许多相当相似并以一般意义上解决有害性，而其他则旨在针对特定领域。它们在每个红队提示的每个修订步骤中都被随机抽样。
 
 我们还发现，语言模型有时会对其观点感到困惑。例如，它可能在应该生成修订的地方生成批评，反之亦然。我们通过为模型提供批评和修订的示例来解决这个问题，所有这些示例都以相同的方式格式化。我们在附录E和我们的存储库中都包含了这些少数示例。
 
@@ -156,6 +168,17 @@ helpful, honest, and harmless
 
 
 
+
+
+
+
+### Datasets and training
+
+
+
+
+
+### Main results
 
 
 

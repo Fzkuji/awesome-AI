@@ -31,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/RLAIF Scaling Reinforcement Learning from Human Feedback with AI Feedback.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Constitutional AI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/RLAIF Scaling Reinforcement Learning from Human Feedback with AI Feedback.md",
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Constitutional AI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/RLAIF Scaling Reinforcement Learning from Human Feedback with AI Feedback.md"
+                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Constitutional AI.md"
               }
             }
           },
@@ -178,10 +179,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "37a78130a1d6c3c6",
+  "active": "a0d49cd73f2750f0",
   "lastOpenFiles": [
-    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Constitutional AI.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/RLAIF Scaling Reinforcement Learning from Human Feedback with AI Feedback.md",
+    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Constitutional AI.md",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230926101140.png",
     "PhD/华为实习/Paper outline.md",
     "PhD/华为实习/Paper.md",
