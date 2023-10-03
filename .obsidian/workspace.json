@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a8128b210d8a36fd",
+        "id": "330a8bb84057aa08",
         "type": "tabs",
         "children": [
           {
-            "id": "37a78130a1d6c3c6",
+            "id": "50b6bfed325751dd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/RLAIF Scaling Reinforcement Learning from Human Feedback with AI Feedback.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a0d49cd73f2750f0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Constitutional AI.md",
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Sample space.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 332.5
+    "width": 218.5
   },
   "right": {
     "id": "417cdb7d208faa4a",
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/RLAIF Scaling Reinforcement Learning from Human Feedback with AI Feedback.md",
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Sample space.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/RLAIF Scaling Reinforcement Learning from Human Feedback with AI Feedback.md",
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Sample space.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/RLAIF Scaling Reinforcement Learning from Human Feedback with AI Feedback.md"
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Sample space.md"
               }
             }
           },
@@ -164,8 +152,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 340.5,
-    "collapsed": true
+    "width": 340.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -179,8 +166,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "37a78130a1d6c3c6",
+  "active": "50b6bfed325751dd",
   "lastOpenFiles": [
+    "2. Mathematics/2. Applied mathematics‎/Probability theory/σ-field.md",
+    "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability theory.md",
+    "2. Mathematics/2. Applied mathematics‎/Probability theory/Sample space.md",
+    "2. Mathematics/2. Applied mathematics‎/Probability theory/Stochastic process/Markov chain/Discrete-time Markov chain.md",
+    "2. Mathematics/2. Applied mathematics‎/Probability theory/Stochastic process/Markov chain/Chapman–Kolmogorov equation.md",
+    "2. Mathematics/2. Applied mathematics‎/Statistics/Moment.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Constitutional AI.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/RLAIF Scaling Reinforcement Learning from Human Feedback with AI Feedback.md",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230926101140.png",
@@ -208,19 +201,14 @@
     "Miscellaneous/Templates/Format your notes Plus/Colorful words.md",
     "README.md",
     "Miscellaneous/付费项目.md",
-    "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability theory.md",
     "2. Mathematics/MSC2020-Mathematics Subject Classification System.pdf",
     "PhD/Courses/SDSC8004",
     "PhD/Courses",
     "Note warning.md",
     "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
     "PhD/Paper review/AAAI 2024/Paper 13182.md",
-    "PhD/Paper review/AAAI 2024/Paper 737.md",
     "PhD/Paper review/RecSys 2023",
     "PhD/Paper review/AAAI 2024",
-    "PhD/Paper review/RecSys 2023/recsys2023_paper_583.md",
-    "README_zh.md",
-    "2. Mathematics/Probabilistic graphical model/Probabilistic Graphical Models 1.md",
     "Resources/2. Mathematics/Probabilistic graphical model",
     "2. Mathematics/Probabilistic graphical model",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.canvas",
