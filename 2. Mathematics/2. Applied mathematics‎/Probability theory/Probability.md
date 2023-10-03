@@ -95,19 +95,11 @@ $$\mathbb{P}\left(\cup_{i=1}^n A_i\right)=\sum_{i=1}^n \mathbb{P}\left(A_i\right
 Proof: By induction.
 - 包含-排除原理是用来计算多个事件的并集的概率。公式表明，要计算 $n$个事件的并集的概率，需要首先加总每个单独事件的概率，然后减去所有两两事件交集的概率，接着加回所有三个事件的交集的概率，以此类推，直到最后一个项，它是所有$n$个事件的交集的概率，符号随项数的奇偶性变化。证明通常通过数学归纳法完成。
 
-**Theorem 1.3:** Continuity of $\mathbb{P}$ for monotone sequences. If $A_1, A_2, \ldots$ is a sequence of events that is monotone increasing or monotone decreasing, then $\lim _{n \rightarrow \infty} \mathbb{P}\left(A_n\right)=\mathbb{P}(A)$, where $A=\lim _{n \rightarrow \infty} A_n$.
+**Theorem 1.3 概率的连续性:** Continuity of $\mathbb{P}$ for monotone sequences. If $A_1, A_2, \ldots$ is a sequence of events that is monotone increasing or monotone decreasing, then $\lim _{n \rightarrow \infty} \mathbb{P}\left(A_n\right)=\mathbb{P}(A)$, where $A=\lim _{n \rightarrow \infty} A_n$.
 Proof: For increasing sets, $A_n=A_1 \cup\left(A_2 \backslash A_1\right) \cup \cdots \cup\left(A_n \backslash A_{n-1}\right)$.
+   - 这个定理描述了一个事件序列的概率如何随着序列的变化而变化。如果有一个单调递增或单调递减的事件序列$A_1, A_2, \ldots$，那么该序列的概率的极限是一个确定的值，这个值就是事件$A$的概率，其中$A$是事件序列的极限。定理给出了对于单调递增序列，如何将 $A_n$表示为前$n$个事件的并集。通过这种表示，可以明确概率的连续性，即$\lim _{n \rightarrow \infty} \mathbb{P}\left(A_n\right)=\mathbb{P}(A)$。
 
-
-这两个定理是概率论中的基本定理，用于描述事件的概率性质。
-
-1. **定理 1.2 (包含排除原理)**：
-   - 
-
-2. **定理 1.3 (概率的连续性)**：
-   - 这个定理描述了一个事件序列的概率如何随着序列的变化而变化。如果有一个单调递增或单调递减的事件序列 \(A_1, A_2, \ldots\)，那么该序列的概率的极限是一个确定的值，这个值就是事件 \(A\) 的概率，其中 \(A\) 是事件序列的极限。定理给出了对于单调递增序列，如何将 \(A_n\) 表示为前 \(n\) 个事件的并集。通过这种表示，可以明确概率的连续性，即 \(\lim _{n \rightarrow \infty} \mathbb{P}\left(A_n\right)=\mathbb{P}(A)\)。
-
-这两个定理在概率论和统计学中有着广泛的应用，它们提供了计算复杂事件概率和理解概率行为随着事件变化的规律的基础。
+*这两个定理在概率论和统计学中有着广泛的应用，它们提供了计算复杂事件概率和理解概率行为随着事件变化的规律的基础。*
 
 
 
