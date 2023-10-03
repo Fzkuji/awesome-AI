@@ -1,7 +1,7 @@
 ## Sample Spaces and Events
 
 - The sample space $\Omega$ is the set of possible outcomes of an experiment. Points $\omega$ in $\Omega$ are called sample outcomes, realizations, or elements. Subsets of $\Omega$ are called events. A set $\mathcal{F}$ of all such subsets with $\Omega \in \mathcal{F}$ that is closed under complement and closed under countable union is called a sigma-algebra.
-- 样本空间 $\Omega$ 是实验可能结果的集合。$\Omega$ 中的点 $\omega$ 被称为样本结果、实现或元素。$\Omega$ 的子集被称为事件。所有这些子集的集合为 $\mathcal{F}$，其中 $\Omega \in \mathcal{F}$，且在补集和可数并集下封闭，$\mathcal{F}$ 被称为[σ-field](σ-field.md)。
+- **样本空间** $\Omega$ 是实验可能结果的集合。$\Omega$ 中的点 $\omega$ 被称为样本结果、实现或元素。$\Omega$ 的子集被称为**事件**。所有这些子集的集合为 $\mathcal{F}$，其中 $\Omega \in \mathcal{F}$，且在补集和可数并集下封闭，$\mathcal{F}$ 被称为[**σ-field**](σ-field.md)。
 
 - Example 1: A sequence of two coin tosses.
 	- $\Omega=\{H H, H T, T H, T T\}$. The set of all possible subsets of $\Omega$ (the power set) is $\mathcal{F}=$ $\{\varnothing,\{H H\},\{H T\},\{T H\},\{T T\},\{H H, H T\},\{H H, T H\},\{H H, T T\},\{H T, T H\},\{H T, T T\}$, $\{T H, T T\},\{H H, H T, T H\},\{H H, H T, T T\},\{H H, T H, T T\},\{H T, T H, T T\}, \Omega\}$.
@@ -39,11 +39,21 @@ $\varnothing=$ empty set
 
 #### 集合序列的极限 (Limit of Sets)
 
-- Limit of sets: The limit infimum and the limit supremum of a sequence of sets $A_1, A_2, \ldots$ is defined as $\liminf _{n \rightarrow \infty} A_n=\cup_{n=1}^{\infty} \cap_{k=n}^{\infty} A_k$ and $\limsup _{n \rightarrow \infty} A_n=\cap_{n=1}^{\infty} \cup_{k=n}^{\infty} A_k$ respectively. If $\liminf _{n \rightarrow \infty} A_n=\limsup _{n \rightarrow \infty} A_n=A$, then $A$ is called the limit of $A_1, A_2, \ldots$ and we write $\lim _{n \rightarrow \infty} A_n=A$.
+- PPT内容：
+	- Limit of sets: The limit infimum and the limit supremum of a sequence of sets $A_1, A_2, \ldots$ is defined as $\liminf _{n \rightarrow \infty} A_n=\cup_{n=1}^{\infty} \cap_{k=n}^{\infty} A_k$ and $\limsup _{n \rightarrow \infty} A_n=\cap_{n=1}^{\infty} \cup_{k=n}^{\infty} A_k$ respectively. If $\liminf _{n \rightarrow \infty} A_n=\limsup _{n \rightarrow \infty} A_n=A$, then $A$ is called the limit of $A_1, A_2, \ldots$ and we write $\lim _{n \rightarrow \infty} A_n=A$.
 
+-  ChatGPT解释：
+	- 集合序列$A_1, A_2, \ldots$的极限下确界 (limit infimum) 和极限上确界 (limit supremum) 分别定义为$\liminf _{n \rightarrow \infty} A_n = \cup_{n=1}^{\infty} \cap_{k=n}^{\infty} A_k$和$\limsup _{n \rightarrow \infty} A_n = \cap_{n=1}^{\infty} \cup_{k=n}^{\infty} A_k$.
+	- 如果$\liminf _{n \rightarrow \infty} A_n = \limsup _{n \rightarrow \infty} A_n = A$，那么$A$被称为集合序列$A_1, A_2, \ldots$的极限，并写作$\lim _{n \rightarrow \infty} A_n = A$.
 
+- 自己的笔记：
+	- 如果尝试理解的话，首先要理解背景信息，也就是：这里的集合序列$A_1, A_2, \ldots$就是一个事件序列。类比的话，就相当于在所有可能性（样本空间）为$\Omega$的情况下，每时每刻的发生的事件就是$A_t$，其中$t = 0,1,2,...\infty$。
+	- 理解了上述背景信息的情况下，就可以开始理解这个事件序列$A_1, A_2, \ldots$的极限问题。这里有一个很好的解释：[如何直观理解集合的极限limsup/liminf? - 雨雪晴的回答 - 知乎](https://www.zhihu.com/question/448010119/answer/1766984961)
+
+#### 单调集合序列 (Monotone Sequences of Sets)
 
 - A sequence of sets $A_1, A_2, \ldots$ is monotone increasing if $A_1 \subset A_2 \subset \cdots$ and it is monotone decreasing if $A_1 \supset A_2 \supset \cdots$. In the former case, $\lim _{n \rightarrow \infty} A_n=\cup_{i=1}^{\infty} A_i$ and in the latter case, $\lim _{n \rightarrow \infty} A_n=\cap_{i=1}^{\infty} A_i$.
 
-
+- 如果$A_1 \subset A_2 \subset \cdots$，则称集合序列$A_1, A_2, \ldots$为单调递增 (monotone increasing)；如果$A_1 \supset A_2 \supset \cdots$，则称为单调递减 (monotone decreasing)。
+- 在前者的情况下，$\lim _{n \rightarrow \infty} A_n = \cup_{i=1}^{\infty} A_i$；在后者的情况下，$\lim _{n \rightarrow \infty} A_n = \cap_{i=1}^{\infty} A_i$.
 

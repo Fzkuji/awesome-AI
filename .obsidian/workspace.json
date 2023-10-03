@@ -152,7 +152,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 340.5
+    "width": 340.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -168,9 +169,10 @@
   },
   "active": "50b6bfed325751dd",
   "lastOpenFiles": [
-    "2. Mathematics/2. Applied mathematics‎/Probability theory/σ-field.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability theory.md",
+    "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Sample space.md",
+    "2. Mathematics/2. Applied mathematics‎/Probability theory/σ-field.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Stochastic process/Markov chain/Discrete-time Markov chain.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Stochastic process/Markov chain/Chapman–Kolmogorov equation.md",
     "2. Mathematics/2. Applied mathematics‎/Statistics/Moment.md",
@@ -206,7 +208,6 @@
     "PhD/Courses",
     "Note warning.md",
     "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
-    "PhD/Paper review/AAAI 2024/Paper 13182.md",
     "PhD/Paper review/RecSys 2023",
     "PhD/Paper review/AAAI 2024",
     "Resources/2. Mathematics/Probabilistic graphical model",
