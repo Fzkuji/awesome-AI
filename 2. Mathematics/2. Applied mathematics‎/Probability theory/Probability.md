@@ -104,7 +104,7 @@ Proof: For increasing sets, $A_n=A_1 \cup\left(A_2 \backslash A_1\right) \cup \c
 
 ## Finite sample spaces
 
-1.  **Uniform probability distribution** - 均匀分布:
+**Uniform probability distribution** - 均匀分布:
 	- 当样本空间 $\Omega$ 是有限的，并且 $\mathcal{F}$ 是 $\Omega$ 的[幂集/Power set](../../1.%20Pure%20mathematics/Mathematical%20logic/Set%20theory/Concepts/Power%20set.md)时，定义了一个均匀概率分布 $\mathbb{P}(A)=$ $|A| /|\Omega|$ ，其中 $A$ 是 $\mathcal{F}$ 中的事件，而 $|A|$ 是集合 $A$ 的基数（即元素数量）。在这个分布 中，所有事件的概率仅仅依赖于它们包含的元素数量。
 
 2. **Probability space** - 概率空间:
