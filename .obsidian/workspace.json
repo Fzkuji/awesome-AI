@@ -4,34 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "a8128b210d8a36fd",
+        "id": "60881e62fd4b5aab",
         "type": "tabs",
         "children": [
           {
-            "id": "37a78130a1d6c3c6",
+            "id": "c2a6707773602c3c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/RLAIF Scaling Reinforcement Learning from Human Feedback with AI Feedback.md",
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Sample space.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "a0d49cd73f2750f0",
+            "id": "4039577d6be09c4a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Constitutional AI.md",
+                "file": "2. Mathematics/2. Applied mathematics‎/Statistics/Moment.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ec9d8ae6de4243fb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -60,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Power set",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -81,7 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 332.5
+    "width": 327.5
   },
   "right": {
     "id": "417cdb7d208faa4a",
@@ -97,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/RLAIF Scaling Reinforcement Learning from Human Feedback with AI Feedback.md",
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/RLAIF Scaling Reinforcement Learning from Human Feedback with AI Feedback.md",
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/RLAIF Scaling Reinforcement Learning from Human Feedback with AI Feedback.md"
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md"
               }
             }
           },
@@ -178,20 +191,38 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "37a78130a1d6c3c6",
+  "active": "ec9d8ae6de4243fb",
   "lastOpenFiles": [
-    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Constitutional AI.md",
-    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/RLAIF Scaling Reinforcement Learning from Human Feedback with AI Feedback.md",
-    "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230926101140.png",
-    "PhD/华为实习/Paper outline.md",
-    "PhD/华为实习/Paper.md",
-    "PhD/华为实习/Meetings.md",
-    "PhD/华为实习/LLM for multi-domain CTR prediction.md",
-    "PhD/华为实习/Experiments.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/CTR prediction.md",
-    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Meta Learning/Meta Learning.md",
+    "2. Mathematics/1. Pure mathematics/Mathematical logic/Set theory/Concepts/Power set.md",
+    "2. Mathematics/2. Applied mathematics‎/Probability theory/Sample space.md",
+    "2. Mathematics/2. Applied mathematics‎/Statistics/Moment.md",
+    "2. Mathematics/4. Discrete mathematics/Discrete mathematics.md",
+    "2. Mathematics/4. Discrete mathematics/Combinatorics/Permutation.md",
+    "2. Mathematics/4. Discrete mathematics/Combinatorics/Combination.md",
+    "2. Mathematics/4. Discrete mathematics/Combinatorics/Combinatorics.md",
+    "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
+    "2. Mathematics/4. Discrete mathematics/Combinatorics",
+    "2. Mathematics/1. Pure mathematics/Mathematical logic/Set theory/Concepts/Cardinality.md",
+    "2. Mathematics/1. Pure mathematics/Mathematical logic/Set theory/Concepts/Function.md",
+    "2. Mathematics/1. Pure mathematics/Mathematical logic/Set theory/Concepts/Set equality.md",
+    "2. Mathematics/Mathematics.md",
+    "2. Mathematics/2. Applied mathematics‎/Probability theory/σ-field.md",
+    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/Special Multi-Task Learning.md",
+    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/General Multi-Task Learning.md",
+    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Machine Learning.md",
+    "PhD/Courses/SDSC8004/Homework 1.md",
     "Untitled.md",
+    "2. Mathematics/2. Applied mathematics‎/Applied mathematics‎.md",
+    "2. Mathematics/2. Applied mathematics‎/Statistics/Statistics.md",
+    "2. Mathematics/2. Applied mathematics‎/Statistics",
+    "2. Mathematics/MSC2020-Mathematics Subject Classification System.pdf",
+    "Miscellaneous/付费项目.md",
+    "Miscellaneous/Templates/Format your notes Plus/Multiple lines equation.md",
+    "Miscellaneous/Templates/Format your notes Plus/Format your notes Plus.md",
+    "Miscellaneous/Templates/Format your notes Plus/Underline.md",
+    "Miscellaneous/Templates/Format your notes Plus/Embed a web page.md",
+    "Miscellaneous/Templates/Format your notes Plus/Colorful words.md",
+    "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230926101140.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230924225934.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230924214851.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230924214544.png",
@@ -201,31 +232,14 @@
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230923230315.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230923221400.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230923173627.png",
-    "Miscellaneous/Templates/Format your notes Plus/Underline.md",
-    "Miscellaneous/Templates/Format your notes Plus/Format your notes Plus.md",
-    "Miscellaneous/Templates/Format your notes Plus/Embed a web page.md",
-    "Miscellaneous/Templates/Format your notes Plus/Colorful words.md",
-    "README.md",
-    "Miscellaneous/付费项目.md",
-    "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability theory.md",
-    "2. Mathematics/MSC2020-Mathematics Subject Classification System.pdf",
     "PhD/Courses/SDSC8004",
     "PhD/Courses",
-    "Note warning.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
-    "PhD/Paper review/AAAI 2024/Paper 13182.md",
-    "PhD/Paper review/AAAI 2024/Paper 737.md",
     "PhD/Paper review/RecSys 2023",
     "PhD/Paper review/AAAI 2024",
-    "PhD/Paper review/RecSys 2023/recsys2023_paper_583.md",
-    "README_zh.md",
-    "2. Mathematics/Probabilistic graphical model/Probabilistic Graphical Models 1.md",
     "Resources/2. Mathematics/Probabilistic graphical model",
     "2. Mathematics/Probabilistic graphical model",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.canvas",
     "LICENSE",
-    "awesome-AI/LICENSE",
-    "awesome-AI",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Classification.canvas",
     "5. Information science/Information filtering/Recommender system.canvas",
     "4. Artificial intelligence/1. Major goals/Affection/Emotion.canvas",
