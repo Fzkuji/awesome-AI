@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability measure.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability measure.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability measure.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md"
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability measure.md"
               }
             }
           },
@@ -152,7 +152,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 340.5
+    "width": 340.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -168,11 +169,12 @@
   },
   "active": "50b6bfed325751dd",
   "lastOpenFiles": [
-    "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability measure.md",
-    "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability theorems.md",
+    "2. Mathematics/2. Applied mathematics‎/Probability theory/Untitled.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability theory.md",
-    "2. Mathematics/2. Applied mathematics‎/Probability theory/Sample space.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
+    "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability measure.md",
+    "2. Mathematics/2. Applied mathematics‎/Probability theory/Sample space.md",
+    "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability theorems.md",
     "2. Mathematics/4. Discrete mathematics/Combinatorics/Combination.md",
     "2. Mathematics/4. Discrete mathematics/Combinatorics/Permutation.md",
     "2. Mathematics/4. Discrete mathematics/Combinatorics/Combinatorics.md",
@@ -204,7 +206,6 @@
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230923221400.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230923173627.png",
     "Miscellaneous/Templates/Format your notes Plus/Underline.md",
-    "Miscellaneous/Templates/Format your notes Plus/Format your notes Plus.md",
     "2. Mathematics/MSC2020-Mathematics Subject Classification System.pdf",
     "PhD/Courses/SDSC8004",
     "PhD/Courses",
