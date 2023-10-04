@@ -10,7 +10,7 @@ This is current arrangement of this note.
 	- [Mathematical proof](0.%20Foundations%20of%20mathematics/Mathematical%20proof/Mathematical%20proof.md)
 1. [Pure mathematics](1.%20Pure%20mathematics/Pure%20mathematics.md)
 	- [Algebra](1.%20Pure%20mathematics/Algebra/Algebra.md)
-	- [Analysis](1.%20Pure%20mathematics/Analysis/Analysis.md)
+	- [Mathematical analysis](1.%20Pure%20mathematics/Mathematical%20analysis/Mathematical%20analysis.md)
 	- Geometry
 	- Topology
 	- [Mathematical logic](1.%20Pure%20mathematics/Mathematical%20logic/Mathematical%20logic.md)
