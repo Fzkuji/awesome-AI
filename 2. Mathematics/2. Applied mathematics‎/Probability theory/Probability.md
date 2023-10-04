@@ -133,7 +133,9 @@ Proof: For increasing sets, $A_n=A_1 \cup\left(A_2 \backslash A_1\right) \cup \c
 - **Lemma 1.4:** If $A$ and $B$ are independent events, then $\mathbb{P}(A \mid B)=\mathbb{P}(A)$.
 - **Lemma 1.5:** For any pair of events, $\mathbb{P}(A \cap B)=\mathbb{P}(A \mid B) \mathbb{P}(B)=$ $\mathbb{P}(B \mid A) \mathbb{P}(A)$.
 
-- Example: A medical test for a disease $D$ has outcomes + and -. The probabilities are:
+## Example question
+
+A medical test for a disease $D$ has outcomes + and -. The probabilities are:
 
 |     |  $D$  | $D^c$ |
 |:---:|:-----:|:-----:|
@@ -141,3 +143,17 @@ Proof: For increasing sets, $A_n=A_1 \cup\left(A_2 \backslash A_1\right) \cup \c
 |  -  | 0.001 | 0.891 |
 
 Suppose you go for a test and get a positive. What is the probability you have the disease?
+
+这个问题可以通过贝叶斯定理来解决。贝叶斯定理是一种计算条件概率的方法，它可以帮助我们更新我们对某个假设的信念，基于新的证据。在这个例子中，我们想要计算在测试结果为阳性的条件下，患有疾病$D$的概率。我们可以用符号$P(D | +)$来表示这个概率。
+
+贝叶斯定理的公式如下：
+$$P(D | +) = \frac{P(+ | D) \cdot P(D)}{P(+)}$$
+我们可以从表中得到以下信息：
+
+1. $P(+ | D)$是在患有疾病$D$的条件下，测试结果为阳性的概率，等于$0.009$。
+2. $P(D)$是患有疾病$D$的概率，等于$0.009 + 0.001 = 0.01$（因为我们的测试可以是阳性或阴性）。
+3. $P(+)$是测试结果为阳性的概率，等于$0.009 + 0.099 = 0.108$（无论是否患有疾病）。
+
+现在我们可以将这些值代入贝叶斯定理的公式中：
+$$P(D | +) = \frac{0.009 \cdot 0.01}{0.108} = \frac{0.00009}{0.108} \approx 0.00083$$
+所以，如果您的测试结果是阳性，那么您患有疾病$D$的概率约为$0.083$或$8.3\%$。
