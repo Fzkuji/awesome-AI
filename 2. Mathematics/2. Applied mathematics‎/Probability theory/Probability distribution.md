@@ -39,7 +39,7 @@ Distributions with special properties or for especially important applications a
 $$
 \mathbb{P}(-\infty<X \leq a)=\int_{-\infty}^a f_X(x) d x \text {. }
 $$
-- 定义 1.6：如果存在函数$f_X$，称为$X$的概率密度函数（PDF），使得$f_X(x) \geq 0 \, \forall x \in \mathbb{R}$，且对于每个实数 $a$，有$$\mathbb{P}(-\infty<X \leq a)=\int_{-\infty}^a f_X(x) d x \text {. }$$则随机变量$X$是连续的（更准确地说，是相对于 Lebesgue 测度绝对连续的）。
+- 定义 1.6：假设一个随机变量$X$是连续的（更准确地说，是相对于 Lebesgue 测度绝对连续的），如果存在一个函数的概率密度函数（PDF），使得$f_X(x) \geq 0 \, \forall x \in \mathbb{R}$，且对于每个实数 $a$，有$$CDF = F_X(a) = \mathbb{P}(-\infty<X \leq a)=\int_{-\infty}^a f_X(x) d x \text {. }$$则随机变量$X$是连续的。
 
 
 - A function $f_X(x)$ of $x \in \mathbb{R}$ is a PDF if $f_X(x) \geq 0 \forall x \in \mathbb{R}$ and $\int_{-\infty}^{\infty} f_X(x) d x=1$.
