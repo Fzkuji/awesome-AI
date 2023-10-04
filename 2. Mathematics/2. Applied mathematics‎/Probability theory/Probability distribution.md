@@ -30,17 +30,28 @@ Distributions with special properties or for especially important applications a
 ## Probability mass function and probability density function
 概率质量函数和概率密度函数
 
-- Definition 1.5: $X$ is a discrete random variable if it takes countably many values $\left\{x_1, x_2, \ldots\right\}$. More precisely, a discrete random variable $X$ has a probability mass function (PMF) $f_X(x)=\mathbb{P}(X=x)$, where $f_X(x)>0$ if and only if $x \in\left\{x_1, x_2, \ldots\right\}$.
+一个是离散的，一个是连续的
 
-- Definition 1.6: A random variable $X$ is continuous (more precisely, absolutely continuous with respect to the Lebesgue measure) if there exists a function $f_X$, called the probability density function (PDF) of $X$, such that $f_X(x) \geq 0 \forall x \in \mathbb{R}$, and for every real number $a$,
+- Definition 1.5: $X$ is a discrete random variable if it takes countably many values $\left\{x_1, x_2, \ldots\right\}$. More precisely, a discrete random variable $X$ has a probability mass function (PMF) $f_X(x)=\mathbb{P}(X=x)$, where $f_X(x)>0$ if and only if $x \in\left\{x_1, x_2, \ldots\right\}$.
+- 定义 1.5：如果$X$有可数多个值$\left\{x_1, x_2, \ldots\right\}$，则$X$是离散随机变量。更准确地说，离散随机变量$X$具有概率质量函数（PMF）$f_X(x)=\mathbb{P}(X=x)$，其中$f_X(x)>0$当且仅当$x \in\left\{x_1, x_2, \ldots\right\}$。
+
+- Definition 1.6: A random variable  is continuous (more precisely, absolutely continuous with respect to the Lebesgue measure) if there exists a function $f_X$, called the probability density function (PDF) of $X$, such that $f_X(x) \geq 0 \forall x \in \mathbb{R}$, and for every real number $a$,
 $$
 \mathbb{P}(-\infty<X \leq a)=\int_{-\infty}^a f_X(x) d x \text {. }
 $$
 - A function $f_X(x)$ of $x \in \mathbb{R}$ is a PDF if $f_X(x) \geq 0 \forall x \in \mathbb{R}$ and $\int_{-\infty}^{\infty} f_X(x) d x=1$.
+
 - Note: The argument $x$ to the PDF/PMF of any random variable $X$ can be any real number, i.e., $x \in \mathbb{R}$.
 
 
 
+- 定义 1.6：如果存在函数$f_X$，称为$X$的概率密度函数（PDF），使得$f_X(x) \geq 0 \, \forall x \in \mathbb{R}$，且对于每个实数 $a$，有
+$$
+\mathbb{P}(-\infty<X \leq a)=\int_{-\infty}^a f_X(x) d x \text {. }
+$$
+则随机变量$X$是连续的（更准确地说，是相对于 Lebesgue 测度绝对连续的）。
+- 如果$f_X(x) \geq 0 \, \forall x \in \mathbb{R}$且$\int_{-\infty}^{\infty} f_X(x) d x=1$，则$x \in \mathbb{R}$的函数$f_X(x)$是 PDF。
+- 注意：任何随机变量$X$的 PDF/PMF 的参数$x$可以是任何实数，即$x \in \mathbb{R}$。
 
 
 
