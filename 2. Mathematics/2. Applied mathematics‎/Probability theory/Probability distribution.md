@@ -16,16 +16,27 @@ Distributions with special properties or for especially important applications a
 累积分布函数
 
 - Definition 1.4: The cumulative distribution function (CDF) of a random variable $X$ is the function $F_X: \mathbb{R} \rightarrow[0,1]$ defined by $F_X(x)=$ $\mathbb{P}(X \leq x)$.
-- 累积分布函数就是
+- 累积分布函数就是$X$这个变量小于某个值的概率，就是将$X \leq x$之前的概率进行加和或者积分
 
 - Theorem 1.8: If two random variables $X$ and $Y$ have the same CDF, then they have the same distribution, i.e., $\mathbb{P}_X=\mathbb{P}_Y$.
+- 累积分布函数相同，那么两个分布也就相同
 
-- Theorem 1.9: A function $F: \mathbb{R} \rightarrow[0,1]$ is a CDF if and only if 
+- Theorem 1.9: A function $F: \mathbb{R} \rightarrow[0,1]$ is a CDF if and only if:
 	1. $x_1<x_2 \Rightarrow F\left(x_1\right) \leq F\left(x_2\right)$.
 	2. $\lim _{x \rightarrow-\infty} F(x)=0$ and $\lim _{x \rightarrow \infty} F(x)=1$.
 	3. $F$ is right continuous, i.e., $F(x)=\lim _{\substack{y \rightarrow x \\ y>x}} F(y)$.
+- 如果一个函数是累积分布函数，那么要满足以上三个条件
 
+## Probability mass function and probability density function
+概率质量函数和概率密度函数
 
+- Definition 1.5: $X$ is a discrete random variable if it takes countably many values $\left\{x_1, x_2, \ldots\right\}$. More precisely, a discrete random variable $X$ has a probability mass function (PMF) $f_X(x)=\mathbb{P}(X=x)$, where $f_X(x)>0$ if and only if $x \in\left\{x_1, x_2, \ldots\right\}$.
+- Definition 1.6: A random variable $X$ is continuous (more precisely, absolutely continuous with respect to the Lebesgue measure) if there exists a function $f_X$, called the probability density function (PDF) of $X$, such that $f_X(x) \geq 0 \forall x \in \mathbb{R}$, and for every real number $a$,
+$$
+\mathbb{P}(-\infty<X \leq a)=\int_{-\infty}^a f_X(x) d x \text {. }
+$$
+- A function $f_X(x)$ of $x \in \mathbb{R}$ is a PDF if $f_X(x) \geq 0 \forall x \in \mathbb{R}$ and $\int_{-\infty}^{\infty} f_X(x) d x=1$.
+- Note: The argument $x$ to the PDF/PMF of any random variable $X$ can be any real number, i.e., $x \in \mathbb{R}$.
 
 
 
