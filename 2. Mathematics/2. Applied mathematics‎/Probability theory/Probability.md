@@ -126,6 +126,7 @@ Proof: For increasing sets, $A_n=A_1 \cup\left(A_2 \backslash A_1\right) \cup \c
 
 
 # Conditional probability
+条件概率
 
 - Definition 1.2: If $\mathbb{P}(B)>0$, the conditional probability of $A$ given $B$ is $\mathbb{P}(A \mid B)=\mathbb{P}(A \cap B) / \mathbb{P}(B)$.
 
