@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory/Measure theory.md",
+                "file": "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory/Measure.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory/Measure theory.md",
+                "file": "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory/Measure.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory/Measure theory.md",
+                "file": "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory/Measure.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory/Measure theory.md"
+                "file": "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory/Measure.md"
               }
             }
           },
@@ -169,8 +169,9 @@
   },
   "active": "50b6bfed325751dd",
   "lastOpenFiles": [
-    "2. Mathematics/1. Pure mathematics/Mathematical analysis/Mathematical analysis.md",
     "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory/Measure theory.md",
+    "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory/Measure.md",
+    "2. Mathematics/1. Pure mathematics/Mathematical analysis/Mathematical analysis.md",
     "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability measure.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Untitled.md",
@@ -197,7 +198,6 @@
     "PhD/华为实习/Experiments.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
     "4. Artificial intelligence/3. Applications/Recommender system/CTR prediction.md",
-    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Meta Learning/Meta Learning.md",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230924225934.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230924214851.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230924214544.png",
