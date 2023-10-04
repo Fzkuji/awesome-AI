@@ -107,13 +107,10 @@ Proof: For increasing sets, $A_n=A_1 \cup\left(A_2 \backslash A_1\right) \cup \c
 **Uniform probability distribution** - 均匀分布:
 	- 当样本空间 $\Omega$ 是有限的，并且 $\mathcal{F}$ 是 $\Omega$ 的[幂集/Power set](../../1.%20Pure%20mathematics/Mathematical%20logic/Set%20theory/Concepts/Power%20set.md)时，定义了一个均匀概率分布 $\mathbb{P}(A)=$ $|A| /|\Omega|$ ，其中 $A$ 是 $\mathcal{F}$ 中的事件，而 $|A|$ 是集合 $A$ 的基数（即元素数量）。在这个分布 中，所有事件的概率仅仅依赖于它们包含的元素数量。
 
-2. **Probability space** - 概率空间:
-	- 三元组 $(\Omega, \mathcal{F}, \mathbb{P})$ 被称为概率空间。它是概率论的基础结构，其中 $\Omega$ 是样本空间， $\mathcal{F}$ 是 事件的集合，而 $\mathbb{P}$ 是定义在这些事件上的概率度量。
+### Probability space
 
-3. Counting **permutations and combinations** - 排列和组合的计数:
-	- 这里提了一嘴排列组合
-	- [Permutation](../../4.%20Discrete%20mathematics/Combinatorics/Permutation.md) - 排列，是指从 $n$ 个对象中按照顺序选择所有对象的方法数量，总共有 $n$ ! 种方法 (其中 $n$ ! 表示 $n$ 的阶乘)。
-	- [Combination](../../4.%20Discrete%20mathematics/Combinatorics/Combination.md) - 组合，是指从 $n$ 个对象中选 择 $k$ 个对象的方法数量，而不考虑顺序，总共有 $\left(\begin{array}{l}n \\ k\end{array}\right)=\frac{n !}{k !(n-k) !}$ 种方法。
+三元组 $(\Omega, \mathcal{F}, \mathbb{P})$ 被称为概率空间（Probability space）。它是概率论的基础结构，其中 $\Omega$ 是样本空间， $\mathcal{F}$ 是 事件的集合，而 $\mathbb{P}$ 是定义在这些事件上的概率度量。
+
 
 ## Independence
 

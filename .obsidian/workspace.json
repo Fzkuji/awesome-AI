@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "7d2c7141f062de82",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -65,8 +78,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md"
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md"
               }
             }
           },
@@ -167,10 +179,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "354524349192e7de",
+  "active": "7d2c7141f062de82",
   "lastOpenFiles": [
-    "2. Mathematics/2. Applied mathematics‎/Probability theory/Untitled.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
+    "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability measure.md",
     "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory/Measure.md",
     "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory/Measure theory.md",
