@@ -9,6 +9,7 @@ A function $\mathbb{P}$ that assigns a real number $\mathbb{P}(A)$ to each event
 *Note: Disjoint events are also called mutually exclusive events.*
 
 ## Exercise: Prove the following
+练习：证明以下内容
 
 1. $\mathbb{P}(\varnothing)=0$.
 **空集的概率是 $\mathbf{0}$**
@@ -56,7 +57,7 @@ $$
 \mathbb{P}\left(\bigcup_{i=1}^{\infty} A_i\right) \leq \sum_{i=1}^{\infty} \mathbb{P}\left(A_i\right)
 $$
 
-
+## Lemmas & theorems
 
 **Lemma 1.1:** For any events $A$ and $B, \mathbb{P}(A \cup B)=\mathbb{P}(A)+\mathbb{P}(B)-\mathbb{P}(A \cap B)$. 
 
@@ -102,4 +103,30 @@ Proof: For increasing sets, $A_n=A_1 \cup\left(A_2 \backslash A_1\right) \cup \c
 *这两个定理在概率论和统计学中有着广泛的应用，它们提供了计算复杂事件概率和理解概率行为随着事件变化的规律的基础。*
 
 
+# Finite sample spaces
 
+1.  **Uniform probability distribution** - 均匀分布:
+	- 当样本空间 $\Omega$ 是有限的，并且 $\mathcal{F}$ 是 $\Omega$ 的[幂集/Power set](../../1.%20Pure%20mathematics/Mathematical%20logic/Set%20theory/Concepts/Power%20set.md)时，定义了一个均匀概率分布 $\mathbb{P}(A)=$ $|A| /|\Omega|$ ，其中 $A$ 是 $\mathcal{F}$ 中的事件，而 $|A|$ 是集合 $A$ 的基数（即元素数量）。在这个分布 中，所有事件的概率仅仅依赖于它们包含的元素数量。
+
+2. **Probability space** - 概率空间:
+	- 三元组 $(\Omega, \mathcal{F}, \mathbb{P})$ 被称为概率空间。它是概率论的基础结构，其中 $\Omega$ 是样本空间， $\mathcal{F}$ 是 事件的集合，而 $\mathbb{P}$ 是定义在这些事件上的概率度量。
+
+3. Counting **permutations and combinations** - 排列和组合的计数:
+	- 这里提了一嘴排列组合
+	- [Permutation](../../4.%20Discrete%20mathematics/Combinatorics/Permutation.md) - 排列，是指从 $n$ 个对象中按照顺序选择所有对象的方法数量，总共有 $n$ ! 种方法 (其中 $n$ ! 表示 $n$ 的阶乘)。
+	- [Combination](../../4.%20Discrete%20mathematics/Combinatorics/Combination.md) - 组合，是指从 $n$ 个对象中选 择 $k$ 个对象的方法数量，而不考虑顺序，总共有 $\left(\begin{array}{l}n \\ k\end{array}\right)=\frac{n !}{k !(n-k) !}$ 种方法。
+
+# Independence
+独立性
+
+- Definition 1.1: Two events $A$ and $B$ are independent if $\mathbb{P}(A \cap B)=$ $\mathbb{P}(A) \mathbb{P}(B)$. 
+
+- The events $A_i, i \in I$ are independent if $\mathbb{P}\left(\cap_{i \in J} A_i\right)=$ $\prod_{i \in J} \mathbb{P}\left(A_i\right)$ for every finite subset $J$ of $I$. 
+- Note: The index set $I$ can consists of infinitely many elements.
+
+
+# Conditional probability
+
+- Definition 1.2: If $\mathbb{P}(B)>0$, the conditional probability of $A$ given $B$ is $\mathbb{P}(A \mid B)=\mathbb{P}(A \cap B) / \mathbb{P}(B)$.
+
+- Note $\mathbb{P}(\cdot \mid B)$ is a probability measure.
