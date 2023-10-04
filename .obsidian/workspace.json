@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "354524349192e7de",
+            "id": "7d2c7141f062de82",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,7 +20,7 @@
             }
           },
           {
-            "id": "7d2c7141f062de82",
+            "id": "7e3ef352ca4a60b1",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -179,16 +179,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "7d2c7141f062de82",
+  "active": "7e3ef352ca4a60b1",
   "lastOpenFiles": [
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md",
+    "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability theory.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability measure.md",
     "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory/Measure.md",
     "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory/Measure theory.md",
     "2. Mathematics/1. Pure mathematics/Mathematical analysis/Mathematical analysis.md",
     "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory",
-    "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability theory.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Sample space.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability theorems.md",
     "2. Mathematics/4. Discrete mathematics/Combinatorics/Combination.md",
@@ -209,7 +209,6 @@
     "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "PhD/华为实习/Experiments.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
-    "4. Artificial intelligence/3. Applications/Recommender system/CTR prediction.md",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230924225934.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230924214851.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230924214544.png",

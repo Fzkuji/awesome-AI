@@ -189,7 +189,9 @@ $$
 所以, 如果您收到一个包含单词“free”的邮件, 那么这封邮件是垃圾邮件的概率约为 $99.37 \%$ 。
 
 
+# Random variable
 
+详情见笔记：[Random variable](Random%20variable.md)
 
 
 
