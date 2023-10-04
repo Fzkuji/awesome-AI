@@ -5,8 +5,6 @@ Let $(\Omega, \mathcal{F}, \mathbb{P})$ be a probability space. A random variabl
 
 假设 $(\Omega, \mathcal{F}, \mathbb{P})$ 是一个[probability space](Probability.md#Probability%20space)概率空间。随机变量是一个函数 $X: \Omega \rightarrow \mathbb{R}$，它将每个结果 $\omega$ 映射到一个实数 $X(\omega)$。另外，如果 $\mathcal{B}$ 表示实数集 $\mathbb{R}$ 的 Borel σ-代数，那么 $X^{-1}(B) \in \mathcal{F}$ 对所有 $B \in \mathcal{B}$ 都成立。注意：你可以将 $\mathcal{B}$ 看作是所有实数集 $\mathbb{R}$ 的"好"子集（称为 Borel 集）的集合，比如开区间和闭区间。
 
-- The distribution of $X$ is the probability measure $\mathbb{P}_X(B)=\mathbb{P}(X \in B)$ $=\mathbb{P}(\{\omega \in \Omega: X(\omega) \in B\}) \forall B \in \mathcal{B}$. Note: we will often just write $\mathbb{P}$ instead of $\mathbb{P}_X$.
-- Example: Flip a coin ten times. The number of heads in the sequence is a random variable $X(\omega)$. If $\omega=H$ HHHHTTTTT, then $X(\omega)=5$.
 
 ## Distribution
 
