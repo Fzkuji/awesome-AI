@@ -8,12 +8,12 @@ Let $(\Omega, \mathcal{F}, \mathbb{P})$ be a probability space. A random variabl
 - The distribution of $X$ is the probability measure $\mathbb{P}_X(B)=\mathbb{P}(X \in B)$ $=\mathbb{P}(\{\omega \in \Omega: X(\omega) \in B\}) \forall B \in \mathcal{B}$. Note: we will often just write $\mathbb{P}$ instead of $\mathbb{P}_X$.
 - Example: Flip a coin ten times. The number of heads in the sequence is a random variable $X(\omega)$. If $\omega=H$ HHHHTTTTT, then $X(\omega)=5$.
 
+## Distribution
 
+The distribution of $X$ is the [probability measure](Probability%20measure.md) $\mathbb{P}_X(B)=\mathbb{P}(X \in B) =\mathbb{P}(\{\omega \in \Omega: X(\omega) \in B\}) \forall B \in \mathcal{B}$. 
 
+Note: we will often just write $\mathbb{P}$ instead of $\mathbb{P}_X$.
 
+##  Example
 
-2. **随机变量的分布**：
-   - 随机变量 $X$ 的分布是概率度量 $\mathbb{P}_X(B)=\mathbb{P}(X \in B) = \mathbb{P}(\{\omega \in \Omega: X(\omega) \in B\})$ 对所有 $B \in \mathcal{B}$ 都成立。注意：我们通常会直接写 $\mathbb{P}$ 而不是 $\mathbb{P}_X$。
-
-3. **示例**：
-   - 抛掷一枚硬币十次。序列中的正面朝上的次数是一个随机变量 $X(\omega)$。如果 $\omega=H$ HHHHTTTTT，那么 $X(\omega)=5$。
+抛掷一枚硬币十次。序列中的正面朝上的次数是一个随机变量 $X(\omega)$。如果 $\omega=H$ HHHHTTTTT，那么 $X(\omega)=5$。
