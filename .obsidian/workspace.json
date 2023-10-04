@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory/Borel set.md",
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory/Borel set.md",
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory/Borel set.md",
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory/Borel set.md"
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md"
               }
             }
           },
@@ -193,10 +193,10 @@
   },
   "active": "ec9d8ae6de4243fb",
   "lastOpenFiles": [
-    "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md",
     "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory/Borel set.md",
-    "2. Mathematics/2. Applied mathematics‎/Statistics/Moment.md",
+    "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability distribution.md",
+    "2. Mathematics/2. Applied mathematics‎/Statistics/Moment.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability theory.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability measure.md",
