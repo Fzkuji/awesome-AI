@@ -57,7 +57,20 @@ $$
 \mathbb{P}\left(\bigcup_{i=1}^{\infty} A_i\right) \leq \sum_{i=1}^{\infty} \mathbb{P}\left(A_i\right)
 $$
 
-## Lemmas & theorems
+## Finite sample spaces
+
+1.  **Uniform probability distribution** - 均匀分布:
+	- 当样本空间 $\Omega$ 是有限的，并且 $\mathcal{F}$ 是 $\Omega$ 的[幂集/Power set](../../1.%20Pure%20mathematics/Mathematical%20logic/Set%20theory/Concepts/Power%20set.md)时，定义了一个均匀概率分布 $\mathbb{P}(A)=$ $|A| /|\Omega|$ ，其中 $A$ 是 $\mathcal{F}$ 中的事件，而 $|A|$ 是集合 $A$ 的基数（即元素数量）。在这个分布 中，所有事件的概率仅仅依赖于它们包含的元素数量。
+
+2. **Probability space** - 概率空间:
+	- 三元组 $(\Omega, \mathcal{F}, \mathbb{P})$ 被称为概率空间。它是概率论的基础结构，其中 $\Omega$ 是样本空间， $\mathcal{F}$ 是 事件的集合，而 $\mathbb{P}$ 是定义在这些事件上的概率度量。
+
+3. Counting **permutations and combinations** - 排列和组合的计数:
+	- 这里提了一嘴排列组合
+	- [Permutation](../../4.%20Discrete%20mathematics/Combinatorics/Permutation.md) - 排列，是指从 $n$ 个对象中按照顺序选择所有对象的方法数量，总共有 $n$ ! 种方法 (其中 $n$ ! 表示 $n$ 的阶乘)。
+	- [Combination](../../4.%20Discrete%20mathematics/Combinatorics/Combination.md) - 组合，是指从 $n$ 个对象中选 择 $k$ 个对象的方法数量，而不考虑顺序，总共有 $\left(\begin{array}{l}n \\ k\end{array}\right)=\frac{n !}{k !(n-k) !}$ 种方法。
+
+# Theorems
 
 **Lemma 1.1:** For any events $A$ and $B, \mathbb{P}(A \cup B)=\mathbb{P}(A)+\mathbb{P}(B)-\mathbb{P}(A \cap B)$. 
 
@@ -103,18 +116,7 @@ Proof: For increasing sets, $A_n=A_1 \cup\left(A_2 \backslash A_1\right) \cup \c
 *这两个定理在概率论和统计学中有着广泛的应用，它们提供了计算复杂事件概率和理解概率行为随着事件变化的规律的基础。*
 
 
-# Finite sample spaces
 
-1.  **Uniform probability distribution** - 均匀分布:
-	- 当样本空间 $\Omega$ 是有限的，并且 $\mathcal{F}$ 是 $\Omega$ 的[幂集/Power set](../../1.%20Pure%20mathematics/Mathematical%20logic/Set%20theory/Concepts/Power%20set.md)时，定义了一个均匀概率分布 $\mathbb{P}(A)=$ $|A| /|\Omega|$ ，其中 $A$ 是 $\mathcal{F}$ 中的事件，而 $|A|$ 是集合 $A$ 的基数（即元素数量）。在这个分布 中，所有事件的概率仅仅依赖于它们包含的元素数量。
-
-2. **Probability space** - 概率空间:
-	- 三元组 $(\Omega, \mathcal{F}, \mathbb{P})$ 被称为概率空间。它是概率论的基础结构，其中 $\Omega$ 是样本空间， $\mathcal{F}$ 是 事件的集合，而 $\mathbb{P}$ 是定义在这些事件上的概率度量。
-
-3. Counting **permutations and combinations** - 排列和组合的计数:
-	- 这里提了一嘴排列组合
-	- [Permutation](../../4.%20Discrete%20mathematics/Combinatorics/Permutation.md) - 排列，是指从 $n$ 个对象中按照顺序选择所有对象的方法数量，总共有 $n$ ! 种方法 (其中 $n$ ! 表示 $n$ 的阶乘)。
-	- [Combination](../../4.%20Discrete%20mathematics/Combinatorics/Combination.md) - 组合，是指从 $n$ 个对象中选 择 $k$ 个对象的方法数量，而不考虑顺序，总共有 $\left(\begin{array}{l}n \\ k\end{array}\right)=\frac{n !}{k !(n-k) !}$ 种方法。
 
 # Independence
 
@@ -157,3 +159,27 @@ $$P(D | +) = \frac{P(+ | D) \cdot P(D)}{P(+)}$$
 现在我们可以将这些值代入贝叶斯定理的公式中：
 $$P(D | +) = \frac{0.009 \cdot 0.01}{0.108} = \frac{0.00009}{0.108} \approx 0.00083$$
 所以，如果您的测试结果是阳性，那么您患有疾病$D$的概率约为$0.083$或$8.3\%$。
+
+# Theorems
+
+## Bayes' Theorem
+
+- **Theorem 1.6:** Let $A_1, \ldots, A_k$ be a partition of $\Omega$. Then, for any event $B$, $\mathbb{P}(B)=\sum_{i=1}^k \mathbb{P}\left(B \mid A_i\right) \mathbb{P}\left(A_i\right)$.
+
+- **Theorem 1.7:** Bayes theorem. Let $A_1, \ldots, A_k$ be a partition of $\Omega$ and $B$ be an event such that $\mathbb{P}(B)>0$. Then,
+$$
+\mathbb{P}\left(A_i \mid B\right)=\mathbb{P}\left(B \mid A_i\right) \mathbb{P}\left(A_i\right) / \sum_{j=1}^k \mathbb{P}\left(B \mid A_j\right) \mathbb{P}\left(A_j\right) .
+$$
+### Example question
+
+Email categories: $A_1=$ spam, $A_2=$ low priority, $A_3=$ high priority. $B=$ event that email contains word "free". $\mathbb{P}\left(B \mid A_1\right)=0.9, \mathbb{P}\left(B \mid A_2\right)=0.01, \mathbb{P}\left(B \mid A_3\right)=0.01, \mathbb{P}\left(A_1\right)=0.7$, $\mathbb{P}\left(A_2\right)=0.2, \mathbb{P}\left(A_3\right)=0.1$. If I receive an email with the word "free", what is the probability that it is spam?
+
+
+
+
+
+
+
+
+
+
