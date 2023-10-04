@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md",
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Power set",
+                "query": "Probability distribution",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -90,7 +90,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -110,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md",
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md",
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md"
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md"
               }
             }
           },
@@ -191,13 +192,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ec9d8ae6de4243fb",
+  "active": "689651478ba8ff3e",
   "lastOpenFiles": [
+    "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability theory.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability measure.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/σ-field.md",
-    "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Sample space.md",
     "conflict-files-obsidian-git.md",
     "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory/Measure.md",
