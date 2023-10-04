@@ -12,7 +12,18 @@ Distributions with special properties or for especially important applications a
 
 # [Functions related to probability distributions](https://en.wikipedia.org/wiki/Category:Functions_related_to_probability_distributions "Category:Functions related to probability distributions")
 
+## Cumulative distribution function
+累积分布函数
 
+- Definition 1.4: The cumulative distribution function (CDF) of a random variable $X$ is the function $F_X: \mathbb{R} \rightarrow[0,1]$ defined by $F_X(x)=$ $\mathbb{P}(X \leq x)$.
+- 累积分布函数就是
+
+- Theorem 1.8: If two random variables $X$ and $Y$ have the same CDF, then they have the same distribution, i.e., $\mathbb{P}_X=\mathbb{P}_Y$.
+
+- Theorem 1.9: A function $F: \mathbb{R} \rightarrow[0,1]$ is a CDF if and only if 
+	1. $x_1<x_2 \Rightarrow F\left(x_1\right) \leq F\left(x_2\right)$.
+	2. $\lim _{x \rightarrow-\infty} F(x)=0$ and $\lim _{x \rightarrow \infty} F(x)=1$.
+	3. $F$ is right continuous, i.e., $F(x)=\lim _{\substack{y \rightarrow x \\ y>x}} F(y)$.
 
 
 

@@ -1,7 +1,7 @@
 ## Sample Spaces and Events
 
 - The sample space $\Omega$ is the set of possible outcomes of an experiment. Points $\omega$ in $\Omega$ are called sample outcomes, realizations, or elements. Subsets of $\Omega$ are called events. A set $\mathcal{F}$ of all such subsets with $\Omega \in \mathcal{F}$ that is closed under complement and closed under countable union is called a sigma-algebra.
-- **样本空间** $\Omega$ 是实验可能结果的集合。$\Omega$ 中的点 $\omega$ 被称为样本结果、实现或元素。$\Omega$ 的子集被称为**事件**。所有这些子集的集合为 $\mathcal{F}$，其中 $\Omega \in \mathcal{F}$，且在补集和可数并集下封闭，$\mathcal{F}$ 被称为[**σ-field**](σ-field.md)。
+- **样本空间** $\Omega$ 是实验所有可能的单个结果的集合。$\Omega$ 中的点 $\omega$ 被称为样本结果、实现或元素。$\Omega$ 的子集被称为**事件**。所有这些子集的集合为 $\mathcal{F}$，其中 $\Omega \in \mathcal{F}$，且在补集和可数并集下封闭，$\mathcal{F}$ 被称为[**σ-field**](σ-field.md)。
 
 - Example 1: A sequence of two coin tosses.
 	- $\Omega=\{H H, H T, T H, T T\}$. The set of all possible subsets of $\Omega$ (the [power set](../../1.%20Pure%20mathematics/Mathematical%20logic/Set%20theory/Concepts/Power%20set.md)) is $\mathcal{F}=$ $\{\varnothing,\{H H\},\{H T\},\{T H\},\{T T\},\{H H, H T\},\{H H, T H\},\{H H, T T\},\{H T, T H\},\{H T, T T\}$, $\{T H, T T\},\{H H, H T, T H\},\{H H, H T, T T\},\{H H, T H, T T\},\{H T, T H, T T\}, \Omega\}$.
