@@ -1,21 +1,17 @@
 # [Measure](https://en.wikipedia.org/wiki/Measure_(mathematics) "Measure (mathematics)")
 
-测度（Measure）是一个基本的数学概念，它为集合赋予了一种“大小”或“体积”的量化表示。测度论（Measure Theory）是现代概率论和积分学的基础，它为研究复杂空间中的“大小”提供了一种严格的数学框架。
+根据维基百科，测度（measure）是一个从集合到扩展实数线的集合函数，它满足三个条件：非负性、零测度和可数可加性。具体来说，对于任何属于σ-代数的集合E，测度μ(E)都是非负的；空集的测度为0；对于σ-代数中的任何可数、两两不相交的集合的集合，它们的并集的测度等于它们各自测度的总和[^1]：
 
-测度的定义包括三个基本要素：定义域、值域和测度函数。
+Let $X$ be a set and $\Sigma$ a $\sigma$-algebra over $X$. A set function $\mu$ from $\Sigma$ to the extended real number line is called a **measure** if the following conditions hold:
+- Non-negativity: For all $E \in \Sigma, \mu(E) \geq 0$.
+- $\mu(\varnothing)=0$.
+- Countable additivity (or $\sigma$-additivity): For all countable collections $\left\{E_k\right\}_{k=1}^{\infty}$ of pairwise disjoint sets in $\Sigma$,
+$$
+\mu\left(\bigcup_{k=1}^{\infty} E_k\right)=\sum_{k=1}^{\infty} \mu\left(E_k\right)
+$$
 
-1. **定义域**：
-    - 测度定义在一个集合上，通常是一个$\sigma$-代数（sigma algebra）或$\sigma$-场（sigma field），它是一些子集的集合，包括空集、全集，且对并集、交集和补集封闭。
-
-2. **值域**：
-    - 测度的值是非负实数或正无穷，代表集合的“大小”或“体积”。
-
-3. **测度函数**：
-    - 测度函数是一个将定义域中的每个集合映射到值域中的函数。它满足以下三个性质：
-        - **非负性**：对任何集合$A$，测度$\mu(A) \geq 0$。
-        - **空集的测度为零**：$\mu(\emptyset) = 0$。
-        - **可列可加性**：如果$\{ A_i \}_{i=1}^{\infty}$是一系列两两互斥的集合（即$A_i \cap A_j = \emptyset$当$i \neq j$，那么$$\mu\left(\bigcup_{i=1}^{\infty} A_i\right) = \sum_{i=1}^{\infty} \mu(A_i)$$
 
 在概率论中，特殊的测度被称为概率测度，它还满足额外的规范性条件，即样本空间的测度为 1。这为将测度论应用于概率和统计问题提供了基础。
 
-测度的概念扩展了我们对集合大小的理解，使我们能够在更一般的情况下讨论和定义概率、积分和其他相关概念。
+
+[^1]: https://en.wikipedia.org/wiki/Measure_(mathematics)

@@ -1,5 +1,7 @@
 # Probability measure
 
+在概率论中，特殊的[测度（Measure）](../../1.%20Pure%20mathematics/Mathematical%20analysis/Measure%20theory/Measure.md)被称为概率测度，它满足额外的**规范性**条件，即样本空间的测度为 1。这为将测度论应用于概率和统计问题提供了基础。
+
 *以下内容ChatGPT生成*
 
 概率测度（Probability measure）是数学上用于描述随机事件发生可能性的一种严格的方法。它为概率空间中的每一个事件分配了一个介于0和1之间的实数，以表示该事件发生的可能性。以下是概率测度的几个重要组成部分和性质：
