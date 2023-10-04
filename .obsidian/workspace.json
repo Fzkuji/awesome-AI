@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability measure.md",
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability measure.md",
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability measure.md",
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability measure.md"
+                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md"
               }
             }
           },
@@ -169,8 +169,8 @@
   },
   "active": "50b6bfed325751dd",
   "lastOpenFiles": [
-    "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability measure.md",
+    "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
     "2. Mathematics/4. Discrete mathematics/Combinatorics/Combination.md",
     "2. Mathematics/4. Discrete mathematics/Combinatorics/Permutation.md",
     "2. Mathematics/4. Discrete mathematics/Combinatorics/Combinatorics.md",

@@ -117,17 +117,27 @@ Proof: For increasing sets, $A_n=A_1 \cup\left(A_2 \backslash A_1\right) \cup \c
 	- [Combination](../../4.%20Discrete%20mathematics/Combinatorics/Combination.md) - 组合，是指从 $n$ 个对象中选 择 $k$ 个对象的方法数量，而不考虑顺序，总共有 $\left(\begin{array}{l}n \\ k\end{array}\right)=\frac{n !}{k !(n-k) !}$ 种方法。
 
 # Independence
-独立性
 
-- Definition 1.1: Two events $A$ and $B$ are independent if $\mathbb{P}(A \cap B)=$ $\mathbb{P}(A) \mathbb{P}(B)$. 
+- **Definition 1.1 独立分布:** Two events $A$ and $B$ are independent if $\mathbb{P}(A \cap B)=$ $\mathbb{P}(A) \mathbb{P}(B)$. 
 
 - The events $A_i, i \in I$ are independent if $\mathbb{P}\left(\cap_{i \in J} A_i\right)=$ $\prod_{i \in J} \mathbb{P}\left(A_i\right)$ for every finite subset $J$ of $I$. 
 - Note: The index set $I$ can consists of infinitely many elements.
 
 
 # Conditional probability
-条件概率
 
-- Definition 1.2: If $\mathbb{P}(B)>0$, the conditional probability of $A$ given $B$ is $\mathbb{P}(A \mid B)=\mathbb{P}(A \cap B) / \mathbb{P}(B)$.
+- **Definition 1.2 条件概率:** If $\mathbb{P}(B)>0$, the conditional probability of $A$ given $B$ is $\mathbb{P}(A \mid B)=\mathbb{P}(A \cap B) / \mathbb{P}(B)$.
 
-- Note $\mathbb{P}(\cdot \mid B)$ is a probability measure.
+- Note $\mathbb{P}(\cdot \mid B)$ is a [probability measure](Probability%20measure.md).
+
+- **Lemma 1.4:** If $A$ and $B$ are independent events, then $\mathbb{P}(A \mid B)=\mathbb{P}(A)$.
+- **Lemma 1.5:** For any pair of events, $\mathbb{P}(A \cap B)=\mathbb{P}(A \mid B) \mathbb{P}(B)=$ $\mathbb{P}(B \mid A) \mathbb{P}(A)$.
+
+- Example: A medical test for a disease $D$ has outcomes + and -. The probabilities are:
+
+|     |  $D$  | $D^c$ |
+|:---:|:-----:|:-----:|
+|  +  | 0.009 | 0.099 |
+|  -  | 0.001 | 0.891 |
+
+Suppose you go for a test and get a positive. What is the probability you have the disease?
