@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PhD/华为实习/Paper.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhD/华为实习/Paper.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhD/华为实习/Paper.md",
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhD/华为实习/Paper.md"
+                "file": "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md"
               }
             }
           },
@@ -193,10 +193,10 @@
   },
   "active": "5ae32ba604fece79",
   "lastOpenFiles": [
-    "PhD/华为实习/Paper outline.md",
-    "PhD/华为实习/Meetings.md",
     "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "PhD/华为实习/Paper.md",
+    "PhD/华为实习/Paper outline.md",
+    "PhD/华为实习/Meetings.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability distribution.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Sample space.md",
     "conflict-files-obsidian-git.md",
