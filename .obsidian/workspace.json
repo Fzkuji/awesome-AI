@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability distribution.md",
+                "file": "PhD/华为实习/Paper.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability distribution.md",
+                "file": "PhD/华为实习/Paper.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability distribution.md",
+                "file": "PhD/华为实习/Paper.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability distribution.md"
+                "file": "PhD/华为实习/Paper.md"
               }
             }
           },
@@ -191,12 +191,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c633a6bf13e3c2d2",
+  "active": "5ae32ba604fece79",
   "lastOpenFiles": [
+    "PhD/华为实习/Paper outline.md",
+    "PhD/华为实习/Meetings.md",
+    "PhD/华为实习/LLM for multi-domain CTR prediction.md",
+    "PhD/华为实习/Paper.md",
+    "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability distribution.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Sample space.md",
     "conflict-files-obsidian-git.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md",
-    "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability distribution.md",
     "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory/Borel set.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability measure.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
@@ -218,10 +222,6 @@
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Constitutional AI.md",
     "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/RLAIF Scaling Reinforcement Learning from Human Feedback with AI Feedback.md",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230926101140.png",
-    "PhD/华为实习/Paper outline.md",
-    "PhD/华为实习/Paper.md",
-    "PhD/华为实习/Meetings.md",
-    "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230924225934.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230924214851.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230924214544.png",
