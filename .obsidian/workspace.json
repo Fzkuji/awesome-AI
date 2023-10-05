@@ -4,47 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "e39469062030458a",
+        "id": "253f00f9f53da631",
         "type": "tabs",
         "children": [
           {
-            "id": "7d2c7141f062de82",
+            "id": "b70557d5af9dc38c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7e3ef352ca4a60b1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5ae32ba604fece79",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability distribution.md",
+                "file": "PhD/华为实习/Paper.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -73,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Probability distribution",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -94,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281.5
+    "width": 327.5
   },
   "right": {
     "id": "417cdb7d208faa4a",
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability distribution.md",
+                "file": "PhD/华为实习/Paper.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability distribution.md",
+                "file": "PhD/华为实习/Paper.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability distribution.md"
+                "file": "PhD/华为实习/Paper.md"
               }
             }
           },
@@ -177,51 +152,59 @@
       }
     ],
     "direction": "horizontal",
-    "width": 340.5
+    "width": 334.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "publish:Publish changes...": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "publish:发布更改": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c633a6bf13e3c2d2",
+  "active": "b70557d5af9dc38c",
   "lastOpenFiles": [
-    "2. Mathematics/2. Applied mathematics‎/Probability theory/Sample space.md",
-    "conflict-files-obsidian-git.md",
-    "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability distribution.md",
-    "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory/Borel set.md",
-    "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability measure.md",
+    "2. Mathematics/2. Applied mathematics‎/Probability theory/Sample space.md",
+    "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
+    "2. Mathematics/2. Applied mathematics‎/Statistics/Moment.md",
+    "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory/Borel set.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability theory.md",
+    "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability measure.md",
+    "2. Mathematics/2. Applied mathematics‎/Probability theory/σ-field.md",
+    "conflict-files-obsidian-git.md",
     "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory/Measure.md",
     "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory/Measure theory.md",
-    "2. Mathematics/1. Pure mathematics/Mathematical analysis/Mathematical analysis.md",
     "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory",
-    "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability theorems.md",
-    "2. Mathematics/4. Discrete mathematics/Combinatorics/Combination.md",
+    "2. Mathematics/1. Pure mathematics/Mathematical analysis/Calculus/Multivariable calculus/Lagrange multiplier.md",
+    "2. Mathematics/1. Pure mathematics/Mathematical analysis/Mathematical analysis.md",
+    "2. Mathematics/1. Pure mathematics/Mathematical analysis/Calculus/Differential calculus/Differential equation/Calculus of variations/变分法学习记录.md",
+    "2. Mathematics/1. Pure mathematics/Mathematical analysis/Calculus/Differential calculus/Differential equation/Calculus of variations",
+    "2. Mathematics/1. Pure mathematics/Mathematical analysis/Calculus/Differential calculus/Differential equation",
+    "2. Mathematics/1. Pure mathematics/Mathematical analysis/Calculus/Multivariable calculus",
+    "2. Mathematics/1. Pure mathematics/Mathematical analysis/Calculus/Differential calculus",
+    "2. Mathematics/1. Pure mathematics/Mathematical analysis/Calculus/Integral calculus",
+    "2. Mathematics/1. Pure mathematics/Mathematical analysis/Calculus",
+    "2. Mathematics/1. Pure mathematics/Mathematical analysis",
+    "2. Mathematics/1. Pure mathematics/Mathematical logic/Set theory/Concepts/Power set.md",
+    "2. Mathematics/4. Discrete mathematics/Discrete mathematics.md",
     "2. Mathematics/4. Discrete mathematics/Combinatorics/Permutation.md",
+    "2. Mathematics/4. Discrete mathematics/Combinatorics/Combination.md",
     "2. Mathematics/4. Discrete mathematics/Combinatorics/Combinatorics.md",
     "2. Mathematics/4. Discrete mathematics/Combinatorics",
-    "2. Mathematics/1. Pure mathematics/Mathematical logic/Set theory/Concepts/Power set.md",
-    "2. Mathematics/2. Applied mathematics‎/Probability theory/σ-field.md",
-    "2. Mathematics/2. Applied mathematics‎/Probability theory/Stochastic process/Markov chain/Discrete-time Markov chain.md",
-    "2. Mathematics/2. Applied mathematics‎/Probability theory/Stochastic process/Markov chain/Chapman–Kolmogorov equation.md",
-    "2. Mathematics/2. Applied mathematics‎/Statistics/Moment.md",
-    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Models/Constitutional AI.md",
-    "4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/+Papers/RLAIF Scaling Reinforcement Learning from Human Feedback with AI Feedback.md",
+    "2. Mathematics/1. Pure mathematics/Mathematical logic/Set theory/Concepts/Cardinality.md",
+    "2. Mathematics/1. Pure mathematics/Mathematical logic/Set theory/Concepts/Function.md",
+    "2. Mathematics/1. Pure mathematics/Mathematical logic/Set theory/Concepts/Set equality.md",
+    "2. Mathematics/Mathematics.md",
+    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/Special Multi-Task Learning/Special Multi-Task Learning.md",
+    "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/General Multi-Task Learning/General Multi-Task Learning.md",
+    "2. Mathematics/2. Applied mathematics‎/Statistics",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230926101140.png",
-    "PhD/华为实习/Paper outline.md",
-    "PhD/华为实习/Paper.md",
-    "PhD/华为实习/Meetings.md",
-    "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230924225934.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230924214851.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230924214544.png",
@@ -231,15 +214,7 @@
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230923230315.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230923221400.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230923173627.png",
-    "2. Mathematics/MSC2020-Mathematics Subject Classification System.pdf",
-    "PhD/Courses/SDSC8004",
-    "PhD/Courses",
-    "PhD/Paper review/RecSys 2023",
-    "PhD/Paper review/AAAI 2024",
-    "Resources/2. Mathematics/Probabilistic graphical model",
-    "2. Mathematics/Probabilistic graphical model",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.canvas",
-    "LICENSE",
     "4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Classification.canvas",
     "5. Information science/Information filtering/Recommender system.canvas",
     "4. Artificial intelligence/1. Major goals/Affection/Emotion.canvas",
