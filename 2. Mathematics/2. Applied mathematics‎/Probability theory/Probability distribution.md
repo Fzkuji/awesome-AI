@@ -33,13 +33,13 @@ Distributions with special properties or for especially important applications a
 一个是离散的PMF，一个是连续的PDF
 
 - Definition 1.5: $X$ is a discrete random variable if it takes countably many values $\left\{x_1, x_2, \ldots\right\}$. More precisely, a discrete random variable $X$ has a probability mass function (PMF) $f_X(x)=\mathbb{P}(X=x)$, where $f_X(x)>0$ if and only if $x \in\left\{x_1, x_2, \ldots\right\}$.
-- 定义 1.5：如果$X$有可数多个值$\left\{x_1, x_2, \ldots\right\}$，则$X$是离散随机变量。更准确地说，离散随机变量$X$具有概率质量函数（PMF）$f_X(x)=\mathbb{P}(X=x)$，其中$f_X(x)>0$当且仅当$x \in\left\{x_1, x_2, \ldots\right\}$。
+- 定义 1.5：如果$X$有可数多个值$\left\{x_1, x_2, \ldots\right\}$，则$X$是离散随机变量。离散随机变量$X$具有概率质量函数（PMF）$f_X(x)=\mathbb{P}(X=x)$，其中$f_X(x)>0$当且仅当$x \in\left\{x_1, x_2, \ldots\right\}$。
 
 - Definition 1.6: A random variable  is continuous (more precisely, absolutely continuous with respect to the Lebesgue measure) if there exists a function $f_X$, called the probability density function (PDF) of $X$, such that $f_X(x) \geq 0 \forall x \in \mathbb{R}$, and for every real number $a$,
 $$
 \mathbb{P}(-\infty<X \leq a)=\int_{-\infty}^a f_X(x) d x \text {. }
 $$
-- 定义 1.6：假设一个随机变量$X$是连续的（更准确地说，是相对于 Lebesgue 测度绝对连续的），如果存在一个函数的概率密度函数（PDF），使得$f_X(x) \geq 0 \, \forall x \in \mathbb{R}$，且对于每个实数 $a$，有$$CDF = F_X(a) = \mathbb{P}(-\infty<X \leq a)=\int_{-\infty}^a f_X(x) d x \text {. }$$则随机变量$X$是连续的。
+- 定义 1.6：假设一个随机变量$X$是连续的（更准确地说，是相对于 Lebesgue测度绝对连续的），如果存在一个函数$f_X$，使得$f_X(x) \geq 0 \, \forall x \in \mathbb{R}$，且对于每个实数 $a$，有：$$CDF = F_X(a) = \mathbb{P}(-\infty<X \leq a)=\int_{-\infty}^a f_X(x) d x \text {. }$$则这个函数$f_X$叫概率密度函数。
 
 
 - A function $f_X(x)$ of $x \in \mathbb{R}$ is a PDF if $f_X(x) \geq 0 \forall x \in \mathbb{R}$ and $\int_{-\infty}^{\infty} f_X(x) d x=1$.
