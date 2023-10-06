@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PhD/华为实习/Paper.md",
+                "file": "PhD/华为实习/Paper outline.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhD/华为实习/Paper.md",
+                "file": "PhD/华为实习/Paper outline.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhD/华为实习/Paper.md",
+                "file": "PhD/华为实习/Paper outline.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhD/华为实习/Paper.md"
+                "file": "PhD/华为实习/Paper outline.md"
               }
             }
           },
@@ -191,10 +191,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5ae32ba604fece79",
+  "active": "c633a6bf13e3c2d2",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "PhD/华为实习/Paper.md",
+    "conflict-files-obsidian-git.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
     "PhD/华为实习/Paper outline.md",
     "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
