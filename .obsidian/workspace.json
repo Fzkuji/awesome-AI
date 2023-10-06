@@ -73,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "loss",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,8 +90,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -194,15 +193,15 @@
   },
   "active": "5ae32ba604fece79",
   "lastOpenFiles": [
-    "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
+    "conflict-files-obsidian-git.md",
     "PhD/华为实习/Paper.md",
+    "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
     "PhD/华为实习/Paper outline.md",
     "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
     "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "PhD/华为实习/Meetings.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability distribution.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Sample space.md",
-    "conflict-files-obsidian-git.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md",
     "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory/Borel set.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability measure.md",
