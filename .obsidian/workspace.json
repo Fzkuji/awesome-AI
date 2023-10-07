@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md",
+                "file": "PhD/华为实习/Paper outline.md",
                 "mode": "source",
                 "source": false
               }
@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhD/华为实习/Paper.md",
+                "file": "PhD/华为实习/Paper outline.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhD/华为实习/Paper.md",
+                "file": "PhD/华为实习/Paper outline.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhD/华为实习/Paper.md"
+                "file": "PhD/华为实习/Paper outline.md"
               }
             }
           },
@@ -191,10 +191,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5ae32ba604fece79",
+  "active": "7e3ef352ca4a60b1",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md",
     "PhD/华为实习/Paper.md",
+    "conflict-files-obsidian-git.md",
     "4. Artificial intelligence/3. Applications/Recommender system/LLM4Rec.md",
     "PhD/华为实习/Paper outline.md",
     "4. Artificial intelligence/3. Applications/Recommender system/AI4Rec.md",
@@ -202,7 +203,6 @@
     "PhD/华为实习/Meetings.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability distribution.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Sample space.md",
-    "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md",
     "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory/Borel set.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability measure.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
