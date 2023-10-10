@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PhD/华为实习/Paper.md",
+                "file": "PhD/华为实习/Meetings.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhD/华为实习/Paper.md",
+                "file": "PhD/华为实习/Meetings.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhD/华为实习/Paper.md",
+                "file": "PhD/华为实习/Meetings.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhD/华为实习/Paper.md"
+                "file": "PhD/华为实习/Meetings.md"
               }
             }
           },
@@ -166,7 +166,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "7d2c7141f062de82",
+  "active": "c633a6bf13e3c2d2",
   "lastOpenFiles": [
     "PhD/华为实习/Paper.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md",
