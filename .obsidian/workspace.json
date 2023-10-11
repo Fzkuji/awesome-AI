@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "PhD/本子/香港基金.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281.5
+    "width": 281.5,
+    "collapsed": true
   },
   "right": {
     "id": "417cdb7d208faa4a",
@@ -122,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "PhD/本子/香港基金.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "PhD/本子/香港基金.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "PhD/本子/香港基金.md"
               }
             }
           },
@@ -189,7 +190,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 340.5
+    "width": 340.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -205,9 +207,10 @@
   },
   "active": "f7ff025ba3b66cdf",
   "lastOpenFiles": [
+    "Untitled.md",
+    "PhD/本子/香港基金.md",
     "PhD/华为实习/Paper.md",
     "PhD/华为实习/Paper outline.md",
-    "Untitled.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md",
     "conflict-files-obsidian-git.md",
@@ -232,7 +235,6 @@
     "2. Mathematics/1. Pure mathematics/Mathematical logic/Set theory/Concepts/Power set.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/σ-field.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Stochastic process/Markov chain/Discrete-time Markov chain.md",
-    "2. Mathematics/2. Applied mathematics‎/Probability theory/Stochastic process/Markov chain/Chapman–Kolmogorov equation.md",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230926101140.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230924225934.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230924214851.png",
