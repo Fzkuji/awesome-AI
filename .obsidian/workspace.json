@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Mathematics/4. Discrete mathematics/Combinatorics/Combination.md",
+                "file": "PhD/Courses/SDSC8004/Homework 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Mathematics/4. Discrete mathematics/Combinatorics/Combination.md",
+                "file": "PhD/Courses/SDSC8004/Homework 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. Mathematics/4. Discrete mathematics/Combinatorics/Combination.md",
+                "file": "PhD/Courses/SDSC8004/Homework 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Mathematics/4. Discrete mathematics/Combinatorics/Combination.md"
+                "file": "PhD/Courses/SDSC8004/Homework 1.md"
               }
             }
           },
@@ -169,6 +168,7 @@
   },
   "active": "7d2c7141f062de82",
   "lastOpenFiles": [
+    "2. Mathematics/4. Discrete mathematics/Combinatorics/Combination.md",
     "2. Mathematics/2. Applied mathematics‎/Applied mathematics‎.md",
     "PhD/华为实习/Meetings.md",
     "PhD/本子/香港基金.md",
@@ -193,7 +193,6 @@
     "2. Mathematics/1. Pure mathematics/Mathematical analysis/Mathematical analysis.md",
     "2. Mathematics/1. Pure mathematics/Mathematical analysis/Measure theory",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability theorems.md",
-    "2. Mathematics/4. Discrete mathematics/Combinatorics/Combination.md",
     "2. Mathematics/4. Discrete mathematics/Combinatorics/Permutation.md",
     "2. Mathematics/4. Discrete mathematics/Combinatorics/Combinatorics.md",
     "2. Mathematics/4. Discrete mathematics/Combinatorics",
