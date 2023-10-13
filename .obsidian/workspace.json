@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PhD/华为实习/Meetings.md",
+                "file": "2. Mathematics/4. Discrete mathematics/Combinatorics/Combination.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "combin",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhD/华为实习/Meetings.md",
+                "file": "2. Mathematics/4. Discrete mathematics/Combinatorics/Combination.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhD/华为实习/Meetings.md",
+                "file": "2. Mathematics/4. Discrete mathematics/Combinatorics/Combination.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhD/华为实习/Meetings.md"
+                "file": "2. Mathematics/4. Discrete mathematics/Combinatorics/Combination.md"
               }
             }
           },
@@ -168,13 +169,14 @@
   },
   "active": "7d2c7141f062de82",
   "lastOpenFiles": [
+    "2. Mathematics/2. Applied mathematics‎/Applied mathematics‎.md",
+    "PhD/华为实习/Meetings.md",
     "PhD/本子/香港基金.md",
     "Resources/PhD/Pasted image 20231011210249.png",
     "PhD/华为实习/Paper.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md",
     "PhD/华为实习/PPT.md",
     "PhD/华为实习/Paper outline.md",
-    "PhD/华为实习/Meetings.md",
     "PhD/华为实习/LLM for multi-domain CTR prediction.md",
     "PhD/华为实习/Experiments.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
@@ -196,7 +198,6 @@
     "2. Mathematics/4. Discrete mathematics/Combinatorics/Combinatorics.md",
     "2. Mathematics/4. Discrete mathematics/Combinatorics",
     "2. Mathematics/1. Pure mathematics/Mathematical logic/Set theory/Concepts/Power set.md",
-    "2. Mathematics/2. Applied mathematics‎/Probability theory/σ-field.md",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230926101140.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230924225934.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230924214851.png",
