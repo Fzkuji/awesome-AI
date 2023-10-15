@@ -68,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "PhD/Courses/SDSC8004/Homework 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "PhD/Courses/SDSC8004/Homework 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "PhD/Courses/SDSC8004/Homework 1.md"
               }
             }
           },
@@ -216,10 +216,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "95baacca0a7e950c",
+  "active": "f7ff025ba3b66cdf",
   "lastOpenFiles": [
-    "PhD/Courses/SDSC8004/Homework 1.md",
     "Untitled.md",
+    "PhD/Courses/SDSC8004/Homework 1.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
     "PhD/华为实习/Paper outline.md",
     "PhD/华为实习/Paper.md",
