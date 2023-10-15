@@ -2,8 +2,8 @@
   "accentColor": "",
   "theme": "obsidian",
   "translucency": false,
-  "baseFontSize": 22,
-  "cssTheme": "Things",
+  "baseFontSize": 18,
+  "cssTheme": "",
   "nativeMenus": false,
   "showViewHeader": true
 }
