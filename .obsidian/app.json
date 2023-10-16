@@ -13,7 +13,7 @@
     "pageSize": "Letter",
     "landscape": false,
     "margin": "0",
-    "downscalePercent": 100
+    "downscalePercent": 60
   },
   "promptDelete": true,
   "spellcheck": false,

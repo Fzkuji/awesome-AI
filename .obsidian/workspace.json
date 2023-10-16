@@ -38,7 +38,7 @@
               "type": "markdown",
               "state": {
                 "file": "PhD/Courses/SDSC8004/Homework 1.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -94,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281.5,
-    "collapsed": true
+    "width": 281.5
   },
   "right": {
     "id": "417cdb7d208faa4a",
