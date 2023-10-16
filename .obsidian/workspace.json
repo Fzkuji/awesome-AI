@@ -54,21 +54,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "95baacca0a7e950c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -134,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "PhD/Courses/SDSC8004/Homework 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "PhD/Courses/SDSC8004/Homework 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "PhD/Courses/SDSC8004/Homework 1.md"
               }
             }
           },
@@ -216,7 +204,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "95baacca0a7e950c",
+  "active": "f7ff025ba3b66cdf",
   "lastOpenFiles": [
     "PhD/Courses/SDSC8004/Homework 1.md",
     "Resources/PhD/57bd73e27c61208c63d645b6d9e32a2.jpg",
