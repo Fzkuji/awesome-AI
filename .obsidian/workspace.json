@@ -68,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhD/Courses/SDSC8004/Homework 1.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhD/Courses/SDSC8004/Homework 1.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhD/Courses/SDSC8004/Homework 1.md"
+                "file": "Untitled.md"
               }
             }
           },
@@ -216,11 +216,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f7ff025ba3b66cdf",
+  "active": "95baacca0a7e950c",
   "lastOpenFiles": [
+    "PhD/Courses/SDSC8004/Homework 1.md",
     "Resources/PhD/57bd73e27c61208c63d645b6d9e32a2.jpg",
     "Untitled.md",
-    "PhD/Courses/SDSC8004/Homework 1.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
     "PhD/华为实习/Paper outline.md",
     "PhD/华为实习/Paper.md",
@@ -255,7 +255,6 @@
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230923232033.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230923231654.png",
     "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230923230315.png",
-    "Resources/4. Artificial intelligence/1. Major goals/Intelligence/Natural language processing/Large language model/Pasted image 20230923221400.png",
     "2. Mathematics/MSC2020-Mathematics Subject Classification System.pdf",
     "PhD/Courses/SDSC8004",
     "PhD/Courses",
