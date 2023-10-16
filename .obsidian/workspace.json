@@ -25,26 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PhD/华为实习/Paper outline.md",
+                "file": "Untitled.md",
                 "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5ae32ba604fece79",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PhD/Courses/SDSC8004/Homework 1.md",
-                "mode": "preview",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PhD/Courses/SDSC8004/Homework 1.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PhD/Courses/SDSC8004/Homework 1.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PhD/Courses/SDSC8004/Homework 1.md"
+                "file": "Untitled.md"
               }
             }
           },
@@ -191,15 +179,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5ae32ba604fece79",
+  "active": "7e3ef352ca4a60b1",
   "lastOpenFiles": [
-    "PhD/华为实习/Paper.md",
+    "PhD/华为实习/Paper outline.md",
     "PhD/Courses/SDSC8004/Homework 1.md",
+    "PhD/华为实习/Paper.md",
     "Resources/PhD/~7bd73e27c61208c63d645b6d9e32a2.tmp",
     "Resources/PhD/57bd73e27c61208c63d645b6d9e32a2.jpg",
     "Untitled.md",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
-    "PhD/华为实习/Paper outline.md",
     "PhD/本子/香港基金.md",
     "Resources/PhD/Pasted image 20231011210249.png",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md",
