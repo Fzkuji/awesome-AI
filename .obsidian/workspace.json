@@ -177,8 +177,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 340.5,
-    "collapsed": true
+    "width": 340.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -192,7 +191,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c633a6bf13e3c2d2",
+  "active": "5ae32ba604fece79",
   "lastOpenFiles": [
     "PhD/华为实习/Paper.md",
     "PhD/Courses/SDSC8004/Homework 1.md",
