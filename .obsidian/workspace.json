@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7e3ef352ca4a60b1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled.md",
+                "file": "PhD/华为实习/Paper.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "PhD/华为实习/Paper.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "PhD/华为实习/Paper.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "PhD/华为实习/Paper.md"
               }
             }
           },
@@ -179,15 +166,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "7e3ef352ca4a60b1",
+  "active": "7d2c7141f062de82",
   "lastOpenFiles": [
+    "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
+    "Untitled.md",
     "PhD/华为实习/Paper outline.md",
     "PhD/Courses/SDSC8004/Homework 1.md",
     "PhD/华为实习/Paper.md",
     "Resources/PhD/~7bd73e27c61208c63d645b6d9e32a2.tmp",
     "Resources/PhD/57bd73e27c61208c63d645b6d9e32a2.jpg",
-    "Untitled.md",
-    "2. Mathematics/2. Applied mathematics‎/Probability theory/Probability.md",
     "PhD/本子/香港基金.md",
     "Resources/PhD/Pasted image 20231011210249.png",
     "2. Mathematics/2. Applied mathematics‎/Probability theory/Random variable.md",
