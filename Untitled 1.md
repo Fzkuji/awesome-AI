@@ -22,4 +22,4 @@ Metallic material constitutive modeling
 
 Model validation and convergence
 
-Monaghan, J. J., & Kajtar, J. B. (2009). SPH particle boundary forces for arbitrary boundaries. Computer physics communications, 180(10), 1811-1820.
+Nmerical model of cold spray
