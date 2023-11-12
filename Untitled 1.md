@@ -22,4 +22,4 @@ Metallic material constitutive modeling
 
 Model validation and convergence
 
-Nmerical model of cold spray
+Adaptive Cold Spray Interface Force Model
