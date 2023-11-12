@@ -20,4 +20,6 @@ $$
 Metallic material constitutive modeling
 
 
-Metallic material constitutive modeling
+Model validation and convergence
+
+Boundary conditions
