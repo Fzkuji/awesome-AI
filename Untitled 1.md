@@ -96,4 +96,4 @@ $$
 接下来，我将继续检查其他教授的发表情况。
 
 
-Kuaishou-KuaiSAR, Zhihu-ZhihuRec, Alibaba-Alimama, Bytedance-Douyin. Private datasets: We will use the datasets (S&R&A) provided by our co-op companies (Baidu, Tencent, Ant Group and Amazon), and collected from our prior collaborations with Baidu, Kuaishou, and JD.com [59], [115], [128].
+Retrieval-Augmented Models
