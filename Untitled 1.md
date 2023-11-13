@@ -146,6 +146,12 @@ $$
 8. **IIE Transactions**
 9. **International Journal of Industrial Ergonomics**
 
+
+
+
+
+
+IEEE Trans. Autom. Sci. Eng.
 ### 共同常发表的会议（选12个）:
 1. **ACM Conference on Recommender Systems (RecSys)**
 2. **ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD)**
