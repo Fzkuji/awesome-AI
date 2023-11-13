@@ -160,4 +160,16 @@ $$
 11. **International Joint Conference on Artificial Intelligence (IJCAI)**
 12. **IEEE International Conference on Web Services (ICWS)**
 
-这些期刊和会议涵盖了数据挖掘、机器学习、推荐系统、人工智能、计算机视觉、自然语言处理等多个领域，反映了这些教授在相关领域的广泛研究和贡献。
+当然，许多学术期刊都有它们的缩写。以下是您提到的期刊的常见缩写：
+
+1. **ACM SIGKDD Explorations Newsletter** - 通常不缩写
+2. **IEEE Transactions on Automation Science and Engineering** - IEEE-TASE 或 T-ASE
+3. **Journal of the Operational Research Society** - JORS
+4. **International Journal of Production Economics** - IJPE
+5. **Manufacturing & Service Operations Management** - M&SOM 或 MSOM
+6. **Naval Research Logistics (NRL)** - NRL
+7. **European Journal of Operational Research** - EJOR
+8. **IIE Transactions** - IIE Trans
+9. **International Journal of Industrial Ergonomics** - IJIE
+
+请注意，这些缩写在不同的文献和引用风格中可能有所不同，因此在使用时最好根据具体情况和标准进行确认。
