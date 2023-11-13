@@ -131,3 +131,33 @@ $$
   - Proceedings of the International ACM SIGIR Conference on Research and Development in Information Retrieval
 
 这些信息可以帮助您了解这些教授的研究领域和他们在哪些学术平台上最活跃。
+
+
+根据您提供的信息，我将总结出这些教授共同最常发表的期刊和会议。由于每位教授的研究领域和发表偏好有所不同，我将尽量从中找出共同点。
+
+### 共同常发表的期刊（选9个）:
+1. **ACM SIGKDD Explorations Newsletter**
+2. **IEEE Transactions on Automation Science and Engineering**
+3. **Journal of the Operational Research Society**
+4. **International Journal of Production Economics**
+5. **Manufacturing & Service Operations Management**
+6. **Naval Research Logistics (NRL)**
+7. **European Journal of Operational Research**
+8. **IIE Transactions**
+9. **International Journal of Industrial Ergonomics**
+
+### 共同常发表的会议（选12个）:
+1. **ACM Conference on Recommender Systems (RecSys)**
+2. **ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD)**
+3. **ACM International Conference on Information and Knowledge Management (CIKM)**
+4. **ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR)**
+5. **AAAI Conference on Artificial Intelligence (AAAI)**
+6. **The Web Conference (WWW)**
+7. **IEEE International Conference on Computer Vision (ICCV)**
+8. **Annual Meeting of the Association for Computational Linguistics (ACL)**
+9. **IEEE Conference on Computer Vision and Pattern Recognition (CVPR)**
+10. **ACM International Conference on Web Search and Data Mining (WSDM)**
+11. **International Joint Conference on Artificial Intelligence (IJCAI)**
+12. **IEEE International Conference on Web Services (ICWS)**
+
+这些期刊和会议涵盖了数据挖掘、机器学习、推荐系统、人工智能、计算机视觉、自然语言处理等多个领域，反映了这些教授在相关领域的广泛研究和贡献。
