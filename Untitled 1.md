@@ -96,4 +96,4 @@ $$
 接下来，我将继续检查其他教授的发表情况。
 
 
-our organizational partner
+pState-of-the-art techniques will be adopted
