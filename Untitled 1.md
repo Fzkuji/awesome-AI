@@ -23,3 +23,4 @@ Metallic material constitutive modeling
 Model validation and convergence
 
 A meshless computing method that discretizes the problem domain, which is specified by the density, velocity, and energy governing equations, into a collection of SPH particles.
+Jiliang Tang
