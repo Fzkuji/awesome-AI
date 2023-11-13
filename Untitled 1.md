@@ -147,7 +147,7 @@ $$
 9. **International Journal of Industrial Ergonomics**
 
 
-**Extensive Project Expertise and Robust Research Portfolio**
+
 
 
 
