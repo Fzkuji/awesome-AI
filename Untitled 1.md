@@ -171,5 +171,4 @@ $$
 7. **European Journal of Operational Research** - EJOR
 8. **IIE Transactions** - IIE Trans
 9. **International Journal of Industrial Ergonomics** - IJIE
-
-请注意，这些缩写在不同的文献和引用风格中可能有所不同，因此在使用时最好根据具体情况和标准进行确认。
+Int. J. Ind. Ergon.请注意，这些缩写在不同的文献和引用风格中可能有所不同，因此在使用时最好根据具体情况和标准进行确认。
