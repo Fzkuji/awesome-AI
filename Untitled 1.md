@@ -191,3 +191,22 @@ Int. J. Ind. Ergon.请注意，这些缩写在不同的文献和引用风格中�
 我想，在24号前我能做的就是把论文按照赵老师的要求改完，最多加一个比较语言模型的实验，和上次说的一样。
 
 如果一定要加更多的实验，我一个人确实无法做到，我头一回遇到这么紧急且依靠自身无法完成的情况，即使是我现在每天从早干到晚。我或许会找赵老师沟通一下，看看这个情况怎么解决，如果有办法的话。
+
+
+在我们的Uni-CTR框架中，经过精心设计的prompt首先被输入到一个大型语言模型（LLM）。这些文本数据首先经历一个预处理和tokenization的过程。在tokenization过程中，原始文本 \(\boldsymbol{x}_{\text{text}}\) 被分解成一系列tokens，每个token对应于词汇表中的一个唯一ID。这可以表示为：
+
+\[ \boldsymbol{x}_{\text{tokens}} = \text{tokenize}(\boldsymbol{x}_{\text{text}}) \]
+
+接着，这些tokens被送入Embedding层，其中每个token \(x_i\) 被映射到一个固定维度的向量 \( \boldsymbol{e}_i \)，这些向量包括词汇的语义信息和位置信息。因此，对于输入文本的embedding表示可以写成：
+
+\[ \boldsymbol{H}_0 = \text{embedding}(\boldsymbol{x}_{\text{tokens}}) = \{\boldsymbol{e}_0, \boldsymbol{e}_1, \ldots, \boldsymbol{e}_n\} \]
+
+这些向量随后被传递到transformer网络中进行进一步处理。在这个网络中，每个transformer层 \( l \) 接收上一层的输出 \( \boldsymbol{h}_{l-1} \) 并生成新的层输出 \( \boldsymbol{h}_l \)。具体地，每个层的输出可以定义为：
+
+\[ \boldsymbol{h}_l = \text{transformer}_l(\boldsymbol{h}_{l-1}) \]
+
+其中，\( \boldsymbol{h}_0 \) 是Embedding层的输出，而 \( \boldsymbol{h}_L \) 是最后一个transformer层的输出。整个transformer网络可以表示为一系列这样的层：
+
+\[ \boldsymbol{H} = \{\boldsymbol{h}_0, \boldsymbol{h}_1, \boldsymbol{h}_2, \ldots, \boldsymbol{h}_L\} \]
+
+在我们的工作中，我们采用了transformer模型的前两部分——Embedding层和transformer层——并以domain-specific networks和general tower来替代传统的输出层。这种结构使得我们的模型能够更有效地适应不同的域和场景，同时能够在域特定网络中捕捉特定于领域的细微特征，并通过通用塔在跨领域场景中共享和利用知识。
