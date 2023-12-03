@@ -193,28 +193,3 @@ Int. J. Ind. Ergon.请注意，这些缩写在不同的文献和引用风格中�
 如果一定要加更多的实验，我一个人确实无法做到，我头一回遇到这么紧急且依靠自身无法完成的情况，即使是我现在每天从早干到晚。我或许会找赵老师沟通一下，看看这个情况怎么解决，如果有办法的话。
 
 
-当然，我可以帮助您调整LaTeX格式。以下是修改后的文本：
-
----
-
-Certainly! Continuing from where you left off:
-
----
-
-Assuming the Transformer in the comprehensive language model has \( L \) layers, for example, \( L = 12 \), guided by the parameter \( n \), we append a module at every \( n \) layers. Specifically, for the \( l^{\text{th}} \) module \( \boldsymbol{DSN}_l \), it takes as input the output \( \boldsymbol{h}_{l \cdot n} \) from the \( l \cdot n^{\text{th}} \) layer of the language model and the output of the preceding module \( \boldsymbol{DSN}_{l-1} \). The computation is defined as:
-
-\begin{equation}
-\boldsymbol{DSN}_l = 
-\begin{cases} 
-    f(\boldsymbol{h}_0) & \text{if } l = 0 \\
-    f(\boldsymbol{h}_{l \cdot n} + \boldsymbol{DSN}_{l-1}) & \text{if } l > 0 
-\end{cases}
-\end{equation}
-
-Here, \( f \) represents the function of the selected module. The first module \( \boldsymbol{DSN}_0 \) takes only the embedding layer output \( \boldsymbol{h}_0 \) as input. This approach allows each subsequent module \( \boldsymbol{DSN}_l \) to integrate the information processed up to the \( l \cdot n^{\text{th}} \) layer of the Transformer, along with the accumulated knowledge from previous domain-specific network modules.
-
-This modular structure enhances the flexibility and adaptability of our language model, allowing it to be fine-tuned for domain-specific tasks while leveraging the strengths of the comprehensive language model. The use of modules at regular intervals within the Transformer architecture ensures that both high-level and low-level features are effectively incorporated into the final domain-specific representations.
-
----
-
-这样修改后，LaTeX格式更加标准，更适合在学术文献或报告中使用。
