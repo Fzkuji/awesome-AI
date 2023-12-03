@@ -197,23 +197,23 @@ Int. J. Ind. Ergon.请注意，这些缩写在不同的文献和引用风格中�
 
 ---
 
-In our Uni-CTR framework, well-designed prompts are first fed into an LLM. This textual data is then preprocessed and tokenized. In the tokenization process, the raw text $\boldsymbol{x}_{\text{text}}$ is decomposed into a series of tokens, where each token corresponds to a unique ID in the vocabulary, which can be represented as
+Certainly! Continuing from where you left off:
 
-$$ \boldsymbol{x}_{\text{tokens}} = \text{tokenize}(\boldsymbol{x}_{\text{text}}) $$
+---
 
-Next, these tokens are fed into the embedding layer, where each token $x_i$ is mapped to a fixed-dimensional vector $ \boldsymbol{e}_i $, which contains the semantic and positional information of the vocabulary. Therefore, the embedding representation for the input text can be written as
+Assuming the Transformer in the comprehensive language model has \( L \) layers, for example, \( L = 12 \), guided by the parameter \( n \), we append a module at every \( n \) layers. Specifically, for the \( l^{\text{th}} \) module \( \boldsymbol{DSN}_l \), it takes as input the output \( \boldsymbol{h}_{l \cdot n} \) from the \( l \cdot n^{\text{th}} \) layer of the language model and the output of the preceding module \( \boldsymbol{DSN}_{l-1} \). The computation is defined as:
 
-$$ \boldsymbol{H}_0 = \text{embedding}(\boldsymbol{x}_{\text{tokens}}) = \{\boldsymbol{e}_0, \boldsymbol{e}_1, \ldots, \boldsymbol{e}_n\} $$
+\begin{equation}
+\boldsymbol{DSN}_l = 
+\begin{cases} 
+    f(\boldsymbol{h}_0) & \text{if } l = 0 \\
+    f(\boldsymbol{h}_{l \cdot n} + \boldsymbol{DSN}_{l-1}) & \text{if } l > 0 
+\end{cases}
+\end{equation}
 
-These vectors are then passed to the transformer for further processing. In this network, each transformer layer $ l $ receives the output of the previous layer $ \boldsymbol{h}_{l-1} $ and generates a new layer output $ \boldsymbol{h}_l $. Specifically, each layer output can be defined as
+Here, \( f \) represents the function of the selected module. The first module \( \boldsymbol{DSN}_0 \) takes only the embedding layer output \( \boldsymbol{h}_0 \) as input. This approach allows each subsequent module \( \boldsymbol{DSN}_l \) to integrate the information processed up to the \( l \cdot n^{\text{th}} \) layer of the Transformer, along with the accumulated knowledge from previous domain-specific network modules.
 
-$ \boldsymbol{h}_l = \text{transformer}_l(\boldsymbol{h}_{l-1}) $
-
-Where $ \boldsymbol{h}_0 $ is the output of the embedding layer and $ \boldsymbol{h}_L $ is the output of the last transformer layer. The entire transformer network can be represented as a series of such layers:
-
-$$ \boldsymbol{H} = \{\boldsymbol{h}_0, \boldsymbol{h}_1, \boldsymbol{h}_2, \ldots, \boldsymbol{h}_L\} $$
-
-In our work, we adopt the first two parts of the transformer model - the embedding layer and the transformer layer - and use domain-specific networks and the general tower to replace the traditional output layer. This structure allows our model to tackle different domains more efficiently, while capturing domain-specific subtle features in domain-specific networks and utilizing the comprehensive knowledge from all domains through the general tower for zero-shot prediction.
+This modular structure enhances the flexibility and adaptability of our language model, allowing it to be fine-tuned for domain-specific tasks while leveraging the strengths of the comprehensive language model. The use of modules at regular intervals within the Transformer architecture ensures that both high-level and low-level features are effectively incorporated into the final domain-specific representations.
 
 ---
 
