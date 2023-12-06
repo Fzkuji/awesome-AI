@@ -158,55 +158,8 @@ lr = 0.0005 # learn rate
    [00:31,  2.29it/s, test_auc=0.896, test_loss=0.3207327]
   ```
 
-## Inference Process
-
-**Before inference, please refer to [MindSpore Inference with C++ Deployment Guide](https://gitee.com/mindspore/models/blob/master/utils/cpp_infer/README.md) to set environment variables.**
-
-### [Export MindIR](#contents)
-
-- Export on local
-
-  ```shell
-  python export.py
-  ```
-
 # [Model Description](#contents)
-
-## [Performance](#contents)
-
-### Training Performance
-
-| Parameters          | CPU                               |
-|---------------------|-----------------------------------|
-| Model Version       | IntTower                          |
-| Resource            | CPU 2.90GHz;16Core;32G Memory     |
-| uploaded Date       | 09/24/2022 (month/day/year)       |
-| MindSpore Version   | 1.8.1                             |
-| Dataset             | [1]                               |
-| Training Parameters | epoch=8, batch_size=2048, lr=1e-3 |
-| Optimizer           | Adam                              |
-| Loss Function       | Sigmoid Cross Entropy With Logits |
-| outputs             | AUC                               |
-| Loss                | 0.892                             |
-| Per Step Time       | 34.50 ms                          |
-
-### Inference Performance
-
-| Parameters        | CPU                           |
-|-------------------|-------------------------------|
-| Model Version     | IntTower                      |
-| Resource          | CPU 2.90GHz;16Core;32G Memory |                        |
-| Uploaded Date     | 09/24/2022 (month/day/year)   |
-| MindSpore Version | 1.8.1                         |
-| Dataset           | [1]                           |
-| batch_size        | 2048                          |
-| outputs           | AUC                           |
-| AUC               | 0.896                         |
 
 # [Description of Random Situation](#contents)
 
 We set the random seed before training in model_config.py.
-
-# [ModelZoo Homepage](#contents)
-
- Please check the official [homepage](https://gitee.com/mindspore/models)
