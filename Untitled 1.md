@@ -7,38 +7,43 @@ The proposed framework for Uni-CTR comprises three parts,. Initially, the input 
 
 A Unified Framework for Multi-Domain CTR Prediction via Large Language Models
 
-CIKM2022
-
 # [Dataset](#contents)
 
-- [Movie-Lens-1M](https://grouplens.org/datasets/movielens/1m/)
+- [Amazon Review Data (2018)](https://cseweb.ucsd.edu/~jmcauley/datasets/amazon_v2/)
 
 # [Environment Requirements](#contents)
 
-- Hardware（CPU）
-    - Prepare hardware environment with CPU  processor.
+- Hardware（GPU）
+	- Prepare hardware environment with GPU  processor.
 - Framework
-    - [MindSpore-1.8.1](https://www.mindspore.cn/install/en)
+	- Pytorch
 - Requirements
-  - pandas
-  - numpy
-  - random
-  - mindspre==1.8.1
-  - tqdm
-  - sklearn
-- For more information, please check the resources below：
-  - [MindSpore Tutorials](https://www.mindspore.cn/tutorials/en/master/index.html)
-  - [MindSpore Python API](https://www.mindspore.cn/docs/en/master/api_python/mindspore.html)
+	- accelerate  
+	- huggingface-hub  
+	- numpy  
+	- peft  
+	- scipy  
+	- sympy  
+	- tensorboard  
+	- tokenizers  
+	- torch-summary  
+	- torchvision  
+	- tqdm  
+	- transformers  
+	- scikit-learn  
+	- pandas  
+	- tensorflow  
+	- matplotlib
 
 # [Quick Start](#contents)
 
-After installing MindSpore via the official website, you can start training and evaluation as follows:
+After configuring the environment, you can start training and evaluation as follows:
 
-- running on CPU
+- running on GPU
 
   ```python
   # run training and evaluation example
-  python main.py
+  python training/main.py
   ```
 
 # [Script Description](#contents)
@@ -48,8 +53,8 @@ After installing MindSpore via the official website, you can start training and 
 ```bash
 .
 └─IntTower
-  ├─README.md             # descriptions of warpctc
-  ├─eval.py               # model evaluation processing
+  ├─README.md             # descriptions of multi-domain
+  ├─config.py             # configuration of models
   ├─export.py             # export model to MindIR format
   ├─get_dataset.py        # data process  
   ├─model.py              # IntTower structure
