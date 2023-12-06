@@ -52,17 +52,51 @@ After configuring the environment, you can start training and evaluation as foll
 
 ```bash
 .
-└─IntTower
-  ├─README.md             # descriptions of multi-domain
-  ├─config.py             # configuration of models
-  ├─export.py             # export model to MindIR format
-  ├─get_dataset.py        # data process  
-  ├─model.py              # IntTower structure
-  ├─model_config.py       # model training parameters
-  ├─module.py             # modules in IntTower
-  ├─train.py              # train IntTower
-  ├─util.py               # some process function
-  └─requirements.txt      # model requirements
+├── callbacks.py
+├── configs
+│   ├── __init__.py
+│   ├── config.py
+│   ├── config_multi_domain.py
+│   └── config_single_domain.py
+├── inputs.py
+├── layers
+│   ├── __init__.py
+│   ├── activation.py
+│   ├── core.py
+│   ├── interaction.py
+│   ├── sequence.py
+│   └── utils.py
+├── miscellaneous
+├── models
+│   ├── autoint.py
+│   ├── basemodel.py
+│   ├── dcn.py
+│   ├── deepfm.py
+│   ├── fibinet.py
+│   ├── mmoe.py
+│   ├── ple.py
+│   ├── pnn.py
+│   ├── sharedbottom.py
+│   ├── star.py
+│   └── xdeepfm.py
+├── preprocessing
+│   ├── amazon_review_data
+│   │   ├── Distribution.pdf
+│   │   ├── data_analysis.ipynb
+│   │   ├── multi_domain_raw_data_processing.py
+│   │   ├── multi_domain_text_processing.py
+│   │   ├── multi_domain_train_text_processing.py
+│   │   ├── one_for_all.py
+│   │   ├── path_to_save_plot.pdf
+│   │   └── test.py
+│   └── utils.py
+├── requirements.txt
+├── training
+│   ├── main.py
+│   ├── main_multi_domain.py
+│   └── main_single_domain.py
+└── utils.py
+
 ```
 
 ## [Script Parameters](#contents)
