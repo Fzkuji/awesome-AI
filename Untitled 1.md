@@ -1,34 +1,11 @@
 
 # Contents
 
-- [Contents](#contents)
-- [IntTower Description](#IntTower-description)
-- [Dataset](#dataset)
-- [Environment Requirements](#environment-requirements)
-- [Quick Start](#quick-start)
-- [Script Description](#script-description)
-    - [Script and Sample Code](#script-and-sample-code)
-    - [Script Parameters](#script-parameters)
-    - [Training Process](#training-process)
-        - [Training](#training)
-    - [Evaluation Process](#evaluation-process)
-        - [Evaluation](#evaluation)
-    - [Inference Process](#inference-process)
-        - [Export MindIR](#export-mindir)
-- [Model Description](#model-description)
-    - [Performance](#performance)
-        - [Training Performance](#training-performance)
-        - [Inference Performance](#inference-performance)
-- [Description of Random Situation](#description-of-random-situation)
-- [ModelZoo Homepage](#modelzoo-homepage)
+# [Uni-CTR Description](#contents)
 
-# [IntTower Description](#contents)
+The proposed framework for Uni-CTR comprises three parts,. Initially, the input text undergoes processing via the selected **LLM Backbone** to extract the commonalities and distinctions of the data across domains. Subsequently, Subsequently, LLM provides the representations obtained from different layers to the **domain-specific networks** to learn domain-specific characteristics. Additionally, a **general network** is incorporated to learn the representations of all known domains, which enables zero-shot prediction of newly unseen domains.
 
-The proposed model, IntTower (short for Interaction enhanced Two-Tower), consists of Light-SE, FE-Block and CIR modules.
-Specifically, lightweight Light-SE module is used to identify the importance of different features and obtain refined feature representations in each tower. FE-Block module performs fine-grained and early feature interactions to capture the interactive signals between user and item towers explicitly and CIR module leverages a contrastive interaction regularization to further enhance the interactions implicitly.
-
-IntTower: the Next Generation of Two-Tower Model for
-Pre-Ranking System
+A Unified Framework for Multi-Domain CTR Prediction via Large Language Models
 
 CIKM2022
 
