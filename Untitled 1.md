@@ -101,7 +101,7 @@ After configuring the environment, you can start training and evaluation as foll
 
 Parameters for Uni-CTR can be set in `configs/config.py`
 
-- Parameters for Movielens-1M Dataset
+- Parameters for Amazon Review Data (2018)
 
 ```python
 mlp_layers = [300, 300, 128]   # mlp units in every layer
