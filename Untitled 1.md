@@ -83,15 +83,15 @@ After configuring the environment, you can start training and evaluation as foll
 │   │   ├── multi_domain_raw_data_processing.py      # data preprocessing for baseline models
 │   │   ├── multi_domain_text_processing.py          # prompt generation
 │   │   └── one_for_all.py                           # whole dataset preprocessing pipeline for Uni-CTR
-│   └── utils.py                                     # 
-├── training                                         # training 
-│   ├── main.py                                      # 
-│   ├── main_multi_domain.py
-│   └── main_single_domain.py
-├── requirements.txt
+│   └── utils.py                                     # data preprocessing methods
+├── training                                         # training files
+│   ├── main.py                                      # train file for Uni-CTR
+│   ├── main_multi_domain.py                         # train file for multi-domain models
+│   └── main_single_domain.py                        # train file for single-domain models
+├── requirements.txt                                 # package requirements
 ├── callbacks.py                                     # Early Stopping for single-domain models
-├── inputs.py                                        # 
-└── utils.py
+├── inputs.py                                        # data transformation
+└── utils.py                                         # general functions for Uni-CTR 
 
 ```
 
@@ -99,7 +99,7 @@ After configuring the environment, you can start training and evaluation as foll
 
 ### [Uni-CTR](#contents)
 
-Parameters for both training and evaluation can be set in `model_config.py`
+Parameters for Uni-CTR can be set in `configs/config.py`
 
 - Parameters for Movielens-1M Dataset
 
