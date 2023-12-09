@@ -79,17 +79,16 @@ After configuring the environment, you can start training and evaluation as foll
 │   └── xdeepfm.py
 ├── preprocessing                                    # data preprocessing
 │   ├── amazon_review_data                           # preprocessing methods for Amazon Review Data (2018)
-│   │   ├── data_analysis.ipynb
-│   │   ├── multi_domain_raw_data_processing.py
-│   │   ├── multi_domain_text_processing.py
-│   │   ├── multi_domain_train_text_processing.py
-│   │   └── one_for_all.py
-│   └── utils.py
-├── requirements.txt
-├── training
-│   ├── main.py
+│   │   ├── data_analysis.ipynb                      # analyse the distributions of the domains
+│   │   ├── multi_domain_raw_data_processing.py      # data preprocessing for baseline models
+│   │   ├── multi_domain_text_processing.py          # prompt generation
+│   │   └── one_for_all.py                           # whole dataset preprocessing pipeline for Uni-CTR
+│   └── utils.py                                     # 
+├── training                                         # training 
+│   ├── main.py                                      # 
 │   ├── main_multi_domain.py
 │   └── main_single_domain.py
+├── requirements.txt
 ├── callbacks.py                                     # Early Stopping for single-domain models
 ├── inputs.py                                        # 
 └── utils.py
