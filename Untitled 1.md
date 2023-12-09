@@ -52,16 +52,14 @@ After configuring the environment, you can start training and evaluation as foll
 
 ```bash
 .
-├── callbacks.py                                     # 
-├── configs
-│   ├── __init__.py
-│   ├── config.py
-│   ├── config_multi_domain.py
-│   └── config_single_domain.py
-├── inputs.py
-├── layers
-│   ├── __init__.py
-│   ├── activation.py
+├── configs                                          # configurations for different paradigm models
+│   ├── __init__.py                                  # relative package import
+│   ├── config.py                                    # configuration for Uni-CTR
+│   ├── config_multi_domain.py                       # configuration for multi-domain baselines
+│   └── config_single_domain.py                      # configuration for single-domain baslines
+├── layers                                           # network layers in models
+│   ├── __init__.py                                  # relative package import
+│   ├── activation.py                                # activation neto
 │   ├── core.py
 │   ├── interaction.py
 │   ├── sequence.py
@@ -92,6 +90,8 @@ After configuring the environment, you can start training and evaluation as foll
 │   ├── main.py
 │   ├── main_multi_domain.py
 │   └── main_single_domain.py
+├── callbacks.py                                     # Early Stopping for single-domain models
+├── inputs.py                                        # 
 └── utils.py
 
 ```
