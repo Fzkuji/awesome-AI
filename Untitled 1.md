@@ -56,16 +56,16 @@ After configuring the environment, you can start training and evaluation as foll
 │   ├── __init__.py                                  # relative package import
 │   ├── config.py                                    # configuration for Uni-CTR
 │   ├── config_multi_domain.py                       # configuration for multi-domain baselines
-│   └── config_single_domain.py                      # configuration for single-domain baslines
-├── layers                                           # network layers in models
+│   └── config_single_domain.py                      # configuration for single-domain baselines
+├── layers                                           # network layers in models (mostly from package DeepCTR-torch)
 │   ├── __init__.py                                  # relative package import
-│   ├── activation.py                                # activation neto
-│   ├── core.py
-│   ├── interaction.py
-│   ├── sequence.py
-│   └── utils.py
+│   ├── activation.py                                # activation networks
+│   ├── core.py                                      # core networks including ladders
+│   ├── interaction.py                               # modules for single-domain models
+│   ├── sequence.py                                  # sequence processing networks
+│   └── utils.py                                     # other data processing methods and additional networks
 ├── miscellaneous
-├── models
+├── models                                           # all baseline models
 │   ├── autoint.py
 │   ├── basemodel.py
 │   ├── dcn.py
@@ -77,8 +77,8 @@ After configuring the environment, you can start training and evaluation as foll
 │   ├── sharedbottom.py
 │   ├── star.py
 │   └── xdeepfm.py
-├── preprocessing
-│   ├── amazon_review_data
+├── preprocessing                                    # data preprocessing
+│   ├── amazon_review_data                           # preprocessing methods for Amazon Review Data (2018)
 │   │   ├── data_analysis.ipynb
 │   │   ├── multi_domain_raw_data_processing.py
 │   │   ├── multi_domain_text_processing.py
