@@ -52,7 +52,7 @@ After configuring the environment, you can start training and evaluation as foll
 
 ```bash
 .
-├── callbacks.py
+├── callbacks.py                                     # 
 ├── configs
 │   ├── __init__.py
 │   ├── config.py
@@ -81,14 +81,11 @@ After configuring the environment, you can start training and evaluation as foll
 │   └── xdeepfm.py
 ├── preprocessing
 │   ├── amazon_review_data
-│   │   ├── Distribution.pdf
 │   │   ├── data_analysis.ipynb
 │   │   ├── multi_domain_raw_data_processing.py
 │   │   ├── multi_domain_text_processing.py
 │   │   ├── multi_domain_train_text_processing.py
-│   │   ├── one_for_all.py
-│   │   ├── path_to_save_plot.pdf
-│   │   └── test.py
+│   │   └── one_for_all.py
 │   └── utils.py
 ├── requirements.txt
 ├── training
@@ -159,6 +156,8 @@ lr = 0.0005 # learn rate
   ```
 
 # [Model Description](#contents)
+
+
 
 # [Description of Random Situation](#contents)
 
