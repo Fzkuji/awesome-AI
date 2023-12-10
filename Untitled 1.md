@@ -175,7 +175,7 @@ weight_decay = 0.002
 - The python command above will run in the background, you can view the results through the file `ms_log/output.log`.
 
   ```txt
-   13%|█▎        | 31/230 [00:23<02:26,  1.36it/s, train_auc=0.813, train_loss=0.60894054]
+   13%|█▎        | 31/14 [00:23<02:26,  1.36it/s, train_auc=0.813, train_loss=0.60894054]
    ...
   ```
 
