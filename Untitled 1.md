@@ -134,17 +134,10 @@ Parameters for multi-domain can be set in `configs/config_multi_domain.py`
 - Parameters for Amazon Review Data (2018)
 
 ```python
-r = 4  
-num_heads = 2  
-narrowed_ratio = 0.25
-epochs = 10  
-dropout = 0.2  
-mixed_precision = False
-focal_loss = False  
-batch_size = 2048  
-multiplier = 6
 embed_dim = 32
-seed = 2012 
+epoch = 
+batch_size = 2048
+seed = 2012
 lr = 1e-7  
 max_lr = 1e-3
 weight_decay = 0.002
