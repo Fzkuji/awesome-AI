@@ -134,10 +134,12 @@ Parameters for multi-domain can be set in `configs/config_multi_domain.py`
 - Parameters for Amazon Review Data (2018)
 
 ```python
+multiplier = 6
 embed_dim = 32
-epoch = 
-batch_size = 2048
-seed = 2012
+dropout = 0.2  
+epochs = 10  
+batch_size = 2048  
+seed = 2012  
 lr = 1e-7  
 max_lr = 1e-3
 weight_decay = 0.002
@@ -151,39 +153,14 @@ Parameters for multi-domain can be set in `configs/config_single_domain.py`
 - Parameters for Amazon Review Data (2018)
 
 ```python
-
-# LLM  
+embed_dim = 32
+epoch = 10
+batch_size = 2048
 seed = 2012
-num_workers = 0  
-weight_decay = 0.001  
-lr = 5e-5  
-max_lr = 5e-3  
-  
-use_peft = True  
-pretrained = False  
-load_path = os.path.join("saved_models", str(dataset), "multi_domain", "llm_based", text_encoder_model_name,  
-                         ladder_block, "epoch60.pt")  
-save_path = os.path.join("saved_models", str(dataset), "multi_domain", "traditional")  
-  
-epochs = 5  
-dropout = 0.2  
-  
-mixed_precision = True  
-clip_grad = False  
-clip_value = 1.0  
-  
-use_special_token = False  
-  
-# 多场景传统模型参数  
-focal_loss = True  
-batch_size = 1024
+lr = 1e-7  
+max_lr = 1e-3
+weight_decay = 0.002
 ```
-
-
-
-
-
-
 
 ## [Training Process](#contents)
 
