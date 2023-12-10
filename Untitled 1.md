@@ -104,45 +104,27 @@ Parameters for Uni-CTR can be set in `configs/config.py`
 - Parameters for Amazon Review Data (2018)
 
 ```python
-seed = 2012  
-weight_decay = 0.001  
-
-lr = 8e-5  
-max_lr = 5e-4  
-  
 text_encoder_models = [  
-    # Name, num_hidden_layers, text_embedding_dim, max_length  
-    ["tiny-bert-4l-en", 4, 312, 512],  
-    ["bert-base-uncased", 12, 768, 512],  
-    ["deberta-v3-base", 12, 768, 512],  
-    ["deberta-v3-large", 24, 1024, 512],  
-    ["gpt2", 12, 768, 1024],  
-    ["Llama-2-7b-hf", 32, 4096, 4096],  
-]  
-  
-text_encoder_model_name, layer_num, text_embedding_dim, max_length = text_encoder_models[0]  
-
-if text_encoder_model_name == "tiny-bert-4l-en":  
-    nlp_finetune_batch_size = 180 * len(device_ids)  
-    ladder_frequency = 2  
-elif text_encoder_model_name == "deberta-v3-base":  
-    nlp_finetune_batch_size = 60 * len(device_ids)  
-    ladder_frequency = 6  
-else:  
-    nlp_finetune_batch_size = 3 * len(device_ids)  
-    ladder_frequency = 6  
+    # Name, num_hidden_layers, text_embedding_dim, max_length
+    ["Llama-2-7b-hf", 24, 2048, 4096],  
+]
+text_encoder_model_name, layer_num, text_embedding_dim, max_length = text_encoder_models[0]
+ladder_frequency = 4
 
 ladder_block = ["wo_block", "w_lora", "w_self_attention", "w_transformer_block"]  
 ladder_block = ladder_block[3]  
 r = 4  
 num_heads = 2  
 narrowed_ratio = 0.25  
-
 use_peft = True
-epochs = 20
-dropout = 0.2  
-
 mixed_precision = True
+dropout = 0.2
+epochs = 20
+batch_size = 3 * len(device_ids)
+seed = 2012
+lr = 8e-5  
+max_lr = 5e-4
+weight_decay = 0.001
 ```
 
 ### [Multi-Domain Models](#contents)
@@ -152,13 +134,6 @@ Parameters for multi-domain can be set in `configs/config_multi_domain.py`
 - Parameters for Amazon Review Data (2018)
 
 ```python
-
-seed = 2012  
-
-weight_decay = 0.002
-lr = 1e-7  
-max_lr = 1e-3
-  
 r = 4  
 num_heads = 2  
 narrowed_ratio = 0.25
@@ -169,6 +144,10 @@ focal_loss = False
 batch_size = 2048  
 multiplier = 6
 embed_dim = 32
+seed = 2012 
+lr = 1e-7  
+max_lr = 1e-3
+weight_decay = 0.002
 ```
 
 
