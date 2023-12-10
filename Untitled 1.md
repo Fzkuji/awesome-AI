@@ -191,28 +191,28 @@ weight_decay = 0.002
 | Parameters          | GPU                               |
 | ------------------- | --------------------------------- |
 | Model Version       | Uni-CTR                           |
-| Resource            | CPU 2.90GHz;16Core;32G Memory     |
+| Resource            | GPU (NVIDIA V100 ; 32G Memory) * 8       |
 | Uploaded Date       | 12/09/2023 (month/day/year)       |
 | Dataset             | [1]                               |
 | Training Parameters | epoch=10, batch_size=3, lr=1e-4   |
 | Optimizer           | AdamW                             |
 | Loss Function       | Sigmoid Cross Entropy With Logits |
 | outputs             | AUC                               |
-| Loss                | 0.892                             |
-| Per Step Time       | 34.50 ms                          |
+| Loss                |                              |
+| Per Step Time       |  ms                          |
 
 ### Inference Performance
 
-| Parameters        | CPU                           |
-|-------------------|-------------------------------|
+| Parameters        | GPU                           |
+| ----------------- | ----------------------------- |
 | Model Version     | IntTower                      |
-| Resource          | CPU 2.90GHz;16Core;32G Memory |                        |
+| Resource          | CPU 2.90GHz;16Core;32G Memory |
 | Uploaded Date     | 09/24/2022 (month/day/year)   |
 | MindSpore Version | 1.8.1                         |
 | Dataset           | [1]                           |
-| batch_size        | 2048                          |
+| batch_size        | 500                           |
 | outputs           | AUC                           |
-| AUC               | 0.896                         |
+| AUC               | 0.75                         |
 
 
 # [Description of Random Situation](#contents)
