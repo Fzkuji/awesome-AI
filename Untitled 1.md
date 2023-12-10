@@ -181,24 +181,6 @@ weight_decay = 0.002
 
 - The model checkpoint will be saved in the current directory.
 
-## [Evaluation Process](#contents)
-
-### Evaluation
-
-- evaluation on dataset
-
-  Before running the command below, please check the checkpoint path used for evaluation.
-
-  ```python
-  python eval.py > ms_log/eval_output.log 2>&1 &
-  ```
-
-  The above python command will run in the background. You can view the results through the file "eval_output.log". The accuracy is saved in auc.log file.
-
-  ```txt
-   [00:31,  2.29it/s, test_auc=0.896, test_loss=0.3207327]
-  ```
-
 # [Model Description](#contents)
 
 
