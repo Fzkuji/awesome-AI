@@ -191,28 +191,30 @@ weight_decay = 0.002
 | Parameters          | GPU                               |
 | ------------------- | --------------------------------- |
 | Model Version       | Uni-CTR                           |
-| Resource            | GPU (NVIDIA V100 ; 32G Memory) * 8       |
+| Resource            | GPU 8 ** NVIDIA V100 ; 32G Memory |
 | Uploaded Date       | 12/09/2023 (month/day/year)       |
+| Pytorch Version     | 2.0.1                             |
 | Dataset             | [1]                               |
+| Domains             | [0,2,3]                           |
 | Training Parameters | epoch=10, batch_size=3, lr=1e-4   |
 | Optimizer           | AdamW                             |
 | Loss Function       | Sigmoid Cross Entropy With Logits |
 | outputs             | AUC                               |
-| Loss                |                              |
-| Per Step Time       |  ms                          |
+| Loss                |                                   |
+| Per Step Time       | ms                                |
 
 ### Inference Performance
 
-| Parameters        | GPU                           |
-| ----------------- | ----------------------------- |
-| Model Version     | IntTower                      |
-| Resource          | CPU 2.90GHz;16Core;32G Memory |
-| Uploaded Date     | 09/24/2022 (month/day/year)   |
-| MindSpore Version | 1.8.1                         |
-| Dataset           | [1]                           |
-| batch_size        | 500                           |
-| outputs           | AUC                           |
-| AUC               | 0.75                         |
+| Parameters      | GPU                           |
+| --------------- | ----------------------------- |
+| Model Version   | Uni-CTR                       |
+| Resource        | CPU 2.90GHz;16Core;32G Memory |
+| Uploaded Date   | 09/24/2022 (month/day/year)   |
+| Pytorch Version | 2.0.1                         |
+| Dataset         | [1]                           |
+| batch_size      | 500                           |
+| outputs         | AUC                           |
+| AUC             | [0.7523, 0.7569, 0.7246       |
 
 
 # [Description of Random Situation](#contents)
