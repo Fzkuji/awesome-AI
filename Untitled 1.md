@@ -119,7 +119,7 @@ narrowed_ratio = 0.25
 use_peft = True
 mixed_precision = True
 dropout = 0.2
-epochs = 20
+epochs = 10
 batch_size = 3 * len(device_ids)
 seed = 2012
 lr = 8e-5  
@@ -175,7 +175,7 @@ weight_decay = 0.002
 - The python command above will run in the background, you can view the results through the file `ms_log/output.log`.
 
   ```txt
-   13%|█▎        | 31/14 [00:23<02:26,  1.36it/s, train_auc=0.813, train_loss=0.60894054]
+   13%|█▎        | 31/14524 [00:23<02:26,  1.36it/s, train_auc=0.813, train_loss=0.60894054]
    ...
   ```
 
@@ -183,6 +183,36 @@ weight_decay = 0.002
 
 # [Model Description](#contents)
 
+
+## [Performance](#contents)
+
+### Training Performance
+
+| Parameters          | GPU                               |
+| ------------------- | --------------------------------- |
+| Model Version       | Uni-CTR                           |
+| Resource            | CPU 2.90GHz;16Core;32G Memory     |
+| Uploaded Date       | 12/09/2023 (month/day/year)       |
+| Dataset             | [1]                               |
+| Training Parameters | epoch=10, batch_size=3, lr=1e-4   |
+| Optimizer           | AdamW                             |
+| Loss Function       | Sigmoid Cross Entropy With Logits |
+| outputs             | AUC                               |
+| Loss                | 0.892                             |
+| Per Step Time       | 34.50 ms                          |
+
+### Inference Performance
+
+| Parameters        | CPU                           |
+|-------------------|-------------------------------|
+| Model Version     | IntTower                      |
+| Resource          | CPU 2.90GHz;16Core;32G Memory |                        |
+| Uploaded Date     | 09/24/2022 (month/day/year)   |
+| MindSpore Version | 1.8.1                         |
+| Dataset           | [1]                           |
+| batch_size        | 2048                          |
+| outputs           | AUC                           |
+| AUC               | 0.896                         |
 
 
 # [Description of Random Situation](#contents)
