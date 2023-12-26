@@ -17,7 +17,15 @@ https://blog.csdn.net/baishuiniyaonulia/article/details/111030265
 
 ## Problems
 
-华为那边总结的推荐系统的问题，我将根据整个推荐系统的流程按照顺序进行介绍：
+### Huawei
+
+LLM+多任务：宇豪
+LLM+多行为：宇豪
+LLM+多目标：璟桐 宇豪
+
+华为那边总结的推荐系统的问题。
+我觉得他们是从传统模型可以突破点来进行考虑的，就是之前模型没有处理好、没有考虑到的部分。
+下面我将根据整个推荐系统的流程按照顺序进行介绍：
 
 - 输入
 	- 推荐系统的输入有文本、图像、视频、音频等等，因此有：
@@ -26,14 +34,20 @@ https://blog.csdn.net/baishuiniyaonulia/article/details/111030265
 			- ？ - 图像
 			- ？ - 视频
 			- ？ - 音频
-	- 除了通过输入模态来划分，还可以通过数据来源划分，通常包括用户和产品两个主要部分，但是也有：
-		- 多场景研究
-			- 可以算作是第三个主要部分，最后大致可以理解为：推荐系统需要在合适的场景将合适的产品推荐给合适的人
+	- 除了通过输入模态来划分，还可以通过数据来源划分，通常包括用户、产品、推荐的场景三个部分，因此有：
+		- 多兴趣研究（针对用户）
+			- 这个的考虑是用户的喜好并不单一，可能目前用户只交互了一种类别的内容，但是我们可以通过这个类别去推测用户还可能喜欢别的类别，因此需要多兴趣研究。
+		- 多场景研究（针对场景）
+			- 是除了用户和产品之外一个额外的考虑，算作是第三个主要部分，大致可以理解为：推荐系统需要在**合适的场景**将**合适的产品**推荐给**合适的人**
 - 模型
 	- 将数据输入模型后，就需要考虑模型的结构了，因此有：
 		- 多阶段研究
-			- 传统推荐系统被分为多个阶段，如召回，粗排，精排，重排等。导致推荐系统的灵活性差。而大语言模型具有上下文理解能力，具有统一多阶段推荐，彻底解决传统多阶段模型无法端到端训练和部署的潜力。
+			- 传统推荐系统被分为多个阶段，如召回，粗排，精排，重排等。导致推荐系统的灵活性差。
+			- 大语言模型具有上下文理解能力，具有统一多阶段推荐，彻底解决传统多阶段模型无法端到端训练和部署的潜力。（看来目前的目标是终结多阶段、迈向端到端了）
 		- 
+
+
+### Others
 
 以下是我之前刚接触的时候看别人的总结，推荐系统存在以下几个问题：
 - 冷启动
@@ -63,7 +77,7 @@ https://blog.csdn.net/baishuiniyaonulia/article/details/111030265
 12. **Long-tail problem**: Many recommender systems focus on popular items and may ignore less popular or niche items, even though these might be of interest to the user. This is known as the long-tail problem.
 13. **Cross-domain recommendations**: This involves recommending items from a different domain than the one a user has shown interest in. For example, recommending a movie based on a user's book preferences. This is a challenging problem due to the difficulty in mapping preferences across different domains.
 
-### Cold-start problem
+#### Cold-start problem
 
 ^f00b70
 
@@ -84,7 +98,7 @@ To address the cold start problem, recommender systems often employ various tech
 
 These techniques help to alleviate the cold start problem and improve the quality of recommendations, even when the system has limited data about users or items.
 
-#### 用户冷启动
+##### 用户冷启动
 给新用户做个性化推荐
 
 解决方案：
@@ -95,7 +109,7 @@ These techniques help to alleviate the cold start problem and improve the qualit
 引导用户把自己的属性表达出来
 利用用户在社交媒体的信息
 
-#### 物品冷启动
+##### 物品冷启动
 把新的物品推荐给特定的用户
 
 解决方案：
@@ -105,14 +119,14 @@ These techniques help to alleviate the cold start problem and improve the qualit
 给物品打标签
 推荐排行榜单
 
-#### 系统冷启动
+##### 系统冷启动
 新系统让用户感受到个性化推荐
 
 
 
 
 
-### Sparsity problem
+#### Sparsity problem
 
 解决方案：
 
@@ -121,12 +135,12 @@ These techniques help to alleviate the cold start problem and improve the qualit
 基于物品本身的信息：基于深度学习的语义理解模型
 
 
-### 不断变化的用户喜好
+#### 不断变化的用户喜好
 对用户行为的存储有实时性
 推荐算法要考虑到用户近期行为和长期行为
 要不断挖掘用户新的兴趣爱好
 
-### Cross-domain recommendations
+#### Cross-domain recommendations
 
 [TALLRec](../../4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/TALLRec.md)（也自称LLM4Rec）研究了跨域推荐的问题，并没有什么特别的发现。只是说LLM有跨域推荐的能力（这不废话）。
 
