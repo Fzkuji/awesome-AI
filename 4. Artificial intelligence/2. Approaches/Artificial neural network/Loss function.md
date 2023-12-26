@@ -24,8 +24,8 @@ The Huber loss is the convolution of the absolute value function with the rectan
 ^62ea0d
 
 Best explain: 
-- [](https://arize.com/blog-course/ndcg/#:~:text=Normalized%20Discounted%20Cumulative%20Gain%20(NDCG)%20is%20a%20measure%20of%20ranking,or%20other%20information%20retrieval%20system.)
-- [NDCG - 知乎 (zhihu.com)](zhihu.com))
+- [What Is NDCG and Where Is It Used?](https://arize.com/blog-course/ndcg/#:~:text=Normalized%20Discounted%20Cumulative%20Gain%20(NDCG)%20is%20a%20measure%20of%20ranking,or%20other%20information%20retrieval%20system.)
+- [NDCG - 知乎 (zhihu.com)](zhihu.com)
 
 Normalized Discounted Cumulative Gain (NDCG) is a ranking metric used to evaluate the quality of the ranking results in information retrieval and recommendation systems. It measures the effectiveness of a search algorithm by calculating the sum of the discounted relevance scores of the top K items in the ranked list.
 
