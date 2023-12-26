@@ -10,9 +10,22 @@ Recommender systems are particularly useful when an individual needs to choose a
 https://blog.csdn.net/baishuiniyaonulia/article/details/111030265
 
 
+
+
+
+
+
 ## Problems
 
-推荐系统存在以下几个问题：
+华为那边总结的推荐系统的问题，我将根据整个推荐系统的流程按照顺序进行介绍：
+
+推荐系统的输入有文本、图像、视频、音频等等，因此有：
+- 多模态研究
+	- LLM解决
+
+
+
+以下是我之前刚接触的时候看别人的总结，推荐系统存在以下几个问题：
 - 冷启动
 - 数据稀疏
 - 不断变化的用户喜好
