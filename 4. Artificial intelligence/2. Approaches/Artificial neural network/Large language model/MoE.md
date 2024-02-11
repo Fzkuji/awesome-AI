@@ -2,9 +2,12 @@
 
 ## Motivation
 
-Moore's law and [Scaling laws](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Scaling%20laws.md)
+Moore's law and [Scaling laws](Scaling%20laws.md)
 
 根据Scaling Laws，模型越大、数据量越大、计算量越大，模型效果也越好。因此，目前很多LLM都是朝着更多参数、更多训练数据的方向进行scaling。然而，随着摩尔定律走到了尽头，LLM也不可能做到无限大。那么计算受到限制的时候，该如何进一步提升模型的性能呢？其中一种方法是MoE。
+https://github.com/Fzkuji/awesome-AI/blob/main/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Scaling%20laws.md
+
+
 
 ## Related works
 
