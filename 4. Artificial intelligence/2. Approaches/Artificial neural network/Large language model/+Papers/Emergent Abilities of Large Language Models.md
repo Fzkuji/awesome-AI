@@ -12,12 +12,12 @@ An ability is emergent if it is not present in smaller models but is present in 
 
 本部分主要讨论在prompting范式下的emergent abilities, 该范式如下图所示：
 
-![400](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Pasted%20image%2020230511121355.png)
+![400](Resources/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Pasted%20image%2020230511121355.png)
 
 > Few-shot prompting的emergent主要体现为模型在没有达到一定规模前，得到的表现较为随机，在突破规模的临界点后，表现大幅度提升。如下图所示，在BIG-Bench上，GPT-3和LaMDA在未达到临界点时，模型的表现都是接近于零。而在GPT-3的规模突破2 · 10^22 training FLOPs (13B参数)，LaMDA的规模突破10^23 training FLOPs (68B参数)，模型的表现开始快速上升。
 > ——[大模型的涌现能力](https://zhuanlan.zhihu.com/p/609339534)
 
-![2206.07682_page-0004](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/2206.07682_page-0004.jpg)
+![2206.07682_page-0004](Resources/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/2206.07682_page-0004.jpg)
 
 ## Augmented prompting strategies
 
@@ -28,10 +28,10 @@ An ability is emergent if it is not present in smaller models but is present in 
 > 
 > ——[大模型的涌现能力](https://zhuanlan.zhihu.com/p/609339534)
 
-![2206.07682_page-0005](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/2206.07682_page-0005.jpg)
+![2206.07682_page-0005](Resources/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/2206.07682_page-0005.jpg)
 
 最终汇总结果：
-![2206.07682_page-0006](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/2206.07682_page-0006.jpg)
+![2206.07682_page-0006](Resources/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/2206.07682_page-0006.jpg)
 
 ## Discussion
 
@@ -62,7 +62,7 @@ An ability is emergent if it is not present in smaller models but is present in 
 “涌现”能力不一定只和参数量进行比较，也可以用其他指标
 
 比如MMLU上的“涌现”能力和模型对文本的困惑程度相关：
-![2206.07682_page-0009](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/2206.07682_page-0009.jpg)
+![2206.07682_page-0009](Resources/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/2206.07682_page-0009.jpg)
 当然，仅限于这一种“涌现”能力，并不是所有“涌现”能力都和困惑度相关
 
 ### Sociological changes

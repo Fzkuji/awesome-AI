@@ -138,7 +138,7 @@ To construct identifiers with this property, we employ **a simple hierarchical c
 ### Training and Optimization
 
 - optimized for seq2seq cross entropy loss
-- [Teacher forcing](../../../1.%20Major%20goals/Intelligence/Natural%20language%20processing/Teacher%20forcing.md)
+- [Teacher forcing](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Teacher%20forcing.md)
 
 
 1. Pre-train a model to perform indexing and fine-tuning the model to perform indexing retrieval

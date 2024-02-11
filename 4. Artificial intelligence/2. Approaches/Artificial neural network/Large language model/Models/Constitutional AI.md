@@ -28,7 +28,7 @@ The process involves both a supervised learning and a reinforcement learning pha
 
 在本文中，我们开发了一种我们称为Constitutional AI (CAI)的方法，并用它来训练一个非回避和相对无害的 AI 助手，没有任何人类反馈的影响。如Figure 1所示：
 
-![Pasted image 20230511221912](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Pasted%20image%2020230511221912.png)
+![Pasted image 20230511221912](Resources/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Pasted%20image%2020230511221912.png)
 
 我们开发这项技术的动机是：
 1. 研究使用AI帮助监督其他人工智能的可能性，从而扩大监督规模
@@ -122,9 +122,9 @@ Our training process has two stages (see Figure 1), where
 
 helpful, honest, and harmless
 
-![](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Pasted%20image%2020230924214544.png)
+![](Resources/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Pasted%20image%2020230924214544.png)
 
-![](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Pasted%20image%2020230924214851.png)
+![](Resources/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Pasted%20image%2020230924214851.png)
 
 首先，模型参数量在大于52B的时候，性能能和人类相媲美。
 其次，CoT对性能有明显提升。
@@ -136,7 +136,7 @@ helpful, honest, and harmless
 
 作者设计了prompt流程来对有害发言进行修改。
 
-![](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Pasted%20image%2020230924225934.png)
+![](Resources/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Pasted%20image%2020230924225934.png)
 
 我们总共编写了16个与无害性相关的不同原则，其中许多相当相似并以一般意义上解决有害性，而其他则旨在针对特定领域。它们在每个红队提示的每个修订步骤中都被随机抽样。
 我们总共编写了16个与无害性相关的不同原则，其中许多相当相似并以一般意义上解决有害性，而其他则旨在针对特定领域。它们在每个红队提示的每个修订步骤中都被随机抽样。
@@ -157,7 +157,7 @@ helpful, honest, and harmless
 
 ### Main results
 
-![](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/Pasted%20image%2020230926101140.png)
+![](Resources/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Pasted%20image%2020230926101140.png)
 
 
 

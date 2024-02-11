@@ -29,7 +29,7 @@ The existing approaches of transformer-based position encoding mainly focus on c
 
 ### Absolute position embedding
 
-**Absolute Position Encodings** are a type of position embeddings for [[Transformer](https://paperswithcode.com/method/transformer)-based models] where positional encodings are added to the input embeddings at the bottoms of the encoder and decoder stacks. The positional encodings have the same dimension $d_{model}$ as the embeddings, so that the two can be summed. 
+**Absolute Position Encodings** are a type of position embeddings for [Transformer](https://paperswithcode.com/method/transformer)-based models where positional encodings are added to the input embeddings at the bottoms of the encoder and decoder stacks. The positional encodings have the same dimension $d_{model}$ as the embeddings, so that the two can be summed. 
 
 A typical choice of the [](.md#^Equation1%7CEquation%20(1)) is:
 $$

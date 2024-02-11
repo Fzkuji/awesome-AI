@@ -100,7 +100,7 @@ More [benchmarks](../../../../../../Miscellaneous/Baselines%20vs%20Benchmarks.md
  - complex model w/ complex task: challenging optimization problem
  - often data-inefficient
 #### 3.2.4. Case Study: GPT-3
-*PPT最后提及了[GPT-123](../../../Natural%20language%20processing/Large%20language%20model/Models/GPT/GPT-123.md)模型*
+*PPT最后提及了[GPT-123](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Models/GPT/GPT-123.md)模型*
 
 GPT-3定义上应该是一种自监督预训练NLP大模型。但是Finn认为这也是一个black-box meta-learner trained on language generation tasks。感觉其实就是大力出奇迹，和meta learning没啥关系。
 

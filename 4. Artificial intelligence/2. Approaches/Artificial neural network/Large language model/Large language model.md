@@ -1,17 +1,17 @@
 ## Key concepts
 
-- [Prompting](Prompting.md)
-	- [Self-consistency](Self-consistency.md)
+- [Prompting](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Prompting.md)
+	- [Self-consistency](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Self-consistency.md)
 
-- [Emergent ability](Emergent%20ability.md)
-	- [In-context learning](In-context%20learning.md)
-	- [Chain of thought](Chain%20of%20thought.md)
+- [Emergent ability](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Emergent%20ability.md)
+	- [In-context learning](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/In-context%20learning.md)
+	- [Chain of thoughts](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Chain%20of%20thoughts.md)
 
-- [RLHF](RLHF.md)
+- [RLHF](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/RLHF.md)
 
 ## Paradigms
 
-![LMRS paradigm](../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/LMRS%20paradigm.png)
+![LMRS paradigm](Resources/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LMRS%20paradigm.png)
 Language Modelling Paradigm Adaptations for Recommender Systems (LMRS)
 
 上图是语言模型在推荐系统上的范式，不过在整个语言模型领域感觉也是通用的。
@@ -22,7 +22,7 @@ Language Modelling Paradigm Adaptations for Recommender Systems (LMRS)
 ### Fine-tuning
 
 
-### [Prompting](Prompting.md)
+### [Prompting](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Prompting.md)
 
 Prompt-tuning中也分为Tuning-free prompting、Fixed-PTM prompt tuning和Fixed-prompt PTM tuning三种类别。
 
@@ -44,7 +44,7 @@ Fixed-prompt PTM tuning是一种在预定义的prompt上进行微调或参数调
 
 ## Objectives
 
-![常用评估分数](../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/%E5%B8%B8%E7%94%A8%E8%AF%84%E4%BC%B0%E5%88%86%E6%95%B0.png)
+![常用评估分数](Resources/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/常用评估分数.png)
 
 ### LLM objectives
 
@@ -95,25 +95,25 @@ Fixed-prompt PTM tuning是一种在预定义的prompt上进行微调或参数调
 ### Models
 
 - OpenAI
-	- [GPT-123](Models/GPT/GPT-123.md)
-	- [InstructGPT](Models/GPT/InstructGPT.md)
-	- [ChatGPT](Models/GPT/ChatGPT.md)
-	- [GPT-4](Models/GPT/GPT-4.md)
+	- [GPT-123](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Models/GPT/GPT-123.md)
+	- [InstructGPT](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Models/GPT/InstructGPT.md)
+	- [ChatGPT](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Models/GPT/ChatGPT.md)
+	- [GPT-4](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Models/GPT/GPT-4.md)
 - Google
-	- [BERT](Models/BERT.md)
+	- [BERT](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Models/BERT.md)
 - Meta
-	- [LLaMA](Models/LLaMA.md)
-	- [LLaMa 2](Models/LLaMa%202.md)
+	- [LLaMA](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Models/LLaMA.md)
+	- [LLaMa 2](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Models/LLaMa%202.md)
 - DeepMind
-	- [Chinchilla](Models/Chinchilla.md)
+	- [Chinchilla](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Models/Chinchilla.md)
 - Anthropic
-	- [Claude](Models/Claude.md)
-	- [Claude 2](Models/Claude%202.md)
+	- [Claude](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Models/Claude.md)
+	- [Claude 2](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Models/Claude%202.md)
 - Stability AI
 	- FreeWilly
 	- [FreeWilly 2](https://mp.weixin.qq.com/s/kAPl101G_-eFAmC_HdTmgQ)
 
-[LLaMA-Adapter](Models/LLaMA-Adapter.md) - Shanghai Artificial Intelligence Laboratory,  CUHK MMLab, University of California, Los Angeles
+[LLaMA-Adapter](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Models/LLaMA-Adapter.md) - Shanghai Artificial Intelligence Laboratory,  CUHK MMLab, University of California, Los Angeles
 
 [ChatGPT的朋友们：大语言模型经典论文一次读到吐](https://mp.weixin.qq.com/s/ATd6D00aPOV8hIqvBoWAFA)
 

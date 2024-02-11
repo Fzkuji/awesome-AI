@@ -3,7 +3,7 @@
 [Read the model card](https://github.com/facebookresearch/llama/blob/main/MODEL_CARD.md)
 [Apply for access to LLaMA](https://docs.google.com/forms/d/e/1FAIpQLSfqNECQnMkycAp2jP4Z9TFX0cGR4uf7b_fBxjY_OjhJILlKGA/viewform)
 
-![600](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Large%20language%20model/LLaMA.png)
+![600](Resources/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLaMA.png)
 
 ## Approach
 
@@ -23,7 +23,7 @@
 
 #### Pre-normalization.
 
-[](../../../../../2.%20Approaches/Artificial%20neural%20network/Normalization.md#Root%20Mean%20Square%20Layer%20Normalization%7CRMSNorm) used in [GPT-3](GPT/GPT-123.md)
+[](../../../../../2.%20Approaches/Artificial%20neural%20network/Normalization.md#Root%20Mean%20Square%20Layer%20Normalization%7CRMSNorm) used in [GPT-3](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Models/GPT/GPT-123.md)
 
 #### SwiGLU activation function
 
@@ -33,7 +33,7 @@ We use a dimension of $\frac{2}{3} 4d$ instead of $4d$ as in PaLM.
 
 #### Rotary embeddings .
 
-[](../../Position%20embedding.md#^621b59%7CRotary%20positional%20embedding) used by GPTNeo
+[](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Position%20embedding.md#^621b59|Rotary%20positional%20embedding) used by GPTNeo
 
 ### Optimizer
 
