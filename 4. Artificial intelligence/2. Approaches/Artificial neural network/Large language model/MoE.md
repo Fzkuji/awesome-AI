@@ -44,5 +44,9 @@ JMLR 2022
 
 [Switch transformers: scaling to trillion parameter models with simple and efficient sparsity](https://dl.acm.org/doi/abs/10.5555/3586589.3586709)
 
-2021年1月，Google大脑团队发布Switch Transformer，其简化了MoE的routing算法，并且gating network 每次只 route 到 1 个 expert。
+2021年1月，Google大脑团队发布Switch Transformer，其简化了MoE的routing算法，并且gating network每次只route到1个expert。
 
+#### GlaM
+
+
+同年，Google的GlaM模型表明，Transformer和MoE风格的层可以组合在一起生成一个模型，在29个基准测试中平均超过GPT-3模型的精度，而使用3倍少的能耗进行训练和2倍少的计算进行推理。
