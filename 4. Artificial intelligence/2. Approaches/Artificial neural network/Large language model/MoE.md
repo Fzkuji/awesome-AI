@@ -40,6 +40,8 @@ ICLR 2021
 
 #### Switch Transformer
 
+JMLR 2022
+
 [Switch transformers: scaling to trillion parameter models with simple and efficient sparsity](https://dl.acm.org/doi/abs/10.5555/3586589.3586709)
 
 
