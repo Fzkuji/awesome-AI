@@ -38,8 +38,7 @@ ICLR 2021
 
 首个MoE+Transformer模型：Transformer的encoder和decoder中，每隔一个（every other）FFN层，替换成[position-wise](https://www.zhihu.com/search?q=position-wise&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A%22665459559%22%7D) MoE层。
 
-
-##Switch Transformer
+#### Switch Transformer
 
 
 
