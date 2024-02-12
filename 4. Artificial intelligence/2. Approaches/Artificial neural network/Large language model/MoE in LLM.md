@@ -64,6 +64,21 @@ GLaM虽然效果不错，但是有负载不均衡问题。也就是说，会有�
 采用Expert Choice Routing的模型，相比于GLaM，在收敛速度方面可以提升2倍， 在step time上提速20%，并且完美解决了负载不均衡问题。8B/64E的模型（有9.8B激活的参数），在SuperGLUE上效果超过T5-11B的模型。
 
 
+#### Brainformers
+
+[Brainformers: Trading Simplicity for Efficiency](https://arxiv.org/abs/2306.00008)
+
+ICLR 2023 Withdrawn Submission
+
+上述MoE模型，在训练速度很慢，会成为进一步 scaling 的瓶颈。Google进一步提出了Brainformers。主要方法是符合结构的
+
+为了模型计算更快，需要对矩阵乘法进行分解，从而减少计算量。同时，这些矩阵分解，必须不能损害模型的准确性。上图 (a) 中，是两种分解矩阵乘法的主要方法，分别是从横向分解（low-rank）和纵向分解（multi-expert） 。而在图 (b)中，可以对 low-rank 和 multi-expert 进行组合、堆叠，以实现更有趣且计算效率高的模型架构。
+
+如果在 bottleneck 处，插入一个 mixure 层，模型看起来就非常像 transformers。如果在 bottleneck 处，插入一个 attention layer，模型看起来就非常像一个 multi-expert transformers。
+
+作者对不同的参数，进行了搜索，从而找到了最优的网络模型结果。搜索的空间包括：不同的层类型（attn、moe、ffn）、隐层维度、MoE隐层维度、FFN隐层维度、attention 的 head 数、Gating Fuction、Capacity Factor、Activation Function等。
+
+从搜索空间中，采样一组参数，构建一个 100M/32E 的模型，选择top-K的模型，然后进行scaling，如1B/64E 、8B/64E。
 
 
 
