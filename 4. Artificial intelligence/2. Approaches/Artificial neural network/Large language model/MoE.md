@@ -28,6 +28,8 @@ KDD 2018
 
 ### Transformer MoE
 
+当模型参数量到了千亿这个级别以后，再想向上扩展变得愈发困难，经济实用的MoE又被重启。还是Google，提出了GShard，首个将MoE思想拓展到Transformer的工作，而后Switch Transformer、GLaM等工作持续改进着Transformer MoE的结构，也将LLM的参数量从千亿推向了万亿级别。
+
 #### GShard
 
 ICLR 2021
