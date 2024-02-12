@@ -48,5 +48,12 @@ JMLR 2022
 
 #### GlaM
 
+[GLaM: Efficient Scaling of Language Models with Mixture-of-Experts](https://proceedings.mlr.press/v162/du22c.html)
 
 同年，Google的GlaM模型表明，Transformer和MoE风格的层可以组合在一起生成一个模型，在29个基准测试中平均超过GPT-3模型的精度，而使用3倍少的能耗进行训练和2倍少的计算进行推理。
+
+
+
+
+
+
