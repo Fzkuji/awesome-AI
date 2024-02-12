@@ -22,6 +22,6 @@ Google Brain的Shazeer、Noam等人提出使用稀疏的MoE结构来将模型容
 [Modeling Task Relationships in Multi-task Learning with Multi-gate Mixture-of-Experts](https://dl.acm.org/doi/10.1145/3219819.3220007)
 
 
+### Transformer MoE
 
-
-
+#### 
