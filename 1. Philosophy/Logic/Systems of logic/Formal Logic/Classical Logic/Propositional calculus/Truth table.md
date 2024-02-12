@@ -12,7 +12,7 @@ Advantages:
 - Give a formal defnition of what a connective "means."
 - Give us a way to fgure out what a complex propositional formula says.
 
-## Truth table for [implication](../../../../../../Resources/0.%20Philosophy/Implication.pdf)
+## Truth table for [implication](../../../../../../Attachments/0.%20Philosophy/Implication.pdf)
 蕴含连接词的真值表
 
 | $p$ | $q$ | $p \to q$ |

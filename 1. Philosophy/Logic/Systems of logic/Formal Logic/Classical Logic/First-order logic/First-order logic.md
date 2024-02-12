@@ -71,11 +71,11 @@ First-order logic is an excellent tool for manipulating defnitions and theorems 
 
 ### The art of translation
 
-[The art of translation](../../../../../../Resources/0.%20Philosophy/The%20art%20of%20translation.pdf)介绍了翻译一阶逻辑的案例。包括普通句子的翻译和集合的翻译。
+[The art of translation](../../../../../../Attachments/0.%20Philosophy/The%20art%20of%20translation.pdf)介绍了翻译一阶逻辑的案例。包括普通句子的翻译和集合的翻译。
 
 ### Negation in first-order logic
 
-![600](../../../../../../Resources/0.%20Philosophy/Negation%20in%20first-order%20logic.png)
+![600](../../../../../../Attachments/0.%20Philosophy/Negation%20in%20first-order%20logic.png)
 
 Use the equivalences
 $$

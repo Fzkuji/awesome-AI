@@ -28,13 +28,13 @@ Conclusion:
 
 ### Contributions
 
-![](../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230720150227.png)
+![](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230720150227.png)
 
 ## Methods
 
-![](../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230720165843.png)
+![](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230720165843.png)
 
-![](../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230720170003.png)
+![](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230720170003.png)
 
 
 

@@ -127,7 +127,7 @@ In this work, we treat this as **a fully unsupervised pre-processing step**. How
 
 To construct identifiers with this property, we employ **a simple hierarchical clustering process** over document embeddings to induce a decimal tree (or more generally, a trie).
 
-![600](../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Hierarchical%20clustering%20%20process.png)
+![600](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Hierarchical%20clustering%20%20process.png)
 
 如图，核心操作就是将所有文档分为0-9十个类别。在细分类别中，
 - 如果文档数量仍然大于$c$，那么就递归上述操作
@@ -222,7 +222,7 @@ DSI模型大小：Base (0.2B), Large (0.8B), XL (3B) and XXL (11B)
 | DSI | XXL | 11B | Semantic String Docid | 48.5 | 72.1 | 26.9 | 59.5 | 40.4 | 70.3 |
 
 
-![DSI performance](../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/DSI%20performance.png)
+![DSI performance](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/DSI%20performance.png)
 
 ## Future work
 

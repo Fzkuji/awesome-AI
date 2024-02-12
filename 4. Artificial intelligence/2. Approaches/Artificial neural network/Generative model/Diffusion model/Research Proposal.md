@@ -104,7 +104,7 @@ $$
 #### Parameters Setups
 
 According to the definition of the diffusion model, besides the training parameters, the only changing parameters of the model are the artificially set $\alpha$ and $\beta$. They have many setups, mainly linear, sigmoid and cosine schedulers. $\alpha$ and $\beta$ affect the number of steps of the diffusion model and the variance of the added noise.
-![600](../../../../../Resources/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Generative%20model/alpha&sigma.png)
+![600](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Generative%20model/alpha&sigma.png)
 When the current step is determined, the longer the model prediction step size is, the more significant the proportion of the prediction result will be, and the noise variance will also increase.
 
 #### High-order

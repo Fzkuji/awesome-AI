@@ -50,7 +50,7 @@ ChatGPT的首次亮相最近吸引了自然语言处理（NLP）社区和其他�
 
 使用[prompt](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Prompting.md)设计[LTR](../../../../5.%20Information%20science/Information%20retrieval/Learning%20to%20rank.md)的三种范式：
 
-![Pasted image 20230516162335](../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Pasted%20image%2020230516162335.png)
+![Pasted image 20230516162335](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Pasted%20image%2020230516162335.png)
 
 ## Evaluation
 
@@ -95,9 +95,9 @@ $$
 
 未完待续。。。
 
-![Pasted image 20230517163542](../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Pasted%20image%2020230517163542.png)
+![Pasted image 20230517163542](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Pasted%20image%2020230517163542.png)
 
-![Pasted image 20230517163604](../../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Pasted%20image%2020230517163604.png)
+![Pasted image 20230517163604](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Pasted%20image%2020230517163604.png)
 
 
 

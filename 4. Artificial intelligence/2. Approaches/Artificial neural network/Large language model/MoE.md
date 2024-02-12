@@ -17,7 +17,7 @@ ICLR 2017
 
 Google Brain的Shazeer、Noam等人提出使用稀疏的MoE结构来将模型容量做大的方法，即：训练时使用海量的专家模型，推理时激活少数专家模型。
 
-![](Resources/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Sparse%20MoE.png)
+![](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Sparse%20MoE.png)
 
 ### Multi-gate Mixture-of-Experts (MMoE)
 

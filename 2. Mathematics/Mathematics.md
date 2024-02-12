@@ -35,7 +35,7 @@ This is current arrangement of this note.
 	- Computational Algebra
 	- Computer Algebra Systems
 4. Discrete Mathematics
-	- Combinatorics (including [Graph Theory](../Resources/2.%20Mathematics/4.%20Discrete%20mathematics/Graph%20theory/Graph%20theory.pdf) and [Order theory](4.%20Discrete%20mathematics/Order%20theory/Order%20theory.md))
+	- Combinatorics (including [Graph Theory](../Attachments/2.%20Mathematics/4.%20Discrete%20mathematics/Graph%20theory/Graph%20theory.pdf) and [Order theory](4.%20Discrete%20mathematics/Order%20theory/Order%20theory.md))
 	- Number Theory
 	- [Mathematical logic](1.%20Pure%20mathematics/Mathematical%20logic/Mathematical%20logic.md)
 		- [Set theory](1.%20Pure%20mathematics/Mathematical%20logic/Set%20theory/Set%20theory.md)
@@ -43,7 +43,7 @@ This is current arrangement of this note.
 
 ## Areas of mathematics
 
-![Mathematistan](../Resources/2.%20Mathematics/Mathematistan.jpg)
+![Mathematistan](../Attachments/2.%20Mathematics/Mathematistan.jpg)
 
 ## MSC2020-Mathematics Subject Classification System
 

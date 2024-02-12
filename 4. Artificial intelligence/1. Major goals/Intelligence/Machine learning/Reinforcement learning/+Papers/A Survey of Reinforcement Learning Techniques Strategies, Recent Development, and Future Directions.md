@@ -30,14 +30,14 @@ Most of the published articles define reinforcement learning as a Markov Decisio
 
 宏观概念：
 
-![Pasted image 20221009000504](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Reinforcement%20Learning/Pasted%20image%2020221009000504.png)
+![Pasted image 20221009000504](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Reinforcement%20Learning/Pasted%20image%2020221009000504.png)
 
 [POMDP简单的视频分析](https://www.zhihu.com/zvideo/1326278888684187648)
 
-![Pasted image 20221008232114](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Reinforcement%20Learning/Pasted%20image%2020221008232114.png)
+![Pasted image 20221008232114](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Reinforcement%20Learning/Pasted%20image%2020221008232114.png)
 
-![Pasted image 20221008232248](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Reinforcement%20Learning/Pasted%20image%2020221008232248.png)
+![Pasted image 20221008232248](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Reinforcement%20Learning/Pasted%20image%2020221008232248.png)
 
-![Pasted image 20221008232356](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Reinforcement%20Learning/Pasted%20image%2020221008232356.png)
+![Pasted image 20221008232356](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Reinforcement%20Learning/Pasted%20image%2020221008232356.png)
 
-![Pasted image 20221008232850](../../../../../../Resources/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Reinforcement%20Learning/Pasted%20image%2020221008232850.png)
+![Pasted image 20221008232850](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Reinforcement%20Learning/Pasted%20image%2020221008232850.png)

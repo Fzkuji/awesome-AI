@@ -16,9 +16,9 @@
 		{"type":"text","text":"[[LLM4Rec#^d99e12|New Paradigms]]\n- [Generative Recommendation: Towards Next-generation Recommender Paradigm](https://arxiv.org/abs/2304.03516) Platform as Content Creator with LLM using tools\n- [Generate rather than Retrieve: Large Language Models are Strong Context Generators](https://arxiv.org/abs/2209.10063) LLM as Content Creator for QA","id":"8fdd76b07b0750f7","x":211,"y":1020,"width":330,"height":200},
 		{"type":"text","text":"## ID Generation","id":"8cf41b5357a58b7d","x":955,"y":1240,"width":250,"height":60},
 		{"type":"text","text":"## items/content","id":"b26fea1c3db21337","x":-560,"y":-680,"width":240,"height":50,"color":"3"},
-		{"type":"file","file":"Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230621185522.png","id":"37b91635a709978a","x":-1040,"y":-480,"width":338,"height":400,"color":"6"},
+		{"type":"file","file":"Attachments/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230621185522.png","id":"37b91635a709978a","x":-1040,"y":-480,"width":338,"height":400,"color":"6"},
 		{"type":"text","text":"[[LLM4Rec#^4028ad|Surveys]]\n- [Self-Supervised Learning for Recommender Systems: A Survey](https://arxiv.org/abs/2203.15876)\n- [Pre-train, Prompt and Recommendation: A Comprehensive Survey of Language Modelling Paradigm Adaptations in Recommender Systems](https://arxiv.org/abs/2302.03735)\n- [A Survey on Large Language Models for Recommendation](https://arxiv.org/abs/2305.19860)\n- [How Can Recommender Systems Benefit from Large Language Models: A Survey](https://arxiv.org/abs/2306.05817)","id":"6d9ab905d6e8d223","x":-430,"y":770,"width":500,"height":210},
-		{"type":"file","file":"Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230621185639.png","id":"4b15345fb3812a01","x":-340,"y":-480,"width":337,"height":399,"color":"5"},
+		{"type":"file","file":"Attachments/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230621185639.png","id":"4b15345fb3812a01","x":-340,"y":-480,"width":337,"height":399,"color":"5"},
 		{"type":"text","text":"## Personal Background","id":"f8ba19b202cf7de9","x":161,"y":-240,"width":279,"height":50,"color":"4"},
 		{"type":"text","text":"## History","id":"b02ba8ef3c19f41a","x":237,"y":-135,"width":203,"height":50,"color":"4"},
 		{"type":"text","text":"## Feedback","id":"3baa6730c825dc6d","x":237,"y":-355,"width":203,"height":50,"color":"4"},
@@ -26,7 +26,7 @@
 		{"type":"text","text":"Classical Recommendation System Paradigm","id":"b69aa0f4d70429be","x":1590,"y":-635,"width":250,"height":60},
 		{"type":"text","text":"RecSys","id":"6992e91c183965a0","x":1590,"y":-510,"width":250,"height":60},
 		{"type":"text","text":"Use Info","id":"3c39b4d4a463cdeb","x":1590,"y":-395,"width":250,"height":60},
-		{"type":"file","file":"Resources/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230621185826.png","id":"aec765ee5c8cb27c","x":910,"y":-480,"width":338,"height":400,"color":"4"}
+		{"type":"file","file":"Attachments/4. Artificial intelligence/3. Applications/Recommender system/Pasted image 20230621185826.png","id":"aec765ee5c8cb27c","x":910,"y":-480,"width":338,"height":400,"color":"4"}
 	],
 	"edges":[
 		{"id":"2828017169a3211f","fromNode":"37b91635a709978a","fromSide":"top","toNode":"b26fea1c3db21337","toSide":"left","color":"3"},

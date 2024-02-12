@@ -47,7 +47,7 @@ Gopher should be 4 times smaller, while being training on 4 times more tokens (d
 
 固定模型大小（尝试了多种大小的模型），更改训练数据大小
 
-![Figure 2](Resources/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Figure%202.png)
+![Figure 2](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Figure%202.png)
 
 Finally, we fit power laws to estimate the optimal model size and number of training tokens for any given amount of compute (see the center and right panels of Figure 2), obtaining a relationship $N_{\text {opt }} \propto C^a$ and $D_{\text {opt }} \propto C^b$. We find that $a=0.50$ and $b=0.50$. 
 
@@ -55,7 +55,7 @@ Finally, we fit power laws to estimate the optimal model size and number of trai
 
 固定计算预算大小（尝试了多个预算），更改模型大小，观察损失函数
 
-![Figure 3](Resources/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Figure%203.png)
+![Figure 3](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Figure%203.png)
 
 As with the previous approach, we then fit a power law between FLOPs and loss-optimal model size and number of training tokens, shown in Figure 3 (center, right). Again, we fit exponents of the form $N_{o p t} \propto C^a$ and $D_{o p t} \propto C^b$ and we find that $a=0.49$ and $b=0.51$.
 
@@ -93,7 +93,7 @@ N_{o p t}(C)=G\left(\frac{C}{6}\right)^a, \quad D_{o p t}(C)=G^{-1}\left(\frac{C
 $$
 We show contours of the fitted function $\hat{L}$ in [](.md#^910ca9%7CFigure%204%20(left)), and the closed-form efficient computational frontier in blue. From this approach, we find that $a=0.46$ and $b=0.54$-as summarized in Table 2 .
 
-![Figure 4](Resources/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Figure%204.png) ^910ca9
+![Figure 4](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Figure%204.png) ^910ca9
 
 ### Optimal model scaling
 

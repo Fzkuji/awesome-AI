@@ -227,13 +227,13 @@ Ideally, given user $u_i$, the platform will get his background $b_i$ and browsi
 
 or recommendation
 
-![Pasted image 20230629220945](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230629220945.png)
+![Pasted image 20230629220945](../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230629220945.png)
 
 ##### Divided by main body
 
 [A Survey on Large Language Models for Recommendation](https://arxiv.org/abs/2305.19860)中提到了这种分类方法，将LLM4Rec分为Discriminative LLM4Rec和Generative LLM4Rec，他们的区别在于是否让LLM进行推荐，也就是推荐的主题是谁的问题。
 
-![500](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230613222453.png)
+![500](../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230613222453.png)
 
 目前的趋势来看，还是让LLM直接做推荐符合潮流，并且这样也免去了还要单独提供一个推荐系统的麻烦。
 
@@ -516,7 +516,7 @@ Click-through rate (CTR) prediction
 1. 作者提出了一种统一的推荐框架思路，这个框架是基于M6之上的，不仅可以做开放域的推荐，还可以针对下游任务进行简单的微调就可以用
 2. 为了减小推荐系统的推理延迟，本文在late interaction的基础上提出了multi-segment late interaction. 简单来说就是把transform的前几层的结果先缓存起来。
 
-![](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230723163833.png)
+![](../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230723163833.png)
 
 ### Atlas: Few-shot Learning with Retrieval Augmented Language Models
 
@@ -542,7 +542,7 @@ Click-through rate (CTR) prediction
 > —— https://mp.weixin.qq.com/s/SF5bAYSrfQkBzk6bblg9fg
 
 Re-rank部分是由Retriever完成的，而不是LLM。
-![Pasted image 20230615180820](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230615180820.png)
+![Pasted image 20230615180820](../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230615180820.png)
 
 
 ### Generate rather than Retrieve: Large Language Models are Strong Context Generators
@@ -557,7 +557,7 @@ Re-rank部分是由Retriever完成的，而不是LLM。
 
 将LLMs输出的结果连同之前的输入，再次作为输入给到LLMs，难绷
 
-![Pasted image 20230707220830](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230707220830.png)
+![Pasted image 20230707220830](../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230707220830.png)
 
 文章主要思想是使用大语言模型自动生成文档级别Prompt，使得在问答任务上效果更好
 
@@ -582,7 +582,7 @@ Re-rank部分是由Retriever完成的，而不是LLM。
 
 将传统推荐系统和LLM模型合并使用，主要以工程为主。本质还是候选物的re-rank。
 
-![Fig 1](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Fig%201.png)
+![Fig 1](../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Fig%201.png)
 文章设计了整个用户提问的流程，穿插使用GPT和传统推荐系统。主要思路是将推荐系统的结果让GPT再过滤排序一遍
 
 
@@ -594,7 +594,7 @@ Re-rank部分是由Retriever完成的，而不是LLM。
 
 最简单的似乎不需要训练模型的方法，使用三段式提问让LLMs输出结果
 
-![800](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/NIR.png)
+![800](../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/NIR.png)
 
 > 本文评测了零样本设定下，LLM在下一个物品预测任务下的能力。本文提出了两个挑战：1. 对于LLM来说，推荐的候选空间非常大，2. LLM不清楚用户的历史交互和偏好。为此，本文提出了一种提示策略：“Zero-Shot Next-Item Recommendation (NIR)”， 使得LLM可以处理预测下一个物品的任务。具体来说，本文首先利用外部模块（传统的协同过滤模型）生成候选物品，然后分别提示LLM：1. 提取用户偏好，2. 选择代表性的历史交互物品， 3. 推荐并排序包含十个物品的列表。本文结果表明GPT-3在MovieLens 100K数据集上具有较强的零样本能力，甚至可以优于在该数据集上完整训练的传统推荐模型。
 
@@ -618,7 +618,7 @@ GeneRec模型确实更像是一个内容生成和编辑模型，而不是传统�
 
 GeneRec模型的独特之处在于，它不仅仅是根据用户的历史行为来推荐内容，而是直接生成或编辑内容以满足用户的需求。这种方法可以看作是推荐系统的一种扩展或变体，它将推荐系统的范围从简单的内容推荐扩展到了内容生成和编辑。
 
-![Pasted image 20230618181431](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230618181431.png)
+![Pasted image 20230618181431](../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230618181431.png)
 
 这篇论文中提到了以下几个任务：
 
@@ -636,7 +636,7 @@ GeneRec模型的独特之处在于，它不仅仅是根据用户的历史行为�
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ---------------------------------------- |
 | GPT4Rec | [GPT4Rec A Generative Framework for Personalized Recommendation and User Interests Interpretation](#GPT4Rec%20A%20Generative%20Framework%20for%20Personalized%20Recommendation%20and%20User%20Interests%20Interpretation) | arXiv preprint |            | [arXiv:2304.03879](https://arxiv.org/abs/2304.03879) | [Query generation](#Query%20generation) |
 
-![Pasted image 20230623175129](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230623175129.png)
+![Pasted image 20230623175129](../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230623175129.png)
 
 > 本文认为传统的推荐模型用ID来表征物品，并且使用判别式方法建模，可能会导致以下几个限制：1. 无法利用物品的内容信息和NLP模型的语言建模能力。2. 无法解释用户兴趣来提升推荐的相关性的多样性。3. 无法适配更实际的应用场景，例如不断增加新的商品。
 > 
@@ -655,7 +655,7 @@ GeneRec模型的独特之处在于，它不仅仅是根据用户的历史行为�
 
 本文设计的框架：
 
-![Pasted image 20230602093017](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230602093017.png)
+![Pasted image 20230602093017](../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230602093017.png)
 
 这篇文章确实是一篇调研论文，文中提到了5种经典推荐系统任务，包括Rating prediction、Sequential recommendation、Direct recommendation、Explanation Generation和Review summarization，并且分别通过Metrics和真人进行了性能评估。
 
@@ -672,7 +672,7 @@ GeneRec模型的独特之处在于，它不仅仅是根据用户的历史行为�
 
 简单来说就是通过两次tuning来优化LLMs模型，使其适应推荐任务，两次优化分别是**instruction tuning**和**rec-tuning**。instruction tuning就是通常所说的instruction tuning，rec-tuning是专门为推荐任务设计的对话方式，有特定的格式。事实证明instruction tuning让模型更会聊天，rec-tuning让模型更会推荐。
 
-![Fig. 2](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Fig.%202.png)
+![Fig. 2](../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Fig.%202.png)
 
 感觉这种方法更符合未来的趋势，可惜用梯度下降训练模型本身效率就挺低的，感觉还是要找到更有效地学习模式
 
@@ -726,7 +726,7 @@ LLM预测用户评分
 > 
 > 为了解决这些问题，本文提出GENRE，一个基于LLM的生成式新闻推荐框架。具体来说，GENRE利用可获得的新闻数据，如标题，摘要，和新闻类别，来构建提示，从而激发LLM基于其通用知识来产生相关的信息 ，如新闻摘要，用户画像，个性化新闻等。这些生成的新闻信息将被加入到数据库中，并迭代的优化LLM生成。在此之后，这些生成出来的新的数据将被用来训练新闻推荐模型。
 
-![Pasted image 20230531163844](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230531163844.png)
+![Pasted image 20230531163844](../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230531163844.png)
 
 
 ### How to Index Item IDs for Recommendation Foundation Models
@@ -748,11 +748,11 @@ LLM预测用户评分
 | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | [InstructRec](+Papers/InstructRec.md) | [Recommendation as Instruction Following A Large Language Model Empowered Recommendation Approach](#Recommendation%20as%20Instruction%20Following%20A%20Large%20Language%20Model%20Empowered%20Recommendation%20Approach) | arXiv preprint |            | [arXiv:2305.07001](https://arxiv.org/abs/2305.07001) | [LLM as RS](#LLM%20as%20RS), [Sequential recommendation](#Sequential%20recommendation), [Information retrieval](#Information%20retrieval) |
 
-![Pasted image 20230701142758](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230701142758.png)
+![Pasted image 20230701142758](../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230701142758.png)
 
 Instruction design，设计了多种prompt来微调模型
 
-![Pasted image 20230701142901](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230701142901.png)
+![Pasted image 20230701142901](../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230701142901.png)
 
 实验包括序列推荐、查询推荐和个性化查询推荐
 
@@ -764,7 +764,7 @@ Instruction design，设计了多种prompt来微调模型
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------------------------------------- | ---------------------------------------------------- | ---------------------- |
 | FaiRLLM | [Is ChatGPT Fair for Recommendation? Evaluating Fairness in Large Language Model Recommendation](#Is%20ChatGPT%20Fair%20for%20Recommendation?%20Evaluating%20Fairness%20in%20Large%20Language%20Model%20Recommendation) | arXiv preprint | [FaiRLLM](https://github.com/jizhi-zhang/FaiRLLM) | [arXiv:2305.07609](https://arxiv.org/abs/2305.07609) | [Fairness](#Fairness) |
 
-![Pasted image 20230614211026](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230614211026.png)
+![Pasted image 20230614211026](../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230614211026.png)
 
 > 本文旨在评测达模型的推荐结果是否公平。实际上，由于在大量的无标注语料上预训练，LLM存在一定的社会偏见，可能导致LLM产生不公平的推荐结果。为此，本文提出了一个新的公平性benchmark："Fairness of Recommendation via LLM (FaiRLLM)."
 > 
@@ -777,7 +777,7 @@ Instruction design，设计了多种prompt来微调模型
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------------------------------------- | ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
 | LLMRank | [Large Language Models are Zero-Shot Rankers for Recommender Systems](#Large%20Language%20Models%20are%20Zero-Shot%20Rankers%20for%20Recommender%20Systems) | arXiv preprint | [LLMRank](https://github.com/RUCAIBox/LLMRank) | [arXiv:2305.08845](https://arxiv.org/abs/2305.08845) | [LLM as RS](#LLM%20as%20RS), [Sequential recommendation](#Sequential%20recommendation), [Ranking](#Ranking) |
 
-![Pasted image 20230614100006](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230614100006.png)
+![Pasted image 20230614100006](../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230614100006.png)
 
 本文评测了LLM在推荐系统中的零样本排序能力。具体来说，本文将推荐问题形式化为给定条件的排序任务，其中用户的历史交互作为条件，召回得到的物品作为候选。本文通过设计合适的prompt模版，结合条件、候选、排序指令，使得LLM可以执行推荐中的排序任务。本文在两个公开数据集上进行了详细的实验，并得到以下发现：
 
@@ -803,7 +803,7 @@ Instruction design，设计了多种prompt来微调模型
 | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------------------------------------------- | ---------------------------------------------------- | ----------------------- |
 | iEvaLM | [Rethinking the Evaluation for Conversational Recommendation in the Era of Large Language Models](#Rethinking%20the%20Evaluation%20for%20Conversational%20Recommendation%20in%20the%20Era%20of%20Large%20Language%20Models) | arXiv preprint | [iEvaLM-CRS](https://github.com/RUCAIBox/iEvaLM-CRS) | [arXiv:2305.13112](https://arxiv.org/abs/2305.13112) | [Performance](#Performance) |
 
-![600](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230614151527.png)
+![600](../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230614151527.png)
 
 > 本文同样尝试利用ChatGPT来构建对话式推荐系统，并为此进行了系统性的评测。本文首先在已有的benchmark数据集上评测了ChatGPT的对话推荐能力。然而，结论是反直觉的：“ChatGPT并没有展示较好的效果”。为此，本文作者检查了ChatGPT失败的案例，并发现失败的原因在于：已有的评测方式依赖于对齐人类手工标注的推荐和对话，并过分强调了基于对话上下文来对ground-truth物品的拟合。因此，传统的评测指标，如BLEU和GOUGE等无法反映LLM在文本生成任务上的真实能力。
 > 
@@ -819,9 +819,9 @@ Instruction design，设计了多种prompt来微调模型
 
 [KDD2023 | RecFormer: 为序列推荐学习通用的语言表示](https://mp.weixin.qq.com/s/lEjN75p8AUbJ8ZIfVorSzA)
 
-![Pasted image 20230710113234](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230710113234.png)
+![Pasted image 20230710113234](../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230710113234.png)
 
-![Pasted image 20230710113448](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230710113448.png)
+![Pasted image 20230710113448](../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230710113448.png)
 
 整体结构如图所示，值得注意的是，无论是单个物品的表示还是用户交互序列的表示，最终用于推荐的输出只有$h_{[CLS]}$部分，也就是图3左上角的部分。
 
@@ -841,7 +841,7 @@ Instruction design，设计了多种prompt来微调模型
 
 本文使用语言模型进行跨模式校准，将表格和文本进行校准，通过对比学习得到协作模型，之后再进行单独的调整。
 
-![Pasted image 20230625182143](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230625182143.png)
+![Pasted image 20230625182143](../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230625182143.png)
 
 ### Efficiently Measuring the Cognitive Ability of LLMs: An Adaptive Testing Perspective
 
@@ -880,7 +880,7 @@ Instruction design，设计了多种prompt来微调模型
 
 这篇论文提出了一个名为KAR（Open-World Knowledge Augmented Recommendation Framework with Large Language Models）的开放世界知识增强推荐框架。KAR的目标是通过大型语言模型（LLMs）获取两种类型的外部知识——用户偏好的推理知识和项目的事实知识，以增强推荐系统的性能。
 
-![Pasted image 20230629113444](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230629113444.png)
+![Pasted image 20230629113444](../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230629113444.png)
 
 KAR的主要贡献和特点包括：
 
@@ -913,7 +913,7 @@ KAR的主要贡献和特点包括：
 	- Top-K策略就是所有的item都单独计算一个score，最后选最大的几个；Next-K则是顺序生成，将之前的选择也加入模型进行预测，再选择最大score的item，不断循环这个过程。
 2. **基于SVD的子项项目标记化**：提出了一种新的基于SVD的子项项目标记化和逐标记项目生成方法。这种方法可以减少嵌入表的大小，同时达到与SASRec类似的结果。
 
-![Pasted image 20230628221730](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230628221730.png)
+![Pasted image 20230628221730](../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230628221730.png)
 
 3. **GPTRec模型**：提出了基于GPT-2架构的GPTRec生成序列推荐模型。这个模型与现有的SASRec模型在结构上类似，但GPTRec支持Next-K推荐策略，允许更灵活的目标。此外，GPTRec可以使用子项标记化，这对GPU内存消耗有利。GPTRec还使用了与SASRec不同的损失函数（交叉熵而非二元交叉熵）；实证结果显示，这种改变是有益的。
 4. **识别限制和未来工作方向**：识别了所提出方法的限制，并确定了在未来工作中克服这些限制的策略。

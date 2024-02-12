@@ -158,7 +158,7 @@ The dataset is provided to facilitate any research on the problem of *Learning 
 Paper: https://arxiv.org/abs/2307.09688
 Website: https://kddcup23.github.io/
 
-![350](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/ab3cf0fdd7ff7aea13ebe24aca41d79.jpg)
+![350](../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/ab3cf0fdd7ff7aea13ebe24aca41d79.jpg)
 
 This paper presents Amazon-M2, a large-scale multilingual and multi-locale shopping session dataset collected from Amazon. The dataset aims to inspire the development of new recommendation strategies and improve the customer experience.
 
@@ -214,7 +214,7 @@ Multi-scenario learning，也叫Multi-domain learning理论上multi-scenario和m
 | ---- | ------------------------------------------------------------------------------------------ | ----------- | ------------------------------------------------------------- | -------------------------------------------------------------------------- | ---------------------------- |
 | [MMoE](../../1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/+Papers/MMoE.md) | [Modeling Task Relationships in Multi-task Learning with Multi-gate Mixture-of-Experts](#Modeling%20Task%20Relationships%20in%20Multi-task%20Learning%20with%20Multi-gate%20Mixture-of-Experts) | KDD 2018    | [DeepCTR-Torch](https://github.com/shenweichen/DeepCTR-Torch) | [doi.org/10.1145/3219819.3220007](https://doi.org/10.1145/3219819.3220007) | [Multi-scenario learning](#Multi-scenario%20learning), Multi-task learning |
 
-![Pasted image 20230713091222](../../../Resources/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230713091222.png)
+![Pasted image 20230713091222](../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/Pasted%20image%2020230713091222.png)
 
 
 ### Progressive Layered Extraction (PLE): A Novel Multi-Task Learning (MTL) Model for Personalized Recommendations

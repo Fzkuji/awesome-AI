@@ -3,7 +3,7 @@
 [Read the model card](https://github.com/facebookresearch/llama/blob/main/MODEL_CARD.md)
 [Apply for access to LLaMA](https://docs.google.com/forms/d/e/1FAIpQLSfqNECQnMkycAp2jP4Z9TFX0cGR4uf7b_fBxjY_OjhJILlKGA/viewform)
 
-![600](Resources/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLaMA.png)
+![600](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLaMA.png)
 
 ## Approach
 

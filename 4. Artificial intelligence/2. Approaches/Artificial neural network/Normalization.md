@@ -6,7 +6,7 @@ including Batch, Layer, Instance and Group Normalization
 ## Batch normalization
 
 对一个batch内，所有样本相同位置的特征进行正则化，如图所示：
-![600](../../../Resources/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Normalization/Batch%20normalization.png)
+![600](../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Normalization/Batch%20normalization.png)
 图中，深蓝色框内的特征来自于不同的样本，但是属于同一个channel。
 
 ## Layer normalization
@@ -22,19 +22,19 @@ y_{i, j, k}=\frac{x_{i, j, k}-\mu_{i, j}}{\sqrt{\sigma_{i, j}^2+\epsilon}} \time
 $$
 
 在一个batch内，对每个样本的所有特征进行正则化，如图所示：
-![600](../../../Resources/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Normalization/Layer%20normalization.png)
+![600](../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Normalization/Layer%20normalization.png)
 图中，红色框内的特征来自于同一个样本，囊括了该样本的所有channel。
 
 ## Instance normalization
 
 对每个样本的每一个特征都进行正则化：
-![600](../../../Resources/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Normalization/Instance%20normalization.png)
+![600](../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Normalization/Instance%20normalization.png)
 Instance normalization在图中并没有标出，因为每一个样本的每一个channel都是一个instance，都要做一遍normalization。
 
 ## Group normalization
 
 对一个样本的特征进行正则化。但是区别于layer normalization的对整个样本所有特征进行操作，group normalization将样本内的所有特征进行分组，在组内进行正则化。如图所示：
-![600](../../../Resources/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Normalization/Group%20normalization.png)
+![600](../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Normalization/Group%20normalization.png)
 图中，假如$m=64$，并且一个group的大小设置为32，那么整个样本就被分为两个group，每个group内都会进行正则化。
 
 ## Root Mean Square Layer Normalization

@@ -1,4 +1,4 @@
-Function的通用定义见：[Function](../../../../../Resources/2.%20Mathematics/1.%20Pure%20mathematics/Mathematical%20logic/Set%20theory/Concepts/Function.pdf)
+Function的通用定义见：[Function](../../../../../Attachments/2.%20Mathematics/1.%20Pure%20mathematics/Mathematical%20logic/Set%20theory/Concepts/Function.pdf)
 
 通常的function主要基于[set theory](../Set%20theory.md)，
 
