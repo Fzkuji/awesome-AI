@@ -11,6 +11,8 @@ Moore's law and [Scaling laws](Scaling%20laws.md)
 
 ### Sparse MoE
 
+
+
 [Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer](https://openreview.net/forum?id=B1ckMDqlg)
 
 Google Brain的Shazeer、Noam等人提出使用稀疏的MoE结构来将模型容量做大的方法，即：训练时使用海量的专家模型，推理时激活少数专家模型。
@@ -26,8 +28,9 @@ Google Brain的Shazeer、Noam等人提出使用稀疏的MoE结构来将模型容
 
 #### GShard
 
+[GShard: Scaling Giant Models with Conditional Computation and Automatic Sharding](https://openreview.net/forum?id=qrwe7XHTmYb)
 
-https://openreview.net/forum?id=qrwe7XHTmYb
+
 
 
 
