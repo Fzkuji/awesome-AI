@@ -53,6 +53,16 @@ JMLR 2022
 同年，Google的GlaM模型表明，Transformer和MoE风格的层可以组合在一起生成一个模型，在29个基准测试中平均超过GPT-3模型的精度，而使用3倍少的能耗进行训练和2倍少的计算进行推理。
 
 
+#### Expert Choice Routing
+
+[Mixture-of-Experts with Expert Choice Routing](https://proceedings.neurips.cc/paper_files/paper/2022/hash/2f00ecd787b432c1d36f3de9800728eb-Abstract-Conference.html)
+
+GLaM虽然效果不错，但是有负载不均衡问题。也就是说，会有一部分expert会经常被激活，而有一些expert很少被激活。
+
+2022年，在NeurIPS上，Google提出了新的Expert Choice Routing方法，来解决负载不均衡问题。该方法中，每个expert 会独立选择top-k的tokens作为输入。每个token都可能会被不同的expert选择。一些比较重要的tokens会得到更多的计算资源，而不重要的tokens得到的计算资源会比较少。
+
+采用Expert Choice Routing的模型，相比于GLaM，在收敛速度方面可以提升2倍， 在step time上提速20%，并且完美解决了负载不均衡问题。8B/64E的模型（有9.8B激活的参数），在SuperGLUE上效果超过T5-11B的模型。
+
 
 
 
