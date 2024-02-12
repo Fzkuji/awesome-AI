@@ -17,8 +17,6 @@ Google Brain的Shazeer、Noam等人提出使用稀疏的MoE结构来将模型容
 
 ![](Resources/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Sparse%20MoE.png)
 
-
-
 ### Multi-gate Mixture-of-Experts (MMoE)
 
 [Modeling Task Relationships in Multi-task Learning with Multi-gate Mixture-of-Experts](https://dl.acm.org/doi/10.1145/3219819.3220007)
