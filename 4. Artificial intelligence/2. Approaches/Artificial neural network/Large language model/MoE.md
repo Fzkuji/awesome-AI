@@ -24,4 +24,12 @@ Google Brain的Shazeer、Noam等人提出使用稀疏的MoE结构来将模型容
 
 ### Transformer MoE
 
-#### 
+#### GShard
+
+
+https://openreview.net/forum?id=qrwe7XHTmYb
+
+
+
+
+
