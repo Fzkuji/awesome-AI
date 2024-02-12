@@ -36,7 +36,7 @@ ICLR 2021
 
 [GShard: Scaling Giant Models with Conditional Computation and Automatic Sharding](https://openreview.net/forum?id=qrwe7XHTmYb)
 
-首个MoE+Transformer模型：Transformer的encoder和decoder中，每隔一个（every other）FFN层，替换成[position-wise](https://www.zhihu.com/search?q=position-wise&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A%22665459559%22%7D) MoE层。
+首个MoE+Transformer模型：Transformer的encoder和decoder中，每隔一个（every other）FFN层，替换成position-wise MoE层。
 
 #### Switch Transformer
 
@@ -44,5 +44,5 @@ JMLR 2022
 
 [Switch transformers: scaling to trillion parameter models with simple and efficient sparsity](https://dl.acm.org/doi/abs/10.5555/3586589.3586709)
 
-2021年1月，Google大脑团队发布Switch Transformer，其简化了MoE的[routing算法](https://www.zhihu.com/search?q=routing%E7%AE%97%E6%B3%95&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A%22665459559%22%7D)，并且gating network 每次只 route 到 1 个 expert。
+2021年1月，Google大脑团队发布Switch Transformer，其简化了MoE的routing算法，并且gating network 每次只 route 到 1 个 expert。
 
