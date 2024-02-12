@@ -70,7 +70,9 @@ GLaM虽然效果不错，但是有负载不均衡问题。也就是说，会有�
 
 ICLR 2023 Withdrawn Submission
 
-上述MoE模型，在训练速度很慢，会成为进一步 scaling 的瓶颈。Google进一步提出了Brainformers。主要方法是复合结构的
+上述MoE模型，在训练速度很慢，会成为进一步 scaling 的瓶颈。Google进一步提出了Brainformers。主要方法是：
+- 复合结构的低秩矩阵+Expert
+- 神经架构搜索
 
 为了模型计算更快，需要对矩阵乘法进行分解，从而减少计算量。同时，这些矩阵分解，必须不能损害模型的准确性。上图 (a) 中，是两种分解矩阵乘法的主要方法，分别是从横向分解（low-rank）和纵向分解（multi-expert） 。而在图 (b)中，可以对 low-rank 和 multi-expert 进行组合、堆叠，以实现更有趣且计算效率高的模型架构。
 
