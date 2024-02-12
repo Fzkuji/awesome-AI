@@ -36,7 +36,7 @@ $$
 f_{t: t \in\{q, k, v\}}\left(\boldsymbol{x}_i, i\right):=\boldsymbol{W}_{t: t \in\{q, k, v\}}\left(\boldsymbol{x}_i+\boldsymbol{p}_i\right),
 $$
 ^Equation3
-
+[Position embedding](Position%20embedding.md#^Equation2)
 where $\boldsymbol{p}_i \in \mathbb{R}^d$ is a d-dimensional vector depending of the position of token $\boldsymbol{x}_i$. Previous work introduced the use of a set of trainable vectors $\boldsymbol{p}_i \in\left\{\boldsymbol{p}_t\right\}_{t=1}^L$, where $L$ is the maximum sequence length. The authors of *Attention Is All You Need* have proposed to generate $\boldsymbol{p}_i$ using the sinusoidal function.
 
 #### Sinusoidal positional embedding
