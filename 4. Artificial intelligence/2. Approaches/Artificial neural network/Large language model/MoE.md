@@ -11,9 +11,9 @@ Moore's law and [Scaling laws](Scaling%20laws.md)
 
 ### Sparse MoE
 
+ICLR 2017
 
-
-[Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer](https://openreview.net/forum?id=B1ckMDqlg)
+[Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer](https://openreview.net/forum?id=B1ckMDqlg) 
 
 Google Brain的Shazeer、Noam等人提出使用稀疏的MoE结构来将模型容量做大的方法，即：训练时使用海量的专家模型，推理时激活少数专家模型。
 
@@ -21,12 +21,16 @@ Google Brain的Shazeer、Noam等人提出使用稀疏的MoE结构来将模型容
 
 ### Multi-gate Mixture-of-Experts (MMoE)
 
+KDD 2018
+
 [Modeling Task Relationships in Multi-task Learning with Multi-gate Mixture-of-Experts](https://dl.acm.org/doi/10.1145/3219819.3220007)
 
 
 ### Transformer MoE
 
 #### GShard
+
+ICLR 2021
 
 [GShard: Scaling Giant Models with Conditional Computation and Automatic Sharding](https://openreview.net/forum?id=qrwe7XHTmYb)
 
