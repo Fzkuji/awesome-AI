@@ -28,7 +28,7 @@ Title: Recommender Systems with Generative Retrieval
 为了更好地捕捉数据中的非线性，近年来双编码器架构（即一个用于查询，一个用于候选项）越来越受欢迎，它使用内积将查询和候选项嵌入到相同的空间中。在推理过程中，使用候选塔为所有项目创建嵌入索引。对于给定的查询，使用查询塔计算其嵌入，然后使用近似最近邻算法选择最近的候选项。另一方面，最近流行的顺序推荐器会显式考虑用户与项目交互的顺序。它们通常在输出层使用softmax，并在推理期间使用 ANN。
 
 
-![Fig 1 1](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Fig%201%201.png)
+![Fig 1 1](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/TIGER/IMG-20240212100317482.png)
 Figure 1: High-level overview of Transformer Index for GEnerative Recommenders (TIGER) framework. TIGER proposes representing an item as a tuple of discrete semantic tokens (referred to as Semantic ID), which allows framing the sequential recommendation task as a generative task such that the Semantic ID of the next item is directly predicted using a sequence-to-sequence model. ^c9c8a3
 
 我们提出了一种用于顺序推荐器的生成式检索模型的新范式。与传统的查询-候选项匹配方法不同，我们的方法使用端到端的生成模型直接预测候选项ID，从而无需离散的、非可微的内积搜索系统或索引。
@@ -64,7 +64,7 @@ TIGER的特点是用一种新颖的“语义ID”表示每个项目：基于项�
 
 Residual-Quantized Variational AutoEncoder (RQ-VAE) is a multi-stage vector quantizer that applies quantization on residuals at multiple levels to generate a tuple of codewords (aka Semantic IDs).
 
-![Fig 3 1](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Fig%203%201.png)
+![Fig 3 1](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/TIGER/IMG-20240212100317502.png)
 Figure 3: RQ-VAE: In the figure, the vector output by the DNN Encoder, say $r_0$ (represented by the blue bar), is fed to the quantizer, which works iteratively. First, the closest vector to $r_0$ is found in the first level codebook. Let this closest vector be $\boldsymbol{e}_{c_0}$ (represented by the red bar). Then, the residual error is computed as $r_1:=r_0-e_{c_0}$. This is fed into the second level of the quantizer, and the process is repeated: The closest vector to $r_1$ is found in the second level, say $e_{c_1}$ (represented by the green bar), and then the second level residual error is computed as $r_2=r_1-e_{c_1}^{\prime}$. Then, the process is repeated for a third time on $r_2$. The semantic codes are computed as the indices of $e_{c_0}$, $e_{c_1}$, and $e_{c_2}$ in their respective codebooks. In the example shown in the figure, this results in the code $(7,1,2)$.
 
 #### Other options for quantization
@@ -154,13 +154,13 @@ In particular, we use item’s content features **such as title, price, brand, a
 
 总体就是比别的模型强2%-30%
 
-![Table 1](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Table%201.png)
+![Table 1](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/TIGER/IMG-20240212100317530.png)
 
 #### Item representation (RQ2)
 
 对比了其他的ID生成方式，包括随机ID和LSH Semantic ID，好用就完事了
 
-![Table 3](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Table%203.png)
+![Table 3](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/TIGER/IMG-20240212100317543.png)
 
 #### New capabilities (RQ3)
 
@@ -170,7 +170,7 @@ In particular, we use item’s content features **such as title, price, brand, a
 
 ##### Recommendation diversity
 
-![Table 5](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Table%205.png)
+![Table 5](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/TIGER/IMG-20240212100317552.png)
 
 We report the Entropy@K for various temperature values in Table 5. We observe that temperature-sampling in the decoding stage can be effectively used to increase the diversity in the ground-truth categories of the items.
 

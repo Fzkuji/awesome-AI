@@ -43,13 +43,13 @@ Conclusion:
 
 ### CGC
 
-![Pasted image 20230713163957](../../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Pasted%20image%2020230713163957.png)
+![Pasted image 20230713163957](../../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/+Papers/PLE/IMG-20240212100315571.png)
 
 ### PLE
 
 PLE的多层的CGC，与CGC不同的是考虑了不同expert的交互性，在底层的Extraction网络中有一个share gate，他的输入不再是CGC的独有expert和share expert，而是全部expert。详细模型示意图见下图。
 
-![Pasted image 20230713164217](../../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Pasted%20image%2020230713164217.png)
+![Pasted image 20230713164217](../../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/+Papers/PLE/IMG-20240212100315583.png)
 
 ### Joint Loss Optimization for MTL
 
@@ -59,7 +59,7 @@ L\left(\theta_1, \ldots, \theta_K, \theta_s\right)=\sum_{k=1}^K \omega_k L_k\lef
 $$
 而在腾讯视频场景下，不同任务的样本空间是不一样的，比如计算视频的完成度，必须有视频点击行为才可以。不同任务的样本空间如下图所示：
 
-![500](../../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Pasted%20image%2020230713170611.png)
+![500](../../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/+Papers/PLE/IMG-20240212100315601.png)
 
 In this paper, we optimize the joint loss function to address two critical ones encountered in real-world recommender systems. The first problem is the heterogeneous sample space due to sequential user actions. For instance, users can only share or comment on an item after clicking it, which leads to different sample space of different tasks/shown in Fig. 6. To train these tasks jointly, we consider the union of sample space of all tasks as the whole training set, and ignore samples out of its own sample space when calculating the loss of each individual task:
 $$
@@ -100,25 +100,25 @@ Baseline模型有点多，基本都是多任务学习模型
 ### Results
 
 最后简单看一下实验结果。首先是离线的训练结果，表中的收益均是相较于单任务学习模型的：
-![500](../../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Pasted%20image%2020230713170900.png)
+![500](../../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/+Papers/PLE/IMG-20240212100315615.png)
 
-![500](../../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Pasted%20image%2020230713170914.png)
+![500](../../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/+Papers/PLE/IMG-20240212100315628.png)
 
 接下来是线上A／B实验的结果：
 
-![500](../../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Pasted%20image%2020230713170930.png)
+![500](../../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/+Papers/PLE/IMG-20240212100315639.png)
 
 可以看到，无论是离线训练还是线上A／B，PLE均取得了最佳的效果。
 
 接下来，论文比较了在任务之间相关系数不同的情况下，Hard Parameter Sharing、MMOE和PLE的结果：
 
-![500](../../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Pasted%20image%2020230713171208.png)
+![500](../../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/+Papers/PLE/IMG-20240212100315650.png)
 
 可以看到，无论任务之间的相关程度如何，PLE均取得了最优的效果。
 
 最后，论文对比了MMOE和PLE不同Expert的输出均值，来比较不同模型的Expert利用率（expert utilization）。为方便比较，将MMOE的Expert设置为3个，而PLE&CGC中，每个任务独有的Expert为1个，共享的为1个。这样不同模型都是有三个Expert。结果如下：
 
-![500](../../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Pasted%20image%2020230713171217.png)
+![500](../../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/+Papers/PLE/IMG-20240212100315667.png)
 
 可以看到，无论是MMOE还是ML-MMOE，不同任务在三个Expert上的权重都是接近的，这其实更接近于一种Hard Parameter Sharing的方式，**但对于CGC&PLE来说，不同任务在共享Expert上的权重是有较大差异的，其针对不同的任务，能够有效利用共享Expert和独有Expert的信息，这也解释了为什么其能够达到比MMOE更好的训练结果。**
 

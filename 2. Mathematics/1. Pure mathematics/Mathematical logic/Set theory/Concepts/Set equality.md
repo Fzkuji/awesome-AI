@@ -1,1 +1,1 @@
-![Set equality](../../../../../Attachments/2.%20Mathematics/1.%20Pure%20mathematics/Mathematical%20logic/Set%20theory/Concepts/Set%20equality.pdf)
+![Set equality](../../../../../Attachments/2.%20Mathematics/1.%20Pure%20mathematics/Mathematical%20logic/Set%20theory/Concepts/Set%20equality/IMG-20240212100314730.pdf)

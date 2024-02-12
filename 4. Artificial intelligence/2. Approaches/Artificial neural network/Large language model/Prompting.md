@@ -41,7 +41,7 @@ One drawback of prompt-tuning is its lack of interpretability. The AI discovers 
 
 ### Prompt tuning
 
-![Parameter-efficient prompt tuning](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Parameter-efficient%20prompt%20tuning.png)
+![Parameter-efficient prompt tuning](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Prompting/IMG-20240212100316830.png)
 
 Parameter-efficient prompt tuning from https://people.cs.umass.edu/~miyyer/cs685/slides/prompt_learning.pdf
 

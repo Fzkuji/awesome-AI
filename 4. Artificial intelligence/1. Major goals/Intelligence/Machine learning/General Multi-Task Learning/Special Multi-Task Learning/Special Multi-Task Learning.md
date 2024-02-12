@@ -75,25 +75,25 @@ How should you condition on the task in order to share as little as possible?
 
 ### 4.4 Examples
 #### Concatenation-based conditioning
-![500](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Concatenation-based%20conditioning.png)
+![500](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/IMG-20240212100315679.png)
 先将输入和条件连起来，然后输入到模型中进行训练，最后得出结果。
 
 #### Additive conditioning
-![500](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Additive%20conditioning.png)
+![500](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/IMG-20240212100315691.png)
 将条件输入一个模型得到**条件表示**，最后将输入和条件表示**相加**作为最终结果。
 
 **事实就是前面这两种方法其实本质上是一样的。（不过个人认为训练的时候可能会有不同的结果，或者更好训练）**
 
 #### Multi-head architecture
-![300](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Multi-head%20architecture.png)
+![300](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/IMG-20240212100315700.png)
 多头输入，浅显易懂
 
 #### Multiplicative conditioning
-![500](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Multiplicative%20conditioning.png)
+![500](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/IMG-20240212100315716.png)
 这个是条件表示和输入**相乘**
 
 #### More Complex Choices
-![More Complex Choices](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/More%20Complex%20Choices.png)
+![More Complex Choices](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/IMG-20240212100315741.png)
 ### 4.5 Shortcomings
 - problem dependent
 	依赖于任务
@@ -179,14 +179,14 @@ Should you train all of them together? Which ones will be complementary?
 <font color='green'>The good news</font>: There are ways to approximate it from one training run.
 但是我们可以训练几步试试结果（zei了，就是Finn自己的论文）
 
-![600](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Efficiently%20Identifying%20Task%20Groupings%20for%20Multi-Task%20Learning.png)
+![600](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/IMG-20240212100315766.png)
 Fifty, Amid, Zhao, Yu, Anil, Finn. *Efficiently Identifying Task Groupings for Multi-Task Learning.* 2021
 
 ## 8. Case study
 
 ### Stanford case
 
-![](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/cs330_multitask_transfer_2021.pdf#page=27)
+![](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/IMG-20240212100315812.pdf#page=27)
 
 ### Other works
 

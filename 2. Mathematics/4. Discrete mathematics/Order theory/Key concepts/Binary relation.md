@@ -12,7 +12,7 @@ A binary relation over a set A is a [predicate](../../../../1.%20Philosophy/Logi
 ## Visualization
 
 Example: the relation a | b (meaning “a divides b”) over the set {1, 2, 3, 4} looks like this:
-![Visualizing relations](../../../../Attachments/2.%20Mathematics/4.%20Discrete%20mathematics/Order%20theory/Key%20concepts/Visualizing%20relations.png)
+![Visualizing relations](../../../../Attachments/2.%20Mathematics/4.%20Discrete%20mathematics/Order%20theory/Key%20concepts/Binary%20relation/IMG-20240212100314918.png)
 这样就更加直观了
 
 ## Capturing structure
@@ -50,7 +50,7 @@ $\sim$ must have the following three properties to be an equivalence relation:
 | Symmetry     | $\forall a \in \mathbb{Z} . \forall b \in \mathbb{Z} .(a \sim b \rightarrow b \sim a)$                                            |
 | Transitivity | $\forall a \in \mathbb{Z} . \forall b \in \mathbb{Z} . \forall c \in \mathbb{Z} .(a \sim b \wedge b \sim c \rightarrow a \sim c)$ | 
 
-具体证明细节可以看[Partitions](../../../../Attachments/2.%20Mathematics/4.%20Discrete%20mathematics/Order%20theory/Key%20concepts/Partitions.pdf)这份PPT。
+具体证明细节可以看[Partitions](../../../../Attachments/2.%20Mathematics/4.%20Discrete%20mathematics/Order%20theory/Key%20concepts/Binary%20relation/IMG-20240212100314895.pdf)这份PPT。
 
 #### Equivalence class
 
@@ -70,7 +70,7 @@ Theorem: A binary relation R over a set A is an equivalence relation if and only
 
 $R$ is cyclic = R is symmetric and transitive.
 
-具体证明可以看[Properties of equivalence relations](../../../../Attachments/2.%20Mathematics/4.%20Discrete%20mathematics/Order%20theory/Key%20concepts/Properties%20of%20equivalence%20relations.pdf)
+具体证明可以看[Properties of equivalence relations](../../../../Attachments/2.%20Mathematics/4.%20Discrete%20mathematics/Order%20theory/Key%20concepts/Binary%20relation/IMG-20240212100314911.pdf)
 
 ### Prerequisite
 （用于限制的）先决关系
@@ -103,7 +103,7 @@ Strict orders are useful for representing prerequisite structures and have appli
 
 #### Drawing strict orders
 
-![600](../../../../Attachments/2.%20Mathematics/4.%20Discrete%20mathematics/Order%20theory/Key%20concepts/Hasse%20diagram.png)
+![600](../../../../Attachments/2.%20Mathematics/4.%20Discrete%20mathematics/Order%20theory/Key%20concepts/Binary%20relation/IMG-20240212100314929.png)
 次图中的每一组数都是一个国家在奥运会上拿到金、银、铜牌的数量，本图尝试表示一个（大于）strict order。
 
 这个图的大意是，如果三个（奖牌）数都比另一组大，那就用线链接，表示一个比另一个奖牌多。如果有大有小，就不连接，相当于没有这个关系。
@@ -118,6 +118,6 @@ Elements are drawn from bottom-to-top.
 - No redundant edges: by **transitivity**, we can infer the missing edges.
 
 **The Meta Strict Order**
-![The meta strict order](../../../../Attachments/2.%20Mathematics/4.%20Discrete%20mathematics/Order%20theory/Key%20concepts/The%20meta%20strict%20order.png)
+![The meta strict order](../../../../Attachments/2.%20Mathematics/4.%20Discrete%20mathematics/Order%20theory/Key%20concepts/Binary%20relation/IMG-20240212100314935.png)
 
 最后用一个范围关系来总结整个笔记，值得注意的是，Asymmetry是比Transitivity范围更大的。
