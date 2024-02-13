@@ -10,4 +10,4 @@ Important:
 
 The colors of the  0.6m square
 
-There are three 0.6m×0.6m docking bays with different colors.
+Current Progression
