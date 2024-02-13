@@ -14,4 +14,4 @@ Team Minion:
 - LiDAR + Cameras + Deep learning -> Classifications
 - UAS + UAV -> Detection and Localization of the Landing Pads
 
-target object
+reinforcement learning
