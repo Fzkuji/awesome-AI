@@ -8,4 +8,6 @@ Important:
 
 # VINS-Fusion
 
-3D Reconstruction and Target Localization Based on Binocular Vision
+The colors of the  0.6m square
+
+There are three 0.6m docking bays with 
