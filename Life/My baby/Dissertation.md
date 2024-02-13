@@ -11,4 +11,5 @@ Important:
 Team Minion:
 - Grid-Based Clustering and Concave Hull Extraction (GB-CACHE)
 - LiDAR -> Points Cloud
-- 
+- LiDAR + Cameras + Deep learning -> Classifications
+
