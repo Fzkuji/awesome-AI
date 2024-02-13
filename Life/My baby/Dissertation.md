@@ -6,8 +6,9 @@
 Important:
  - [Visual Odometry benchmark and Methods](https://www.cvlibs.net/datasets/kitti/eval_odometry.php)
 
-# VINS-Fusion
 
-The colors of the  0.6m square
 
-Current Progression
+Team Minion:
+- Grid-Based Clustering and Concave Hull Extraction (GB-CACHE)
+- LiDAR -> Points Cloud
+- 
