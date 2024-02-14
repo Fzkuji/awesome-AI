@@ -155,6 +155,6 @@ ICLR 2023 Withdrawn Submission
 
 [PanGu-Σ: Towards Trillion Parameter Language Model with Sparse Heterogeneous Computing](https://arxiv.org/abs/2303.10845)
 
-
+主要设计是顶层的transformer layers使用了MoE，并且是可以手动gating的设计（其实我觉得并没有什么含金量）。
 
 
