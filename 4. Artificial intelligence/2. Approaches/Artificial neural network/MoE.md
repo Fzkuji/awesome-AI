@@ -134,5 +134,12 @@ ICLR 2023 Withdrawn Submission
 ## Related works
 
 
+### Lifelong-MoE
 
+[Lifelong Language Pretraining with Distribution-Specialized Experts](https://dl.acm.org/doi/10.5555/3618408.3618621)
+
+挑战：进行增量训练，同时避免灾难性遗忘。
+方法：引入新的数据分布时，引入新的 experts，同时冻结原有的权重，并且加入一个regularization loss 避免灾难性遗忘。
+
+![](../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/MoE/IMG-20240214123154914.png)
 
