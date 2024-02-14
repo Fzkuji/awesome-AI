@@ -64,7 +64,7 @@ GLaM虽然效果不错，但是有负载不均衡问题。也就是说，会有�
 采用Expert Choice Routing的模型，相比于GLaM，在收敛速度方面可以提升2倍， 在step time上提速20%，并且完美解决了负载不均衡问题。8B/64E的模型（有9.8B激活的参数），在SuperGLUE上效果超过T5-11B的模型。
 
 
-#### Brainformers
+### Brainformers
 
 [Brainformers: Trading Simplicity for Efficiency](https://arxiv.org/abs/2306.00008)
 
