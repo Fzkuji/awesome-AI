@@ -143,3 +143,10 @@ ICLR 2023 Withdrawn Submission
 
 ![](../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/MoE/IMG-20240214123154914.png)
 
+### PanGu-Sigma
+
+
+
+
+
+
