@@ -153,7 +153,7 @@ ICLR 2023 Withdrawn Submission
 
 ### PanGu-Sigma
 
-
+[PanGu-Σ: Towards Trillion Parameter Language Model with Sparse Heterogeneous Computing](https://arxiv.org/abs/2303.10845)
 
 
 
