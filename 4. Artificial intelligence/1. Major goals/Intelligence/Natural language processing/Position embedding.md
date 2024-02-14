@@ -122,7 +122,7 @@ $$
 \end{array}\right)
 $$
 is the rotary matrix with pre-defined parameters $\Theta=\left\{\theta_i=10000^{-2(i-1) / d}, i \in[1,2, \ldots, d / 2]\right\}$. A graphic illustration of RoPE is shown as follows:
-![500](../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Position%20embedding/IMG-20240212100316041.png)
+![500](../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing/Position%20embedding/IMG-20240214165834038.png)
 Applying our RoPE to self-attention in [](.md#^Equation2%7CEquation%20(2)), we obtain:
 $$
 \boldsymbol{q}_m^{\top} \boldsymbol{k}_n=\left(\boldsymbol{R}_{\Theta, m}^d \boldsymbol{W}_q \boldsymbol{x}_m\right)^{\top}\left(\boldsymbol{R}_{\Theta, n}^d \boldsymbol{W}_k \boldsymbol{x}_n\right)=\boldsymbol{x}^{\top} \boldsymbol{W}_q R_{\Theta, n-m}^d \boldsymbol{W}_k \boldsymbol{x}_n

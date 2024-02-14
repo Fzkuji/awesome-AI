@@ -1,1 +1,1 @@
-![Graph theory](../../../Attachments/2.%20Mathematics/4.%20Discrete%20mathematics/Graph%20theory/Graph%20theory/IMG-20240212100314867.pdf)
+![Graph theory](../../../Attachments/2.%20Mathematics/4.%20Discrete%20mathematics/Graph%20theory/Graph%20theory/IMG-20240214165832625.pdf)

@@ -11,7 +11,7 @@
 
 ## Paradigms
 
-![LMRS paradigm](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Large%20language%20model/IMG-20240212100316286.png)
+![LMRS paradigm](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Large%20language%20model/IMG-20240214165834333.png)
 Language Modelling Paradigm Adaptations for Recommender Systems (LMRS)
 
 上图是语言模型在推荐系统上的范式，不过在整个语言模型领域感觉也是通用的。
@@ -44,7 +44,7 @@ Fixed-prompt PTM tuning是一种在预定义的prompt上进行微调或参数调
 
 ## Objectives
 
-![常用评估分数](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Large%20language%20model/IMG-20240212100316306.png)
+![常用评估分数](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Large%20language%20model/IMG-20240214165834359.png)
 
 ### LLM objectives
 
@@ -193,8 +193,8 @@ https://mp.weixin.qq.com/s/TzpHDLr8JC4IhGXR_r10dA
 > 
 > 具体来说，作者使用预训练好的T5作为基座模型，使用文本到文本的方法进行微调，是语言模型能够更好的使用工具。首先，训练语言模型根据问题输出需要使用的工具和工具相关的参数。然后，根据模型的输出相同相应的外部工具并返回相关结果。最后，训练模型根据问题和外部工具返回的结果，输出最终的答案。
 
-![400](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Large%20language%20model/IMG-20240212100316338.png)
-![400](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Large%20language%20model/IMG-20240212100316354.png)
+![400](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Large%20language%20model/IMG-20240214165834386.png)
+![400](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Large%20language%20model/IMG-20240214165834407.png)
 
 > 为了能够解决样例不足的问题，作者提出了self-play技术。首先，使用一个较小的数据集合D训练得到一个TALM，然后针对数据集中的每一个样例，尝试使用不同的工具来解决这个问题。如果TALM能够正确的解决这个问题，那么就把这条数据及其相关的工具加入到数据集合D中，不断对训练集进行扩充，以得到一个大规模的数据集。
 > 
@@ -214,7 +214,7 @@ https://mp.weixin.qq.com/s/TzpHDLr8JC4IhGXR_r10dA
 
 前人的研究表明，LLM具有很强的推理能力和规划执行能力。在这篇工作中，作者探究了使用LLM去生成推理过程和任务特定的行动。总的来说，推理过程有助于模型归纳、跟踪和更新行动计划以及处理异常，任务特定的行动能够是模型与外部环境或工具进行对接并收集额外信息。
 
-![2210.03629_Page_02](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Large%20language%20model/IMG-20240212100316371.png)
+![2210.03629_Page_02](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Large%20language%20model/IMG-20240214165834429.png)
 
 > 具体来说，对于一个通用的框架，在某一步的推理过程中，模型接收到一个来自外部环境的结果，并根据历史推理过程中外部环境的结果和行动过程来确定下一步需要采取的行动。
 > 
@@ -258,7 +258,7 @@ https://mp.weixin.qq.com/s/TzpHDLr8JC4IhGXR_r10dA
 
 *尝试了一下论文中的任务GSM-HARD，感觉现在ChatGPT+Wolfram的组合已经把问题彻底解决了，而且算出来的基本都是对的。*
 
-![Pasted image 20230615111454](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Large%20language%20model/IMG-20240212100316400.png)
+![Pasted image 20230615111454](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Large%20language%20model/IMG-20240214165834464.png)
 
 #### Toolformer: Language Models Can Teach Themselves to Use Tools
 
@@ -282,7 +282,7 @@ https://mp.weixin.qq.com/s/TzpHDLr8JC4IhGXR_r10dA
 
 总的来说就是构建数据集，再微调
 
-![Pasted image 20230615221040](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Large%20language%20model/IMG-20240212100316425.png)
+![Pasted image 20230615221040](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Large%20language%20model/IMG-20240214165834498.png)
 
 #### ART: Automatic multi-step reasoning and tool-use for large language models
 
@@ -302,7 +302,7 @@ https://mp.weixin.qq.com/s/TzpHDLr8JC4IhGXR_r10dA
 - 在生成过程中，大模型可以生成相关的代码（比如，[search]、[generate code]这样的标签），一旦检测到调用外部工具的要求，ART会停止大模型的生成过程，并调用外部工具返回结果。如此不断循环，如图中(B)所示。
 - 在人类反馈过程中，人类可以添加新的解离后的样例到任务库当中，或者修改工具库中工具的使用。
 
-![Pasted image 20230616111249](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Large%20language%20model/IMG-20240212100316448.png)
+![Pasted image 20230616111249](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Large%20language%20model/IMG-20240214165834519.png)
 
 #### A Survey of Large Language Models
 
@@ -357,11 +357,11 @@ https://mp.weixin.qq.com/s/TzpHDLr8JC4IhGXR_r10dA
 > 
 > 具体来说，大语言模型被作为一个黑箱，根据任务相关的输入得到一个原始输出。然后，和外部工具进行交互，包括知识图谱，代码解释器、搜索引擎等。通过和外部工具的交互，能够获得一系列的结果，大模型根据这些结果生成相关的反馈。最后，根据任务相关的输入、原始输出、与工具交互的结果等多方面的内容，大模型对原始输出进行修改，等到新的输出。改过程可以迭代进行，多次修正输出的内容。在实验方面，作者使用AmbigNQ、TriviaQA和HotpotQA三个问答数据集进行评测，CRITIC能够超越普通CoT和ReAct等方法，取得了良好的表现。
 
-![600](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Large%20language%20model/IMG-20240212100316470.png)
+![600](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Large%20language%20model/IMG-20240214165834540.png)
 
 简单来说，还是设计prompt。让LLM有样学样，在输出结果后继续验证答案的合理性和准确性。验证时可以调用外部接口。
 
-![2305.11738_Page_04](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Large%20language%20model/IMG-20240212100316502.png)
+![2305.11738_Page_04](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Large%20language%20model/IMG-20240214165834560.png)
 
 本文也对比了[ReAct](#%5BReAct%20Synergizing%20Reasoning%20and%20Acting%20in%20Language%20Models)的方法，证明了CRITIC比ReAct好不少。
 
@@ -392,7 +392,7 @@ https://mp.weixin.qq.com/s/TzpHDLr8JC4IhGXR_r10dA
 > 
 > 具体来说，训练过程的两个阶段分别为：Behavior Cloning和Reinforcement Learning with Execution Feedback (RLEF)。在Behavior Cloning阶段，模型根据任务输入，输出相关的工具的使用方案。在RLEF阶段，使用强化学习的框架，根据工具的结果设计奖励函数，对模型进行强化学习，继续增强模型使用工具的能力。在实验方面，作者使用Alpaca-7B作为基座模型，比较了Toolformer等基线方法，在数学相关任务上进行评测，证明了TRICE的有效性。
 
-![Pasted image 20230617173042](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Large%20language%20model/IMG-20240212100316520.png)
+![Pasted image 20230617173042](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Large%20language%20model/IMG-20240214165834584.png)
 
 
 #### Domain Specialization as the Key to Make Large Language Models Disruptive: A Comprehensive Survey
@@ -403,7 +403,7 @@ https://mp.weixin.qq.com/s/TzpHDLr8JC4IhGXR_r10dA
 
 [大语言模型综述全新出炉：51页论文带你盘点LLM领域专业化技术](https://mp.weixin.qq.com/s/0DrowrTIgXsBhj3sYu6Aog)
 
-![500](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Large%20language%20model/IMG-20240212100316542.png)
+![500](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Large%20language%20model/IMG-20240214165834608.png)
 
 主要还是[In-context learning](#In-context%20learning)、[Prompting](#Prompting)和Fine-tuning的三板斧
 

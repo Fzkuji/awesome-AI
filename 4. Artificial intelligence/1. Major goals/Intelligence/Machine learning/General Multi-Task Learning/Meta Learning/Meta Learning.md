@@ -69,22 +69,22 @@ In all settings: tasks must share structure.
 
 #### 3.2.2. Architectures
 ##### LSTMs or Neural turing machine (NTM)
-![400](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Meta%20Learning/Meta%20Learning/IMG-20240212100315327.png)
+![400](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Meta%20Learning/Meta%20Learning/IMG-20240214165833206.png)
 **Meta-Learning with Memory-Augmented Neural Networks**
 Santoro, Bartunov, Botvinick, Wierstra, Lillicrap. ICML ‘16
 
 ##### Feedforward + average
-![400](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Meta%20Learning/Meta%20Learning/IMG-20240212100315336.png)
+![400](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Meta%20Learning/Meta%20Learning/IMG-20240214165833214.png)
 **Conditional Neural Processes**
 Garnelo, Rosenbaum, Maddison, Ramalho, Saxton, Shanahan, Teh, Rezende, Eslami. ICML ‘18
 
 ##### Other external memory mechanisms
-![400](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Meta%20Learning/Meta%20Learning/IMG-20240212100315353.png)
+![400](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Meta%20Learning/Meta%20Learning/IMG-20240214165833232.png)
 **Meta Networks**
 Munkhdalai, Yu. ICML ‘17
 
 ##### Convolutions & attention
-![200](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Meta%20Learning/Meta%20Learning/IMG-20240212100315370.png)
+![200](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Meta%20Learning/Meta%20Learning/IMG-20240214165833252.png)
 **A Simple Neural Attentive Meta-Learner**
 Mishra, Rohaninejad, Chen, Abbeel. ICLR ‘18
 
@@ -146,7 +146,7 @@ tasks = $\mathcal{T}$
 		 - $\nabla_{\theta} \mathcal{L_{e}} = \nabla_{\theta} \mathcal{L_{e}} + \nabla_{\theta}\mathcal{L}_{\mathcal{T}_{i}}\left(f_{\theta_{K+N}}\right)$
 	 - $\phi_{e+1} = \phi_{e} - \beta \nabla_{\theta} \mathcal{L_{e}}$
 - - -
-![500](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Meta%20Learning/Meta%20Learning/IMG-20240212100315386.png)
+![500](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Meta%20Learning/Meta%20Learning/IMG-20240214165833277.png)
 如图所示，在每一个epoch中，Optimization-based Adaptation方法会对每个任务训练$K$次。图中任务1（绿）的$K=2$，图中任务2（蓝）的$K=3$。此时，假设这两个点都是各自的最优点，也就是假设这些点都是黄色的Real Meta Best点，模型会计算Hypothetical Meta Best点的损失函数，将所有损失函数相加并反向传播，就可以更新原始参数了。
 
 其中，值得注意的是，得到Real Meta Best点之后，仍然需要对模型训练多次，才能得到任务的最优点。图中，两个任务都训练了2次，而MAML只训练了一次。训练一次在反向传播的时候会需要求解2阶导数（Hessian）。**似乎训练次数越多，阶数越高，但是这一点我不确定。可以确定的是，之前的$K$次训练并不会影响到阶数，因为前面的$K$次训练的参数都可以通过化简约掉。目测反向传播最终的阶数为N+1次。**
@@ -169,7 +169,7 @@ $$
 \phi_{i}=\theta-\alpha f\left(\theta, \mathcal{D}_{i}^{\operatorname{tr}}, \nabla_{\theta} \mathcal{L}\right)
 $$
 
-![450](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Meta%20Learning/Meta%20Learning/IMG-20240212100315415.png)
+![450](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Meta%20Learning/Meta%20Learning/IMG-20240214165833294.png)
 Fig. 12. The general form of MAML algorithm. (Image source: [original paper](https://arxiv.org/abs/1703.03400))
 
 MAML是[](.md#3.3.1%20Concepts%7CConcept%E8%AE%AD%E7%BB%83%E6%B5%81%E7%A8%8B)的一个特例，也就是$N=1$，因此需要计算二阶导数才能反向传播。
@@ -218,7 +218,7 @@ $$
 
 至此，MAML彻底简化为一个和多任务学习模型一样的intuition的模型，数学内涵荡然无存。
 
-![250](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Meta%20Learning/Meta%20Learning/IMG-20240212100315433.png)
+![250](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Meta%20Learning/Meta%20Learning/IMG-20240214165833321.png)
 如图所示（来源Youtube视频：[Few-Shot Learning - Part10 : MAML](https://www.youtube.com/watch?v=rc_sw4DVDk8)）），对于 $T_1$和$T_2$两个任务，模型首先分别训练一次（黄色和绿色），然后进行评估，再次训练一次（蓝色和橙色），最后直接用蓝色和橙色的梯度之和更新原本的参数$\theta$。
 
 ##### Reptile
@@ -226,7 +226,7 @@ $$
 > 李宏毅吐槽过，MAML中文意思就是哺乳动物，那么估计这篇文章起名Reptile ([Nichol, Achiam & Schulman, 2018](https://arxiv.org/abs/1803.02999))就是纯粹想用爬行动物对标。
 > ——我自己
 
-![Pre-train vs MAML vs Reptile](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Meta%20Learning/Meta%20Learning/IMG-20240212100315449.png)
+![Pre-train vs MAML vs Reptile](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Meta%20Learning/Meta%20Learning/IMG-20240214165833339.png)
 如图所示，该图分析了Pre-train、MAML、Reptile三者的关系，说白了这三个模型使用后续的梯度进行了不同的参数更新。虽然并没有本质区别，但是在公式推导的时候还是很复杂的。
 $$
 \begin{aligned}
@@ -302,15 +302,15 @@ Goal: Segment/classify images from a new region with a small amount of data
 
 #### 3.4.1. Pre-training
 
-![400](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Meta%20Learning/Meta%20Learning/IMG-20240212100315466.png)
+![400](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Meta%20Learning/Meta%20Learning/IMG-20240214165833362.png)
 
 通常Pre-training训练流程如下：
-![500](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Meta%20Learning/Meta%20Learning/IMG-20240212100315484.png)
+![500](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Meta%20Learning/Meta%20Learning/IMG-20240214165833381.png)
 假设有两个任务，最终目标是Task 2，但是我们提前训练的是Task 1。那么就需要用fine-tuning将参数从Task 1的最优处训练到Task 2的最优处，因此就有了图中紫色（pre-training）再到绿色（fine-tuning）的一个过程。
 
 但是一般pre-training的Task 1都有大数据集，并且和Task 2差不多，这样他们的最优解一般都很近，所以最后参数在Task 2上就表现也不错，如下图：
 
-![500](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Meta%20Learning/Meta%20Learning/IMG-20240212100315501.png)
+![500](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Meta%20Learning/Meta%20Learning/IMG-20240214165833397.png)
 所以一般预训练模型都是用大数据训练的大模型，这样用到后续的小数据集任务就更容易得到好的结果。
 
 
@@ -319,7 +319,7 @@ Goal: Segment/classify images from a new region with a small amount of data
 这个方法的问题是对外推的任务的泛化能力不行。因为完全没有朝这个方向训练。而Optimization-based Adaptation则会好很多，而且测试时仍然可以用fine-tuning。
 #### 3.4.3. Optimization-based Adaptation
 
-![400](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Meta%20Learning/Meta%20Learning/IMG-20240212100315518.png)
+![400](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Meta%20Learning/Meta%20Learning/IMG-20240214165833417.png)
 
 For a sufficiently deep network, MAML function can approximate any function of $\mathcal{D}_{i}^{\operatorname{tr}}, x^{\mathrm{ts}}$
 AssumpCons:

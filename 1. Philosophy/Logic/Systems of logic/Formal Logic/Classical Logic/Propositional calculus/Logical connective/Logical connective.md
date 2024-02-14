@@ -11,7 +11,7 @@
 - $p \vee q$ is read "$p$ or $q$," and called a **disjunction**.
 	- Also called Logical OR or logical disjunction.
 	- $p \vee q$ is true if and only if at least one of $p$ or $q$ are true (inclusive OR)
-- $p \to q$  is read "f $p$ then $q$," and called an **[implication](../../../../../../../Attachments/1.%20Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/Propositional%20calculus/Logical%20connective/Logical%20connective/IMG-20240212100314559.pdf)** or **conditional**.
+- $p \to q$  is read "f $p$ then $q$," and called an **[implication](../../../../../../../Attachments/1.%20Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/Propositional%20calculus/Logical%20connective/Logical%20connective/IMG-20240214165832248.pdf)** or **conditional**.
 	- "$p$ is necessary for $q$" means $q \to p$.
 	- "$p$ is sufficient for $q$" means $p \to q$.
 - $p \leftrightarrow q$  is read "$p$ if and only if $q$," and called a **biconditional**.
@@ -23,7 +23,7 @@
 ## Unary connective
 （一个）只需要一个原子命题的连接词
 
-- $\neg p$ is read “not $p$,” and called a **[negation](../../../../../../../Attachments/1.%20Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/Propositional%20calculus/Logical%20connective/Logical%20connective/IMG-20240212100314580.pdf)**.
+- $\neg p$ is read “not $p$,” and called a **[negation](../../../../../../../Attachments/1.%20Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/Propositional%20calculus/Logical%20connective/Logical%20connective/IMG-20240214165832277.pdf)**.
 	- Also called logical negation or Logical NOT.
 	- $\neg p$ is true if and only if $p$ is false.
 

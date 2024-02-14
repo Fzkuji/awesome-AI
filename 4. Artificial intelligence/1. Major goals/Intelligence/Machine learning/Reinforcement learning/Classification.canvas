@@ -1,6 +1,6 @@
 {
 	"nodes":[
-		{"type":"file","file":"Attachments/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Classification/IMG-20240212100319245.png","id":"1541536b0aa3beac","x":-287,"y":-160,"width":108,"height":108},
+		{"type":"file","file":"Attachments/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Classification/IMG-20240214165837771.png","id":"1541536b0aa3beac","x":-287,"y":-160,"width":108,"height":108},
 		{"type":"file","file":"4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Concepts/Model.md","id":"9b4248f8fffd42fd","x":170,"y":-148,"width":76,"height":85,"color":"2"},
 		{"type":"text","text":"Value function","id":"4c08f9f1562138a7","x":301,"y":-139,"width":196,"height":65,"color":"3"},
 		{"type":"file","file":"4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Concepts/Value.md","id":"7bb8c233a138ccc1","x":555,"y":-148,"width":54,"height":85,"color":"2"},
@@ -11,13 +11,13 @@
 		{"type":"file","file":"4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Concepts/Value.md","id":"2f3ea6987e79c8ab","x":555,"y":320,"width":54,"height":85,"color":"2"},
 		{"type":"file","file":"4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Concepts/Action.md","id":"f7601c2b484300a5","x":933,"y":320,"width":65,"height":85,"color":"2"},
 		{"type":"text","text":"Q-learning","id":"b3b20dc3bb317381","x":-832,"y":330,"width":174,"height":65,"color":"1"},
-		{"type":"file","file":"Attachments/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Classification/IMG-20240212100319245.png","id":"419342b857c31706","x":-287,"y":787,"width":108,"height":108},
+		{"type":"file","file":"Attachments/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Classification/IMG-20240214165837771.png","id":"419342b857c31706","x":-287,"y":787,"width":108,"height":108},
 		{"type":"text","text":"Value function","id":"edc2fb70a533d231","x":301,"y":809,"width":196,"height":65,"color":"3"},
 		{"type":"file","file":"4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Concepts/Value.md","id":"dc91d45542b947f6","x":555,"y":799,"width":54,"height":85,"color":"2"},
 		{"type":"file","file":"4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Concepts/Policy.md","id":"96459765de5da25a","x":672,"y":809,"width":195,"height":65,"color":"3"},
 		{"type":"file","file":"4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Concepts/Action.md","id":"505301d70e5a1f4b","x":933,"y":799,"width":65,"height":85,"color":"2"},
 		{"type":"text","text":"SARSA","id":"8bb5fe8c99a89b4d","x":-812,"y":809,"width":136,"height":65,"color":"1"},
-		{"type":"file","file":"Attachments/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Classification/IMG-20240212100319245.png","id":"44e8bd44cf6f5203","x":-287,"y":1222,"width":108,"height":108},
+		{"type":"file","file":"Attachments/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Classification/IMG-20240214165837771.png","id":"44e8bd44cf6f5203","x":-287,"y":1222,"width":108,"height":108},
 		{"type":"file","file":"4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Concepts/Action.md","id":"7ef7d7ab178d6c11","x":933,"y":1234,"width":65,"height":85,"color":"2"},
 		{"type":"text","text":"Policy gradient","id":"f05741163a9b49cc","x":-854,"y":1244,"width":221,"height":65,"color":"1"},
 		{"type":"text","text":"Model learner","id":"0662cef3f3233ed0","x":-91,"y":1362,"width":196,"height":65,"color":"3"},
@@ -25,13 +25,13 @@
 		{"type":"text","text":"Model-based","id":"c015b37e759075ed","x":-91,"y":4,"width":338,"height":65,"color":"5"},
 		{"type":"text","text":"Value-based","id":"3e91b35a2359dfcb","x":301,"y":4,"width":308,"height":65,"color":"5"},
 		{"type":"text","text":"On-policy","id":"d2934aee5c218004","x":672,"y":4,"width":325,"height":65,"color":"5"},
-		{"type":"file","file":"Attachments/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Classification/IMG-20240212100319253.png","id":"8871bfc8f597b393","x":1085,"y":-160,"width":435,"height":391},
+		{"type":"file","file":"Attachments/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Classification/IMG-20240214165837775.png","id":"8871bfc8f597b393","x":1085,"y":-160,"width":435,"height":391},
 		{"type":"file","file":"4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Concepts/Policy.md","id":"fd6694fed8967e6b","x":672,"y":1362,"width":195,"height":65,"color":"3"},
-		{"type":"file","file":"Attachments/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Classification/IMG-20240212100319260.png","id":"cb15beab3320b708","x":-570,"y":308,"width":108,"height":108},
-		{"type":"file","file":"Attachments/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Classification/IMG-20240212100319260.png","id":"839475abd6425aca","x":-570,"y":-160,"width":108,"height":108},
-		{"type":"file","file":"Attachments/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Classification/IMG-20240212100319260.png","id":"60070cdc2512b1fb","x":-570,"y":1222,"width":108,"height":108},
-		{"type":"file","file":"Attachments/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Classification/IMG-20240212100319260.png","id":"829221f7aa3d9e68","x":-570,"y":787,"width":108,"height":108},
-		{"type":"file","file":"Attachments/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Classification/IMG-20240212100319245.png","id":"9feaa0b7b3251086","x":-287,"y":308,"width":108,"height":108}
+		{"type":"file","file":"Attachments/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Classification/IMG-20240214165837783.png","id":"cb15beab3320b708","x":-570,"y":308,"width":108,"height":108},
+		{"type":"file","file":"Attachments/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Classification/IMG-20240214165837783.png","id":"839475abd6425aca","x":-570,"y":-160,"width":108,"height":108},
+		{"type":"file","file":"Attachments/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Classification/IMG-20240214165837783.png","id":"60070cdc2512b1fb","x":-570,"y":1222,"width":108,"height":108},
+		{"type":"file","file":"Attachments/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Classification/IMG-20240214165837783.png","id":"829221f7aa3d9e68","x":-570,"y":787,"width":108,"height":108},
+		{"type":"file","file":"Attachments/4. Artificial intelligence/1. Major goals/Intelligence/Machine learning/Reinforcement learning/Classification/IMG-20240214165837771.png","id":"9feaa0b7b3251086","x":-287,"y":308,"width":108,"height":108}
 	],
 	"edges":[
 		{"id":"2a1f8e18619b5bb6","fromNode":"839475abd6425aca","fromSide":"bottom","toNode":"1541536b0aa3beac","toSide":"bottom","label":"<s, a, r>"},

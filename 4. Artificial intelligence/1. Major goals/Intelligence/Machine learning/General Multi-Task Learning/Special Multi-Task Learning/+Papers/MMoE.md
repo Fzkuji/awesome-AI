@@ -57,7 +57,7 @@ Conclusion:
 
 为了解决这个问题，MMoE采用了类似集成学习的思想，用若干个专家模型(expert model)加权影响子任务，门控机制（Gate）就是训练不同专家的影响因子，最终通过softmax输出不同专家的权重。如果对于所有子任务只有一套Gate就是MoE模型，但是更好的处理方式是每个子任务都有一个属于自己的Gate，升级为MMoE模型，详细的模型示意图见下图：
 
-![Pasted image 20230713091222](../../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/+Papers/MMoE/IMG-20240212100315534.png)
+![Pasted image 20230713091222](../../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/+Papers/MMoE/IMG-20240214165833435.png)
 
 ### Shared-bottom multi-task model
 
@@ -142,7 +142,7 @@ PLE:
 
 我一般采用的是在一个足够大的数据集上，打印每个gate网络 softmax后的分布，这里直接体现的就是每个专家系统对于当前子任务的权重。如下图所示，每个gate的分布：
 
-![Pasted image 20230713114905](../../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/+Papers/MMoE/IMG-20240212100315547.png)
+![Pasted image 20230713114905](../../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/+Papers/MMoE/IMG-20240214165833459.png)
 
 #### Q2: 如何确定超参，如expert数和专家模型的实现方案？
 

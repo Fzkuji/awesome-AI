@@ -17,4 +17,4 @@ A mathematical proof is an argument that demonstrates why a mathematical [statem
 
 [Proof by contradiction](Methods%20of%20proof/Indirect%20proofs/Proof%20by%20contradiction.md)
 
-[Proof by contrapositive](../../../Attachments/2.%20Mathematics/0.%20Foundations%20of%20mathematics/Mathematical%20proof/Mathematical%20proof/IMG-20240212100314598.pdf)
+[Proof by contrapositive](../../../Attachments/2.%20Mathematics/0.%20Foundations%20of%20mathematics/Mathematical%20proof/Mathematical%20proof/IMG-20240214165832294.pdf)

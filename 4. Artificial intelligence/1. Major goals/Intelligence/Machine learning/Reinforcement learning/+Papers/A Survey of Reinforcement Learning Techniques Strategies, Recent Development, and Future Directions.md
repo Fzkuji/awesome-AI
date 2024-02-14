@@ -30,14 +30,14 @@ Most of the published articles define reinforcement learning as a Markov Decisio
 
 宏观概念：
 
-![Pasted image 20221009000504](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Reinforcement%20learning/+Papers/A%20Survey%20of%20Reinforcement%20Learning%20Techniques%20Strategies,%20Recent%20Development,%20and%20Future%20Directions/IMG-20240212100315880.png)
+![Pasted image 20221009000504](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Reinforcement%20learning/+Papers/A%20Survey%20of%20Reinforcement%20Learning%20Techniques%20Strategies,%20Recent%20Development,%20and%20Future%20Directions/IMG-20240214165833850.png)
 
 [POMDP简单的视频分析](https://www.zhihu.com/zvideo/1326278888684187648)
 
-![Pasted image 20221008232114](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Reinforcement%20learning/+Papers/A%20Survey%20of%20Reinforcement%20Learning%20Techniques%20Strategies,%20Recent%20Development,%20and%20Future%20Directions/IMG-20240212100315903.png)
+![Pasted image 20221008232114](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Reinforcement%20learning/+Papers/A%20Survey%20of%20Reinforcement%20Learning%20Techniques%20Strategies,%20Recent%20Development,%20and%20Future%20Directions/IMG-20240214165833877.png)
 
-![Pasted image 20221008232248](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Reinforcement%20learning/+Papers/A%20Survey%20of%20Reinforcement%20Learning%20Techniques%20Strategies,%20Recent%20Development,%20and%20Future%20Directions/IMG-20240212100315912.png)
+![Pasted image 20221008232248](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Reinforcement%20learning/+Papers/A%20Survey%20of%20Reinforcement%20Learning%20Techniques%20Strategies,%20Recent%20Development,%20and%20Future%20Directions/IMG-20240214165833891.png)
 
-![Pasted image 20221008232356](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Reinforcement%20learning/+Papers/A%20Survey%20of%20Reinforcement%20Learning%20Techniques%20Strategies,%20Recent%20Development,%20and%20Future%20Directions/IMG-20240212100315920.png)
+![Pasted image 20221008232356](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Reinforcement%20learning/+Papers/A%20Survey%20of%20Reinforcement%20Learning%20Techniques%20Strategies,%20Recent%20Development,%20and%20Future%20Directions/IMG-20240214165833899.png)
 
-![Pasted image 20221008232850](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Reinforcement%20learning/+Papers/A%20Survey%20of%20Reinforcement%20Learning%20Techniques%20Strategies,%20Recent%20Development,%20and%20Future%20Directions/IMG-20240212100315930.png)
+![Pasted image 20221008232850](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Reinforcement%20learning/+Papers/A%20Survey%20of%20Reinforcement%20Learning%20Techniques%20Strategies,%20Recent%20Development,%20and%20Future%20Directions/IMG-20240214165833911.png)

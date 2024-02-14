@@ -3,7 +3,7 @@ Chapman-Kolmogorov方程（c-k公式）
 
 ## Application to time-dilated Markov chains
 
-![Chapman–Kolmogorov equation](../../../../../Attachments/2.%20Mathematics/2.%20Applied%20mathematics‎/Probability%20theory/Stochastic%20process/Markov%20chain/Chapman–Kolmogorov%20equation/IMG-20240212100314763.png)
+![Chapman–Kolmogorov equation](../../../../../Attachments/2.%20Mathematics/2.%20Applied%20mathematics‎/Probability%20theory/Stochastic%20process/Markov%20chain/Chapman–Kolmogorov%20equation/IMG-20240214165832495.png)
 
 本质就是$P(t+s)=P(t) P(s)$
 

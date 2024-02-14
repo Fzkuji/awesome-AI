@@ -13,7 +13,7 @@
 
 ### 2.1 Definition
 The coffee robot looks for a target person in a specific area.
-![playster-hq-plan](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Reinforcement%20learning/Miscellaneous/Verbal%20Question%20by%20the%20Warwick%20Professor/IMG-20240212100315968.jpg)
+![playster-hq-plan](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Reinforcement%20learning/Miscellaneous/Verbal%20Question%20by%20the%20Warwick%20Professor/IMG-20240214165833948.jpg)
 
 ### 2.2 Model-based
 
@@ -29,18 +29,18 @@ The coffee robot looks for a target person in a specific area.
 According to the above assumptions, the problem model can be abstracted into discrete state-spaces. The following matrices can be viewed as states and used as beliefs too.
 ###### Sub-area Distance Matrix
 Among them, the fixed (but learnable) information includes a sub-area distance matrix, as shown below. In this simplified matrix, the distance of connected sub-areas is 1, and the distance of disconnected sub-areas is infinite.
-![500](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Reinforcement%20learning/Miscellaneous/Verbal%20Question%20by%20the%20Warwick%20Professor/IMG-20240212100315992.png)
+![500](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Reinforcement%20learning/Miscellaneous/Verbal%20Question%20by%20the%20Warwick%20Professor/IMG-20240214165833975.png)
 ###### Relation Matrix
 The relations between people can be achieved through early supervised learning, or it can be added to the state for iteration.
 
 ###### Staff Distribution Matrix
 The state information changes over time includes staff distribution matrix and digital system information (timetable).
-![400](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Reinforcement%20learning/Miscellaneous/Verbal%20Question%20by%20the%20Warwick%20Professor/IMG-20240212100316015.png)
+![400](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Reinforcement%20learning/Miscellaneous/Verbal%20Question%20by%20the%20Warwick%20Professor/IMG-20240214165834013.png)
 Suppose there are $n$ sub-areas and $m$ staffs. The shape of staff distribution matrix is $n\times m$.
 
 ##### 2.2.2.2 Action Modeling
 The action of the robot can be abstracted as going from the current sub-area to the next adjacent sub-area.
-![500](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Reinforcement%20learning/Miscellaneous/Verbal%20Question%20by%20the%20Warwick%20Professor/IMG-20240212100316033.png)
+![500](../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/Reinforcement%20learning/Miscellaneous/Verbal%20Question%20by%20the%20Warwick%20Professor/IMG-20240214165834026.png)
 
 ##### 2.2.2.3 Reward Modeling
 ###### Reward for stable operation

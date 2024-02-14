@@ -1,6 +1,6 @@
 # Proof by contradiction
 
-非数理逻辑中的反证法的简要概念可以看这里：[Proof by contradiction](../../../../../Attachments/2.%20Mathematics/0.%20Foundations%20of%20mathematics/Mathematical%20proof/Methods%20of%20proof/Indirect%20proofs/Proof%20by%20contradiction/IMG-20240212100314615.pdf)
+非数理逻辑中的反证法的简要概念可以看这里：[Proof by contradiction](../../../../../Attachments/2.%20Mathematics/0.%20Foundations%20of%20mathematics/Mathematical%20proof/Methods%20of%20proof/Indirect%20proofs/Proof%20by%20contradiction/IMG-20240214165832316.pdf)
 
 ## Proof by contradiction in propositional logic
 

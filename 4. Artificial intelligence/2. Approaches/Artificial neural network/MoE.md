@@ -69,7 +69,7 @@ ICLR 2017
 
 Google Brain的Shazeer、Noam等人提出使用稀疏的MoE结构来将模型容量做大的方法，即：训练时使用海量的专家模型，推理时激活少数专家模型。
 
-![](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/MoE%20in%20LLM/IMG-20240212110904940.png)
+![](../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/MoE/IMG-20240214165837677.png)
 
 ### Multi-gate Mixture-of-Experts (MMoE)
 
@@ -149,7 +149,7 @@ ICLR 2023 Withdrawn Submission
 挑战：进行增量训练，同时避免灾难性遗忘。
 方法：引入新的数据分布时，引入新的 experts，同时冻结原有的权重，并且加入一个regularization loss 避免灾难性遗忘。
 
-![](../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/MoE/IMG-20240214123154914.png)
+![](../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/MoE/IMG-20240214165837705.png)
 
 ### PanGu-Sigma
 

@@ -25,5 +25,5 @@ In general, knowledge-intensive tasks tend to be more complex and difficult to a
 - Slot filling
 - Entity linking
 
-![Pasted image 20230629163356](../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Knowledge-intensive%20tasks/Knowledge-intensive%20tasks/IMG-20240212100316938.png)
+![Pasted image 20230629163356](../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Knowledge-intensive%20tasks/Knowledge-intensive%20tasks/IMG-20240214165835024.png)
 

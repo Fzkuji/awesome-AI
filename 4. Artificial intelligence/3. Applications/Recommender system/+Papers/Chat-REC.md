@@ -96,14 +96,14 @@ For example, in the first round of Q\&A, the user requests action movies. The sy
 
 In the second round of Q\&A, the user asks why the movie "Fargo" was recommended. The system determines that no recommendation task is needed and instead executes the explanation for the recommendation module, using the movie title, history interaction, and user profile as inputs. The answer $A_2$ is then generated, which provides a brief explanation of the recommendation, including information about the user's general interests and the specific characteristics of the movie that may be appealing to the user.
 
-![Fig 1](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Chat-REC/IMG-20240212100316976.png)
+![Fig 1](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Chat-REC/IMG-20240214165835050.png)
 Fig. 1: Overview of Chat-Rec. The left side shows a dialogue between a user and ChatGPT. The middle side shows the flowchart to how Chat-Rec links traditional recommender systems with conversational AI such as ChatGPT. The right side describes the specific judgment in the process.
 
 ## Recommendation based on candidate set compression
 
 传统的推荐系统通常生成一小部分排序的候选产品，每个产品都有一个分数，反映了系统的推荐信心或结果质量。然而，考虑到产品集的庞大规模，大多数现有推荐系统的性能远远达不到令人满意的程度，仍有很大的改进空间。
 
-![Fig 2](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Chat-REC/IMG-20240212100316994.png) ^9c41ea
+![Fig 2](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Chat-REC/IMG-20240214165835086.png) ^9c41ea
 
 本文提出了一种使用LLMs来通过缩小候选集来提高推荐系统性能的方法。推荐系统生成大量候选物品，这可能会让用户感到不知所措。LLMs在缩小系统内产品候选集方面发挥了几个不同的关键作用。
 
@@ -117,7 +117,7 @@ Fig. 1: Overview of Chat-Rec. The left side shows a dialogue between a user and 
 
 例如，如果一个用户询问2021年上映的新电影推荐，推荐系统可以使用关于电影的文本数据生成一个嵌入，然后计算与系统中其他电影的相似度来进行推荐。这种能力使得推荐系统能够为新项目提供相关和准确的推荐，从而提高整体用户体验。
 
-![Fig 3](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Chat-REC/IMG-20240212100317044.png)
+![Fig 3](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Chat-REC/IMG-20240214165835132.png)
 Fig. 3: Case Study of New Item Recommendation. The top shows that ChatGPT is unable to recommend new items beyond the timeframe of its training data. The middle part demonstrates the process of how to utilize external information about new items to enable ChatGPT to handle recommendations for new items. The bottom shows that ChatGPT can effectively handle recommendations for new items after incorporating external information.
 
 
@@ -125,7 +125,7 @@ Fig. 3: Case Study of New Item Recommendation. The top shows that ChatGPT is una
 
 ## Cross-domain recommendations
 
-![Fig 4](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Chat-REC/IMG-20240212100317055.png)
+![Fig 4](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Chat-REC/IMG-20240214165835147.png)
 
 上面介绍的增强型LLM推荐系统可以用来解决一些传统推荐系统难以解决的挑战性任务，比如跨领域推荐和冷启动推荐。在这部分，我们将讨论如何使用增强型LLM推荐系统进行跨领域推荐。
 
@@ -188,7 +188,7 @@ $$
 
 ## Ablation study
 
-![Fig 5](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Chat-REC/IMG-20240212100317070.png)
+![Fig 5](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Chat-REC/IMG-20240214165835159.png)
 Fig. 5: Performance on different prompt and temperature.
 
 
@@ -205,10 +205,10 @@ Fig. 5: Performance on different prompt and temperature.
 
 ## Prompts
 
-![800](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Chat-REC/IMG-20240212100317081.png)
+![800](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Chat-REC/IMG-20240214165835179.png)
 Fig. 6: Prompt for top-k recommendation task.
 
-![800](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Chat-REC/IMG-20240212100317100.png)
+![800](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Chat-REC/IMG-20240214165835200.png)
 Fig. 7: Prompt for moving rating task.
 
 ## Example Answers

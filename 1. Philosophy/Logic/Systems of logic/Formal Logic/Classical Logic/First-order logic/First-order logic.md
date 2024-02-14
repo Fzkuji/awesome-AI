@@ -71,11 +71,11 @@ First-order logic is an excellent tool for manipulating defnitions and theorems 
 
 ### The art of translation
 
-[The art of translation](../../../../../../Attachments/1.%20Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/First-order%20logic/First-order%20logic/IMG-20240212100314487.pdf)介绍了翻译一阶逻辑的案例。包括普通句子的翻译和集合的翻译。
+[The art of translation](../../../../../../Attachments/1.%20Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/First-order%20logic/First-order%20logic/IMG-20240214165832188.pdf)介绍了翻译一阶逻辑的案例。包括普通句子的翻译和集合的翻译。
 
 ### Negation in first-order logic
 
-![600](../../../../../../Attachments/1.%20Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/First-order%20logic/First-order%20logic/IMG-20240212100314510.png)
+![600](../../../../../../Attachments/1.%20Philosophy/Logic/Systems%20of%20logic/Formal%20Logic/Classical%20Logic/First-order%20logic/First-order%20logic/IMG-20240214165832206.png)
 
 Use the equivalences
 $$

@@ -24,7 +24,7 @@ ICLR 2023
 
 #### Retrieval-augmented language models
 
-![Retrieval-augmented language models](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/GenRead/IMG-20240212100317144.png)
+![Retrieval-augmented language models](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/GenRead/IMG-20240214165835256.png)
 
 Pros：
 - Document corpus is updatable. New information can be easily plugged in.
@@ -42,7 +42,7 @@ Cons：
 
 #### Information seeking via big language models
 
-![Information seeking via big language models](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/GenRead/IMG-20240212100317159.png)
+![Information seeking via big language models](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/GenRead/IMG-20240214165835276.png)
 
 Pros：
 - Better knowledge storage (>100B), strong deductive reasoning capabilities.
@@ -58,11 +58,11 @@ Cons：
 
 #### Comparison
 
-![RAG vs GPT](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/GenRead/IMG-20240212100317171.png)
+![RAG vs GPT](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/GenRead/IMG-20240214165835299.png)
 
 通常还是专门设计的模型更强。由此引出一个问题，GPT-3是否知道很多问题的答案？
 
-![does GPT knows the answer](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/GenRead/IMG-20240212100317185.png)
+![does GPT knows the answer](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/GenRead/IMG-20240214165835315.png)
 
 事实证明GPT是训练过很多问题的答案的，但是对提问者的提问方式有要求。经验上，提问者需要提供更多的背景信息，而不是简短的一句话。这样模型更有可能找到真实的结果。
 
@@ -118,7 +118,7 @@ Step 1：获取文档
 Step 2：编码每个文档，做聚类处理
 使用一个大语言模型encode文档对，比如使用GPT模型$\mathbf{e}_{i}=\operatorname{GPT-3}\left(\left[q_{i}, d_{i}\right]\right)$，每个文档编码成12288维的vector。然后使用K-means聚类所有的vectors为$K$类，相当于每个文档对都有一个类别，$K$的数量作者做了实验。
 
-![Recall@K on test sets](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/GenRead/IMG-20240212100317203.png)
+![Recall@K on test sets](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/GenRead/IMG-20240214165835330.png)
 
 Step 3：采样并生成$K$个文档
 在聚类的结果基础上，对于每个类别$c$都采样$n$个问题-文档对，表示为$\left\{q_{c 1}, d_{c 1} ; q_{c 2}, d_{c 2} ; \ldots ; q_{c n}, d_{c n}\right\}$，实验证明$n$增加对性能影响不大，这里设置为5。
@@ -129,7 +129,7 @@ placeholder} {input question placeholder}". 又因为我们有$K$个类，因此
 
 ## Evaluation
 
-![Performance](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/GenRead/IMG-20240212100317215.png)
+![Performance](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/GenRead/IMG-20240214165835342.png)
 
 - 将GPT输出的结果再输入GPT，得到的结果就会更好
 - 用GPT作为文档生成器比传统生成器更好

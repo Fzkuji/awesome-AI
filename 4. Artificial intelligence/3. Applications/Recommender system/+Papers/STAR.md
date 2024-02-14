@@ -33,7 +33,7 @@ Conclusion:
 ## Methods
 
 整体模型结构如下图(b)所示：
-![](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/STAR/IMG-20240212100317275.png)
+![](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/STAR/IMG-20240214165835425.png)
 
 首先domain特征通过domain indicator获得，之后所有特征输入embedding网络，然后pooling合并输入[partitioned normalization](#Partitioned%20normalization)层，最后输入[star topology FCN](#Star%20topology%20FCN)网络。整个结构还会附带一个辅助网络[auxiliary network](#Auxiliary%20network)，防止中间信息丢失。
 
@@ -50,7 +50,7 @@ Conclusion:
 
 ### Star topology FCN
 
-![](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/STAR/IMG-20240212100317289.png)
+![](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/STAR/IMG-20240214165835439.png)
 
 最后的FCN层每个domain都有一个，以及额外的一个共享FCN，最终每个domain的输出是specific FCN结果与共享FCN结果element-wise相乘。
 
@@ -64,7 +64,7 @@ $$
 $$
 ### Auxiliary network
 
-![](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/STAR/IMG-20240212100317300.png)
+![](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/STAR/IMG-20240214165835454.png)
 
 **辅助网络本身是一个简单的全连接层，辅助网络将Figure 4中pooling & concatenation部分的值作为输入，输出结果和FCN输出结果直接相加，作为模型输出的最终结果。**
 
@@ -91,12 +91,12 @@ ROC曲线和AUC值
 
 首先整体结果比其他模型都要好：
 
-![500](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/STAR/IMG-20240212100317314.png)
+![500](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/STAR/IMG-20240214165835482.png)
 
 消融实验中：
 
 - [Partitioned normalization](#Partitioned%20normalization)作用很大，但是[Star topology FCN](#Star%20topology%20FCN)作用挺小的，感觉不考虑多场景也行一样
-	- ![400](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/STAR/IMG-20240212100317334.png)
+	- ![400](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/STAR/IMG-20240214165835495.png)
 - [Auxiliary network](#Auxiliary%20network)有用，但也是锦上添花
 
 ### Production
