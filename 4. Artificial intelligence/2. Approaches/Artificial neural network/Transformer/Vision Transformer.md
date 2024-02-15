@@ -24,9 +24,7 @@ Swin Transformer: Hierarchical Vision Transformer using Shifted Windows
 
 这篇论文核心在于，指出对ViT进行层次化的修改并不是必要的。
 
-
-
-
+似乎这篇文章的思路和YOLOF的想法一样？（不太了解这个方向）顺便说说同年的YOLOX似乎引用量更高，说是将anchor box去掉了，也挺不错的。
 
 
 
