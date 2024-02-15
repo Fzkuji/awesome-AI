@@ -12,7 +12,7 @@
 
 Swin Transformer: Hierarchical Vision Transformer using Shifted Windows
 
-借鉴了CNN的思路，提出了transformer的pooling机制和滑动注意力窗口来提供全局感知
+借鉴了CNN的思路，提出了transformer的pooling机制——patch merging和滑动注意力窗口（shifted window based self-attention）来提供全局感知。
 
 
 
