@@ -70,12 +70,13 @@ KDD 2018
 
 [Modeling Task Relationships in Multi-task Learning with Multi-gate Mixture-of-Experts](https://dl.acm.org/doi/10.1145/3219819.3220007)
 
-
-
 ### DeepSpeed-MoE
 
 [DeepSpeed-MoE: Advancing Mixture-of-Experts Inference and Training to Power Next-Generation AI Scale](https://proceedings.mlr.press/v162/rajbhandari22a)
 
+ICML 2022
+
+更快速的MoE，似乎是添加一个共享Expert，没具体看
 
 ### Brainformers
 
