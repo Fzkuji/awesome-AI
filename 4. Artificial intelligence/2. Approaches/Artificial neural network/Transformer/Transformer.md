@@ -9,9 +9,9 @@
 
 schuBERT: Optimizing Elements of BERT
 
+A Study on Transformer Configuration and Training Objective
 
-
-
+Experiments And Discussions On Vision Transformer (ViT) Parameters For Object Tracking
 
 
 
