@@ -14,10 +14,11 @@
 - **how** 问题，如“如何制作蛋糕？”
 由于 ODQA 使用开放域数据，因此它需要处理大量噪声和不确定性。这使得 ODQA 成为一个更具挑战性的任务。
 
-
 ## Methods
 
 ### Dense Passage Retrieval
+
+密集段落检索（Dense Passage Retrieval）是一种用于开放域问答系统的技术。该技术通过检索与问题相关的文本段落，然后从这些段落中提取答案来回答问题。
 
 首篇论文：[Dense Passage Retrieval for Open-Domain Question Answering](https://aclanthology.org/2020.emnlp-main.550/)
 
