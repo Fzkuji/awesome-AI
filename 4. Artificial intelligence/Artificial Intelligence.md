@@ -6,16 +6,8 @@
 
 - [Artificial Intelligence](Artificial%20Intelligence.md)
 	- [Major goals](1.%20Major%20goals/Major%20goals.md)
-		- [Action](1.%20Major%20goals/Action/Action.md)
-		- [Affection](1.%20Major%20goals/Affection/Affection.md)
-		- [Intelligence](1.%20Major%20goals/Intelligence/Intelligence.md)
-		- [Perception](1.%20Major%20goals/Perception/Perception.md)
 	- [Approaches](2.%20Approaches/Approaches.md)
-		- [Artificial neural network](2.%20Approaches/Artificial%20neural%20network/Artificial%20neural%20network.md)
 	- [Applications](3.%20Applications/Applications.md)
-		- [Computer graphics](3.%20Applications/Computer%20graphics/Computer%20graphics.md)
-		- [Knowledge-intensive tasks](3.%20Applications/Knowledge-intensive%20tasks/Knowledge-intensive%20tasks.md)
-		- [Medical Diagnosis](3.%20Applications/Medical%20Diagnosis/Medical%20Diagnosis.md)
 
 The primary objective of artificial intelligence (AI) is to emulate human capabilities using artificial means. 
 
