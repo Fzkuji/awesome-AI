@@ -28,4 +28,15 @@
 
 [Out-of-Domain Semantics to the Rescue! Zero-Shot Hybrid Retrieval Models](https://link.springer.com/chapter/10.1007/978-3-030-99736-6_7)
 
-通常训练的模型的zero-shot能力不行，因此
+他们实验发现常用的神经网络模型的zero-shot能力不行，因此他们提出了一个简单而有效的框架来集成词汇和深度检索模型。 实验表明，即使深度模型在域外设置中较弱，这两个模型也是互补的。
+
+
+
+
+
+
+
+
+
+
+
