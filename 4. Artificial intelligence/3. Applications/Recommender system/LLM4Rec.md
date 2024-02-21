@@ -1,6 +1,4 @@
 
-
-
 # Table of contents
 
 - [Related Repositories](#related-repositories)

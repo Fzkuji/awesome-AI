@@ -24,23 +24,30 @@
 
 #### Related works
 
-##### Zero-shot setting & Integration lexical and deep retrieval models
+- [Out-of-Domain Semantics to the Rescue! Zero-Shot Hybrid Retrieval Models](https://link.springer.com/chapter/10.1007/978-3-030-99736-6_7)
+	- Zero-shot setting & Integration lexical and deep retrieval models
+	- 他们实验发现常用的神经网络模型的zero-shot能力不行，因此他们提出了一个简单而有效的框架来集成词汇和深度检索模型。 实验表明，即使深度模型在域外设置中较弱，这两个模型也是互补的。
+- [Making Large Language Models A Better Foundation For Dense Retrieval](https://arxiv.org/abs/2312.15503)
+	- LLM for dense passage retrieval
+	- 用LLaRA作为dense RetrievAl
+- [Pre-training with Large Language Model-based Document Expansion for Dense Passage Retrieval](https://arxiv.org/abs/2308.08285)
+	- LLM-based document expansion for dense passage retrieval
+	- contrastive learning and bottlenecked query generation & [curriculum learning](../../2.%20Approaches/Curriculum%20learning.md)
 
-[Out-of-Domain Semantics to the Rescue! Zero-Shot Hybrid Retrieval Models](https://link.springer.com/chapter/10.1007/978-3-030-99736-6_7)
+##### LLM for text embedding
 
-他们实验发现常用的神经网络模型的zero-shot能力不行，因此他们提出了一个简单而有效的框架来集成词汇和深度检索模型。 实验表明，即使深度模型在域外设置中较弱，这两个模型也是互补的。
+[Improving Text Embeddings with Large Language Models](https://arxiv.org/abs/2401.00368)
 
-##### LLM for dense passage retrieval
 
-[Making Large Language Models A Better Foundation For Dense Retrieval](https://arxiv.org/abs/2312.15503)
 
-用LLaRA作为dense RetrievAl
 
-##### LLM-based document expansion for dense passage retrieval
+[Retrieve Anything To Augment Large Language Models](https://arxiv.org/abs/2310.07554)
 
-[Pre-training with Large Language Model-based Document Expansion for Dense Passage Retrieval](https://arxiv.org/abs/2308.08285)
 
-contrastive learning and bottlenecked query generation & [curriculum learning](../../2.%20Approaches/Curriculum%20learning.md)
+
+
+
+
 
 
 
