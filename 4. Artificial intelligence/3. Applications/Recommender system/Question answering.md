@@ -4,6 +4,13 @@
 
 # Open-domain question answering
 
+**开放域问答系统**（Open-domain Question Answering，ODQA）是指能够回答开放性问题（Open-ended questions）的问答系统。开放性问题是指问题没有明确的答案，需要系统进行推理和分析才能回答。例如：
+
+- 如果我投资比特币，会发生什么？
+- 为什么天空是蓝色的？
+- 如何制作蛋糕？
+
+
 
 ## Methods
 
