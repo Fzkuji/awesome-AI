@@ -7,7 +7,7 @@
 
 ### 模型设计
 
-看这些论文的时候我在思考transformer的加速推理问题，然后si ka
+看这些论文的时候我在思考transformer的加速推理问题，然后思考transformer的层数问题。但是后来我又发现
 
 schuBERT: Optimizing Elements of BERT
 
