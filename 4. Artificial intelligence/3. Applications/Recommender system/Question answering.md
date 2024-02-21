@@ -33,15 +33,10 @@
 - [Pre-training with Large Language Model-based Document Expansion for Dense Passage Retrieval](https://arxiv.org/abs/2308.08285)
 	- LLM-based document expansion for dense passage retrieval
 	- contrastive learning and bottlenecked query generation & [curriculum learning](../../2.%20Approaches/Curriculum%20learning.md)
-
-##### LLM for text embedding
-
-[Improving Text Embeddings with Large Language Models](https://arxiv.org/abs/2401.00368)
-
-
-
-
-[Retrieve Anything To Augment Large Language Models](https://arxiv.org/abs/2310.07554)
+- [Improving Text Embeddings with Large Language Models](https://arxiv.org/abs/2401.00368)
+	- LLM for text embedding
+- [Retrieve Anything To Augment Large Language Models](https://arxiv.org/abs/2310.07554)
+	- 
 
 
 
