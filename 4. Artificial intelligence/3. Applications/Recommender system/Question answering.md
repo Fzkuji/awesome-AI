@@ -34,7 +34,7 @@
 
 [Making Large Language Models A Better Foundation For Dense Retrieval](https://arxiv.org/abs/2312.15503)
 
-
+用LLaRA作为dense RetrievAl
 
 
 
