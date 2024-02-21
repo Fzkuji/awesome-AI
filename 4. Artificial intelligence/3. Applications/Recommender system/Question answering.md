@@ -40,7 +40,7 @@
 
 [Pre-training with Large Language Model-based Document Expansion for Dense Passage Retrieval](https://arxiv.org/abs/2308.08285)
 
-contrastive learning and bottlenecked query generation & curriculum learning
+contrastive learning and bottlenecked query generation & [curriculum learning](../../2.%20Approaches/Curriculum%20learning.md)
 
 
 

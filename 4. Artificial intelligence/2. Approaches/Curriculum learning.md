@@ -33,4 +33,10 @@
 - 在计算机视觉中，课程学习可以用于训练图像分类模型。首先，可以使用简单图像的训练数据集训练模型，然后逐渐增加图像的复杂度。
 - 在强化学习中，课程学习可以用于训练机器人控制模型。首先，可以让机器人学习简单的动作，然后逐渐增加动作的复杂度。
 
-希望以上内容能够帮助你理解课程学习。
+
+## Related works
+
+（似乎是）首篇论文：[Curriculum learning](https://dl.acm.org/doi/abs/10.1145/1553374.1553380)
+
+一篇较新、高引的survey：[Curriculum Learning: A Survey](https://link.springer.com/article/10.1007/s11263-022-01611-x)
+
