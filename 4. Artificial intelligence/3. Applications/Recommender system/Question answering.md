@@ -36,7 +36,7 @@
 
 用LLaRA作为dense RetrievAl
 
-
+[Pre-training with Large Language Model-based Document Expansion for Dense Passage Retrieval](https://arxiv.org/abs/2308.08285)
 
 
 
