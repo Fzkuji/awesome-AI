@@ -28,4 +28,4 @@
 
 [Out-of-Domain Semantics to the Rescue! Zero-Shot Hybrid Retrieval Models](https://link.springer.com/chapter/10.1007/978-3-030-99736-6_7)
 
-
+通常训练的模型的zero-shot能力不行，因此
