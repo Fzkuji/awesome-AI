@@ -16,7 +16,7 @@
 
 ## Methods
 
-### Dense Passage Retrieval
+### Dense passage retrieval
 
 密集段落检索（Dense Passage Retrieval）是一种用于开放域问答系统的技术。该技术通过检索与问题相关的文本段落，然后从这些段落中提取答案来回答问题。
 
