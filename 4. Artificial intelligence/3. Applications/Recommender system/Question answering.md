@@ -24,8 +24,8 @@
 
 #### Related works
 
-##### Zero-shot settings
-Zero-shot setting
+##### Zero-shot setting & Integration lexical and deep retrieval models
+
 [Out-of-Domain Semantics to the Rescue! Zero-Shot Hybrid Retrieval Models](https://link.springer.com/chapter/10.1007/978-3-030-99736-6_7)
 
 
