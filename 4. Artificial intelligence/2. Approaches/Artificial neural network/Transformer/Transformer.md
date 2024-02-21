@@ -7,6 +7,8 @@
 
 ### 模型设计
 
+看这些论文的时候我在思考transformer的加速推理问题，然后si ka
+
 schuBERT: Optimizing Elements of BERT
 
 A Study on Transformer Configuration and Training Objective
