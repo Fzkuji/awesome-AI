@@ -36,9 +36,10 @@
 - [Improving Text Embeddings with Large Language Models](https://arxiv.org/abs/2401.00368)
 	- LLM for text embedding
 - [Retrieve Anything To Augment Large Language Models](https://arxiv.org/abs/2310.07554)
+	- LLM-Embedder - 一种统一的嵌入式模型
+	- 训练方法包括：reward formulation based on LLMs' feedback, the stabilization of knowledge distillation, multi-task fine-tuning with explicit instructions, and homogeneous in-batch negative sampling
+- [Matryoshka Representation Learning](https://proceedings.neurips.cc/paper_files/paper/2022/hash/c32319f4868da7613d78af9993100e42-Abstract-Conference.html)
 	- 
-
-
 
 
 
