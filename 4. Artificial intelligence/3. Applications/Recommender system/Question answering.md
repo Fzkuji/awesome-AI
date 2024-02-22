@@ -29,7 +29,7 @@
 	- 他们实验发现常用的神经网络模型的zero-shot能力不行，因此他们提出了一个简单而有效的框架来集成词汇和深度检索模型。 实验表明，即使深度模型在域外设置中较弱，这两个模型也是互补的。
 - [Making Large Language Models A Better Foundation For Dense Retrieval](https://arxiv.org/abs/2312.15503)
 	- LLM for dense passage retrieval
-	- 用LLaRA作为dense RetrievAl
+	- 用LLaMA微调出LLaRA作为dense RetrievAl
 - [Pre-training with Large Language Model-based Document Expansion for Dense Passage Retrieval](https://arxiv.org/abs/2308.08285)
 	- LLM-based document expansion for dense passage retrieval
 	- contrastive learning and bottlenecked query generation & [curriculum learning](../../2.%20Approaches/Curriculum%20learning.md)
