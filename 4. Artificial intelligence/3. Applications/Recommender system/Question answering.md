@@ -39,7 +39,7 @@
 	- LLM-Embedder - 一种统一的嵌入式模型
 	- 训练方法包括：reward formulation based on LLMs' feedback, the stabilization of knowledge distillation, multi-task fine-tuning with explicit instructions, and homogeneous in-batch negative sampling
 - [Matryoshka Representation Learning](https://proceedings.neurips.cc/paper_files/paper/2022/hash/c32319f4868da7613d78af9993100e42-Abstract-Conference.html)
-	- 不同粒度的表示
+	- 多粒度的表示学习
 - [Questions Are All You Need to Train a Dense Passage Retriever](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00564/116466)
 
 
