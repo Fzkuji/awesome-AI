@@ -31,7 +31,11 @@ Surveys:
 
 Repositories:
 - [DenseRetrieval](https://github.com/RUCAIBox/DenseRetrieval)
-	- 是综述Dense Text Retrieval Based on Pretrained Language Models: A Survey的项目，对不同工作进行了分类，也涵盖了其他repositories和数据集
+	- 是综述Dense Text Retrieval Based on Pretrained Language Models: A Survey的仓库，对不同工作进行了分类，也涵盖了其他repositories和数据集
+- [pyserini](https://github.com/castorini/pyserini)
+	- 这应该是做实验的理想仓库，里面提供了一系列复现好的的baselines
+- [faiss](https://github.com/facebookresearch/faiss)
+	- Facebook自己的项目集合（似乎），好像是即开即用的，但是没有调试
 
 Researches:
 - [Out-of-Domain Semantics to the Rescue! Zero-Shot Hybrid Retrieval Models](https://link.springer.com/chapter/10.1007/978-3-030-99736-6_7)
