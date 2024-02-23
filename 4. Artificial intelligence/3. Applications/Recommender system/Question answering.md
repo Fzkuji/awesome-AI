@@ -24,12 +24,16 @@
 
 #### Related works
 
-Survey:
+Surveys:
 - [Dense Text Retrieval Based on Pretrained Language Models: A Survey](https://dl.acm.org/doi/abs/10.1145/3637870)
 	- LLM for DPR survey
 	- 这个sruvey似乎直接将粒度从document/passage转变为更灵活的text了
 
-Research:
+Repositories:
+- [DenseRetrieval](https://github.com/RUCAIBox/DenseRetrieval)
+	- 是综述Dense Text Retrieval Based on Pretrained Language Models: A Survey的项目，对不同工作进行了分类，也涵盖了其他repositories和数据集
+
+Researches:
 - [Out-of-Domain Semantics to the Rescue! Zero-Shot Hybrid Retrieval Models](https://link.springer.com/chapter/10.1007/978-3-030-99736-6_7)
 	- Zero-shot setting & Integration lexical and deep retrieval models
 	- 他们实验发现常用的神经网络模型的zero-shot能力不行，因此他们提出了一个简单而有效的框架来集成词汇和深度检索模型。 实验表明，即使深度模型在域外设置中较弱，这两个模型也是互补的。
@@ -46,9 +50,7 @@ Research:
 	- 训练方法包括：reward formulation based on LLMs' feedback, the stabilization of knowledge distillation, multi-task fine-tuning with explicit instructions, and homogeneous in-batch negative sampling
 - [Matryoshka Representation Learning](https://proceedings.neurips.cc/paper_files/paper/2022/hash/c32319f4868da7613d78af9993100e42-Abstract-Conference.html)
 	- 多粒度的表示学习
-- [Questions Are All You Need to Train a Dense Passage Retriever](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00564/116466)
-
-
+- [Questions Are All You Need to Train a Dense Passage Retriever](https://doi.org/10.1162/tacl_a_00564)
 
 
 
