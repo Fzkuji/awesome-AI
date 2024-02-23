@@ -1,3 +1,5 @@
+# BM25
+
 ## Definition
 
 In [information retrieval](https://en.wikipedia.org/wiki/Information_retrieval), **Okapi BM25** (_BM_ is an abbreviation of _best matching_) is a [ranking function](https://en.wikipedia.org/wiki/Ranking_function "Ranking function") used by [search engines](https://en.wikipedia.org/wiki/Search_engine "Search engine") to estimate the [relevance](https://en.wikipedia.org/wiki/Relevance_(information_retrieval) "Relevance (information retrieval)") of documents to a given search query. It is based on the [probabilistic retrieval framework](https://en.wikipedia.org/wiki/Probabilistic_relevance_model "Probabilistic relevance model") developed in the 1970s and 1980s by [Stephen E. Robertson](https://en.wikipedia.org/wiki/Stephen_E._Robertson "Stephen E. Robertson"), [Karen Spärck Jones](https://en.wikipedia.org/wiki/Karen_Sp%C3%A4rck_Jones "Karen Spärck Jones"), and others.
