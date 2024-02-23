@@ -33,7 +33,9 @@ Repositories:
 - [DenseRetrieval](https://github.com/RUCAIBox/DenseRetrieval)
 	- 是综述Dense Text Retrieval Based on Pretrained Language Models: A Survey的仓库，对不同工作进行了分类，也涵盖了其他repositories和数据集
 - [pyserini](https://github.com/castorini/pyserini)
-	- 这应该是做实验的理想仓库，里面提供了一系列复现好的的baselines
+	- 这应该是做实验的较理想仓库，里面提供了一系列复现好的的baselines
+- [sentence-transformers](https://github.com/UKPLab/sentence-transformers)
+	- 这个仓库也很好，即开即用；似乎适用范围更广（怎么有1w+的star）
 - [faiss](https://github.com/facebookresearch/faiss)
 	- Facebook自己的项目集合（似乎），好像是即开即用的，但是没有调试
 
