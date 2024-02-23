@@ -51,7 +51,7 @@ Researches:
 - [Matryoshka Representation Learning](https://proceedings.neurips.cc/paper_files/paper/2022/hash/c32319f4868da7613d78af9993100e42-Abstract-Conference.html)
 	- 多粒度的表示学习
 - [Questions Are All You Need to Train a Dense Passage Retriever](https://doi.org/10.1162/tacl_a_00564)
-
-
+	- 
+- [A Personalized Dense Retrieval Framework for Unified Information Access](https://doi.org/10.1145/3539618.3591626)
 
 
