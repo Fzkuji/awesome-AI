@@ -51,7 +51,9 @@ Researches:
 - [Matryoshka Representation Learning](https://proceedings.neurips.cc/paper_files/paper/2022/hash/c32319f4868da7613d78af9993100e42-Abstract-Conference.html)
 	- 多粒度的表示学习
 - [Questions Are All You Need to Train a Dense Passage Retriever](https://doi.org/10.1162/tacl_a_00564)
-	- 
+	- 让PLM去预测检索出的样本与问题的匹配程度，进而训练检索模型
+	- 该方法假设PLM运作良好，这样就可以使用没有标签的数据进行训练了
 - [A Personalized Dense Retrieval Framework for Unified Information Access](https://doi.org/10.1145/3539618.3591626)
+	- 个性化检索，针对用户的历史给出特定的回答
 
 
