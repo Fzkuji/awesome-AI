@@ -24,8 +24,12 @@
 
 #### Related works
 
-- 
+Survey:
+- [Dense Text Retrieval Based on Pretrained Language Models: A Survey](https://dl.acm.org/doi/abs/10.1145/3637870)
+	- LLM for DPR survey
+	- 这个sruvey似乎直接将粒度从document/passage转变为更灵活的text了
 
+Research:
 - [Out-of-Domain Semantics to the Rescue! Zero-Shot Hybrid Retrieval Models](https://link.springer.com/chapter/10.1007/978-3-030-99736-6_7)
 	- Zero-shot setting & Integration lexical and deep retrieval models
 	- 他们实验发现常用的神经网络模型的zero-shot能力不行，因此他们提出了一个简单而有效的框架来集成词汇和深度检索模型。 实验表明，即使深度模型在域外设置中较弱，这两个模型也是互补的。
