@@ -43,3 +43,11 @@ Researches:
 	- 该方法假设PLM运作良好，这样就可以使用没有标签的数据进行训练了
 - [A Personalized Dense Retrieval Framework for Unified Information Access](https://doi.org/10.1145/3539618.3591626)
 	- 个性化检索，针对用户的历史给出特定的回答
+
+
+Departments under College of Business:
+Department of Accountancy
+
+
+Department of Management
+
