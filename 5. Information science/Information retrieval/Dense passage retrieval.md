@@ -45,9 +45,3 @@ Researches:
 	- 个性化检索，针对用户的历史给出特定的回答
 
 
-Departments under College of Business:
-Department of Accountancy
-
-
-Department of Management
-
