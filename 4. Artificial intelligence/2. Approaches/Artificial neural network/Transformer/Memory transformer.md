@@ -84,10 +84,10 @@ Mikhail Burtsev这个兄弟似乎一直在搞memory相关的研究，一开始�
 	- 2023.4 [Scaling Transformer to 1M tokens and beyond with RMT](https://arxiv.org/abs/2304.11062) **arXiv** 感觉内容上和前一篇差不多，不太懂为什么还可以再写一篇，感官上就是添加了一个实验。
 	- 2024.3 [Beyond Attention: Breaking the Limits of Transformer Context Length with Recurrent Memory](https://ojs.aaai.org/index.php/AAAI/article/view/29722) **AAAI 2024** 似乎是前面一篇经过修改后发表了，然后换了一个名字
 
-### [Dense passage retrieval](Dense%20passage%20retrieval.md)
+### [Dense passage retrieval](../../../../5.%20Information%20science/Information%20retrieval/Dense%20passage%20retrieval.md)
 
 一个token可以保存多少记忆可以通过这类研究得到答案
-[Dense passage retrieval](../../../../5.%20Information%20science/Information%20retrieval/Dense%20passage%20retrieval.md)
+
 
 ### Efficient Transformer
 
