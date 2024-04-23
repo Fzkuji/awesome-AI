@@ -37,9 +37,10 @@ English | [中文](README_zh.md)
 ## Recommended notes
 
 - [General multi-task learning](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/General%20multi-task%20learning.md)
-- [Large Language Models (New!)](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Large%20language%20model.md)
+- [Large Language Models (New!)](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/Large%20language%20model.md)
 - [Large Language Models for Recommender Systems (New!)](4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/LLM4Rec.md)
-- [Probabilistic graphical model (Updating)](2.%20Mathematics/Probabilistic%20graphical%20model/Probabilistic%20graphical%20model.md)
+- [Probabilistic graphical model](2.%20Mathematics/Probabilistic%20graphical%20model/Probabilistic%20graphical%20model.md)
+- [Memory transformer (New!)](Memory%20transformer.md)
 
 ## Related Readings and Tutorials
 

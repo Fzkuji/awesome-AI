@@ -43,7 +43,7 @@ Conclusion:
 
 ### CGC
 
-![Pasted image 20230713163957](../../../../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/Special%20Multi-Task%20Learning/+Papers/PLE/IMG-20240214165833487.png)
+![Pasted image 20230713163957](IMG-20240313125301805.png)
 
 ### PLE
 

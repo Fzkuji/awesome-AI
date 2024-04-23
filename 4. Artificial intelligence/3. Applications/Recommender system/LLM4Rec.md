@@ -1,7 +1,9 @@
 
 # Table of contents
 
-- [Related Repositories](#related-repositories)
+- [Related resources](#related-resources)
+	- [Repositories](#repositories)
+	- [Articles](#articles)
 - [Tasks](#tasks)
 	- [Overview](#overview)
 	- [Classification by Liu](#classification-by-liu)
@@ -9,7 +11,7 @@
 		- [Explainability-oriented tasks](#explainability-oriented-tasks)
 - [Paradigms](#paradigms)
 	- [Classification by Wu](#classification-by-wu)
-- [Papers](#papers)
+- [Works](#works)
 	- [Surveys](#surveys)
 	- [Paradigms of LLM4Rec](#paradigms-of-llm4rec)
 		- [Content creator oriented](#content-creator-oriented)
@@ -47,7 +49,7 @@
 		- [RLHF](#rlhf)
 	- [Others](#others)
 		- [Knowledge-intensive language tasks](#knowledge-intensive-language-tasks)
-	- [List](#list)
+	- [Paper List](#paper-list)
 		- [InPars: Data Augmentation for Information Retrieval using Large Language Models](#inpars-data-augmentation-for-information-retrieval-using-large-language-models)
 		- [Transformer Memory as a Differentiable Search Index](#transformer-memory-as-a-differentiable-search-index)
 		- [Improving Passage Retrieval with Zero-Shot Question Generation](#improving-passage-retrieval-with-zero-shot-question-generation)
@@ -80,7 +82,6 @@
 		- [Generative Sequential Recommendation with GPTRec](#generative-sequential-recommendation-with-gptrec)
 		- [OpenP5: Benchmarking Foundation Models for Recommendation](#openp5-benchmarking-foundation-models-for-recommendation)
 - [Research direction](#research-direction)
-- [Reference](#reference)
 
 
 # Related resources
@@ -943,10 +944,7 @@ OpenP5考虑了P5的三个维度：
 作者基于这三个维度进行了测试。
 
 
-
-
-
-
+### Others
 
 
 

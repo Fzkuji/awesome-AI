@@ -36,7 +36,7 @@
 ## 推荐笔记
 
 - [通用多任务学习](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/General%20multi-task%20learning.md)
-- [大型语言模型](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Large%20language%20model.md)
+- [大型语言模型](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/Large%20language%20model.md)
 - [用于推荐系统的大型语言模型](4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/LLM4Rec.md)
 
 
