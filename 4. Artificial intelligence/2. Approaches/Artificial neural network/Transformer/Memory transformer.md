@@ -83,7 +83,7 @@ Mikhail Burtsev这个兄弟似乎一直在搞memory相关的研究，一开始�
 - 2022.7 [Recurrent Memory Transformer](https://arxiv.org/abs/2207.06881) **NeurIPS 2022** 这个文章的思路就更简单，每次sequence输入一个LLM，sequence包含了之前的memory tokens、当前的文本和即将要保存的tokens。这样记忆就可以不断迭代使用。有点暴力，但是我比较好奇他们是如何优化训练这个模型的，毕竟这有一些循环在里面。
 	- 2023.4 [Scaling Transformer to 1M tokens and beyond with RMT](https://arxiv.org/abs/2304.11062) **arXiv** 感觉内容上和前一篇差不多，不太懂为什么还可以再写一篇，感官上就是添加了一个实验。
 	- 2024.3 [Beyond Attention: Breaking the Limits of Transformer Context Length with Recurrent Memory](https://ojs.aaai.org/index.php/AAAI/article/view/29722) **AAAI 2024** 似乎是前面一篇经过修改后发表了，然后换了一个名字
-- [In Search of Needles in a 11M Haystack: Recurrent Memory Finds What LLMs Miss](https://arxiv.org/abs/2402.10790)
+	- 2024.2 [In Search of Needles in a 11M Haystack: Recurrent Memory Finds What LLMs Miss](https://arxiv.org/abs/2402.10790) 基于这个实验他们又做了一个benchmark（好好好，一个idea写一万个论文，很好）
 
 ### [Dense passage retrieval](../../../../5.%20Information%20science/Information%20retrieval/Dense%20passage%20retrieval.md)
 
