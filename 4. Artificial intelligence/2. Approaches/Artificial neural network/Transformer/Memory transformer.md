@@ -87,7 +87,7 @@ Mikhail Burtsev这个兄弟似乎一直在搞memory相关的研究，一开始�
 ### [Dense passage retrieval](Dense%20passage%20retrieval.md)
 
 一个token可以保存多少记忆可以通过这类研究得到答案
-
+[Dense passage retrieval](../../../../5.%20Information%20science/Information%20retrieval/Dense%20passage%20retrieval.md)
 
 ### Efficient Transformer
 
