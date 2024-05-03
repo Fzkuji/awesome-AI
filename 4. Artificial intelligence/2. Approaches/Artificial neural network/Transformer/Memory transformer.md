@@ -71,6 +71,7 @@
 - [LM-Infinite: Zero-Shot Extreme Length Generalization for Large Language Models](https://arxiv.org/abs/2308.16137)
 - [Efficient Streaming Language Models with Attention Sinks](https://arxiv.org/abs/2309.17453) 这篇论文非常关键，他们发现如果保留一个序列最前面的几个token，就可以显著降低困惑度，这很可能是因为最前面的几个token充当了记忆模块，虽然最前面的几个tokens可能无法记住很多有用的信息，但是充当了一个稳定的记忆体，单是有这个东西就已经可以提升性能了
 
+[Leave No Context Behind: Efficient Infinite Context Transformers with Infini-attention](https://arxiv.org/abs/2404.07143) 这项工作主要改进的是transformer内部的结构，增加了记忆模块，使用了线性attention
 
 ###  Works by Mikhail Burtsev
 

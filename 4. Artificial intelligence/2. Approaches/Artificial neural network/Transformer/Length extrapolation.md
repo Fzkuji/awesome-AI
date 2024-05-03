@@ -16,3 +16,5 @@ Transformer自诞生以来就席卷了NLP领域，因为它具有对序列中复
 
 [LongRoPE: Extending LLM Context Window Beyond 2 Million Tokens](https://arxiv.org/abs/2402.13753)微软提出的一种方法，暂时没看细节
 
+[Long-context LLMs Struggle with Long In-context Learning](https://arxiv.org/abs/2404.02060) 这项研究通过开发LongICLBench基准测试，揭示了长上下文语言模型在理解和处理具有大量标签的长序列任务中的局限性，为未来模型的评估提供了更实际的基准。
+
