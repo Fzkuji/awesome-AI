@@ -57,7 +57,7 @@
 2022.3 [Memorizing Transformers](https://arxiv.org/abs/2203.08913) **ICLR 2022** 将LLM第9层tokens的hidden states进行保存作为记忆。新tokens计算到第9层的时候，对于每一个token，模型使用knn查找与之相关的记忆（旧tokens的hidden states）并加入计算，最后汇总得到新tokens的hidden states。记忆长度262K tokens
 - 和transformer-xl不同的是，这k对kv不会直接和当前的拼接，而是按照标准注意力一样，也算出一个最后的输出，然后和局部注意力的值向量做线性插值即可。——[Focused Transformer论文解读](https://zhuanlan.zhihu.com/p/644061652)
 
-2023.7.5 [LongNet: Scaling Transformers to 1,000,000,000 Tokens](https://arxiv.org/abs/2307.02486) 用了三种扩张注意力组合，来保证计算量呈线性，但是实验的上下文长度只有32K，感觉可信度差点意思，标题党
+2023.7.5 [LongNet: Scaling Transformers to 1,000,000,000 Tokens](https://arxiv.org/abs/2307.02486) 用了三种扩张注意力组合，来保证计算量呈线性，但是实验的上下文长度只有32K，~~感觉可信度差点意思，标题党~~，后面又分析了一下，认为这个思想还是可以用的，可以保存扩张注意力位置的kv cache作为记忆
 
 2023.7.6 [Focused Transformer: Contrastive Training for Context Scaling](https://arxiv.org/abs/2307.03170) **NeurIPS 2023** 感觉是想跟LongNet打一架，前后一天发的。和Memorizing Transformers很像，都是保存了以前文本的hidden states，然后用于后续的文本训练。同时添加了负样本提升模型对于海量记忆的筛选能力，相当于对比学习
 - 实现项目：[long_llama](https://github.com/CStanKonrad/long_llama)
