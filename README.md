@@ -1,10 +1,16 @@
-**For Science!**
 
-English | [中文](README_zh.md)
 
 # Awesome AI: artificial intelligence study notes
 
 ✨ Welcome to my Artificial Intelligence Study Notes project! This project is my personal study notes, which records and organizes all the machine learning knowledge I have learned with long-term updates.
+
+## Preface
+
+> 1. Anything that is in the world when you’re born is normal and ordinary and is just a natural part of the way the world works.
+> 2. Anything that’s invented between when you’re fifteen and thirty-five is new and exciting and revolutionary and you can probably get a career in it.
+> 3. Anything invented after you’re thirty-five is against the natural order of things.
+> 
+> -- The Salmon of Doubt
 
 ## Project Goals
 
