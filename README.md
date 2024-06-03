@@ -1,5 +1,3 @@
-
-
 # Awesome AI: artificial intelligence study notes
 
 ✨ Welcome to my Artificial Intelligence Study Notes project! This project is my personal study notes, which records and organizes all the machine learning knowledge I have learned with long-term updates.
