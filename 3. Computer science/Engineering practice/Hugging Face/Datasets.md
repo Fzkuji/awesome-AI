@@ -8,7 +8,7 @@ Load a dataset from the Hugging Face Hub:
 ```python
 from datasets import load_dataset
 ds = load_dataset(
-	name='rotten_tomatoes', 
+	path='rotten_tomatoes', 
 	split='train',
 	cache_dir='~/.cache/huggingface/datasets'
 )
