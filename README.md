@@ -14,9 +14,9 @@
 
 👀 My goal is a machine with the same level of intelligence as a human. For this, I need knowledge in all aspects.
 
-## Project Content
+💕 I aim for my notes to be easy to understand for anyone who comes across them. I hope that anyone who searches for this content can understand my notes based on their current knowledge. Feedback and suggestions from everyone are highly encouraged.
 
-💕 This project welcomes any relevant contributions, including but not limited to personal notes, external sites, videos, and reminders of new technologies. This project will always be public. A lot of content is not written by me, but it is public content on the Internet, and references will be added if necessary. Any spread and likes are appreciated!
+🤗 This project welcomes any relevant contributions, including but not limited to personal notes, external sites, videos, and reminders of new technologies. This project will always be public. A lot of content is not written by me, but it is public content on the Internet, and references will be added if necessary. Any spread and likes are appreciated!
 
 ## Contents
 
