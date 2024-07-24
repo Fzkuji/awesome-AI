@@ -24,7 +24,7 @@
 			- [Episodic memory](https://en.wikipedia.org/wiki/Episodic_memory)
 		- [Procedural memory](https://en.wikipedia.org/wiki/Procedural_memory)内隐记忆对应神经网络学习得到的参数
 
-> 国际著名心理学家丹尼尔西格尔认为：我们终生都在编码内隐记忆，而且在生命的头18个月里我们只能编码内隐记忆。
+> 国际著名心理学家丹尼尔西格尔认为：我 们终生都在编码内隐记忆，而且在生命的头18个月里我们只能编码内隐记忆。
 
 [维基百科](https://zh.wikipedia.org/zh-cn/%E5%86%85%E9%9A%90%E8%AE%B0%E5%BF%86)里还提到了内隐记忆的特征，内隐记忆在以下几个方面与外显记忆有明显的差别：
 1. 保持时间：在保持的时间上，内隐记忆要明显的长于外显记忆。
