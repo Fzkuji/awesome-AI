@@ -19,3 +19,4 @@ upload /usr/src/app/fzkuji/memoGPT/out-owt/ckpt.pt /tmp
 
 /usr/src/app/fzkuji/memoGPT/tmp/ckpt.pt
 
+     
