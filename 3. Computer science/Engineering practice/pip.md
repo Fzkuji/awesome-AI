@@ -6,7 +6,11 @@
 [pip设置代理](https://zhuanlan.zhihu.com/p/371953325)
 
 
+## 临时使用国内源
 
+```shell
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+```
 
 
 
