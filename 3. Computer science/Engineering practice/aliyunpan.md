@@ -15,9 +15,11 @@ aliyunpan sync start -ldir "/usr/src/app/fzkuji/memoGPT/out-owt" -pdir "/DESKTOP
 aliyunpan download --saveto /usr/src/app/fzkuji/memoGPT /DESKTOP-S2FLSAN/memoGPT
 ```
 
+ - aliyunpan download - p 是并行下载
+
 aliyunpan sync start -ldir "/usr/src/app/fzkuji/memoGPT" -pdir "/DESKTOP-S2FLSAN/memoGPT" -mode "download"
 
-aliyunpan download --saveto /data/local/amlworker1-0/fzkuji/memoGPT /mac.Zichuans-MacBook-Pro.local/memoGPT
+aliyunpan download --saveto /data/local/amlworker1-0/fzkuji/memoGPT /mac.Zichuans-MacBook-Pro.local/memoGPT -p 3
 
 
 
