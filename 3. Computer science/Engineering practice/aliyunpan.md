@@ -32,3 +32,7 @@ upload /usr/src/app/fzkuji/memoGPT/out-owt/ckpt.pt /tmp
 ```
 aliyunpan sync start -ldir "/data/local/amlworker1-0/fzkuji" -pdir "/mac.Zichuans-MacBook-Pro.local/memoGPT" -mode "download"
 ```
+
+
+
+aliyunpan download --saveto /root/autodl-tmp /mac.Zichuans-MacBook-Pro.local/memoGPT -p 3
