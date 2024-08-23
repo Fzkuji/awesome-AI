@@ -2,6 +2,8 @@
 
 永久配置: https://blog.csdn.net/qq_38238956/article/details/134673618
 
+https://huggingface.co/docs/huggingface_hub/en/guides/cli#getting-started
+
 Qwen/Qwen2-7B-Instruct
 
 ```shell
@@ -12,4 +14,6 @@ export HF_ENDPOINT=https://hf-mirror.com
 huggingface-cli download openwebtext --repo-type dataset
 ```
 
-
+```shell
+huggingface-cli download Qwen/Qwen2-7B-Instruct
+```
