@@ -7,6 +7,10 @@ https://huggingface.co/docs/huggingface_hub/en/guides/cli#getting-started
 Qwen/Qwen2-7B-Instruct
 
 ```shell
+pip install -U "huggingface_hub[cli]"
+```
+
+```shell
 export HF_ENDPOINT=https://hf-mirror.com
 ```
 
@@ -15,5 +19,6 @@ huggingface-cli download openwebtext --repo-type dataset
 ```
 
 ```shell
-huggingface-cli download Qwen/Qwen2-7B-Instruct
+huggingface-cli download Qwen/Qwen2-7B-Instruct --cache_dir=
 ```
+
