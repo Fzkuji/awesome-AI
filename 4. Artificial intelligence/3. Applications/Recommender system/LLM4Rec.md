@@ -29,7 +29,7 @@
 			- [Information retrieval](#information-retrieval)
 			- [Ranking](#ranking)
 			- [Rating prediction](#rating-prediction)
-			- [CTR prediction](#ctr-prediction)
+			- [CTR prediction](#ctr-prediction) 
 			- [ID generation](#id-generation)
 			- [Explanation generation](#explanation-generation)
 			- [Review summarization](#review-summarization)
