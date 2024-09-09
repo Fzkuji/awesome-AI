@@ -183,9 +183,9 @@ Ideally, given user $u_i$, the platform will get his background $b_i$ and browsi
 | [How Can Recommender Systems Benefit from Large Language Models: A Survey](https://arxiv.org/abs/2306.05817)                                                       | arXiv       | 9 Jun 2023  |
 
 
-| Name | Paper                                                     | Publication    | Repository | Link                                                 | Classification |
-| ---- | --------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | -------------- |
-|      | [A Survey on Large Language Models for Recommendation](#A%20Survey%20on%20Large%20Language%20Models%20for%20Recommendation) | arXiv preprint |            | [arXiv:2305.19860](https://arxiv.org/abs/2305.19860) | [#Surveys](#Surveys)   | 
+| Name | Paper                                                                                                                       | Publication    | Repository | Link                                                 | Classification      |     |
+| ---- | --------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- | ---------------------------------------------------- | ------------------- | --- |
+|      | [A Survey on Large Language Models for Recommendation](#A%20Survey%20on%20Large%20Language%20Models%20for%20Recommendation) | arXiv preprint |            | [arXiv:2305.19860](https://arxiv.org/abs/2305.19860) | [Surveys](#Surveys) |     |
 
 
 ## Paradigms of LLM4Rec
