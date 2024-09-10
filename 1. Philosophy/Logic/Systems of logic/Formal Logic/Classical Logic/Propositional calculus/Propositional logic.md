@@ -68,7 +68,7 @@ That is we want to change form from $\neg (p \wedge q)$ to $\neg p \vee \neg q$.
 
 ## Some other equivalences
 ^443af0
-1. [Implication](Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/Models/GPT/GPT-123/IMG-20240330011953533.pdf)
+1. [Implication](../../../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Large%20language%20model/Models/GPT/GPT-123/IMG-20240910115137328.pdf)
 $$p \to q \equiv \neg p \vee q$$
 2. [Contraposition](Logical%20consequence%E2%80%8E/Inference%E2%80%8E/Immediate%20inference%E2%80%8E/Contraposition.md)
 $$p \to q \equiv \neg q \vee \neg p$$

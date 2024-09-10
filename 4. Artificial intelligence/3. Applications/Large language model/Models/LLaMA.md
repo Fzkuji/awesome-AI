@@ -3,7 +3,7 @@
 [Read the model card](https://github.com/facebookresearch/llama/blob/main/MODEL_CARD.md)
 [Apply for access to LLaMA](https://docs.google.com/forms/d/e/1FAIpQLSfqNECQnMkycAp2jP4Z9TFX0cGR4uf7b_fBxjY_OjhJILlKGA/viewform)
 
-![600](Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/Models/LLaMA/IMG-20240330011953465.png)
+![600](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Large%20language%20model/Models/LLaMA/IMG-20240910115137325.png)
 
 ## Approach
 
@@ -23,7 +23,7 @@
 
 #### Pre-normalization.
 
-[Root Mean Square Layer Normalization](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Normalization.md#Root%20Mean%20Square%20Layer%20Normalization) used in [GPT-3](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/Models/GPT/GPT-123.md)
+[Root Mean Square Layer Normalization](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Normalization.md#Root%20Mean%20Square%20Layer%20Normalization) used in [GPT-3](GPT/GPT-123.md)
 
 #### SwiGLU activation function
 

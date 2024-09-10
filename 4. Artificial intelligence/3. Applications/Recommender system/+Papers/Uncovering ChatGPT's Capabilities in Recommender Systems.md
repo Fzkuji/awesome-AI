@@ -27,7 +27,7 @@ ChatGPT的首次亮相最近吸引了自然语言处理（NLP）社区和其他�
 
 首先这是一个[Learning to rank](../../../../5.%20Information%20science/Information%20retrieval/Learning%20to%20rank.md)问题
 
-本文作者也这么推荐，将这三种排名方式设计为[prompt](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/Prompting.md)去询问ChatGPT。
+本文作者也这么推荐，将这三种排名方式设计为[prompt](../../Large%20language%20model/Prompting.md)去询问ChatGPT。
 
 ### Contributions
 
@@ -48,7 +48,7 @@ ChatGPT的首次亮相最近吸引了自然语言处理（NLP）社区和其他�
 
 ### Reformulate and Adapt Recommendation with Prompts
 
-使用[prompt](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/Prompting.md)设计[LTR](../../../../5.%20Information%20science/Information%20retrieval/Learning%20to%20rank.md)的三种范式：
+使用[prompt](../../Large%20language%20model/Prompting.md)设计[LTR](../../../../5.%20Information%20science/Information%20retrieval/Learning%20to%20rank.md)的三种范式：
 
 ![Pasted image 20230516162335](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/+Papers/Uncovering%20ChatGPT's%20Capabilities%20in%20Recommender%20Systems/IMG-20240214165835700.png)
 

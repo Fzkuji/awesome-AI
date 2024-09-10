@@ -30,7 +30,7 @@ Hand-crafted prompts were quickly replaced by superior AI-designed prompts consi
 
 Unlike hard prompts, AI-designed soft prompts are unrecognizable to the human eye. Each prompt consists of an embedding, or string of numbers, that distills knowledge from the larger model. High level or task specific, the prompt acts as a substitute for additional training data. Researchers recently [estimated](https://aclanthology.org/2021.naacl-main.208.pdf) that a good language classifier prompt is worth hundreds to thousands of extra data points.
 
-Around the same time, Stanford researchers introduced [Prefix-tuning](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/+Papers/Prefix-tuning.md), another automated prompt-design method that allows the model to learn one task after another. Prefix-tuning combines soft prompts with prompts injected into layers of the deep learning model for added flexibility. Though prompt-tuning is more efficient, both techniques let you freeze the model and skip expensive retraining.
+Around the same time, Stanford researchers introduced [Prefix-tuning](+Papers/Prefix-tuning.md), another automated prompt-design method that allows the model to learn one task after another. Prefix-tuning combines soft prompts with prompts injected into layers of the deep learning model for added flexibility. Though prompt-tuning is more efficient, both techniques let you freeze the model and skip expensive retraining.
 
 One drawback of prompt-tuning is its lack of interpretability. The AI discovers prompts optimized for a given task but can’t explain why it chose those embeddings. Like deep learning models themselves, soft prompts are opaque.
 
@@ -41,7 +41,7 @@ One drawback of prompt-tuning is its lack of interpretability. The AI discovers 
 
 ### Prompt tuning
 
-![Parameter-efficient prompt tuning](Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/Prompting/IMG-20240330011953436.png)
+![Parameter-efficient prompt tuning](../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Large%20language%20model/Prompting/IMG-20240910115137312.png)
 
 Parameter-efficient prompt tuning from https://people.cs.umass.edu/~miyyer/cs685/slides/prompt_learning.pdf
 
@@ -90,8 +90,8 @@ Overall, both Prompt Tuning and Prefix-Tuning are methods for adapting pre-train
 
 ## Papers
 
-[Prefix-tuning](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/+Papers/Prefix-tuning.md)
-[Prefix-tuning v2](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/+Papers/Prefix-tuning%20v2.md)
-[Transferability of prompt tuning](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/+Papers/Transferability%20of%20prompt%20tuning.md)
+[Prefix-tuning](+Papers/Prefix-tuning.md)
+[Prefix-tuning v2](+Papers/Prefix-tuning%20v2.md)
+[Transferability of prompt tuning](+Papers/Transferability%20of%20prompt%20tuning.md)
 
 

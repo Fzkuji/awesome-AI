@@ -1,6 +1,6 @@
 # GPT-4
 
-[GPT-4 Architecture, Infrastructure, Training Dataset, Costs, Vision, MoE](Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/Models/GPT/GPT-4/IMG-20240330011953513.pdf)
+[GPT-4 Architecture, Infrastructure, Training Dataset, Costs, Vision, MoE](../../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Large%20language%20model/Models/GPT/GPT-4/IMG-20240910115137334.pdf)
 - [解读翻译](https://mp.weixin.qq.com/s/kOIoLc9nZDuM-bpNfHvW-A)
 
 总之就是很强。

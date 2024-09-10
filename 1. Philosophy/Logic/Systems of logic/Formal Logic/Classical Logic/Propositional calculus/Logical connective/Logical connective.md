@@ -11,7 +11,7 @@
 - $p \vee q$ is read "$p$ or $q$," and called a **disjunction**.
 	- Also called Logical OR or logical disjunction.
 	- $p \vee q$ is true if and only if at least one of $p$ or $q$ are true (inclusive OR)
-- $p \to q$  is read "f $p$ then $q$," and called an **[implication](Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/Models/GPT/GPT-123/IMG-20240330011953533.pdf)** or **conditional**.
+- $p \to q$  is read "f $p$ then $q$," and called an **[implication](../../../../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Large%20language%20model/Models/GPT/GPT-123/IMG-20240910115137328.pdf)** or **conditional**.
 	- "$p$ is necessary for $q$" means $q \to p$.
 	- "$p$ is sufficient for $q$" means $p \to q$.
 - $p \leftrightarrow q$  is read "$p$ if and only if $q$," and called a **biconditional**.

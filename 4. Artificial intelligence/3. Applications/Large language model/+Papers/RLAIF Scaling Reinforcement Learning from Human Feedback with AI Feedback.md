@@ -101,7 +101,7 @@ $$
 
 设计prompt让LLM判断
 
-![](Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/+Papers/RLAIF%20Scaling%20Reinforcement%20Learning%20from%20Human%20Feedback%20with%20AI%20Feedback/IMG-20240330011953480.png)
+![](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Large%20language%20model/+Papers/RLAIF%20Scaling%20Reinforcement%20Learning%20from%20Human%20Feedback%20with%20AI%20Feedback/IMG-20240910115137316.png)
 
 Preamble部分文中提到了几种方式
 
@@ -113,7 +113,7 @@ Preamble部分文中提到了几种方式
 
 两段式生成的CoT
 
-![](Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/+Papers/RLAIF%20Scaling%20Reinforcement%20Learning%20from%20Human%20Feedback%20with%20AI%20Feedback/IMG-20240330011954402.png)
+![](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Large%20language%20model/+Papers/RLAIF%20Scaling%20Reinforcement%20Learning%20from%20Human%20Feedback%20with%20AI%20Feedback/IMG-20240910115137579.png)
 
 也有OpenAI + COT 0-shot或者OpenAI + COT 1-shot这两种。
 
@@ -188,7 +188,7 @@ $$
 
 ### RLAIF vs. RLHF
 
-![400](Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/+Papers/RLAIF%20Scaling%20Reinforcement%20Learning%20from%20Human%20Feedback%20with%20AI%20Feedback/IMG-20240330011954667.png)
+![400](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Large%20language%20model/+Papers/RLAIF%20Scaling%20Reinforcement%20Learning%20from%20Human%20Feedback%20with%20AI%20Feedback/IMG-20240910115137718.png)
 
 - 用RL策略训练后的模型确实比SFT要受人类欢迎
 
@@ -196,13 +196,13 @@ $$
 
 测试不同模型和prompt的AI Labeler alignment
 
-![500](Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/+Papers/RLAIF%20Scaling%20Reinforcement%20Learning%20from%20Human%20Feedback%20with%20AI%20Feedback/IMG-20240330011954835.png)
+![500](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Large%20language%20model/+Papers/RLAIF%20Scaling%20Reinforcement%20Learning%20from%20Human%20Feedback%20with%20AI%20Feedback/IMG-20240910115137815.png)
 
 CoT就够了，few-shot反而影响性能
 
 ### Self-consistency
 
-![400](Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/+Papers/RLAIF%20Scaling%20Reinforcement%20Learning%20from%20Human%20Feedback%20with%20AI%20Feedback/IMG-20240330011954873.png)
+![400](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Large%20language%20model/+Papers/RLAIF%20Scaling%20Reinforcement%20Learning%20from%20Human%20Feedback%20with%20AI%20Feedback/IMG-20240910115137904.png)
 
 实验发现生成多个结果取平均反而降低性能，但是我不理解为什么作者在这使用了T=1而不小一点的数字，导致这个结论支撑力不够。
 
@@ -210,14 +210,14 @@ CoT就够了，few-shot反而影响性能
 
 模型越大越好，并且因为这是一劳永逸的，所以作者认为没必要省
 
-![500](Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/+Papers/RLAIF%20Scaling%20Reinforcement%20Learning%20from%20Human%20Feedback%20with%20AI%20Feedback/IMG-20240330011955032.png)
+![500](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Large%20language%20model/+Papers/RLAIF%20Scaling%20Reinforcement%20Learning%20from%20Human%20Feedback%20with%20AI%20Feedback/IMG-20240910115137958.png)
 
 
 ### Number of preference examples
 
 用AI反馈训练的RM和人类反馈的对比如下：
 
-![500](Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/+Papers/RLAIF%20Scaling%20Reinforcement%20Learning%20from%20Human%20Feedback%20with%20AI%20Feedback/IMG-20240330011955158.png)
+![500](../../../../Attachments/4.%20Artificial%20intelligence/3.%20Applications/Large%20language%20model/+Papers/RLAIF%20Scaling%20Reinforcement%20Learning%20from%20Human%20Feedback%20with%20AI%20Feedback/IMG-20240910115137999.png)
 
 虽然两种方法差不多，但是似乎人类反馈最后仍然有上升空间，但是AI反馈的没有再提升的趋势了。
 
