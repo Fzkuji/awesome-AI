@@ -56,5 +56,7 @@ Rethinking the role of scale for in-context learning: An interpretability-based 
 
 ## 奇怪的想法
 
-### 层级的s
+### 层级双向注意力
+
+
 
