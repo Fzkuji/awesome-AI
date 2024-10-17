@@ -39,11 +39,11 @@
 	- [Information filtering](5.%20Information%20science/Information%20filtering/Information%20filtering.md)
 
 ## Recommended notes
-- [General Multi-Task Learning](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Machine%20learning/General%20Multi-Task%20Learning/General%20Multi-Task%20Learning.md)
-- [Large Language Models (New!)](4.%20Artificial%20intelligence/3.%20Applications/Large%20language%20model/Large%20language%20model.md)
-- [Large Language Models for Recommender Systems (New!)](4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/LLM4Rec.md)
+- [Parallel or Sequential? Attention or Recurrence? (New!)](4.%20Artificial%20intelligence/3.%20Applications/Towards%20AGI/Parallel%20or%20Sequential.md)
+- [Large Language Models](4.%20Artificial%20intelligence/3.%20Applications/Large%20language%20model/Large%20language%20model.md)
+- [Large Language Models for Recommender Systems](4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/LLM4Rec.md)
 - [Probabilistic graphical model](2.%20Mathematics/Probabilistic%20graphical%20model/Probabilistic%20graphical%20model.md)
-- [Memory transformer (New!)](Memory%20transformer.md)
+- [Memory transformer](Memory%20transformer.md)
 
 ## Related Readings and Tutorials
 
