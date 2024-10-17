@@ -11,7 +11,10 @@
 
 [线性Attention的探索：Attention必须有个Softmax吗？](https://spaces.ac.cn/archives/7546)去掉Softmax的Attention的复杂度可以降到最理想的线性级别。
 
-Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention
+以下是Transformer的一些身份：
+- Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention
+- Transformers are Multi-State RNNs
+- Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality
 
 
 根据目前Transformer的局限，可以猜测Transformer的推理能力和层数有关（有待实验），因此可以关注DeepNet: Scaling Transformers to 1,000 Layers这篇论文，还有老苏的文章[训练1000层的Transformer究竟有什么困难？](https://kexue.fm/archives/8978)
