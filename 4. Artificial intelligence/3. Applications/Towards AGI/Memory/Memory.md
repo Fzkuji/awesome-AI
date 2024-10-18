@@ -26,7 +26,11 @@
 [What's Hidden in a One-layer Randomly Weighted Transformer?](https://arxiv.org/abs/2109.03939)这个论文提供了一种奇怪的视角，即在单层随机权重的Transformer模型中，即使不进行传统意义上的模型训练（即不通过梯度下降等方法调整网络权重），也能够发现或“挖掘”出具有竞争性能的子网络。这项研究表明，在某些情况下，高效的模型或模型的子集可能已经在随机初始化的网络中“隐藏”着，只需要通过合适的方法来发现它们。
 - 感觉噱头比较大，没太大意义
 
-### Reccurent transformer
+### Re
+
+
+
+ccurent transformer
 
 另一个比较冷门的研究方向就是recurrent transformer，这类研究旨在给transformer添加一个隐层的变量，这个变量可以随着输入进行改变。
 
