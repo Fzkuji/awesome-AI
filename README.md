@@ -39,7 +39,7 @@
 	- [Information filtering](5.%20Information%20science/Information%20filtering/Information%20filtering.md)
 
 ## Recommended notes
-- [Parallel or Sequential? Attention or Recurrence? (New!)](4.%20Artificial%20intelligence/3.%20Applications/Towards%20AGI/Parallel%20or%20Sequential.md)
+- [Parallel or Sequential? Attention or Recurrence? (New!)](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Parallel%20or%20Sequential.md)
 - [Large Language Models](4.%20Artificial%20intelligence/3.%20Applications/Large%20language%20model/Large%20language%20model.md)
 - [Large Language Models for Recommender Systems](4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/LLM4Rec.md)
 - [Probabilistic graphical model](2.%20Mathematics/Probabilistic%20graphical%20model/Probabilistic%20graphical%20model.md)

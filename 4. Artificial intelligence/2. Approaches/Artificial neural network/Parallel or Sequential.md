@@ -38,3 +38,8 @@
 
 
 
+### Comparisons
+
+KV Cache Compression, But What Must We Give in Return? A Comprehensive Benchmark of Long Context Capable Approaches 这篇论文里对现在的各种方法进行了测试。
+- 值得关注的是，streamllm效果并不好
+
