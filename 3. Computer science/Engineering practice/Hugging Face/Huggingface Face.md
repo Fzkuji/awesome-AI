@@ -22,3 +22,21 @@ huggingface-cli download openwebtext --repo-type dataset
 huggingface-cli download Qwen/Qwen2-7B-Instruct --cache_dir=
 ```
 
+#### [Huggingface 默认下载位置更改](https://www.cnblogs.com/kongaobo/p/17528720.html "发布于 2023-07-05 15:40")
+
+Ubuntu 系统中 Huggingface 模型等默认的下载位置如下：
+
+```none
+~\.cache\huggingface\hub
+```
+
+通过修改环境变量更改默认下载位置：
+
+```none
+# 打开配置文件
+vi ~/.bashrc
+# 添加下述变量
+export HF_HOME="目标地址"
+# 使配置文件生效
+source ~/.bashrc
+```
