@@ -38,20 +38,30 @@
 	- [Information retrieval](5.%20Information%20science/Information%20retrieval/Information%20retrieval.md)
 	- [Information filtering](5.%20Information%20science/Information%20filtering/Information%20filtering.md)
 
-## Recommended notes
-- [Parallel or Sequential? Attention or Recurrence? (New!)](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Parallel%20or%20Sequential.md)
+## New notes
+
+- [Knowledge editing (New!)](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Knowledge%20editing/Knowledge%20editing.md)
+- [LLM fusion (New!)](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/LLM%20fusion.md)
+- [Parallel or Sequential? Attention or Recurrence?](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Parallel%20or%20Sequential.md)
 - [Large Language Models](4.%20Artificial%20intelligence/3.%20Applications/Large%20language%20model/Large%20language%20model.md)
 - [Large Language Models for Recommender Systems](4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/LLM4Rec.md)
-- [Probabilistic graphical model](2.%20Mathematics/Probabilistic%20graphical%20model/Probabilistic%20graphical%20model.md)
 - [Memory transformer](Memory%20transformer.md)
 
 ## Related Readings and Tutorials
 
+- [动手学深度学习（Dive into Deep Learning）](https://d2l.ai/)
+	- 面向中文读者、能运行、可讨论。[中](https://github.com/d2l-ai/d2l-zh)[英](https://github.com/d2l-ai/d2l-en)文版被70多个国家的500多所大学用于教学。
+- [李宏毅机器学习](https://www.youtube.com/@HungyiLeeNTU)
+	- Li's other courses are also highly recommended
+	- [Generative AI 2024 Spring](https://speech.ee.ntu.edu.tw/~hylee/genai/2024-spring.php)
+	- [Machine Learning 2023 Spring](https://speech.ee.ntu.edu.tw/~hylee/ml/2023-spring.php)
 - [UvA DL Notebooks](https://uvadlc-notebooks.readthedocs.io/en/latest/index.html)
 	- UvA Deep Learning Tutorials
 	- A combination of theory and practice, taken from the MSc in Artificial Intelligence for the University of Amsterdam
 - [Deep Learning](https://atcold.github.io/pytorch-Deep-Learning/)
 	- DS-GA 1008 · Spring 2020 · NYU Center for Data Science
+
+
 
 ## Epilogue
 
