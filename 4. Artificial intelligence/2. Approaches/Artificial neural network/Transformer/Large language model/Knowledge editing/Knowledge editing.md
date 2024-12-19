@@ -226,13 +226,18 @@ editing-data
 
 #### Conceptual Knowledge: ConceptEdit
 
-| **dataset** | Google Drive| HuggingFace Dataset | Description |
-| :--------: | :-----------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: | :--------------------------------------------------------------------------------: |
-| ConceptEdit | [[Google Drive]](https://drive.google.com/drive/folders/1Hp1DfIuj6Ih6ZLVENS-UmgJT8mRBlFC2?usp=drive_link) |[[HuggingFace Dataset]](https://huggingface.co/datasets/zjunlp/ConceptEdit) | dataset for editing conceptual knowledge |
+我不太懂这个数据集的意义，直接将一个概念改成另一个？这不是胡搞瞎搞
+
+![400](../../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/Knowledge%20editing/Knowledge%20editing/IMG-20241219174145573.gif)
+我不理解
+
+|   Dataset   |                                              Google Drive                                               |                            HuggingFace Dataset                            |               Description                |
+| :---------: | :-----------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------: | :--------------------------------------: |
+| ConceptEdit | [Google Drive](https://drive.google.com/drive/folders/1Hp1DfIuj6Ih6ZLVENS-UmgJT8mRBlFC2?usp=drive_link) | [HuggingFace Dataset](https://huggingface.co/datasets/zjunlp/ConceptEdit) | dataset for editing conceptual knowledge |
 
 - Here, you can follow [ConceptEdit.md](https://github.com/zjunlp/EasyEdit/blob/main/examples/ConceptEdit.md) to run concept editing experiments.
   
-<details><summary> <b> dataset description </b> </summary>
+##### Dataset Description
 
 ```text
 data
@@ -251,22 +256,19 @@ data
 
 - `Instance Change`: capturing the intricacies of these instance-level changes
 - `Concept Consistency`: the semantic similarity of generated concept definition
-</details>
 
----
+#### Multimodal Knowledge: MMEdit
 
-#### Datasets for Multimodal Knowledge: MMEdit
-
-| **dataset** | Google Drive| BaiduNetDisk | Description |
-| :--------: | :-----------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: | :--------------------------------------------------------------------------------: |
-| E-IC | [[Google Drive]](https://drive.google.com/drive/folders/1jBdTJxUb9wEeHnvG-RY8dv5_I4QlDpUS?usp=drive_link) | [[BaiduNetDisk]](https://pan.baidu.com/s/1g9nMv-5BJmztxYU-BWRdvg?pwd=ik5c) | dataset for editing _Image Captioning_ |
-| E-VQA | [[Google Drive]](https://drive.google.com/drive/folders/1jBdTJxUb9wEeHnvG-RY8dv5_I4QlDpUS?usp=drive_link) | [[BaiduNetDisk]](https://pan.baidu.com/s/1g9nMv-5BJmztxYU-BWRdvg?pwd=ik5c) | dataset for editing _Visual Question Answering_ |
+| Dataset |                                              Google Drive                                               |                               BaiduNetDisk                               |                   Description                   |
+| :-----: | :-----------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------: | :---------------------------------------------: |
+|  E-IC   | [Google Drive](https://drive.google.com/drive/folders/1jBdTJxUb9wEeHnvG-RY8dv5_I4QlDpUS?usp=drive_link) | [BaiduNetDisk](https://pan.baidu.com/s/1g9nMv-5BJmztxYU-BWRdvg?pwd=ik5c) |     dataset for editing _Image Captioning_      |
+|  E-VQA  | [Google Drive](https://drive.google.com/drive/folders/1jBdTJxUb9wEeHnvG-RY8dv5_I4QlDpUS?usp=drive_link) | [BaiduNetDisk](https://pan.baidu.com/s/1g9nMv-5BJmztxYU-BWRdvg?pwd=ik5c) | dataset for editing _Visual Question Answering_ |
 
 - All **images** used in **E-IC** and **E-VQA** are available for download at [Google Drive](https://drive.google.com/file/d/1fQzJBFkok5kFZT6QUuT-HCuYKk2Vb93O/view)
 - For **locality**, it is the same as factual editing in order to measure whether unrelated facts retain their outputs.
 - For **multimodal locality**, it assesses the impact of editing on the visual module, which is similar to regular **locality**.
 
-<details><summary> <b> dataset description </b> </summary>
+##### Dataset Description
 
 ```text
 editing-data
@@ -284,41 +286,38 @@ editing-data
     ├── vqa_train.json
     └── vqa_eval.json
 ```
+
 - Multimodal locality (evaluation for multimodal locality, see dataset's details in this [paper](http://openaccess.thecvf.com/content\_CVPR\_2019/html/Marino\_OK-VQA\_A\_Visual\_Question\_Answering\_Benchmark\_Requiring\_External\_Knowledge\_CVPR\_2019\_paper.html)) 
-</details>
 
----
-#### Datasets for detoxifying LLMs: SafeEdit
+#### Detoxifying LLMs: SafeEdit
 
-| **dataset** | HuggingFace Dataset | Description |
-| :--------: | :-----------------------------------------------------------------------------: | :--------------------------------------------------------------------------------: |
-| SafeEdit |[[HuggingFace Dataset]](https://huggingface.co/datasets/zjunlp/SafeEdit) | dataset for detoxifying LLMs |
+| Dataset  |                          HuggingFace Dataset                           |         Description          |
+| :------: | :--------------------------------------------------------------------: | :--------------------------: |
+| SafeEdit | [HuggingFace Dataset](https://huggingface.co/datasets/zjunlp/SafeEdit) | dataset for detoxifying LLMs |
 
 - Here, you can follow [SafeEdit.md](https://github.com/zjunlp/EasyEdit/blob/main/examples/SafeEdit.md) to run detoxification editing experiments.
   
-<details><summary> <b> dataset description </b> </summary>
+##### Dataset Description
 
 ```text
 data
 └──SafeEdit_train.json
 └──SafeEdit_val.json
 └──SafeEdit_test.json
-    
 ```
 
 **Detoxifying Specific Evaluation Metrics**
 - `Defense Duccess (DS)`: the detoxification success rate of edited LLM for adversarial input (attack prompt + harmful question), which is used to modify LLM.
 - `Defense Generalization (DG)`: the detoxification success rate of edited LLM for out-of-domain malicious inputs.
 - `General Performance`: the side effects for unrelated task performance.
-</details>
 
 #### Tutorial notebook
 
-| **Method** |          Description           |                                                 GPT-2                                                 |                                           LlaMA                                            |
-| :--------: | :----------------------------: | :---------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: |
-|   _IKE_    | In-Context Learning (ICL) Edit |       [[Colab-gpt2]](https://colab.research.google.com/drive/1m6Xg05XCs_WZKH0D9KJQqg9z0ZiDhEkL)       | [[Colab-llama]](https://colab.research.google.com/drive/1m6Xg05XCs_WZKH0D9KJQqg9z0ZiDhEkL) |
-|   _ROME_   |    Locate-Then-Edit Neurons    | [[Colab-gpt2]](https://colab.research.google.com/drive/1KkyWqyV3BjXCWfdrrgbR-QS3AAokVZbr?usp=sharing) | [[Colab-llama]](https://colab.research.google.com/drive/1W18GPlBCV9K6lDy7eX8V5W0knTLr5r0A) |
-|  _MEMIT_   |    Locate-Then-Edit Neurons    |       [[Colab-gpt2]](https://colab.research.google.com/drive/1P1lVklP8bTyh8uxxSuHnHwB91i-1LW6Z)       | [[Colab-llama]](https://colab.research.google.com/drive/19fKCKtVBU2fqj6eTvDokGoTrxvXkEPPq) |
+| **Method** |          Description           |                                                GPT-2                                                |                                          LlaMA                                           |
+| :--------: | :----------------------------: | :-------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------: |
+|    IKE     | In-Context Learning (ICL) Edit |       [Colab-gpt2](https://colab.research.google.com/drive/1m6Xg05XCs_WZKH0D9KJQqg9z0ZiDhEkL)       | [Colab-llama](https://colab.research.google.com/drive/1m6Xg05XCs_WZKH0D9KJQqg9z0ZiDhEkL) |
+|    ROME    |    Locate-Then-Edit Neurons    | [Colab-gpt2](https://colab.research.google.com/drive/1KkyWqyV3BjXCWfdrrgbR-QS3AAokVZbr?usp=sharing) | [Colab-llama](https://colab.research.google.com/drive/1W18GPlBCV9K6lDy7eX8V5W0knTLr5r0A) |
+|   MEMIT    |    Locate-Then-Edit Neurons    |       [Colab-gpt2](https://colab.research.google.com/drive/1P1lVklP8bTyh8uxxSuHnHwB91i-1LW6Z)       | [Colab-llama](https://colab.research.google.com/drive/19fKCKtVBU2fqj6eTvDokGoTrxvXkEPPq) |
 
 
 
