@@ -26,7 +26,7 @@
 
 ## Datasets or Benchmarks
 
-感觉能用的数据集就只有：[Knowledge editing](#Chinese%20Knowledge%20[CKnowEdit](https%20//huggingface.co/datasets/zjunlp/CKnowEdit))和[Knowledge editing](#Detoxifying%20LLMs%20SafeEdit)
+感觉能用的数据集就只有：CKnowEdit和SafeEdit了
 
 ### Benchmarks
 
@@ -338,12 +338,12 @@ data
 
 ### Reliability（可靠性）
 
-#### 定义
+#### Definition
 
 * **可靠性**衡量**编辑操作是否成功执行**，即模型是否能够根据**指定的编辑描述符**（editing descriptor）正确地更新知识
 * **Editing Descriptor**：具体描述要编辑的知识，包括 `subject`、`relation` 和 `target_new`
 
-#### 示例
+#### Examples
 
 假设有编辑任务：
 
@@ -360,7 +360,7 @@ $$Reliability = \frac{成功编辑的样本数}{总编辑样本数}$$
 
 ### Generalization（泛化性）
 
-#### 定义
+#### Definition
 * **泛化性**衡量编辑后的知识能否在**不同语义表述**或**相关上下文**中成功应用
 * 即：在**编辑范围（scope）**内，模型能否正确生成与新知识一致的输出
 
@@ -369,7 +369,7 @@ $$Reliability = \frac{成功编辑的样本数}{总编辑样本数}$$
 * **重述Prompt（Paraphrase）**：语义等价但表达方式不同
 * **逻辑推理Prompt**：测试新知识的逻辑衍生，例如常识推理或简单逻辑关系
 
-#### 示例
+#### Examples
 编辑任务：
 
 ```text
@@ -389,14 +389,14 @@ $$Generalization = \frac{编辑范围内成功的样本数}{编辑范围内总�
 
 ### Locality（局部性）
 
-#### 定义
+#### Definition
 * **局部性**衡量模型在执行知识编辑后，**无关输入**的输出是否发生变化
 * 即：编辑一个知识点后，模型的其他知识是否保持稳定
 
 #### 为什么重要？
 * 编辑某个知识点时，理想情况下，模型不应影响与编辑内容**无关**的其他输出
 
-#### 示例
+#### Examples
 编辑任务：
 
 ```text
@@ -414,13 +414,13 @@ $$Locality = \frac{无关输入保持正确的样本数}{无关输入总样本�
 
 ### Portability（可迁移性）
 
-#### 定义
+#### Definition
 * **可迁移性**衡量编辑后的知识是否能被应用于**推理**或**更广泛的上下文**，包括：
    1. **One-Hop 推理**：直接基于编辑知识推导出的结果
    2. **Synonym 泛化**：测试同义词或等价表达下的结果
    3. **逻辑泛化**：测试与知识逻辑相关的派生结果
 
-#### 示例
+#### Examples
 编辑任务：
 
 ```text
@@ -442,7 +442,7 @@ $$Portability = \frac{成功推理/泛化的样本数}{总测试样本数}$$
 
 ### Efficiency（效率）
 
-#### 定义
+#### Definition
 * **效率**衡量执行知识编辑任务所消耗的**时间**和**内存资源**
 
 #### 为什么重要？
@@ -453,7 +453,7 @@ $$Portability = \frac{成功推理/泛化的样本数}{总测试样本数}$$
 * **时间**：完成知识编辑所需的时间（秒/分钟）
 * **内存**：所需的内存使用量（MB/GB）
 
-### 总结
+### Conclusion
 
 这些指标是评估模型编辑方法（如 ROME、MEND、SERAC 等）的标准，确保模型编辑在**准确性**、**稳定性**、**泛化能力**和**效率**之间取得平衡。
 
