@@ -2,6 +2,13 @@
 
 ✨ Welcome to my Artificial Intelligence Study Notes project! This project is my personal study notes, which records and organizes all the machine learning knowledge I have learned with long-term updates.
 
+## New notes
+
+- 🔥 [Knowledge editing (New!)](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/Knowledge%20editing/Knowledge%20editing.md)
+- 🔥 [LLM fusion (New!)](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/LLM%20fusion.md)
+- [Parallel or Sequential? Attention or Recurrence?](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Parallel%20or%20Sequential.md)
+- [Memory transformer](Memory%20transformer.md)
+
 ## Preface
 
 > 1. Anything that is in the world when you’re born is normal and ordinary and is just a natural part of the way the world works.
@@ -38,14 +45,6 @@
 	- [Information retrieval](5.%20Information%20science/Information%20retrieval/Information%20retrieval.md)
 	- [Information filtering](5.%20Information%20science/Information%20filtering/Information%20filtering.md)
 
-## New notes
-
-- [Knowledge editing (New!)](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/Knowledge%20editing/Knowledge%20editing.md)
-- [LLM fusion (New!)](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/LLM%20fusion.md)
-- [Parallel or Sequential? Attention or Recurrence?](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Parallel%20or%20Sequential.md)
-- [Large Language Models](4.%20Artificial%20intelligence/3.%20Applications/Large%20language%20model/Large%20language%20model.md)
-- [Large Language Models for Recommender Systems](4.%20Artificial%20intelligence/3.%20Applications/Recommender%20system/LLM4Rec.md)
-- [Memory transformer](Memory%20transformer.md)
 
 ## Related Readings and Tutorials
 

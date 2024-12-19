@@ -14,6 +14,8 @@
 
 也叫Path Patching、Causal Mediation Analysis、Causal Intervention。基本思想是计算改变模型的某个位置的参数/vector时，输出的变化情况，通过变化程度定位对最终输出重要的位置。这一流派主要目标是理解LLM的information flow的机制。
 
+这个的主要应用就是[Knowledge editing](Knowledge%20editing/Knowledge%20editing.md)，快速将大模型中的特定知识进行编辑，同时注重效率。不过个人觉得，不如微调，真的。
+
 1. 大部分工作是用[Locating and Editing Factual Associations in GPT](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2202.05262) (NeurIPS 2022) 提出的方法，这篇论文发现medium FFN layers在factual knowledge任务中很重要。
 
 2. [Dissecting Recall of Factual Associations in Auto-Regressive Language Models](https://link.zhihu.com/?target=https%3A//arxiv.org/pdf/2304.14767) (EMNLP 2023) 研究factual knowledge的信息流，发现early FFN layers起到representation enrichment的作用，然后从attention heads中提取知识。
