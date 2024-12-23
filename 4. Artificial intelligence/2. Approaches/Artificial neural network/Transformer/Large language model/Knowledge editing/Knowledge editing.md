@@ -9,6 +9,8 @@
 
 ## Works
 
+
+
 - [Locating and Editing Factual Associations in GPT](https://arxiv.org/abs/2202.05262)
 	- https://rome.baulab.info/
 	- 首先，分析出知识保存的位置，然后通过计算得到k，最后通过微调得到v，最后用kv更新参数
