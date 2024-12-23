@@ -9,6 +9,8 @@
 
 ## Works
 
+![](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/Knowledge%20editing/IMG-20241223154239626.png)
+
 
 
 - [Locating and Editing Factual Associations in GPT](https://arxiv.org/abs/2202.05262)
@@ -228,7 +230,7 @@ editing-data
 
 我不太懂这个数据集的意义，直接将一个概念改成另一个？这不是胡搞瞎搞
 
-![400](../../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/Knowledge%20editing/Knowledge%20editing/IMG-20241219174145573.gif)
+![400](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/Knowledge%20editing/IMG-20241223154239673.gif)
 我不理解
 
 |   Dataset   |                                              Google Drive                                               |                            HuggingFace Dataset                            |               Description                |
