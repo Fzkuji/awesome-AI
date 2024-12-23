@@ -20,9 +20,6 @@
 
 - [EasyEdit](https://github.com/zjunlp/EasyEdit)
 
-## [Evaluation metrics](Evaluation%20metrics.md)
-
-详情见note
 
 ## Datasets or Benchmarks
 
