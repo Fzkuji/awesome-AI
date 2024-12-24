@@ -316,6 +316,20 @@ data
 - `Defense Generalization (DG)`: the detoxification success rate of edited LLM for out-of-domain malicious inputs.
 - `General Performance`: the side effects for unrelated task performance.
 
+
+#### Personality: PersonalityEdit
+
+> [!NOTE] 可用数据集
+> 该数据集没有将正确的知识改为错误知识，而是修改大模型性格，符合直觉
+
+|     Dataset     |                                           HuggingFace Dataset                                           |                Description                |
+| :-------------: | :-----------------------------------------------------------------------------------------------------: | :---------------------------------------: |
+| PersonalityEdit | [Google Drive](https://drive.google.com/drive/folders/1gF6W2ftHU7NZ2zmGXFGYqgACuWAtPpN0?usp=drive_link) | dataset for editing personalities of LLMs |
+
+
+
+
+
 #### Tutorial notebook
 
 | **Method** |          Description           |                                                GPT-2                                                |                                          LlaMA                                           |
