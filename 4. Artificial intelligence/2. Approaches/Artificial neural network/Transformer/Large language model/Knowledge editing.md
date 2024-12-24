@@ -9,16 +9,39 @@
 
 ## Works
 
+### Paradigms
 ![](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/Knowledge%20editing/IMG-20241223154239626.png)
 
+![500](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/Knowledge%20editing/IMG-20241224103128625.png)
 
+### Classifications
+
+
+
+#### RAG
+
+
+
+
+#### Parameter Modification
 
 - [Locating and Editing Factual Associations in GPT](https://arxiv.org/abs/2202.05262)
 	- https://rome.baulab.info/
 	- 首先，分析出知识保存的位置，然后通过计算得到k，最后通过微调得到v，最后用kv更新参数
 - [Mass-Editing Memory in a Transformer](https://arxiv.org/abs/2210.07229)
+
+
+#### Fine-tuning
+
 - [Editing factual knowledge and explanatory ability of medical large language models](https://dl.acm.org/doi/abs/10.1145/3627673.3679673)（德荣的）
+	- ![](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/Knowledge%20editing/IMG-20241224103947686.png)
+
 - [WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models](https://arxiv.org/pdf/2405.14768) 这篇好像用了一些SFT和Merging
+	- ![](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/Knowledge%20editing/IMG-20241224103648405.gif)
+
+
+
+
 
 ## Tools
 
