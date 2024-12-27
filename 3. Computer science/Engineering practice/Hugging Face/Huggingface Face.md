@@ -40,3 +40,26 @@ export HF_HOME="目标地址"
 # 使配置文件生效
 source ~/.bashrc
 ```
+
+
+### 通过clone下载模型
+
+
+```
+git lfs install
+
+git clone https://fzkuji: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@huggingface.co/meta-llama/Llama-2-7b-chat-hf
+
+git lfs pull
+```
+
+
+```
+git lfs install
+
+git clone https://fzkuji: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@huggingface.co/Qwen/Qwen2-7B-Instruct
+
+git lfs pull
+```
+
+
