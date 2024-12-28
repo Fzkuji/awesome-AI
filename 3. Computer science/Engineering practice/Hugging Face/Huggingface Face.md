@@ -27,7 +27,7 @@ huggingface-cli download Qwen/Qwen2-7B-Instruct --cache_dir=
 Ubuntu 系统中 Huggingface 模型等默认的下载位置如下：
 
 ```none
-~\.cache\huggingface\hub
+~\.cache\huggingface
 ```
 
 通过修改环境变量更改默认下载位置：
@@ -36,7 +36,7 @@ Ubuntu 系统中 Huggingface 模型等默认的下载位置如下：
 # 打开配置文件
 vi ~/.bashrc
 # 添加下述变量
-export HF_HOME="目标地址"
+export HF_HOME="目标地址/.cache/huggingface"
 # 使配置文件生效
 source ~/.bashrc
 ```
