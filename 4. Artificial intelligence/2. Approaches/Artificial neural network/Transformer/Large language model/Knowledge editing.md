@@ -10,6 +10,7 @@
 ## Works
 
 ### Paradigms
+
 ![](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/Knowledge%20editing/IMG-20241223154239626.png)
 
 ![500](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/Knowledge%20editing/IMG-20241224103128625.png)
