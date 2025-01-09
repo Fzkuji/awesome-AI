@@ -32,7 +32,7 @@ Ubuntu 系统中 Huggingface 模型等默认的下载位置如下：
 
 通过修改环境变量更改默认下载位置：
 
-```none
+```shell
 # 打开配置文件
 vi ~/.bashrc
 # 添加下述变量
@@ -41,6 +41,9 @@ export HF_HOME="目标地址/.cache/huggingface"
 source ~/.bashrc
 ```
 
+```shell
+export HF_HOME="/root/autodl-tmp/.cache/huggingface"
+```
 
 ### 通过clone下载模型
 
