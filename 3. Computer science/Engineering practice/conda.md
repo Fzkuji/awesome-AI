@@ -4,3 +4,8 @@
 
 
 
+安装虚拟cuda：
+
+```
+conda install cuda -c nvidia
+```
