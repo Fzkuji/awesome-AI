@@ -3,7 +3,7 @@
 - [ ] Sliding Window Training
 - [ ] Sliding Window Training for Large Language Models
 - [ ] Sliding Window Attention Training: Enhancing Efficiency and Context Length in Large Language Models
-- [-] Sliding Window Attention Training: Towards Efficient Long-Context Handling in Large Language Models
+- [-] SWAT: Towards Efficient Long-Context Handling in Large Language Models
 
 # Paper
 
