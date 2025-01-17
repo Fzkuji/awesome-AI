@@ -331,7 +331,7 @@ Linear attention variants achieve O(n) complexity through different approximatio
 从另一个方向切入这个问题的方法就是Linear RNN类模型，这类模型本质是优化现有的循环神经网络。
 State Space Models like Mamba [Gu et al., 2023] and RWKV [Peng et al., 2023] avoid attention mechanisms entirely by utilizing recurrent structures. xlstm重新设计了lstm使其更适合文本生成。
 
-最后，除了从根本上设计模型结构以外，还有很多模型尝试给Transformer添加记忆的模块。Memory Transformer，
+最后，除了从根本上设计模型结构以外，还有很多模型尝试给Transformer添加记忆的模块。Memory Transformer
 
 
 ### Efficient Transformers
