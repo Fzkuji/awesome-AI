@@ -328,8 +328,8 @@ To address the quadratic complexity of Transformers, researchers have proposed v
 Linear Attention 
 Linear attention variants achieve O(n) complexity through different approximations: Linear Transformer [Katharopoulos et al., 2020] replaces softmax attention with kernel functions, while Performer [Choromanski et al., 2021] employs random feature approximation. 后续的工作gla将遗忘机制引入线性注意力模型，防止信息爆炸。GATED DELTA NETWORKS将新的预测集中在记忆需要更新的部分，让模型既能保持精确的记忆更新能力,又能在需要时快速重置记忆。
 
-从另一个方向切入这个问题的Linear RNN
-State Space Models like Mamba [Gu et al., 2023] and RWKV [Peng et al., 2023] avoid attention mechanisms entirely by utilizing recurrent structures.
+从另一个方向切入这个问题的方法就是Linear RNN类模型，这类模型本质是优化现有的循环神经网络。
+State Space Models like Mamba [Gu et al., 2023] and RWKV [Peng et al., 2023] avoid attention mechanisms entirely by utilizing recurrent structures. xlstm重新设计了lstm使其shi'pe
 
 Memory Transformer
 
