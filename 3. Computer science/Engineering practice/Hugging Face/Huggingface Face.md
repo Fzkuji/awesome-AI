@@ -42,7 +42,7 @@ source ~/.bashrc
 ```
 
 ```shell
-export HF_HOME="/root/autodl-tmp/.cache/huggingface"
+export HF_HOME=" /Volumes/Aurora/huggingface"
 ```
 
 ### 通过clone下载模型
