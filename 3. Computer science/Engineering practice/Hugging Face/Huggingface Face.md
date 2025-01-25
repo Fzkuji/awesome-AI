@@ -66,3 +66,10 @@ git lfs pull
 ```
 
 
+第一次是multi lingu multi task、性能提升
+
+finetune 是upper bond，数据和训练需要时间，而且无法获取。
+
+metric rouge-4 和其他指标一致
+
+ranking
