@@ -35,16 +35,14 @@ https://www.autodl.com/subAccountLogin
 #### 公开服务
 
 点击访问网址，站点内有具体教程。
-
-Github： [https://ghproxy.link/](https://ghproxy.link/) （点击后查看当前可用的域名地址，然后点击地址跳转查看文档）
-HuggingFace镜像站：[https://hf-mirror.com/](https://hf-mirror.com/)
+- Github： [https://ghproxy.link/](https://ghproxy.link/) （点击后查看当前可用的域名地址，然后点击地址跳转查看文档）
+- HuggingFace镜像站：[https://hf-mirror.com/](https://hf-mirror.com/)
 
 #### AutoDL内置服务
 
 > 声明：限于学术使用github和huggingface网络速度慢的问题，以下为方便用户学术用途使用相关资源提供的加速代理，不承诺稳定性保证。此外如遭遇恶意攻击等，将随时停止该加速服务
 
 以下为可以加速访问的学术资源地址：
-
 - github.com
 - githubusercontent.com
 - githubassets.com
@@ -75,3 +73,8 @@ for line in output.splitlines():
 ```shell
 unset http_proxy && unset https_proxy
 ```
+
+
+
+
+
