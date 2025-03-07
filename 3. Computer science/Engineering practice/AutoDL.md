@@ -13,7 +13,7 @@ https://www.autodl.com/login
 子账号登录网址：
 https://www.autodl.com/subAccountLogin
 
-
+子账号登录有专门的页面，使用我给你们的账号登录，一人一个。
 
 ## 租用GPU服务器
 
