@@ -30,9 +30,9 @@ https://www.autodl.com/subAccountLogin
 1. 具体使用方法看[帮助文档](https://www.autodl.com/docs/)。
 2. GPU服务器在国内，若需要下载GitHub文件、Huggingface模型，参考[学术资源加速](https://www.autodl.com/docs/network_turbo/)使用代理。
 
-### 学术资源加速[¶](https://www.autodl.com/docs/network_turbo/#_1 "Permanent link")
+### 学术资源加速
 
-#### 公开服务[¶](https://www.autodl.com/docs/network_turbo/#_2 "Permanent link")
+#### 公开服务
 
 点击访问网址，站点内有具体教程。
 
@@ -40,7 +40,7 @@ Github： [https://ghproxy.link/](https://ghproxy.link/) （点击后查看当
 
 HuggingFace镜像站：[https://hf-mirror.com/](https://hf-mirror.com/)
 
-#### AutoDL内置服务[¶](https://www.autodl.com/docs/network_turbo/#autodl "Permanent link")
+#### AutoDL内置服务
 
 > 声明：限于学术使用github和huggingface网络速度慢的问题，以下为方便用户学术用途使用相关资源提供的加速代理，不承诺稳定性保证。此外如遭遇恶意攻击等，将随时停止该加速服务
 
@@ -53,12 +53,22 @@ HuggingFace镜像站：[https://hf-mirror.com/](https://hf-mirror.com/)
 
 如果在终端中使用：
 
-`source /etc/network_turbo`
+```shell
+source /etc/network_turbo
+```
 
 如果是在Notebook中使用：
 
-```
-
+```python
+import subprocess  
+import os  
+  
+result = subprocess.run('bash -c "source /etc/network_turbo && env | grep proxy"', shell=True, capture_output=True, text=True)  
+output = result.stdout  
+for line in output.splitlines():  
+    if '=' in line:  
+        var, value = line.split('=', 1)  
+        os.environ[var] = value
 ```
 
 **取消学术加速**，如果不再需要建议关闭学术加速，因为该加速可能对正常网络造成一定影响。
