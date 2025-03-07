@@ -28,5 +28,5 @@ https://www.autodl.com/subAccountLogin
 ## 使用方法
 
 1. 具体使用方法看[帮助文档](https://www.autodl.com/docs/)。
-2. GPU服务器在国内，若需要下载GitHub文件、Huggingface模型，
+2. GPU服务器在国内，若需要下载GitHub文件、Huggingface模型，参考[学术资源加速](https://www.autodl.com/docs/network_turbo/)使用代理。
 
