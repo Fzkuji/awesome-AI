@@ -28,16 +28,15 @@ https://www.autodl.com/subAccountLogin
 ## 使用方法
 
 1. 具体使用方法看[帮助文档](https://www.autodl.com/docs/)。
-2. GPU服务器在国内，若需要下载GitHub文件、Huggingface模型，参考[学术资源加速](https://www.autodl.com/docs/network_turbo/)使用代理。
+2. GPU服务器在国内，若需要下载GitHub文件、Huggingface模型，参考学术资源加速使用代理。
 
-### 学术资源加速
+### [学术资源加速](https://www.autodl.com/docs/network_turbo/)
 
 #### 公开服务
 
 点击访问网址，站点内有具体教程。
 
 Github： [https://ghproxy.link/](https://ghproxy.link/) （点击后查看当前可用的域名地址，然后点击地址跳转查看文档）
-
 HuggingFace镜像站：[https://hf-mirror.com/](https://hf-mirror.com/)
 
 #### AutoDL内置服务
@@ -73,4 +72,6 @@ for line in output.splitlines():
 
 **取消学术加速**，如果不再需要建议关闭学术加速，因为该加速可能对正常网络造成一定影响。
 
-`unset http_proxy && unset https_proxy`
+```shell
+unset http_proxy && unset https_proxy
+```
