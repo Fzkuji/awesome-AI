@@ -21,12 +21,12 @@ https://www.autodl.com/subAccountLogin
 2. AutoDL服务器主要用于代码调试。有大规模训练需求可以向我申请其他算力。
 3. 首先考虑显存需求（贵），然后再考虑计算速度（可以通过加卡解决）。目前每个人500的额度。
 4. 使用结束记得关机（不用释放），否则会持续扣费。
-5. 具体使用方法看[帮助文档](https://www.autodl.com/docs/)。
 
 ![](../../Attachments/3.%20Computer%20science/Engineering%20practice/AutoDL/IMG-20250307222610343.png)
 
 
 ## 使用方法
 
-
+1. 具体使用方法看[帮助文档](https://www.autodl.com/docs/)。
+2. GPU服务器在国内，若需要下载GitHub文件、Huggingface模型，
 
