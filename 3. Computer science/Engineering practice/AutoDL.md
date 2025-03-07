@@ -17,7 +17,7 @@ https://www.autodl.com/subAccountLogin
 
 ## 租用GPU服务器
 
-1. 在必须要GPU环境的时候za
+1. 在必须要GPU环境的时候再考虑租用服务器。AutoDL服务器主要用于代码调试，大规模训练过于昂贵，k
 2. 首先考虑显存需求（贵），然后再考虑计算速度（可以通过加卡解决）。目前每个人500的额度。
 
 ![](../../Attachments/3.%20Computer%20science/Engineering%20practice/AutoDL/IMG-20250307222610343.png)
