@@ -30,3 +30,37 @@ https://www.autodl.com/subAccountLogin
 1. 具体使用方法看[帮助文档](https://www.autodl.com/docs/)。
 2. GPU服务器在国内，若需要下载GitHub文件、Huggingface模型，参考[学术资源加速](https://www.autodl.com/docs/network_turbo/)使用代理。
 
+### 学术资源加速[¶](https://www.autodl.com/docs/network_turbo/#_1 "Permanent link")
+
+#### 公开服务[¶](https://www.autodl.com/docs/network_turbo/#_2 "Permanent link")
+
+点击访问网址，站点内有具体教程。
+
+Github： [https://ghproxy.link/](https://ghproxy.link/) （点击后查看当前可用的域名地址，然后点击地址跳转查看文档）
+
+HuggingFace镜像站：[https://hf-mirror.com/](https://hf-mirror.com/)
+
+#### AutoDL内置服务[¶](https://www.autodl.com/docs/network_turbo/#autodl "Permanent link")
+
+> 声明：限于学术使用github和huggingface网络速度慢的问题，以下为方便用户学术用途使用相关资源提供的加速代理，不承诺稳定性保证。此外如遭遇恶意攻击等，将随时停止该加速服务
+
+以下为可以加速访问的学术资源地址：
+
+- github.com
+- githubusercontent.com
+- githubassets.com
+- huggingface.co
+
+如果在终端中使用：
+
+`source /etc/network_turbo`
+
+如果是在Notebook中使用：
+
+```
+
+```
+
+**取消学术加速**，如果不再需要建议关闭学术加速，因为该加速可能对正常网络造成一定影响。
+
+`unset http_proxy && unset https_proxy`
