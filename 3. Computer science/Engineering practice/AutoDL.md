@@ -29,6 +29,9 @@ https://www.autodl.com/subAccountLogin
 
 1. 具体使用方法看[帮助文档](https://www.autodl.com/docs/)。
 2. GPU服务器在国内，若需要下载GitHub文件、Huggingface模型，参考学术资源加速使用代理。
+3. 下载资源时可以使用无卡模式开机（每小时0.1元）。
+
+![](../../Attachments/3.%20Computer%20science/Engineering%20practice/AutoDL/IMG-20250307224304152.png)
 
 ### [学术资源加速](https://www.autodl.com/docs/network_turbo/)
 
