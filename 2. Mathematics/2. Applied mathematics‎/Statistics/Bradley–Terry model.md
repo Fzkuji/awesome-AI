@@ -17,7 +17,10 @@ The Bradley-Terry model is a probability model for the outcome of pairwise compa
 $$
 P(i>j)=\frac{\alpha_i}{\alpha_i+\alpha_j}
 $$
-$\alpha_i$ 表示第 i 个元素的实力。
-$P(i>j)$ 表示第 i 个元素战胜第 j 个元素的概率。
+- $\alpha_i$ 表示第 i 个元素的实力。
+- $P(i>j)$ 表示第 i 个元素战胜第 j 个元素的概率。
 
-
+则可以写出对数最大似然估计：
+$$
+\ln L=8 \ln \left(\frac{\alpha_A}{\alpha_A+\alpha_B}\right)+4 \ln \left(\frac{\alpha_B}{\alpha_A+\alpha_B}\right)+3 \ln \left(\frac{\alpha_A}{\alpha_A+\alpha_C}\right)+5 \ln \left(\frac{\alpha_C}{\alpha_A+\alpha_C}\right)
+$$
