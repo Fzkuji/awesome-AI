@@ -13,6 +13,11 @@ The Bradley-Terry model is a probability model for the outcome of pairwise compa
 
 问题：B战胜C的概率有多大？
 
-假设每个人有一个隐含的实力参数，
+假设每个人有一个隐含的实力参数，这个实力参数可以通过胜率来计算：
+$$
+P(i>j)=\frac{\alpha_i}{\alpha_i+\alpha_j}
+$$
+$\alpha_i$ 表示第 i 个元素的实力。
+$P(i>j)$ 表示第 i 个元素战胜第 j 个元素的概率。
 
 
