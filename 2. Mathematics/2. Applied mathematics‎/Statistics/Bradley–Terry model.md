@@ -60,7 +60,7 @@ $$
 P(B>C)=\frac{\alpha_B}{\alpha_B+\alpha_C} \approx 0.23
 $$
 
-## 通用表达
+## 应用
 
 最大化似然函数可以加个符号，写成一般的Loss函数：
 
@@ -81,3 +81,24 @@ $r(x, y)$ 有可能返回负数，所以加上指数函数
 $$
 P\left(y_1>y_2\right)=\frac{\exp \left(r\left(x, y_1\right)\right)}{\exp \left(r\left(x, y_1\right)\right)+\exp \left(r\left(x, y_2\right)\right)}
 $$
+
+化简：
+$$
+P\left(y_w>y_l\right)=\frac{\exp \left(r\left(x, y_w\right)\right)}{\exp \left(r\left(x, y_w\right)\right)+\exp \left(r\left(x, y_l\right)\right)}
+$$
+$$
+\sigma(x)=\frac{1}{1+\exp (-x)}
+$$
+$$
+\begin{aligned}
+\text { Loss } & =-\mathbb{E}_{\left(x, y_w, y_l\right) \sim D}\left[\ln \frac{\exp \left(r\left(x, y_w\right)\right)}{\exp \left(r\left(x, y_w\right)\right)+\exp \left(r\left(x, y_l\right)\right)}\right] \\
+& =-\mathbb{E}_{\left(x, y_w, y_l\right) \sim D}\left[\ln \frac{1}{1+\exp \left(r\left(x, y_l\right)-r\left(x, y_w\right)\right)}\right] \\
+& =-\mathbb{E}_{\left(x, y_w, y_l\right) \sim D}\left[\ln \sigma\left(r\left(x, y_w\right)-r\left(x, y_l\right)\right)\right]
+\end{aligned}
+$$
+最终目标（这个我没检查，不知道对不对）：
+$$
+-\ln \sigma\left(r\left(x, y_w\right)-r\left(x, y_l\right)\right)
+$$
+
+
