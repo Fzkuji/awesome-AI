@@ -1,8 +1,6 @@
 # Temporal difference learning
 
 
-# Temporal Difference Learning 简明教程
-
 ## 什么是 Temporal Difference Learning？
 
 Temporal Difference Learning (TD学习) 是一种预测未来回报的方法，它通过实际体验来不断调整预测。想象你在学习一个新游戏，开始时你不知道哪些动作会带来好结果，但随着不断尝试，你会逐渐了解什么时候你即将获胜。TD学习就是这样工作的。
@@ -114,7 +112,7 @@ Temporal Difference Learning是一种强大而直观的学习方法，它通过�
 
 
 
-
+# Sarsa
 
 
 
