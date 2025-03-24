@@ -1,6 +1,6 @@
 # Bradley–Terry model
 
-The Bradley-Terry model is a probability model for the outcome of pairwise comparisons between items, teams, or objects. Given a pair of items $i$ and $j$ drawn from some population, it estimates the probability that the pairwise comparison $i>j$ turns out true, as
+The Bradley-Terry model is a probability model for the outcome of pairwise comparisons between items, teams, or objects.
 
 ## 问题举例
 
@@ -13,6 +13,6 @@ The Bradley-Terry model is a probability model for the outcome of pairwise compa
 
 问题：B战胜C的概率有多大？
 
-
+假设每个人有一个隐含的实力参数，
 
 
