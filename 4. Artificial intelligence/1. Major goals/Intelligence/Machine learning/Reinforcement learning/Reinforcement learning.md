@@ -4,23 +4,33 @@
 
 ## 分类
 
-### model-based 🆚 model-free
+- 基于模型的强化学习
+	- 基于价值
+		- 
+	- 基于策略
+		- PILCO (Probabilistic Inference for Learning Control)
+- 无模型的强化学习
+	- 基于价值
+		- [Temporal difference learning](Temporal%20difference%20learning.md)（时序差分）
+			- Q-learning
+				- DQN
+			- Sarsa
+	- 基于策略
+		- Policy Gradient
+		- DDPG
+		- PPO
+- Both
+	- Dyna-Q
 
+### model-based 🆚 model-free
 
 通常他们会说：
 
-> 根据是否具有环境模型，强化学习算法分为两种：**基于模型的强化学习**（model-based reinforcement learning）和**无模型的强化学习**（model-free reinforcement learning）：
-> - 基于模型的强化学习
-> 	- Dyna-Q
-> - 无模型的强化学习
-> 	- [Temporal difference learning](Temporal%20difference%20learning.md)（时序差分）
-> 		- Q-learning
-> 			- DQN
-> 		- Sarsa
+> 根据是否具有环境模型，强化学习算法分为两种：**基于模型的强化学习**（model-based reinforcement learning）和**无模型的强化学习**（model-free reinforcement learning）
 
 说人话就是：如果我们能够完全了解决策环境的运行逻辑，我们就是基于模型的（比如打游戏），如果我们不能完全了解我们身处环境的运行逻辑，或者这个环境非常复杂（比如在现实中表白），那就是无模型的。
 
-如果要解决AGI，那肯定是无模型的，或者是让模型自己理解这个世界的运行逻辑。
+**如果要解决AGI，那肯定是无模型的，或者是让模型自己理解这个世界的运行逻辑。**
 
 ### value-based 🆚 policy-based
 
@@ -34,7 +44,7 @@
 
 这似乎是一种感性和理性的区别。基于价值的方法类似于人身体调控，假如我们吃了好吃的，大脑会释放多巴胺，给予我们奖励。基于策略的方法类似于我们的工作，我们知道背后的整体逻辑，社会运行的规律，知道我们要工作才能赚到钱。基于此，我们才愿意努力工作。
 
-如果要解决AGI，似乎二者缺一不可。
+**如果要解决AGI，似乎二者缺一不可。缺少核心的奖励就没有内驱力，缺少对事情的理解就无法达到高级的智能。**
 
 
 
