@@ -7,9 +7,9 @@
 - **目标**：在强模型（高性能高成本）与弱模型（低成本低性能）之间**智能路由**，实现**成本最小化、性能最大化**。
 - **建模核心**：
     - 学习一个**胜率预测器** $P(wins∣q)P(wins | q)$：预测强模型在 query qq 上是否优于弱模型。
-    - 基于一个阈值 α\alpha，将 query 路由到：
-        
-        Rα(q)={Mweak,P(wins∣q)<αMstrong,otherwiseR_\alpha(q) = \begin{cases} M_{\text{weak}}, & P(wins|q) < \alpha \\ M_{\text{strong}}, & \text{otherwise} \end{cases}
+    - 基于一个阈值 α\alpha，将 query 路由到：$$
+R_\alpha(q)= \begin{cases}M_{\text {weak }}, & P(\text { wins } \mid q)<\alpha \\ M_{\text {strong }}, & \text { otherwise }\end{cases}
+$$
 - **实现方式**（多种路由器结构）：
     - SW Ranking（基于相似度 + Bradley-Terry）
     - Matrix Factorization（双向嵌入评分函数）
