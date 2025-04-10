@@ -1,4 +1,40 @@
+## Harnessing Multiple Large Language Models: A Survey on LLM Ensemble
 
+### Ensemble-before inferece
+
+#### Pretrained router
+
+
+
+
+
+
+#### Non-pretrained router
+
+##### Eagle
+
+
+
+##### PickLLM
+
+*2024.12* 
+
+##### Blending
+
+*2024.01* 这个竟然是随机选一个模型来回答问题，他们认为这样就够了，足够每个模型发挥其特性。然后他们测试完说他们的用户留存率更高。
+
+### Ensemble-during inference
+
+
+
+
+### Ensemble-after inference
+
+
+
+
+
+## 不知道什么时候的东西
 
 - Bridging the Gap between Different Vocabularies for LLM Ensemble
     - Label: 
