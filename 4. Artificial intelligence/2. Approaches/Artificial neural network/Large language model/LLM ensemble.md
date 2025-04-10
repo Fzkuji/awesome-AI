@@ -4,7 +4,9 @@
 
 #### Pretrained router
 
+##### RouteLLM
 
+对问题进行了建模，
 
 
 
@@ -34,7 +36,7 @@
 6. （可选）再让用户对当前输出和另一个模型的输出打分，反馈写入数据库；
 7. 下一次调用可即时更新，无需模型重训。
 
-![](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/LLM%20ensemble/IMG-20250410175428997.png)
+![](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLM%20ensemble/IMG-20250410192158665.png)
 
 ##### PickLLM
 

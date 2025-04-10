@@ -86,7 +86,7 @@ Mikhail Burtsev这个兄弟似乎一直在搞memory相关的研究，一开始�
 	- 2024.3 [Beyond Attention: Breaking the Limits of Transformer Context Length with Recurrent Memory](https://ojs.aaai.org/index.php/AAAI/article/view/29722) **AAAI 2024** 似乎是前面一篇经过修改后发表了，然后换了一个名字
 	- 2024.2 [In Search of Needles in a 11M Haystack: Recurrent Memory Finds What LLMs Miss](https://arxiv.org/abs/2402.10790) 基于这个实验他们又做了一个benchmark（好好好，一个idea写一万个论文，很好）
 
-### [Dense passage retrieval](../../../../5.%20Information%20science/Information%20retrieval/Dense%20passage%20retrieval.md)
+### [Dense passage retrieval](../../../../../5.%20Information%20science/Information%20retrieval/Dense%20passage%20retrieval.md)
 
 一个token可以保存多少记忆可以通过这类研究得到答案
 

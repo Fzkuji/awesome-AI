@@ -11,9 +11,9 @@
 
 ### Paradigms
 
-![](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/Knowledge%20editing/IMG-20241223154239626.png)
+![](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Knowledge%20editing/IMG-20250410192143655.png)
 
-![500](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/Knowledge%20editing/IMG-20241224103128625.png)
+![500](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Knowledge%20editing/IMG-20250410192143695.png)
 
 ### Classifications
 
@@ -35,10 +35,10 @@
 #### Fine-tuning
 
 - [Editing factual knowledge and explanatory ability of medical large language models](https://dl.acm.org/doi/abs/10.1145/3627673.3679673)（德荣的）
-	- ![](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/Knowledge%20editing/IMG-20241224103947686.png)
+	- ![](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Knowledge%20editing/IMG-20250410192143723.png)
 
 - [WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models](https://arxiv.org/pdf/2405.14768) 这篇好像用了一些SFT和Merging
-	- ![](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/Knowledge%20editing/IMG-20241224103648405.gif)
+	- ![](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Knowledge%20editing/IMG-20250410192143778.gif)
 
 
 
@@ -254,7 +254,7 @@ editing-data
 
 我不太懂这个数据集的意义，直接将一个概念改成另一个？这不是胡搞瞎搞
 
-![400](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/Knowledge%20editing/IMG-20241223154239673.gif)
+![400](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Knowledge%20editing/IMG-20250410192143853.gif)
 我不理解
 
 |   Dataset   |                                              Google Drive                                               |                            HuggingFace Dataset                            |               Description                |

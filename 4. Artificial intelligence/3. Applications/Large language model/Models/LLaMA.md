@@ -33,7 +33,7 @@ We use a dimension of $\frac{2}{3} 4d$ instead of $4d$ as in PaLM.
 
 #### Rotary embeddings
 
-[Rotary positional embedding](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Position%20embedding.md#Rotary%20positional%20embedding) used by GPTNeo
+[Rotary positional embedding](../../../2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Transformer/Position%20embedding.md#Rotary%20positional%20embedding) used by GPTNeo
 
 ### Optimizer
 

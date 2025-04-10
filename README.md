@@ -4,10 +4,10 @@
 
 ## New notes
 
-- 🔥 [Knowledge editing (New!)](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/Large%20language%20model/Knowledge%20editing.md)
-- 🔥 [LLM fusion (New!)](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Transformer/LLM%20fusion.md)
+- 🔥 [Knowledge editing (New!)](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Knowledge%20editing.md)
+- 🔥 [LLM fusion (New!)](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLM%20fusion.md)
 - [Parallel or Sequential? Attention or Recurrence?](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Parallel%20or%20Sequential.md)
-- [Memory transformer](Memory%20transformer.md)
+- [Memory transformer](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Transformer/Memory%20transformer.md)
 
 ## Preface
 
