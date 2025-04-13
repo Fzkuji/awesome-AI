@@ -24,9 +24,11 @@ ICLR'24 [Hybrid LLM](https://openreview.net/forum?id=02f3mUtqnM)分别让大模�
 
 ##### MetaLLM
 
+arXiv 24.07 [MetaLLM](https://arxiv.org/abs/2407.10834)将模型选择问题建模为一个**多臂赌博机（Multi-Armed Bandit）问题**。MetaLLM 使用 Sentence-BERT 提取 query 表征，并训练一个简单的线性模型来预测每个 LLM 的期望 reward（精度）。在 SST-2 和 IMDB 上实现高达 **60% 的成本节约**，亦或是更优的推理性能（但是不是很明显）。
 
+##### RouteLLM
 
-##### [RouteLLM](+Papers/RouteLLM%20Learning%20to%20Route%20LLMs%20from%20Preference%20Data.md)
+笔记：[RouteLLM Learning to Route LLMs from Preference Data](+Papers/RouteLLM%20Learning%20to%20Route%20LLMs%20from%20Preference%20Data.md)
 
 ICLR'25 [RouteLLM](https://openreview.net/forum?id=8sSqNntaMr) 提出了一种基于人类偏好数据训练的胜率预测模型，用于在强模型和弱模型之间智能路由查询，最大化性能同时降低推理成本。其核心通过设定概率阈值 α 控制路由决策，并设计了 PGR、APGR 和 CPT 等指标衡量性能-成本权衡。
 Win prediction model包括：
