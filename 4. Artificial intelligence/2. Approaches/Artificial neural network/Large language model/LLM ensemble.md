@@ -93,7 +93,7 @@ Win prediction model包括：
 
 ##### CITER
 
-Token-Level routing方法
+*Token-Level routing方法*
 
 COLM'25 CITER 将token routing 问题建模为一个马尔可夫决策过程（MDP），使用基于偏好（preference-based）的强化学习方法训练路由器。
 
@@ -105,7 +105,7 @@ COLM'25 CITER 将token routing 问题建模为一个马尔可夫决策过程（M
 | Case 2 | SLM 错，LLM 对 | $p=0$（偏好 LLM）                         |
 | Case 3 | 两者都错        | 继续这个预测流程 CITER 解码，若最终结果对，则用SLM，反之用LLM |
 
-实验在多选题Commonsense QA (CS QA), ARC-Challenge, MMLU-PP和问答题GSM8k, MATH上进行了测试
+实验在多选题Commonsense QA (CS QA), ARC-Challenge, MMLU-PP和问答题GSM8k, MATH上进行了测试，论文使用accuracy vs data transformation amount curve来衡量方法的效果。结果是比RouteLLM和Co-LLM要好一些。
 
 #### Span-level ensemble
 
