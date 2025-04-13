@@ -4,11 +4,10 @@
 
 #### Pretrained router
 
-##### RouteLLM
+##### [RouteLLM](+Papers/RouteLLM%20Learning%20to%20Route%20LLMs%20from%20Preference%20Data.md)
 
-RouteLLM 提出了一种基于人类偏好数据训练的胜率预测模型，用于在强模型和弱模型之间智能路由查询，最大化性能同时降低推理成本。其核心通过设定概率阈值 α 控制路由决策，并设计了 PGR、APGR 和 CPT 等指标衡量性能-成本权衡。实验证明该方法在多个任务上可显著减少强模型调用（最多节省 75% 成本），且具有良好的跨模型泛化能力。
+ICLR'25 [RouteLLM](https://openreview.net/forum?id=8sSqNntaMr) 提出了一种基于人类偏好数据训练的胜率预测模型，用于在强模型和弱模型之间智能路由查询，最大化性能同时降低推理成本。其核心通过设定概率阈值 α 控制路由决策，并设计了 PGR、APGR 和 CPT 等指标衡量性能-成本权衡。实验证明该方法在多个任务上可显著减少强模型调用（最多节省 75% 成本），且具有良好的跨模型泛化能力。*这个似乎是针对两个模型来建模的*
 
-这个似乎是针对两个模型来建模的
 
 
 #### Non-pretrained router
