@@ -5,7 +5,13 @@
 #### Pretrained router
 
 Baseline: Oracle (Upper bond)
-Datasets: MixInstruct, MMLU, MT Bench, GSM8K
+Datasets: MixInstruct, MMLU, MT Bench, GSM8K, RAFT, WikiFact, Entity matching, Data imputation, BoolQ, TruthfulQA, IMDB, bAbI, MATH, LSAT, LegalSupport, CivilComments
+
+##### FORC
+
+WSDM'24 [FORC](https://arxiv.org/abs/2308.06077) 1）基于历史数据（真实模型回答 + ground truth），使用 **DistilBERT** 等轻量模型进行回归或分类训练。2）得出每个模型在每个 query 上的预计开销 $c_{i j}$ 。3）根据上一步得到的 **性能预测** $p_{i j}$ 和 **成本估计** $c_{i j}$ ，采用优化策略来选择“哪个模型处理哪个输入”。
+
+实验了多种模型，使用了MMLU, RAFT, WikiFact, Entity matching, Data imputation, BoolQ, TruthfulQA, IMDB, bAbI, MATH, GSM8K, LSAT, LegalSupport, CivilComments。
 
 ##### Hybrid LLM
 
