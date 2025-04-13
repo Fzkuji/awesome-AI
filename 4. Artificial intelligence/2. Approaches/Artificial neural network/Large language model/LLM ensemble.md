@@ -1,5 +1,7 @@
 ## Harnessing Multiple Large Language Models: A Survey on LLM Ensemble
 
+![](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLM%20ensemble/IMG-20250414001606785.png)
+
 ### Ensemble-before inferece
 
 ![](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLM%20ensemble/IMG-20250413175125978.png)
