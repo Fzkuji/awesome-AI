@@ -95,9 +95,13 @@ Win prediction model包括：
 
 Token-Level routing方法
 
- COLM'25 CITER
+COLM'25 CITER 将token routing 问题建模为一个马尔可夫决策过程（MDP），使用基于偏好（preference-based）的强化学习方法训练路由器。
 
-
+| 情况     | 描述               | 偏好标签 $p$（即训绕 label）                 |
+| :----- | :--------------- | :---------------------------------- |
+| Case 1 | SLM 生成的是正确 token | $p=1$（即偏好 SLM）                      |
+| Case 2 | SLM 错，LLM 对      | $p=0$（偏好 LLM）                       |
+| Case 3 | 两者都错             | 启动完整 CITER 解码，看哪个模型最终带来正确预测，来决定 $p$ |
 
 
 #### Span-level ensemble
