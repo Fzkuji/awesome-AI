@@ -2,6 +2,8 @@
 
 ### Ensemble-before inferece
 
+![](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLM%20ensemble/IMG-20250413175125978.png)
+
 #### Pretrained router
 
 **Baseline**: Oracle (Upper bond)
@@ -77,6 +79,26 @@ Win prediction model包括：
 *2024.01* 这个竟然是随机选一个模型来回答问题，他们认为这样就够了，足够每个模型发挥其特性。然后他们测试完说他们的用户留存率更高。
 
 ### Ensemble-during inference
+
+![](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLM%20ensemble/IMG-20250413175148701.png)
+
+#### Token-level ensemble
+
+
+
+
+
+
+#### Span-level ensemble
+
+
+
+
+
+
+#### Process-level ensemble
+
+
 
 
 
