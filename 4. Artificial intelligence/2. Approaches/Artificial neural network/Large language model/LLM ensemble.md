@@ -84,13 +84,17 @@ Win prediction model包括：
 
 ![](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLM%20ensemble/IMG-20250413175148701.png)
 
+**Baseline**: 
+**Datasets**: MMLU, GSM8K, TriviaQA
+**Results**: 
+
 #### Token-level ensemble
 
 分为Aggregation-based和Selection-based。这个比较直观，就是将结果整合，还是选取其中一个。
 
 ##### DeePEn
 
-
+MMLU
 
 
 ##### CITER
