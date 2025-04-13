@@ -6,11 +6,17 @@
 
 ##### Hybrid LLM
 
-ICLR 2024
+ICLR'24 [Hybrid LLM](https://openreview.net/forum?id=02f3mUtqnM)分别让大模型和小模型给查询生成多个答案（通常各采样10个），用 **BART score** 衡量每个答案的质量；然后计算**小模型和大模型答得差多少**（称为“质量差距”）；最后用这些差距训练一个 路由器模型（用 DeBERTa 作为 backbone），让它学会“这个问题适不适合让小模型来答”。*针对两个模型来建模*
 
 ##### [RouteLLM](+Papers/RouteLLM%20Learning%20to%20Route%20LLMs%20from%20Preference%20Data.md)
 
-ICLR'25 [RouteLLM](https://openreview.net/forum?id=8sSqNntaMr) 提出了一种基于人类偏好数据训练的胜率预测模型，用于在强模型和弱模型之间智能路由查询，最大化性能同时降低推理成本。其核心通过设定概率阈值 α 控制路由决策，并设计了 PGR、APGR 和 CPT 等指标衡量性能-成本权衡。实验证明该方法在多个任务上可显著减少强模型调用（最多节省 75% 成本），且具有良好的跨模型泛化能力。*这个似乎是针对两个模型来建模的*
+ICLR'25 [RouteLLM](https://openreview.net/forum?id=8sSqNntaMr) 提出了一种基于人类偏好数据训练的胜率预测模型，用于在强模型和弱模型之间智能路由查询，最大化性能同时降低推理成本。其核心通过设定概率阈值 α 控制路由决策，并设计了 PGR、APGR 和 CPT 等指标衡量性能-成本权衡。
+Win prediction model包括：
+- Similarity-weighted (SW) ranking
+- Matrix factorization
+- BERT classifier
+- Causal LLM classifier
+实验证明前面两个简单的方法性能更好。该方法在多个任务上可显著减少强模型调用（最多节省 75% 成本），且具有良好的跨模型泛化能力。*针对两个模型来建模*
 
 
 
