@@ -4,6 +4,7 @@
 
 #### Pretrained router
 
+Baseline: Oracle (Upper bond)
 Datasets: MixInstruct, MMLU, MT Bench, GSM8K
 
 ##### Hybrid LLM
