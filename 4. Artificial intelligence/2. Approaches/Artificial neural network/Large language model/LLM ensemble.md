@@ -4,14 +4,18 @@
 
 #### Pretrained router
 
-Baseline: Oracle (Upper bond)
-Datasets: MixInstruct, MMLU, MT Bench, GSM8K, RAFT, WikiFact, Entity matching, Data imputation, BoolQ, TruthfulQA, IMDB, bAbI, MATH, LSAT, LegalSupport, CivilComments
+**Baseline**: Oracle (Upper bond)
+**Datasets**: MixInstruct, MMLU, MT Bench, GSM8K, RAFT, WikiFact, Entity matching, Data imputation, BoolQ, TruthfulQA, IMDB, bAbI, MATH, LSAT, LegalSupport, CivilComments
+**Results**: 通常多模型下离Oracle有较大差距，但双模型下可以在不降低性能的情况下有效减少推理成本。
+
+![](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLM%20ensemble/IMG-20250413165824934.png)
+Figure 5: Cost–accuracy plot per task. (FORC)
 
 ##### FORC
 
 WSDM'24 [FORC](https://arxiv.org/abs/2308.06077) 1）基于历史数据（真实模型回答 + ground truth），使用 **DistilBERT** 等轻量模型进行回归或分类训练。2）得出每个模型在每个 query 上的预计开销 $c_{i j}$ 。3）根据上一步得到的 **性能预测** $p_{i j}$ 和 **成本估计** $c_{i j}$ ，采用优化策略来选择“哪个模型处理哪个输入”。
 
-实验了多种模型，使用了MMLU, RAFT, WikiFact, Entity matching, Data imputation, BoolQ, TruthfulQA, IMDB, bAbI, MATH, GSM8K, LSAT, LegalSupport, CivilComments。
+*针对多个模型来建模*，使用了MMLU, RAFT, WikiFact, Entity matching, Data imputation, BoolQ, TruthfulQA, IMDB, bAbI, MATH, GSM8K, LSAT, LegalSupport, CivilComments。
 
 ##### Hybrid LLM
 
@@ -25,6 +29,7 @@ Win prediction model包括：
 - Matrix factorization
 - BERT classifier
 - Causal LLM classifier
+
 实验在MMLU, MT Bench, GSM8K三个benchmarks上证明前面两个简单的方法性能更好。该方法在多个任务上可显著减少强模型调用（最多节省 75% 成本），且具有良好的跨模型泛化能力。*针对两个模型来建模*
 
 
