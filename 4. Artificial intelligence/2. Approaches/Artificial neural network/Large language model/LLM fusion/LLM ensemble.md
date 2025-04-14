@@ -1,3 +1,9 @@
+
+benchmarks:
+
+- RouterEval: A Comprehensive Benchmark for Routing LLMs to Explore Model-level Scaling Up in LLMs
+	- 共计收集和整理了涉及**8500+个**LLM，在**12个**Benchmark上的共**2亿条**性能记录
+
 ## Harnessing Multiple Large Language Models: A Survey on LLM Ensemble
 
 ![](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLM%20fusion/LLM%20ensemble/IMG-20250414163719692.png)
@@ -164,7 +170,7 @@ COLM'25 CITER 将token routing 问题建模为一个马尔可夫决策过程（M
 
 ###### Agent-Forest
 
-TMLR'24 [Agent-Forest](https://openreview.net/forum?id=bgzUSZ8aeg)是一种两阶段流程的推理增强框架，首先对多个模型进行（多次）采样，然后计算所有答案中，和其他回答相似度最高的那个，作为Majority Voting。
+TMLR'24 [Agent-Forest](https://openreview.net/forum?id=bgzUSZ8aeg)是一种两阶段流程的推理增强框架，首先对多个模型进行（多次）采样，然后计算所有答案中，和其他回答相似度最高的那个，作为Majority Voting。*主实验仍然关注单个模型的多角度回答*
 
 ![500](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLM%20fusion/LLM%20ensemble/IMG-20250414163719853.png)
 
