@@ -112,10 +112,18 @@ NeurIPS'24
 
 然后将所有token的输出权重和表示矩阵相乘，得到anchor token的权重，即在锚点词空间下的“语义投影”：
 $$\mathbf{r}=\mathbf{p} \cdot \hat{\mathbf{R}}$$
-
-
-
+最后不同模型的语义投影可以加权平均：
+$$
+\mathbf{\hat{r}}=\sum_{i=1}^N \alpha_i \cdot \mathbf{r}_i
+$$
+得到最终的语义投影后，我们把其中一个模型作为基准模型，想办法通过梯度下降，找到一个$\mathbf{p}$，使得：
+$$\mathbf{\hat{r}}=\mathbf{p} \cdot \hat{\mathbf{R}}$$
 数据集：MMLU, GSM8K, TriviaQA
+*可以用于多个模型，通常可以找到一个最优解，但是无法保证基于哪个模型作为backbone可以得到最优解，且所有模型都需要推理，cost较大。*
+
+
+
+
 
 
 ##### CITER
