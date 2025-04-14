@@ -96,9 +96,26 @@ Win prediction model包括：
 
 NeurIPS'24
 
-将不同模型vocab中相同的token作为anchor，计算所有token到
+将不同模型vocab中相同的token作为anchor，用LLM输入层embedding，计算所有token到anchor token的相似度。得到一个映射矩阵，设：
+- 模型词表有 4 个词：`["apple", "banana", "car", "dog"]`；
+- 锚点词为：`["apple", "dog"]`；
+- 当前模型输出的 token 分布为：
+  $$\mathbf{p} = [0.1, 0.6, 0.2, 0.1]$$
+假设我们预先计算好的（归一化后的）相对表示矩阵 $\hat{R}$ 是：
 
-MMLU, GSM8K, TriviaQA
+| token    | anchor: "apple" | anchor: "dog" |
+| -------- | :-------------: | :-----------: |
+| "apple"  |       0.8       |      0.2      |
+| "banana" |       0.7       |      0.3      |
+| "car"    |       0.3       |      0.7      |
+| "dog"    |       0.1       |      0.9      |
+
+然后将所有token的输出权重和表示矩阵相乘，得到anchor token的权重，即在锚点词空间下的“语义投影”：
+$$\mathbf{r}=\mathbf{p} \cdot \hat{\mathbf{R}}$$
+
+
+
+数据集：MMLU, GSM8K, TriviaQA
 
 
 ##### CITER
