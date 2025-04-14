@@ -158,6 +158,32 @@ COLM'25 CITER 将token routing 问题建模为一个马尔可夫决策过程（M
 
 ### Ensemble-after inference
 
+#### Non-cascade
+
+##### Selection-based
+
+###### Agent-Forest
+
+TMLR'24 主要解决
+###### MoRE
+
+
+##### Selection-then-regeneration
+
+
+
+
+
+#### Cascade
+
+##### Unsupervised
+
+
+
+
+
+##### Supervised
+
 
 
 
