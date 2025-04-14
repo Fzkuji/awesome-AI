@@ -13,4 +13,15 @@
 ![](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLM%20fusion/LLM%20knowledge%20distillation/IMG-20250414172715076.png)
 
 
+### FuseChat: Knowledge Fusion of Chat Models
+
+
+
+
+
+
+
+
+
+
 
