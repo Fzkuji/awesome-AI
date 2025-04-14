@@ -94,7 +94,11 @@ Win prediction model包括：
 
 ##### DeePEn
 
-MMLU
+NeurIPS'24
+
+将不同模型vocab中相同的token作为anchor，计算所有token到
+
+MMLU, GSM8K, TriviaQA
 
 
 ##### CITER
