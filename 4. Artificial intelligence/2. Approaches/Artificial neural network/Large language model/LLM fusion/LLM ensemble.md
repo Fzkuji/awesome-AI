@@ -1,10 +1,10 @@
 ## Harnessing Multiple Large Language Models: A Survey on LLM Ensemble
 
-![](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLM%20ensemble/IMG-20250414001606785.png)
+![](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLM%20fusion/LLM%20ensemble/IMG-20250414163719692.png)
 
 ### Ensemble-before inferece
 
-![](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLM%20ensemble/IMG-20250413175125978.png)
+![](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLM%20fusion/LLM%20ensemble/IMG-20250414163719765.png)
 
 #### Pretrained router
 
@@ -12,7 +12,7 @@
 **Datasets**: MixInstruct, MMLU, MT Bench, GSM8K, RAFT, WikiFact, Entity matching, Data imputation, BoolQ, TruthfulQA, IMDB, bAbI, MATH, LSAT, LegalSupport, CivilComments
 **Results**: 通常多模型下离Oracle有较大差距，但双模型下可以在不降低性能的情况下有效减少推理成本。
 
-![](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLM%20ensemble/IMG-20250413165824934.png)
+![](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLM%20fusion/LLM%20ensemble/IMG-20250414163719790.png)
 Figure 5: Cost–accuracy plot per task. (FORC)
 
 ##### FORC
@@ -70,7 +70,7 @@ Win prediction model包括：
 6. （可选）再让用户对当前输出和另一个模型的输出打分，反馈写入数据库；
 7. 下一次调用可即时更新，无需模型重训。
 
-![](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLM%20ensemble/IMG-20250410192158665.png)
+![](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLM%20fusion/LLM%20ensemble/IMG-20250414163719810.png)
 
 ##### PickLLM
 
@@ -82,11 +82,11 @@ Win prediction model包括：
 
 ### Ensemble-during inference
 
-![](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLM%20ensemble/IMG-20250413175148701.png)
+![](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLM%20fusion/LLM%20ensemble/IMG-20250414163719831.png)
 
 **Baseline**: 
 **Datasets**: MMLU, GSM8K, TriviaQA
-**Results**: 
+**Results**: 通常可以获得一个更好的性能，但是cost会大很多
 
 #### Token-level ensemble
 
@@ -166,11 +166,11 @@ COLM'25 CITER 将token routing 问题建模为一个马尔可夫决策过程（M
 
 TMLR'24 [Agent-Forest](https://openreview.net/forum?id=bgzUSZ8aeg)是一种两阶段流程的推理增强框架，首先对多个模型进行（多次）采样，然后计算所有答案中，和其他回答相似度最高的那个，作为Majority Voting。
 
-![500](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLM%20ensemble/IMG-20250414140838739.png)
-
-
+![500](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLM%20fusion/LLM%20ensemble/IMG-20250414163719853.png)
 
 ###### MoRE
+
+
 
 
 ##### Selection-then-regeneration
