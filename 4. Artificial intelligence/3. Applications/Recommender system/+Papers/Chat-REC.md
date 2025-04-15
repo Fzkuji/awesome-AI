@@ -55,7 +55,7 @@ Augmented language models——增强语言模型（ALMs）是一种新的研究
 
 ## NLP for recommendation
 
-[Recommender system](../../../../5.%20Information%20science/Information%20filtering/Recommender%20system.md)与[NLP](4.%20Artificial%20intelligence/1.%20Major%20goals/Intelligence/Natural%20language%20processing.md)技术长期保持紧密关系，特别是在pre-trained language models (PLM)出现后，这些模型提高了推荐系统的性能和可解释性。
+[Recommender system](../../../../5.%20Information%20science/Information%20filtering/Recommender%20system.md)与[NLP](../../../1.%20Major%20goals/Cognition/Natural%20language%20processing.md)技术长期保持紧密关系，特别是在pre-trained language models (PLM)出现后，这些模型提高了推荐系统的性能和可解释性。
 
 PLMs是在大型语料库上以自监督方式学习通用表示的语言模型，所学到的表示对于一系列下游NLP任务具有益处。
 
