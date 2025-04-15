@@ -41,7 +41,7 @@
 		- EBAR (Embedding-Based Auto-Regression): 和上面这个任务一样，只不过后面的嵌入用于预测句子的下一个单词
 - [Pre-training with Large Language Model-based Document Expansion for Dense Passage Retrieval](https://arxiv.org/abs/2308.08285)
 	- LLM-based document expansion for dense passage retrieval
-	- contrastive learning and bottlenecked query generation & [curriculum learning](../../2.%20Approaches/Curriculum%20learning.md)
+	- contrastive learning and bottlenecked query generation & [curriculum learning](../../4.%20Artificial%20intelligence/1.%20Major%20goals/Cognition/Machine%20learning/Curriculum%20learning.md)
 - [Improving Text Embeddings with Large Language Models](https://arxiv.org/abs/2401.00368)
 	- LLM for text embedding
 - [Retrieve Anything To Augment Large Language Models](https://arxiv.org/abs/2310.07554)
