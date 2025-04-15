@@ -2,19 +2,22 @@
 
 - [Huggingface Face](Hugging%20Face/Huggingface%20Face.md)
 - Cloud Drive
-	- [aliyunpan](aliyunpan.md)
-	- 
-- [AutoDL](AutoDL.md)
-
-- [clash-for-linux](clash-for-linux.md)
-- [cmd](cmd.md)
-- [conda](conda.md)
+	- 阿里云盘Linux [aliyunpan](aliyunpan.md)
+	- 百度云盘Linux [bypy](bypy.md)
+- GPU Server
+	- [AutoDL](AutoDL.md)
+- Proxy
+	- [clash-for-linux](clash-for-linux.md)
+- Python
+	- [conda](conda.md)
+	- [pip](pip.md)
+	- [Jupyter](Jupyter.md)
+- Windows
+	- [cmd](cmd.md)
+	- [PowerShell](PowerShell.md)
+	- [WSL](WSL.md)
+- [Linux](Linux.md)
+	- [tmux](tmux.md)
+- [Wandb](wandb.md)
 - [Docker](Docker.md)
 - [Git](Git.md)
-- [Jupyter](Jupyter.md)
-- [Linux](Linux.md)
-- [pip](pip.md)
-- [PowerShell](PowerShell.md)
-- [tmux](tmux.md)
-- [wandb](wandb.md)
-- [WSL](WSL.md)
