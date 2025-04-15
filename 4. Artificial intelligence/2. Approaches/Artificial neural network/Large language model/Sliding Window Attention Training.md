@@ -43,7 +43,7 @@
     - 提出滑动窗口注意力的核心因素：滑动窗口大小、训练文本长度和模型深度，以及最终影响的信息传递距离。其规律是，滑动窗口越大、训练长度越长、模型深度越深，信息传递的距离就越远，这样训练得到的模型效果就越好。
 %%
 
-![](../../../Attachments/PhD/Towards%20AGI/Memory/Sliding%20Window%20Attention%20Training/Sliding%20Window%20Attention%20Training/IMG-20250218174813260.png)
+![](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Sliding%20Window%20Attention%20Training/IMG-20250415141007497.png)
 
 Sliding window attention (SWA) is first introduced in Longformer, which is designed to overcome the $O(n^2)$ computational complexity of traditional transformers. By restricting the attention computation to a fixed window size $w$, the computational cost for each token is reduced to $O(w)$, and the overall complexity scales linearly with the sequence length $n$, resulting in $O(n \cdot w)$. Typically, $w \ll n$, making this approach significantly more efficient for processing long sequences. 
 
@@ -78,7 +78,7 @@ Although current open-source LLMs are structurally capable of supporting SWA inf
 	- transformer模型拥有一个特定大小的attention window，这个window的大小是由训练时的文本长度决定的。
 %%
 
-![](../../../Attachments/PhD/Towards%20AGI/Memory/Sliding%20Window%20Attention%20Training/Sliding%20Window%20Attention%20Training/IMG-20250218174813309.png)
+![](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Sliding%20Window%20Attention%20Training/IMG-20250415141007568.png)
 
 
 
@@ -100,7 +100,7 @@ Conclusion 1:
 	- Transformer的Attention存在专注度（Concentration）的平衡问题。如果专注度很平均（正则化较弱），则模型无法捕捉关键信息，其会被庞杂的tokens淹没，影响性能；如果专注度很强（正则化较强），则模型虽然可以更快检索到所需的信息，但也可能丢失更多的信息。
 %%
 
-![](../../../Attachments/PhD/Towards%20AGI/Memory/Sliding%20Window%20Attention%20Training/Sliding%20Window%20Attention%20Training/IMG-20250218174813358.png)
+![](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Sliding%20Window%20Attention%20Training/IMG-20250415141007642.png)
 
 另一方面，streamllm和xxx验证了直接将swa应用到llm的问题。即attention sink导致的推理失效。关于attention sink，我们通过现有的工作的实验得到了三个推论，而这三个推论最后可以得出最终的结论。
 
@@ -121,7 +121,7 @@ Conclusion 1:
 
 ### Attention Paradigms
 
-![](../../../Attachments/PhD/Towards%20AGI/Memory/Sliding%20Window%20Attention%20Training/Sliding%20Window%20Attention%20Training/IMG-20250218174813408.png)
+![](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Sliding%20Window%20Attention%20Training/IMG-20250415141007713.png)
 
 分析SWAT下，两种训练范式：
 - Short Sequence Attention (when token index < window size)
@@ -175,7 +175,7 @@ Given the comprehensiveness of our dataset collection, we employed cross-entropy
 
 
 
-![600](../../../Attachments/PhD/Towards%20AGI/Memory/Sliding%20Window%20Attention%20Training/Sliding%20Window%20Attention%20Training/IMG-20250218174813459.png)
+![600](../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Sliding%20Window%20Attention%20Training/IMG-20250415141007782.png)
 
 
 %% 
