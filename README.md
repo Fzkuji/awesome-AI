@@ -4,14 +4,14 @@
 
 ## New notes
 
-- 🔥 [LLM memory (New!)](4.%20Artificial%20intelligence/1.%20Major%20goals/Cognition/Memory/LLM%20memory.md)
+- 🔥 [LLM memory (New!)](4.%20Artificial%20intelligence/1.%20Major%20goals/Cognition/Memory/LLM%20memory%20survey.md)
 - 🔥 [LLM ensemble (New!)](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLM%20fusion/LLM%20ensemble.md)
 - [Knowledge editing](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Knowledge%20editing.md)
 - [LLM fusion](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLM%20fusion/LLM%20fusion.md)
 - [Parallel or Sequential? Attention or Recurrence?](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Parallel%20or%20Sequential.md)
 - [Memory transformer](4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/Transformer/Memory%20transformer.md)
 
-LLM Memory Survey is on the way. Stay tuned! 
+LLM Memory Survey is on the way. Stay tuned! Welcome any form of cooperation!
 
 ## Preface
 
