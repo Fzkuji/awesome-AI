@@ -33,3 +33,17 @@ model merging的策略：pruning + scaling + voting （scaling是变化参数越
 
 ICLR'25 [WRPO](https://openreview.net/forum?id=fq24pEb8SL)
 
+
+
+
+
+
+### FuseChat-3.0: Preference Optimization Meets Heterogeneous Model Fusion
+
+![](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLM%20fusion/LLM%20knowledge%20distillation/IMG-20250415105833455.png)
+
+
+
+
+
+
