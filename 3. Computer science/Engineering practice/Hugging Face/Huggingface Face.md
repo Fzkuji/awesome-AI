@@ -73,3 +73,8 @@ finetune 是upper bond，数据和训练需要时间，而且无法获取。
 metric rouge-4 和其他指标一致
 
 ranking
+
+
+### 删除缓存数据集或模型
+
+https://medium.com/@airabbitX/how-to-safely-delete-a-hugging-face-model-from-the-cache-7d9dcd9a7036

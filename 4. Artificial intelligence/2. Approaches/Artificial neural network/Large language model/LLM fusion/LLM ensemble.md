@@ -128,8 +128,17 @@ $$\mathbf{\hat{r}}=\mathbf{p} \cdot \hat{\mathbf{R}}$$
 *可以用于多个模型，通常可以找到一个最优解，但是无法保证基于哪个模型作为backbone可以得到最优解，且所有模型都需要推理，cost较大。*
 
 
+##### UniTe
 
+笔记：[LLM ensemble](LLM%20ensemble.md)
 
+对齐Top-k的token，不用对齐整个vocab。
+
+##### PackLLM
+
+笔记：[PackLLM](+Papers/PackLLM.md)
+
+PackLLM 是一种在推理时通过**最小化输入困惑度**来确定多个大语言模型权重、实现无训练融合的模型集成方法。为了支持不同 tokenizer 的模型融合，它引入了基于**最小编辑距离**（MinED）的 tokenizer 对齐机制，将各模型的输出映射到统一词表，从而实现 logits 的对齐与加权。该方法无需训练，可灵活组合任意 LLM，具备良好的泛化性与可扩展性。
 
 
 ##### CITER
