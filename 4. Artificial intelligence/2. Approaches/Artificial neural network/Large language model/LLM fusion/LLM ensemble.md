@@ -183,7 +183,14 @@ Span-level ensemble的模型都没有开源，不知道这种复现怎么办。�
 
 笔记：[SpecFuse](+Papers/SpecFuse.md)
 
-每个模型进行一定长度文本的预测，然后输入所有模型中，用所有文本在所有模型输出上的概率，作为评分。
+- 每个模型进行一定长度文本的预测，然后输入所有模型中，用所有文本在所有模型输出上的概率，作为评分。
+	- 分为自评和互评
+- 太差的模型会被丢弃
+
+![](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLM%20fusion/LLM%20ensemble/IMG-20250416164017394.png)
+
+实验合并了一些7-9B的小模型，ensemble之后效果超过了更大的模型。
+
 #### Process-level ensemble
 
 
