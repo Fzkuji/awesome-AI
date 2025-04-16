@@ -179,6 +179,11 @@ Span-level ensemble的模型都没有开源，不知道这种复现怎么办。�
 
 ![](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLM%20fusion/LLM%20ensemble/IMG-20250416152906972.png)
 
+##### SpecFuse
+
+笔记：[SpecFuse](+Papers/SpecFuse.md)
+
+每个模型进行一定长度文本的预测，然后输入所有模型中，用所有文本在所有模型输出上的概率，作为评分。
 #### Process-level ensemble
 
 
