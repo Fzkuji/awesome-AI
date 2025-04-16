@@ -165,16 +165,19 @@ Span-level ensemble的模型都没有开源，不知道这种复现怎么办。�
 
 笔记：[Cool-Fusion](+Papers/Cool-Fusion.md)
 
-用其他模型的困惑度评价一个模型一小段的输出结果。然后取评分最好的那个。
+用其他模型的**困惑度**评价一个模型一小段的输出结果。然后取评分最好的那个。
 
 实验效果很好，但是对比模型较少，且没有开源。
 
 ##### SweetSpan
 
+笔记：[SweetSpan](+Papers/SweetSpan.md)
 
+和Cool-Fusion极其类似，同样是使用困惑度。
 
+但是实验更加丰富，效果也同样好。
 
-
+![](../../../../../Attachments/4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/LLM%20fusion/LLM%20ensemble/IMG-20250416152906972.png)
 
 #### Process-level ensemble
 
