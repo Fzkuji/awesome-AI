@@ -159,10 +159,15 @@ COLM'25 CITER 将token routing 问题建模为一个马尔可夫决策过程（M
 
 #### Span-level ensemble
 
+Span-level ensemble的模型都没有开源，不知道这种复现怎么办。
 
+##### Cool-Fusion
 
+笔记：[Cool-Fusion](+Papers/Cool-Fusion.md)
 
+用其他模型的困惑度评价一个模型一小段的输出结果。然后取评分最好的那个。
 
+实验效果很好，但是对比模型较少，且没有开源。
 
 #### Process-level ensemble
 
