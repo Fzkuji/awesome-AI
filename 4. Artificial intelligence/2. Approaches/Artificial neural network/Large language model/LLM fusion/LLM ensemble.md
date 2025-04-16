@@ -130,7 +130,7 @@ $$\mathbf{\hat{r}}=\mathbf{p} \cdot \hat{\mathbf{R}}$$
 
 ##### UniTe
 
-笔记：[LLM ensemble](LLM%20ensemble.md)
+笔记：[UniTe](+Papers/UniTe.md)
 
 对齐Top-k的token，不用对齐整个vocab。
 
@@ -196,7 +196,6 @@ Span-level ensemble的模型都没有开源，不知道这种复现怎么办。�
 终于有个有代码的了: https://github.com/togethercomputer/moa
 
 #### Process-level ensemble
-
 
 ##### LE-MCTS
 
