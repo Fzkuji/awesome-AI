@@ -153,7 +153,7 @@ $$
 	- Sigmoid Attention
 		- SWAT
 	- SSMAX增强的softmax函数
-	- 
+	- moe
 
 ##### Model efficiency
 
