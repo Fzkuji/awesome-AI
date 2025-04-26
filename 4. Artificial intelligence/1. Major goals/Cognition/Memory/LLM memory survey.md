@@ -107,7 +107,7 @@ RAG 方法通过外部笔记的形式弥补了 LLM 在固定上下文窗口中�
 
 工作记忆是一种记忆容量有限的认知系统，被用以暂时保存资讯。工作记忆需要和短期记忆作区分。目前比较认可的定义是，短期记忆仅指资讯的短期存储，而允许对存储的短期记忆进行操作，因此工作记忆是一个更完整的系统。
 
-### Update Classification
+### Classification
 
 工作记忆的实现依赖于模型的底层架构，不同设计对记忆容量和效率有显著影响。宏观上，工作记忆分类需要解决几个问题：
 
@@ -119,7 +119,7 @@ RAG 方法通过外部笔记的形式弥补了 LLM 在固定上下文窗口中�
 
 而如果工作记忆不进行迭代，则会退化为简单的短期记忆。
 
-#### Concat structure
+#### Incremental Update
 
 Transformer的工作记忆理论上可以包含所有输入信息，其本质是不断将新的短期记忆和旧的记忆进行concat操作：
 $$
@@ -174,7 +174,7 @@ $$
 	- Linformer本质是将kv cache进行整体压缩，类似于pooling，最后得到一个整体的向量嵌入与新的token进行计算。
 
 
-#### Recurrent Structure
+#### Iterative Update
 
 基于循环架构的神经网络通常维护一个固定大小的隐层状态：
 $$
@@ -243,14 +243,11 @@ section的title，数量
 作为记忆，分类还是，形式、容量、更新
 
 
-### Form Classification
+
+### Classification
 
 
-
-
-
-### Update Classification
-
+#### Incremental Update
 
 moe
 
@@ -260,10 +257,18 @@ lora
 终生学习
 
 
-#### 预训练
+#### Iterative Update
 
 
-#### 
+##### 预训练
+
+
+##### 微调
+
+
+##### 强化学习
+
+
 
 
 ### 相关技术
