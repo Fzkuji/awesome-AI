@@ -109,10 +109,6 @@ RAG 方法通过外部笔记的形式弥补了 LLM 在固定上下文窗口中�
 
 ### Update Classification
 
-
-
-### Update Classification
-
 工作记忆的实现依赖于模型的底层架构，不同设计对记忆容量和效率有显著影响。宏观上，工作记忆分类需要解决几个问题：
 
 1. 工作记忆的容量是多少？
@@ -249,16 +245,19 @@ section的title，数量
 
 ### Form Classification
 
+
+
+
+
+### Update Classification
+
+
 moe
 
 lora
 
 
 终生学习
-
-
-
-### Update Classification
 
 
 #### 预训练
