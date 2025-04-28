@@ -2,6 +2,8 @@
 
 Meta写的感觉有点乱，还是自己eng整理一个出来。
 
+
+
 ## Introduction
 
 随着大语言模型（Large Language Models, LLMs）在自然语言处理领域的广泛应用，其处理长上下文、保持一致性和个性化输出的能力受到越来越多的关注。然而，传统 LLM 在记忆能力上存在局限，例如 Transformer 架构受限于固定上下文窗口，无法有效存储和调用长期信息。为了克服这些挑战，研究者们提出了多种方法来增强模型的记忆能力。这些方法可以根据存储和访问记忆的方式分为三大类：外部笔记（Retrieval-Augmented Generation, RAG）、长期记忆（模型参数）和短期记忆（隐藏状态）。外部笔记通过检索外部知识库扩展模型的知识范围，长期记忆通过更新模型权重保留信息，短期记忆则利用推理过程中的隐藏状态维持上下文相关性。本综述将系统分析这些方法的原理、实现方式及其应用场景，旨在为 LLM 记忆能力的研究提供清晰的框架。
@@ -206,6 +208,10 @@ $$
 - LSTM
 	- mLSTM
 
+
+**前缀微调 (Prefix Tuning)**：Li 和 Liang（2021）提出将一段可训练的连续向量（前缀）添加到Transformer每层输入，以在不改动预训练模型参数的情况下调整生成结果​[aclanthology.org](https://aclanthology.org/2021.acl-long.353/#:~:text=parameters%20and%20therefore%20necessitates%20storing,performance%20in%20the%20full%20data)​[aclanthology.org](https://aclanthology.org/2021.acl-long.353/#:~:text=%E2%80%9Cvirtual%20tokens%E2%80%9D.%20We%20apply%20prefix,that%20are%20unseen%20during%20training)。只需训练不到0.1%的参数，前缀微调在全量数据下性能接近全模型微调，在低资源和未见主题上甚至更佳​[aclanthology.org](https://aclanthology.org/2021.acl-long.353/#:~:text=parameters%20and%20therefore%20necessitates%20storing,performance%20in%20the%20full%20data)​[aclanthology.org](https://aclanthology.org/2021.acl-long.353/#:~:text=%E2%80%9Cvirtual%20tokens%E2%80%9D.%20We%20apply%20prefix,that%20are%20unseen%20during%20training)。
+
+
 #### Hybrid Update
 
 Jamba
@@ -240,7 +246,10 @@ section的title，数量
 
 长期记忆涉及到的领域较为广泛，模型的训练、幻觉问题、知识编辑都可以当做模型长期记忆的更新。这里选取一些典型研究。目前长期记忆的挑战是如何高效、鲁棒地实现记忆更新。
 
-作为记忆，分类还是，形式、容量、更新
+考虑记忆的形式、容量、更新：
+- 形式：模型参数
+- 容量：通常为固定大小，可添加和复制扩展
+- 更新：多种模型训练方法
 
 
 
@@ -249,7 +258,13 @@ section的title，数量
 
 #### Incremental Update
 
-moe
+##### MoE
+
+- **Sparse expert models:** Mixture-of-Experts architectures greatly expand an LLM’s effective parameter count by having many expert subnetworks and routing each input to only one or a few of them. Fedus et al. (2022) introduced the **Switch Transformer**, which uses up to 128 experts but activates just one per input token via a gating mechanism. For a fixed computation budget, Switch Transformer achieved significantly higher model quality than a dense Transformer, matching the performance of a 7× larger model with efficient sparsity​[arxiv.org](https://arxiv.org/pdf/2101.03961#:~:text=For%20a%20fixed%20amount%20of,line.%20Our%2064). This demonstrated that MoE can serve as a form of long-term memory, storing diverse knowledge across experts.
+- **Domain experts and modularity:** Gururangan et al. (2022) showed that MoE models can assign experts to different domains (e.g. one expert per domain in a “DEMix” layer) and only train new experts for new domains​[aclanthology.org](https://aclanthology.org/2023.emnlp-main.516.pdf#:~:text=updated.%20DEMix,by%20freezing%20previously%20trained%20experts). This way, each expert acts as a repository of knowledge for a domain. As new domains emerge, new experts can be added incrementally. The MoE gating ensures the appropriate expert is used for relevant inputs, enabling parametric knowledge to scale with minimal interference between domains.
+- **Alleviating forgetting with MoE:** Recent work combines MoE with other techniques to continually update knowledge. **LoRA-MoE** (Zhang et al., 2024) inserts multiple LoRA adapters as experts in a mixture, with a router network assigning tokens to either new or existing knowledge experts. This approach was shown to **preserve world knowledge** in an LLM even after large-scale fine-tuning on new instructions, by mitigating the catastrophic forgetting of factual knowledge while still improving on downstream tasks​[aclanthology.org](https://aclanthology.org/2024.acl-long.106.pdf#:~:text=ing%20world%20knowledge%20forgetting%20during,the%20efficacy%20of%20our%20proposed). It highlights MoE’s strength: new experts can be introduced for new data, rather than overwriting shared weights.
+
+
 
 lora
 
@@ -306,6 +321,14 @@ lora
     - 示例：相关研究如 [Continual Pre-Training Mitigates Forgetting in Language and Vision](https://github.com/AGI-Edgerunners/LLM-Continual-Learning-Papers) 讨论巩固机制。  
 
 长期记忆通过模型参数更新实现知识积累，但更新成本高，未来可探索参数高效方法和防止遗忘策略。  
+
+
+
+
+## Related Surveys
+
+- From Human Memory to AI Memory: A Survey on Memory Mechanisms in the Era of LLMs
+- A Survey on the Memory Mechanism of Large Language Model based Agents
 
 
 
