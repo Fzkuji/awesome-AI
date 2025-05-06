@@ -338,7 +338,7 @@ lora
 - [MindMemory: Augmented With Long-Term And Mental Personality](https://link.springer.com/chapter/10.1007/978-981-96-2373-0_33)
 
 
-
+Large Language Models with Controllable Working Memory
 
 
 
