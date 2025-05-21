@@ -9,4 +9,6 @@
 CUDA_VISIBLE_DEVICES=4,5,6,7 accelerate launch -m lm_eval --model hf \
     --model_args pretrained=deepseek-ai/DeepSeek-R1-Distill-Qwen-7B \
     --tasks coqa \
+    --log_samples \
+    --output_path results \
     --batch_size 8
