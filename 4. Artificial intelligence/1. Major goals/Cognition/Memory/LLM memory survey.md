@@ -145,6 +145,7 @@ $$
 		- RoPE
 		- NTK-RoPE
 		- YARN
+		- Fourier Position Embedding
 	- 位置插值
 		- 
 	- 滑动窗口
