@@ -166,6 +166,4 @@ bash proxy_off.sh
 
 建议在不使用代理或访问国内资源时关闭，以避免影响速度或出现连接异常。
 
----
 
-如遇问题可联系管理员或查阅项目文档：[https://github.com/VocabVictor/clash-for-AutoDL](https://github.com/VocabVictor/clash-for-AutoDL)
