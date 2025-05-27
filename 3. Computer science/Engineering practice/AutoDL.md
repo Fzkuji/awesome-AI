@@ -80,4 +80,92 @@ unset http_proxy && unset https_proxy
 
 #### [clash-for-AutoDL](https://github.com/VocabVictor/clash-for-AutoDL)
 
-使用clash-for-AutoDL可以配置自己的节点
+AutoDL自带的网络加速服务在访问某些受限服务（如Claude、OpenAI API等）时可能并不生效，为此我们推荐使用社区项目 [clash-for-AutoDL](https://github.com/VocabVictor/clash-for-AutoDL) 配置自己的科学上网节点。
+
+##### 安装Clash代理（一次性配置）
+
+1. 进入你创建的 AutoDL 云服务器。
+2. 在终端执行如下命令下载并安装：
+
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/VocabVictor/clash-for-AutoDL/main/install.sh)
+```
+
+3. 安装完成后，文件将位于 `~/ShellCrash` 目录。
+
+##### 配置你的节点
+
+1. 将你自己订阅的 Clash 节点配置（YAML 链接）保存为 `config.yaml`，放到 `~/ShellCrash/configs/` 目录中（若目录不存在请手动创建）。
+    
+
+```bash
+mkdir -p ~/ShellCrash/configs
+mv config.yaml ~/ShellCrash/configs/
+```
+
+2. 编辑 `start.sh` 脚本或直接运行脚本加载你的配置。
+
+##### 启动代理
+
+1. 启动 Clash 代理服务：
+
+```bash
+cd ~/ShellCrash
+bash start.sh
+```
+
+2. 首次启动可能会无效，这时请先关闭再重新开启代理：
+
+```bash
+bash proxy_off.sh
+bash proxy_on.sh
+```
+
+（或者手动执行 `proxy_off && proxy_on`）
+
+##### 测试代理是否生效
+
+```bash
+curl ip.sb
+```
+
+输出的 IP 应为你代理节点的 IP，而非 AutoDL 默认出口。
+
+你现在可以正常使用受地域限制的服务，比如：
+
+- Claude
+- OpenAI API
+- Huggingface Space
+- Google Scholar
+
+##### Web 管理界面（可选）
+
+如果你需要更方便的节点管理，可以访问内置 Web 管理页面：
+
+```text
+http://localhost:9999/ui
+```
+
+本地访问方式（需开启端口转发）：
+
+```bash
+ssh -L 9999:localhost:9999 -p [端口号] root@[服务器IP]
+```
+
+然后本地浏览器访问：
+
+```text
+http://localhost:9999/ui
+```
+
+##### 关闭代理
+
+```bash
+bash proxy_off.sh
+```
+
+建议在不使用代理或访问国内资源时关闭，以避免影响速度或出现连接异常。
+
+---
+
+如遇问题可联系管理员或查阅项目文档：[https://github.com/VocabVictor/clash-for-AutoDL](https://github.com/VocabVictor/clash-for-AutoDL)
