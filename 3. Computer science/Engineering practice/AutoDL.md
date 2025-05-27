@@ -78,6 +78,6 @@ unset http_proxy && unset https_proxy
 ```
 
 
+#### [clash-for-AutoDL](https://github.com/VocabVictor/clash-for-AutoDL)
 
-
-
+使用clash-for-AutoDL可以配置自己的节点
