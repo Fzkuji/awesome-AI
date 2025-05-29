@@ -174,10 +174,8 @@ $$
 	- 2022.11 [Large Language Models with Controllable Working Memory](https://arxiv.org/abs/2211.05110) 提出了一种可控工作记忆框架，通过调整注意力优先级增强 LLM 对上下文的处理能力，显著提升了多任务表现。
 	- Focused Transformer和Memorizing Transformers很像，都是保存了以前文本的hidden states，然后用于后续的文本训练。同时添加了负样本提升模型对于海量记忆的筛选能力。
 	- 2023.06 [Augmenting Language Models with Long-Term Memory](https://dl.acm.org/doi/10.5555/3666122.3669381) 训练了额外的SideNet来索引Cached Memory Bank，支持token-to-chunk检索。
-	- LM2（Large Memory Model）通过辅助记忆模块实现了多步推理能力的显著提升
-		- **上下文记忆库**：作为外部记忆通过交叉注意力访问，不干扰原始信息流
-		- **动态门控机制**：选择性记忆更新，在BABILong基准测试上相比Llama-3.2提升86.3% [ArXiv](https://arxiv.org/html/2502.06049v1)
-		- **通用能力保持**：在MMLU数据集上提升5.0%，证明记忆增强不损害通用能力
+	- [LM2: Large Memory Model](https://arxiv.org/html/2502.06049v1) 加州大学和Anthropic联合团队提出的辅助记忆模块架构，通过上下文记忆库和动态门控机制实现多步推理能力提升，在BABILong基准测试上相比Llama-3.2提升86.3%。
+	- [NAMMs: Neural Attention Memory Models](https://arxiv.org/) 帝国理工学院和Sakana AI提出的进化式记忆优化模型，采用进化算法优化记忆管理，实现零样本跨架构和模态迁移。
 - Cache内部稀疏化
 	- Longformer[^4]首次提出了稀疏注意力，让模型在计算注意力时，只关注部分关键位置的token，极大减少了模型训练和推理的开销。
 		- 值得注意的是，在使用滑动窗口推理时，存在Attention Sink问题[^10]，因此需要保留最前面的几个tokens。不过和本篇的相关性不大，因此不做详细拓展。
