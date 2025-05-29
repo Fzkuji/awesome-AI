@@ -31,6 +31,7 @@ Meta写的感觉有点乱，还是自己eng整理一个出来。
 
 人类的记忆目前主流的分类如下：
 
+![](../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Cognition/Memory/LLM%20memory%20survey/IMG-20250529174334277.png)
 
 
 为了更好地理解 LLM 的记忆机制，我们可以将这些类别与人类记忆系统进行类比。人类的记忆通常分为三类：长期记忆、工作记忆和外部知识，这与 LLM 的三类记忆形成有趣的对应关系。人类的：
@@ -42,7 +43,7 @@ Meta写的感觉有点乱，还是自己eng整理一个出来。
 **长期记忆**存储于大脑神经网络中，包含事实、经验和技能，类似于 LLM 通过训练更新模型参数来固化知识的过程，例如 MemoryBank 通过持续学习适应用户个性化的需求。
 
 
-2025年4月，中国科学院团队发表的Cognitive Memory in Large Language Models是用了
+2025年4月，中国科学院团队发表的Cognitive Memory in Large Language Models是提出将记忆明确划分为感知记忆、短期记忆和长期记忆三个层次。但是具体的含义有说不同。
 
 ## Sensory Memory
 
@@ -52,7 +53,7 @@ Meta写的感觉有点乱，还是自己eng整理一个出来。
 
 尽管如此，以上的所有信息都还是未经处理的，所有模型都可以基于这些信息进行训练而不需要额外的编码，因此可以作为预训练数据集。现在也有检索增强生成（Retrieval-Augmented Generation, RAG）来实现对Sensory Memory的存储和索引。这种技术可以理解为维护一个个体完整的经历。RAG特别适用于需要处理大量外部信息或长对话的场景。RAG 的核心思想是将生成过程与检索过程结合：模型首先从外部存储中检索相关信息，然后将其集成到生成过程中，避免了模型完全依赖内部参数存储所有信息的限制。RAG 的优势在于其灵活性和可扩展性，但也面临检索效率和信息一致性等挑战。
 
-
+尽管名字叫感觉记忆，但这本质上是因为人类大脑无法完全存储这类信息，而计算机可以持久地保存感觉记忆，因此LLM的感觉记忆的存储量反而是最大的。
 
 ### 现有工作
 
@@ -173,6 +174,7 @@ $$
 	- 2022.11 [Large Language Models with Controllable Working Memory](https://arxiv.org/abs/2211.05110) 提出了一种可控工作记忆框架，通过调整注意力优先级增强 LLM 对上下文的处理能力，显著提升了多任务表现。
 	- Focused Transformer和Memorizing Transformers很像，都是保存了以前文本的hidden states，然后用于后续的文本训练。同时添加了负样本提升模型对于海量记忆的筛选能力。
 	- 2023.06 [Augmenting Language Models with Long-Term Memory](https://dl.acm.org/doi/10.5555/3666122.3669381) 训练了额外的SideNet来索引Cached Memory Bank，支持token-to-chunk检索。
+	- 
 - Cache内部稀疏化
 	- Longformer[^4]首次提出了稀疏注意力，让模型在计算注意力时，只关注部分关键位置的token，极大减少了模型训练和推理的开销。
 		- 值得注意的是，在使用滑动窗口推理时，存在Attention Sink问题[^10]，因此需要保留最前面的几个tokens。不过和本篇的相关性不大，因此不做详细拓展。
@@ -182,6 +184,9 @@ $$
 - Cache压缩
 	- Compressive Transformer[^3]设计了一种压缩旧token并保存的方法，实现了真正意义上的记忆，旧tokens进行了压缩（max/mean pooling、1D convolution、dilated convolutions和most-used），同时为了验证压缩效果，他们尝试使用压缩后的记忆重建压缩前的内容。
 	- Linformer本质是将kv cache进行整体压缩，类似于pooling，最后得到一个整体的向量嵌入与新的token进行计算。
+
+
+
 
 
 #### Iterative Update
