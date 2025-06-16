@@ -205,8 +205,6 @@ $$
 $$
 
 
-
-
 相关工作包括：
 - 基于Transformer
 	- [Memformer: A Memory-Augmented Transformer for Sequence Modeling](https://aclanthology.org/2022.findings-aacl.29/)最初的encoder-decoder Transformer架构，在encoder位置添加了循环更新的Memory
@@ -308,7 +306,9 @@ Log-Linear Attention
 ##### MoE
 
 - **Sparse expert models:** Mixture-of-Experts architectures greatly expand an LLM’s effective parameter count by having many expert subnetworks and routing each input to only one or a few of them. Fedus et al. (2022) introduced the **Switch Transformer**, which uses up to 128 experts but activates just one per input token via a gating mechanism. For a fixed computation budget, Switch Transformer achieved significantly higher model quality than a dense Transformer, matching the performance of a 7× larger model with efficient sparsity​[arxiv.org](https://arxiv.org/pdf/2101.03961#:~:text=For%20a%20fixed%20amount%20of,line.%20Our%2064). This demonstrated that MoE can serve as a form of long-term memory, storing diverse knowledge across experts.
+
 - **Domain experts and modularity:** Gururangan et al. (2022) showed that MoE models can assign experts to different domains (e.g. one expert per domain in a “DEMix” layer) and only train new experts for new domains​[aclanthology.org](https://aclanthology.org/2023.emnlp-main.516.pdf#:~:text=updated.%20DEMix,by%20freezing%20previously%20trained%20experts). This way, each expert acts as a repository of knowledge for a domain. As new domains emerge, new experts can be added incrementally. The MoE gating ensures the appropriate expert is used for relevant inputs, enabling parametric knowledge to scale with minimal interference between domains.
+
 - **Alleviating forgetting with MoE:** Recent work combines MoE with other techniques to continually update knowledge. **LoRA-MoE** (Zhang et al., 2024) inserts multiple LoRA adapters as experts in a mixture, with a router network assigning tokens to either new or existing knowledge experts. This approach was shown to **preserve world knowledge** in an LLM even after large-scale fine-tuning on new instructions, by mitigating the catastrophic forgetting of factual knowledge while still improving on downstream tasks​[aclanthology.org](https://aclanthology.org/2024.acl-long.106.pdf#:~:text=ing%20world%20knowledge%20forgetting%20during,the%20efficacy%20of%20our%20proposed). It highlights MoE’s strength: new experts can be introduced for new data, rather than overwriting shared weights.
 
 
@@ -319,10 +319,15 @@ lora
 终生学习
 
 
+
+
 #### Iterative Update
 
 
+
 ##### 预训练
+
+2-3
 
 
 ##### 微调
