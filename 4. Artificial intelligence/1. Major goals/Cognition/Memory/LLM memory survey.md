@@ -204,6 +204,9 @@ $$
 \mathbf{S}_t = f \left( \mathbf{S}  _{t-1}, g \left ( \mathbf{k}_t, \mathbf{v}_t\right) \right ) 
 $$
 
+
+
+
 相关工作包括：
 - 基于Transformer
 	- [Memformer: A Memory-Augmented Transformer for Sequence Modeling](https://aclanthology.org/2022.findings-aacl.29/)最初的encoder-decoder Transformer架构，在encoder位置添加了循环更新的Memory
@@ -227,6 +230,8 @@ $$
 
 
 **前缀微调 (Prefix Tuning)**：Li 和 Liang（2021）提出将一段可训练的连续向量（前缀）添加到Transformer每层输入，以在不改动预训练模型参数的情况下调整生成结果​[aclanthology.org](https://aclanthology.org/2021.acl-long.353/#:~:text=parameters%20and%20therefore%20necessitates%20storing,performance%20in%20the%20full%20data)​[aclanthology.org](https://aclanthology.org/2021.acl-long.353/#:~:text=%E2%80%9Cvirtual%20tokens%E2%80%9D.%20We%20apply%20prefix,that%20are%20unseen%20during%20training)。只需训练不到0.1%的参数，前缀微调在全量数据下性能接近全模型微调，在低资源和未见主题上甚至更佳​[aclanthology.org](https://aclanthology.org/2021.acl-long.353/#:~:text=parameters%20and%20therefore%20necessitates%20storing,performance%20in%20the%20full%20data)​[aclanthology.org](https://aclanthology.org/2021.acl-long.353/#:~:text=%E2%80%9Cvirtual%20tokens%E2%80%9D.%20We%20apply%20prefix,that%20are%20unseen%20during%20training)。
+
+
 
 
 #### Hybrid Update
@@ -258,6 +263,7 @@ $$
 - **Hymba (NVIDIA, 2024.11)**：革命性混合头并行架构，同层内并行运行transformer头和SSM头（5:1参数比例）。跨层KV缓存共享+128个可学习元令牌，缓存减少11.67倍、吞吐量提升3.49倍
 - **Zamba2 (Zyphra, 2024.11)**：双共享注意力块（ABAB模式）+LoRA投影，2.7B参数达到同级别最佳性能
 
+Log-Linear Attention
 
 ### 相关技术
 
