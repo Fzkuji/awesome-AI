@@ -370,6 +370,7 @@ lora
 
 - From Human Memory to AI Memory: A Survey on Memory Mechanisms in the Era of LLMs
 - A Survey on the Memory Mechanism of Large Language Model based Agents
+- Advances and Challenges in Foundation Agents: From Brain-Inspired Intelligence to Evolutionary, Collaborative, and Safe Systems
 
 
 
