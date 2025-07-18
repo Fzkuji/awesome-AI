@@ -46,7 +46,7 @@ Meta写的感觉有点乱，还是自己eng整理一个出来。
 **长期记忆**存储于大脑神经网络中，包含事实、经验和技能，类似于 LLM 通过训练更新模型参数来固化知识的过程，例如 MemoryBank 通过持续学习适应用户个性化的需求。
 
 
-2025年4月，中国科学院团队发表的Cognitive Memory in Large Language Models是提出将记忆明确划分为感知记忆、短期记忆和长期记忆三个层次。但是具体的含义有说不同。
+2025年4月，中国科学院团队发表的Cognitive Memory in Large Language Models是提出将记忆明确划分为感知记忆、短期记忆和长期记忆三个层次。但是具体的含义有所不同。
 
 ## Sensory Memory
 
