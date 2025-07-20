@@ -195,14 +195,15 @@ Transformer的工作记忆理论上可以包含所有输入信息，其本质是
 
 #### Iterative Update
 
-基于循环架构的神经网络通常维护一个固定大小的隐层状态：
-$$
-\mathbf{S}_t = f \left( \mathbf{S}  _{t-1}, \mathbf{x} _t\right)
-$$
-通常在大语言模型中，状态的更新同样与$\mathbf{k}$和$\mathbf{v}$有关：
-$$
-\mathbf{S}_t = f \left( \mathbf{S}  _{t-1}, g \left ( \mathbf{k}_t, \mathbf{v}_t\right) \right ) 
-$$
+<p>
+  基于循环架构的神经网络通常维护一个固定大小的隐层状态：<br>
+  <b>S<sub>t</sub> = f(S<sub>t−1</sub>, x<sub>t</sub>)</b>
+</p>
+
+<p>
+  通常在大语言模型中，状态的更新同样与 <b>k</b> 和 <b>v</b> 有关：<br>
+  <b>S<sub>t</sub> = f(S<sub>t−1</sub>, g(k<sub>t</sub>, v<sub>t</sub>))</b>
+</p>
 
 
 相关工作包括：
