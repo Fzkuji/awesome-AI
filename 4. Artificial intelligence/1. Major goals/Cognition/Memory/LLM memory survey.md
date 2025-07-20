@@ -135,9 +135,9 @@ RAG 方法通过外部笔记的形式弥补了 LLM 在固定上下文窗口中�
 #### Incremental Update
 
 Transformer的工作记忆理论上可以包含所有输入信息，其本质是不断将新的短期记忆和旧的记忆进行concat操作：
-$$
-\mathbf{S} _t=\operatorname{concat}\left(\mathbf{S}_{t-1},\left \{\mathbf{k} _t, \mathbf{v} _t\right \}\right)
-$$
+<div align="center">
+  <b>S<sub>t</sub> = concat(S<sub>t-1</sub>, {k<sub>t</sub>, v<sub>t</sub>})</b>
+</div>
   Transformer的挑战在于超长序列的处理，包括平方级的计算复杂度，长度外推问题，缓存容量。因此，研究主要围绕在训练和推理阶段扩展工作记忆的长度。核心问题包括：
 - 超长上下文处理，早期工作在长上下文场景中无法泛化。
 - 训练推理效率，当上下文突破几十万时，如何加速和减少显存。
