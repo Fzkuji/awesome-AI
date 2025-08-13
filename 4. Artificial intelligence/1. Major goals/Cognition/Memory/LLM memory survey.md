@@ -42,7 +42,7 @@ Meta写的感觉有点乱，还是自己eng整理一个出来。
 	- 2025年4月，中国科学院团队发表
 	- 参考人类的记忆形式，将记忆划分成Text-based、KV Cache-Based和Parameters-Based三个大类，逐渐接近记忆的本质。而在具体类别中，进一步阐述记忆的Acquisition、Management和Utilization。但是这篇论文的局限是，主要考虑的是基于Transformer架构的记忆，将其他模型架构划分为单独地一类Hidden-State-Based Memory。缺少对于现有技术更深刻的理解。
 - [Rethinking Memory in AI: Taxonomy, Operations, Topics, and Future Directions](https://arxiv.org/abs/2505.00675)
-	- 类似的，本文将记忆划分为参数化记忆和上下文记忆。他们重点探讨了六个基本记忆操作（Memory Operations），包括Consolidation
+	- 类似的，本文将记忆划分为参数化记忆和上下文记忆。他们重点探讨了六个基本记忆操作（Memory Operations），包括Consolidation（巩固）、Indexing（索引）、Updating（更新）、Forgetting（遗忘）、Retrieval（检索）和Compression（压缩）。最后总结了长期记忆、长上下文、参数修改和多源记忆四个核心研究主题。附录部分总结了众多相关数据集，很有价值。
 
 人类的记忆目前主流的分类如下：
 
