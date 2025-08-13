@@ -32,12 +32,14 @@ Meta写的感觉有点乱，还是自己eng整理一个出来。
 
 ## Memory Architecture
 
+### Human Memory
+
 人类的记忆目前主流的分类如下：
 
 ![](../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Cognition/Memory/LLM%20memory%20survey/IMG-20250529174334277.png)
 
 
-
+### Existing Classifications
 
 目前已经有很多大模型记忆的工作和总结，对于记忆的定义与分类也不尽相同。
 
@@ -50,13 +52,17 @@ Meta写的感觉有点乱，还是自己eng整理一个出来。
 	- 参考人类的记忆形式，将记忆划分成Text-based、KV Cache-Based和Parameters-Based三个大类，逐渐接近记忆的本质。而在具体类别中，进一步阐述记忆的Acquisition、Management和Utilization。但是这篇论文的局限是，主要考虑的是基于Transformer架构的记忆，将其他模型架构划分为单独地一类Hidden-State-Based Memory。缺少对于现有技术更深刻的理解。
 - [Rethinking Memory in AI: Taxonomy, Operations, Topics, and Future Directions](https://arxiv.org/abs/2505.00675)
 	- 类似的，本文将记忆划分为参数化记忆和上下文记忆。他们重点探讨了六个基本记忆操作（Memory Operations），包括Consolidation（巩固）、Indexing（索引）、Updating（更新）、Forgetting（遗忘）、Retrieval（检索）和Compression（压缩）。最后总结了长期记忆、长上下文、参数修改和多源记忆四个核心研究主题。附录部分总结了众多相关数据集，很有价值。
+- [Advances and Challenges in Foundation Agents: From Brain-Inspired Intelligence to Evolutionary, Collaborative, and Safe Systems](https://arxiv.org/abs/2504.01990)
+	- Meta的人工智能大综述
+	- 关于Memory部分，他们详细介绍了主流的人类记忆模型，然后同样根据模型对记忆的多种操作进行介绍。
 
 
 
+### Our Classification
 
+在现有记忆架构设计和分类工作中，大部分工作都基于一些特定的、明显的特征进行划分。比如，shi yon
 
-
-在这些分类工作中，大部分工作都基于大模型在应用中的位置进行划分。然而在本篇工作中，我们从最基本的架构角度来分析。
+大模型在Agent应用或者中的位置进行划分，或者。然而在本篇工作中，我们从最基本的架构角度来分析。
 
 为了更好地理解 LLM 的记忆机制，我们可以将这些类别与人类记忆系统进行类比。人类的记忆通常分为三类：长期记忆、工作记忆和外部知识，这与 LLM 的三类记忆形成有趣的对应关系。人类的：
 
