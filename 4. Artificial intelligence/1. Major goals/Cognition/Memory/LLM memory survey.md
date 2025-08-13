@@ -32,6 +32,13 @@ Meta写的感觉有点乱，还是自己eng整理一个出来。
 
 ## Memory Architecture
 
+人类的记忆目前主流的分类如下：
+
+![](../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Cognition/Memory/LLM%20memory%20survey/IMG-20250529174334277.png)
+
+
+
+
 目前已经有很多大模型记忆的工作和总结，对于记忆的定义与分类也不尽相同。
 
 - [A Survey on the Memory Mechanism of Large Language Model based Agents](https://dl.acm.org/doi/abs/10.1145/3748302)
@@ -44,9 +51,9 @@ Meta写的感觉有点乱，还是自己eng整理一个出来。
 - [Rethinking Memory in AI: Taxonomy, Operations, Topics, and Future Directions](https://arxiv.org/abs/2505.00675)
 	- 类似的，本文将记忆划分为参数化记忆和上下文记忆。他们重点探讨了六个基本记忆操作（Memory Operations），包括Consolidation（巩固）、Indexing（索引）、Updating（更新）、Forgetting（遗忘）、Retrieval（检索）和Compression（压缩）。最后总结了长期记忆、长上下文、参数修改和多源记忆四个核心研究主题。附录部分总结了众多相关数据集，很有价值。
 
-人类的记忆目前主流的分类如下：
 
-![](../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Cognition/Memory/LLM%20memory%20survey/IMG-20250529174334277.png)
+
+
 
 
 在这些分类工作中，大部分工作都基于大模型在应用中的位置进行划分。然而在本篇工作中，我们从最基本的架构角度来分析。
