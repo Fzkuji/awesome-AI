@@ -32,7 +32,9 @@ Meta写的感觉有点乱，还是自己eng整理一个出来。
 
 ## Memory Architecture
 
-目前已经有很多大模型记忆的
+目前已经有很多大模型记忆的工作和总结，对于记忆的定义与分类也不尽相同。
+
+From Human Memory to AI Memory: A Survey on Memory Mechanisms in the Era of LLMs
 
 2025年4月，中国科学院团队发表的Cognitive Memory in Large Language Models是提出将记忆明确划分为感知记忆、短期记忆和长期记忆三个层次。但是具体的含义有所不同。
 
