@@ -34,7 +34,11 @@ Meta写的感觉有点乱，还是自己eng整理一个出来。
 
 目前已经有很多大模型记忆的工作和总结，对于记忆的定义与分类也不尽相同。
 
-From Human Memory to AI Memory: A Survey on Memory Mechanisms in the Era of LLMs
+- [From Human Memory to AI Memory: A Survey on Memory Mechanisms in the Era of LLMs](https://arxiv.org/abs/2504.15965)
+	- 这篇论文提出了一个3D-8Q Memory Taxonomy，根据大模型记忆中明显的特征：记忆对象、记忆形式和记忆时间进行了划分，通过组合可以得到8个象限。
+- 
+
+
 
 2025年4月，中国科学院团队发表的Cognitive Memory in Large Language Models是提出将记忆明确划分为感知记忆、短期记忆和长期记忆三个层次。但是具体的含义有所不同。
 
@@ -42,6 +46,8 @@ From Human Memory to AI Memory: A Survey on Memory Mechanisms in the Era of LLMs
 
 ![](../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Cognition/Memory/LLM%20memory%20survey/IMG-20250529174334277.png)
 
+
+在这些分类工作中，大部分工作都基于大模型在应用中的位置进行划分。然而在本篇工作中，我们从最基本的架构角度来分析。
 
 为了更好地理解 LLM 的记忆机制，我们可以将这些类别与人类记忆系统进行类比。人类的记忆通常分为三类：长期记忆、工作记忆和外部知识，这与 LLM 的三类记忆形成有趣的对应关系。人类的：
 
