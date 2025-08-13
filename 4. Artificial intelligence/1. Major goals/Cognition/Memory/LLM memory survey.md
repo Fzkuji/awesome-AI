@@ -34,16 +34,15 @@ Meta写的感觉有点乱，还是自己eng整理一个出来。
 
 目前已经有很多大模型记忆的工作和总结，对于记忆的定义与分类也不尽相同。
 
-- 
-
+- [A Survey on the Memory Mechanism of Large Language Model based Agents](https://dl.acm.org/doi/abs/10.1145/3748302)
+	- 这篇应该是第一篇探讨大模型记忆的综述，但是整体focus在agent层面。
 - [From Human Memory to AI Memory: A Survey on Memory Mechanisms in the Era of LLMs](https://arxiv.org/abs/2504.15965)
 	- 这篇论文提出了一个3D-8Q Memory Taxonomy，根据大模型记忆中明显的特征：记忆对象、记忆形式和记忆时间进行了划分，通过组合可以得到8个象限。
 - [Cognitive Memory in Large Language Models](https://arxiv.org/abs/2504.02441)
 	- 2025年4月，中国科学院团队发表
 	- 参考人类的记忆形式，将记忆划分成Text-based、KV Cache-Based和Parameters-Based三个大类，逐渐接近记忆的本质。而在具体类别中，进一步阐述记忆的Acquisition、Management和Utilization。但是这篇论文的局限是，主要考虑的是基于Transformer架构的记忆，将其他模型架构划分为单独地一类Hidden-State-Based Memory。缺少对于现有技术更深刻的理解。
-
-
-是提出将记忆明确划分为感知记忆、短期记忆和长期记忆三个层次。但是具体的含义有所不同。
+- [Rethinking Memory in AI: Taxonomy, Operations, Topics, and Future Directions](https://arxiv.org/abs/2505.00675)
+	- 类似的，本文将记忆划分为参数化记忆和上下文记忆。他们重点探讨了六个基本记忆操作（Memory Operations），包括Consolidation
 
 人类的记忆目前主流的分类如下：
 
