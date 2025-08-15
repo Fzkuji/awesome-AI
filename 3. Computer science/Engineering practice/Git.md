@@ -31,7 +31,7 @@ git lfs pull
 设置全局镜像替换（对所有仓库生效）
 
 ```bash
-git config --global url."https://kkgithub.com".insteadOf "https://github.com/"
+git config --global url."https://kkgithub.com/".insteadOf "https://github.com/"
 ```
 
 
