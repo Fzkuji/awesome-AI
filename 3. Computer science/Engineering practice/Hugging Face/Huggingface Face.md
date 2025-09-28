@@ -1,3 +1,28 @@
+
+最新推荐还是用modelscope下载，再迁移到huggingface的路径下
+
+首先下载模型：
+
+```
+modelscope download --model deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
+```
+
+然后尝试从hf-mirror下载模型（网不好多半是缺损文件）：
+
+```
+huggingface-cli download --resume-download deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
+```
+
+于是有了两个路径，将modelscope下载的mv到：
+
+```
+mv /mnt/data/zichuanfu/.cache/modelscope/hub/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B ~/.cache/huggingface/hub/models--deepseek-ai--DeepSeek-R1-Distill-Qwen-7B/snapshots/916b56a44061fd5cd7d6a8fb632557ed4f724f60
+```
+
+#### hf-mirror
+
+最近hf-mirror越来越慢了
+
 国内镜像下载: https://blog.csdn.net/wandererXX/article/details/135371458
 
 永久配置: https://blog.csdn.net/qq_38238956/article/details/134673618
