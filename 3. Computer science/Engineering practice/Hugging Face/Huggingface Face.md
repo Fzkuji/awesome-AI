@@ -16,7 +16,9 @@ huggingface-cli download --resume-download deepseek-ai/DeepSeek-R1-Distill-Qwen-
 于是有了两个路径，将modelscope下载的mv到：
 
 ```
-mv /mnt/data/zichuanfu/.cache/modelscope/hub/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B ~/.cache/huggingface/hub/models--deepseek-ai--DeepSeek-R1-Distill-Qwen-7B/snapshots/916b56a44061fd5cd7d6a8fb632557ed4f724f60
+rsync -avh /mnt/data/zichuanfu/.cache/modelscope/hub/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B/ \
+   ~/.cache/huggingface/hub/models--deepseek-ai--DeepSeek-R1-Distill-Qwen-7B/snapshots/916b56a44061fd5cd7d6a8fb632557ed4f724f60/
+
 ```
 
 #### hf-mirror
