@@ -7,6 +7,12 @@
 modelscope download --model deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 ```
 
+或者是数据集：
+
+```
+modelscope download --dataset google-research-datasets/mbpp
+```
+
 然后尝试从hf-mirror下载模型（网不好多半是缺损文件）：
 
 ```
