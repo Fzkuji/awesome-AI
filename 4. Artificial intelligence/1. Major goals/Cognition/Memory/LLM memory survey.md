@@ -763,6 +763,40 @@ MoE 的核心设计包括：路由机制（选择策略 + 负载均衡）、专�
 
 ##### 预训练 (Pre-training)
 
+**从头预训练 (Pre-training from Scratch)**
+
+*数据策略：*
+
+数据混合 - 优化预训练数据的域混合比例，核心问题是如何确定最优混合比例。
+- [DoReMi](https://arxiv.org/abs/2305.10429) (NeurIPS 2024): 域重加权，分布鲁棒优化，2.6 倍加速。
+- [Data Mixing Laws](https://arxiv.org/abs/2403.16952) (2024): 数据混合律，标量函数预测性能，小规模拟合大规模泛化。
+- [RegMix](https://arxiv.org/abs/2407.01492) (ICLR 2025 Spotlight): 回归框架优化混合，仅需代理模型 10% 计算。
+- [Topic Over Source](https://arxiv.org/abs/2502.16802) (2025): 主题级混合优于源级混合，语义主题划分。
+- [Efficient Online Data Mixing](https://arxiv.org/abs/2312.02406) (2023): 多臂老虎机在线数据混合，19% 更少迭代达到目标困惑度。
+- [Chameleon](https://arxiv.org/abs/2505.24844) (ICML 2025): 核岭回归杠杆分数量化域重要性，1% 成本匹配 DoReMi。
+- [UtiliMax](https://arxiv.org/abs/2501.11747) (2025): LLM 估计数据效用，10 倍以上加速。
+
+课程学习 - 按难度顺序组织训练数据。
+- [Vocabulary Curriculum](https://arxiv.org/abs/2502.17910) (2025): 词表课程学习，熵引导词汇扩展，动态分词。
+- [Beyond Random Sampling](https://arxiv.org/abs/2506.11300) (2025): 首次系统性研究预训练课程学习，15 个难度指标。
+- [CAMPUS](https://arxiv.org/abs/2509.13790) (2024): 能力感知课程学习，动态调整难度指标适应模型能力演变。
+- [E2H Reasoner](https://arxiv.org/abs/2506.06632) (2025): 课程强化学习，简到难任务调度提升推理能力。
+
+合成数据 - 使用模型生成训练数据。
+- [Demystifying Synthetic Data](https://arxiv.org/abs/2510.01631) (2024): 大规模实证研究，混合合成数据 5-10 倍加速，但纯生成存在模型坍塌风险。
+- [Scaling Laws of Synthetic Data](https://arxiv.org/abs/2503.19551) (2025): SynthLLM 框架验证合成数据遵循校正缩放律。
+- [Deliberate Practice](https://arxiv.org/abs/2502.15588) (ICLR 2025): 受刻意练习启发，仅生成具有挑战性的样本改善缩放律。
+
+质量过滤 - 数据清洗、去重和质量评估。
+- [Ultra-FineWeb](https://arxiv.org/abs/2505.05427) (2025): 高效 fastText 分类器 + 验证策略，1 万亿高质量 tokens。
+- [QuaDMix](https://arxiv.org/abs/2504.16511) (2025): 质量-多样性统一优化框架，7.2% 平均性能提升。
+- [Oasis](https://arxiv.org/abs/2311.12537) (IJCAI 2024): 一站式数据策展平台，规则过滤 + 神经过滤 + 自适应去重。
+- [Deduplicating Training Data](https://arxiv.org/abs/2107.06499) (2021): 去重减少 10 倍背诵输出。
+
+*高效方法：*
+- [GaLore](https://arxiv.org/abs/2403.03507) (ICML 2024): 梯度低秩投影，37.92GB 内存节省，保持全参数学习。
+- [GaLore 2](https://arxiv.org/abs/2504.20437) (2025): 扩展到大规模预训练。
+
 **连续预训练 (Continual Pre-training)**
 
 在已有模型基础上继续预训练，避免从头重新训练。核心挑战是灾难性遗忘和分布转移。
@@ -774,55 +808,18 @@ MoE 的核心设计包括：路由机制（选择策略 + 负载均衡）、专�
 - [Learning Dynamics in CPT](https://arxiv.org/abs/2505.07796) (ICML 2025 Oral): 连续预训练缩放律，解耦分布偏移和学习率退火效应。
 
 *数据策略：*
+
+数据混合与回放 - 平衡新旧数据防止遗忘。
+- [D-CPT Law](https://arxiv.org/abs/2406.01375) (2024): 域特定连续预训练缩放律，预测最优通用-域数据混合比例。
 - [Efficient CPT by Mitigating Stability Gap](https://arxiv.org/abs/2406.14833) (2024): 发现并解决"稳定性缺口"，多轮低质量数据预训练减少 80% 计算成本。
 - [SuRe: Surprise-Driven Replay](https://arxiv.org/abs/2511.22367) (2025): 基于"惊讶度"优先级选择回放样本，双学习器 EMA-merged LoRA。
 - [Reuse, Don't Retrain](https://arxiv.org/abs/2407.07263) (NVIDIA, 2024): 双分布策略和优化学习率调度，15B 模型 9% 平均准确率提升。
 
 *领域适应：*
-- [D-CPT Law](https://arxiv.org/abs/2406.01375) (2024): 域特定连续预训练缩放律，预测最优通用-域数据混合比例。
 - [AdaptLLM](https://arxiv.org/abs/2309.09530) (ICLR 2024): 将语料转换为阅读理解格式，7B 模型性能接近 50B BloombergGPT。
 - [ChipNeMo](https://arxiv.org/abs/2311.00176) (2023): 芯片设计领域完整适应流程，70B 超越 GPT-4。
 - [PMC-LLaMA](https://arxiv.org/abs/2304.14454) (2023): 医学领域三阶段方法，13B 超越 ChatGPT。
 - [Code Llama](https://arxiv.org/abs/2308.12950) (2023): 500B 代码导向连续预训练。
-
-**数据混合优化 (Data Mixing)**
-
-优化预训练数据的域混合比例，提升训练效率。核心问题：如何确定最优混合比例。
-
-*静态优化：*
-- [DoReMi](https://arxiv.org/abs/2305.10429) (NeurIPS 2024): 域重加权，分布鲁棒优化，2.6 倍加速。
-- [Data Mixing Laws](https://arxiv.org/abs/2403.16952) (2024): 数据混合律，标量函数预测性能，小规模拟合大规模泛化。
-- [RegMix](https://arxiv.org/abs/2407.01492) (ICLR 2025 Spotlight): 回归框架优化混合，仅需代理模型 10% 计算。
-- [Topic Over Source](https://arxiv.org/abs/2502.16802) (2025): 主题级混合优于源级混合，语义主题划分。
-
-*动态优化：*
-- [Efficient Online Data Mixing](https://arxiv.org/abs/2312.02406) (2023): 多臂老虎机在线数据混合，19% 更少迭代达到目标困惑度。
-- [Chameleon](https://arxiv.org/abs/2505.24844) (ICML 2025): 核岭回归杠杆分数量化域重要性，1% 成本匹配 DoReMi。
-- [UtiliMax](https://arxiv.org/abs/2501.11747) (2025): LLM 估计数据效用，10 倍以上加速。
-
-*数据质量：*
-- [Ultra-FineWeb](https://arxiv.org/abs/2505.05427) (2025): 高效 fastText 分类器 + 验证策略，1 万亿高质量 tokens。
-- [QuaDMix](https://arxiv.org/abs/2504.16511) (2025): 质量-多样性统一优化框架，7.2% 平均性能提升。
-- [Oasis](https://arxiv.org/abs/2311.12537) (IJCAI 2024): 一站式数据策展平台，规则过滤 + 神经过滤 + 自适应去重。
-- [Deduplicating Training Data](https://arxiv.org/abs/2107.06499) (2021): 去重减少 10 倍背诵输出。
-
-**课程学习 (Curriculum Learning)**
-
-- [Vocabulary Curriculum](https://arxiv.org/abs/2502.17910) (2025): 词表课程学习，熵引导词汇扩展，动态分词。
-- [Beyond Random Sampling](https://arxiv.org/abs/2506.11300) (2025): 首次系统性研究预训练课程学习，15 个难度指标。
-- [CAMPUS](https://arxiv.org/abs/2509.13790) (2024): 能力感知课程学习，动态调整难度指标适应模型能力演变。
-- [E2H Reasoner](https://arxiv.org/abs/2506.06632) (2025): 课程强化学习，简到难任务调度提升推理能力。
-
-**合成数据 (Synthetic Data)**
-
-- [Demystifying Synthetic Data](https://arxiv.org/abs/2510.01631) (2024): 大规模实证研究，混合合成数据 5-10 倍加速，但纯生成存在模型坍塌风险。
-- [Scaling Laws of Synthetic Data](https://arxiv.org/abs/2503.19551) (2025): SynthLLM 框架验证合成数据遵循校正缩放律。
-- [Deliberate Practice](https://arxiv.org/abs/2502.15588) (ICLR 2025): 受刻意练习启发，仅生成具有挑战性的样本改善缩放律。
-
-**高效预训练**
-
-- [GaLore](https://arxiv.org/abs/2403.03507) (ICML 2024): 梯度低秩投影，37.92GB 内存节省，保持全参数学习。
-- [GaLore 2](https://arxiv.org/abs/2504.20437) (2025): 扩展到大规模预训练。
 
 ##### 微调 (Fine-tuning)
 
