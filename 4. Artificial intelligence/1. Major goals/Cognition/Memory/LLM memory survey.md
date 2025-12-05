@@ -767,7 +767,9 @@ MoE 的核心设计包括：路由机制（选择策略 + 负载均衡）、专�
 
 *数据策略：*
 
-数据混合 - 优化预训练数据的域混合比例，核心问题是如何确定最优混合比例。
+数据优化是预训练的核心研究方向，涵盖数据混合 (Data Mixing)、课程学习 (Curriculum Learning)、合成数据 (Synthetic Data) 等多个子领域。我们按照优化目标进行统一分类：
+
+域混合 - 优化不同来源/领域数据的比例。
 - [DoReMi](https://arxiv.org/abs/2305.10429) (NeurIPS 2024): 域重加权，分布鲁棒优化，2.6 倍加速。
 - [Data Mixing Laws](https://arxiv.org/abs/2403.16952) (2024): 数据混合律，标量函数预测性能，小规模拟合大规模泛化。
 - [RegMix](https://arxiv.org/abs/2407.01492) (ICLR 2025 Spotlight): 回归框架优化混合，仅需代理模型 10% 计算。
@@ -776,18 +778,18 @@ MoE 的核心设计包括：路由机制（选择策略 + 负载均衡）、专�
 - [Chameleon](https://arxiv.org/abs/2505.24844) (ICML 2025): 核岭回归杠杆分数量化域重要性，1% 成本匹配 DoReMi。
 - [UtiliMax](https://arxiv.org/abs/2501.11747) (2025): LLM 估计数据效用，10 倍以上加速。
 
-课程学习 - 按难度顺序组织训练数据。
+顺序调度 - 优化训练样本的顺序（课程学习）。
 - [Vocabulary Curriculum](https://arxiv.org/abs/2502.17910) (2025): 词表课程学习，熵引导词汇扩展，动态分词。
 - [Beyond Random Sampling](https://arxiv.org/abs/2506.11300) (2025): 首次系统性研究预训练课程学习，15 个难度指标。
 - [CAMPUS](https://arxiv.org/abs/2509.13790) (2024): 能力感知课程学习，动态调整难度指标适应模型能力演变。
 - [E2H Reasoner](https://arxiv.org/abs/2506.06632) (2025): 课程强化学习，简到难任务调度提升推理能力。
 
-合成数据 - 使用模型生成训练数据。
+数据生成 - 使用模型生成训练数据（合成数据）。
 - [Demystifying Synthetic Data](https://arxiv.org/abs/2510.01631) (2024): 大规模实证研究，混合合成数据 5-10 倍加速，但纯生成存在模型坍塌风险。
 - [Scaling Laws of Synthetic Data](https://arxiv.org/abs/2503.19551) (2025): SynthLLM 框架验证合成数据遵循校正缩放律。
 - [Deliberate Practice](https://arxiv.org/abs/2502.15588) (ICLR 2025): 受刻意练习启发，仅生成具有挑战性的样本改善缩放律。
 
-质量过滤 - 数据清洗、去重和质量评估。
+质量控制 - 数据清洗、去重和质量评估。
 - [Ultra-FineWeb](https://arxiv.org/abs/2505.05427) (2025): 高效 fastText 分类器 + 验证策略，1 万亿高质量 tokens。
 - [QuaDMix](https://arxiv.org/abs/2504.16511) (2025): 质量-多样性统一优化框架，7.2% 平均性能提升。
 - [Oasis](https://arxiv.org/abs/2311.12537) (IJCAI 2024): 一站式数据策展平台，规则过滤 + 神经过滤 + 自适应去重。
