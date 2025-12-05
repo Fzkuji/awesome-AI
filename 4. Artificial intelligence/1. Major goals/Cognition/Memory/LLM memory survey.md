@@ -763,7 +763,7 @@ MoE 的核心设计包括：路由机制（选择策略 + 负载均衡）、专�
 
 ##### 预训练 (Pre-training)
 
-**从头预训练 (Pre-training from Scratch)**
+###### 从头预训练 (Pre-training from Scratch)
 
 *数据策略：*
 
@@ -799,7 +799,7 @@ MoE 的核心设计包括：路由机制（选择策略 + 负载均衡）、专�
 - [GaLore](https://arxiv.org/abs/2403.03507) (ICML 2024): 梯度低秩投影，37.92GB 内存节省，保持全参数学习。
 - [GaLore 2](https://arxiv.org/abs/2504.20437) (2025): 扩展到大规模预训练。
 
-**连续预训练 (Continual Pre-training)**
+###### 连续预训练 (Continual Pre-training)
 
 在已有模型基础上继续预训练，避免从头重新训练。核心挑战是灾难性遗忘和分布转移。
 
