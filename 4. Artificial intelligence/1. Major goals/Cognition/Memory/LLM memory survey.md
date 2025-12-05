@@ -32,34 +32,293 @@ Meta写的感觉有点乱，还是自己eng整理一个出来。
 
 ## Memory Architecture
 
+As large language models (LLMs) evolve from static text generators to dynamic interactive agents, the ability to incorporate memory has become central to their performance and adaptability. Memory architectures govern how information is represented, stored, retrieved, and updated over time. They form the foundation upon which models maintain coherence, consistency, and long-term personalization.
+
+This section first draws inspiration from human cognitive memory systems to motivate the layered structure of memory in LLMs. We then survey how existing literature categorizes memory architectures and conclude by presenting a principled, design-oriented classification framework.
+
 ### Human Memory
 
-人类的记忆目前主流的分类中，通常分为三类：长期记忆、工作记忆和外部知识
+Human memory is typically decomposed into three major types: **sensory memory**, **working memory**, and **long-term memory**. This cognitive framework serves as an intuitive lens for reasoning about memory in LLMs:
+
+- **Sensory Memory** is a brief buffer for raw perceptual input. It corresponds in LLMs to raw modality-specific inputs or externally retrieved documents—often unprocessed but critical for immediate attention (e.g., retrieval-augmented generation).
+- **Working Memory** is an active, limited-capacity system for holding and manipulating information in real time. This aligns with KV caches, context windows, or streaming state representations within Transformer or SSM architectures.
+- **Long-Term Memory** stores knowledge, experiences, and procedural skills across time. In LLMs, this is primarily embodied in learned parameters, fine-tuned adapters, or modular experts.
+
+The cognitive model also distinguishes between **explicit memory** (semantic and episodic knowledge accessible by conscious recall) and **implicit memory** (procedural skills and priming), which map respectively to textual/document memory and encoded model capabilities.
+
+This analogy highlights the multi-scale and multi-format nature of memory. A single architectural layer rarely suffices; instead, memory systems must span immediate context, learned priors, and modifiable external stores.
+
 
 ![](../../../../Attachments/4.%20Artificial%20intelligence/1.%20Major%20goals/Cognition/Memory/LLM%20memory%20survey/IMG-20250529174334277.png)
 
 
 ### Existing Classifications
 
+
+
+%%
 目前已经有很多大模型记忆的工作和总结，对于记忆的定义与分类也不尽相同。
 
 - [A Survey on the Memory Mechanism of Large Language Model based Agents](https://dl.acm.org/doi/abs/10.1145/3748302)
 	- 这篇应该是第一篇探讨大模型记忆的综述，但是整体focus在agent层面。
+	- Scope: Memory of LLM-based Agent
+	- Architecture: 
+		- Memory Sources
+			- Inside-trial Information (单会话信息)
+			- Cross-trial Information (多会话信息)
+			- External Knowledge
+		- Memory Forms
+			- Memory in Textual Form
+			- Memory in Parametric Form
+		- Memory Operations
+			- Memory Writing
+			- Memory Management
+			- Memory Reading
+	- Publication: Published – _ACM Transactions on Information Systems_, Vol 43 (6), Jul 2025
 - [From Human Memory to AI Memory: A Survey on Memory Mechanisms in the Era of LLMs](https://arxiv.org/abs/2504.15965)
 	- 这篇论文提出了一个3D-8Q Memory Taxonomy，根据大模型记忆中明显的特征：记忆对象、记忆形式和记忆时间进行了划分，通过组合可以得到8个象限。
+	- Scope: Memory of LLM-Driven AI Systems
+	- Architecture: 
+		- Memory Dimensions (3D Framework)
+			- Object: Personal Memory vs System Memory
+			- Form: Parametric vs Non-Parametric
+			- Time: Short-Term vs Long-Term
+		- Eight Quadrants (8Q Taxonomy)
+			- Personal × Non-Parametric × Short-Term → Working Memory
+			- Personal × Non-Parametric × Long-Term → Episodic Memory
+			- Personal × Parametric × Short-Term → Working Memory (Cache)
+			- Personal × Parametric × Long-Term → Semantic Memory (Personalized LLMs)
+			- System × Non-Parametric × Short-Term → Reasoning Memory (CoT / ReAct)
+			- System × Non-Parametric × Long-Term → Procedural Memory (Reflection / Skill Learning)
+			- System × Parametric × Short-Term → Parametric Cache (KV / Attention Optimization)
+			- System × Parametric × Long-Term → Knowledge & Skill Base (Model Parameters)
+	- Publication: Preprint – arXiv:2504.15965 (v2, Apr 2025)
 - [Cognitive Memory in Large Language Models](https://arxiv.org/abs/2504.02441)
 	- 2025年4月，中国科学院团队发表
 	- 参考人类的记忆形式，将记忆划分成Text-based、KV Cache-Based和Parameters-Based三个大类，逐渐接近记忆的本质。而在具体类别中，进一步阐述记忆的Acquisition、Management和Utilization。但是这篇论文的局限是，主要考虑的是基于Transformer架构的记忆，将其他模型架构划分为单独地一类Hidden-State-Based Memory。缺少对于现有技术更深刻的理解。
+	- Scope: Memory Mechanisms in LLMs
+	- Architecture: 
+		- Text-based Memory
+		- KV Cache-based Memory
+		- Parameters-based Memory
+		- Hidden-State-based Memory
+	- Publication: Preprint – arXiv:2504.02441 (v2, Apr 2025)
 - [Rethinking Memory in AI: Taxonomy, Operations, Topics, and Future Directions](https://arxiv.org/abs/2505.00675)
 	- 类似的，本文将记忆划分为参数化记忆和上下文记忆。他们重点探讨了六个基本记忆操作（Memory Operations），包括Consolidation（巩固）、Indexing（索引）、Updating（更新）、Forgetting（遗忘）、Retrieval（检索）和Compression（压缩）。最后总结了长期记忆、长上下文、参数修改和多源记忆四个核心研究主题。附录部分总结了众多相关数据集，很有价值。
+	- Scope: Memory in AI Systems (LLMs, Agents, and Multi-Modal Reasoning)
+	- Architecture:
+		- Memory Representation
+			- Parametric Memory – knowledge implicitly encoded in model parameters
+			- Contextual Memory
+				- Structured
+				- Unstructured
+		- Memory Operations (Six Atomic Operations)
+			- Consolidation – integrating short-term experiences into long-term memory
+			- Indexing – constructing access structures and retrieval signals
+			- Updating – dynamically modifying or integrating new information
+			- Forgetting – selectively removing outdated or harmful content
+			- Retrieval – accessing relevant memory for reasoning and generation
+			- Compression – reducing memory footprint while preserving key information
+		- Research Topics (4 Core Areas)
+			- Long-Term Memory – multi-session dialogue and personalized memory management
+			- Long-Context Memory – efficient handling of extended sequences
+			- Parametric Memory Modification – editing, unlearning, and continual learning of internal knowledge
+			- Multi-Source Memory – integrating heterogeneous and multimodal knowledge sources
+	- Publication: Preprint – arXiv:2505.00675 (v2, May 2025)
 - [Advances and Challenges in Foundation Agents: From Brain-Inspired Intelligence to Evolutionary, Collaborative, and Safe Systems](https://arxiv.org/abs/2504.01990)
 	- Meta的人工智能大综述
 	- 关于Memory部分，他们详细介绍了主流的人类记忆模型，然后同样根据模型对记忆的多种操作进行介绍。
+	- Scope: Memory Mechanisms in LLMs
+	- Architecture:
+		- Human Memory Foundations
+			- Sensory Memory → Short-term / Working Memory → Long-term Memory
+			- Declarative (Semantic, Episodic, Autobiographical) vs Non-declarative (Procedural, Priming, Conditioning)
+			- Classical Cognitive Models:
+				- Multi-Store (Atkinson–Shiffrin)
+				- Working Memory Model (Baddeley & Hitch)
+				- SPI Model (Tulving)
+				- Global Workspace Theory / IDA–LIDA
+				- ACT-R Cognitive Architecture
+		- Agentic Memory (LLM-based Agents)
+			- Hierarchical Architecture
+				- Sensory Memory – perception and multimodal encoding
+				- Short-term Memory – contextual and working memory for active reasoning
+				- Long-term Memory – semantic, episodic, procedural, and priming components
+			- Memory Lifecycle (Unified Computational View)
+				1. Acquisition – filtering and compression of sensory input
+				2. Encoding – attention-based and multimodal representation learning
+				3. Derivation – reflection, summarization, distillation, selective forgetting
+				4. Retrieval & Matching – context-aware semantic search and hybrid indexing
+				5. Neural Memory Networks – implicit parametric storage within model weights
+				6. Utilization – integration with reasoning, planning, and hallucination mitigation
+	- Publication: Preprint – arXiv:2504.01990 (v1, Apr 2025)
+- [Memory Meets (Multi-Modal) Large Language Models: A Comprehensive Survey](https://openreview.net/forum?id=Sk7pwmLuAY)
+	- Scope: Memory Mechanisms in Multi-Modal LLMs (MLLMs)
+	- Architecture:
+		- Three Memory Paradigms
+			- Implicit Memory – knowledge embedded in internal parameters of transformers; includes memorization, associative retrieval, and contextual reasoning; explored through model interpretability, reconfiguration, and internal editing
+			- Explicit Memory – external storage and retrieval modules augmenting model outputs via textual, vector, and graph-based knowledge representations; supports dynamic updates and scalable access to knowledge
+			- Agentic Memory – persistent, temporally extended structures for autonomous agents, enabling long-term planning, self-consistency, and multi-agent collaboration
+		- Multi-Modal Integration
+			- Extension of memory mechanisms to vision, audio, and action modalities
+			- Focus on cross-modal coherence and temporal alignment
+		- Research Topics and Challenges
+			- Memory capacity and scalability
+			- Factual consistency and alignment
+			- Interoperability across heterogeneous systems
+			- Evaluation and benchmark limitations
+	- Publication: Accepted – TMLR, Paper 5081, Oct 2025
+- [Towards Lifelong Learning of Large Language Models: A Survey](https://arxiv.org/abs/2406.06391)
+	- 关注大语言模型的终身学习能力，使模型能够在运行周期中持续学习和适应，整合新知识的同时保留之前学到的信息，防止灾难性遗忘。
+	- Scope: Lifelong / Continual Learning in LLMs
+	- Architecture:
+		- Knowledge Categories
+			- Internal Knowledge
+				- Continual Pretraining – domain-specific, temporal, multilingual
+				- Continual Finetuning – task-specific adaptation (classification, NER, translation, etc.)
+			- External Knowledge
+				- Retrieval-based methods (RAG)
+				- Tool-based learning (APIs, calculators)
+		- Core Techniques
+			- Replay-based methods – episodic memory and pseudo-rehearsal
+			- Regularization – EWC, knowledge distillation
+			- Architecture-based – adapters, LoRA, modular experts
+			- Parameter-efficient methods – partial tuning to reduce forgetting
+		- Emerging Techniques
+			- Model expansion – adding capacity for new domains
+			- Data selection – curriculum and active learning
+	- Key Challenges: catastrophic forgetting, stability–plasticity trade-off, computational cost, limited data/model access
+	- Publication: Published – ACM Computing Surveys, Vol 57 (8), Mar 2025
+- [Continual Learning with Pre-Trained Models: A Survey](https://arxiv.org/abs/2401.16386)
+	- 关注如何利用预训练模型的强大表征能力进行持续学习，克服灾难性遗忘。与从头训练不同，本文探讨如何在预训练模型基础上进行增量学习。
+	- Scope: Continual Learning leveraging Pre-Trained Models (PTMs)
+	- Architecture:
+		- Retention Strategies
+			- Replay-based – storing exemplars or pseudo-samples
+			- Regularization-based – constraining weight updates (EWC, distillation)
+			- Modularization – task-specific modules (adapters, experts)
+		- PTM-specific Considerations
+			- Leveraging pre-trained representations
+			- Freezing vs. fine-tuning strategies
+			- Task-incremental vs. class-incremental scenarios
+	- Key Focus: Comparative analysis of methodologies; empirical fairness in evaluations
+	- Limitation: Less emphasis on LLM-specific mechanisms (more general PTM focus)
+	- Publication: Published – IJCAI 2024 (Survey Track), Aug 2024
+- [Digital Forgetting in LLMs: A Survey of Unlearning Methods](https://arxiv.org/abs/2404.02062)
+	- 聚焦于机器反学习（unlearning），即如何让模型"忘记"不需要的知识或行为，包括敏感信息、版权内容、偏见和有害内容。
+	- Scope: Machine Unlearning in LLMs (Digital Forgetting)
+	- Architecture:
+		- Unlearning Granularity
+			- Sample-level – forgetting specific training examples
+			- Concept-level – removing entire concepts or knowledge
+			- Parameter-level – targeted weight modifications
+		- Unlearning Methods (Taxonomy of 22 methods analyzed)
+			- Exact unlearning – retraining from scratch without target data
+			- Approximate unlearning – efficient methods approximating exact unlearning
+				- Gradient-based – reverse gradient updates
+				- Model editing – ROME, MEMIT-style localized edits
+				- Fine-tuning-based – targeted forgetting via continued training
+		- Evaluation Framework
+			- Forgetting quality – successful removal of target knowledge
+			- Retention quality – preservation of non-target knowledge
+			- 28 datasets for unlearning evaluation; 31 for retention evaluation
+	- Motivations: privacy protection, copyright compliance, bias elimination, harmful content prevention
+	- Key Challenges: Does not extensively cover knowledge retention or hybrid memory integration
+	- Publication: Published – Artificial Intelligence Review (Springer), Jan 2025
+- [Beyond the Limits: A Survey of Techniques to Extend the Context Length in Large Language Models](https://arxiv.org/abs/2402.02244)
+	- 探讨扩展Transformer模型上下文长度的各种技术，在不成比例增加计算需求的情况下处理更长序列。
+	- Scope: Long-Context Extensions in Transformers
+	- Architecture: (Taxonomy of 5 categories)
+		- Length Extrapolation
+			- Positional encoding techniques – RoPE, ALiBi, NTK-aware interpolation
+			- Training strategies – extended context fine-tuning
+		- Attention Approximation
+			- Sparse attention – Longformer, BigBird, sliding window
+			- Linear attention approximations
+		- Attention-Free Transformers
+			- State space models (SSMs) – S4, Mamba
+			- Recurrent alternatives – RWKV
+		- Model Compression
+			- KV cache compression – quantization, pruning
+			- Efficient inference techniques
+		- Hardware-Aware Transformers
+			- Flash Attention and GPU-optimized implementations
+	- Key Focus: Architectural and encoding techniques for working memory scalability
+	- Limitation: Treats memory implicitly as extended context; less focus on parametric or external memory
+	- Publication: Published – IJCAI 2024 (Survey Track), Aug 2024
+%%
+
+Recent surveys have attempted to organize the rapidly growing landscape of memory mechanisms in large language models (LLMs), but they differ considerably in focus and depth. As shown in Table 1, these studies can be grouped into three core perspectives, with several domain-specific branches extending the coverage.
+
+#### Table 1: Comprehensive Summary of LLM Memory Surveys
+
+**Core Memory Surveys:**
+
+| Survey | Date | Venue | Scope / Focus | Key Taxonomy | Remarks |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **[A Survey on the Memory Mechanism of Large Language Model based Agents](https://dl.acm.org/doi/abs/10.1145/3748302)** | 2025-07 | TOIS | Agent memory mechanisms | Memory Sources (Inside/Cross-trial, External) + Forms (Textual, Parametric) + Operations (Writing, Management, Reading) | First comprehensive agent-focused memory survey |
+| **[From Human Memory to AI Memory: A Survey on Memory Mechanisms in the Era of LLMs](https://arxiv.org/abs/2504.15965)** | 2025-04 | arXiv | LLM-driven AI systems | 3D-8Q Taxonomy: Object × Form × Time (8 quadrants) | Novel dimensional framework |
+| **[Cognitive Memory in Large Language Models](https://arxiv.org/abs/2504.02441)** | 2025-04 | arXiv | Memory mechanisms in LLMs | Text-based, KV Cache-based, Parameters-based, Hidden-State-based | Focus on Transformer-centric memory |
+| **[Rethinking Memory in AI: Taxonomy, Operations, Topics, and Future Directions](https://arxiv.org/abs/2505.00675)** | 2025-05 | arXiv | LLMs, Agents, Multi-Modal | Six Atomic Operations + Four Research Topics | Operations-focused; valuable dataset appendix |
+| **[Advances and Challenges in Foundation Agents: From Brain-Inspired Intelligence to Evolutionary, Collaborative, and Safe Systems](https://arxiv.org/abs/2504.01990)** | 2025-04 | arXiv | Foundation agents | Human Memory Models + Agentic Memory Lifecycle | Meta's comprehensive agent survey |
+| **[Memory Meets (Multi-Modal) Large Language Models: A Comprehensive Survey](https://openreview.net/forum?id=Sk7pwmLuAY)** | 2025-10 | TMLR | Multi-modal LLMs | Implicit, Explicit, Agentic Memory Paradigms | Cross-modal memory integration |
+
+%%
+**Domain-Specific Surveys** _(indirectly related to memory mechanisms)_:
+
+| Survey | Date | Venue | Scope / Focus | Key Taxonomy | Remarks |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **[Towards Lifelong Learning of Large Language Models: A Survey](https://arxiv.org/abs/2406.06391)** | 2025-03 | ACM Comp. Surv. | Lifelong learning | 12 Scenarios (Internal/External Knowledge) | Catastrophic forgetting; emerging techniques |
+| **[Continual Learning with Pre-Trained Models: A Survey](https://arxiv.org/abs/2401.16386)** | 2024-08 | IJCAI 2024 | Continual learning with PTMs | Retention Strategies (Replay, Regularization, Modularization) | Less LLM-specific; fairness in evaluation |
+| **[Digital Forgetting in Large Language Models: A Survey of Unlearning Methods](https://arxiv.org/abs/2404.02062)** | 2025-01 | AI Review | Machine unlearning | Unlearning Granularity (Sample/Concept/Parameter) + 22 Methods | Privacy, copyright, bias, harmful content |
+| **[Beyond the Limits: A Survey of Techniques to Extend the Context Length in Large Language Models](https://arxiv.org/abs/2402.02244)** | 2024-08 | IJCAI 2024 | Long-context extensions | 5 Categories (Extrapolation, Approximation, Attention-Free, Compression, Hardware) | Working memory scalability |
+%%
+
+### Classification of Existing Surveys
+
+Based on the six core memory surveys, we identify three distinct perspectives:
+
+#### 1. **Cognitive Analogy Perspective**
+
+This perspective draws explicit parallels between human cognitive systems and AI architectures, using cognitive concepts (e.g., sensory/working/long-term memory, consolidation, forgetting) as organizing principles.
+
+- **From Human Memory to AI Memory** ([Wu et al., 2025](https://arxiv.org/abs/2504.15965)) proposes a **3D-8Q taxonomy**: Object (Personal vs System) × Form (Parametric vs Non-Parametric) × Time (Short-Term vs Long-Term).
+
+- **Advances in Foundation Agents** ([Liu et al., 2025](https://arxiv.org/abs/2504.01990)) maps **classical cognitive models** (Multi-Store, Working Memory Model, SPI, Global Workspace Theory, ACT-R) to LLM memory lifecycle: Acquisition → Encoding → Derivation → Retrieval → Utilization.
+
+- **Rethinking Memory in AI** ([Du et al., 2025](https://arxiv.org/abs/2505.00675)) identifies **six atomic operations** (Consolidation, Indexing, Updating, Forgetting, Retrieval, Compression) and maps them to **four research topics**: Long-Term Memory, Long-Context Memory, Parametric Memory Modification, and Multi-Source Memory.
+
+#### 2. **Architecture Perspective**
+
+This perspective focuses on the architectural design and implementation mechanisms of memory systems.
+
+- **Cognitive Memory in LLMs** ([Shan et al., 2025](https://arxiv.org/abs/2504.02441)) enumerates **four memory substrates**: Text-based, KV Cache-based, Parameters-based, and Hidden-State-based, analyzing acquisition, management, and utilization for each. However, this classification lacks a unified organizing principle—it simply lists where memory can reside without explaining *why* these categories emerge or *how* they relate to each other.
+
+#### 3. **Application Perspective**
+
+This perspective emphasizes memory integration within specific application contexts.
+
+- **Agent Memory Survey** ([Zhang et al., 2024](https://dl.acm.org/doi/abs/10.1145/3748302)) organizes by **Memory Sources** (Inside-trial, Cross-trial, External), **Forms** (Textual, Parametric), and **Operations** (Writing, Management, Reading), focusing on agent workflows.
+
+- **Memory Meets Multi-Modal LLMs** ([TMLR, 2025](https://openreview.net/forum?id=Sk7pwmLuAY)) proposes **three paradigms**: Implicit Memory (parameters), Explicit Memory (external storage), and Agentic Memory (persistent structures), addressing cross-modal coherence.
+
+### Summary and Gaps
+
+These surveys reflect a growing consensus that LLM memory spans multiple substrates: external retrieval, working states, and parametric knowledge. However, three limitations consistently emerge:
+
+- **Lack of architectural grounding:** Most frameworks describe _what_ kinds of memory exist but not _how_ they are structurally realized (e.g., boundaries between cache, state, and parameters).
+- **Inconsistent granularity:** Surveys mix cognitive and engineering concepts at different abstraction levels, making quantitative comparison difficult.
+- **Weak integration:** Few surveys discuss how different memory types cooperate or exchange information across timescales.
+
+The **Architecture Perspective** serves as a natural bridge between cognitive analogy and application scenarios—it connects *what* memory does (cognitive functions) with *how* memory is implemented (system design) to serve *where* memory is used (applications). However, this perspective remains underexplored: existing work has identified memory substrates but has not yet established a unified framework for understanding design trade-offs and architectural evolution.
+
+This gap motivates our work to develop a principled **architecture-oriented classification** that systematically organizes memory mechanisms along two key dimensions: temporal hierarchy and update mechanism.
 
 
 
 ### Our Classification
 
+%%
 现有LLM记忆研究多从**应用视角**（Agent任务、操作类型）或**认知类比**（模仿人类记忆）出发，缺乏对**架构设计原理**的深入分析。本文提出**设计导向的记忆框架**，聚焦三个核心设计决策：**信息编码粒度**（原始vs压缩）、**状态管理策略**（全保存vs选择更新）、**知识存储机制**（外部vs参数化）。这种从第一性原理出发的分类，不仅揭示了记忆的计算本质，更为架构选择和工程优化提供了系统性指导。
 
 为了更好地理解 LLM 的记忆机制，我们首先将这些类别与人类记忆系统进行类比映射。我们依据信息压缩处理的程度，同样将记忆分成三类：
@@ -73,10 +332,34 @@ Meta写的感觉有点乱，还是自己eng整理一个出来。
 细节上，首先，我们认为显式记忆（Explicit Memory）是存在于所有类型的记忆中的。只不过，对于未经处理的感觉记忆，更多等于对环境中关键信息的存储。而后两者经过了压缩和抽象。显式记忆中，情节记忆保留了对过去发生、观察到的事物进行保存，这种信息无论是明文存储、缓存到cache还是隐含在参数中，都是可以直接理解的。而语义信息则需要通过理解获得，比如数学定理或者大象是什么，不再存在于Sensory Memory。而最后的隐式记忆，作为模型学习到的能力，只存在于Long-term Memory中。
 
 记忆需要有更新，通常我们会细分出学习、遗忘、索引、压缩等操作，但这些一般都隐含在我们的算法中（如注意力机制等等），因此我们主要考虑更新方式。而对于模型来说，最常用的参数更新方式就是Structural和Iterative两种，前者直接在结构上拼接和Crop记忆，后者对现有的内容进行迭代。
+%%
 
+To unify the diverse approaches above, we propose a **design-oriented classification** grounded in architectural principles rather than application type or cognitive analogy alone. This framework focuses on three interrelated axes:
 
+1. **Granularity of Representation**  
+    The abstraction level of memory content:
+    - _Raw_: uncompressed inputs or document fragments
+    - _Structured_: summarized utterances, dialogue snippets, modular plans
+    - _Abstracted_: learned concepts, skills, schemas
+2. **State Management Strategy**  
+    The mechanism for updating memory over time:
+    - _Structure-wise update_: appending, cropping, rewriting cached states (e.g., in Transformer-based memory)
+    - _State-wise update_: recurrent or streaming state updates (e.g., SSM, RNN-like dynamics)
+    - _Hybrid update_: combining windowed attention with learned memory slots or state space operations
+3. **Storage Mechanism**  
+    The physical or logical location of memory:
+    - _External_: document stores, vector databases, symbolic logs
+    - _Working memory_: cache, token streams, intermediate attention states
+    - _Parametric memory_: model weights, adapter modules, dynamic experts
 
+This taxonomy enables precise mapping between memory **function**, **placement**, and **update protocol**. It also allows researchers and system designers to:
+- Analyze architectural trade-offs (e.g., compute vs. retention vs. plasticity)
+- Design composable memory interfaces (e.g., routing, prioritization, summarization)
+- Benchmark systems with consistent scope and assumptions
 
+We adopt this classification throughout the rest of the survey to systematically compare memory-enhanced models across tasks such as long-context processing, tool usage, personalization, and lifelong learning.
+
+值得注意的是，与 Sensory Memory 的多种 RAG 检索方式不同，Working Memory 和 Long-term Memory 的**形式相对固定**（分别对应隐状态和模型参数），因此推理时的调用方式也基本一致，不存在感觉记忆部分那样多样化的检索策略。因此，后两部分的研究重点主要是**记忆更新**：新记忆的存储、已有记忆的保留与选择性遗忘。
 
 ## Sensory Memory
 
@@ -92,10 +375,16 @@ Meta写的感觉有点乱，还是自己eng整理一个出来。
 
 暂时还需要对这部分进行总结，主要关注那些将RAG作为记忆的工作，而不是包含所有的检索方法。
 
+#### 基础 RAG (Foundational RAG)
+
+- 2020.05 [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) **Classic**. RAG的奠基之作。提出了非参数化记忆（外部知识库）与参数化记忆（模型权重）相结合的方法。
+- 2023.04 [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/abs/2304.03442) **Classic**. 斯坦福虚拟小镇。构建了完整的记忆流（Memory Stream），包含记忆检索、反思（Reflection）和规划（Planning）。
+
 #### 反思
 
 - 2023.11 [Think-in-Memory: Recalling and Post-thinking Enable LLMs with Long-Term Memory](https://arxiv.org/abs/2311.08719)这个是较早期的工作，通过索引相关的内容，然后让模型对历史信息进行**反思**，达到等价的记忆效果。
 
+- 2025.10 不需要RL训练的递归思考 https://arxiv.org/pdf/2510.04871 Hierarchical Reasoning Model
 
 #### 向量数据库
 
@@ -162,7 +451,7 @@ RAG 方法通过外部笔记的形式弥补了 LLM 在固定上下文窗口中�
 
 而如果工作记忆不进行迭代，则会退化为简单的短期记忆。
 
-#### Structural Update
+#### Structure Update
 
 Transformer的工作记忆理论上可以包含所有输入信息，其本质是不断将新的短期记忆和旧的记忆进行concat操作：
 <div align="center">
@@ -213,47 +502,50 @@ Transformer的工作记忆理论上可以包含所有输入信息，其本质是
 	- Longformer[^4]首次提出了稀疏注意力，让模型在计算注意力时，只关注部分关键位置的token，极大减少了模型训练和推理的开销。
 		- 值得注意的是，在使用滑动窗口推理时，存在Attention Sink问题[^10]，因此需要保留最前面的几个tokens。不过和本篇的相关性不大，因此不做详细拓展。
 	- LongNet[^7]沿着Longformer的思路进行了一些改进，本质上用了三种注意力掩码的组合，来保证计算量呈线性。
-	- [Native Sparse Attention: Hardware-Aligned and Natively Trainable Sparse Attention](https://arxiv.org/abs/2502.11089)即NSA，将cache索引的思路引入模型架构中。同时使用了Selected Attention Mask和Sliding Attention Mask来补充模型性能。
-	- [MoBA: Mixture of Block Attention for Long-Context LLMs](https://arxiv.org/abs/2502.13189)和NSA思路类似，同样是将文本分chunk进行检索，但是进行了简化。（具体怎么简化的我还没看，之后整理）
+	- **[NSA: Native Sparse Attention](https://arxiv.org/abs/2502.11089) (DeepSeek, 2025.02, ACL 2025 Best Paper)**：硬件对齐的可训练稀疏注意力。三分支并行设计：compressed attention处理粗粒度模式，selected attention选择重要token块，sliding attention处理局部上下文。Lightning indexer快速定位相关片段，显著降低计算成本同时保持性能。
+	- **[MoBA: Mixture of Block Attention](https://arxiv.org/abs/2502.13189) (Moonshot AI, 2025.02, ICLR 2025)**：将MoE思想应用于注意力机制，块级稀疏注意力+路由机制。与NSA独立提出类似思路，通过可学习路由选择相关块进行注意力计算。
+	- **[CCA: Core Context Aware Attention](https://arxiv.org/abs/2412.12465) (2025.08)**：即插即用的高效长上下文模块。globality-aware pooling将token组压缩为core tokens，locality-preserving module保持细节表示。可直接替换现有LLM的self-attention，最小微调成本。
 - Cache压缩
 	- Compressive Transformer[^3]设计了一种压缩旧token并保存的方法，实现了真正意义上的记忆，旧tokens进行了压缩（max/mean pooling、1D convolution、dilated convolutions和most-used），同时为了验证压缩效果，他们尝试使用压缩后的记忆重建压缩前的内容。
 	- Linformer本质是将kv cache进行整体压缩，类似于pooling，最后得到一个整体的向量嵌入与新的token进行计算。
+	- **[KeepKV](https://arxiv.org/abs/2504.09936) (2025.04)**：自适应KV cache合并方法，实现单步无损压缩，提供多步压缩误差边界。在仅10% KV cache budget下仍保持生成质量，2x+ throughput提升。
+	- **[SentenceKV](https://github.com/zzbright1998/SentenceKV) (COLM 2025)**：句子级语义KV cache压缩。不同于token级压缩，利用语言自然结构按语义相似性聚类句子，保留重要上下文信息的同时实现高效压缩。
 
 
 
 
 
-#### Iterative Update
+#### State Update
 
-<p>
-  基于循环架构的神经网络通常维护一个固定大小的隐层状态：<br>
-  <b>S<sub>t</sub> = f(S<sub>t−1</sub>, x<sub>t</sub>)</b>
-</p>
+基于循环架构的神经网络通常维护一个固定大小的隐层状态：
 
-<p>
-  通常在大语言模型中，状态的更新同样与 <b>k</b> 和 <b>v</b> 有关：<br>
-  <b>S<sub>t</sub> = f(S<sub>t−1</sub>, g(k<sub>t</sub>, v<sub>t</sub>))</b>
-</p>
+$$S_t = f(S_{t-1}, x_t)$$
+
+通常在大语言模型中，状态的更新同样与 **k** 和 **v** 有关：
+
+$$S_t = f(S_{t-1}, g(k_t, v_t))$$
 
 
 相关工作包括：
-- 基于Transformer
-	- [Memformer: A Memory-Augmented Transformer for Sequence Modeling](https://aclanthology.org/2022.findings-aacl.29/)最初的encoder-decoder Transformer架构，在encoder位置添加了循环更新的Memory
-	- RMT虽然仍然是Transformer架构，但利用模型的输入和输出作为临时记忆，相当于维护了一个会话级别的states。
-	- AutoCompressors基于RMT改进而来，将过去的文本进行分段处理，生成多份“总结”。相比较RMT更为灵活。
+- 基于Recurrent Architecture（非Transformer）
+	- **[Hierarchical Reasoning Model (HRM)](https://arxiv.org/abs/2506.21734) (2025.06)**：27M参数的dual-module recurrent architecture，包含high-level module（slow abstract planning）和low-level module（rapid detailed computations）。纯recurrent设计without attention mechanism。在Sudoku和ARC benchmark上表现出色，仅用1000 training samples即可达到近乎完美性能。
+	- **[Tiny Recursive Model (TRM): Less is More](https://arxiv.org/abs/2510.04871) (2025.10)**：仅7M参数、2层的simplified recursive reasoning model。纯recurrent架构，通过parameter sharing和latent "think"-"act" alternation在ARC-AGI-1达到45%准确率，超越大多数LLMs（DeepSeek R1, o3-mini, Gemini 2.5 Pro）且参数量不到0.01%。
 - 基于Linear Attention
-	- DeltaNet
-	- RetNet
-	- GLA
-	- GSA
-	- Gated DeltaNet
-	- RWKV-6
+	- **[RWKV-7 "Goose"](https://arxiv.org/abs/2503.14456) (2025.03)**：最强纯RNN架构，**meta-in-context learner**——每个token都进行test-time state training（通过in-context gradient descent）。新提出vector-valued gating和relaxed value replacement rule。2.9B参数达3B多语言SOTA，理论上可识别所有正则语言（超越Transformer能力）。Apache 2.0开源，Linux Foundation项目。
+	- **[Gated DeltaNet](https://arxiv.org/abs/2412.06464) (NVlabs/清华, ICLR 2025)**：将gating与delta rule结合，gating实现快速memory erasure，delta rule实现精确memory updates。超越Mamba2和DeltaNet，已被**Qwen3-Next**采用作为linear component。
+	- **[Log-Linear Attention](https://arxiv.org/abs/2506.04761) (2025.06)**：用对数增长的hidden states集合替代固定大小hidden state，平衡线性注意力效率和softmax注意力表达能力。通过特定growth function实现log-linear序列长度计算复杂度。
+	- DeltaNet：delta rule-like update检索和更新与当前key关联的value vector
+	- RetNet：retention mechanism实现O(1)推理复杂度
+	- GLA：hardware-efficient gated linear attention
+	- RWKV-6：线性注意力RNN，可扩展到14B参数
 - 基于state-space models (SSMs)
-	- Mamba
-	- Mamba2
-- Meta Learning
-	- TTT
-	- Titans
+	- Mamba：选择性SSM，3B匹配6B Transformer
+	- Mamba2：State Space Duality，2-8x faster than Mamba
+- Meta Learning（Test-Time Training）
+	- **[TTT: Test-Time Training Layers](https://arxiv.org/abs/2407.04620) (ICML 2024)**：hidden state通过gradient descent在test sequences上更新。TTT-Linear和TTT-MLP两种实例化。
+	- **[Titans](https://arxiv.org/abs/2501.00663) (Google, 2025.01)**：Neural long-term memory module，通过momentum和weight decay（遗忘机制）实现更好的记忆管理。在所有三个任务上超越baselines。
+	- **[TNT: Improving Chunkwise Training](https://arxiv.org/abs/2511.07343) (2025.11)**：改进Titans/TTT的chunkwise训练，实现**17倍训练加速**同时提升模型准确率。
+	- *注：TTT 类方法通过梯度下降在推理时更新参数，理论上可作为长期记忆的候选。但目前仍受限于保存内容长度和处理速度，实际使用中更接近工作记忆。*
 - LSTM
 	- mLSTM
 
@@ -265,34 +557,68 @@ Transformer的工作记忆理论上可以包含所有输入信息，其本质是
 
 #### Hybrid Update
 
-混合更新策略结合了Transformer的无限扩展能力和RNN/SSM的固定状态更新，在同一模型中使用多种架构组件。
+混合更新策略结合了Transformer的无限扩展能力和RNN/SSM的固定状态更新，在同一模型中使用多种架构组件。Hybrid Update分为两大类：
 
-**技术演进的三个阶段**
+##### 1. Hybrid Cache
 
-**第一阶段：基础突破（2021-2023）**
+Hybrid Cache方法仍然基于Transformer架构，保持了self-attention机制的核心。与纯Structure Update（所有token直接缓存）不同，这类方法在推理逻辑中对cache进行了不同程度的State Update——即对部分或全部缓存内容进行压缩、迭代更新或循环处理，从而在保持Transformer表达能力的同时，通过状态化处理降低memory开销或增强信息编码。
 
-- **S4 (2021.10)**：解决传统SSM梯度消失问题，引入HiPPO理论，为后续状态空间模型奠定基础
-- **H3 (2022)**：层级状态空间模型，首次尝试将SSM与注意力机制结合
-- **Mega (Meta, 2022)**：指数移动平均与注意力结合，探索非传统递归机制
-- **RWKV系列 (2021-2023)**：从V1到V4逐步优化，V4达到14B参数（注：RWKV为纯线性注意力架构，不属于混合架构）
-- **Mamba (2023.12)**：引入选择性SSM机制，3B模型匹配6B Transformer性能，为混合架构提供高效基础组件
-- **StripedHyena (Together AI, 2023.12)**：90%卷积层+10%注意力层的激进混合比例，支持500k+生成
+根据混合发生的维度，Hybrid Cache分为两个子类：
 
-**第二阶段：混合架构爆发（2024年初）**
+**Token-wise Approaches**
 
-- **Griffin (Google DeepMind, 2024.02)**：RG-LRU与滑动窗口注意力交替设计。每2个递归块后跟1个注意力块，RG-LRU使用双门控机制和实数运算。RecurrentGemma是其生产版本（2B/9B参数）
-- **Jamba (AI21 Labs, 2024.03)**：首个生产级混合架构，Transformer-Mamba-MoE三层设计。每个Jamba块含8层（Transformer:Mamba=1:7），隔层应用MoE（16专家激活2）。52B总参数中12B活跃，支持256K上下文
-- **Zamba (Zyphra, 2024.05)**：Mamba骨干+全局共享注意力层。每6个Mamba块共享1个注意力层，7B参数优化边缘部署
-- **Samba (Microsoft, 2024.06)**：Mamba+MLP+滑动窗口注意力+MLP。3.8B参数实现线性复杂度，理论无限上下文，解码速度比Llama-3快3.64倍
+这类方法在token维度上进行混合：使用一部分tokens作为固定大小的memory（State Update），同时对当前输入tokens使用standard attention（Structure Update）：
 
-**第三阶段：架构创新（2024年中后期）**
+- **[Memformer: A Memory-Augmented Transformer for Sequence Modeling](https://aclanthology.org/2022.findings-aacl.29/) (2020.10, AACL 2022)**：Encoder-decoder架构，在encoder使用N个fixed-size memory slots（State），decoder对当前tokens用standard attention（Structure）。通过similarity-based retrieval实现O(n)时间、O(1)空间复杂度。
+- **[AutoCompressors: Adapting Language Models to Compress Contexts](https://arxiv.org/abs/2305.14788) (2023.05, EMNLP 2023)**：历史segments压缩为50个summary vectors（State），当前2048-token segment用standard attention（Structure）。Summary vectors作为soft prompts参与language modeling。
+- **[Block-Recurrent Transformers](https://arxiv.org/abs/2203.07852) (DeepMind/Google, 2022.03)**：Block内standard attention + Transformer-XL cache（Structure），block间维护512个recurrent state vectors（State）。12层模型在第10层使用recurrence。
+- **[Recurrent Memory Transformer (RMT)](https://arxiv.org/abs/2207.06881) (2022.07, NeurIPS 2022)**：Memory tokens在segments间传递（State），segment内standard attention（Structure）。10个memory tokens + 512 input可编码2000+ tokens，retain信息across 2M tokens。
+- **[Cached Transformers with GRC](https://arxiv.org/abs/2312.12742) (2023.12)**：历史tokens压缩为fixed-length vectors with GRC gates（State），当前tokens用standard attention（Structure）。自适应更新压缩表示。
+- **[Infini-attention: Leave No Context Behind](https://arxiv.org/abs/2404.07143) (2024.04)**：Single block内整合compressive memory with fixed parameters（State）和masked local attention（Structure）。1B模型从1M contexts检索，114x memory reduction。
+- **[Compact Recurrent Transformer with Persistent Memory](https://arxiv.org/abs/2505.00929) (2025.05)**：GRU/NCGRU persistent memory跨迭代（State），每迭代内standard transformer处理current sequence（Structure）。
 
-- **Jamba-1.5 (AI21 Labs, 2024.08)**：改进版本，增强长上下文处理能力
-- **Bamba (IBM, 2024)**：结合Mamba2和线性注意力机制
-- **Hymba (NVIDIA, 2024.11)**：革命性混合头并行架构，同层内并行运行transformer头和SSM头（5:1参数比例）。跨层KV缓存共享+128个可学习元令牌，缓存减少11.67倍、吞吐量提升3.49倍
-- **Zamba2 (Zyphra, 2024.11)**：双共享注意力块（ABAB模式）+LoRA投影，2.7B参数达到同级别最佳性能
+**Layer-wise Approaches**
 
-Log-Linear Attention
+这类方法在layer/depth维度上进行混合：通过循环复用transformer layers进行depth recurrence（State Update），但每个depth step仍对sequence做full attention并维护growing KV cache（Structure Update）。
+
+- **[Universal Transformers](https://arxiv.org/abs/1807.03819) (2018.07, ICLR 2019)**：Google Brain开创性工作，在depth维度iteratively refine所有symbols的representations。使用shared self-attention + shared transformation across all positions and time-steps，支持variable depth via Adaptive Computation Time (ACT)。每个recurrent step并行处理整个sequence with full attention（Structure），while depth recurrence provides iterative refinement（State）。
+- **[Looped Transformers for Length Generalization](https://arxiv.org/abs/2409.15647) (2024.09, NeurIPS 2024)**：威斯康星、MIT、UC Berkeley联合工作。所有decoder blocks共享参数，通过adaptive loop steps提升length generalization。模型在特定steps后才supervised to match target，学习可复用intermediate steps。Depth recurrence（State）+ standard attention per step（Structure）。
+- **[Reasoning with Latent Thoughts](https://openreview.net/forum?id=din0lGfZFd) (ICLR 2025)**：证明k-layer transformer looped L times性能接近kL-layer non-looped model。Looped models implicitly generate latent thoughts，可simulate T steps of CoT with T loops。展示depth-based scaling类似CoT inference-time scaling。
+- **[Relaxed Recursive Transformers](https://arxiv.org/abs/2410.20672) (DeepMind, 2024.10, ICLR 2025)**：CYCLE strategy（single block recursively reused），通过layer-wise LoRA relax weight tying。Recursive Gemma 1B outperforms TinyLlama/Pythia，recover大部分Gemma 2B性能。支持Continuous Depth-wise Batching，2-3x inference throughput。Depth recurrence with parameter sharing（State）+ full attention in each cycle（Structure）。
+- **[Mixture-of-Recursions (MoR)](https://arxiv.org/abs/2507.10524) (KAIST/DeepMind, 2025.07, NeurIPS 2025)**：统一recursive framework，lightweight routers实现adaptive token-level recursion depths。创新性recursion-wise KV caching：仅缓存active tokens at给定recursion depth，减少memory traffic。2x inference throughput，同时减少training FLOPs。Token-level adaptive depth（State）+ selective KV caching（Structure）。
+- **[Ouro: Scaling Latent Reasoning via Looped Language Models](https://arxiv.org/abs/2510.25741) (2025.10)**：Pre-trained Looped LM，将reasoning build into pre-training through iterative latent computation + entropy-regularized depth allocation，scaling to 7.7T tokens。使用4 recurrent steps，Ouro 1.4B/2.6B匹配12B SOTA LLMs。Parameter-shared looped architecture在latent space迭代（State）+ standard decoder-only Transformer blocks（Structure）。
+
+##### 2. Hybrid Architecture
+
+这类方法在模型架构层面混合不同类型的层：State Update layers（SSM/RNN）与Structure Update layers（Transformer attention）。根据混合方式的不同，可以分为三类：
+
+**Interleaved（交替混合）**
+
+SSM/RNN层和Attention层在depth维度交替排列，是目前最主流的混合方式：
+
+- **[H3: Hungry Hungry Hippos](https://arxiv.org/abs/2212.14052) (2022.12, ICLR 2023)**：Stanford HazyResearch开创性工作，SSM层为主 + 少量Attention层。提出FlashConv加速，Hybrid 125M模型在OpenWebText上比同规模Transformer低1.0 PPL。2.7B hybrid模型在多数SuperGLUE任务上匹配或超越Transformer。
+- **[Griffin](https://arxiv.org/abs/2402.19427) (Google DeepMind, 2024.02)**：提出RG-LRU（Real-Gated Linear Recurrent Unit）+ 滑动窗口注意力交替设计。每2个RG-LRU块后跟1个attention块。RecurrentGemma是其生产版本（2B/9B参数），在长序列上throughput显著优于MQA Transformers。
+- **[Jamba](https://arxiv.org/abs/2403.19887) (AI21 Labs, 2024.03)**：首个生产级大规模混合架构，Transformer + Mamba + MoE三层设计。每个Jamba块含8层（Attention:Mamba=1:7），隔层应用MoE（16专家激活2）。52B总参数中12B活跃，支持256K上下文，单80GB GPU可运行。
+- **[Zamba](https://arxiv.org/abs/2405.16712) (Zyphra, 2024.05)**：Mamba骨干 + 全局**共享**注意力层。每6个Mamba块共享1个attention层，大幅减少参数量。7B参数优化边缘部署，即使单个attention层也能达到transformer级别的ICL能力。
+- **[Samba](https://arxiv.org/abs/2406.07522) (Microsoft, 2024.06, ICLR 2025)**：Mamba + MLP + 滑动窗口注意力(SWA) + MLP层级堆叠。SWA窗口2048 + RoPE。3.8B参数在Phi3数据集上训练，MMLU/GSM8K/HumanEval超越Phi3-mini，解码速度比Llama-3快3.64倍，支持1M上下文zero-shot。
+- **[Jamba-1.5](https://arxiv.org/abs/2408.12570) (AI21 Labs, 2024.08)**：增强版Jamba，推出Large (94B活跃参数) 和 Mini (12B活跃参数) 两个版本。256K上下文（开源模型最长），提出ExpertsInt8量化技术支持8×80GB GPU运行Large版本。
+- **[Bamba](https://huggingface.co/blog/bamba) (IBM/Princeton/CMU/UIUC, 2024.12)**：**Mamba2** + Attention，29个SSM层 + 3个attention层。9B参数在2T tokens上训练，匹配Llama-3.1-8B性能（后者用15T tokens）。2.5x throughput，2x latency speedup。
+- **[Zamba2](https://arxiv.org/abs/2411.15242) (Zyphra, 2024.11)**：Mamba2骨干 + **双共享attention块**（ABAB交替模式）+ LoRA投影实现depth-wise specialization。1.2B/2.7B/7.4B三个规模，同级别SOTA。开源预训练数据集Zyda-2。
+- **[Kimi Linear (KDA)](https://arxiv.org/abs/2510.26692) (Moonshot AI, 2025.10)**：**首次线性注意力在公平比较下全面超越全注意力**。核心是Kimi Delta Attention (KDA)，扩展Gated DeltaNet加入finer-grained gating。KDA与MLA按3:1混合，48B总参数(3B活跃)。75% KV cache减少，1M上下文6x解码吞吐。在AIME 2025、HMMT 2025等多个benchmark上超越baselines。开源KDA kernel和vLLM实现。
+- **[RWKV-X](https://arxiv.org/abs/2504.21463) (2025.04)**：RWKV-7 + Transformer混合架构，结合两者优势实现线性复杂度。探索SSM与注意力机制最优融合方式。
+
+**Parallel（并行混合）**
+
+同一层内同时运行SSM头和Attention头，充分利用两者优势：
+
+- **[Hymba](https://arxiv.org/abs/2411.13676) (NVIDIA, 2024.11)**：混合头并行架构，同层内Transformer头和SSM头并行运行（参数比例5:1）。引入128个可学习meta tokens存储关键信息，跨层KV缓存共享 + 部分滑动窗口注意力。Hymba-1.5B超越所有sub-2B模型，比Llama-3.2-3B高1.32%准确率，cache减少11.67倍，throughput提升3.49倍。
+
+**Component-level（组件级混合）**
+
+在attention模块内部融合SSM/RNN组件：
+
+- **[Mega](https://arxiv.org/abs/2209.10655) (Meta, 2022.09, ICLR 2023)**：将指数移动平均(EMA)整合到Gated Attention机制中，单头设计。Mega-chunk变体实现线性时间空间复杂度，比vanilla Transformer快5.5倍，内存仅13%。在Long Range Arena所有6个任务上显著超越S4。
+- **[StripedHyena](https://www.together.ai/blog/stripedhyena-7b) (Together AI, 2023.12)**：Hyena卷积块（处理大部分序列计算）+ Attention块（targeted pattern recall）组合。支持128K上下文训练，>500K tokens生成。在32K/64K/128K长度上训练分别比FlashAttention v2快30%/50%/100%以上。
 
 ### 相关技术
 
@@ -302,9 +628,6 @@ Log-Linear Attention
 
 - Transformer Hidden States
 	- [LLM in a flash: Efficient Large Language Model Inference with Limited Memory](https://aclanthology.org/2024.acl-long.678/)通过将模型参数存储在闪存，提升推理时可以支持的计算长度。
-
-
-
 ### 小结
 
 工作记忆作为 LLM 短期记忆的核心，支撑了模型在动态任务中的实时推理能力。Transformer 的修改注意力机制和循环架构提供了不同的实现路径，而容量控制和遗忘机制则进一步优化了其性能。然而，工作记忆的容量瓶颈和时间跨度限制仍是研究热点，未来可能通过结合外部记忆或更高效的状态管理进一步突破。
@@ -315,161 +638,249 @@ Log-Linear Attention
 
 ## Long-term Memory
 
-长期记忆的存在形式仍然有待探讨。可以确定的是，为了和外部笔记做区分，长期记忆不应该存储原始的信息。
 
-- 模型参数作为长期记忆的一部分应该是毫无争议的。
-- 另一方面，大模型处理的hidden states也是可以作为长期记忆的候选者，即Transformer。但目前仍然受限于保存内容长度和处理的速度。目前更像是工作记忆。
+相比较Sensory Memory，长期记忆不应该存储原始的信息，而是将知识编码到稳定的模型参数中。
+
+相比较Working Memory，长期记忆是更加稳定的记忆，不会因为推理过程而快速遗忘。
 
 长期记忆涉及到的领域较为广泛，模型的训练、幻觉问题、知识编辑都可以当做模型长期记忆的更新。这里选取一些典型研究。目前长期记忆的挑战是如何高效、鲁棒地实现记忆更新。
 
 考虑记忆的形式、容量、更新：
-- 形式：模型参数
-- 容量：通常为固定大小，可添加和复制扩展
-- 更新：多种模型训练方法
+- **形式**：模型参数
+- **容量**：通常为固定大小，可添加和复制扩展（如MoE、LoRA）
+- **更新**：多种模型训练方法（预训练、微调、知识编辑）
+
+核心挑战是避免**灾难性遗忘**（catastrophic forgetting）——在学习新知识时保留已有知识。
 
 
 
 ### Classification
 
 
-#### Structural Update
+#### Structure Update
 
 ##### MoE
 
-- **Sparse expert models:** Mixture-of-Experts architectures greatly expand an LLM’s effective parameter count by having many expert subnetworks and routing each input to only one or a few of them. Fedus et al. (2022) introduced the **Switch Transformer**, which uses up to 128 experts but activates just one per input token via a gating mechanism. For a fixed computation budget, Switch Transformer achieved significantly higher model quality than a dense Transformer, matching the performance of a 7× larger model with efficient sparsity​[arxiv.org](https://arxiv.org/pdf/2101.03961#:~:text=For%20a%20fixed%20amount%20of,line.%20Our%2064). This demonstrated that MoE can serve as a form of long-term memory, storing diverse knowledge across experts.
+MoE 通过稀疏激活扩展模型容量，每个专家可以存储特定领域的知识，是一种结构化的长期记忆扩展方式。综述：[A Survey on Mixture of Experts in Large Language Models](https://arxiv.org/abs/2407.06204) (TKDE 2025)；[A Comprehensive Survey of Mixture-of-Experts](https://arxiv.org/abs/2503.07137) (2025)
 
-- **Domain experts and modularity:** Gururangan et al. (2022) showed that MoE models can assign experts to different domains (e.g. one expert per domain in a “DEMix” layer) and only train new experts for new domains​[aclanthology.org](https://aclanthology.org/2023.emnlp-main.516.pdf#:~:text=updated.%20DEMix,by%20freezing%20previously%20trained%20experts). This way, each expert acts as a repository of knowledge for a domain. As new domains emerge, new experts can be added incrementally. The MoE gating ensures the appropriate expert is used for relevant inputs, enabling parametric knowledge to scale with minimal interference between domains.
+###### 技术演进
 
-- **Alleviating forgetting with MoE:** Recent work combines MoE with other techniques to continually update knowledge. **LoRA-MoE** (Zhang et al., 2024) inserts multiple LoRA adapters as experts in a mixture, with a router network assigning tokens to either new or existing knowledge experts. This approach was shown to **preserve world knowledge** in an LLM even after large-scale fine-tuning on new instructions, by mitigating the catastrophic forgetting of factual knowledge while still improving on downstream tasks​[aclanthology.org](https://aclanthology.org/2024.acl-long.106.pdf#:~:text=ing%20world%20knowledge%20forgetting%20during,the%20efficacy%20of%20our%20proposed). It highlights MoE’s strength: new experts can be introduced for new data, rather than overwriting shared weights.
+MoE 的核心设计包括：路由机制（选择策略 + 负载均衡）、专家结构（粒度和组织）、系统优化（并行训练与通信）。
 
+**路由机制 (Routing)：**
 
+路由决定每个 token 由哪些专家处理，核心问题是选择策略和负载均衡。
 
-lora
+*选择策略：*
+- Token-Choice (Top-K)：token 选择得分最高的 K 个专家。[GShard](https://arxiv.org/abs/2006.16668) (2020) 提出 Top-2 随机路由；[Switch Transformers](https://arxiv.org/abs/2101.03961) (2021) 简化为 Top-1 实现万亿参数模型。问题：负载不均衡、专家利用率低。
+- Expert-Choice：专家选择 Top-K tokens，**天然负载均衡**，每个 token 可被 0 到多个专家处理。[Expert Choice Routing](https://arxiv.org/abs/2202.09368) (NeurIPS 2022) 训练速度提升 2x+。
+- [TC-MoE](https://openreview.net/forum?id=dsP91M4hDL) (2025): Ternary Choice，用 {-1, 0, 1} 扩展专家空间，激活专家数减少 9%，性能提升 1.1%。
 
-[LoRA-FA: Memory-efficient Low-rank Adaptation for Large Language Models Fine-tuning](https://arxiv.org/abs/2308.03303)
+*负载均衡：*
+- 辅助损失：[GShard](https://arxiv.org/abs/2006.16668) 引入负载均衡损失惩罚不均。问题：干扰梯度影响性能。
+- 无辅助损失：[Auxiliary-Loss-Free Load Balancing](https://arxiv.org/abs/2408.15664) (ICLR 2025) 通过动态偏置调整路由分数，**DeepSeek-V3** 采用，实现**零 token 丢弃**。
+- [MoLE](https://arxiv.org/abs/2503.15798) (ICML 2025 Oral): 专家输入改为 embedding 层输出，推理前将 FFN 专家重参数化为查找表（LUT），根据 token id 直接查表，可 offload 到存储设备，延迟接近 dense 模型。
 
-新的参数高效微调方法LoRA-FA，该方法通过减少可训练参数和激活内存成本，大幅降低内存占用。在微调性能上可以与两个强大的基线方法（全参数微调和LoRA）相媲美。同时，LoRA-FA在不增加任何重计算的情况下，最多可减少13GB的GPU内存占用。
+**专家结构 (Expert Design)：**
 
-终生学习
+*FFN-MoE：*
+- [DeepSeekMoE](https://aclanthology.org/2024.acl-long.70/) (ACL 2024): (1) 细粒度切分：N 个专家 → mN 个更小专家，激活 mK 个（如 8 选 2 → 64 选 16），组合更灵活；(2) 共享专家：部分专家设为"共享"处理通用知识，其余做路由专注特定知识，解决知识冗余。
+- [MoNE](https://arxiv.org/abs/2510.05781) (2025): 神经元级稀疏，在专家内部再做 top-k 神经元选择，仅激活 50% 参数即可匹配传统 MoE。
+- [MoE++](https://openreview.net/forum?id=7efe88bb4138d602e56637cfcf713654) (ICLR 2025): 异构专家，引入零计算专家——zero（丢弃）、copy（直接复制）、constant（常量替换），简单 token 跳过 FFN，复杂 token 用更多专家，吞吐量提升 1.1-2.1x。
+- [Matryoshka MoE](https://arxiv.org/abs/2509.26520) (2025): 训练时变化激活专家数，构建粗到细的专家层级，单一模型支持弹性推理。
 
-[Towards Lifelong Learning of Large Language Models: A Survey](https://dl.acm.org/doi/10.1145/3716629)
+*Attention-MoE：*
+- [MoA](https://arxiv.org/abs/2210.05144) (EMNLP 2022): 将注意力头视为专家，路由器动态选择 k 个头。
+- [MoH](https://arxiv.org/abs/2410.11842) (2024): Mixture-of-Head，LLaMA3-8B 仅用 75% 注意力头提升 2.4%。
 
-LLM终身学习的综述，探讨了LLM适应不断变化的数据、任务和用户偏好的能力。传统的静态训练方法不足以应对真实世界的动态变化，而终身学习可使 LLM 不断整合新知识，同时保留先前的信息并避免灾难性遗忘。
-
-主要贡献：
-
-- 新颖的分类法： 调查将终身学习分为 12 种情况，包括持续预训练、微调和外部知识整合。
-
-- 常用技术： 调查确定了用于终身学习的重放、正则化、基于架构的方法和蒸馏等技术。
-
-- 新兴趋势： 重点介绍模型扩展、数据选择和外部知识整合（基于检索和工具的学习）等创新技术。
-
-终身学习类别：
-
-- 内部知识： 包括通过持续的**预训练**（特定领域、时间或语言）和**微调**（如文本分类、命名实体识别、机器翻译）更新模型参数。
-- 外部知识： 结合基于检索的方法（如RAG）和基于工具的学习（如应用程序接口、计算工具），在不修改模型参数的情况下增强适应性。
-
-挑战：
-
-- 灾难性遗忘： 在学习新任务的同时保留旧知识
-- 可塑性与稳定性的两难选择：平衡适应性与保持性
-- 高计算成本： 微调大型模型需要大量资源
-- 数据/模型访问： 预训练数据或模型权重的可用性有限
-
-当前趋势：
-
-- 从特定任务转向一般任务（如指令调整）
-- 更倾向于部分微调（如适配器、LoRA）而非全面微调
-- 更多依赖外部知识源，以减少再训练需求
-
-未来方向：
-
-- 多模态终身学习： 整合文本、图像、音频和其他模式
-- 高效学习： 利用剪枝、模型合并和上下文学习来降低成本
-- 通用终身学习： 通过强化学习和基于代理的系统，实现类似人类的动态学习
-
-[MemOS: A Memory OS for AI System](https://arxiv.org/abs/2507.03724)
-
-MemOS通过**统一记忆管理层**与**可演化MemCube单元**，系统性解决LLM在动态知识管理中的碎片化问题，为AGI的长效认知能力奠定基础
-
-[MIRIX: Multi-Agent Memory System for LLM-Based Agents](https://arxiv.org/abs/2507.07957)
-
-**MIRIX 是一种突破性的模块化记忆系统**，专为增强基于大语言模型（LLM）的智能体而设计，它通过**六大结构化记忆组件**解决现有记忆系统的局限性：
-
-- **核心记忆**（用户身份）、**情景记忆**（时间戳事件）、**语义记忆**（知识图谱）、**程序性记忆**（任务流程）、**资源记忆**（多模态文件）、**知识保险库**（加密敏感数据）
-  系统采用**多智能体协同架构**：由专用管理器分别处理各记忆类型，并通过元记忆协调器动态调度跨模块检索与更新，其核心技术突破包括：
-
-1. **主动检索机制**——自动关联用户查询与相关记忆，无需人工干预
-
-2. **极致存储效率**——向量压缩技术降低存储需求 99.9%，并在多模态理解和长对话任务中显著提升精度。
-   应用场景覆盖**个人助手**（实时屏幕信息提取）、**穿戴设备**（AI 眼镜本地化记忆）及**记忆资产化**（构建可交易记忆市场）
-
-   MIRIX 首次实现记忆的系统级生命周期管理，为持续学习与个性化智能体奠定基础设施，推动记忆从功能模块向核心数字资产的演进
+*统一架构：*
+- [UMoE](https://arxiv.org/abs/2505.07260) (2025): 统一 Attention 和 FFN 的 MoE，揭示注意力中隐含的 FFN 结构。
 
 
+###### 知识更新
 
+从记忆角度，MoE 的专家结构天然支持知识的模块化存储与更新。
 
-#### Iterative Update
+**新知识添加：**
+
+通过增加新专家或扩展现有专家来存储新知识，避免覆盖原有知识。
+
+- [Lifelong-MoE](https://arxiv.org/abs/2305.12281) (ACL 2023): 动态添加专家处理新数据分布，配合正则化策略保留旧知识。问题：专家数量线性增长导致内存膨胀。
+- [R2MoE](https://arxiv.org/abs/2507.13107) (2025): Redundancy-Removal MoE，轻量化终身学习，通过冗余消除控制专家数量增长。
+- [DEMix](https://aclanthology.org/2023.emnlp-main.516/) (EMNLP 2023): 每个领域一个专家，新领域只需训练新专家，模块化扩展。
+
+**知识隔离与防遗忘：**
+
+通过专家隔离防止新知识覆盖旧知识，是 MoE 在持续学习中的核心优势。
+- [OMoE](https://arxiv.org/abs/2503.07137) (2025): 正交约束减少专家表示冗余，鼓励专家行为解耦。
+- [DES-MoE](https://arxiv.org/abs/2509.16882) (EMNLP 2025): 动态专家专业化，实时专家-领域映射隔离梯度，**遗忘减少 89%**，收敛加速 68%。
+- [TRGE](https://arxiv.org/abs/2508.07738) (2025): 两级路由分组，专家组隔离防止遗忘 + 组间路由实现跨任务协作。
+- [Theory on MoE in CL](https://arxiv.org/abs/2406.16437) (ICLR 2025 Spotlight): 理论证明 MoE 门控网络可稀疏化分配任务给不同专家；建议充分训练后**冻结门控网络**以稳定收敛。
+- [CL-MoE](https://openaccess.thecvf.com/content/CVPR2025/papers/Huai_CL-MoE_Enhancing_Multimodal_Large_Language_Model_with_Dual_Momentum_Mixture-of-Experts_CVPR_2025_paper.pdf) (CVPR 2025): 双动量 MoE，实例级 + 任务级路由用于多模态持续学习。
+
+**知识删除 (Unlearning)：**
+
+通过定向修改特定专家实现知识遗忘，无需重训整个模型。
+
+- [UOE: Unlearning One Expert](https://openreview.net/forum?id=ZClm0YbcXP) (2025): 通过专家归因定位目标知识所在专家，仅对该专家进行 unlearning，配合锚定损失稳定路由。遗忘质量提升 5%，模型效用提升 35%，仅修改 0.06% 参数。
+
+**挑战：**
+
+- **知识混杂 (Knowledge Hybridity)**：专家数量有限时，单个专家被迫存储多样化知识。细粒度专家可缓解。
+- **知识冗余 (Knowledge Redundancy)**：不同专家学到重复的通用知识。共享专家隔离可缓解。
+- **专业化-泛化平衡**：过度专业化导致泛化能力下降，如何平衡是开放问题。
+- **内存增长**：动态添加专家导致模型规模线性增长。
 
 
 
-##### 预训练
+##### PEFT (Parameter-Efficient Fine-Tuning)
 
-2-3
+参数高效微调通过仅更新少量参数来实现知识更新，是一种高效的长期记忆修改方式。
 
+**Adapter 方法：**
+- [Parameter-Efficient Transfer Learning for NLP](https://arxiv.org/abs/1902.00751) (ICML 2019, Houlsby et al.) **Classic**: 原始 Adapter 论文，在 Transformer 层间插入瓶颈结构，仅增加 3.6% 参数达到接近全微调性能。
+- [AdapterHub: A Framework for Adapting Transformers](https://arxiv.org/abs/2007.07779) (EMNLP 2020): Adapter 统一框架和预训练 Adapter 共享平台。
+- [LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning](https://aclanthology.org/2023.emnlp-main.319/) (EMNLP 2023): 系统研究 Adapter 类型、位置和超参数的影响，7B 模型可达 175B 模型零样本性能。
 
-##### 微调
+**LoRA 系列：**
+- [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685) (ICLR 2022) **Classic**: 低秩矩阵分解，冻结原参数仅训练低秩增量。
+- [QLoRA: Efficient Finetuning of Quantized LLMs](https://arxiv.org/abs/2305.14314) (NeurIPS 2023): 4-bit 量化 + LoRA，65B 模型可在单 48GB GPU 上微调。
+- [LoRA-FA: Memory-efficient Low-rank Adaptation](https://arxiv.org/abs/2308.03303) (2023): 冻结 A 矩阵仅训练 B，减少激活内存最多 13GB。
+- [DoRA: Weight-Decomposed Low-Rank Adaptation](https://arxiv.org/abs/2402.09353) (ICML 2024): 分解权重为幅度和方向，超越 LoRA。
 
+**MoE + LoRA（混合专家 + 参数高效）：**
 
+将 LoRA 适配器作为专家，结合 MoE 路由实现多任务/多领域的参数高效适配。
 
-
-##### 强化学习
-
-
-
-
-### 相关技术
-
-#### 硬件加速
-
-- [ProTrain: Efficient LLM Training via Memory-Aware Techniques](https://arxiv.org/abs/2406.08334)主要是减少训练时的显存占用的，实现了更细粒度的内存管理。但是并没有改变模型的架构，因此只是一个加速算法。
-- [Stack Data Management for Limited Local Memory (LLM) Multi-core Processors](https://ieeexplore.ieee.org/abstract/document/6043275)优化模型的内存管理，具体没细看。似乎和硬件相关。
-- 
-
-
+- [MOELoRA](https://arxiv.org/abs/2310.18339) (SIGIR 2024): 每个专家为低秩矩阵对，任务驱动门控选择专家组合。
+- [LoRA-MoE](https://aclanthology.org/2024.acl-long.106/) (ACL 2024): LoRA 适配器作为专家，冻结主干网络，有效缓解世界知识遗忘。
+- [MoRA](https://arxiv.org/abs/2506.21035) (2025): Mixture-of-Rank Adaptive，细粒度 rank 级选择替代 adapter 级，减少冗余和干扰。
 
 
+#### State Update
 
+状态更新是长期记忆的核心操作，通过修改模型参数来更新知识。主要途径包括：预训练、微调、强化学习对齐，以及知识编辑。
 
+##### 预训练 (Pre-training)
 
-- **微调方法**  
-  - **完全微调**：更新所有参数，适合大规模知识更新。  
-    - 示例：LAMOL ([LAMOL: LAnguage MOdeling for Lifelong Language Learning](https://openreview.net/forum?id=Skgxcn4YDS)) 通过语言建模实现连续任务学习，防止遗忘。  
-  - **参数高效微调**：如 LoRA，仅更新部分参数，降低成本。  
-    - 示例：相关研究可参考终身学习调研。  
+**连续预训练 (Continual Pre-training)**
 
-- **记忆更新机制**  
-  - **增量学习**：在不遗忘旧知识情况下学习新知识。  
-    - 示例：LAMOL 生成伪样本重放，属于增量学习。  
-  - **持续学习**：适应动态数据流，适合实时更新。  
-    - 示例：调研论文 [Towards Lifelong Learning of Large Language Models: A Survey](https://arxiv.org/abs/2406.06391) 讨论持续学习策略。  
+在已有模型基础上继续预训练，避免从头重新训练。核心挑战是灾难性遗忘。
 
-- **记忆保留策略**  
-  - **正则化技术**：防止过拟合，保持通用知识。  
-    - 示例：使用 L2 正则化防止遗忘。  
-  - **记忆巩固**：稳定已学知识，防止遗忘。  
-    - 示例：相关研究如 [Continual Pre-Training Mitigates Forgetting in Language and Vision](https://github.com/AGI-Edgerunners/LLM-Continual-Learning-Papers) 讨论巩固机制。  
+*学习率策略：*
+- [How to (re)warm your model?](https://arxiv.org/abs/2308.04014) (2023): 学习率重新加热策略，优化分布转移问题。
+- [Efficient Continual Pre-training by Mitigating the Stability Gap](https://arxiv.org/abs/2406.14833) (2024): 稳定性差距缓解，结合学习率重新预热和数据重放。
 
-长期记忆通过模型参数更新实现知识积累，但更新成本高，未来可探索参数高效方法和防止遗忘策略。  
+*数据策略：*
+- [Simple and Scalable Strategies to Continually Pre-train LLMs](https://arxiv.org/abs/2403.08763) (2024): 可扩展策略，仅需 10% 语料库成本即可匹配标准连续预训练性能。
+- [Investigating Continual Pretraining in LLMs](https://arxiv.org/abs/2402.17400) (2024): 系统性研究，发现较小模型对连续预训练更敏感。
+
+**数据混合优化 (Data Mixing)**
+
+优化预训练数据的域混合比例，提升训练效率。
+
+- [DoReMi](https://arxiv.org/abs/2305.10429) (NeurIPS 2024): 域重加权，分布鲁棒优化，2.6 倍加速。
+- [Data Mixing Laws](https://arxiv.org/abs/2403.16952) (2024): 数据混合律，使用标量函数预测性能，小规模拟合大规模泛化。
+- [RegMix](https://arxiv.org/abs/2407.01492) (ICLR 2025 Spotlight): 回归框架优化混合，仅需代理模型 10% 计算。
+- [Topic Over Source](https://arxiv.org/abs/2502.16802) (2025): 主题级混合优于源级混合，语义主题划分。
+
+**课程学习 (Curriculum Learning)**
+
+- [Vocabulary Curriculum](https://arxiv.org/abs/2502.17910) (2025): 词表课程学习，熵引导词汇扩展，动态分词。
+- [Beyond Random Sampling](https://arxiv.org/abs/2506.11300) (2025): 首次系统性研究预训练课程学习，15 个难度指标。
+
+**高效预训练**
+
+- [GaLore](https://arxiv.org/abs/2403.03507) (ICML 2024): 梯度低秩投影，37.92GB 内存节省，保持全参数学习。
+- [GaLore 2](https://arxiv.org/abs/2504.20437) (2025): 扩展到大规模预训练。
+
+##### 微调 (Fine-tuning)
+
+**指令微调 (Instruction Tuning)**
+
+*数据选择：*
+- [Large-Scale Data Selection for Instruction Tuning](https://arxiv.org/abs/2503.01807) (2025): 大规模自动化数据筛选，精选子集优于噪声全集。
+- [GRAPE](https://arxiv.org/abs/2502.04194) (2025): 用 4.5 倍数据量超越强基线 6.1%，数据适配性匹配。
+- [Importance-Aware Data Selection](https://arxiv.org/abs/2511.07074) (2025): 模型指令弱点值(MIWV)，仅用 1% 精选数据超越全量训练。
+
+**多任务微调**
+
+- [Cocktail Effect](https://arxiv.org/abs/2410.01109) (2024): 多任务数据混合产生协同增强，Phi-3-Mini 超越 GPT-4o。
+- [SafeGrad](https://arxiv.org/abs/2508.07172) (2025): 梯度外科手术处理多目标冲突，检测并消除有害梯度分量。
+- [CGC-LoRA](https://arxiv.org/abs/2402.01684) (2024): 自定义门控控制 LoRA，解决多任务"跷跷板问题"。
+
+**参数高效微调进展** (见 PEFT 部分详细介绍)
+
+- [DoRA](https://arxiv.org/abs/2402.09353) (ICML 2024 Oral): 权重分解为幅度和方向，方向用 LoRA 优化，仅增加 0.01% 参数但超越 LoRA。
+- [Dual LoRA](https://arxiv.org/abs/2512.03402) (2025): 同时优化幅度和方向，改进 DoRA 设计。
+- [Spectrum](文献) (2024): 通过信噪比(SNR)识别最信息丰富的层，选择性微调。
+
+##### 强化学习对齐 (RL Alignment)
+
+**偏好优化**
+
+*DPO 及变体：*
+- [DPO](https://arxiv.org/abs/2305.18290) (NeurIPS 2023): 直接偏好优化，无需奖励模型，闭形式最优策略。
+- [IPO](文献): 避免 Bradley-Terry 假设，解决 DPO 过拟合问题。
+- [KTO](https://arxiv.org/abs/2402.01306) (2024): 基于前景理论，仅需二元信号(好/坏)，无需配对数据。
+- [ORPO](https://arxiv.org/abs/2403.07691) (2024): 无参考模型的单步偏好对齐，弱惩罚拒绝+强接受信号。
+- [SEE-DPO](https://arxiv.org/abs/2411.04712) (2024): 自增强熵正则化，防止奖励黑客和过拟合。
+
+*PPO 替代方案：*
+- [GRPO](https://arxiv.org/abs/2402.03300) (DeepSeekMath, 2024): 组相对策略优化，无评论家网络，降低内存开销。
+- [DAPO](https://arxiv.org/abs/2503.14476) (字节跳动, 2025): 解耦 clip + 动态采样，AIME 2024 达 50 分，完全开源。
+
+**奖励模型改进**
+
+*过程奖励模型 (PRM)：*
+- [Rewarding Progress](https://arxiv.org/abs/2410.08146) (2024): 过程奖励定义为"进展"——步骤前后正确答案可能性的变化。
+- [AgentPRM](https://arxiv.org/abs/2502.10325) (2025): 轻量级 actor-critic + 蒙特卡洛 rollout，3B 模型超越 GPT-4o 基线。
+- [Conditional RM](https://arxiv.org/abs/2509.26578) (2025): 条件概率建模步间依赖，联系每步奖励与最终结果。
+
+*自改进机制：*
+- [Self-Rewarding LMs](https://arxiv.org/abs/2401.10020) (2024): 模型自身作为评分器，迭代改进指令跟随和奖励能力。
+
+**宪法 AI / RLAIF**
+
+- [Constitutional AI](https://arxiv.org/abs/2212.08073) (Anthropic): 通过规则原则引导 AI 自我改进，RLAIF 方法论创始性工作。
+- [C3AI](https://dl.acm.org/doi/10.1145/3696410.3714705) (ACM Web 2025): 正向、行为基础的原则比负向或特征基础的更符合人类偏好。
+
+##### 知识编辑 (Knowledge Editing)
+
+直接修改模型参数以更新特定事实，不影响其他知识。
+
+- [ROME](https://arxiv.org/abs/2202.05262) (2022) **Classic**: Rank-One Model Editing，因果追踪定位 + 低秩更新。
+- [MEMIT](https://arxiv.org/abs/2210.07229) (2022) **Classic**: 批量编辑成千上万个事实。
+- [WISE](https://arxiv.org/abs/2405.14768) (NeurIPS 2024): 双参数记忆机制，分离主记忆和侧记忆，解决连续编辑知识冲突。
+- [AlphaEdit](https://arxiv.org/abs/2410.02355) (ICLR 2025 **Outstanding Paper**): 零空间约束编辑，最小化对原有知识干扰，多基准 SOTA。
+- 工具：[EasyEdit](https://github.com/zjunlp/EasyEdit)
+
+##### 核心挑战：灾难性遗忘
+
+学习新知识时覆盖旧知识，源于参数共享机制。核心是**可塑性-稳定性困境**。
+
+**缓解技术**（已融入上述各部分）：
+- **重放**：保存或生成旧样本复习（见连续预训练-数据策略）
+- **正则化**：约束重要参数变化（见 PEFT、知识编辑）
+- **架构方法**：为新任务分配新模块（见 MoE、LoRA）
+- **知识蒸馏**：用旧模型指导新模型
+
+**综述**：[Towards Lifelong Learning of LLMs: A Survey](https://dl.acm.org/doi/10.1145/3716629) (ACM Computing Surveys, 2025)
 
 
 
 
 ## Related Surveys
 
-- From Human Memory to AI Memory: A Survey on Memory Mechanisms in the Era of LLMs
-- A Survey on the Memory Mechanism of Large Language Model based Agents
-- Advances and Challenges in Foundation Agents: From Brain-Inspired Intelligence to Evolutionary, Collaborative, and Safe Systems
+| Paper | Date | Venue | Focus |
+| :--- | :--- | :--- | :--- |
+| **[A Survey on the Memory Mechanism of Large Language Model based Agents](https://dl.acm.org/doi/abs/10.1145/3748302)** | 2025-07 | TOIS | Comprehensive survey on Agent memory (Sources, Forms, Operations). |
+| **[From Human Memory to AI Memory: A Survey on Memory Mechanisms in the Era of LLMs](https://arxiv.org/abs/2504.15965)** | 2025-04 | arXiv | Proposes 3D-8Q Memory Taxonomy (Object, Form, Time). |
+| **[Cognitive Memory in Large Language Models](https://arxiv.org/abs/2504.02441)** | 2025-04 | arXiv | Classifies into Text-based, KV Cache, Parameters, and Hidden-State memory. |
+| **[Rethinking Memory in AI: Taxonomy, Operations, Topics, and Future Directions](https://arxiv.org/abs/2505.00675)** | 2025-05 | arXiv | Focuses on 6 atomic operations: Consolidation, Indexing, Updating, Forgetting, Retrieval, Compression. |
+| **[Advances and Challenges in Foundation Agents](https://arxiv.org/abs/2504.01990)** | 2025-04 | arXiv | Meta's survey; detailed mapping of human memory models to agents. |
+| **[Memory Meets (Multi-Modal) Large Language Models](https://openreview.net/forum?id=Sk7pwmLuAY)** | 2025-10 | TMLR | Focuses on Implicit, Explicit, and Agentic memory in Multi-modal contexts. |
+| **[Towards Lifelong Learning of Large Language Models: A Survey](https://arxiv.org/abs/2406.06391)** | 2025-03 | ACM Comp. Surv. | Focuses on continual learning and catastrophic forgetting. |
 
 
 
