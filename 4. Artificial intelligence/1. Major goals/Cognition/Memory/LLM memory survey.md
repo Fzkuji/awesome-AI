@@ -765,29 +765,59 @@ MoE 的核心设计包括：路由机制（选择策略 + 负载均衡）、专�
 
 **连续预训练 (Continual Pre-training)**
 
-在已有模型基础上继续预训练，避免从头重新训练。核心挑战是灾难性遗忘。
+在已有模型基础上继续预训练，避免从头重新训练。核心挑战是灾难性遗忘和分布转移。
 
 *学习率策略：*
 - [How to (re)warm your model?](https://arxiv.org/abs/2308.04014) (2023): 学习率重新加热策略，优化分布转移问题。
-- [Efficient Continual Pre-training by Mitigating the Stability Gap](https://arxiv.org/abs/2406.14833) (2024): 稳定性差距缓解，结合学习率重新预热和数据重放。
+- [Simple and Scalable Strategies](https://arxiv.org/abs/2403.08763) (TMLR 2024): 学习率重预热 + 重衰减 + 回放，仅需 10% 语料库成本匹配完全重训练。
+- [Beyond Cosine Decay](https://arxiv.org/abs/2503.02844) (CoLLAs 2025): 无限学习率调度器，避免余弦衰减的重预热遗忘问题。
+- [Learning Dynamics in CPT](https://arxiv.org/abs/2505.07796) (ICML 2025 Oral): 连续预训练缩放律，解耦分布偏移和学习率退火效应。
 
 *数据策略：*
-- [Simple and Scalable Strategies to Continually Pre-train LLMs](https://arxiv.org/abs/2403.08763) (2024): 可扩展策略，仅需 10% 语料库成本即可匹配标准连续预训练性能。
-- [Investigating Continual Pretraining in LLMs](https://arxiv.org/abs/2402.17400) (2024): 系统性研究，发现较小模型对连续预训练更敏感。
+- [Efficient CPT by Mitigating Stability Gap](https://arxiv.org/abs/2406.14833) (2024): 发现并解决"稳定性缺口"，多轮低质量数据预训练减少 80% 计算成本。
+- [SuRe: Surprise-Driven Replay](https://arxiv.org/abs/2511.22367) (2025): 基于"惊讶度"优先级选择回放样本，双学习器 EMA-merged LoRA。
+- [Reuse, Don't Retrain](https://arxiv.org/abs/2407.07263) (NVIDIA, 2024): 双分布策略和优化学习率调度，15B 模型 9% 平均准确率提升。
+
+*领域适应：*
+- [D-CPT Law](https://arxiv.org/abs/2406.01375) (2024): 域特定连续预训练缩放律，预测最优通用-域数据混合比例。
+- [AdaptLLM](https://arxiv.org/abs/2309.09530) (ICLR 2024): 将语料转换为阅读理解格式，7B 模型性能接近 50B BloombergGPT。
+- [ChipNeMo](https://arxiv.org/abs/2311.00176) (2023): 芯片设计领域完整适应流程，70B 超越 GPT-4。
+- [PMC-LLaMA](https://arxiv.org/abs/2304.14454) (2023): 医学领域三阶段方法，13B 超越 ChatGPT。
+- [Code Llama](https://arxiv.org/abs/2308.12950) (2023): 500B 代码导向连续预训练。
 
 **数据混合优化 (Data Mixing)**
 
-优化预训练数据的域混合比例，提升训练效率。
+优化预训练数据的域混合比例，提升训练效率。核心问题：如何确定最优混合比例。
 
+*静态优化：*
 - [DoReMi](https://arxiv.org/abs/2305.10429) (NeurIPS 2024): 域重加权，分布鲁棒优化，2.6 倍加速。
-- [Data Mixing Laws](https://arxiv.org/abs/2403.16952) (2024): 数据混合律，使用标量函数预测性能，小规模拟合大规模泛化。
+- [Data Mixing Laws](https://arxiv.org/abs/2403.16952) (2024): 数据混合律，标量函数预测性能，小规模拟合大规模泛化。
 - [RegMix](https://arxiv.org/abs/2407.01492) (ICLR 2025 Spotlight): 回归框架优化混合，仅需代理模型 10% 计算。
 - [Topic Over Source](https://arxiv.org/abs/2502.16802) (2025): 主题级混合优于源级混合，语义主题划分。
+
+*动态优化：*
+- [Efficient Online Data Mixing](https://arxiv.org/abs/2312.02406) (2023): 多臂老虎机在线数据混合，19% 更少迭代达到目标困惑度。
+- [Chameleon](https://arxiv.org/abs/2505.24844) (ICML 2025): 核岭回归杠杆分数量化域重要性，1% 成本匹配 DoReMi。
+- [UtiliMax](https://arxiv.org/abs/2501.11747) (2025): LLM 估计数据效用，10 倍以上加速。
+
+*数据质量：*
+- [Ultra-FineWeb](https://arxiv.org/abs/2505.05427) (2025): 高效 fastText 分类器 + 验证策略，1 万亿高质量 tokens。
+- [QuaDMix](https://arxiv.org/abs/2504.16511) (2025): 质量-多样性统一优化框架，7.2% 平均性能提升。
+- [Oasis](https://arxiv.org/abs/2311.12537) (IJCAI 2024): 一站式数据策展平台，规则过滤 + 神经过滤 + 自适应去重。
+- [Deduplicating Training Data](https://arxiv.org/abs/2107.06499) (2021): 去重减少 10 倍背诵输出。
 
 **课程学习 (Curriculum Learning)**
 
 - [Vocabulary Curriculum](https://arxiv.org/abs/2502.17910) (2025): 词表课程学习，熵引导词汇扩展，动态分词。
 - [Beyond Random Sampling](https://arxiv.org/abs/2506.11300) (2025): 首次系统性研究预训练课程学习，15 个难度指标。
+- [CAMPUS](https://arxiv.org/abs/2509.13790) (2024): 能力感知课程学习，动态调整难度指标适应模型能力演变。
+- [E2H Reasoner](https://arxiv.org/abs/2506.06632) (2025): 课程强化学习，简到难任务调度提升推理能力。
+
+**合成数据 (Synthetic Data)**
+
+- [Demystifying Synthetic Data](https://arxiv.org/abs/2510.01631) (2024): 大规模实证研究，混合合成数据 5-10 倍加速，但纯生成存在模型坍塌风险。
+- [Scaling Laws of Synthetic Data](https://arxiv.org/abs/2503.19551) (2025): SynthLLM 框架验证合成数据遵循校正缩放律。
+- [Deliberate Practice](https://arxiv.org/abs/2502.15588) (ICLR 2025): 受刻意练习启发，仅生成具有挑战性的样本改善缩放律。
 
 **高效预训练**
 
@@ -798,22 +828,40 @@ MoE 的核心设计包括：路由机制（选择策略 + 负载均衡）、专�
 
 **指令微调 (Instruction Tuning)**
 
+*数据生成：*
+- [Self-Instruct](https://arxiv.org/abs/2212.10560) (ICLR 2024): 自生成指令对进行自举对齐。
+- [WizardCoder/Evol-Instruct](https://arxiv.org/abs/2306.08568) (ICLR 2024): 复杂指令细调增强代码 LLM。
+- [Automatic Instruction Evolving](https://arxiv.org/abs/2406.00770) (2024): 自动分析和选择进化策略，端到端指令演化。
+- [OpenCodeInstruct](https://arxiv.org/abs/2504.04030) (2025): 整合 Self-Instruct 和 Evol-Instruct，500 万样本最大代码指令数据集。
+
 *数据选择：*
-- [Large-Scale Data Selection for Instruction Tuning](https://arxiv.org/abs/2503.01807) (2025): 大规模自动化数据筛选，精选子集优于噪声全集。
-- [GRAPE](https://arxiv.org/abs/2502.04194) (2025): 用 4.5 倍数据量超越强基线 6.1%，数据适配性匹配。
+- [Large-Scale Data Selection](https://arxiv.org/abs/2503.01807) (2025): 大规模自动化数据筛选，精选子集优于噪声全集。
+- [GRAPE](https://arxiv.org/abs/2502.04194) (2025): 数据适配性匹配，用 4.5 倍数据量超越强基线 6.1%。
 - [Importance-Aware Data Selection](https://arxiv.org/abs/2511.07074) (2025): 模型指令弱点值(MIWV)，仅用 1% 精选数据超越全量训练。
+- [Superfiltering](https://arxiv.org/abs/2402.00530) (2024): 弱模型进行数据过滤加速指令调优。
+- [Rethinking Data Selection at Scale](https://arxiv.org/abs/2410.09335) (2024): 随机选择在大规模数据中的有效性。
+
+*多轮对话：*
+- [Parrot](https://arxiv.org/abs/2310.07301) (2023): 学习真实用户查询模式，迭代收集多轮指令对。
+- [Review-Instruct](https://arxiv.org/abs/2505.11010) (2025): 迭代式"问-答-评审"过程合成多轮对话。
+- [Conversation Forests](https://arxiv.org/abs/2507.04099) (2025): 分支对话架构的强化学习框架。
+
+*评估基准：*
+- [IFEval](https://arxiv.org/abs/2311.07911) (2023): 直接可验证指令集合。
+- [InFoBench](https://arxiv.org/abs/2401.03601) (2024): 分解需求跟随率指标，2250 道分解问题细粒度评测。
+- [EIFBENCH](https://arxiv.org/abs/2506.08375) (2025): 极端复杂多任务多约束场景评测。
 
 **多任务微调**
 
 - [Cocktail Effect](https://arxiv.org/abs/2410.01109) (2024): 多任务数据混合产生协同增强，Phi-3-Mini 超越 GPT-4o。
 - [SafeGrad](https://arxiv.org/abs/2508.07172) (2025): 梯度外科手术处理多目标冲突，检测并消除有害梯度分量。
 - [CGC-LoRA](https://arxiv.org/abs/2402.01684) (2024): 自定义门控控制 LoRA，解决多任务"跷跷板问题"。
+- [Bonito](https://arxiv.org/abs/2402.18334) (2024): 自动化创建领域特定指令调优数据集，条件任务生成。
 
 **参数高效微调进展** (见 PEFT 部分详细介绍)
 
 - [DoRA](https://arxiv.org/abs/2402.09353) (ICML 2024 Oral): 权重分解为幅度和方向，方向用 LoRA 优化，仅增加 0.01% 参数但超越 LoRA。
 - [Dual LoRA](https://arxiv.org/abs/2512.03402) (2025): 同时优化幅度和方向，改进 DoRA 设计。
-- [Spectrum](文献) (2024): 通过信噪比(SNR)识别最信息丰富的层，选择性微调。
 
 ##### 强化学习对齐 (RL Alignment)
 
@@ -821,10 +869,16 @@ MoE 的核心设计包括：路由机制（选择策略 + 负载均衡）、专�
 
 *DPO 及变体：*
 - [DPO](https://arxiv.org/abs/2305.18290) (NeurIPS 2023): 直接偏好优化，无需奖励模型，闭形式最优策略。
-- [IPO](文献): 避免 Bradley-Terry 假设，解决 DPO 过拟合问题。
-- [KTO](https://arxiv.org/abs/2402.01306) (2024): 基于前景理论，仅需二元信号(好/坏)，无需配对数据。
-- [ORPO](https://arxiv.org/abs/2403.07691) (2024): 无参考模型的单步偏好对齐，弱惩罚拒绝+强接受信号。
-- [SEE-DPO](https://arxiv.org/abs/2411.04712) (2024): 自增强熵正则化，防止奖励黑客和过拟合。
+- [SimPO](https://arxiv.org/abs/2405.14734) (NeurIPS 2024): 长度归一化平均对数概率作为隐式奖励，无需参考模型。
+- [KTO](https://arxiv.org/abs/2402.01306) (ICML 2024): 基于前景理论，仅需二元信号(好/坏)，无需配对数据。
+- [ORPO](https://arxiv.org/abs/2403.07691) (EMNLP 2024): 无参考模型的单步偏好对齐，对数赔率比项。
+- [Provably Robust DPO](https://arxiv.org/abs/2403.00409) (ICML 2024): 自适应去偏处理标签翻转噪声，理论收敛保证。
+- [Rainbow PO](https://arxiv.org/abs/2410.04203) (2024): 统一框架集成 DPO、IPO、SimPO 等多个改进。
+
+*迭代/在线方法：*
+- [INPO](https://arxiv.org/abs/2407.00617) (ICLR 2025 Oral): 纳什均衡框架，自博弈无遗憾学习。
+- [RTO](https://arxiv.org/abs/2404.18922) (ICML 2025 Spotlight): DPO 学习令牌级奖励，结合 PPO 进行细粒度策略优化。
+- [Hybrid Preference Optimization](https://arxiv.org/abs/2412.10616) (2024): 结合离线偏好数据与在线探索，加快收敛。
 
 *PPO 替代方案：*
 - [GRPO](https://arxiv.org/abs/2402.03300) (DeepSeekMath, 2024): 组相对策略优化，无评论家网络，降低内存开销。
@@ -837,27 +891,68 @@ MoE 的核心设计包括：路由机制（选择策略 + 负载均衡）、专�
 - [AgentPRM](https://arxiv.org/abs/2502.10325) (2025): 轻量级 actor-critic + 蒙特卡洛 rollout，3B 模型超越 GPT-4o 基线。
 - [Conditional RM](https://arxiv.org/abs/2509.26578) (2025): 条件概率建模步间依赖，联系每步奖励与最终结果。
 
+*奖励黑客防护：*
+- [Beyond Reward Hacking](https://arxiv.org/abs/2501.09620) (2025): 因果推断整合反事实不变性，消除长度偏差、谄媚等虚假相关性。
+- [Reward Shaping PAR](https://arxiv.org/abs/2502.18770) (2025): 有界且快速初始增长后平缓收敛的奖励设计。
+- [ODIN](https://arxiv.org/abs/2402.07319) (2024): 分离多个奖励维度，PPO 裁剪目标防止过度优化。
+- [InfoRM](https://arxiv.org/abs/2402.09345) (2024): 信息论方法改进奖励模型，减少虚假相关性。
+
 *自改进机制：*
 - [Self-Rewarding LMs](https://arxiv.org/abs/2401.10020) (2024): 模型自身作为评分器，迭代改进指令跟随和奖励能力。
 
-**宪法 AI / RLAIF**
+**多目标对齐**
+
+- [MetaAligner](https://arxiv.org/abs/2403.17141) (NeurIPS 2024): 三阶段方法，动态目标重组，插拔式多目标对齐。
+- [PAMA](https://arxiv.org/abs/2508.07768) (ECML PKDD 2025): O(n) 复杂度凸优化求解帕累托最优。
+- [HoE](https://arxiv.org/abs/2505.20925) (2025): 分层 LoRA + 路由专家混合，无需额外模型训练达到帕累托前沿。
+
+**安全对齐**
 
 - [Constitutional AI](https://arxiv.org/abs/2212.08073) (Anthropic): 通过规则原则引导 AI 自我改进，RLAIF 方法论创始性工作。
-- [C3AI](https://dl.acm.org/doi/10.1145/3696410.3714705) (ACM Web 2025): 正向、行为基础的原则比负向或特征基础的更符合人类偏好。
+- [MTSA](https://arxiv.org/abs/2505.17147) (ACL 2025): 思维引导攻击学习 + 对抗迭代优化，多轮强化学习优化安全对齐。
+- [MUSE](https://arxiv.org/abs/2509.14651) (2024): 蒙特卡洛树搜索探索多轮攻击，细粒度转向级防御对齐。
+- [RTVLM](https://arxiv.org/abs/2401.12915) (ACL 2024): 首个覆盖保真度、隐私、安全、公平的多模态红队数据集。
 
 ##### 知识编辑 (Knowledge Editing)
 
 直接修改模型参数以更新特定事实，不影响其他知识。
 
+*定位-编辑方法：*
 - [ROME](https://arxiv.org/abs/2202.05262) (2022) **Classic**: Rank-One Model Editing，因果追踪定位 + 低秩更新。
 - [MEMIT](https://arxiv.org/abs/2210.07229) (2022) **Classic**: 批量编辑成千上万个事实。
-- [WISE](https://arxiv.org/abs/2405.14768) (NeurIPS 2024): 双参数记忆机制，分离主记忆和侧记忆，解决连续编辑知识冲突。
-- [AlphaEdit](https://arxiv.org/abs/2410.02355) (ICLR 2025 **Outstanding Paper**): 零空间约束编辑，最小化对原有知识干扰，多基准 SOTA。
-- 工具：[EasyEdit](https://github.com/zjunlp/EasyEdit)
+- [AlphaEdit](https://arxiv.org/abs/2410.02355) (ICLR 2025 **Outstanding Paper**): 零空间约束编辑，最小化对原有知识干扰。
+- [GeoEdit](https://arxiv.org/abs/2502.19953) (2025): 几何关系区分新知识神经元和通用知识神经元。
+- [MEMIT-Merge](https://arxiv.org/abs/2502.07322) (ACL 2025 Findings): 解决 MEMIT 同主体批量编辑中的关键-值冲突。
+
+*元学习方法：*
+- [MALMEN](https://arxiv.org/abs/2311.04661) (ICLR 2024): 参数偏移聚合为最小二乘问题，可编辑超过 1000 条事实，比 MEND 提高百倍。
+- [InstructEdit](https://arxiv.org/abs/2405.15349) (IJCAI 2024): 元学习多任务指令训练，相比 MEND 可靠性提升 14.86%。
+
+*检索增强编辑：*
+- [RECIPE](https://arxiv.org/abs/2405.03279) (EMNLP 2024): 知识转换为连续提示，知识哨兵动态判断是否需要检索。
+- [ReMaKE](https://arxiv.org/abs/2312.13040) (2023): 首次实现多语言知识编辑，从多语言知识库检索。
+- [KEDAS](https://arxiv.org/abs/2508.01302) (2025): 多样化表示和自适应推理，超越基线约 19.8%。
+
+*多跳组合编辑：*
+- [MQuAKE](https://arxiv.org/abs/2305.14795) (EMNLP 2023): 首个多跳问答知识编辑基准。
+- [PokeMQA](https://arxiv.org/abs/2312.15194) (ACL 2024): 问题分解与范围检测分离编辑任务，引入冲突检测机制。
+- [CHECK](https://arxiv.org/abs/2508.00914) (IJCAI 2025): 基于编译原理对多跳推理进行语义分析和类型检查，22.8% 准确度提升。
+
+*终身编辑：*
+- [WISE](https://arxiv.org/abs/2405.14768) (NeurIPS 2024): 双参数记忆机制，分离主记忆和侧记忆，解决"不可能三角"。
+- [WikiBigEdit](https://arxiv.org/abs/2503.05683) (ICML 2025): 真实维基百科数据大规模基准，500K+ 问答对。
+- [MindBridge](https://arxiv.org/abs/2503.02701) (ACL 2025 Findings): 记忆模态概念实现跨模型编辑，模型更新后可快速迁移知识。
+
+*工具：*[EasyEdit](https://github.com/zjunlp/EasyEdit) - 支持 ROME、MEMIT、MEND 等多种方法的统一框架。
 
 ##### 核心挑战：灾难性遗忘
 
 学习新知识时覆盖旧知识，源于参数共享机制。核心是**可塑性-稳定性困境**。
+
+**理论分析：**
+- [Global Convergence on Non-IID Data](https://arxiv.org/abs/2503.18511) (2025): 首次为非 IID 连续学习建立几乎必然收敛结果。
+- [Understanding Forgetting with Linear Regression](https://arxiv.org/abs/2405.17583) (ICML 2024): 理论分析任务序列和算法参数对遗忘的影响。
+- [Information-Theoretic Bounds for Replay](https://arxiv.org/abs/2507.12043) (2025): 有限样本回放相比完全回放能实现更好泛化。
 
 **缓解技术**（已融入上述各部分）：
 - **重放**：保存或生成旧样本复习（见连续预训练-数据策略）
