@@ -334,6 +334,14 @@ This gap motivates our work to develop a principled **architecture-oriented clas
 记忆需要有更新，通常我们会细分出学习、遗忘、索引、压缩等操作，但这些一般都隐含在我们的算法中（如注意力机制等等），因此我们主要考虑更新方式。而对于模型来说，最常用的参数更新方式就是Structural和Iterative两种，前者直接在结构上拼接和Crop记忆，后者对现有的内容进行迭代。
 %%
 
+
+| Memory Type                          | Form（形式）                           | Operations（操作）                                     | Usage（用途）                                                       |
+| ------------------------------------ | ---------------------------------- | -------------------------------------------------- | --------------------------------------------------------------- |
+| **Sensory Memory**（Text → Embedding） | 原始 token；即时 embedding（瞬时编码表征）；无持久性 | encoding, retrieval, summarizing, adding, deleting | 提供即时输入，用于短期记忆的计算                                                |
+| **Short-Term Memory**（Cache）         | KV Cache；Recurrent State；可替换       | update (state, structure), retrieval, compress     | 提供包含长期记忆的模型的hidden states，维持 session 内的上下文一致性；用于长期记忆的计算；为输出提供参考 |
+| **Long-Term Memory**（Weights）        | 结构化语义知识、参数化知识                      | update (state, structure)                          | 跨 session 的知识；为输出提供参考                                           |
+
+
 To unify the diverse approaches above, we propose a **design-oriented classification** grounded in architectural principles rather than application type or cognitive analogy alone. This framework focuses on three interrelated axes:
 
 1. **Granularity of Representation**  
@@ -360,6 +368,8 @@ This taxonomy enables precise mapping between memory **function**, **placement**
 We adopt this classification throughout the rest of the survey to systematically compare memory-enhanced models across tasks such as long-context processing, tool usage, personalization, and lifelong learning.
 
 值得注意的是，与 Sensory Memory 的多种 RAG 检索方式不同，Working Memory 和 Long-term Memory 的**形式相对固定**（分别对应隐状态和模型参数），因此推理时的调用方式也基本一致，不存在感觉记忆部分那样多样化的检索策略。因此，后两部分的研究重点主要是**记忆更新**：新记忆的存储、已有记忆的保留与选择性遗忘。
+
+可以看到，压缩程度越高，对于记忆的可操作方式就越少，越固定。而用途上，压缩程度越低的记忆一般趋向于为更高层的记忆服务。
 
 ## Sensory Memory
 
@@ -439,7 +449,16 @@ RAG 方法通过外部笔记的形式弥补了 LLM 在固定上下文窗口中�
 
 工作记忆是一种记忆容量有限的认知系统，被用以暂时保存资讯。工作记忆需要和短期记忆作区分。目前比较认可的定义是，短期记忆仅指资讯的短期存储，而允许对存储的短期记忆进行操作，因此工作记忆是一个更完整的系统。
 
-### Classification
+
+### Forms
+
+
+KV Cache
+
+Hidden States
+
+
+### Operations
 
 工作记忆的实现依赖于模型的底层架构，不同设计对记忆容量和效率有显著影响。宏观上，工作记忆分类需要解决几个问题：
 
@@ -451,71 +470,37 @@ RAG 方法通过外部笔记的形式弥补了 LLM 在固定上下文窗口中�
 
 而如果工作记忆不进行迭代，则会退化为简单的短期记忆。
 
-#### Structure Update
 
-Transformer的工作记忆理论上可以包含所有输入信息，其本质是不断将新的短期记忆和旧的记忆进行concat操作：
-<div align="center">
-  <b>S<sub>t</sub> = concat(S<sub>t-1</sub>, {k<sub>t</sub>, v<sub>t</sub>})</b>
-</div>
-  Transformer的挑战在于超长序列的处理，包括平方级的计算复杂度，长度外推问题，缓存容量。因此，研究主要围绕在训练和推理阶段扩展工作记忆的长度。核心问题包括：
+
+#### Update
+
+##### Structure Update
+
+###### Caching
+
+Transformer 的工作记忆理论上可以包含所有输入信息，其本质是不断将新的短期记忆和旧的记忆进行 concat 操作：
+
+$$S_t = \text{concat}(S_{t-1}, \{k_t, v_t\})$$
+
+Transformer 的挑战在于超长序列的处理，包括平方级的计算复杂度、长度外推问题、缓存容量。因此，研究主要围绕在训练和推理阶段扩展工作记忆的长度。核心问题包括：
 - 超长上下文处理，早期工作在长上下文场景中无法泛化。
 - 训练推理效率，当上下文突破几十万时，如何加速和减少显存。
 
-
-##### Long-context processing
-
-长上下文主要解决两个递进的问题，首先是模型能够处理长文本，尤其是在训练和推理长度差距较大的情况下，解决长度外推的问题。在处理长文本的基础上，还需要解决长文本性能的问题，主要是让注意力关注真正有用的token，不受无关token对注意力权重的干扰。
-
-- 长度外推
-	- 长上下文训练
-		- Transformer-XL[^2]首次提出了将transformer前一段的context计算的结果用于后续的计算，相当于扩展了训练阶段支持的工作记忆长度。同时引入了相对位置编码来保证长度外推。
-	- 位置编码
-		- 相对位置编码
-		- ALiBi
-		- RoPE
-		- NTK-RoPE
-		- YARN
-		- Fourier Position Embedding
-	- 位置插值
-		- 
-	- 滑动窗口
-		- StreamingLLM
-		- Λ-Mask
-- 注意力增强
-	- Sigmoid Attention
-		- SWAT
-	- SSMAX增强的softmax函数
-	- moe
-
-##### Model efficiency
-
-%% 10篇 %%
-
-- Cache外部检索
-	- [Memorizing Transformer](../../../../4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/+Papers/Memorizing%20Transformers.md)[^6]将LLM特定层（第9层）训练时计算得到的kv cache保存作为记忆。下一个batch计算到第9层的时候，对于每一个token，模型使用knn查找与之相关的记忆（旧tokens的hidden states）并加入计算，最后汇总得到新tokens的hidden states。（具体细节需要再总结）
-	- 2022.11 [Large Language Models with Controllable Working Memory](https://arxiv.org/abs/2211.05110) 提出了一种可控工作记忆框架，通过调整注意力优先级增强 LLM 对上下文的处理能力，显著提升了多任务表现。
-	- Focused Transformer和Memorizing Transformers很像，都是保存了以前文本的hidden states，然后用于后续的文本训练。同时添加了负样本提升模型对于海量记忆的筛选能力。
-	- 2023.06 [Augmenting Language Models with Long-Term Memory](https://dl.acm.org/doi/10.5555/3666122.3669381) 训练了额外的SideNet来索引Cached Memory Bank，支持token-to-chunk检索。
-	- [LM2: Large Memory Model](https://arxiv.org/html/2502.06049v1) 加州大学和Anthropic联合团队提出的辅助记忆模块架构，通过上下文记忆库和动态门控机制实现多步推理能力提升，在BABILong基准测试上相比Llama-3.2提升86.3%。
-	- [NAMMs: Neural Attention Memory Models](https://arxiv.org/) 帝国理工学院和Sakana AI提出的进化式记忆优化模型，采用进化算法优化记忆管理，实现零样本跨架构和模态迁移。
-- Cache内部稀疏化
-	- Longformer[^4]首次提出了稀疏注意力，让模型在计算注意力时，只关注部分关键位置的token，极大减少了模型训练和推理的开销。
-		- 值得注意的是，在使用滑动窗口推理时，存在Attention Sink问题[^10]，因此需要保留最前面的几个tokens。不过和本篇的相关性不大，因此不做详细拓展。
-	- LongNet[^7]沿着Longformer的思路进行了一些改进，本质上用了三种注意力掩码的组合，来保证计算量呈线性。
-	- **[NSA: Native Sparse Attention](https://arxiv.org/abs/2502.11089) (DeepSeek, 2025.02, ACL 2025 Best Paper)**：硬件对齐的可训练稀疏注意力。三分支并行设计：compressed attention处理粗粒度模式，selected attention选择重要token块，sliding attention处理局部上下文。Lightning indexer快速定位相关片段，显著降低计算成本同时保持性能。
-	- **[MoBA: Mixture of Block Attention](https://arxiv.org/abs/2502.13189) (Moonshot AI, 2025.02, ICLR 2025)**：将MoE思想应用于注意力机制，块级稀疏注意力+路由机制。与NSA独立提出类似思路，通过可学习路由选择相关块进行注意力计算。
-	- **[CCA: Core Context Aware Attention](https://arxiv.org/abs/2412.12465) (2025.08)**：即插即用的高效长上下文模块。globality-aware pooling将token组压缩为core tokens，locality-preserving module保持细节表示。可直接替换现有LLM的self-attention，最小微调成本。
-- Cache压缩
-	- Compressive Transformer[^3]设计了一种压缩旧token并保存的方法，实现了真正意义上的记忆，旧tokens进行了压缩（max/mean pooling、1D convolution、dilated convolutions和most-used），同时为了验证压缩效果，他们尝试使用压缩后的记忆重建压缩前的内容。
-	- Linformer本质是将kv cache进行整体压缩，类似于pooling，最后得到一个整体的向量嵌入与新的token进行计算。
-	- **[KeepKV](https://arxiv.org/abs/2504.09936) (2025.04)**：自适应KV cache合并方法，实现单步无损压缩，提供多步压缩误差边界。在仅10% KV cache budget下仍保持生成质量，2x+ throughput提升。
-	- **[SentenceKV](https://github.com/zzbright1998/SentenceKV) (COLM 2025)**：句子级语义KV cache压缩。不同于token级压缩，利用语言自然结构按语义相似性聚类句子，保留重要上下文信息的同时实现高效压缩。
+###### Pruning
 
 
 
 
 
-#### State Update
+###### Compression
+
+- Compressive Transformer[^3]设计了一种压缩旧token并保存的方法，实现了真正意义上的记忆，旧tokens进行了压缩（max/mean pooling、1D convolution、dilated convolutions和most-used），同时为了验证压缩效果，他们尝试使用压缩后的记忆重建压缩前的内容。
+- Linformer本质是将kv cache进行整体压缩，类似于pooling，最后得到一个整体的向量嵌入与新的token进行计算。
+- **[KeepKV](https://arxiv.org/abs/2504.09936) (2025.04)**：自适应KV cache合并方法，实现单步无损压缩，提供多步压缩误差边界。在仅10% KV cache budget下仍保持生成质量，2x+ throughput提升。
+- **[SentenceKV](https://github.com/zzbright1998/SentenceKV) (COLM 2025)**：句子级语义KV cache压缩。不同于token级压缩，利用语言自然结构按语义相似性聚类句子，保留重要上下文信息的同时实现高效压缩。
+
+
+##### State Update
 
 基于循环架构的神经网络通常维护一个固定大小的隐层状态：
 
@@ -555,11 +540,11 @@ $$S_t = f(S_{t-1}, g(k_t, v_t))$$
 
 
 
-#### Hybrid Update
+##### Hybrid Update
 
 混合更新策略结合了Transformer的无限扩展能力和RNN/SSM的固定状态更新，在同一模型中使用多种架构组件。Hybrid Update分为两大类：
 
-##### 1. Hybrid Cache
+###### Hybrid Cache
 
 Hybrid Cache方法仍然基于Transformer架构，保持了self-attention机制的核心。与纯Structure Update（所有token直接缓存）不同，这类方法在推理逻辑中对cache进行了不同程度的State Update——即对部分或全部缓存内容进行压缩、迭代更新或循环处理，从而在保持Transformer表达能力的同时，通过状态化处理降低memory开销或增强信息编码。
 
@@ -588,7 +573,78 @@ Hybrid Cache方法仍然基于Transformer架构，保持了self-attention机制�
 - **[Mixture-of-Recursions (MoR)](https://arxiv.org/abs/2507.10524) (KAIST/DeepMind, 2025.07, NeurIPS 2025)**：统一recursive framework，lightweight routers实现adaptive token-level recursion depths。创新性recursion-wise KV caching：仅缓存active tokens at给定recursion depth，减少memory traffic。2x inference throughput，同时减少training FLOPs。Token-level adaptive depth（State）+ selective KV caching（Structure）。
 - **[Ouro: Scaling Latent Reasoning via Looped Language Models](https://arxiv.org/abs/2510.25741) (2025.10)**：Pre-trained Looped LM，将reasoning build into pre-training through iterative latent computation + entropy-regularized depth allocation，scaling to 7.7T tokens。使用4 recurrent steps，Ouro 1.4B/2.6B匹配12B SOTA LLMs。Parameter-shared looped architecture在latent space迭代（State）+ standard decoder-only Transformer blocks（Structure）。
 
-##### 2. Hybrid Architecture
+###### Hybrid State
+
+
+我记得是有方法，将Linear Attention的State复制多份的
+
+
+
+
+
+
+#### Retrieval
+
+- [Memorizing Transformer](../../../../4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/+Papers/Memorizing%20Transformers.md)[^6]将LLM特定层（第9层）训练时计算得到的kv cache保存作为记忆。下一个batch计算到第9层的时候，对于每一个token，模型使用knn查找与之相关的记忆（旧tokens的hidden states）并加入计算，最后汇总得到新tokens的hidden states。（具体细节需要再总结）
+- 2022.11 [Large Language Models with Controllable Working Memory](https://arxiv.org/abs/2211.05110) 提出了一种可控工作记忆框架，通过调整注意力优先级增强 LLM 对上下文的处理能力，显著提升了多任务表现。
+- Focused Transformer和Memorizing Transformers很像，都是保存了以前文本的hidden states，然后用于后续的文本训练。同时添加了负样本提升模型对于海量记忆的筛选能力。
+- 2023.06 [Augmenting Language Models with Long-Term Memory](https://dl.acm.org/doi/10.5555/3666122.3669381) 训练了额外的SideNet来索引Cached Memory Bank，支持token-to-chunk检索。
+- [LM2: Large Memory Model](https://arxiv.org/html/2502.06049v1) 加州大学和Anthropic联合团队提出的辅助记忆模块架构，通过上下文记忆库和动态门控机制实现多步推理能力提升，在BABILong基准测试上相比Llama-3.2提升86.3%。
+- [NAMMs: Neural Attention Memory Models](https://arxiv.org/) 帝国理工学院和Sakana AI提出的进化式记忆优化模型，采用进化算法优化记忆管理，实现零样本跨架构和模态迁移。
+
+
+
+
+
+### Usage
+
+
+#### Attention
+
+
+##### Sparsification
+
+- Longformer[^4]首次提出了稀疏注意力，让模型在计算注意力时，只关注部分关键位置的token，极大减少了模型训练和推理的开销。
+	- 值得注意的是，在使用滑动窗口推理时，存在Attention Sink问题[^10]，因此需要保留最前面的几个tokens。不过和本篇的相关性不大，因此不做详细拓展。
+- LongNet[^7]沿着Longformer的思路进行了一些改进，本质上用了三种注意力掩码的组合，来保证计算量呈线性。
+- **[NSA: Native Sparse Attention](https://arxiv.org/abs/2502.11089) (DeepSeek, 2025.02, ACL 2025 Best Paper)**：硬件对齐的可训练稀疏注意力。三分支并行设计：compressed attention处理粗粒度模式，selected attention选择重要token块，sliding attention处理局部上下文。Lightning indexer快速定位相关片段，显著降低计算成本同时保持性能。
+- **[MoBA: Mixture of Block Attention](https://arxiv.org/abs/2502.13189) (Moonshot AI, 2025.02, ICLR 2025)**：将MoE思想应用于注意力机制，块级稀疏注意力+路由机制。与NSA独立提出类似思路，通过可学习路由选择相关块进行注意力计算。
+- **[CCA: Core Context Aware Attention](https://arxiv.org/abs/2412.12465) (2025.08)**：即插即用的高效长上下文模块。globality-aware pooling将token组压缩为core tokens，locality-preserving module保持细节表示。可直接替换现有LLM的self-attention，最小微调成本。
+
+
+##### Long-context processing
+
+长上下文主要解决两个递进的问题，首先是模型能够处理长文本，尤其是在训练和推理长度差距较大的情况下，解决长度外推的问题。在处理长文本的基础上，还需要解决长文本性能的问题，主要是让注意力关注真正有用的token，不受无关token对注意力权重的干扰。
+
+- 长度外推
+	- 长上下文训练
+		- Transformer-XL[^2]首次提出了将transformer前一段的context计算的结果用于后续的计算，相当于扩展了训练阶段支持的工作记忆长度。同时引入了相对位置编码来保证长度外推。
+	- 位置编码
+		- 相对位置编码
+		- ALiBi
+		- RoPE
+		- NTK-RoPE
+		- YARN
+		- Fourier Position Embedding
+	- 位置插值
+		- 
+	- 滑动窗口
+		- StreamingLLM
+		- Λ-Mask
+- 注意力增强
+	- Sigmoid Attention
+		- SWAT
+	- SSMAX增强的softmax函数
+	- moe
+
+
+
+#### Recurrent Network
+
+
+
+
+#### Hybrid Architecture
 
 这类方法在模型架构层面混合不同类型的层：State Update layers（SSM/RNN）与Structure Update layers（Transformer attention）。根据混合方式的不同，可以分为三类：
 
@@ -619,6 +675,8 @@ SSM/RNN层和Attention层在depth维度交替排列，是目前最主流的混�
 
 - **[Mega](https://arxiv.org/abs/2209.10655) (Meta, 2022.09, ICLR 2023)**：将指数移动平均(EMA)整合到Gated Attention机制中，单头设计。Mega-chunk变体实现线性时间空间复杂度，比vanilla Transformer快5.5倍，内存仅13%。在Long Range Arena所有6个任务上显著超越S4。
 - **[StripedHyena](https://www.together.ai/blog/stripedhyena-7b) (Together AI, 2023.12)**：Hyena卷积块（处理大部分序列计算）+ Attention块（targeted pattern recall）组合。支持128K上下文训练，>500K tokens生成。在32K/64K/128K长度上训练分别比FlashAttention v2快30%/50%/100%以上。
+
+
 
 ### 相关技术
 
@@ -654,10 +712,19 @@ SSM/RNN层和Attention层在depth维度交替排列，是目前最主流的混�
 
 
 
-### Classification
+### Forms
+
+
+Parameters
+
+
+
+### Operations
 
 
 #### Structure Update
+
+
 
 ##### MoE
 
@@ -961,6 +1028,10 @@ MoE 的核心设计包括：路由机制（选择策略 + 负载均衡）、专�
 
 **综述**：[Towards Lifelong Learning of LLMs: A Survey](https://dl.acm.org/doi/10.1145/3716629) (ACM Computing Surveys, 2025)
 
+
+### Usage
+
+Inference
 
 
 
