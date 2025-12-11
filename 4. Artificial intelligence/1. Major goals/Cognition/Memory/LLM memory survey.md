@@ -741,13 +741,12 @@ Long-term Memory
 │   ├── Dense Parameters
 │   ├── Sparse/MoE (专家结构设计)
 │   └── Adapters/LoRA
-├── Operations
-│   ├── Update
-│   │   ├── Structure Update (Adding: LoRA/新专家, Deleting: 剪枝/Unlearning)
-│   │   └── State Update (预训练、微调、RLHF、知识编辑)
-│   └── Compress (蒸馏、量化、Model Merging)
+├── Update
+│   ├── Structure Update (Adding: LoRA/新专家, Deleting: 剪枝/Unlearning)
+│   │   └── Compress (蒸馏、量化、Model Merging)
+│   └── State Update (预训练、微调、RLHF、知识编辑)
 └── Usage
-    ├── MoE Routing
+    ├── Routing
     └── Ensemble
 ```
 
