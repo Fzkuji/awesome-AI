@@ -445,7 +445,18 @@ RAG 方法通过外部笔记的形式弥补了 LLM 在固定上下文窗口中�
 
 ## Working Memory
 
-工作记忆作为 LLM 短期记忆的核心，支撑了模型在动态任务中的实时推理能力。Transformer 的修改注意力机制和循环架构提供了不同的实现路径，而容量控制和遗忘机制则进一步优化了其性能。然而，工作记忆的容量瓶颈和时间跨度限制仍是研究热点，未来可能通过结合外部记忆或更高效的状态管理进一步突破。
+
+工作记忆是大语言模型记忆体系中最接近“在线思考”的部分：它既承担了短期信息的保存，又承担了对这些信息的选择、组合和操作。与上一节的感觉记忆不同，工作记忆不是对原始感知数据的简单缓存，而是对“当前正在被模型用于推理的那一小部分信息”的动态维护。从认知科学视角来看，现有工作已经基本形成一个共识：LLM 的工作记忆可以抽象为一个容量有限、可读写、随时间不断更新的状态空间，其主要实现形态包括基于 KV cache 的注意力窗口、基于隐状态的循环或状态空间模型，以及一部分显式设计的短期记忆模块。[^cognitive_memory_llm][^memory3_explicit]
+
+越来越多的工作强调：当前 LLM 的工作记忆虽在行为上呈现出部分类人效应（如列表长度效应、虚假记忆等），但在机制上仍与人类前额叶皮层主导的工作记忆系统存在本质差异。人类可以在一个显式的心理工作空间中有意识地“保持并操作”少量符号，而主流 LLM 更多依赖被动的注意力检索与隐式分布式表示，缺乏类似“可显式操作的缓存寄存器”。这也解释了为何在一些需要长期维持中间假设、反复更新 mental model 的任务上，LLM 在直觉上显得“记不住自己刚才是怎么想的”。[^huang2025_llm_not_human_wm][^cog_psych_memory_2025]
+
+一系列实证研究表明，Transformer 式自注意力天然存在类似人类工作记忆的容量瓶颈。N-back 等范式下的实验发现，即便在参数规模不断增大的情况下，模型能够稳定维持和操作的信息量仍近似受一个常数级上限约束，继续堆叠层数或扩大模型规模并不能线性提升其“可用工作记忆”。[^gong2024_wm_capacity] 从注意力分布分析的角度看，随着序列长度增长，注意力权重熵迅速增大，模型难以在指数级候选位置中保持集中，导致关键信息逐渐被噪声稀释；[^selfattention_limits_2024] 在复杂推理任务上，失败的根源往往不是缺少参数，而是中间结论在推理链中“丢失”或被覆盖，从而暴露出工作记忆作为推理瓶颈的结构性限制。[^wm_identifies_limits_2024]
+
+因此在架构层面，研究焦点正在从“单纯拉长上下文窗口”转向“让工作记忆变得可操作”。一条路线是在 Transformer 内部通过 KV cache 管理、稀疏注意力、记忆压缩与选择性遗忘等手段，尽可能挖掘现有注意力结构的工作记忆能力；[^kv_cache_survey_2025] 另一条路线则通过引入显式状态（隐层 state、SSM 状态、反馈注意力循环、显式工作记忆缓冲区等）赋予模型更接近 RNN/LSTM 那样的持久、可控、可编辑的短期记忆。[^transformerfam_2024][^think_in_memory_2023][^lm2_large_memory_2025] 更进一步，一些工作开始在工作记忆之上叠加明确的操作接口（读、写、合并、反思、重构），模糊了“内部状态”和“小型外部黑板”之间的界限，使工作记忆从“静态窗口”演化为“可编程的动态资源”。[^ewe_explicit_wm_2025][^memory3_explicit]
+
+在本文的框架下，我们将工作记忆从三个正交的维度进行组织：首先是**表示形式（Forms）**，即工作记忆在 LLM 中以何种结构性载体存在——是通过附着于注意力头的 KV cache 表达、通过固定维度的隐状态在循环/线性注意力/状态空间模型中维持，还是以独立模块化的显式工作记忆缓冲区出现；其次是**更新机制（Update）**，即工作记忆在推理过程中如何被写入、压缩、遗忘或重组，这些更新规则直接决定了模型在长序列与深度推理中的稳定性与容量利用效率；最后是**使用方式（Usage）**，包括模型如何在注意力、检索、选择性访问或推理控制等过程中调用工作记忆，从而影响其信息整合、推理深度与中间状态保持能力。
+
+下面我们首先从表示形式的角度出发，梳理基于 KV Cache、隐状态与显式工作记忆模块的几类主流实现，然后再从更新机制与使用方式切入，讨论不同工作记忆设计在容量、效率与推理能力上的权衡。
 
 
 
@@ -616,8 +627,6 @@ Hybrid Cache方法仍然基于Transformer架构，保持了self-attention机制�
 		- NTK-RoPE
 		- YARN
 		- Fourier Position Embedding
-	- 位置插值
-		- 
 	- 滑动窗口
 		- StreamingLLM
 		- Λ-Mask
@@ -1136,7 +1145,7 @@ Large Language Models with Controllable Working Memory
 
 
 
-
+Letta (previously MemGPT)[^next]这个GitHub项目也是使用纯文
 
 
 
@@ -1150,10 +1159,22 @@ Large Language Models with Controllable Working Memory
 [^8]: [MemoryBank: Enhancing Large Language Models with Long-Term Memory](https://doi.org/10.1609/aaai.v38i17.29946)
 [^9]: [MemGPT: Towards LLMs as Operating Systems](https://doi.org/10.48550/arXiv.2310.08560)
 [^10]: [Efficient Streaming Language Models with Attention Sinks](https://openreview.net/forum?id=NG7sS51zVF)
+[^next]: [Efficient Streaming Langun Sinks](https://openreview.netG7sS51zVF)
 
 
-
-
+[^cognitive_memory_llm]: L. Shan et al. *Cognitive Memory in Large Language Models*. 2025. [https://arxiv.org/abs/2504.02441](https://arxiv.org/abs/2504.02441)
+[^memory3_explicit]: H. Yang et al. *Memory³: Language Modeling with Explicit Memory*. 2024. [https://arxiv.org/abs/2407.01178](https://arxiv.org/abs/2407.01178)
+[^gong2024_wm_capacity]: D. Gong et al. *Working Memory Capacity of ChatGPT: An Empirical Study*. AAAI 2024. [https://arxiv.org/abs/2305.03731](https://arxiv.org/abs/2305.03731)
+[^selfattention_limits_2024]: A. (Authors). *Self-Attention Limits Working Memory Capacity*. 2024. [https://arxiv.org/abs/2409.10715](https://arxiv.org/abs/2409.10715)
+[^wm_identifies_limits_2024]: C. Zhang et al. *Working Memory Identifies Reasoning Limits in Language Models*. EMNLP 2024. [https://aclanthology.org/2024.emnlp-main.938](https://aclanthology.org/2024.emnlp-main.938)
+[^huang2025_llm_not_human_wm]: J. Huang et al. *LLMs Do Not Have Human-Like Working Memory*. 2025. [https://arxiv.org/abs/2505.10571](https://arxiv.org/abs/2505.10571)
+[^cog_psych_memory_2025]: Authors. *Analyzing Memory Effects in LLMs through Cognitive Psychology*. 2025. [https://arxiv.org/abs/2509.17138](https://arxiv.org/abs/2509.17138)
+[^kv_cache_survey_2025]: Authors. *A Survey on LLM Acceleration based on KV Cache Management*. TMLR 2025. [https://arxiv.org/abs/2412.19442](https://arxiv.org/abs/2412.19442)
+[^transformerfam_2024]: D. Hwang et al. *TransformerFAM: Feedback Attention is Working Memory*. 2024. [https://arxiv.org/abs/2404.09173](https://arxiv.org/abs/2404.09173)
+[^think_in_memory_2023]: L. Liu et al. *Think-in-Memory: Recalling and Post-thinking Enable LLMs with Long-Term Memory*. 2023. [https://arxiv.org/abs/2311.08719](https://arxiv.org/abs/2311.08719)
+[^lm2_large_memory_2025]: Authors. *LM2: Large Memory Models*. 2025. [https://arxiv.org/abs/2502.06049](https://arxiv.org/abs/2502.06049)
+[^ewe_explicit_wm_2025]: M. Chen et al. *Improving Factuality with Explicit Working Memory (EWE)*. ACL 2025. [https://arxiv.org/abs/2412.18069](https://arxiv.org/abs/2412.18069)
+[^vector_longterm_2024]: Y. Zhang et al. *Vector Storage Based Long-term Memory Research on LLM*. 2024. [https://sciendo.com/article/10.2478/ijanmc-2024-0029](https://sciendo.com/article/10.2478/ijanmc-2024-0029)
 
 
 
