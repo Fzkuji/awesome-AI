@@ -711,19 +711,50 @@ SSM/RNN层和Attention层在depth维度交替排列，是目前最主流的混�
 核心挑战是避免**灾难性遗忘**（catastrophic forgetting）——在学习新知识时保留已有知识。
 
 
+```
+Long-term Memory
+├── Forms
+│   ├── Dense Parameters
+│   ├── Sparse/MoE (专家结构设计)
+│   └── Adapters/LoRA
+├── Operations
+│   ├── Update
+│   │   ├── Structure Update (Adding: LoRA/新专家, Deleting: 剪枝/Unlearning)
+│   │   └── State Update (预训练、微调、RLHF、知识编辑)
+│   └── Compress (蒸馏、量化、Model Merging)
+└── Usage
+    ├── MoE Routing
+    └── Ensemble
+```
+
 
 ### Forms
 
-
 Parameters
 
+#### PEFT modules
+
+PEFT (Parameter-Efficient Fine-Tuning)参数高效微调通过仅更新少量参数来实现知识更新，是一种高效的长期记忆修改方式。
+
+**Adapter 方法：**
+- [Parameter-Efficient Transfer Learning for NLP](https://arxiv.org/abs/1902.00751) (ICML 2019, Houlsby et al.) **Classic**: 原始 Adapter 论文，在 Transformer 层间插入瓶颈结构，仅增加 3.6% 参数达到接近全微调性能。
+- [AdapterHub: A Framework for Adapting Transformers](https://arxiv.org/abs/2007.07779) (EMNLP 2020): Adapter 统一框架和预训练 Adapter 共享平台。
+- [LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning](https://aclanthology.org/2023.emnlp-main.319/) (EMNLP 2023): 系统研究 Adapter 类型、位置和超参数的影响，7B 模型可达 175B 模型零样本性能。
+
+**LoRA 系列：**
+- [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685) (ICLR 2022) **Classic**: 低秩矩阵分解，冻结原参数仅训练低秩增量。
+- [QLoRA: Efficient Finetuning of Quantized LLMs](https://arxiv.org/abs/2305.14314) (NeurIPS 2023): 4-bit 量化 + LoRA，65B 模型可在单 48GB GPU 上微调。
+- [LoRA-FA: Memory-efficient Low-rank Adaptation](https://arxiv.org/abs/2308.03303) (2023): 冻结 A 矩阵仅训练 B，减少激活内存最多 13GB。
+- [DoRA: Weight-Decomposed Low-Rank Adaptation](https://arxiv.org/abs/2402.09353) (ICML 2024): 分解权重为幅度和方向，超越 LoRA。
 
 
-##### MoE
 
-MoE 通过稀疏激活扩展模型容量，每个专家可以存储特定领域的知识，是一种结构化的长期记忆扩展方式。综述：[A Survey on Mixture of Experts in Large Language Models](https://arxiv.org/abs/2407.06204) (TKDE 2025)；[A Comprehensive Survey of Mixture-of-Experts](https://arxiv.org/abs/2503.07137) (2025)
 
-###### 技术演进
+
+
+#### MoE
+
+MoE  Mixture of experts通过稀疏激活扩展模型容量，每个专家可以存储特定领域的知识，是一种结构化的长期记忆扩展方式。综述：[A Survey on Mixture of Experts in Large Language Models](https://arxiv.org/abs/2407.06204) (TKDE 2025)；[A Comprehensive Survey of Mixture-of-Experts](https://arxiv.org/abs/2503.07137) (2025)
 
 MoE 的核心设计包括：路由机制（选择策略 + 负载均衡）、专家结构（粒度和组织）、系统优化（并行训练与通信）。
 
@@ -744,21 +775,32 @@ MoE 的核心设计包括：路由机制（选择策略 + 负载均衡）、专�
 *统一架构：*
 - [UMoE](https://arxiv.org/abs/2505.07260) (2025): 统一 Attention 和 FFN 的 MoE，揭示注意力中隐含的 FFN 结构。
 
+
+
+
+**MoE + LoRA（混合专家 + 参数高效）：**
+
+将 LoRA 适配器作为专家，结合 MoE 路由实现多任务/多领域的参数高效适配。
+
+- [MOELoRA](https://arxiv.org/abs/2310.18339) (SIGIR 2024): 每个专家为低秩矩阵对，任务驱动门控选择专家组合。
+- [LoRA-MoE](https://aclanthology.org/2024.acl-long.106/) (ACL 2024): LoRA 适配器作为专家，冻结主干网络，有效缓解世界知识遗忘。
+- [MoRA](https://arxiv.org/abs/2506.21035) (2025): Mixture-of-Rank Adaptive，细粒度 rank 级选择替代 adapter 级，减少冗余和干扰。
+
+
+
+
+
+
+
+
 ### Operations
 
 
 #### Structure Update
 
+两个视角，一个是从operation角度，一个是从forms角度。forms角度：
 
-
-
-
-
-
-
-###### 知识更新
-
-从记忆角度，MoE 的专家结构天然支持知识的模块化存储与更新。
+**1. MoE-based**
 
 **新知识添加：**
 
@@ -791,29 +833,33 @@ MoE 的核心设计包括：路由机制（选择策略 + 负载均衡）、专�
 - **内存增长**：动态添加专家导致模型规模线性增长。
 
 
+**2. PEFT-based**
 
-##### PEFT (Parameter-Efficient Fine-Tuning)
 
-参数高效微调通过仅更新少量参数来实现知识更新，是一种高效的长期记忆修改方式。
+operation角度：
 
-**Adapter 方法：**
-- [Parameter-Efficient Transfer Learning for NLP](https://arxiv.org/abs/1902.00751) (ICML 2019, Houlsby et al.) **Classic**: 原始 Adapter 论文，在 Transformer 层间插入瓶颈结构，仅增加 3.6% 参数达到接近全微调性能。
-- [AdapterHub: A Framework for Adapting Transformers](https://arxiv.org/abs/2007.07779) (EMNLP 2020): Adapter 统一框架和预训练 Adapter 共享平台。
-- [LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning](https://aclanthology.org/2023.emnlp-main.319/) (EMNLP 2023): 系统研究 Adapter 类型、位置和超参数的影响，7B 模型可达 175B 模型零样本性能。
 
-**LoRA 系列：**
-- [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685) (ICLR 2022) **Classic**: 低秩矩阵分解，冻结原参数仅训练低秩增量。
-- [QLoRA: Efficient Finetuning of Quantized LLMs](https://arxiv.org/abs/2305.14314) (NeurIPS 2023): 4-bit 量化 + LoRA，65B 模型可在单 48GB GPU 上微调。
-- [LoRA-FA: Memory-efficient Low-rank Adaptation](https://arxiv.org/abs/2308.03303) (2023): 冻结 A 矩阵仅训练 B，减少激活内存最多 13GB。
-- [DoRA: Weight-Decomposed Low-Rank Adaptation](https://arxiv.org/abs/2402.09353) (ICML 2024): 分解权重为幅度和方向，超越 LoRA。
+**添加**
 
-**MoE + LoRA（混合专家 + 参数高效）：**
 
-将 LoRA 适配器作为专家，结合 MoE 路由实现多任务/多领域的参数高效适配。
+**删除**
 
-- [MOELoRA](https://arxiv.org/abs/2310.18339) (SIGIR 2024): 每个专家为低秩矩阵对，任务驱动门控选择专家组合。
-- [LoRA-MoE](https://aclanthology.org/2024.acl-long.106/) (ACL 2024): LoRA 适配器作为专家，冻结主干网络，有效缓解世界知识遗忘。
-- [MoRA](https://arxiv.org/abs/2506.21035) (2025): Mixture-of-Rank Adaptive，细粒度 rank 级选择替代 adapter 级，减少冗余和干扰。
+
+
+##### Compression
+
+
+###### Distillation
+
+
+###### Quantization
+
+
+###### Pruning
+
+
+
+###### Model Merging
 
 
 #### State Update
@@ -1003,7 +1049,9 @@ MoE 的核心设计包括：路由机制（选择策略 + 负载均衡）、专�
 
 *工具：*[EasyEdit](https://github.com/zjunlp/EasyEdit) - 支持 ROME、MEMIT、MEND 等多种方法的统一框架。
 
-##### 核心挑战：灾难性遗忘
+##### 核心挑战
+
+1. 灾难性遗忘
 
 学习新知识时覆盖旧知识，源于参数共享机制。核心是**可塑性-稳定性困境**。
 
@@ -1021,12 +1069,17 @@ MoE 的核心设计包括：路由机制（选择策略 + 负载均衡）、专�
 **综述**：[Towards Lifelong Learning of LLMs: A Survey](https://dl.acm.org/doi/10.1145/3716629) (ACM Computing Surveys, 2025)
 
 
+2. 新知识快速鲁棒学习和旧知识的遗忘
+
+
+
+
 ### Usage
 
 Inference
 
 
-**MOE路由机制 (Routing)：**
+#### Routing
 
 路由决定每个 token 由哪些专家处理，核心问题是选择策略和负载均衡。
 
@@ -1039,6 +1092,14 @@ Inference
 - 辅助损失：[GShard](https://arxiv.org/abs/2006.16668) 引入负载均衡损失惩罚不均。问题：干扰梯度影响性能。
 - 无辅助损失：[Auxiliary-Loss-Free Load Balancing](https://arxiv.org/abs/2408.15664) (ICLR 2025) 通过动态偏置调整路由分数，**DeepSeek-V3** 采用，实现**零 token 丢弃**。
 - [MoLE](https://arxiv.org/abs/2503.15798) (ICML 2025 Oral): 专家输入改为 embedding 层输出，推理前将 FFN 专家重参数化为查找表（LUT），根据 token id 直接查表，可 offload 到存储设备，延迟接近 dense 模型。
+
+
+
+
+
+#### Ensemble
+
+
 
 
 
