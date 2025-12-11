@@ -445,12 +445,13 @@ RAG 方法通过外部笔记的形式弥补了 LLM 在固定上下文窗口中�
 
 ## Working Memory
 
-### 概述
+工作记忆作为 LLM 短期记忆的核心，支撑了模型在动态任务中的实时推理能力。Transformer 的修改注意力机制和循环架构提供了不同的实现路径，而容量控制和遗忘机制则进一步优化了其性能。然而，工作记忆的容量瓶颈和时间跨度限制仍是研究热点，未来可能通过结合外部记忆或更高效的状态管理进一步突破。
 
-工作记忆是一种记忆容量有限的认知系统，被用以暂时保存资讯。工作记忆需要和短期记忆作区分。目前比较认可的定义是，短期记忆仅指资讯的短期存储，而允许对存储的短期记忆进行操作，因此工作记忆是一个更完整的系统。
 
 
 ### Forms
+
+工作记忆是一种记忆容量有限的认知系统，被用以暂时保存资讯。工作记忆需要和短期记忆作区分。目前比较认可的定义是，短期记忆仅指资讯的短期存储，而允许对存储的短期记忆进行操作，因此工作记忆是一个更完整的系统。
 
 
 KV Cache
@@ -458,7 +459,7 @@ KV Cache
 Hidden States
 
 
-### Operations
+### Update
 
 工作记忆的实现依赖于模型的底层架构，不同设计对记忆容量和效率有显著影响。宏观上，工作记忆分类需要解决几个问题：
 
@@ -472,11 +473,10 @@ Hidden States
 
 
 
-#### Update
 
-##### Structure Update
+#### Structure Update
 
-###### Caching
+##### Caching
 
 Transformer 的工作记忆理论上可以包含所有输入信息，其本质是不断将新的短期记忆和旧的记忆进行 concat 操作：
 
@@ -486,13 +486,13 @@ Transformer 的挑战在于超长序列的处理，包括平方级的计算复�
 - 超长上下文处理，早期工作在长上下文场景中无法泛化。
 - 训练推理效率，当上下文突破几十万时，如何加速和减少显存。
 
-###### Pruning
+##### Pruning
 
 
 
 
 
-###### Compression
+##### Compression
 
 - Compressive Transformer[^3]设计了一种压缩旧token并保存的方法，实现了真正意义上的记忆，旧tokens进行了压缩（max/mean pooling、1D convolution、dilated convolutions和most-used），同时为了验证压缩效果，他们尝试使用压缩后的记忆重建压缩前的内容。
 - Linformer本质是将kv cache进行整体压缩，类似于pooling，最后得到一个整体的向量嵌入与新的token进行计算。
@@ -500,7 +500,7 @@ Transformer 的挑战在于超长序列的处理，包括平方级的计算复�
 - **[SentenceKV](https://github.com/zzbright1998/SentenceKV) (COLM 2025)**：句子级语义KV cache压缩。不同于token级压缩，利用语言自然结构按语义相似性聚类句子，保留重要上下文信息的同时实现高效压缩。
 
 
-##### State Update
+#### State Update
 
 基于循环架构的神经网络通常维护一个固定大小的隐层状态：
 
@@ -540,11 +540,11 @@ $$S_t = f(S_{t-1}, g(k_t, v_t))$$
 
 
 
-##### Hybrid Update
+#### Hybrid Update
 
 混合更新策略结合了Transformer的无限扩展能力和RNN/SSM的固定状态更新，在同一模型中使用多种架构组件。Hybrid Update分为两大类：
 
-###### Hybrid Cache
+##### Hybrid Cache
 
 Hybrid Cache方法仍然基于Transformer架构，保持了self-attention机制的核心。与纯Structure Update（所有token直接缓存）不同，这类方法在推理逻辑中对cache进行了不同程度的State Update——即对部分或全部缓存内容进行压缩、迭代更新或循环处理，从而在保持Transformer表达能力的同时，通过状态化处理降低memory开销或增强信息编码。
 
@@ -573,7 +573,7 @@ Hybrid Cache方法仍然基于Transformer架构，保持了self-attention机制�
 - **[Mixture-of-Recursions (MoR)](https://arxiv.org/abs/2507.10524) (KAIST/DeepMind, 2025.07, NeurIPS 2025)**：统一recursive framework，lightweight routers实现adaptive token-level recursion depths。创新性recursion-wise KV caching：仅缓存active tokens at给定recursion depth，减少memory traffic。2x inference throughput，同时减少training FLOPs。Token-level adaptive depth（State）+ selective KV caching（Structure）。
 - **[Ouro: Scaling Latent Reasoning via Looped Language Models](https://arxiv.org/abs/2510.25741) (2025.10)**：Pre-trained Looped LM，将reasoning build into pre-training through iterative latent computation + entropy-regularized depth allocation，scaling to 7.7T tokens。使用4 recurrent steps，Ouro 1.4B/2.6B匹配12B SOTA LLMs。Parameter-shared looped architecture在latent space迭代（State）+ standard decoder-only Transformer blocks（Structure）。
 
-###### Hybrid State
+##### Hybrid State
 
 
 我记得是有方法，将Linear Attention的State复制多份的
@@ -581,16 +581,6 @@ Hybrid Cache方法仍然基于Transformer架构，保持了self-attention机制�
 
 
 
-
-
-#### Retrieval
-
-- [Memorizing Transformer](../../../../4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/+Papers/Memorizing%20Transformers.md)[^6]将LLM特定层（第9层）训练时计算得到的kv cache保存作为记忆。下一个batch计算到第9层的时候，对于每一个token，模型使用knn查找与之相关的记忆（旧tokens的hidden states）并加入计算，最后汇总得到新tokens的hidden states。（具体细节需要再总结）
-- 2022.11 [Large Language Models with Controllable Working Memory](https://arxiv.org/abs/2211.05110) 提出了一种可控工作记忆框架，通过调整注意力优先级增强 LLM 对上下文的处理能力，显著提升了多任务表现。
-- Focused Transformer和Memorizing Transformers很像，都是保存了以前文本的hidden states，然后用于后续的文本训练。同时添加了负样本提升模型对于海量记忆的筛选能力。
-- 2023.06 [Augmenting Language Models with Long-Term Memory](https://dl.acm.org/doi/10.5555/3666122.3669381) 训练了额外的SideNet来索引Cached Memory Bank，支持token-to-chunk检索。
-- [LM2: Large Memory Model](https://arxiv.org/html/2502.06049v1) 加州大学和Anthropic联合团队提出的辅助记忆模块架构，通过上下文记忆库和动态门控机制实现多步推理能力提升，在BABILong基准测试上相比Llama-3.2提升86.3%。
-- [NAMMs: Neural Attention Memory Models](https://arxiv.org/) 帝国理工学院和Sakana AI提出的进化式记忆优化模型，采用进化算法优化记忆管理，实现零样本跨架构和模态迁移。
 
 
 
@@ -678,6 +668,25 @@ SSM/RNN层和Attention层在depth维度交替排列，是目前最主流的混�
 
 
 
+
+
+
+#### Retrieval
+
+- [Memorizing Transformer](../../../../4.%20Artificial%20intelligence/2.%20Approaches/Artificial%20neural%20network/Large%20language%20model/+Papers/Memorizing%20Transformers.md)[^6]将LLM特定层（第9层）训练时计算得到的kv cache保存作为记忆。下一个batch计算到第9层的时候，对于每一个token，模型使用knn查找与之相关的记忆（旧tokens的hidden states）并加入计算，最后汇总得到新tokens的hidden states。（具体细节需要再总结）
+- 2022.11 [Large Language Models with Controllable Working Memory](https://arxiv.org/abs/2211.05110) 提出了一种可控工作记忆框架，通过调整注意力优先级增强 LLM 对上下文的处理能力，显著提升了多任务表现。
+- Focused Transformer和Memorizing Transformers很像，都是保存了以前文本的hidden states，然后用于后续的文本训练。同时添加了负样本提升模型对于海量记忆的筛选能力。
+- 2023.06 [Augmenting Language Models with Long-Term Memory](https://dl.acm.org/doi/10.5555/3666122.3669381) 训练了额外的SideNet来索引Cached Memory Bank，支持token-to-chunk检索。
+- [LM2: Large Memory Model](https://arxiv.org/html/2502.06049v1) 加州大学和Anthropic联合团队提出的辅助记忆模块架构，通过上下文记忆库和动态门控机制实现多步推理能力提升，在BABILong基准测试上相比Llama-3.2提升86.3%。
+- [NAMMs: Neural Attention Memory Models](https://arxiv.org/) 帝国理工学院和Sakana AI提出的进化式记忆优化模型，采用进化算法优化记忆管理，实现零样本跨架构和模态迁移。
+
+
+
+
+
+
+
+%%
 ### 相关技术
 
 工作记忆的有效性不仅依赖架构，还需要管理机制来优化信息存储和使用。
@@ -686,9 +695,8 @@ SSM/RNN层和Attention层在depth维度交替排列，是目前最主流的混�
 
 - Transformer Hidden States
 	- [LLM in a flash: Efficient Large Language Model Inference with Limited Memory](https://aclanthology.org/2024.acl-long.678/)通过将模型参数存储在闪存，提升推理时可以支持的计算长度。
-### 小结
 
-工作记忆作为 LLM 短期记忆的核心，支撑了模型在动态任务中的实时推理能力。Transformer 的修改注意力机制和循环架构提供了不同的实现路径，而容量控制和遗忘机制则进一步优化了其性能。然而，工作记忆的容量瓶颈和时间跨度限制仍是研究热点，未来可能通过结合外部记忆或更高效的状态管理进一步突破。
+%%
 
 
 
@@ -793,7 +801,7 @@ MoE 的核心设计包括：路由机制（选择策略 + 负载均衡）、专�
 
 
 
-### Operations
+### Update
 
 
 #### Structure Update
@@ -866,9 +874,8 @@ operation角度：
 
 状态更新是长期记忆的核心操作，通过修改模型参数来更新知识。主要途径包括：预训练、微调、强化学习对齐，以及知识编辑。
 
-##### 预训练 (Pre-training)
+##### Pre-training
 
-###### 从头预训练 (Pre-training from Scratch)
 
 *数据策略：*
 
@@ -904,7 +911,7 @@ operation角度：
 - [GaLore](https://arxiv.org/abs/2403.03507) (ICML 2024): 梯度低秩投影，37.92GB 内存节省，保持全参数学习。
 - [GaLore 2](https://arxiv.org/abs/2504.20437) (2025): 扩展到大规模预训练。
 
-###### 连续预训练 (Continual Pre-training)
+##### Continual Pre-training
 
 在已有模型基础上继续预训练，避免从头重新训练。核心挑战是灾难性遗忘和分布转移。
 
@@ -928,7 +935,7 @@ operation角度：
 - [PMC-LLaMA](https://arxiv.org/abs/2304.14454) (2023): 医学领域三阶段方法，13B 超越 ChatGPT。
 - [Code Llama](https://arxiv.org/abs/2308.12950) (2023): 500B 代码导向连续预训练。
 
-##### 微调 (Fine-tuning)
+##### Fine-tuning
 
 **指令微调 (Instruction Tuning)**
 
@@ -967,7 +974,7 @@ operation角度：
 - [DoRA](https://arxiv.org/abs/2402.09353) (ICML 2024 Oral): 权重分解为幅度和方向，方向用 LoRA 优化，仅增加 0.01% 参数但超越 LoRA。
 - [Dual LoRA](https://arxiv.org/abs/2512.03402) (2025): 同时优化幅度和方向，改进 DoRA 设计。
 
-##### 强化学习对齐 (RL Alignment)
+##### RL Alignment
 
 **偏好优化**
 
@@ -1017,7 +1024,7 @@ operation角度：
 - [MUSE](https://arxiv.org/abs/2509.14651) (2024): 蒙特卡洛树搜索探索多轮攻击，细粒度转向级防御对齐。
 - [RTVLM](https://arxiv.org/abs/2401.12915) (ACL 2024): 首个覆盖保真度、隐私、安全、公平的多模态红队数据集。
 
-##### 知识编辑 (Knowledge Editing)
+##### Knowledge Editing
 
 直接修改模型参数以更新特定事实，不影响其他知识。
 
