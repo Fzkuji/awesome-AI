@@ -719,13 +719,6 @@ Parameters
 
 
 
-### Operations
-
-
-#### Structure Update
-
-
-
 ##### MoE
 
 MoE 通过稀疏激活扩展模型容量，每个专家可以存储特定领域的知识，是一种结构化的长期记忆扩展方式。综述：[A Survey on Mixture of Experts in Large Language Models](https://arxiv.org/abs/2407.06204) (TKDE 2025)；[A Comprehensive Survey of Mixture-of-Experts](https://arxiv.org/abs/2503.07137) (2025)
@@ -734,19 +727,7 @@ MoE 通过稀疏激活扩展模型容量，每个专家可以存储特定领域�
 
 MoE 的核心设计包括：路由机制（选择策略 + 负载均衡）、专家结构（粒度和组织）、系统优化（并行训练与通信）。
 
-**路由机制 (Routing)：**
 
-路由决定每个 token 由哪些专家处理，核心问题是选择策略和负载均衡。
-
-*选择策略：*
-- Token-Choice (Top-K)：token 选择得分最高的 K 个专家。[GShard](https://arxiv.org/abs/2006.16668) (2020) 提出 Top-2 随机路由；[Switch Transformers](https://arxiv.org/abs/2101.03961) (2021) 简化为 Top-1 实现万亿参数模型。问题：负载不均衡、专家利用率低。
-- Expert-Choice：专家选择 Top-K tokens，**天然负载均衡**，每个 token 可被 0 到多个专家处理。[Expert Choice Routing](https://arxiv.org/abs/2202.09368) (NeurIPS 2022) 训练速度提升 2x+。
-- [TC-MoE](https://openreview.net/forum?id=dsP91M4hDL) (2025): Ternary Choice，用 {-1, 0, 1} 扩展专家空间，激活专家数减少 9%，性能提升 1.1%。
-
-*负载均衡：*
-- 辅助损失：[GShard](https://arxiv.org/abs/2006.16668) 引入负载均衡损失惩罚不均。问题：干扰梯度影响性能。
-- 无辅助损失：[Auxiliary-Loss-Free Load Balancing](https://arxiv.org/abs/2408.15664) (ICLR 2025) 通过动态偏置调整路由分数，**DeepSeek-V3** 采用，实现**零 token 丢弃**。
-- [MoLE](https://arxiv.org/abs/2503.15798) (ICML 2025 Oral): 专家输入改为 embedding 层输出，推理前将 FFN 专家重参数化为查找表（LUT），根据 token id 直接查表，可 offload 到存储设备，延迟接近 dense 模型。
 
 **专家结构 (Expert Design)：**
 
@@ -762,6 +743,17 @@ MoE 的核心设计包括：路由机制（选择策略 + 负载均衡）、专�
 
 *统一架构：*
 - [UMoE](https://arxiv.org/abs/2505.07260) (2025): 统一 Attention 和 FFN 的 MoE，揭示注意力中隐含的 FFN 结构。
+
+### Operations
+
+
+#### Structure Update
+
+
+
+
+
+
 
 
 ###### 知识更新
@@ -1032,6 +1024,22 @@ MoE 的核心设计包括：路由机制（选择策略 + 负载均衡）、专�
 ### Usage
 
 Inference
+
+
+**MOE路由机制 (Routing)：**
+
+路由决定每个 token 由哪些专家处理，核心问题是选择策略和负载均衡。
+
+*选择策略：*
+- Token-Choice (Top-K)：token 选择得分最高的 K 个专家。[GShard](https://arxiv.org/abs/2006.16668) (2020) 提出 Top-2 随机路由；[Switch Transformers](https://arxiv.org/abs/2101.03961) (2021) 简化为 Top-1 实现万亿参数模型。问题：负载不均衡、专家利用率低。
+- Expert-Choice：专家选择 Top-K tokens，**天然负载均衡**，每个 token 可被 0 到多个专家处理。[Expert Choice Routing](https://arxiv.org/abs/2202.09368) (NeurIPS 2022) 训练速度提升 2x+。
+- [TC-MoE](https://openreview.net/forum?id=dsP91M4hDL) (2025): Ternary Choice，用 {-1, 0, 1} 扩展专家空间，激活专家数减少 9%，性能提升 1.1%。
+
+*负载均衡：*
+- 辅助损失：[GShard](https://arxiv.org/abs/2006.16668) 引入负载均衡损失惩罚不均。问题：干扰梯度影响性能。
+- 无辅助损失：[Auxiliary-Loss-Free Load Balancing](https://arxiv.org/abs/2408.15664) (ICLR 2025) 通过动态偏置调整路由分数，**DeepSeek-V3** 采用，实现**零 token 丢弃**。
+- [MoLE](https://arxiv.org/abs/2503.15798) (ICML 2025 Oral): 专家输入改为 embedding 层输出，推理前将 FFN 专家重参数化为查找表（LUT），根据 token id 直接查表，可 offload 到存储设备，延迟接近 dense 模型。
+
 
 
 
