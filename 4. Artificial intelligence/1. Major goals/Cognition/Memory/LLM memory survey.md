@@ -11,24 +11,6 @@ Meta写的感觉有点乱，还是自己eng整理一个出来。
 
 随着大语言模型（Large Language Models, LLMs）在自然语言处理领域的广泛应用，其处理长上下文、保持一致性和个性化输出的能力受到越来越多的关注。然而，传统 LLM 在记忆能力上存在局限，例如 Transformer 架构受限于固定上下文窗口，无法有效存储和调用长期信息。为了克服这些挑战，研究者们提出了多种方法来增强模型的记忆能力。这些方法可以根据存储和访问记忆的方式分为三大类：外部笔记（Retrieval-Augmented Generation, RAG）、长期记忆（模型参数）和短期记忆（隐藏状态）。外部笔记通过检索外部知识库扩展模型的知识范围，长期记忆通过更新模型权重保留信息，短期记忆则利用推理过程中的隐藏状态维持上下文相关性。本综述将系统分析这些方法的原理、实现方式及其应用场景，旨在为 LLM 记忆能力的研究提供清晰的框架。
 
-## 记忆的两个维度
-
-记忆的本质是信息处理和保存。首先，我们需要对可用的信息有一个明确的认识，然后我们才能决定利用、保存、编码哪些信息。这里我从两个维度对信息进行划分。
-
-**维度一：信息的处理化程度** 文本本质上是一种已经被人类高度压缩的信息，足够精炼和简洁。而图像、声音、触觉等感官则更像是原始信息，是直接观察世界可以获取到的，这类信息通常需要进一步压缩来保证高效存储。因此，多模态大模型通常需要额外的模态encoder，将其他模态的信息对齐到文本。
-
-因此我也不太认为文本信息属于纯粹的Sensory Memory，因为他们已经不是原始信息了，更像是高度处理后的知识（概念）。对于人类而言，文本的含义需要从图像或者对话中理解获得，这个过程本身就涉及到非常复杂的抽象能力。这也是为什么大语言模型获得了成功，但是多模态大模型实现则更加困难。
-
-- 视频→图像→概念
-- 音频→音频帧→概念
-
-**维度二：信息的保存和丢弃** 基座大模型，尤其是多模态大模型，考虑到未来模型必须能够实时处理问题，每时每刻会获取到海量的原始信息，即Sensory Memory，因此我们需要考虑保存有效信息，适当丢弃不太重要的信息。
-
-比较经典的就是Transformer和RNN的比较：
-
-- Transformer可以选择保存所有的输入，因此获得了非常好的效果，但是效率和存储需求也更高
-- 而RNN模型则不可避免地需要信息的更新和丢弃，因此效率更高，但是信息丢失更严重
-
 
 ## Memory Architecture
 
@@ -250,9 +232,8 @@ This analogy highlights the multi-scale and multi-format nature of memory. A sin
 
 Recent surveys have attempted to organize the rapidly growing landscape of memory mechanisms in large language models (LLMs), but they differ considerably in focus and depth. As shown in Table 1, these studies can be grouped into three core perspectives, with several domain-specific branches extending the coverage.
 
-#### Table 1: Comprehensive Summary of LLM Memory Surveys
 
-**Core Memory Surveys:**
+Table 1: Comprehensive Summary of LLM Memory Surveys
 
 | Survey | Date | Venue | Scope / Focus | Key Taxonomy | Remarks |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -278,28 +259,22 @@ Recent surveys have attempted to organize the rapidly growing landscape of memor
 
 Based on the six core memory surveys, we identify three distinct perspectives:
 
-#### 1. **Cognitive Analogy Perspective**
+#### Cognitive Analogy Perspective
 
 This perspective draws explicit parallels between human cognitive systems and AI architectures, using cognitive concepts (e.g., sensory/working/long-term memory, consolidation, forgetting) as organizing principles.
-
 - **From Human Memory to AI Memory** ([Wu et al., 2025](https://arxiv.org/abs/2504.15965)) proposes a **3D-8Q taxonomy**: Object (Personal vs System) × Form (Parametric vs Non-Parametric) × Time (Short-Term vs Long-Term).
-
 - **Advances in Foundation Agents** ([Liu et al., 2025](https://arxiv.org/abs/2504.01990)) maps **classical cognitive models** (Multi-Store, Working Memory Model, SPI, Global Workspace Theory, ACT-R) to LLM memory lifecycle: Acquisition → Encoding → Derivation → Retrieval → Utilization.
-
 - **Rethinking Memory in AI** ([Du et al., 2025](https://arxiv.org/abs/2505.00675)) identifies **six atomic operations** (Consolidation, Indexing, Updating, Forgetting, Retrieval, Compression) and maps them to **four research topics**: Long-Term Memory, Long-Context Memory, Parametric Memory Modification, and Multi-Source Memory.
 
-#### 2. **Architecture Perspective**
+#### Architecture Perspective
 
 This perspective focuses on the architectural design and implementation mechanisms of memory systems.
-
 - **Cognitive Memory in LLMs** ([Shan et al., 2025](https://arxiv.org/abs/2504.02441)) enumerates **four memory substrates**: Text-based, KV Cache-based, Parameters-based, and Hidden-State-based, analyzing acquisition, management, and utilization for each. However, this classification lacks a unified organizing principle—it simply lists where memory can reside without explaining *why* these categories emerge or *how* they relate to each other.
 
-#### 3. **Application Perspective**
+#### Application Perspective
 
 This perspective emphasizes memory integration within specific application contexts.
-
 - **Agent Memory Survey** ([Zhang et al., 2024](https://dl.acm.org/doi/abs/10.1145/3748302)) organizes by **Memory Sources** (Inside-trial, Cross-trial, External), **Forms** (Textual, Parametric), and **Operations** (Writing, Management, Reading), focusing on agent workflows.
-
 - **Memory Meets Multi-Modal LLMs** ([TMLR, 2025](https://openreview.net/forum?id=Sk7pwmLuAY)) proposes **three paradigms**: Implicit Memory (parameters), Explicit Memory (external storage), and Agentic Memory (persistent structures), addressing cross-modal coherence.
 
 ### Summary and Gaps
@@ -371,6 +346,27 @@ We adopt this classification throughout the rest of the survey to systematically
 
 可以看到，压缩程度越高，对于记忆的可操作方式就越少，越固定。而用途上，压缩程度越低的记忆一般趋向于为更高层的记忆服务。
 
+
+#### Two Dimensions of Memory
+
+记忆的本质是信息处理和保存。首先，我们需要对可用的信息有一个明确的认识，然后我们才能决定利用、保存、编码哪些信息。这里我从两个维度对信息进行划分。
+
+**维度一：信息的处理化程度** 文本本质上是一种已经被人类高度压缩的信息，足够精炼和简洁。而图像、声音、触觉等感官则更像是原始信息，是直接观察世界可以获取到的，这类信息通常需要进一步压缩来保证高效存储。因此，多模态大模型通常需要额外的模态encoder，将其他模态的信息对齐到文本。
+
+因此我也不太认为文本信息属于纯粹的Sensory Memory，因为他们已经不是原始信息了，更像是高度处理后的知识（概念）。对于人类而言，文本的含义需要从图像或者对话中理解获得，这个过程本身就涉及到非常复杂的抽象能力。这也是为什么大语言模型获得了成功，但是多模态大模型实现则更加困难。
+
+- 视频→图像→概念
+- 音频→音频帧→概念
+
+**维度二：信息的更新（保存和丢弃）** 基座大模型，尤其是多模态大模型，考虑到未来模型必须能够实时处理问题，每时每刻会获取到海量的原始信息，即Sensory Memory，因此我们需要考虑保存有效信息，适当丢弃不太重要的信息。
+
+比较经典的就是Transformer和RNN的比较：
+
+- Transformer可以选择保存所有的输入，因此获得了非常好的效果，但是效率和存储需求也更高
+- 而RNN模型则不可避免地需要信息的更新和丢弃，因此效率更高，但是信息丢失更严重
+
+
+
 ## Sensory Memory
 
 正如前面提到的，Sensory Memory应该是模型的原始输入，包括：图像、文本、音频等多种模态的原始感知数据。这些信息构成了模型在推理阶段的第一层“感官输入”，在类脑机制中对应人类接收外界刺激的初始阶段。每种模态的数据在进入模型后，都会分别通过对应的感知编码器（如视觉编码器、语言编码器、音频编码器等）被转化为统一的高维特征向量，作为跨模态对齐与融合的基础。
@@ -380,6 +376,80 @@ We adopt this classification throughout the rest of the survey to systematically
 尽管如此，以上的所有信息都还是未经处理的，所有模型都可以基于这些信息进行训练而不需要额外的编码，因此可以作为预训练数据集。现在也有检索增强生成（Retrieval-Augmented Generation, RAG）来实现对Sensory Memory的存储和索引。这种技术可以理解为维护一个个体完整的经历。RAG特别适用于需要处理大量外部信息或长对话的场景。RAG 的核心思想是将生成过程与检索过程结合：模型首先从外部存储中检索相关信息，然后将其集成到生成过程中，避免了模型完全依赖内部参数存储所有信息的限制。RAG 的优势在于其灵活性和可扩展性，但也面临检索效率和信息一致性等挑战。
 
 尽管名字叫感觉记忆，但这本质上是因为人类大脑无法完全存储这类信息，而计算机可以持久地保存感觉记忆，因此LLM的感觉记忆的存储量反而是最大的。
+
+
+
+
+### Forms
+
+
+#### Raw Data
+
+Raw data refers to perceptual inputs preserved in **interpretable textual form**, including natural language, structured logs, and minimally processed records. It serves as the most faithful representation of the environment and supports downstream reasoning, summarization, and episodic reconstruction.
+
+Raw data is interpretable, editable, and aligned with human-readable episodic memory. It supports flexible reasoning but scales poorly for retrieval, motivating its vectorized counterpart.
+
+**Unstructured Text**
+User utterances, assistant responses, document chunks, and other token-level or span-level traces that directly capture the observed interaction.
+
+**Structured Text**
+Episodic records organized as key–value entries, JSON logs, or timestamped tables. These retain explicit semantics while enabling more systematic storage and retrieval.
+
+**Hierarchical Summaries**
+Memos, episode summaries, and topic-based abstractions that compress raw sequences into higher-level units while remaining fully interpretable.
+
+**Multimodal Raw Inputs**
+Images, audio segments, video frames, and sensor readings before encoding. Though heterogeneous in format, they share the same role as raw perceptual traces.
+
+
+#### Embedding
+
+Embedding representations encode perceptual information into **dense continuous vectors** optimized for semantic retrieval, indexing, and large-scale memory management. Although not human-interpretable, they significantly improve scalability and retrieval accuracy.
+
+Embeddings are compact, searchable, and suited for scalable external memory. They support nearest-neighbor retrieval, clustering, and routing, but lack interpretability and require raw data for reconstruction.
+
+**Token-level Embeddings**
+Dense representations of sentences, paragraphs, or document chunks used for similarity search and retrieval.
+
+**Episodic or Dialogue Embeddings**
+Vectorized summaries of turns, sessions, or higher-level episodes that enable long-range recall with compact storage.
+
+**Multimodal Embeddings**
+Unified embeddings for images, audio, or video frames produced by modality-specific encoders.
+
+**Structured Embeddings**
+Vectorized forms of structured or relational memory—such as graph embeddings, key–value table embeddings, or hierarchical encodings—used to support more complex retrieval schemas.
+
+
+### Update
+
+Add Delete Edit Summarize Encode Organize
+
+
+
+
+
+### Usage
+
+
+
+
+
+
+
+
+
+### Applications
+
+
+
+verification
+
+Lifelong Agents
+
+
+
+
 
 ### 现有工作
 
@@ -815,7 +885,6 @@ MoE 的核心设计包括：路由机制（选择策略 + 负载均衡）、专�
 
 
 
-
 ### Update
 
 
@@ -823,7 +892,12 @@ MoE 的核心设计包括：路由机制（选择策略 + 负载均衡）、专�
 
 两个视角，一个是从operation角度，一个是从forms角度。forms角度：
 
-**1. MoE-based**
+##### Add & Delete
+
+
+
+
+###### MoE
 
 **新知识添加：**
 
@@ -856,7 +930,7 @@ MoE 的核心设计包括：路由机制（选择策略 + 负载均衡）、专�
 - **内存增长**：动态添加专家导致模型规模线性增长。
 
 
-**2. PEFT-based**
+###### PEFT
 
 
 operation角度：
@@ -870,19 +944,18 @@ operation角度：
 
 
 ##### Compression
-
-
 ###### Distillation
-
-
-###### Quantization
 
 
 ###### Pruning
 
 
 
-###### Model Merging
+###### Merging
+
+
+
+
 
 
 #### State Update
@@ -1071,7 +1144,7 @@ operation角度：
 
 *工具：*[EasyEdit](https://github.com/zjunlp/EasyEdit) - 支持 ROME、MEMIT、MEND 等多种方法的统一框架。
 
-##### 核心挑战
+#### Challenges
 
 1. 灾难性遗忘
 
@@ -1121,6 +1194,10 @@ Inference
 
 #### Ensemble
 
+
+### Applications
+
+个性化
 
 
 
